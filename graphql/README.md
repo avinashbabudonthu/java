@@ -1,0 +1,2 @@
+# GraphQL
+* [Notes](notes.md)
