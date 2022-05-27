@@ -1,2 +1,0 @@
-# UML
-* [Notes](notes.md)
