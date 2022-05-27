@@ -3,14 +3,17 @@ echo -----------------------------------------------
 cd /d %cd%
 echo echo Present working directory : %cd%
 echo -----------------------------------------------
-echo Status:
+echo Pulling latest commits before push
+git pull
+echo -----------------------------------------------
+echo Checking status:
 git status
 echo -----------------------------------------------
-echo Adding to staging area
+echo Adding files to staging area
 git add .
 echo Added to staging area
 echo -----------------------------------------------
-echo Status:
+echo Checking status:
 git status
 echo -----------------------------------------------
 echo Committing:
