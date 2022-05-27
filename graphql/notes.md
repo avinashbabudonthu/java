@@ -162,3 +162,5 @@ public class Mutation implements GraphQLMutationResolver {
 ```
 * This will only work if we're hosting our GraphQL API on the default endpoint of /graphql; we'll need the standalone application if that's not the case
 
+# Graphql Java Git Repo
+* [https://github.com/graphql-java-kickstart](https://github.com/graphql-java-kickstart)
