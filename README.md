@@ -8,6 +8,15 @@
 * [Notes](git/notes.md)
 * [Connect to github repository using SSH key](git/ssh.md)
 
+# Gradle
+* [Gradle](gradle)
+* [Commands](gradle/commands.md)
+* [Installation](gradle/installation.md)
+* [Materials](gradle/materials.md)
+* [Plugins](gradle/plugins.md)
+* [Properties](gradle/properties.md)
+* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
+
 # GraphQL
 * [GraphQL](graphql)
 * [Notes](graphql/notes.md)
