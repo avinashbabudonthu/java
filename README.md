@@ -5,6 +5,6 @@
 * [GraphQL](graphql)
 * [UML](uml)
 
-# Examples
+# All Examples
 ## GraphQL
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
