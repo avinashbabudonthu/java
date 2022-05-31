@@ -1,5 +1,58 @@
 # Single Repo For All Java Examples
+------
+# Architect
+* [Architect](architect)
+* [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
+* [Business Writing Skills](architect/business-writing-skills.md)
+* [Congitive Biase Critical Thikings](architect/cognitive-biase-critical-thinking.md)
+* [Design Thinking](architect/design-thinking.md)
+* [Persona-Template.pdf](architect/Persona-Template.pdf)
+* [Presentation Skills](architect/presentation-skills.md)
+* [Product Development Points](architect/product-development-points.md)
+* [Project Architecture Development Guidelines](architect/project-architecture-development-guide-lines.md)
+* [Public+Speaking+Success+-+How+Anyone+Can+Become+A+Better+Presenter.pdf](architect/Public+Speaking+Success+-+How+Anyone+Can+Become+A+Better+Presenter.pdf)
+* [sample-architecture-document-1.docx](architect/sample-architecture-document-1.docx)
+* [Secret+to+Foolproof+Presentations.pdf](architect/Secret+to+Foolproof+Presentations.pdf)
+* [Software Architecture Complete Guide](architect/software-architect-complete-guide.md)
+* [Storyboard-Template.pdf](architect/Storyboard-Template.pdf)
 
+## Technology Updates
+* [InfoQ](https://www.infoq.com/)
+* [The Server Side](https://www.theserverside.com/)
+
+## Technical Skills Udemy
+* SQL - MySQL for Data Analytics and Business Intelligence
+* REST API Design, Development & Management
+* [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+* Microservices Software Architecture: Patterns and Techniques
+* Ultimate AWS Certified Developer Associate 2021 - NEW!
+* Apache Kafka Series - Learn Apache Kafka for Beginners v2
+* Angular & NodeJS - The MEAN Stack Guide [2021 Edition]
+* [Zang Jing Ge: The Way of the Architect](https://www.linkedin.com/pulse/zang-jing-ge-way-architect-david-knott)
+* Git Going Fast: One Hour Git Crash Course
+* DevOps: CI/CD with Jenkins pipelines, Maven, Gradle
+* Software Architecture (SOLID) & Design Patterns in Java
+* The Complete Guide to Becoming a Software Architect
+
+## Soft Skills Udemy
+* [Software Architecture Guide](https://martinfowler.com/architecture/)
+* How To Become An Outstanding Solution Architect
+* Successful Negotiation: Master Your Negotiating Skills
+* [Two-Pizza Teams Are Just the Start, Part 1: Accountability and Empowerment Are Key to High-Performing Agile Organizations](https://aws.amazon.com/blogs/enterprise-strategy/two-pizza-teams-are-just-the-start-accountability-and-empowerment-are-key-to-high-performing-agile-organizations-part-1/)
+* Write Like a Boss: Master Your Business Writing Skills
+* Presentation Skills: Give a Great Team Presentation
+* Design Thinking in 3 Steps
+* [5 Ways To Lead With Emotional Intelligence](https://www.forbes.com/sites/carolinecastrillon/2021/01/10/5-ways-to-lead-with-emotional-intelligence/?sh=a2187b1232e1)
+* [Boost Your Emotional Intelligence with These 3 Questions](https://hbr.org/2018/08/boost-your-emotional-intelligence-with-these-3-questions)
+* Master Cognitive Biases and Improve Your Critical Thinking
+
+## Sample Architecture Documents
+* [Sample Architecture Documents 1](sample-architecture-document-1.docx)
+
+## Architecture diagram tools
+* [Draw.io](https://draw.io/)
+* [Gliffy](https://www.gliffy.com/)
+------
 # Git
 * [Git](git)
 * [Create app passwords in bitbucket](git/app-passwords.md)
@@ -7,7 +60,7 @@
 * [Git Materials](git/materials.md)
 * [Notes](git/notes.md)
 * [Connect to github repository using SSH key](git/ssh.md)
-
+------
 # Gradle
 * [Gradle](gradle)
 * [Commands](gradle/commands.md)
@@ -16,12 +69,12 @@
 * [Plugins](gradle/plugins.md)
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
-
+------
 # GraphQL
 * [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
-
+------
 # Maven
 * [Maven](maven)
 * [Commands](maven/commands.md)
@@ -29,7 +82,7 @@
 * [Materials](maven/materials.md)
 * [Notes](maven/notes.md)
 * [Sample pom xml file](maven/sample_pom.xml)
-
+------
 # UML
 * [UML](uml)
 * [Notes](uml/notes.md)
