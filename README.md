@@ -53,6 +53,14 @@
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
 ------
+# Design Patterns
+* [Design Patterns](design-patterns)
+* [SOLID Principles](design-patterns/solid-principles)
+* [Creational](design-patterns/creational)
+* [Behavioral](design-patterns/behavioral)
+* [Structural](design-patterns/structural)
+* [Materials](materials.md)
+------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
 ------

@@ -1,0 +1,22 @@
+subprojects{
+    apply plugin: "java"
+    apply plugin: "maven"
+
+    repositories{
+        mavenCentral()
+    }
+
+    dependencies{
+    	implementation 'org.slf4j:slf4j-api:1.7.5'
+	    implementation 'org.slf4j:slf4j-log4j12:1.7.5'
+	    compileOnly 'org.projectlombok:lombok:1.18.6'
+        testCompile "junit:junit:4.12"
+    }
+}
+
+allprojects{
+    
+    repositories{
+        mavenCentral()
+    }
+}
