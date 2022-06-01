@@ -1,0 +1,67 @@
+<!-- Just add this to the <build><plugins> section of your POM and make changes appropriately -->
+
+<plugin>
+	<groupId>io.fabric8</groupId>
+	<artifactId>docker-maven-plugin</artifactId>
+	<version>0.21.0</version>
+
+	<configuration>
+		<!-- this is for windows. 2375 is docker demon port -->
+        <!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
+        <!--  this is for Mac and Amazon Linux -->
+        <!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
+
+        <verbose>true</verbose>
+        
+        <!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
+        <authConfig>
+			  <username>YOUR-USERNAME</username>
+              <password>YOUR-PASSWORD</password>
+        </authConfig>
+        
+		<images>
+			<image>
+				<name>NAME OF IMAGE TO BUILD</name>
+				<build>
+					<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
+
+                    <!--copies Jar to the maven directory (uses Assembly system)-->
+					<assembly>
+						<descriptorRef>artifact</descriptorRef>
+					</assembly>
+					<tags>
+						<tag>latest</tag> <!-- give tag to docker image -->
+					</tags>
+				</build>
+			</image>
+		</images>
+	</configuration>
+	
+	<!-- To include docker image building as part of maven package goal -->
+	<!-- 
+	<executions>
+		<execution>
+			<phase>package</phase>
+			<goals>
+				<goal>docker:build</goal>
+			</goals>
+		</execution>
+		
+		<execution>
+			<id>myDeploy</id>
+			<phase>deploy</phase>
+			<goals>
+				<goal>docker:push</goal>
+			</goals>
+		</execution>
+	</executions>
+	-->
+</plugin>
+
+<!-- add below plugin while attaching docker:push to deploy plugin -->
+<plugin>
+	<artifactId>maven-deploy-plugin</artifactId>
+	<configuration>
+		<skip>true</skip>
+	</configuration>
+</plugin>
