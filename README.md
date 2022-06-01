@@ -68,19 +68,19 @@
 * [Notes](docker/notes.md)
 
 ## Docker Compose
-* [Docker Compose](docker-compose)
+* [Docker Compose](docker/docker-compose)
 * [Commands](docker/docker-compose/docker-compose-commands.md)
 * [Files](docker/docker-compose/docker-compose-files.md)
 	* Run 2 mysql containers and connect to docker network
 * [Notes](docker/docker-compose/docker-compose-notes.md)
 
 ## Docker Swarm
-* [Docker Swarm](docker-swarm)
+* [Docker Swarm](docker/docker-swarm)
 * [Commands](docker/docker-swarm/docker-swarm-commands.md)
 * [Notes](docker/docker-swarm/docker-swarm-notes.md)
 
 ## Fabric 8 Maven Plugin
-* [Fabric 8 Maven Plugin](fabric8-maven-plugin)
+* [Fabric 8 Maven Plugin](docker/fabric8-maven-plugin)
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
