@@ -59,7 +59,7 @@
 * [Creational](design-patterns/creational)
 * [Behavioral](design-patterns/behavioral)
 * [Structural](design-patterns/structural)
-* [Materials](materials.md)
+* [Materials](design-patterns/materials.md)
 ------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
