@@ -117,6 +117,10 @@
 * [Notes](graphql/notes.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ------
+# Linux
+* [Linux](linux)
+* [Commands](linux/commands.md)
+------
 # Maven
 * [Maven](maven)
 * [Commands](maven/commands.md)
@@ -128,3 +132,7 @@
 # UML
 * [UML](uml)
 * [Notes](uml/notes.md)
+------
+# Windows
+* [Windows](windows)
+* [Commands](windows/commands.md)
