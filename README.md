@@ -111,6 +111,11 @@
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
+# Garbage Collection
+* [Garbage Collection](garbage-collection)
+* [Materials](garbage-collection/materials.md)
+* [Notes](garbage-collection/notes.md)
+------
 # Git
 * [Git](git)
 * [Create app passwords in bitbucket](git/app-passwords.md)
