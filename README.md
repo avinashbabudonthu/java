@@ -193,6 +193,11 @@
 * [UML](uml)
 * [Notes](uml/notes.md)
 ------
+# Visual VM
+* [Visual VM](visual-vm)
+* [Materials](visual-vm/materials.md)
+* [Notes](visual-vm/notes.md)
+------
 # Windows
 * [Windows](windows)
 * [Commands](windows/commands.md)
