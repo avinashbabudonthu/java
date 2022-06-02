@@ -61,6 +61,11 @@
 * [Azure](azure)
 * [Materials](azure/materials.md)
 ------
+# Chocolatey
+* [Chocolatey](chocolatey)
+* [Materials](chocolatey/materials.md)
+* [Notes](chocolatey/notes.md)
+------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
 ------
