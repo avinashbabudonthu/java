@@ -75,6 +75,7 @@
 ------
 # Core Java
 * [Core Java](core-java)
+* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
 ------
 # Design Patterns
 * [Design Patterns](design-patterns)
