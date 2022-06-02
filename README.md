@@ -182,6 +182,9 @@
 * [Open shift](open-shift)
 * [Materials](open-shift/materials.md)
 ------
+# Performance
+* [Materials](performance/materials.md)
+------
 # Prometheus
 * [Prometheus](prometheus)
 * [Materials](prometheus/materials.md)
