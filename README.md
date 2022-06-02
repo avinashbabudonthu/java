@@ -189,6 +189,10 @@
 	* Setup Prometheus in Local
 	* Prometheus Queries
 ------
+# Sonarqube
+* [Sonarqube](sonarqube)
+* [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
+------
 # UML
 * [UML](uml)
 * [Notes](uml/notes.md)
