@@ -1,5 +1,9 @@
 # Single Repo For All Java Examples
 ------
+# Ansible
+* [Ansible](ansible)
+* [Materials](ansible/materials.md)
+------
 # Architect
 * [Architect](architect)
 * [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
@@ -57,6 +61,13 @@
 * [Azure](azure)
 * [Materials](azure/materials.md)
 ------
+# Coding Web sites
+* [Hacker Rank](https://hackerrank.com/)
+------
+# Concourse
+* [Concourse](concourse)
+* [Materials](concourse/materials.md)
+------
 # Design Patterns
 * [Design Patterns](design-patterns)
 * [SOLID Principles](design-patterns/solid-principles)
@@ -65,8 +76,9 @@
 * [Structural](design-patterns/structural)
 * [Materials](design-patterns/materials.md)
 ------
-# Coding Web sites
-* [Hacker Rank](https://hackerrank.com/)
+# Devops
+* [Devops](devops)
+* [Materials](devops/materials.md)
 ------
 # Docker
 * [Docker](docker)
@@ -137,6 +149,18 @@
 * [Heroku](heroku)
 * [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
 ------
+# Kubernetes
+* [Kubernetes](kubernetes)
+* [Commands](kubernetes/commands.md)
+* [Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf](kubernetes/Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf)
+* [Materials](kubernetes/materials.md)
+* [Notes](kubernetes/notes.md)
+	* Install Kubectl in windows using scoop
+	* Install Kubectl in windows using chocolatey
+	* Certifications on Kubernetes
+	* Container Orchestration
+	* Kubernetes architecture
+------
 # Linux
 * [Linux](linux)
 * [Commands](linux/commands.md)
@@ -152,6 +176,13 @@
 # Open Shift
 * [Open shift](open-shift)
 * [Materials](open-shift/materials.md)
+------
+# Prometheus
+* [Prometheus](prometheus)
+* [Materials](prometheus/materials.md)
+* [Notes](prometheus/notes.md)
+	* Setup Prometheus in Local
+	* Prometheus Queries
 ------
 # UML
 * [UML](uml)
