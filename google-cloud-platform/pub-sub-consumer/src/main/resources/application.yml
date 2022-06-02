@@ -1,0 +1,42 @@
+server.port: 9001
+
+spring.profiles.active: dev
+
+## logging
+logging:
+  pattern.console: '%d{yyyy-MM-dd HH:mm:ss} [%-5level] [%C:%L] - %m%n'
+  file: logs/pub-sub-consumer/app.log
+  level.org.springframework: info
+
+# actuator properties
+management:
+  endpoints.web.exposure.include: '*'
+  endpoint.health.show-details: always
+  info.git.mode: full
+
+info:
+  app:
+    name: pub-sub-consumer
+    description: Google pub sub consumer
+    version: 1.0.0
+  java-vendor: ${java.specification.vendor}
+
+spring:
+  cloud:
+    gcp:
+      project-id: gcp-practice-project-307011
+      # credentials.location: file:C:\softwares\gcp\keys.json
+
+pub.sub:
+  subscription: projects/gcp-practice-project-307011/subscriptions/topic-1-subscription-1
+  mobile.number.subscription: projects/gcp-practice-project-307011/subscriptions/topic-1-mobile-number-subscription
+  remark.subscription: projects/gcp-practice-project-307011/subscriptions/topic-1-remarks-subscription
+---
+spring.profiles: dev
+
+server.port: 9001
+---
+spring.profiles: test
+
+---
+spring.profiles: prod

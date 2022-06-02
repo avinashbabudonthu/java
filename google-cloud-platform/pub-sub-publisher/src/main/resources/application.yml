@@ -1,0 +1,45 @@
+server.port: 8080
+
+spring:
+  profiles.active: test
+  cloud:
+    gcp:
+      project-id: gcp-practice-project-307011
+      # credentials.location: file:C:\\Users\\ashu3\\AppData\\Roaming\\gcloud\\application_default_credentials.json
+      spanner:
+        instance-id: instance-1
+        database: database-1
+
+## logging
+logging:
+  pattern.console: '%d{yyyy-MM-dd HH:mm:ss} [%X{source}] [%X{correlation-id}] [%-5level] [%C:%L] - %m%n'
+  file: logs/pub-sub-publisher/app.log
+  level.org.springframework: info
+
+# actuator properties
+management:
+  endpoints.web.exposure.include: '*'
+  endpoint.health.show-details: always
+  info.git.mode: full
+
+info:
+  app:
+    name: spanner-pollar-convereter-publisher
+    description: Google cloud spanner poller converter publisher
+    version: 1.0.0
+    java-vendor: ${java.specification.vendor}
+
+app:
+  topic.name: topic-1
+
+---
+spring.profiles: dev
+
+server.port: 8081
+
+---
+spring.profiles: test
+
+server.port: 8080
+---
+spring.profiles: prod

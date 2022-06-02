@@ -53,6 +53,10 @@
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
 ------
+# Azure
+* [Azure](azure)
+* [Materials](azure/materials.md)
+------
 # Design Patterns
 * [Design Patterns](design-patterns)
 * [SOLID Principles](design-patterns/solid-principles)
@@ -103,6 +107,18 @@
 * [Notes](git/notes.md)
 * [Connect to github repository using SSH key](git/ssh.md)
 ------
+# GCP Google Cloud Platform
+* [GCP Google Cloud Platform](google-cloud-platform)
+* [Pub Sub Consumer](google-cloud-platform/pub-sub-consumer)
+* [Pub Sub Publisher](google-cloud-platform/pub-sub-publisher)
+* [Spanner CRUD](google-cloud-platform/spanner-crud)
+* [Spanner Poller Converter Publisher](google-cloud-platform/spanner-poller-converter-publisher)
+* [Spring Cloud GCP Pub Sub](google-cloud-platform/spring-cloud-gcp-pub-sub)
+* [Spring Cloud Spanner](google-cloud-platform/spring-data-cloud-spanner)
+* [Commands](google-cloud-platform/commands.md)
+* [Materials](google-cloud-platform/materials.md)
+* [Notes](google-cloud-platform/notes.md)
+------
 # Gradle
 * [Gradle](gradle)
 * [Commands](gradle/commands.md)
@@ -117,6 +133,10 @@
 * [Notes](graphql/notes.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ------
+# Heroku
+* [Heroku](heroku)
+* [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
+------
 # Linux
 * [Linux](linux)
 * [Commands](linux/commands.md)
@@ -128,6 +148,10 @@
 * [Materials](maven/materials.md)
 * [Notes](maven/notes.md)
 * [Sample pom xml file](maven/sample_pom.xml)
+------
+# Open Shift
+* [Open shift](open-shift)
+* [Materials](open-shift/materials.md)
 ------
 # UML
 * [UML](uml)

@@ -1,0 +1,52 @@
+# server properties
+server.port: 8080
+
+# actuator properties
+management:
+  endpoints:
+    web.exposure.include: '*'
+  endpoint:
+    health.show-details: always
+  info.git.mode: full
+
+# info end point properties
+info:
+  app:
+    name: spring-crud
+    description: Spring Data Cloud Spanner CRUD APIs
+    version: 1.0.0
+    java-vendor: ${java.specification.vendor}
+
+# logging properties
+logging:
+  level.org.springframework: info
+  pattern.console: "%X{global-transaction-id} %d{yyyy-MM-dd HH:mm:ss} %-5level %C:%L - %m%n"
+  file: logs/app.log
+
+# gcp properties
+spring:
+  profiles.active: test
+  cloud:
+    gcp:
+      project-id: gcp-practice-project-307011
+      spanner:
+        instance-id: instance-1
+        database: database-1
+#        credentials.location: file:C:\softwares\gcp\keys.json
+#  jpa:
+#    show-sql: true
+
+---
+spring.profiles: dev
+
+app:
+  publish.base.url: http://localhost:8081
+  publish.end.point: /api/v1/publish
+---
+spring.profiles: test
+
+app:
+  publish.base.url: http://34.69.229.231:8080
+  publish.end.point: /api/v1/publish
+---
+spring.profiles: prod

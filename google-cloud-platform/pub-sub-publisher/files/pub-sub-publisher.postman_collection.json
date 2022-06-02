@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "dc7f15f8-0b23-4df6-836d-5be479109bc9",
+		"name": "pub-sub-publisher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/publish",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body1 = {\r",
+							"    \"pnrId\": \"102\",\r",
+							"    \"mobileNumber\": \"123456789102\",\r",
+							"    \"remark\": \"remark 102\"\r",
+							"};\r",
+							"\r",
+							"var requestBodyString = JSON.stringify(body1);\r",
+							"pm.environment.set(\"requestBody\", requestBodyString);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{requestBody}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/publish",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/scheduler/job/publish",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v1/scheduler/job/publish",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"scheduler",
+						"job",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

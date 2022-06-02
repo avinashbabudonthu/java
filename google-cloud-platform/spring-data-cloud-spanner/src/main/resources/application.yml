@@ -1,0 +1,36 @@
+# server properties
+server.port: 9000
+
+# actuator properties
+management:
+  endpoints:
+    web.exposure.include: '*'
+  endpoint:
+    health.show-details: always
+  info.git.mode: full
+
+# info end point properties
+info:
+  app:
+    name: spring-data-cloud-spanner
+    description: Spring Data Cloud Spanner Example
+    version: 1.0.0
+    java-vendor: ${java.specification.vendor}
+
+# logging properties
+logging:
+  level.org.springframework: info
+  pattern.console: "%X{global-transaction-id} %d{yyyy-MM-dd HH:mm:ss} %-5level %C:%L - %m%n"
+  file: logs/app.log
+
+# gcp properties
+spring:
+  cloud:
+    gcp:
+      spanner:
+        instance-id: instance-1
+        database: database-1
+        project-id: gcp-practice-project-307011
+        credentials.location: file:C:\softwares\gcp\keys.json
+  jpa:
+    show-sql: true
