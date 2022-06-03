@@ -319,6 +319,10 @@
 	* Setup Prometheus in Local
 	* Prometheus Queries
 ------
+# REST API
+* [REST API](rest-api)
+* [Notes](rest-api/notes.md)
+------
 # Sonarqube
 * [Sonarqube](sonarqube)
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
