@@ -159,6 +159,10 @@
 * [Materials](drools/materials.md)
 * [notes.md](drools/notes.md)
 ------
+# Drop Wizard
+* [Drop wizard](drop-wizard)
+* [Materials](drop-wizard/materials.md)
+------
 # Garbage Collection
 * [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
