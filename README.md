@@ -256,6 +256,10 @@
 * [Materials](karate/materials.md)
 * [Notes](karate/notes.md)
 ------
+# Kerberos
+* [Kerberos](kerberos)
+* [Materials](kerberos/materials.md)
+------
 # Kubernetes
 * [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
