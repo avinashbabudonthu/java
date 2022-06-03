@@ -206,6 +206,12 @@
 * [Heroku](heroku)
 * [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
 ------
+# HTML Sanitizer
+* [HTML Sanitizer](html-sanitizer)
+* [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
+	* sanitize()
+* [Materials](html-sanitizer/materials.md)
+------
 # Jackson JSON
 * [Jackson JSON](jackson-json)
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
