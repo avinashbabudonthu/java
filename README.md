@@ -260,6 +260,10 @@
 * [Kerberos](kerberos)
 * [Materials](kerberos/materials.md)
 ------
+# Kibana
+* [Kibana](kibana)
+* [Materials](kibana/materials.md)
+------
 # Kubernetes
 * [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
