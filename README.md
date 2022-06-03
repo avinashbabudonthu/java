@@ -321,6 +321,8 @@
 ------
 # REST API
 * [REST API](rest-api)
+* [REST API A to Z](rest-api/rest-api-a-to-z)
+* [Materials](rest-api/materials.md)
 * [Notes](rest-api/notes.md)
 ------
 # Sonarqube
