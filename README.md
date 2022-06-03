@@ -57,6 +57,15 @@
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
 ------
+# AVRO
+* [AVRO](avro)
+* [avro-maven-plugin-practice](avro/avro-maven-plugin-practice)
+* [Serialization By Generating Classes](avro/serialization-by-generating-class)
+* [Serialization Using Parsers](avro/serialization-using-parsers)
+* [Materials](avro/materials.md)
+* [Notes](avro/notes.md)
+* [Setup](avro/setup.md)
+------
 # Azure
 * [Azure](azure)
 * [Materials](azure/materials.md)
