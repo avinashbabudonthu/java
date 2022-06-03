@@ -148,6 +148,10 @@
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
+# Dozer
+* [Dozer](dozer)
+* [Materials](dozer/materials.md)
+------
 # Drools
 * [Drools](drools)
 * [Drools Eclipse Plugin](drools/drools-eclipse-plugin)
