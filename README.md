@@ -80,11 +80,19 @@
 * [Materials](chocolatey/materials.md)
 * [Notes](chocolatey/notes.md)
 ------
-# [Commons compress](commons-compress)
+# Commons compress
+* [Commons compress](commons-compress)
 * Compress to tar file - Refer **compressToTar()** in [Compress.java](commons-compress/commons-compress/src/test/java/com/tar/Compress.java)
 * Decompress tar file - Refer **decompress()** in [UnCompress.java](commons-compress/commons-compress/src/test/java/com/tar/UnCompress.java)
 * Compress to tar gz file - Refer **compressToTar()** in [Compress.java](commons-compress/commons-compress/src/test/java/com/tar/gz/Compress.java)
 * Decompress tar gz file - Refer **decompress()** in [UnCompress.java](commons-compress/commons-compress/src/test/java/com/tar/gz/UnCompress.java)
+------
+# Commons Lang3
+* [commons Lang3](commons-lang3)
+* [BooleanUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtils.java)
+* [ExceptionUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/ExceptionUtils.java)
+* [StringUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
+* [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 ------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
