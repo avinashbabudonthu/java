@@ -228,6 +228,10 @@
 * [Notes](jenkins/notes.md)
 * [Sqitch](jenkins/sqitch.md)
 ------
+# JFrog
+* [JFrog](jfrog)
+* [Installation](jfrog/installation.md)
+------
 # JMeter
 * [JMeter](jmeter)
 * [Materials](jmeter/materials.md)
