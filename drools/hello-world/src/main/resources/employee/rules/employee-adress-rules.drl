@@ -1,0 +1,36 @@
+package employee.rules;
+
+import hello.world.model.Address;
+import hello.world.model.Employee;
+
+rule "print employee and address objects"
+	when
+		address: Address()
+		employee: Employee()
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", adress: " + address + ", employee: " + employee);
+end
+
+rule "compere adress.id and employee.addressId"
+	when
+		address: Address($addressId: id)
+		employee: Employee(addressId == $addressId)
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", adress: " + address + ", employee: " + employee);
+end
+
+rule "compare address.recordInsertDate before employee.recordInsertDate"
+	when
+		address: Address($recordInsertDate: recordInsertDate)
+		employee: Employee($recordInsertDate != null && $recordInsertDate.before(recordInsertDate))
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", adress: " + address + ", employee: " + employee);
+end
+
+rule "compare address.recordInsertDate after employee.recordInsertDate"
+	when
+		address: Address($recordInsertDate: recordInsertDate)
+		employee: Employee($recordInsertDate != null && $recordInsertDate.after(recordInsertDate))
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", adress: " + address + ", employee: " + employee);
+end

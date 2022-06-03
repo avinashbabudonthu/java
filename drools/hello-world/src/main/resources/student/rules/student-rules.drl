@@ -1,0 +1,72 @@
+package student.rules;
+
+import hello.world.model.Student;
+import hello.world.StudentRules;
+import java.util.Date;
+
+global StudentRules studentRules;
+
+rule "is student name present"
+	dialect "mvel"
+	when
+		Student(name == null)
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", student name does not exist");
+end
+
+rule "Age greater than 21"
+	dialect "mvel"
+	when
+		s: Student( isAgeGreaterThan21() )
+	then
+		studentRules.printMessage("rule name=", drools.getRule().getName(), s.getName(), s.getAge().toString(), "Age is greater than 21");
+end
+
+rule "Age less than 15"
+	dialect "mvel"
+	when
+		s: Student(isAgeLessThan15())
+	then
+		studentRules.printMessage("rule name=", drools.getRule().getName(), s.getName(), s.getAge().toString(), "Age is less than 15");
+end
+
+rule "Correct Age"
+	dialect "mvel"
+	when 
+		s: Student( !isAgeGreaterThan21() && !isAgeLessThan15())
+	then
+		studentRules.printMessage("rule name=", drools.getRule().getName(), s.getName(), s.getAge().toString(), "Correct age");
+end
+
+rule "is student name is john"
+	when
+		student: Student("john" == name)
+	then
+		System.out.println("rule name="+ drools.getRule().getName() + ", student name is " + student.getName().toUpperCase());
+end
+
+rule "and condition - check for student name and age"
+	when
+		student: Student("john" == name && 14 == age)
+	then
+		
+		System.out.println("rule name="+ drools.getRule().getName() + ", student name " + student.getName().toUpperCase() + ", age is " + student.getAge());
+end
+
+rule "date before validation"
+	when
+		student: Student(null != joiningDate && joiningDate.before(new Date()))
+	then
+		String result = String.format("rule name=%s, student name %s, age %s, joining date %s",drools.getRule().getName(), student.getName()
+		 ,student.getAge(), student.getJoiningDate());
+		System.out.println(result);
+end
+
+rule "date after validation"
+	when
+		student: Student(null != joiningDate && joiningDate.after(new Date()))
+	then
+		String result = String.format("rule name=%s, student name %s, age %s, joining date %s",drools.getRule().getName(), student.getName()
+		 ,student.getAge(), student.getJoiningDate());
+		System.out.println(result);
+end

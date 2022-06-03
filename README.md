@@ -129,6 +129,13 @@
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
+# Drools
+* [Drools](drools)
+* [Drools Eclipse Plugin](drools/drools-eclipse-plugin)
+* [Hello World Example](drools/hello-world)
+* [Materials](drools/materials.md)
+* [notes.md](drools/notes.md)
+------
 # Garbage Collection
 * [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
