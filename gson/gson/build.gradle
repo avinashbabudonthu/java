@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+     compile 'junit:junit:4.12'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.slf4j:slf4j-log4j12:1.7.5'
+    compile "com.google.code.gson:gson:2.3.1"
+    
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    testCompileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.6'
+}
+
+group = 'gson'
+version = '1.0'
+description = 'gson'
+sourceCompatibility = '1.8'
