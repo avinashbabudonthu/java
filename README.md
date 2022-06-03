@@ -237,6 +237,10 @@
 * [Notes](jenkins/notes.md)
 * [Sqitch](jenkins/sqitch.md)
 ------
+# Jersey
+* [Jersey](jersey)
+* [Materials](jersey/materials.md)
+------
 # JFrog
 * [JFrog](jfrog)
 * [Installation](jfrog/installation.md)
