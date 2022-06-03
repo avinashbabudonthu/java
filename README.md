@@ -251,6 +251,11 @@
 * [Materials](jvm/materials.md)
 * [Notes](jvm/notes.md)
 ------
+# Karate
+* [Karate](karate)
+* [Materials](karate/materials.md)
+* [Notes](karate/notes.md)
+------
 # Kubernetes
 * [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
