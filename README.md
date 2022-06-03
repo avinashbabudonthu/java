@@ -232,6 +232,10 @@
 * [JFrog](jfrog)
 * [Installation](jfrog/installation.md)
 ------
+# Jhipster
+* [Jhipster](jhipster)
+* [Notes](jhipster/notes.md)
+------
 # JMeter
 * [JMeter](jmeter)
 * [Materials](jmeter/materials.md)
