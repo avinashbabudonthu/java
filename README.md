@@ -217,6 +217,17 @@
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
 * [Materials](jackson-json/materials.md)
 ------
+# Jenkins
+* [Jenkins](jenkins)
+* [Add new user](jenkins/add-new-user.md)
+* [Configure global security](jenkins/configure-global-security.md)
+* [Create free style jon](jenkins/create-freestyle-job.md)
+* [Examples](jenkins/examples.md)
+* [Installation](jenkins/installation.md)
+* [Materials](jenkins/materials.md)
+* [Notes](jenkins/notes.md)
+* [Sqitch](jenkins/sqitch.md)
+------
 # JMeter
 * [JMeter](jmeter)
 * [Materials](jmeter/materials.md)
