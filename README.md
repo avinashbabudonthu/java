@@ -217,6 +217,11 @@
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
 * [Materials](jackson-json/materials.md)
 ------
+# JBoss
+* [JBoss](jboss)
+* [Materials](jboss/materials.md)
+* [Notes](jboss/notes.md)
+------
 # Jenkins
 * [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)
