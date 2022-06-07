@@ -1,0 +1,36 @@
+buildscript{
+    ext{
+        springBootVersion = "1.5.22.RELEASE"
+    }
+
+    repositories{
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies{
+        classpath(
+                "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
+                "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}",
+        )
+    }
+}
+
+plugins{
+    id "java"
+    id "application"
+}
+
+apply plugin: "org.springframework.boot"
+
+repositories{
+    mavenLocal()
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies{
+    compile "org.springframework.boot:spring-boot-starter-web"
+}

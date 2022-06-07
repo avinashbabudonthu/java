@@ -1,0 +1,44 @@
+{
+	"variables": [],
+	"info": {
+		"name": "filters",
+		"_postman_id": "c12ce0ae-5ced-fd87-bdc0-02d1b63cd482",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/1",
+			"request": {
+				"url": "http://localhost:9000/api/v1/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v2/1",
+			"request": {
+				"url": "http://localhost:9000/api/v2/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v3/1",
+			"request": {
+				"url": "http://localhost:9000/api/v3/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

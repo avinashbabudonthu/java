@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "request-scoped-beans",
+		"_postman_id": "9a7687da-1bf7-7c58-aa25-ad4c98704b0d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "students",
+			"request": {
+				"url": "http://localhost:9000/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

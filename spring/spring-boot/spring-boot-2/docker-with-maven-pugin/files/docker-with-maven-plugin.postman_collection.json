@@ -1,0 +1,44 @@
+{
+	"variables": [],
+	"info": {
+		"name": "docker-with-maven-plugin",
+		"_postman_id": "95f53698-ca5c-85d8-06e2-ce36964f68bb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-all-students",
+			"request": {
+				"url": "http://localhost:9090/docker/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "actuator",
+			"request": {
+				"url": "http://localhost:9090/docker/actuator",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"url": "http://localhost:9090/docker/actuator/health",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

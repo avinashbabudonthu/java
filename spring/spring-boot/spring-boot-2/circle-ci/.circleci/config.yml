@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker: 
+      - image: openjdk:8-jdk-alpine
+    steps:
+      - checkout
+      - run: echo "Spring boot 2 circle ci"

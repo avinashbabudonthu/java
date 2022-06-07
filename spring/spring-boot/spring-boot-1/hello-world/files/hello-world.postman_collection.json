@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "hello-world",
+		"_postman_id": "7721a832-6b07-9225-a616-6364d6a17edf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"url": "http://localhost:9090/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

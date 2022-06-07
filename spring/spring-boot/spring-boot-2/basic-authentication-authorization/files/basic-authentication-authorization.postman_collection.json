@@ -1,0 +1,117 @@
+{
+	"variables": [],
+	"info": {
+		"name": "basic-authentication-authorization",
+		"_postman_id": "90289fbf-2bdc-5ff9-b066-12eaddf07c22",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public/v1/hello",
+			"request": {
+				"url": "http://localhost:9000/public/v1/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get-users-without-credentials",
+			"request": {
+				"url": "http://localhost:9000/admin/v1/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get-users-with-credentials",
+			"request": {
+				"url": "http://localhost:9000/admin/v1/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update-users",
+			"request": {
+				"url": "http://localhost:9000/admin/v1/users",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"admin\",\n\t\"enabled\": true,\n\t\"clientModel\": {\n\t\t\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save-new-user",
+			"request": {
+				"url": "http://localhost:9000/admin/v1/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"user3\",\n\t\"password\": \"user3\",\n\t\"enabled\": true,\n\t\"roleModel\": {\n\t\t\"id\": \"27efa3d9-fc88-11e9-902e-ace2d33c91cb\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "application-api",
+			"request": {
+				"url": "http://localhost:9000/api/v1/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjI6dXNlcjI=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

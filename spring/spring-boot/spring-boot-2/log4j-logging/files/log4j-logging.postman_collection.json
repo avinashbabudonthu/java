@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "log4j-logging",
+		"_postman_id": "b481f7aa-442e-5482-38df-ca167510fc83",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/hello",
+			"request": {
+				"url": "http://localhost:9000/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "da854db4-3e98-4f9d-b4fa-253fe2870ba7",
+		"name": "data-jpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "find_all_employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find_employee_by_dept_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/employees/dept/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employees",
+						"dept",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-all-employees-and-depts-details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/employees/depts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employees",
+						"depts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-all-employees-by-pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/paginated/employees?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"paginated",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				},
+				"description": "* data.jpa.controller.EmployeeController\r\n* findEmployeeModelListAllByPagination\r\n* `Query`: select employeeen0_.empno as empno1_1_, employeeen0_.active as active2_1_, employeeen0_.comm as comm3_1_, employeeen0_.deptno as deptno9_1_, employeeen0_.hiredate as hiredate4_1_, employeeen0_.job as job5_1_, employeeen0_.mgr as mgr6_1_, employeeen0_.ename as ename7_1_, employeeen0_.sal as sal8_1_ from emp employeeen0_ limit ?"
+			},
+			"response": []
+		},
+		{
+			"name": "find-all-employees-multiple-properties-sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/employees/sort",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employees",
+						"sort"
+					]
+				},
+				"description": "* data.jpa.controller.EmployeeController\r\n* findEmployeeModelListAllSortByENameAscAndSalaryDesc\r\n* `Query`: select employeeen0_.empno as empno1_1_, employeeen0_.active as active2_1_, employeeen0_.comm as comm3_1_, employeeen0_.deptno as deptno9_1_, employeeen0_.hiredate as hiredate4_1_, employeeen0_.job as job5_1_, employeeen0_.mgr as mgr6_1_, employeeen0_.ename as ename7_1_, employeeen0_.sal as sal8_1_ from emp employeeen0_ order by employeeen0_.ename asc, employeeen0_.sal desc limit ?"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-students-by-id-list",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    4,\r\n    5\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/delete/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"delete",
+						"students"
+					]
+				},
+				"description": "* data.jpa.controller.StudentController\r\n* deleteStudentEntityListByIdList"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

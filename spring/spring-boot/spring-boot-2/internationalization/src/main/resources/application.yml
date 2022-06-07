@@ -1,0 +1,9 @@
+server.port: 9000
+
+# logging properties
+logging:
+  level.org.springframework: debug
+  pattern.console: '%d{yyyy-MM-dd HH:mm:ss} %-5level %C:%L - %m%n'
+  file: logs/app.log
+
+spring.messages.basename: messages

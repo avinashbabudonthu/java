@@ -1,0 +1,14 @@
+spring:
+  datasource.jndi-name: 'java:comp/env/jdbc/MyDB'
+  jpa.show-sql: true
+  profiles.active:    - default
+    
+---
+spring.profiles: default
+first.name: 'jill'
+---
+spring.profiles: localhost
+first.name: 'jim'
+---
+spring.profiles: test
+first.name: 'jack'

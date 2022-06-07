@@ -1,0 +1,47 @@
+{
+	"variables": [],
+	"info": {
+		"name": "request-header-params-bean",
+		"_postman_id": "6a3500b2-6abb-78d5-b230-f0f71b1427c1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "request-params",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9000/request-params?reqParam1=10&reqParam2=jack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"request-params"
+					],
+					"query": [
+						{
+							"key": "reqParam1",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "reqParam2",
+							"value": "jack",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

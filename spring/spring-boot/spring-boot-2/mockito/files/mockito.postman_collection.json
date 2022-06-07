@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mockito",
+		"_postman_id": "90dd4622-1839-8356-d976-ab913c19b584",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "students",
+			"request": {
+				"url": "http://localhost:9000/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

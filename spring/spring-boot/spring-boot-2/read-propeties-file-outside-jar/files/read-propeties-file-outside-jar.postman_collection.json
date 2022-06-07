@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "read-propeties-file-outside-jar",
+		"_postman_id": "3621322c-b37d-7376-ce80-f06bb652dc33",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app-desc",
+			"request": {
+				"url": "http://localhost:9000/app-desc",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,45 @@
+spring.profiles.active: localhost
+# spring.profiles.active: test
+# spring.profiles.active: docker-container-mysql-localhost
+server.port: 9000
+
+---
+spring.profiles: localhost
+
+spring:  jpa:
+    hibernate.ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/practice?useSSL=false&verifyServerCertificate=false&noAccessToProcedureBodies=true
+    username: practice_admin
+    password: practice_admin
+
+---
+spring.profiles: test
+
+spring:
+  jpa:
+    hibernate.ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://test.rds.amazonaws.com:3306/test?useSSL=false&verifyServerCertificate=false&noAccessToProcedureBodies=true
+    username: 
+    password: 
+    
+---
+spring.profiles: docker-container-mysql-localhost
+
+spring:
+  jpa:
+    hibernate.ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://host.docker.internal:3306/practice?useSSL=false&verifyServerCertificate=false&noAccessToProcedureBodies=true
+    username: practice_admin
+    password: practice_admin

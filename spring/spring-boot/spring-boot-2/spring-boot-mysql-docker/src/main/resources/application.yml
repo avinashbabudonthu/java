@@ -1,0 +1,9 @@
+server.port: 9000 
+
+spring:  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver    url: jdbc:mysql://mysql-docker:3306/practice
+    username: practice_admin
+    password: practice_admin
+  jpa:    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate.ddl-auto: none ## allowed values - create, create-drop, update, none

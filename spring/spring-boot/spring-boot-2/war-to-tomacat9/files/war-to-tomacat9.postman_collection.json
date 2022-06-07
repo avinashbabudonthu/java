@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "ccda813b-3ebd-4481-9b51-7cd1e65c35d7",
+		"name": "war-to-tomacat9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/war-to-tomacat9/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"war-to-tomacat9",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/war-to-tomacat9/emps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"war-to-tomacat9",
+						"emps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "first-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/war-to-tomacat9/first-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"war-to-tomacat9",
+						"first-name"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

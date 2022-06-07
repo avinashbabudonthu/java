@@ -1,0 +1,58 @@
+buildscript{
+    ext{
+        springBootVersion = "2.1.8.RELEASE"
+    }
+
+    repositories{
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies{
+        classpath(
+            "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+        )
+    }
+}
+plugins {
+    id "java"
+    id "maven"
+    id "org.sonarqube" version "2.7.1"
+}
+
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-test'
+}
+
+group = 'spring.boot.sonarqube'
+version = '1.0'
+description = 'spring-boot-sonarqube'
+sourceCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+sonarqube{
+    properties{
+        property "sonar.projectKey", "Spring-Boot-2-Gradle-Sonarqube"
+        property "sonar.projectName", "Spring-Boot-2-Gradle-Sonarqube"
+        property "sonar.projectVersion", "1.0"
+        property "sonar.java.source", "1.8"
+        property "sonar.projectDescription", "Spring Boot 2 Gradle Sonarqube"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.host.url", "http://localhost:9000"
+    }
+}

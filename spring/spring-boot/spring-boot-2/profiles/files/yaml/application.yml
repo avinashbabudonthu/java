@@ -1,0 +1,13 @@
+spring.profiles.active: dev
+---
+spring.profiles: default
+server.port: 9090
+---
+spring.profiles: dev
+server.port: 9091
+---
+spring.profiles: test
+server.port: 9092
+---
+spring.profiles: prod
+server.port: 9093

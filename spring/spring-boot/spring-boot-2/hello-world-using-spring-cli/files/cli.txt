@@ -1,0 +1,1 @@
+spring init --dependencies=web,data-jpa hello-world-using-spring-cli

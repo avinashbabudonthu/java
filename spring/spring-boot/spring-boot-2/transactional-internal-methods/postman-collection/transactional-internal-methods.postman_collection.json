@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "252c27e4-4c4b-4d90-8b19-0a8a552a879d",
+		"name": "transactional-internal-methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "actuator",
+			"item": [
+				{
+					"name": "actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}/actuator",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}/actuator/health",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "save-and-commit-each-student-model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/save-and-commit-each-student-model",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"save-and-commit-each-student-model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-and-commit-all-student-models",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/save-and-commit-all-student-models",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"save-and-commit-all-student-models"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

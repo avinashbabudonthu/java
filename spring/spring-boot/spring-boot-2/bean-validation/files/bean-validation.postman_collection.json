@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bean-validation",
+		"_postman_id": "13e45717-8d05-80f0-37a2-3b05de7fef0f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save-student",
+			"request": {
+				"url": "http://localhost:9090/students",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": null,\n\t\"name\": \"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

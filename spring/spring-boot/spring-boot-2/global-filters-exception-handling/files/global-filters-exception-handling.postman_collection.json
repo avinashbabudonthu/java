@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a42b0bf1-a9c6-4942-ba89-da855c512224",
+		"name": "global-filters-exception-handling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "without-header",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/app/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"app",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "with-header",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app",
+						"value": "global-filters-exception-handling",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/app/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"app",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

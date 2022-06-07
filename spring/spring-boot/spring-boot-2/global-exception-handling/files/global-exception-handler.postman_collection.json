@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "global-exception-handler",
+		"_postman_id": "48c095fa-0fb8-79c1-65f0-615ff59525ca",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "throw-exception",
+			"request": {
+				"url": "http://localhost:9090/geh/api/v1/students/0",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get-student-by-id",
+			"request": {
+				"url": "http://localhost:9090/geh/api/v1/students/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

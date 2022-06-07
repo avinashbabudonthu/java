@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "profiles",
+		"_postman_id": "aadfa823-5c9c-ae04-939e-86d0335ec607",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dev",
+			"description": "",
+			"item": [
+				{
+					"name": "health",
+					"request": {
+						"url": "http://localhost:9090/actuator/health",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "test",
+			"description": "",
+			"item": [
+				{
+					"name": "health",
+					"request": {
+						"url": "http://localhost:9091/actuator/health",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "prod",
+			"description": "",
+			"item": [
+				{
+					"name": "health",
+					"request": {
+						"url": "http://localhost:9092/actuator/health",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

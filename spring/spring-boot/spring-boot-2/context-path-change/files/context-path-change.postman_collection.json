@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "context-path-change",
+		"_postman_id": "ace47232-f177-5dca-aef1-d2bde101a172",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"url": "http://localhost:9090/context-path-change/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

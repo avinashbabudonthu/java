@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cerebro</groupId>
+    <artifactId>docker-build-push</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+
+    <name>docker-build-push</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}.${project.version}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.cerebro.App</mainClass>
+                </configuration>
+            </plugin>
+
+            <!-- Just add this to the <build><plugins> section of your POM and make changes appropriately -->
+
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.21.0</version>
+
+                <configuration>
+                    <!-- this is for windows. 2375 is docker demon port -->
+                    <!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
+                    <!--  this is for Mac and Amazon Linux -->
+                    <!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
+
+                    <verbose>true</verbose>
+
+                    <!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
+                    <!-- not needed here because give in settings.xml -->
+                    <!--<authConfig>
+                        <username>DOCKER_HUB_USERNAME</username>
+                        <password>DOCKER_HUB_PASSWORD</password>
+                    </authConfig>-->
+
+                    <images>
+                        <image>
+                            <name>avinashbabudonthu/spring-boot-2-docker-build-push-example</name>
+                            <build>
+                                <dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
+
+                                <!--copies Jar to the maven directory (uses Assembly system)-->
+                                <assembly>
+                                    <descriptorRef>artifact</descriptorRef>
+                                </assembly>
+                                <tags>
+                                    <tag>1.0.0</tag> <!-- give tag to docker image -->
+                                </tags>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+
+                <!-- To include docker image building as part of maven package goal -->
+
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+
+                 <execution>
+                     <id>myDeploy</id>
+                     <phase>deploy</phase>
+                     <goals>
+                         <goal>push</goal>
+                     </goals>
+                 </execution>
+
+             </executions>
+
+            </plugin>
+
+            <!-- add below plugin while attaching docker:push to deploy plugin -->
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

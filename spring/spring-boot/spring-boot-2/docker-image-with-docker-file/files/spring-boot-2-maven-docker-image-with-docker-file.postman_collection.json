@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-boot-2-maven-docker-image-with-docker-file",
+		"_postman_id": "56e4e09e-082c-2aa1-5ea1-0614783a50d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-all-students",
+			"request": {
+				"url": "http://localhost:9081/docker/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

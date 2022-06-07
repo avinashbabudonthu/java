@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "maven-git-commit-id-plugin",
+		"_postman_id": "6e79b5a8-c27d-c9a6-974c-5994629b6b72",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "maven-git-commit-id-version",
+			"request": {
+				"url": "http://localhost:8080/version",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

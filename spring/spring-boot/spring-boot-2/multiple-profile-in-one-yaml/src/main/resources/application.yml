@@ -1,0 +1,21 @@
+spring:
+  profiles:    active:    - prod
+
+management:  endpoints:    web:      exposure:        include:        - '*'
+  endpoint:    health:      show-details: always
+  info:    git:      mode: full
+---
+spring:  profiles: local
+server:  port: 9000
+  
+---
+spring:
+  profiles: test
+server:
+  port: 9001
+  
+---
+spring:
+  profiles: prod
+server:
+  port: 9002

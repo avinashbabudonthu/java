@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "05806923-380a-4ccc-94eb-da1aad8b4925",
+		"name": "rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "return-string",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/gets/return-string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"gets",
+						"return-string"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "return-map-as-json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/gets/return-map-as-json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"gets",
+						"return-map-as-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-object-as-json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/gets/student-object-as-json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"gets",
+						"student-object-as-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-of-students-as-json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/gets/list-of-students-as-json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"gets",
+						"list-of-students-as-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"jim\",\n\t\"cource\": \"spring boot 2\",\n\t\"joiningDate\": \"2020-03-26\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"students"
+					]
+				},
+				"description": "class: com.rest.api.controller.PostController<br/>method:saveStudent<br/>Check Location in response headers to check URI to get new student object"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

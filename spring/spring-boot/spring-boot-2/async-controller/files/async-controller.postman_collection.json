@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "async-controller",
+		"_postman_id": "3c547394-60b1-c523-0eef-378bcb51c588",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "data",
+			"request": {
+				"url": "http://localhost:9090/data",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
