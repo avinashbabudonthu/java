@@ -325,6 +325,24 @@
 * [Materials](rest-api/materials.md)
 * [Notes](rest-api/notes.md)
 ------
+# REST API Clients
+* [REST API Clients](rest-api-clients)
+## CURL
+* https://www.keycdn.com/support/popular-curl-examples
+
+## WebClient
+* Add below dependency. Refer [pom.xml](pom.xml)
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-webflux</artifactId>
+</dependency>
+```
+* [GET API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/GetControllerTest.java)
+* [POST API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/PostControllerTest.java)
+* [Mock WebClient](rest-api-clients/rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
+* https://www.callicoder.com/spring-5-reactive-webclient-webtestclient-examples/
+------
 # Sonarqube
 * [Sonarqube](sonarqube)
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
