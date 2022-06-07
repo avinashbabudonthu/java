@@ -331,7 +331,7 @@
 * https://www.keycdn.com/support/popular-curl-examples
 
 ## WebClient
-* Add below dependency. Refer [pom.xml](pom.xml)
+* Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
 ```
 <dependency>
 	<groupId>org.springframework.boot</groupId>
