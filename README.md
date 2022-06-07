@@ -348,7 +348,7 @@
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
 ------
 # Spring
-* [Spring][spring]
+* [Spring](spring)
 * [Spring Boot](spring/spring-boot)
 ------
 # UML
