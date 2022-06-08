@@ -1,16 +1,11 @@
-# List Of Projects
-* [Spring Boot 1](spring-boot-1)
-* [Spring Boot 2](spring-boot-2)
-
-# Materials
-## Pluralsight
+# Pluralsight
 * Creating Your First Spring Boot Application
 * Spring Boot Fundamentals
 * Spring Boot: Efficient Development, Configuration, and Deployment
 * Building Your First App with Spring Boot and Angular
 * Scaffolding Spring Boot and Angular Web Apps with JHipster
 
-## Othes
+# Othes
 * [Documentation](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 * [Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
 * [Installing Spring Boot](http://docs.spring.io/autorepo/docs/spring-boot/1.3.0.M1/reference/html/getting-started-installing-spring-boot.html)

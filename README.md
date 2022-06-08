@@ -349,7 +349,6 @@
 ------
 # Spring
 * [Spring](spring)
-* [Spring Boot](spring/spring-boot)
 ------
 # UML
 * [UML](uml)
