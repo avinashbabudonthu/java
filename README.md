@@ -103,6 +103,7 @@
 ------
 # Core Java
 * [Core Java](core-java)
+* [Materials](core-java/materials.md)
 
 ## Annotations
 * [Annotations](core-java/annotations)
