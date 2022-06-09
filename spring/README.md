@@ -1,3 +1,17 @@
+# Batch
+* [spring Batch](batch)
+* [Materials](batch/materials.md)
+* [Custom Item Reader](batch/custom-item-reader)
+* [Hello world](batch/hello-world)
+------
+# Cloud Stream
+* [Spring Cloud Stream](cloud-stream)
+* [Materials](cloud-stream/materials.md)
+------
+# Data Mongo
+* [Spring Data Mongo](data-mongo)
+* [Materials](data-mongo/materials.md)
+------
 # Spring Boot
 * [Spring Boot](spring/spring-boot)
 * [Materials](spring-boot/materials.md)
@@ -68,15 +82,3 @@
 * [Unit Testing](spring-boot/spring-boot-2/unit-testing)
 * [Versioning](spring-boot/spring-boot-2/versioning)
 * [War Deploy To Tomcat 9](spring-boot/spring-boot-2/war-to-tomacat9)
-------
-# Spring Core
-------
-# Spring Batch
-* [spring Batch](batch)
-* [Materials](batch/materials.md)
-* [Custom Item Reader](batch/custom-item-reader)
-* [Hello world](batch/hello-world)
-------
-# Spring Cloud Stream
-* [Spring Cloud Stream](cloud-stream)
-* [Materials](cloud-stream/materials.md)
