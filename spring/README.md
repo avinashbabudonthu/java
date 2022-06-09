@@ -76,3 +76,7 @@
 * [Materials](batch/materials.md)
 * [Custom Item Reader](batch/custom-item-reader)
 * [Hello world](batch/hello-world)
+------
+# Spring Cloud Stream
+* [Spring Cloud Stream](cloud-stream)
+* [Materials](cloud-stream/materials.md)
