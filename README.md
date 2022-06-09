@@ -105,32 +105,32 @@
 * [Core Java](core-java)
 
 ## Collections
-* [Collections](collections)
+* [Collections](core-java/collections)
 ### List Examples
-* [ArrayList](collections/src/test/java/com/list/ArrayListPractice.java)
-* [LinkedList](collections/src/test/java/com/list/LinkedListPractice.java)
-* [CopyOnWriteArrayListPractice](collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
+* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
+* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
+* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
 ### Set Examples
-* [HashSet](collections/src/test/java/com/set/HashSetPractice.java)
-* [LinkedHashSet](collections/src/test/java/com/set/LinkedHashSetPractice.java)
-* [TreeSet](collections/src/test/java/com/set/TreeSetPractice.java)
-* [EnumSet](collections/src/test/java/com/set/EnumSetPractice.java)
-* [CopyOnWriteArraySetPractice](collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
-* [ConcurrentSkipListSetPractice](collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
+* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
+* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
+* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
+* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
+* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
+* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
 ### Map Examples
-* [HashMap](collections/src/test/java/com/map/HashMapPractice.java)
-* [LinkedHashMap](collections/src/test/java/com/map/LinkedHashMapPractice.java)
-* [TreeMap](collections/src/test/java/com/map/TreeMapPractice.java)
-* [ConcurrentHashMap](collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
-* [ConcurrentSkipListMap](collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
-* [EnumMap](collections/src/test/java/com/map/EnumMapPractice.java)
-* [IdentityHashMap](collections/src/test/java/com/map/IdentityHashMapPractice.java)
-* [MapStreams](collections/src/test/java/com/map/MapStreamsPractice.java)
-* [WeakHashMap](collections/src/test/java/com/map/WeakHashMapPractice.java)
+* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
+* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
+* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
+* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
+* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
+* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
+* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
+* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
 ### Queue Examples
-* [PriorityQueuePractice](collections/src/test/java/com/queue/PriorityQueuePractice.java)
+* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
 ### Dequeue Examples
-* [ArrayDeQueuePractice](collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
+* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 
 ## Notes
 * [Annotations](core-java/notes/annotations.md)
