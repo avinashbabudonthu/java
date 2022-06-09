@@ -262,4 +262,3 @@ try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
 	* [PriorityQueuePractice Examples](src/test/java/com/queue/PriorityQueuePractice.java)
 * Dequeue Examples
 	* [ArrayDeQueuePractice Examples](src/test/java/com/dequeue/ArrayDeQueuePractice.java)
-	
