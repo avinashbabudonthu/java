@@ -91,8 +91,8 @@ public class MySubClass extends MySuperClass { ... }
 ## java.lang.annotation.Repeatable
 * Same annotation can be applied multiple times on same element. Introduced in JDK 8
 * Refer 
-	* [src/main/java/com/repeating/annotation](src/main/java/com/repeating/annotation)
-	* [BookTest](src/test/java/com/repeating/annotation/BookTest.java)
+	* [annotation](../annotations/src/main/java/com/repeating/annotation)
+	* [BookTest](../annotations/src/test/java/com/repeating/annotation/BookTest.java)
 	
 ## java.lang.annotation.Retention
 * RetentionPolicy values
@@ -110,8 +110,3 @@ public class MySubClass extends MySuperClass { ... }
 	* METHOD
 	* PARAMETER
 	* LOCAL_VARIABLE
-	
-## Custom annotation
-* Refer
-	* [src/main/java/com/custom/annotations](src/main/java/com/custom/annotations)
-	* [TableTest](src/test/java/com/custom/annotations/TableTest.java)
