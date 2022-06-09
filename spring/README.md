@@ -72,3 +72,7 @@
 # Spring Core
 ------
 # Spring Batch
+* [spring Batch](batch)
+* [Materials](batch/materials.md)
+* [Custom Item Reader](batch/custom-item-reader)
+* [Hello world](batch/hello-world)
