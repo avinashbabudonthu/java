@@ -1,8 +1,8 @@
 # Spring Boot
 * [Spring Boot](spring/spring-boot)
-* [Materials](materials.md)
-* [Notes](notes.md)
-* [Properties](properties.md)
+* [Materials](spring-boot/materials.md)
+* [Notes](spring-boot/notes.md)
+* [Properties](spring-boot/properties.md)
 ## Spring Boot 1
 * [Context Path Change](spring-boot/spring-boot-1/context-path-change)
 * [Spring Boot Data Jpa With H2 DB](spring-boot/spring-boot-1/data-jpa-h2)
