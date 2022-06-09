@@ -235,30 +235,3 @@ try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
 }
 
 ```
-
-## Examples
-* List Examples
-	* [ArrayList Examples](src/test/java/com/list/ArrayListPractice.java)
-	* [CopyOnWriteArrayList Exampels](src/test/java/com/list/CopyOnWriteArrayListPractice.java)
-	* [LinkedList Examples](src/test/java/com/list/LinkedListPractice.java)
-* Set Examples
-	* [ConcurrentSkipListSetPractice Exmaples](src/test/java/com/set/ConcurrentSkipListSetPractice.java)
-	* [CopyOnWriteArraySetPractice Exmaples](src/test/java/com/set/CopyOnWriteArraySetPractice.java)
-	* [EnumSetPractice Exmaples](src/test/java/com/set/EnumSetPractice.java)
-	* [HashSetPractice Exmaples](src/test/java/com/set/HashSetPractice.java)
-	* [LinkedHashSetPractice Exmaples](src/test/java/com/set/LinkedHashSetPractice.java)
-	* [TreeSetPractice Exmaples](src/test/java/com/set/TreeSetPractice.java)
-* Map Examples
-	* [ConcurrentHashMapPractice Examples](src/test/java/com/map/ConcurrentHashMapPractice.java)
-	* [ConcurrentSkipListMapPractice Examples](src/test/java/com/map/ConcurrentSkipListMapPractice.java)
-	* [EnumMapPractice Examples](src/test/java/com/map/EnumMapPractice.java)
-	* [HashMapPractice Examples](src/test/java/com/map/HashMapPractice.java)
-	* [IdentityHashMapPractice Examples](src/test/java/com/map/IdentityHashMapPractice.java)
-	* [LinkedHashMapPractice Examples](src/test/java/com/map/LinkedHashMapPractice.java)
-	* [MapStreamsPractice Examples](src/test/java/com/map/MapStreamsPractice.java)
-	* [TreeMapPractice Examples](src/test/java/com/map/TreeMapPractice.java)
-	* [WeakHashMapPractice Examples](src/test/java/com/map/WeakHashMapPractice.java)
-* Queue Examples
-	* [PriorityQueuePractice Examples](src/test/java/com/queue/PriorityQueuePractice.java)
-* Dequeue Examples
-	* [ArrayDeQueuePractice Examples](src/test/java/com/dequeue/ArrayDeQueuePractice.java)
