@@ -607,13 +607,11 @@ Reader.read(char[] data)
 	* To write content to file
 	* newLine() - adds new line character based on underlying OS
 * Basic Stream \
-![picture](../file-io/images/basic-streams.jpg)
+![picture](images/basic-streams.jpg)
 * Reader classes hierarchy \
-![picture](../file-io/images/reader-classes-hierarchy.jpg)
+![picture](images/reader-classes-hierarchy.jpg)
 * Stream classes hierarchy \
-![picture](../file-io/images/stream-classes-hierarchy.jpg)
-### Examples
-* [File IO Examples](../file-io/README.md)
+![picture](images/stream-classes-hierarchy.jpg)
 
 ## [Multi Threading Notes](../multi-threading-practice/notes.md)
 ## [JVM Notes](https://github.com/avinashbabudonthu/others/blob/master/jvm/notes.md)
