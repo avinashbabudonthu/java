@@ -103,7 +103,20 @@
 ------
 # Core Java
 * [Core Java](core-java)
+## Notes
+* [Annotations](core-java/notes/annotations.md)
+* [Basics](core-java/notes/basics.md)
+* [Collections](core-java/notes/collections.md)
+* [Generics](core-java/notes/generics.md)
+* [Java 8 Notes](core-java/notes/java-8-notes.md)
+* [Multi threading](core-java/notes/multi-threading.md)
+* [Reactive Programming](core-java/notes/reactive-programming.md)
+* [Serialization](core-java/notes/serialization.md)
+* [Strings](core-java/notes/strings.md)
+
+## Practice
 * [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+
 ------
 # Design Patterns
 * [Design Patterns](design-patterns)
