@@ -381,7 +381,8 @@
 * [REST API Clients](rest-api-clients)
 ## CURL
 * https://www.keycdn.com/support/popular-curl-examples
-
+## Rest Template
+* [Rest Template](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md)
 ## WebClient
 * Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
 ```
