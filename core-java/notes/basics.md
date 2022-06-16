@@ -400,7 +400,7 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* if jvm do the type casting with our specification
 
 ## String
-* Refer [Strings Notes](../strings-practice/notes.md)
+* Refer [Strings Notes](strings.md)
 
 ## Arrays
 * Group of same data type values
