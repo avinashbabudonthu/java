@@ -407,6 +407,15 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 * Fixed size
 * Index start with `0` - zero
 * Refer array examples - [ArraysPractice.java](../collections/src/test/java/com/util/ArraysPractice.java)
+	* parallelSort
+	* parallelSetAll
+	* setAll
+	* parallelPrefix
+	* deepEquals
+	* hashCode
+	* deepHashCode
+	* fill
+	* deepToString
 
 ## Loops
 * while loop
@@ -479,7 +488,7 @@ for(int i: list){
 	* Interface `java.io.Closeable extends java.lang.AutoCloseable`
 
 ### Examples
-* [TryWithResource.java](../basics/src/test/java/com/exception/TryWithResource.java)
+* [TryWithResource.java](../basics/src/main/java/com/java/exceptions/TryWithResource.java)
 
 ## References
 * Different classes in java.lang.ref package
