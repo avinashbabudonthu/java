@@ -21,8 +21,6 @@
 * [String Joiner Examples](../basics/src/test/java/com/java/strings/StringJoinerPractice.java)
 
 ## String formatter
-* Refer - [StringFormatPractice.java](src/test/java/com/string/practice/StringFormatPractice.java)
-
 Format Specifier    | Description   | Output
 --------------------|---------------|----------------------
 %a | floating point (except BigDecimal) | Returns Hex output of floating point number
