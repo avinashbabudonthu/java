@@ -549,7 +549,7 @@ PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(
 * Reference of instance will be appended to ReferenceQueue and you can use it to perform any clean-up by polling ReferenceQueue
 
 ### Examples
-* [ReferencesPractice.java](../basics/src/test/java/com/references/ReferencesPractice.java)
+* [ReferencesPractice.java](../basics/src/main/java/com/java/references/ReferencesPractice.java)
 
 ## File IO
 * stream: continuous flow
