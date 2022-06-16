@@ -48,4 +48,4 @@ space | leave space for positive number |
 * The HTML tags can be removed from a given string by using replaceAll() method of String class
 * We can remove the HTML tags from a given string by using a regular expression
 * After removing the HTML tags from a string, it will return a string as normal text
-* Refer `removeHTMLFromString` method in [String Joiner Examples](../basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* Refer `removeHTMLFromString` method in [String Examples](../basics/src/main/java/com/java/strings/StringsPractice.java)
