@@ -16,9 +16,9 @@
 		* Optionally starting with a supplied prefix and ending with a supplied suffix
 	
 ## Examples
-* [String Examples](../basics/src/test/java/com/java/strings/StringsPractice.java)
-* [String Format Examples](../basics/src/test/java/com/java/strings/StringFormatPractice.java)
-* [String Joiner Examples](../basics/src/test/java/com/java/strings/StringJoinerPractice.java)
+* [String Examples](../basics/src/main/java/com/java/strings/StringsPractice.java)
+* [String Format Examples](../basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [String Joiner Examples](../basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 
 ## String formatter
 Format Specifier    | Description   | Output
