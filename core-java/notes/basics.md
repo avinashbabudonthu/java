@@ -318,8 +318,8 @@ public class Student extends Person{
 * From Java 8 interface can have
 	* Abstract methods
 	* Constants
-	* static methods (methods declared with default keyword)
-	* default methods (methods declared with static keyword)
+	* static methods (methods declared with static keyword)
+	* default methods (methods declared with default keyword)
 * Declare interface
 ```
 public interface InterfaceWithMethod {
