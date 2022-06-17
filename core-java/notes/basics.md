@@ -624,8 +624,10 @@ Reader.read(char[] data)
 * Stream classes hierarchy \
 ![picture](images/stream-classes-hierarchy.jpg)
 
-## [Multi Threading Notes](../multi-threading-practice/notes.md)
-## [JVM Notes](https://github.com/avinashbabudonthu/others/blob/master/jvm/notes.md)
+## Multi Threading
+* [Notes](multi-threading.md)
+## JVM 
+* [Notes](../../jvm/notes.md)
 
 ## Big Decimal
 * The BigDecimal class provides operation for arithmetic, comparison, hashing, rounding, manipulation and format conversion
