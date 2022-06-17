@@ -601,12 +601,14 @@ Reader.read(char[] data)
 	* StringReader
 	* CharArrayReader
 	* PipedReader
+	* BufferedReader
 * Writer implementations
 	* OutputStreamWriter
 		* FileWriter
 	* StringWriter
 	* CharArrayWriter
 	* PipedWriter
+	* BufferedWriter
 * line break in unix - `\n`
 * line break in windows - ` \r\n`
 * BufferedReader
