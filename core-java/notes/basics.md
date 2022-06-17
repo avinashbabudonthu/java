@@ -626,7 +626,9 @@ Reader.read(char[] data)
 
 ## Multi Threading
 * [Notes](multi-threading.md)
-## JVM 
+## JVM
+* [JVM](../../jvm)
+* [Materials](../../jvm/materials.md)
 * [Notes](../../jvm/notes.md)
 
 ## Big Decimal
