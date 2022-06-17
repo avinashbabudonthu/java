@@ -1,3 +1,6 @@
+# Oracle
+* [Java Platform, Standard Edition Documentation](https://docs.oracle.com/en/java/javase/index.html)
+
 # Pluralsight
 * Java Fundamentals: The Java Language
 * Java Fundamentals: Object-oriented Design 
