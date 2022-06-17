@@ -134,7 +134,7 @@ public void getStudent() {
 ```
 
 # With path variables
-##API
+## API
 ```
 @GetMapping(value = "/students/{email}/{password}", produces = APPLICATION_JSON_VALUE)
 public Student getStudent2(@PathVariable("email") String email, @PathVariable("password") String password) {
