@@ -624,6 +624,9 @@ Reader.read(char[] data)
 * Stream classes hierarchy \
 ![picture](images/stream-classes-hierarchy.jpg)
 
+### File IO Examples
+* [Read Input From Key board](../basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+
 ## Multi Threading
 * [Notes](multi-threading.md)
 ## JVM
