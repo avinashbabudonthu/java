@@ -152,6 +152,7 @@
 * [Notes](core-java/notes/generics.md)
 
 ## Java 8
+* [Materials](core-java/java-8/materials.md)
 * [Notes](core-java/notes/java-8-notes.md)
 
 ## Multi threading
