@@ -103,10 +103,12 @@
 ------
 # Core Java
 * [Core Java](core-java)
+* [Basics](core-java/notes/basics.md)
 * [Materials](core-java/materials.md)
 
 ## Annotations
 * [Annotations](core-java/annotations)
+* [Annotations](core-java/notes/annotations.md)
 * Custom annotation
 	* [custom/annotations](core-java/annotations/src/main/java/com/custom/annotations)
 	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
@@ -116,6 +118,7 @@
 
 ## Collections
 * [Collections](core-java/collections)
+* [Collections](core-java/notes/collections.md)
 ### List Examples
 * [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
 * [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
@@ -142,15 +145,22 @@
 ### Dequeue Examples
 * [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 
-## Notes
-* [Annotations](core-java/notes/annotations.md)
-* [Basics](core-java/notes/basics.md)
-* [Collections](core-java/notes/collections.md)
+## Generics
 * [Generics](core-java/notes/generics.md)
+
+## Java 8
 * [Java 8 Notes](core-java/notes/java-8-notes.md)
+
+## Multi threading
 * [Multi threading](core-java/notes/multi-threading.md)
+
+## Reactive Programming
 * [Reactive Programming](core-java/notes/reactive-programming.md)
+
+## Serialization
 * [Serialization](core-java/notes/serialization.md)
+
+## Strings
 * [Strings](core-java/notes/strings.md)
 
 ## Practice
