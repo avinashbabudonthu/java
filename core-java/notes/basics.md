@@ -625,6 +625,8 @@ Reader.read(char[] data)
 ![picture](images/stream-classes-hierarchy.jpg)
 
 ### File IO Examples
+* [File IO Practice](../basics/src/main/java/com/java/io/FileIOPractice.java)
+* [Random Access File Practice](../basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [Read Input From Key board](../basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 
 ## Multi Threading
