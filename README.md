@@ -103,12 +103,15 @@
 ------
 # Core Java
 * [Core Java](core-java)
-* [Basics](core-java/notes/basics.md)
 * [Materials](core-java/materials.md)
+* [Notes](core-java/notes/basics.md)
+
+## Examples
+* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
 
 ## Annotations
 * [Annotations](core-java/annotations)
-* [Annotations](core-java/notes/annotations.md)
+* [Notes](core-java/notes/annotations.md)
 * Custom annotation
 	* [custom/annotations](core-java/annotations/src/main/java/com/custom/annotations)
 	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
@@ -118,7 +121,7 @@
 
 ## Collections
 * [Collections](core-java/collections)
-* [Collections](core-java/notes/collections.md)
+* [Notes](core-java/notes/collections.md)
 ### List Examples
 * [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
 * [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
@@ -146,25 +149,22 @@
 * [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 
 ## Generics
-* [Generics](core-java/notes/generics.md)
+* [Notes](core-java/notes/generics.md)
 
 ## Java 8
-* [Java 8 Notes](core-java/notes/java-8-notes.md)
+* [Notes](core-java/notes/java-8-notes.md)
 
 ## Multi threading
-* [Multi threading](core-java/notes/multi-threading.md)
+* [Notes](core-java/notes/multi-threading.md)
 
 ## Reactive Programming
-* [Reactive Programming](core-java/notes/reactive-programming.md)
+* [Notes](core-java/notes/reactive-programming.md)
 
 ## Serialization
-* [Serialization](core-java/notes/serialization.md)
+* [Notes](core-java/notes/serialization.md)
 
 ## Strings
-* [Strings](core-java/notes/strings.md)
-
-## Practice
-* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+* [Notes](core-java/notes/strings.md)
 
 ------
 # Design Patterns
