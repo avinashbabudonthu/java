@@ -636,7 +636,7 @@ Reader.read(char[] data)
 * This method can handle very small and very big floating point numbers with great precision
 * In java, BigDecimal consists of a random precision integer scale and a 32-bit integer scale. If positive or zero, the scale is the number of digits to the right of the decimal point
 * If less than zero, the unscaled value of the number is multiplied by ten to the power of the negation of the scale(10^(-scale))
-* [BigDecimalPractice](../basics/src/test/java/com/cerebo/java/math/BigDecimalPractice.java)
+* [Big Decimal Practice](../basics/src/main/java/com/java/math/BigDecimalPractice.java)
 
 # What is the cyclomatic complexity of an application?
 * Quantitative measure of the number of linearly independent paths through program source code
