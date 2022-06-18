@@ -154,6 +154,14 @@
 ## Java 8
 * [Materials](core-java/java-8/materials.md)
 * [Notes](core-java/notes/java-8-notes.md)
+### Examples
+* [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
+* [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
+* [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
+* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/practice/BiFunctionPractice.java)
+* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/practice/SupplierPractice.java)
+* [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
+* [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
 
 ## Multi threading
 * [Notes](core-java/notes/multi-threading.md)
