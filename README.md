@@ -106,8 +106,11 @@
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
 
-## Examples
+## java.lang package
 * [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+* [java.lang.Runtime](core-java/notes/runtime.md)
+	* [ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
+	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
 
 ## Annotations
 * [Annotations](core-java/annotations)
