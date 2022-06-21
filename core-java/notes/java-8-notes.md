@@ -28,23 +28,26 @@ public class RepeatingAnnotations {
 @Target( ElementType.TYPE )
 @Retention( RetentionPolicy.RUNTIME )
 public @interface Filters {
-Filter[] value();
+	Filter[] value();
 }
+
 @Target( ElementType.TYPE )
 @Retention( RetentionPolicy.RUNTIME )
 @Repeatable( Filters.class )
 public @interface Filter {
-String value();
+	String value();
 };
+
 @Filter( "filter1" )
 @Filter( "filter2" )
 public interface Filterable {
 }
+
 public static void main(String[] args) {
-for( Filter filter: Filterable.class.getAnnotationsByType( Filter.class ) ) {
-System.out.println( filter.value() );
-}
-}
+	for( Filter filter: Filterable.class.getAnnotationsByType( Filter.class ) ) {
+		System.out.println( filter.value() );
+	}
+   }
 }
 ```
 * As we can see, there is an annotation class `Filter` annotated with `@Repeatable(Filters.class)`. The `Filters` is just a holder of
@@ -65,20 +68,22 @@ keeping the code cleaner. Let us take a look on one of the examples
 ```
 public class Value< T > {
 public static< T > T defaultValue() {
-return null;
+ return null;
 }
+
 public T getOrDefault( T value, T defaultValue ) {
-return ( value != null ) ? value : defaultValue;
-}
+ return ( value != null ) ? value : defaultValue;
+ }
+ 
 }
 ```
 * And here is the usage of Value< String > type
 ```
 public class TypeInference {
 public static void main(String[] args) {
-final Value< String > value = new Value<>();
-value.getOrDefault( "22", Value.defaultValue() );
-}
+    final Value< String > value = new Value<>();
+    value.getOrDefault( "22", Value.defaultValue() );
+  }
 }
 ```
 * The type parameter of Value.defaultValue() is inferred and is not required to be provided. In Java 7, the same example will not
@@ -100,15 +105,17 @@ public class Annotations {
 @Target( { ElementType.TYPE_USE, ElementType.TYPE_PARAMETER } )
 public @interface NonEmpty {
 }
+
 public static class Holder< @NonEmpty T > extends @NonEmpty Object {
-public void method() throws @NonEmpty Exception {
+  public void method() throws @NonEmpty Exception {
+  }
 }
-}
+
 @SuppressWarnings( "unused" )
 public static void main(String[] args) {
-final Holder< String > holder = new @NonEmpty Holder< String >();
-@NonEmpty Collection< @NonEmpty String > strings = new ArrayList<>();
-}
+  final Holder< String > holder = new @NonEmpty Holder< String >();
+  @NonEmpty Collection< @NonEmpty String > strings = new ArrayList<>();
+ }
 }
 ```
 * The ElementType.TYPE_USE and ElementType.TYPE_PARAMETER are two new element types to describe the applicable
@@ -197,11 +204,11 @@ public class ParameterNames {
 <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
-	<version>3.1</version>
+	<version>3.8.1</version>
 	<configuration>
-		<compilerArgument>-parameters</compilerArgument>
-		<source>1.8</source>
-		<target>1.8</target>
+	    <source>${java}</source>
+	    <target>${java}</target>
+	    <compilerArgument>-parameters</compilerArgument>
 	</configuration>
 </plugin>
 ```
