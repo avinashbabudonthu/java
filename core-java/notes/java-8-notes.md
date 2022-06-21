@@ -206,8 +206,8 @@ public class ParameterNames {
 	<artifactId>maven-compiler-plugin</artifactId>
 	<version>3.8.1</version>
 	<configuration>
-	    <source>${java}</source>
-	    <target>${java}</target>
+	    <source>1.8</source>
+	    <target>1.8</target>
 	    <compilerArgument>-parameters</compilerArgument>
 	</configuration>
 </plugin>
