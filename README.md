@@ -296,8 +296,10 @@
 * [Materials](jackson-json/materials.md)
 * [Notes](jackson-json/notes.md)
 ## Examples
+* [Dependencies](jackson-json/notes.md#dependencies)
 * [Ignore Unknow Properties](jackson-json/notes.md#ignore-unknow-properties)
 * [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
+* [JSON file to object](jackson-json/notes.md#json-file-to-object)
 ------
 # JBoss
 * [JBoss](jboss)
