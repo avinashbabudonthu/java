@@ -147,3 +147,7 @@ public class JSONToObjects {
     }
 }
 ```
+* Output
+```
+Employee{name='jack', designation='SE'}
+```
