@@ -294,6 +294,10 @@
 * [Jackson JSON](jackson-json)
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
 * [Materials](jackson-json/materials.md)
+* [Notes](jackson-json/notes.md)
+## Examples
+* [Ignore Unknow Properties](jackson-json/notes.md#ignore-unknow-properties)
+* [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
 ------
 # JBoss
 * [JBoss](jboss)
