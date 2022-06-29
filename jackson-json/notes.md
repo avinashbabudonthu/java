@@ -1,3 +1,24 @@
+# Dependencies
+* Jackon dependencies - check for latest version
+```
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-core</artifactId>
+	<version>2.10.0</version>
+</dependency>
+
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-annotations</artifactId>
+	<version>2.10.0</version>
+</dependency>
+
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.10.0</version>
+</dependency>
+```
 # Ignore Unknow Properties
 * Use `com.fasterxml.jackson.annotation.JsonIgnoreProperties`
 * Use at class level
@@ -56,5 +77,73 @@ class Student {
 {
 "rollNo" : 11,
 "name" : "Mark"
+}
+```
+
+# JSON file to object
+* Employee json
+```
+{
+  "name": "jack",
+  "designation": "SE"
+}
+```
+* Employee class
+```
+package com.java;
+
+public class Employee {
+
+    private String name;
+    private String designation;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", designation='" + designation + '\'' +
+                '}';
+    }
+}
+```
+* Main method
+```
+package com.java;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Test;
+
+import java.net.URL;
+
+public class JSONToObjects {
+
+    @Test
+    public void jsonFileToObject(){
+        final ObjectMapper objectMapper = new ObjectMapper();
+        Employee employee = null;
+        try {
+            URL url = getClass().getClassLoader().getResource("employee.json");
+            employee = objectMapper.readValue(url, Employee.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(employee);
+    }
 }
 ```
