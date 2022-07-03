@@ -401,6 +401,7 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 
 ## String
 * Refer [Strings Notes](strings.md)
+* [String Examples](../basics/src/main/java/com/java/strings/StringsPractice.java)
 
 ## Arrays
 * Group of same data type values
