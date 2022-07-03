@@ -402,6 +402,8 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 ## String
 * Refer [Strings Notes](strings.md)
 * [String Examples](../basics/src/main/java/com/java/strings/StringsPractice.java)
+* [String Format Examples](../basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [String Joiner Examples](../basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 
 ## Arrays
 * Group of same data type values
