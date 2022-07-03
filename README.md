@@ -96,6 +96,12 @@
 ------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
+* [LeetCode](https://leetcode.com/)
+* Kaggle
+* CodeChef
+* Topcoder
+* HackerEarth
+* Code Jam - Google's Coding Competitions
 ------
 # Concourse
 * [Concourse](concourse)
