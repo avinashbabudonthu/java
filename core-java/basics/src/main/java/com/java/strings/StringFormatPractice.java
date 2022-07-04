@@ -71,4 +71,25 @@ public class StringFormatPractice {
 		// finalString: Welcome to Java world. Visit Cerebro (URL - https://cerebroap.herokuapp.com/) for more details.
 		System.out.println("finalString: " + finalString);
 	}
+	
+	/**
+	     * To use (%) percentage symbol in String.format we have to use %%(double percentage) as escape character
+	     *
+	     * Input:
+	     * Ana got %s% percentage
+	     * Output:
+	     * java.util.UnknownFormatConversionException
+	     *
+	     * Input:
+	     * Ana got %s%% percentage
+	     * Output:
+	     * Ana got 90% percentage
+	     *
+	     */
+	    @Test
+	    public void format2(){
+		String str2 = "Ana got %s%% percentage";
+		String result = String.format(str2, "90");
+		System.out.println(result);
+	    }
 }
