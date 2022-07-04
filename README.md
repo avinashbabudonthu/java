@@ -160,6 +160,18 @@
 ## Generics
 * [Notes](core-java/notes/generics.md)
 
+## Multi threading
+* [Notes](core-java/notes/multi-threading.md)
+
+## Reactive Programming
+* [Notes](core-java/notes/reactive-programming.md)
+
+## Serialization
+* [Notes](core-java/notes/serialization.md)
+
+## Strings
+* [Notes](core-java/notes/strings.md)
+
 ## Java 8
 * [Materials](core-java/java-8/materials.md)
 * [Notes](core-java/notes/java-8-notes.md)
@@ -172,17 +184,10 @@
 * [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
 * [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
 
-## Multi threading
-* [Notes](core-java/notes/multi-threading.md)
-
-## Reactive Programming
-* [Notes](core-java/notes/reactive-programming.md)
-
-## Serialization
-* [Notes](core-java/notes/serialization.md)
-
-## Strings
-* [Notes](core-java/notes/strings.md)
+## Java 9
+* [Materials](core-java/java-9/materials.md)
+* [Java 9 as zip](https://jdk.java.net/java-se-ri/9)
+* Udemy - What's New in Java 9 - Modules and More!
 
 ------
 # Design Patterns
