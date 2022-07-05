@@ -186,8 +186,7 @@
 
 ## Java 9
 * [Materials](core-java/java-9/materials.md)
-* [Java 9 as zip](https://jdk.java.net/java-se-ri/9)
-* Udemy - What's New in Java 9 - Modules and More!
+* [Notes](core-java/java-9/notes.md)
 
 ------
 # Design Patterns

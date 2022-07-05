@@ -8,6 +8,12 @@
 * [Spring Cloud Stream](cloud-stream)
 * [Materials](cloud-stream/materials.md)
 ------
+# Core
+* [Dependency injection using XML](core/dependency-injection-xml)
+* [Dependency injection using annotations](core/dependency-injection-annotations)
+* [Dependency injection using java config](core/dependency-injection-java-config)
+* [Materials](core/materials.md)
+------
 # Data Mongo
 * [Spring Data Mongo](data-mongo)
 * [Materials](data-mongo/materials.md)

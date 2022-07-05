@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="student1" class="basic.constructor.injection.Student" p:id="1" p:name="jill" />
+	
+	<bean name="studentRepositoryImpl" class="basic.constructor.injection.StudentRepositoryImpl">
+		<constructor-arg index="0" ref="student1" />
+	</bean>
+	
+	<bean name="studentServiceImpl" class="basic.constructor.injection.StudentServiceImpl">
+		<constructor-arg index="0" ref="studentRepositoryImpl" />
+	</bean>
+
+</beans>

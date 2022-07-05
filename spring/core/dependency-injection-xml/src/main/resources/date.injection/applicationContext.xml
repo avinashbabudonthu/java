@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Student class date configuration using SimpleDateFormat -->
+	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="yyyy-MM-dd" />
+	</bean>
+	
+	<bean name="student1" class="date.injection.Student" p:id="1" p:name="jill">
+		<property name="joiningDate">
+			<bean factory-bean="dateFormat" factory-method="parse">
+				<constructor-arg value="2019-09-26" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean name="studentRepositoryImpl" class="date.injection.StudentRepositoryImpl" p:student-ref="student1" />
+	
+	<bean name="studentServiceImpl" class="date.injection.StudentServiceImpl" p:studentRepository-ref="studentRepositoryImpl" />
+
+	<!-- Employee class date configuration using CustomDateEditor -->
+	<!-- This works from spring 4.0.0x -->
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="propertyEditorRegistrars">
+			<list>
+				<bean class="date.injection.CustomDateEditorRegistrar" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="employee1" class="date.injection.Employee" p:id="1" p:name="jim" p:joiningDate="27-09-2019" />
+	
+	<bean name="employeeRepositoryImpl" class="date.injection.EmployeeRepositoryImpl" p:employee-ref="employee1" />
+	
+	<bean name="employeeServiceImpl" class="date.injection.EmployeeServiceImpl" p:employeeRepository-ref="employeeRepositoryImpl" />
+</beans>

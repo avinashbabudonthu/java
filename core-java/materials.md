@@ -26,7 +26,6 @@
 * Programming with Dates and Times in Java 8
 
 # Udemy
-* What's New in Java 9 - Modules and More!
 * Java Programming Masterclass covering Java 11 & Java 17
 * Java Interview Guide : 200+ Interview Questions and Answers
 
