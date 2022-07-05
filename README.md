@@ -185,7 +185,7 @@
 * [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
 
 ## Java 9
-* [Java 9](java-9)
+* [Java 9](core-java/java-9)
 * [Materials](core-java/java-9/materials.md)
 * [Notes](core-java/java-9/notes.md)
 
