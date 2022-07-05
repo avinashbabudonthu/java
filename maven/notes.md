@@ -603,14 +603,25 @@ test				  | test			| 	 			  | test			|
 <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
-	<version>3.8.0</version>
+	<version>3.8.1</version>
 	<configuration>
 		<release>11</release>
 	</configuration>
 </plugin>
 ```
+* For Java 9
+```
+<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<version>3.8.1</version>
+	<configuration>
+		<release>9</release>
+	</configuration>
+</plugin>
+```
 
-## maven-surefire-plugin
+## Maven Surefire Plugin
 * Java 11 - surefire plugin we add an additional argument `--illegal-access=permit` to allow all reflection access for third party libraries
 ```
 <plugin>

@@ -390,6 +390,13 @@
 * [Installation](maven/installation.md)
 * [Materials](maven/materials.md)
 * [Notes](maven/notes.md)
+	* [Maven Pull from remote repository - repositories tag](maven/notes.md#maven-pull-from-remote-repository---repositories-tag)
+	* [Maven Push to remote repository - distributionManagement tag](maven/notes.md#maven-push-to-remote-repository---distributionmanagement-tag)
+	* [Maven compiler plugin](maven/notes.md#maven-compile-plugin)
+	* [Maven Spring Boot Plugin](maven/notes.md#maven-spring-boot-plugin)
+	* [Maven Execute Exec Plugin](maven/notes.md#maven-execute-exec-plugin)
+	* [Skip Test Cases](maven/notes.md#skip-test-cases)
+	* [Maven Surefire Plugin](maven/notes.md#maven-surefire-plugin)
 * [Sample pom xml file](maven/sample_pom.xml)
 ------
 # Open CSV
