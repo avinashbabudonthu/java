@@ -1,6 +1,15 @@
 # Udemy
 * Learn Java Functional Programming with Lambdas & Streams
 
+# Pluralsight
+* What's New in Java 8 
+* From Collections to Streams in Java 8 Using Lambda Expressions 
+* Reactive Programming in Java 8 With RxJava 
+* Streams, Collectors, and Optionals for Data Processing in Java 8 
+* Reactive programming in Java 8
+* Reactive Programming in Java 8 With RxJava
+* Programming with Dates and Times in Java 8
+
 # Box
 * PDFs in `core-java/java-8`
   * Java-8-Features
