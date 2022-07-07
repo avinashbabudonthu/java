@@ -121,6 +121,8 @@
 	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
 * Strings
 	* [Notes](core-java/notes/strings.md)
+* Runtime.Version class
+	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
 
 ## Annotations
 * [Annotations](core-java/annotations)
