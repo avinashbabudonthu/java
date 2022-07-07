@@ -113,10 +113,14 @@
 * [Notes](core-java/notes/basics.md)
 
 ## java.lang package
-* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
-* [java.lang.Runtime](core-java/notes/runtime.md)
+* Integer class
+	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+* Runtime class
+	* [java.lang.Runtime](core-java/notes/runtime.md)
 	* [ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
 	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
+* Strings
+	* [Notes](core-java/notes/strings.md)
 
 ## Annotations
 * [Annotations](core-java/annotations)
@@ -169,11 +173,7 @@
 ## Serialization
 * [Notes](core-java/notes/serialization.md)
 
-## Strings
-* [Notes](core-java/notes/strings.md)
-
 ## Java 8
-* [Materials](core-java/java-8/materials.md)
 * [Notes](core-java/notes/java-8-notes.md)
 ### Examples
 * [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
@@ -186,7 +186,6 @@
 
 ## Java 9
 * [Java 9](core-java/java-9)
-* [Materials](core-java/java-9/materials.md)
 * [Notes](core-java/java-9/notes.md)
 
 ------
