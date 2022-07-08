@@ -101,12 +101,12 @@ public class MySubClass extends MySuperClass { ... }
 	* java.lang.annotation.RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment
 	
 ## java.lang.annotation.Target
-* java.lang.annotation.ElementType
-	* TYPE (class or field or method)
-	* ANNOTATION_TYPE (custom annotation type)
-	* PACKAGE
-	* CONSTRUCTOR
-	* FIELD
-	* METHOD
-	* PARAMETER
-	* LOCAL_VARIABLE
+* `@java.lang.annotation.Target` annotation marks another annotation to restrict what kind of Java elements the annotation can be applied to. A target annotation specifies one of the following element types as its value:
+* ElementType.ANNOTATION_TYPE can be applied to an annotation type.
+* ElementType.CONSTRUCTOR can be applied to a constructor.
+* ElementType.FIELD can be applied to a field or property.
+* ElementType.LOCAL_VARIABLE can be applied to a local variable.
+* ElementType.METHOD can be applied to a method-level annotation.
+* ElementType.PACKAGE can be applied to a package declaration.
+* ElementType.PARAMETER can be applied to the parameters of a method.
+* ElementType.TYPE can be applied to any element of a class.
