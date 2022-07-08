@@ -35,23 +35,23 @@ public class TestClass{
 ```
 
 ## Predefined annotation
-* Annotations in java.lang package
-	* Depricated
-	* Override
-	* SafeVarargs
-	* SuppressWarnings
-	* FunctionalInterface
-		* Interface which has only one method
-		* We have to use `@java.lang.FunctionalInterface` annotation to declare functional interface
-		* Examples in java API
-			* java.lang.Runnable { run();}
-			* java.lang.Comparable{ compareTo(T o1); }
-			* java.util.Comparator { compare(T o1, T o2); }
-			* java.lang.AutoCloseable { close(); }
-			* java.io.Closeable { close(); }
-			* java.lang.reflect.InvocationHandler{ invoke(); } (used on dynamic proxies)
-			* java.util.function.Function
-			* java.util.function.Predicate
+### Annotations in java.lang package
+* Depricated
+* Override
+* SafeVarargs - @SafeVarargs annotation, when applied to a method or constructor, asserts that the code does not perform potentially unsafe operations on its varargs parameter. When this annotation type is used, unchecked warnings relating to varargs usage are suppressed
+* SuppressWarnings
+* FunctionalInterface
+	* Interface which has only one method
+	* We have to use `@java.lang.FunctionalInterface` annotation to declare functional interface
+	* Examples in java API
+		* java.lang.Runnable { run();}
+		* java.lang.Comparable{ compareTo(T o1); }
+		* java.util.Comparator { compare(T o1, T o2); }
+		* java.lang.AutoCloseable { close(); }
+		* java.io.Closeable { close(); }
+		* java.lang.reflect.InvocationHandler{ invoke(); } (used on dynamic proxies)
+		* java.util.function.Function
+		* java.util.function.Predicate
 			
 * Meta annotations
 	* Annotation that apply to other annotations
