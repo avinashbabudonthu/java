@@ -96,9 +96,9 @@ public class MySubClass extends MySuperClass { ... }
 	
 ## java.lang.annotation.Retention
 * RetentionPolicy values
-	* java.lang.annotation.RetentionPolicy.SOURCE
-	* java.lang.annotation.RetentionPolicy.CLASS
-	* java.lang.annotation.RetentionPolicy.RUNTIME
+	* java.lang.annotation.RetentionPolicy.SOURCE – The marked annotation is retained only in the source level and is ignored by the compiler
+	* java.lang.annotation.RetentionPolicy.CLASS – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM)
+	* java.lang.annotation.RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment
 	
 ## java.lang.annotation.Target
 * java.lang.annotation.ElementType
