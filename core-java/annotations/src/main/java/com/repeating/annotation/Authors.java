@@ -8,5 +8,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Authors {
-	Author[] value();
+	Author[] value(); // method name should be value() only
 }
