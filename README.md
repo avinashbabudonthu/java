@@ -127,6 +127,7 @@
 ## Annotations
 * [Annotations](core-java/annotations)
 * [Notes](core-java/notes/annotations.md)
+* [Java Docs](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
 * Custom annotation
 	* [custom/annotations](core-java/annotations/src/main/java/com/custom/annotations)
 	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
