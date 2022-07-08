@@ -110,3 +110,24 @@ public class MySubClass extends MySuperClass { ... }
 * ElementType.PACKAGE can be applied to a package declaration.
 * ElementType.PARAMETER can be applied to the parameters of a method.
 * ElementType.TYPE can be applied to any element of a class.
+
+------
+# Type Annotations and Pluggable Type Systems
+* Before the Java SE 8 release, annotations could only be applied to declarations. As of the Java SE 8 release, annotations can also be applied to any type use. This means that annotations can be used anywhere you use a type. A few examples of where types are used are class instance creation expressions (new), casts, implements clauses, and throws clauses. This form of annotation is called a type annotation
+* Examples
+* Class instance creation expression:
+```
+new @Interned MyObject();
+```
+* Type cast:
+```
+myString = (@NonNull String) str;
+```
+* implements clause:
+```
+class UnmodifiableList<T> implements @Readonly List<@Readonly T> { ... }
+```
+* Thrown exception declaration:
+```
+void monitorTemperature() throws @Critical TemperatureException { ... }
+```
