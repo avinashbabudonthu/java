@@ -116,7 +116,7 @@
 * Integer class
 	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
 * Runtime class
-	* [java.lang.Runtime](core-java/notes/runtime.md)
+	* [ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
 	* [ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
 	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
 * Strings
