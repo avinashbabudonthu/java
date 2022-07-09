@@ -448,6 +448,12 @@
 	* Setup Prometheus in Local
 	* Prometheus Queries
 ------
+# Rabbit MQ
+* [Rabbit MQ](rabbit-mq)
+* [Notes](rabbit-mq/notes.md)
+## Examples
+* [Rabbit MQ](rabbit-mq/rabbit-mq)
+------
 # REST API
 * [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)
