@@ -167,6 +167,7 @@
 ## Generics
 * [Notes](core-java/notes/generics.md)
 * [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+* [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
 
 ## Multi threading
 * [Notes](core-java/notes/multi-threading.md)
