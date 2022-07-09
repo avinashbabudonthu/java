@@ -138,6 +138,7 @@
 ## Collections
 * [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
+* [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
 ### List Examples
 * [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
 * [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
