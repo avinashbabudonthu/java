@@ -20,9 +20,12 @@
 ## Udemy
 * Java Interview Guide : 200+ Interview Questions and Answers
 
-## Others
-* [Oracle Java Platform, Standard Edition Documentation](https://docs.oracle.com/en/java/javase/index.html)
+## Java Docs
 * [Java Docs](http://docs.oracle.com/javase/tutorial/index.html)
+* [Java Platform Standard Edition 8 Documentation](https://docs.oracle.com/javase/8/docs/index.html)
+* [Oracle Java Platform, Standard Edition Documentation](https://docs.oracle.com/en/java/javase/index.html)
+
+## Others
 * [Google Java Coding Standards](http://google.github.io/styleguide/javaguide.html)
 * [Synthatic Constructor](http://javapapers.com/core-java/java-synthetic-class-method-field/)
 * [Compile java code to make it run backward compatible](http://www.javaworld.com/article/2077388/core-java/what-version-is-your-java-code.html)
