@@ -510,6 +510,13 @@
 * [Materials](visual-vm/materials.md)
 * [Notes](visual-vm/notes.md)
 ------
+# Weblogic Queue
+* [Weblogic Queue](weblogic-queue)
+## Examples
+* [Weblogic Queue](weblogic-queue/weblogic-queue)
+	* [Receive Listener](weblogic-queue/weblogic-queue/src/test/java/com/jms/ReceiverListener.java)
+	* [Send Receive Message](weblogic-queue/weblogic-queue/src/test/java/com/jms/SendReceiveMessage.java)
+------
 # Windows
 * [Windows](windows)
 * [Commands](windows/commands.md)
