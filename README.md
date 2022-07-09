@@ -360,6 +360,23 @@
 * [Materials](jvm/materials.md)
 * [Notes](jvm/notes.md)
 ------
+# Kafka
+* [Kafka](kafka)
+* [Materials](kafka/materials.md)
+* [Notes](kafka/notes.md)
+* [Kafka confluent platform setup](kafka/kafka-confluent-platform-setup.md)
+* [Kafka connect notes](kafka/kafka-connect-notes.md)
+* [Commands](kafka/commands.md)
+## Example
+* [Deserialization Error Handling Spring Boot](kafka/deserialization-error-handling-spring-boot)
+* [Kafka with Core Java](kafka/kafka-core-java)
+* [Kafka Core Java Avro](kafka/kafka-core-java-avro)
+* [Kafka Server Properties Files](kafka/kafka-server-properies-files)
+* [Kafka Spring Boot Avro](kafka/kafka-spring-boot-avro)
+* [Kafka Streams](kafka/kafka-streams)
+* [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
+* [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
+------
 # Karate
 * [Karate](karate)
 * [Materials](karate/materials.md)

@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "436bf0a9-5b75-4066-a145-d3ede9584e71",
+		"name": "kafka-spring-boot-avro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Amilia\",\r\n    \"age\": 21\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "com.app.controller.AppController.sendMessageToKafkaTopic"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
