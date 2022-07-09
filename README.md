@@ -426,6 +426,13 @@
 * [REST API A to Z](rest-api/rest-api-a-to-z)
 * [Materials](rest-api/materials.md)
 * [Notes](rest-api/notes.md)
+
+## Using Spring Boot
+* Get APIs
+* POST APIs
+* PUT APIs
+* PATCH APIs
+* DELETE APIs
 ------
 # REST API Clients
 * [REST API Clients](rest-api-clients)
