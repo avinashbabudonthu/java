@@ -71,6 +71,9 @@
 * [Notes](avro/notes.md)
 * [Setup](avro/setup.md)
 ------
+# AWS
+* [AWS](aws)
+------
 # Azure
 * [Azure](azure)
 * [Materials](azure/materials.md)
