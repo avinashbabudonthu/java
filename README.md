@@ -508,6 +508,13 @@
 ## Examples
 * [Rabbit MQ](rabbit-mq/rabbit-mq)
 ------
+# Redis
+* [Redis](redis)
+* [Commands](redis/commands.md)
+* [Materials](redis/materials.md)
+## Examples
+* [Redis Core Java](redis/redis-core-java)
+------
 # REST API
 * [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)

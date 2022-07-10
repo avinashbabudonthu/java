@@ -1,0 +1,1 @@
+C:\Softwares\fastoredis-2.1.4-x86_64\fastoredis-2.1.4-x86_64-6ee1b77\FastoRedis.exe
