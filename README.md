@@ -18,7 +18,7 @@
 * [Persona-Template.pdf](architect/Persona-Template.pdf)
 * [Presentation Skills](architect/presentation-skills.md)
 * [Product Development Points](architect/product-development-points.md)
-* [Project Architecture Development Guidelines](architect/project-architecture-development-guide-lines.md)
+* [Project Architecture Development rest api](architect/project-architecture-development-guide-lines.md)
 * [Public+Speaking+Success+-+How+Anyone+Can+Become+A+Better+Presenter.pdf](architect/Public+Speaking+Success+-+How+Anyone+Can+Become+A+Better+Presenter.pdf)
 * [sample-architecture-document-1.docx](architect/sample-architecture-document-1.docx)
 * [Secret+to+Foolproof+Presentations.pdf](architect/Secret+to+Foolproof+Presentations.pdf)
@@ -461,11 +461,12 @@
 * [Notes](rest-api/notes.md)
 
 ## Using Spring Boot
-* Get APIs
-* POST APIs
-* PUT APIs
-* PATCH APIs
-* DELETE APIs
+* [API Controllers](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller)
+* [Get APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/GetController.java)
+* [POST APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PostController.java)
+* [PUT APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PutController.java)
+* [PATCH APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PatchController.java)
+* [DELETE APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/DeleteController.java)
 ------
 # REST API Clients
 * [REST API Clients](rest-api-clients)
