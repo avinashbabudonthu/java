@@ -69,7 +69,9 @@ public class OptionalPractice {
     }
 
     /**
-     * The orElse() method is used to retrieve the value wrapped inside an Optional instance. It takes one parameter, which acts as a default value. The orElse() method returns the wrapped value if it's present, and its argument otherwise
+     * The orElse() method is used to retrieve the value wrapped inside an Optional instance. 
+     * It takes one parameter, which acts as a default value. 
+     * The orElse() method returns the wrapped value if it's present, and its argument otherwise
      * <p>
      * Output:
      * ana
@@ -82,7 +84,9 @@ public class OptionalPractice {
     }
 
     /**
-     * The orElseGet() method is similar to orElse(). However, instead of taking a value to return if the Optional value is not present, it takes a supplier functional interface, which is invoked and returns the value of the invocation
+     * The orElseGet() method is similar to orElse(). 
+     * However, instead of taking a value to return if the Optional value is not present, it takes a supplier functional interface, 
+     * which is invoked and returns the value of the invocation
      * <p>
      * Output:
      * ana
