@@ -1,0 +1,3 @@
+server.port: 8761spring:  application.name: discovery-server
+#  cloud.config.uri: http://localhost:8888
+#  profiles.active: dev  ## eureka server should not register with eurekaeureka:  client:    register-with-eureka: false #built-in Eureka Client not to register with ‘itself' because our application should be acting as a server    fetch-registry: false

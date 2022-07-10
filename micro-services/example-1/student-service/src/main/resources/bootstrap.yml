@@ -1,0 +1,5 @@
+server.port: 9000
+
+spring:  application.name: student-service
+  cloud.config.uri: http://localhost:8888
+  profiles.active: test
