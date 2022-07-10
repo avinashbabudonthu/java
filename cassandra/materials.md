@@ -1,0 +1,2 @@
+# Pluralsight
+* Cassandra for Developers

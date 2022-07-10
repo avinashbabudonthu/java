@@ -78,6 +78,10 @@
 * [Azure](azure)
 * [Materials](azure/materials.md)
 ------
+# Cassandra
+* [Cassandra](cassandra)
+* [Materials](cassandra/materials.md)
+------
 # Chocolatey
 * [Chocolatey](chocolatey)
 * [Materials](chocolatey/materials.md)
