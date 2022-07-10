@@ -6,10 +6,10 @@
 ------
 # Apache Beam
 * [Apache Beam](apache-beam)
-* [Materials](materials.md)
-* [Notes](notes.md)
+* [Materials](apache-beam/materials.md)
+* [Notes](apache-beam/notes.md)
 ## Examples
-* [Hello World](hello-world)
+* [Hello World](apache-beam/hello-world)
 ------
 # Apache POI
 * [Apache POI](apache-poi)
