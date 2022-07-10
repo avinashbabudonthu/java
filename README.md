@@ -127,6 +127,7 @@
 * [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
+* [Examples](#javautil-package)
 
 ## Generics
 * [Notes](core-java/notes/generics.md)
