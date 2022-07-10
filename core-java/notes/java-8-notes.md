@@ -133,6 +133,7 @@ annotations in the Java programming language.
 	* ZonedDateTime
 	* Duration
 # Optional
+* [Examples](../java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
 * The famous NullPointerException is by far the most popular cause of Java application failures. Long time ago the great Google
 Guava project introduced the Optional as a solution to NullPointerException, discouraging codebase pollution with null checks
 and encouraging developers to write cleaner code. Inspired by Google Guava, the Optional is now a part of Java 8 library.
@@ -168,6 +169,82 @@ First Name is set? true
 First Name: Tom
 Hey Tom!
 ```
+## ifPresent
+* The ifPresent() method enables us to run some code on the wrapped value if it's found to be non-null. Before Optional, we'd do:
+```
+if(name != null) {
+    System.out.println(name.length());
+}
+```
+* This code checks if the name variable is null or not before going ahead to execute some code on it. This approach is lengthy, and that's not the only problem — it's also prone to error.
+* Indeed, what guarantees that after printing that variable, we won't use it again and then forget to perform the null check?
+* This can result in a NullPointerException at runtime if a null value finds its way into that code. When a program fails due to input issues, it's often a result of poor programming practices.
+* Optional makes us deal with nullable values explicitly as a way of enforcing good programming practices.
+* Let's now look at how the above code could be refactored in Java 8.
+* In typical functional programming style, we can execute perform an action on an object that is actually present
+```
+@Test
+public void givenOptional_whenIfPresentWorks_thenCorrect() {
+    Optional<String> opt = Optional.of("ana");
+    opt.ifPresent(name -> System.out.println(name.length()));
+}
+```
+## Difference Between orElse and orElseGet()
+* To a lot of programmers who are new to Optional or Java 8, the difference between orElse() and orElseGet() is not clear. As a matter of fact, these two methods give the impression that they overlap each other in functionality.
+* However, there's a subtle but very important difference between the two that can affect the performance of our code drastically if not well understood.
+* Let's create a method called getMyDefault() in the test class, which takes no arguments and returns a default value:
+```
+public String getMyDefault() {
+    System.out.println("Getting Default Value");
+    return "Default Value";
+}
+```
+* Let's see two tests and observe their side effects to establish both where orElse() and orElseGet() overlap and where they differ:
+```
+@Test
+public void whenOrElseGetAndOrElseOverlap_thenCorrect() {
+    String text = null;
+
+    String defaultText = Optional.ofNullable(text).orElseGet(this::getMyDefault);
+    assertEquals("Default Value", defaultText);
+
+    defaultText = Optional.ofNullable(text).orElse(getMyDefault());
+    assertEquals("Default Value", defaultText);
+}
+```
+* In the above example, we wrap a null text inside an Optional object and attempt to get the wrapped value using each of the two approaches.
+The side effect is:
+```
+Getting default value...
+Getting default value...
+```
+* The getMyDefault() method is called in each case. It so happens that when the wrapped value is not present, then both orElse() and orElseGet() work exactly the same way.
+* Now let's run another test where the value is present, and ideally, the default value should not even be created:
+```
+@Test
+public void whenOrElseGetAndOrElseDiffer_thenCorrect() {
+    String text = "Text present";
+
+    System.out.println("Using orElseGet:");
+    String defaultText 
+      = Optional.ofNullable(text).orElseGet(this::getMyDefault);
+    assertEquals("Text present", defaultText);
+
+    System.out.println("Using orElse:");
+    defaultText = Optional.ofNullable(text).orElse(getMyDefault());
+    assertEquals("Text present", defaultText);
+}
+```
+* In the above example, we are no longer wrapping a null value, and the rest of the code remains the same.
+* Now let's take a look at the side effect of running this code:
+```
+Using orElseGet:
+Using orElse:
+Getting default value...
+```
+* Notice that when using orElseGet() to retrieve the wrapped value, the getMyDefault() method is not even invoked since the contained value is present.
+* However, when using orElse(), whether the wrapped value is present or not, the default object is created. So in this case, we have just created one redundant object that is never used.
+* In this simple example, there is no significant cost to creating a default object, as the JVM knows how to deal with such. However, when a method such as getMyDefault() has to make a web service call or even query a database, the cost becomes very obvious
 
 # Base64 Nashron javascript engine (jjs)
 # class dependency analyzer(jdeps)
