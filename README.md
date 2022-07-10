@@ -525,6 +525,11 @@
 # Spring
 * [Spring](spring)
 ------
+# Tableau
+* [Tableau](tableau)
+## Examples
+* [Setup](tableau/setup.md)
+------
 # Testing
 * [Testing](testing)
 * [Materials](materials.md)
