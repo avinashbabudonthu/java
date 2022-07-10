@@ -1,0 +1,20 @@
+## server properties
+server:
+  port: 9092
+
+## couch base properties
+spring:
+  couchbase:
+    bootstrap-hosts: localhost
+    bucket:
+      name: bucket1
+      password: bucket1pwd
+  env:
+    timeouts:
+      connect: 10000
+      socket-timeout: 10000
+  data:
+    couchbase:
+      auto-index: true
+      repositories:
+        type: auto
