@@ -112,6 +112,7 @@
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
 
+# Core Java Examples
 ## java.lang package
 * Integer class
 	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
@@ -123,6 +124,13 @@
 	* [Notes](core-java/notes/strings.md)
 * Runtime.Version class
 	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
+
+## java.util package
+* [Optional](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+
+## java.util.function package
+* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
+* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
 
 ## Annotations
 * [Annotations](core-java/annotations)
@@ -185,8 +193,7 @@
 * [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
 * [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
-* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/practice/BiFunctionPractice.java)
-* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/practice/SupplierPractice.java)
+
 * [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
 * [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
 

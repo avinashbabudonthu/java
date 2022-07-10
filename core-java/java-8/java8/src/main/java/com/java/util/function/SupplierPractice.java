@@ -1,4 +1,4 @@
-package com.java.util.function.practice;
+package com.java.util.function;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
