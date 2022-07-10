@@ -112,26 +112,6 @@
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
 
-# Core Java Examples
-## java.lang package
-* Integer class
-	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
-* Runtime class
-	* [ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
-	* [ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
-	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
-* Strings
-	* [Notes](core-java/notes/strings.md)
-* Runtime.Version class
-	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
-
-## java.util package
-* [Optional](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
-
-## java.util.function package
-* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
-* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
-
 ## Annotations
 * [Annotations](core-java/annotations)
 * [Notes](core-java/notes/annotations.md)
@@ -147,31 +127,6 @@
 * [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
-### List Examples
-* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
-* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
-* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
-### Set Examples
-* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
-* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
-* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
-* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
-* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
-* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
-### Map Examples
-* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
-* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
-* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
-* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
-* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
-* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
-* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
-* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
-* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
-### Queue Examples
-* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
-### Dequeue Examples
-* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 
 ## Generics
 * [Notes](core-java/notes/generics.md)
@@ -190,10 +145,9 @@
 ## Java 8
 * [Notes](core-java/notes/java-8-notes.md)
 ### Examples
-* [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
-* [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
-
+* [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
+* [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
 * [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
 * [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
 
@@ -201,6 +155,51 @@
 * [Java 9](core-java/java-9)
 * [Notes](core-java/java-9/notes.md)
 
+## Core Java Examples
+### java.lang package
+* Integer class
+	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+* Runtime class
+	* [ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
+	* [ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
+	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
+* Strings
+	* [Notes](core-java/notes/strings.md)
+* Runtime.Version class
+	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
+
+### java.util package
+* Optional class
+	* [Optional](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+* List Examples
+	* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
+	* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
+	* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
+* Set Examples
+	* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
+	* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
+	* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
+	* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
+	* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
+	* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
+* Map Examples
+	* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+	* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
+	* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
+	* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
+	* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
+	* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
+	* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
+	* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
+	* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
+* Queue Examples
+	* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
+* Dequeue Examples
+	* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
+
+### java.util.function package
+* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
+* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
 ------
 # Design Patterns
 * [Design Patterns](design-patterns)
