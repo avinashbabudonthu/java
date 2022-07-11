@@ -170,8 +170,7 @@
 * [Java 9](core-java/java-9)
 * [Notes](core-java/java-9/notes.md)
 
-## Core Java Examples
-### java.lang package
+## java.lang package
 * Integer class
 	* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
 * Runtime class
@@ -183,9 +182,10 @@
 * Runtime.Version class
 	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
 
-### java.util package
+## java.util package
 * Optional class
-	* [Optional](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+	* [Notes](core-java/notes/optional.md)
+	* [Code Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
 * List Examples
 	* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
 	* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
@@ -212,7 +212,7 @@
 * Dequeue Examples
 	* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 
-### java.util.function package
+## java.util.function package
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
 ------
