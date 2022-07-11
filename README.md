@@ -323,6 +323,10 @@
 * [GSON](gson)
 * [Object To JSON String](gson/gson/src/test/java/com/gson/ObjectToJsonString.java)
 ------
+# H2 Database
+* [H2](h2)
+* [Notes](h2/notes.md)
+------
 # Heroku
 * [Heroku](heroku)
 * [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
