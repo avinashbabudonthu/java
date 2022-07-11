@@ -36,10 +36,10 @@
 * Microsoft Access
 
 # Joins
-![picture alt](images/joins.jpg "Joins")
+![picture alt](imgs/joins.jpg "Joins")
 
 # SQL Commands
-![picture alt](images/sql-commands.jpg "Joins")
+![picture alt](imgs/sql-commands.jpg "Joins")
 
 # Normal Forms
 * First Normal Form

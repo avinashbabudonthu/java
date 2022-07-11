@@ -446,6 +446,10 @@
 * [Linux](linux)
 * [Commands](linux/commands.md)
 ------
+# Liquibase
+* [Liquibase](liquibase)
+* [Materials](liquibase/materials.md)
+------
 # Maven
 * [Maven](maven)
 * [Commands](maven/commands.md)
