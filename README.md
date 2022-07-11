@@ -649,6 +649,10 @@
 ## Examples
 * [Setup](tableau/setup.md)
 ------
+# Teradata Database
+* [Teradata Database](teradata)
+* [Commands](teradata/commands.sql)
+------
 # Testing
 * [Testing](testing)
 * [Materials](materials.md)
