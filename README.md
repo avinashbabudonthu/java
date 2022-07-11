@@ -555,6 +555,12 @@
 # Performance
 * [Materials](performance/materials.md)
 ------
+# Postgre SQL Database
+* [Postgre SQL Database](postgre-sql)
+## Examples
+* [Practice Tables](postgre-sql/practice-tables.sql)
+* [Select Queries](postgre-sql/selects.sql)
+------
 # Prometheus
 * [Prometheus](prometheus)
 * [Materials](prometheus/materials.md)
