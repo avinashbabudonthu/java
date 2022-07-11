@@ -495,6 +495,38 @@
 * [Mongo DB Core Java](mongo/mongo-db-core-java)
 * [Mongo DB Spring Boot2 Data XML](mongo/mongo-db-spring-boot2-data-xml)
 ------
+# MySQL Database
+* [MySQL Database](mysql)
+## Examples
+* [MySQL for Data Analytics and BI](mysql/mysql-for-data-analytics-and-bi)
+* Practice final query questions
+	* [questions](mysql/10-Practice-SQL-Final-Query-Questions.pdf)
+	* [solutions](mysql/10-Practice-Final-Query-Questions+-+SOLUTIONS.sql)
+* [Case Statements](mysql/case-statements.sql)
+* [Connections](mysql/connection.md)
+* [Data](mysql/data.md)
+* [Database](mysql/database.md)
+* [DDL](mysql/ddls.sql)
+* [Delete](mysql/deletes.sql)
+* [Employees Database Practice](mysql/employees-database-practice.sql)
+* [Functions](mysql/functions.sql)
+* [Indexes](mysql/indexes.sql)
+* [Inserts](mysql/insert.sql)
+* [Joins](mysql/joins.sql)
+* [MySQL Docker](mysql/mysql-docker.md)
+* [Notes](mysql/notes.md)
+* [Practice Tables](mysql/practice-tables.md)
+* [Select](mysql/select.sql)
+* [SQL FAQ](mysql/SQL-FAQ.pdf)
+* [Stored Procedure](mysql/stored-procedures.sql)
+* [Sub Queries](mysql/sub-queries.sql)
+* [Triggers Notes](mysql/triggers.pdf)
+* [Triggers SQL](mysql/triggers.sql)
+* [Updates](mysql/updates.sql)
+* [Users](mysql/user.md)
+* [Variables](mysql/variables.sql)
+* [Views](mysql/views.sql)
+------
 # Neo4J
 * [Neo4J](neo4j)
 * [Notes](neo4j/notes.md)
