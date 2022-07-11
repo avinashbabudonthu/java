@@ -612,7 +612,339 @@ private static List<Person> doSearch(List<Person> people, String name, int age) 
 ```
 * That way we offer a clear API with two methods doing different things (though they share the implementation).
 * So, there are solutions to avoid using Optionals as method parameters. The intent of Java when releasing Optional was to use it as a return type, thus indicating that a method could return an empty value
+* Refer [Sonar rule about not using Optional as parameter](https://rules.sonarsource.com/java/RSPEC-3553)
+------
+# Java 9 Optional API Additions
+## The or() Method
+* Sometimes, when our Optional is empty, we want to execute some other action that also returns an Optional.
+* Prior Java 9 the Optional class had only the orElse() and orElseGet() methods but both need to return unwrapped values.
+* Java 9 introduces the or() method that returns another Optional lazily if our Optional is empty. If our first Optional has a defined value, the lambda passed to the or() method will not be invoked, and value will not be calculated and returned
+```
+@Test
+public void givenOptional_whenPresent_thenShouldTakeAValueFromIt() {
+    //given
+    String expected = "properValue";
+    Optional<String> value = Optional.of(expected);
+    Optional<String> defaultValue = Optional.of("default");
 
+    //when
+    Optional<String> result = value.or(() -> defaultValue);
+
+    //then
+    assertThat(result.get()).isEqualTo(expected);
+}
+```
+* In the case of Optional being empty, the returned result will be the same as the defaultValue:
+```
+@Test
+public void givenOptional_whenEmpty_thenShouldTakeAValueFromOr() {
+    // given
+    String defaultString = "default";
+    Optional<String> value = Optional.empty();
+    Optional<String> defaultValue = Optional.of(defaultString);
+
+    // when
+    Optional<String> result = value.or(() -> defaultValue);
+
+    // then
+    assertThat(result.get()).isEqualTo(defaultString);
+}
+```
+## The ifPresentOrElse() Method
+* When we have an Optional instance, often we want to execute a specific action on the underlying value of it. On the other hand, if the Optional is empty we want to log it or track that fact by incrementing some metric.
+* The ifPresentOrElse() method is created exactly for such scenarios. We can pass a Consumer that will be invoked if the Optional is defined, and Runnable that will be executed if the Optional is empty.
+* Let's say that we have a defined Optional and we want to increment a specific counter if the value is present:
+```
+@Test
+public void givenOptional_whenPresent_thenShouldExecuteProperCallback() {
+    // given
+    Optional<String> value = Optional.of("properValue");
+    AtomicInteger successCounter = new AtomicInteger(0);
+    AtomicInteger onEmptyOptionalCounter = new AtomicInteger(0);
+
+    // when
+    value.ifPresentOrElse(
+      v -> successCounter.incrementAndGet(), 
+      onEmptyOptionalCounter::incrementAndGet);
+
+    // then
+    assertThat(successCounter.get()).isEqualTo(1);
+    assertThat(onEmptyOptionalCounter.get()).isEqualTo(0);
+}
+```
+* Note, that the callback passed as the second argument was not executed.
+* In the case of an empty Optional, the second callback gets executed:
+```
+@Test
+public void givenOptional_whenNotPresent_thenShouldExecuteProperCallback() {
+    // given
+    Optional<String> value = Optional.empty();
+    AtomicInteger successCounter = new AtomicInteger(0);
+    AtomicInteger onEmptyOptionalCounter = new AtomicInteger(0);
+
+    // when
+    value.ifPresentOrElse(
+      v -> successCounter.incrementAndGet(), 
+      onEmptyOptionalCounter::incrementAndGet);
+
+    // then
+    assertThat(successCounter.get()).isEqualTo(0);
+    assertThat(onEmptyOptionalCounter.get()).isEqualTo(1);
+}
+```
+## The stream() Method
+* The last method, which is added to the Optional class in the Java 9, is the stream() method.
+* Java has a very fluent and elegant Stream API that can operate on the collections and utilizes many functional programming concepts. The newest Java version introduces the stream() method on the Optional class that allows us to treat the Optional instance as a Stream.
+* Let's say that we have a defined Optional and we are calling the stream() method on it. This will create a Stream of one element on which we can use all the methods that are available in the Stream API:
+```
+@Test
+public void givenOptionalOfSome_whenToStream_thenShouldTreatItAsOneElementStream() {
+    // given
+    Optional<String> value = Optional.of("a");
+
+    // when
+    List<String> collect = value.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+    // then
+    assertThat(collect).hasSameElementsAs(List.of("A"));
+}
+```
+* On the other hand, if Optional is not present, calling the stream() method on it will create an empty Stream:
+```
+@Test
+public void givenOptionalOfNone_whenToStream_thenShouldTreatItAsZeroElementStream() {
+    // given
+    Optional<String> value = Optional.empty();
+
+    // when
+    List<String> collect = value.stream()
+      .map(String::toUpperCase)
+      .collect(Collectors.toList());
+
+    // then
+    assertThat(collect).isEmpty();
+}
+```
+* We can now quickly filter Streams of Optionals.
+* Operating on the empty Stream will not have any effect, but thanks to the stream() method we can now chain the Optional API with the Stream API. This allows us to create more elegant and fluent code
+------
+# Java Optional as Return Type
+## Optional as Return Type
+* An Optional type can be a return type for most methods except some scenarios discussed later in the tutorial.
+* Most of the time, returning an Optional is just fine:
+```
+public static Optional<User> findUserByName(String name) {
+    User user = usersByName.get(name);
+    Optional<User> opt = Optional.ofNullable(user);
+    return opt;
+}
+```
+* This is handy since we can use the Optional API in the calling method:
+```
+public static void changeUserName(String oldFirstName, String newFirstName) {
+    findUserByFirstName(oldFirstName).ifPresent(user -> user.setFirstName(newFirstName));
+}
+```
+* It's also appropriate for a static method or utility method to return an Optional value.  However, there are many situations where we should not return an Optional type.
+
+## When to Not Return Optional
+* Because Optional is a wrapper and value-based class, there are some operations that can't be done against Optional object. Many times, it's just simply better to return the actual type rather than an Optional type.
+* Generally speaking, for getters in POJOs, it's more suitable to return the actual type, not an Optional type. Particularly, it's important for Entity Beans, Data Models, and DTOs to have traditional getters.
+* We'll examine some of the important use cases below.
+### Serialization
+* Let's imagine we have a simple entity:
+```
+public class Sock implements Serializable {
+    Integer size;
+    Optional<Sock> pair;
+
+    // ... getters and setters
+}
+```
+* This actually won't work at all. If we were to try and serialize this, we'd get an NotSerializableException:
+```
+new ObjectOutputStream(new ByteArrayOutputStream()).writeObject(new Sock());
+```
+* And really, while serializing Optional may work with other libraries, it certainly adds what may be unnecessary complexity.
+* Let's take a look at another application of this same serialization mismatch, this time with JSON.
+### JSON
+* Modern applications convert Java objects to JSON all the time. If a getter returns an Optional type, we'll most likely see some unexpected data structure in the final JSON.
+* Let's say we have a bean with an optional property:
+```
+private String firstName;
+
+public Optional<String> getFirstName() {
+    return Optional.ofNullable(firstName);
+}
+
+public void setFirstName(String firstName) {
+    this.firstName = firstName;
+}
+```
+* So, if we use Jackson to serialize an instance of Optional, we'll get:
+```
+{"firstName":{"present":true}}
+```
+* But, what we'd really want is:
+```
+{"firstName":"Baeldung"}
+```
+* So, Optional is a pain for serialization use cases. Next, let's look at the cousin to serialization: writing data to a database.
+### JPA
+* In JPA, the getter, setter, and field should have name as well as type agreement. For example, a firstName field of type String should be paired with a getter called getFirstName that also returns a String.
+* Following this convention makes several things simpler, including the use of reflection by libraries like Hibernate, to give us great Object-Relational mapping support.
+* Let's take a look at our same use case of an optional first name in a POJO.
+* This time, though, it'll be a JPA entity:
+```
+@Entity
+public class UserOptionalField implements Serializable {
+    @Id
+    private long userId;
+
+    private Optional<String> firstName;
+
+    // ... getters and setters
+}
+```
+* And let's go ahead and try to persist it:
+```
+UserOptionalField user = new UserOptionalField();
+user.setUserId(1l);
+user.setFirstName(Optional.of("Baeldung"));
+entityManager.persist(user);
+```
+* Sadly, we run into an error:
+```
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: com.baeldung.optionalReturnType] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1015)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:941)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.baeldung.optionalReturnType.PersistOptionalTypeExample.<clinit>(PersistOptionalTypeExample.java:11)
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Optional, at table: UserOptionalField, for columns: [org.hibernate.mapping.Column(firstName)]
+```
+* We could try deviating from this standard. For example, we could keep the property as a String, but change the getter:
+```
+@Column(nullable = true) 
+private String firstName; 
+
+public Optional<String> getFirstName() { 
+    return Optional.ofNullable(firstName); 
+}
+```
+* It appears that we could have both ways: have an Optional return type for the getter and a persistable field firstName.
+* However, now that we are inconsistent with our getter, setter, and field, it'll be more difficult to leverage JPA defaults and IDE source code tools.
+* Until JPA has elegant support of Optional type, we should stick to the traditional code. It's simpler and better:
+```
+private String firstName;
+// ... traditional getter and setter
+```
+* Let's finally take a look at how this affects the front end – check to see if the problem we run into sounds familiar.
+
+### Expression Languages
+* Preparing a DTO for the front-end presents similar difficulties.
+* For example, let's imagine that we are using JSP templating to read our UserOptional DTO's firstName from the request:
+```
+<c:out value="${requestScope.user.firstName}" />
+```
+* Since it's an Optional, we'll not see “Baeldung“. Instead, we'll see the String representation of the Optional type:
+```
+Optional[ana]
+```
+* And this isn't a problem just with JSP. Any templating language, be it Velocity, Freemarker, or something else, will need to add support for this. Until then, let's continue to keep our DTOs simple.
+------
+# Using Optional with Jackson
+* Our Book Object
+* Then, let's create a class Book, containing one ordinary and one Optional field:
+```
+public class Book {
+   String title;
+   Optional<String> subTitle;
+   
+   // getters and setters omitted
+}
+```
+* Keep in mind that Optionals should not be used as fields and we are doing this to illustrate the problem.
+## Serialization
+* Now, let's instantiate a Book:
+```
+Book book = new Book();
+book.setTitle("Oliver Twist");
+book.setSubTitle(Optional.of("The Parish Boy's Progress"));
+```
+* And finally, let's try serializing it using a Jackson ObjectMapper:
+```
+String result = mapper.writeValueAsString(book);
+```
+* We'll see that the output of the Optional field, does not contain its value, but instead a nested JSON object with a field called present:
+```
+{"title":"Oliver Twist","subTitle":{"present":true}}
+```
+* Although this may look strange, it's actually what we should expect.
+* In this case, isPresent() is a public getter on the Optional class. This means it will be serialized with a value of true or false, depending on whether it is empty or not. This is Jackson's default serialization behavior.
+* If we think about it, what we want is for actual the value of the subtitle field to be serialized.
+## Deserialization
+* Now, let's reverse our previous example, this time trying to deserialize an object into an Optional. We'll see that now we get a JsonMappingException:
+```
+@Test(expected = JsonMappingException.class)
+public void givenFieldWithValue_whenDeserializing_thenThrowException
+    String bookJson = "{ \"title\": \"Oliver Twist\", \"subTitle\": \"foo\" }";
+    Book result = mapper.readValue(bookJson, Book.class);
+}
+```
+* Let's view the stack trace:
+```
+com.fasterxml.jackson.databind.JsonMappingException:
+  Can not construct instance of java.util.Optional:
+  no String-argument constructor/factory method to deserialize from String value ('The Parish Boy's Progress')
+This behavior again makes sense. Essentially, Jackson needs a constructor which can take the value of subtitle as an argument. This is not the case with our Optional field.
+```
+## Solution
+* What we want, is for Jackson to treat an empty Optional as null, and to treat a present Optional as a field representing its value.
+* Fortunately, this problem has been solved for us. Jackson has a set of modules that deal with JDK 8 datatypes, including Optional.
+### Maven Dependency and Registration
+* First, let's add the latest version as a Maven dependency:
+```
+<dependency>
+   <groupId>com.fasterxml.jackson.datatype</groupId>
+   <artifactId>jackson-datatype-jdk8</artifactId>
+   <version>2.9.6</version>
+</dependency>
+```
+* Now, all we need to do is register the module with our ObjectMapper:
+```
+ObjectMapper mapper = new ObjectMapper();
+mapper.registerModule(new Jdk8Module());
+```
+### Serialization
+* Now, let's test it. If we try and serialize our Book object again, we'll see that there is now a subtitle, as opposed to a nested JSON:
+```
+Book book = new Book();
+book.setTitle("Oliver Twist");
+book.setSubTitle(Optional.of("The Parish Boy's Progress"));
+String serializedBook = mapper.writeValueAsString(book);
+ 
+assertThat(from(serializedBook).getString("subTitle"))
+  .isEqualTo("The Parish Boy's Progress");
+```
+* If we try serializing an empty book, it will be stored as null:
+```
+book.setSubTitle(Optional.empty());
+String serializedBook = mapper.writeValueAsString(book);
+ 
+assertThat(from(serializedBook).getString("subTitle")).isNull();
+```
+### Deserialization
+* Now, let's repeat our tests for deserialization. If we reread our Book, we'll see that we no longer get a JsonMappingException:
+```
+Book newBook = mapper.readValue(result, Book.class);
+assertThat(newBook.getSubTitle()).isEqualTo(Optional.of("The Parish Boy's Progress"));
+```
+* Finally, let's repeat the test again, this time with null. We'll see that yet again we don't get a JsonMappingException, and in fact, have an empty Optional:
+```
+assertThat(newBook.getSubTitle()).isEqualTo(Optional.empty());
+```
 ------
 # Base64 Nashron javascript engine (jjs)
 # class dependency analyzer(jdeps)
