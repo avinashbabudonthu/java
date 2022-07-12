@@ -693,6 +693,10 @@
 	* [Receive Listener](weblogic-queue/weblogic-queue/src/test/java/com/jms/ReceiverListener.java)
 	* [Send Receive Message](weblogic-queue/weblogic-queue/src/test/java/com/jms/SendReceiveMessage.java)
 ------
+# Weld
+* [Weld](weld)
+* [Materials](weld/materials.md)
+------
 # Windows
 * [Windows](windows)
 * [Commands](windows/commands.md)
