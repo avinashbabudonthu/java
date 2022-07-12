@@ -529,6 +529,14 @@
 * [Spring Cloud Config Server Client Eureka Zuul](micro-services/spring-cloud-config-server-client-euraka-zuul)
 * [Zuul Eureka](micro-services/zuul-eureka)
 ------
+# Mockito
+* [Mockito](mockito)
+* [Materials](mockito/materials.md)
+* [Notes](mockito/notes.md)
+* [JDBCTemplate Mock](mockito/jdbc-template-mock.md)
+## Examples
+* [Mockito Examples](mockito/mockito)
+------
 # Mongo DB
 * [Mongo DB](mongo)
 * [Materials](mongo/materials.md)
