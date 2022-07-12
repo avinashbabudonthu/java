@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.junit5'
+version = '1.0'
+description = 'junit-5'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testImplementation 'org.junit.jupiter:junit-platform-launcher:1.1.0'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.slf4j:slf4j-log4j12:1.7.5'
+    
+    compileOnly "org.projectlombok:lombok:1.18.4"
+	testCompileOnly "org.projectlombok:lombok:1.18.4"
+	annotationProcessor "org.projectlombok:lombok:1.18.4"
+	testAnnotationProcessor "org.projectlombok:lombok:1.18.4"
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
