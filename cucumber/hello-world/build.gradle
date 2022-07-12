@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+group = 'hello.world'
+version = '1.0'
+description = 'hello-world'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:3.8.1'
+}
