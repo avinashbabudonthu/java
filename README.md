@@ -334,6 +334,7 @@
 # Hibernate
 * [Hibernate](hibernate)
 * [Materials](hibernate/materials.md)
+* [Practice Entites](orm/practice-entities)
 ## Examples
 * [Hibernate Basics](hibernate/hibernate-basics)
 ------
@@ -404,6 +405,7 @@
 # JPA
 * [JPA](jpa)
 * [Materials](jpa/materials.md)
+* [Practice Entites](orm/practice-entities)
 ------
 # JVM
 * [JVM](jvm)
@@ -557,6 +559,10 @@
 * [Practice Tables](oracle/practice-tables.sql)
 * [Queries](oracle/queries.md)
 * [Tables](oracle/tables.md)
+------
+# ORM
+* [ORM](orm)
+* [Practice Entites](orm/practice-entities)
 ------
 # Open Shift
 * [Open shift](open-shift)
