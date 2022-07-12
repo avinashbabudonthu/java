@@ -288,6 +288,11 @@
 * [Drop wizard](drop-wizard)
 * [Materials](drop-wizard/materials.md)
 ------
+# Easy Mock
+* [Easy Mock](easy-mock)
+## Examples
+* [Easy Mock Examples](easy-mock/easy-mock)
+------
 # Garbage Collection
 * [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
@@ -615,6 +620,11 @@
 ## Examples
 * [Practice Tables](postgre-sql/practice-tables.sql)
 * [Select Queries](postgre-sql/selects.sql)
+------
+# Power Mock
+* [Power Mock](power-mock)
+## Examples
+* [Power Mock Examples](power-mock/power-mock)
 ------
 # Prometheus
 * [Prometheus](prometheus)

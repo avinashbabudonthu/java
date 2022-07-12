@@ -1,0 +1,35 @@
+package easy.mock.hello.world;
+
+import java.util.List;
+
+public class Portfolio {
+
+	private StockService stockService;
+	private List<Stock> stocks;
+
+	public StockService getStockService() {
+		return stockService;
+	}
+
+	public void setStockService(StockService stockService) {
+		this.stockService = stockService;
+	}
+
+	public List<Stock> getStocks() {
+		return stocks;
+	}
+
+	public void setStocks(List<Stock> stocks) {
+		this.stocks = stocks;
+	}
+
+	public Double getMarketValue() {
+		Double stockValue = 0.0D;
+
+		for (Stock stock : stocks) {
+			stockValue = stockValue + stockService.getPrice(stock) * stock.getQuantity();
+		}
+
+		return stockValue;
+	}
+}
