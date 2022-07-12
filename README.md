@@ -331,6 +331,12 @@
 * [Heroku](heroku)
 * [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
 ------
+# Hibernate
+* [Hibernate](hibernate)
+* [Materials](hibernate/materials.md)
+## Examples
+* [Hibernate Basics](hibernate/hibernate-basics)
+------
 # HTML Sanitizer
 * [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
