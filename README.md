@@ -7,6 +7,10 @@
 * [Materials](angular/materials.md)
 * [Notes](angular/notes.md)
 ------
+# Angular JS
+* [Angular JS](angular-js)
+* [Materials](angular-js/materials.md)
+------
 # Ansible
 * [Ansible](ansible)
 * [Materials](ansible/materials.md)
