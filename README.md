@@ -756,6 +756,18 @@
 * [Testing](testing)
 * [Materials](materials.md)
 ------
+# TypeScript
+* [TypeScript](typescript)
+* [Materials](typescript/materials.md)
+* [Notes](typescript/notes.md)
+## Examples
+* [Install Typescript](typescript/install.md)
+* [Functions](typescript/functions)
+* [Hello World](typescript/hello-world)
+* [Interface](typescript/interface)
+* [String](typescript/string)
+* [Variables](typescript/variables)
+------
 # UML
 * [UML](uml)
 * [Notes](uml/notes.md)
