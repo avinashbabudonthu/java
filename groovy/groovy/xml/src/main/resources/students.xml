@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+    <student>
+        <firstName>jack</firstName>
+        <other lastName="a" gender="male"></other>
+        <course>Java</course>
+        <grade>3.5</grade>
+    </student>
+    <student>
+        <firstName>jill</firstName>
+        <other lastName="b" gender="female"></other>
+        <course>Groovy</course>
+        <grade>3.6</grade>
+    </student>
+    <student>
+        <firstName>jim</firstName>
+        <other lastName="c" gender="male"></other>
+        <course>Scala</course>
+        <grade>3.7</grade>
+    </student>
+</students>

@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.groovy -DartifactId=collections -Dversion=1.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

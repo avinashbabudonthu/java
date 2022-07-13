@@ -347,6 +347,12 @@
 * [Notes](graphql/notes.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ------
+# Groovy
+* [Groovy](groovy)
+* [Materials](groovy/materials.md)
+## Examples
+* [Groovy](groovy/groovy)
+------
 # GSON
 * [GSON](gson)
 * [Object To JSON String](gson/gson/src/test/java/com/gson/ObjectToJsonString.java)
