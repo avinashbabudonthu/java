@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "application-client-1",
+		"_postman_id": "b98df9cb-b964-5c66-3264-befaf7990a8a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "eureka-client",
+			"request": {
+				"url": "http://localhost:9091/eureka-client/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "discovery-client",
+			"request": {
+				"url": "http://localhost:9091/discovery-client/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "application-service",
+		"_postman_id": "c04ae43f-e632-14fc-c199-ab0633c5d9ac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"url": "http://localhost:9090/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

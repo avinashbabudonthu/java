@@ -9,6 +9,12 @@
 * [Custom Item Reader](batch/custom-item-reader)
 * [Hello world](batch/hello-world)
 ------
+# Cloud
+* [Cloud](cloud)
+* [Materials](cloud/materials.md)
+## Examples
+* [Example 1](cloud/example-1)
+------
 # Cloud Stream
 * [Spring Cloud Stream](cloud-stream)
 * [Materials](cloud-stream/materials.md)
