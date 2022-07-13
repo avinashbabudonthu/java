@@ -519,9 +519,15 @@
 * [Liquibase](liquibase)
 * [Materials](liquibase/materials.md)
 ------
+# Log4J
+* [Log4J](log4j)
+* [Materials](log4j/materials.md)
+* [Notes](log4j/notes.md)
+------
 # logging
 * [Logging](logging)
 * [Materials](logging/materials.md)
+* [Notes](logging/notes.md)
 ------
 # Maven
 * [Maven](maven)
@@ -720,6 +726,10 @@
 * [Sonarqube](sonarqube)
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
 ------
+# Splunk
+* [Splunk](splunk)
+* [Materials](splunk/materials.md)
+------
 # Spock
 * [Spock](spock)
 * [Materials](spock/materials.md)
@@ -786,6 +796,13 @@
 * [Unit Testing](unit-testing)
 * [Materials](unit-testing/materials.md)
 * [Notes](unit-testing/notes.md)
+------
+# Util Logging
+* [Util Logging](util-logging)
+* [Materials](util-logging/materials.md)
+* [Notes](util-logging/notes.md)
+## Examples
+* [Util Logging](util-logging/util-logging)
 ------
 # Visual Studio Code
 * [Visual Studio Code](visual-studio-code)
