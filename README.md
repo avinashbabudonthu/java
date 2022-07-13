@@ -300,6 +300,10 @@
 ## Examples
 * [Easy Mock Examples](easy-mock/easy-mock)
 ------
+# ES6
+* [ES6](es6)
+* [Notes](es6/notes.js)
+------
 # Garbage Collection
 * [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
