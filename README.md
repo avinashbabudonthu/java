@@ -1,5 +1,12 @@
 # Single Repo For All Java Examples
 ------
+# angular
+* [Angular](angular)
+* [Commands](angular/commands.md)
+* [Install Angular CLI](angular/install-angular-cli.md)
+* [Materials](angular/materials.md)
+* [Notes](angular/notes.md)
+------
 # Ansible
 * [Ansible](ansible)
 * [Materials](ansible/materials.md)
