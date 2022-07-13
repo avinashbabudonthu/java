@@ -519,6 +519,10 @@
 * [Liquibase](liquibase)
 * [Materials](liquibase/materials.md)
 ------
+# logging
+* [Logging](logging)
+* [Materials](logging/materials.md)
+------
 # Maven
 * [Maven](maven)
 * [Commands](maven/commands.md)
