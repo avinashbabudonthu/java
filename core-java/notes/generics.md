@@ -61,6 +61,7 @@ printList(ls);
 ![picture](images/upper-lower-wild-cards.png)
 ------
 # Erasure
+* Refer Java doc [Type Erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) for more
 * After compilation generics will be removed
 ```
 List<string>, List<Integer> , List<List<Integer>> -> List
@@ -176,7 +177,6 @@ public static <T extends Shape> void draw(T shape) { /* ... */ }
 public static void draw(Shape shape) { /* ... */ }
 ```
 ## Effects of Type Erasure and Bridge Methods
-* Refer Java doc [Type Erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) for more
 * Sometimes type erasure causes a situation that you may not have anticipated. The following example shows how this can occur. The following example shows how a compiler sometimes creates a synthetic method, which is called a bridge method, as part of the type erasure process.
 * Given the following two classes:
 ```
