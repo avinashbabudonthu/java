@@ -60,7 +60,7 @@ printList(ls);
 # Wild cards subtyping relationship
 ![picture](images/upper-lower-wild-cards.png)
 ------
-## Erasure
+# Erasure
 * After compilation generics will be removed
 ```
 List<string>, List<Integer> , List<List<Integer>> -> List
@@ -73,4 +73,69 @@ T extends Foo -> Foo
 public void print(List<String> list) { --} 
 public void print(List<Integer> list) { --} 
 This will throw compile error - both methods have same erasure
+```
+*  During the type erasure process, the Java compiler erases all type parameters and replaces each with its first bound if the type parameter is bounded, or Object if the type parameter is unbounded.
+* Consider the following generic class that represents a node in a singly linked list:
+```
+public class Node<T> {
+
+    private T data;
+    private Node<T> next;
+
+    public Node(T data, Node<T> next) {
+        this.data = data;
+        this.next = next;
+    }
+
+    public T getData() { return data; }
+    // ...
+}
+```
+* Because the type parameter T is unbounded, the Java compiler replaces it with Object:
+```
+public class Node {
+
+    private Object data;
+    private Node next;
+
+    public Node(Object data, Node next) {
+        this.data = data;
+        this.next = next;
+    }
+
+    public Object getData() { return data; }
+    // ...
+}
+```
+* In the following example, the generic Node class uses a bounded type parameter:
+```
+public class Node<T extends Comparable<T>> {
+
+    private T data;
+    private Node<T> next;
+
+    public Node(T data, Node<T> next) {
+        this.data = data;
+        this.next = next;
+    }
+
+    public T getData() { return data; }
+    // ...
+}
+```
+* The Java compiler replaces the bounded type parameter T with the first bound class, Comparable:
+```
+public class Node {
+
+    private Comparable data;
+    private Node next;
+
+    public Node(Comparable data, Node next) {
+        this.data = data;
+        this.next = next;
+    }
+
+    public Comparable getData() { return data; }
+    // ...
+}
 ```
