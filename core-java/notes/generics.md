@@ -267,3 +267,6 @@ class MyNode extends Node {
 }
 ```
 * The bridge method MyNode.setData(object) delegates to the original MyNode.setData(Integer) method. As a result, the n.setData("Hello"); statement calls the method MyNode.setData(Object), and a ClassCastException is thrown because "Hello" can't be cast to Integer.
+------
+# Restrictions on Generics
+* Refer [Java doc](https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html)
