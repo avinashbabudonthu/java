@@ -1,7 +1,6 @@
 # Generics Notes
 
-## Notes
-* Upper Bounded wild card
+# Upper Bounded wild card
 ```
 List<? extends Class>
 ```
@@ -18,7 +17,8 @@ public void method5(){
     method4(list2);
 }
 ```
-* Lower Bounded wild card
+------
+# Lower Bounded wild card
 ```
 List<? super Class>
 ```
@@ -38,7 +38,8 @@ public void method7(){
     method6(list3);
 }
 ```
-* Unbounded wild card
+------
+# Unbounded wild card
 ```
 List<?>
 ```
@@ -55,6 +56,9 @@ List<String>  ls = Arrays.asList("one", "two", "three");
 printList(li);
 printList(ls);
 ```
+------
+# Wild cards subtyping relationship
+![picture](images/upper-lower-wild-cards.png)
 ------
 ## Erasure
 * After compilation generics will be removed
