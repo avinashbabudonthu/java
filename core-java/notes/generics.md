@@ -175,3 +175,4 @@ public static <T extends Shape> void draw(T shape) { /* ... */ }
 ```
 public static void draw(Shape shape) { /* ... */ }
 ```
+## Refer [Type Erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html) for more
