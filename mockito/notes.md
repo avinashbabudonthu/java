@@ -193,3 +193,9 @@ Assert.assertEqual(1, orderEntity.getCustomerId() );
 * Spy
 	* Spy wraps an existing instance of an object inside the proxy and its default nature is to call the real method
 	* The method invocations are only mocked when you explicitely stub the call. In this case proxy knows to bypass the real method call
+------
+# Mock Autowired Value Field In Spring With Mockito
+* Use below code in `@Before` method
+```
+ReflectionTestUtils.setField(bean, "fieldName", "value");	
+```
