@@ -572,6 +572,7 @@
 * [JDBCTemplate Mock](mockito/jdbc-template-mock.md)
 ## Examples
 * [Mockito Examples](mockito/mockito)
+* [Mock Autowired Value Field In Spring With Mockito](mockito/notes.md#mock-autowired-value-field-in-spring-with-mockito)
 ------
 # Mongo DB
 * [Mongo DB](mongo)
