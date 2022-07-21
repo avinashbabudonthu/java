@@ -136,6 +136,8 @@
 * [Core Java](core-java)
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
+## Examples
+* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 
 ## Annotations
 * [Annotations](core-java/annotations)
