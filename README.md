@@ -220,6 +220,7 @@
 	* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
 	* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
 	* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
+	* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
 * Queue Examples
 	* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
 * Dequeue Examples
