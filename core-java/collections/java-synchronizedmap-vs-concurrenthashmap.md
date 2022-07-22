@@ -1,5 +1,5 @@
 # Collections.synchronizedMap vs. ConcurrentHashMap
-* 
+
 ## Overview
 * In this tutorial, we'll discuss the differences between Collections.synchronizedMap() and ConcurrentHashMap.
 * Additionally, we'll look at the performance outputs of the read and write operations for each.
