@@ -664,6 +664,7 @@
 ------
 # Postgre SQL Database
 * [Postgre SQL Database](postgre-sql)
+* [Materials](postgre-sql/materials.md)
 ## Examples
 * [Practice Tables](postgre-sql/practice-tables.sql)
 * [Select Queries](postgre-sql/selects.sql)
