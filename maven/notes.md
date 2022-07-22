@@ -595,6 +595,17 @@ test				  | test			| 	 			  | test			|
 	</configuration>
 </plugin>
 ```
+* For Java 9
+```
+<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<version>3.8.1</version>
+	<configuration>
+		<release>9</release>
+	</configuration>
+</plugin>
+```
 * For Java 11. Reference - [https://winterbe.com/posts/2018/08/29/migrate-maven-projects-to-java-11-jigsaw/](https://winterbe.com/posts/2018/08/29/migrate-maven-projects-to-java-11-jigsaw/)
 * In order to compile your project for Java 11 add the `release` configuration to the compiler plugin
 * New compiler parameter to replace the `source` and `target` version parameters
@@ -609,16 +620,21 @@ test				  | test			| 	 			  | test			|
 	</configuration>
 </plugin>
 ```
-* For Java 9
+* Java 12
 ```
-<plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-compiler-plugin</artifactId>
-	<version>3.8.1</version>
-	<configuration>
-		<release>9</release>
-	</configuration>
-</plugin>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <configuration>
+                <source>12</source>
+                <compilerArgs>--enable-preview</compilerArgs>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>	
 ```
 
 ## Maven Surefire Plugin
