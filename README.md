@@ -731,6 +731,10 @@
 * [Mock WebClient](rest-api-clients/rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
 * https://www.callicoder.com/spring-5-reactive-webclient-webtestclient-examples/
 ------
+# Servlets and JSPs
+* [Servlets and JSPs](servlets-jsps)
+* [Materials](servlets-jsps/materials.md)
+------
 # Sonarqube
 * [Sonarqube](sonarqube)
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
