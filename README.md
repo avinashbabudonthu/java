@@ -1,4 +1,4 @@
-# Single Repo For All Java Examples topic wise in Alphabetical Order
+# Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
 # angular
 * [Angular](angular)
