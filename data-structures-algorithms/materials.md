@@ -1,2 +1,2 @@
 # Box
-* data-strucures-algorithms folder
+* `data-strucures-algorithms` folder
