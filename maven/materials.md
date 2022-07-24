@@ -16,3 +16,6 @@
 * [Maven frequently asked questions](https://maven.apache.org/general.html)
 * [Maven available plugins](https://maven.apache.org/plugins/index.html)
 * [POM References](http://maven.apache.org/pom.html)
+
+# Box
+* `maven` folder
