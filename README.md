@@ -761,6 +761,8 @@
 * [SQL](sql)
 * [Materials](sql/materials.md)
 * [Notes](sql/notes.md)
+## Examples
+* [Difference between Delete and Truncate Command](sql/delete-vs-truncate-command.md)
 ------
 # SQL Server Database
 * [SQL Server Database](sql-server)
