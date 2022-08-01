@@ -245,6 +245,8 @@
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+## java.math package
+* [java.math.BigDecimal](core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
 ------
 # Couch Base
 * [Couch Base](couch-base)
