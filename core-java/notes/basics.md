@@ -515,7 +515,7 @@ String s = "abc";
 
 ### Weak reference
 * object is eligible for garbage collection when strong reference is set to null
-* Creating java.lang.ref.WeakReference
+* Creating `java.lang.ref.WeakReference`
 ```
 Counter counter = new Counter(); // strong reference
 WeakReference<Counter> weakCounter = new WeakReference<Counter>(counter);//weak reference
@@ -526,7 +526,7 @@ counter = null; // now Counter object is eligible for garbage collection
 
 ### Soft reference
 * object is eligible for garbage collection but only be collected when JVM absolutely needs memory
-* Creating java.lang.ref.SoftReference
+* Creating `java.lang.ref.SoftReference`
 ```
 Counter prime = new Counter(); // prime holds a strong reference
 SoftReference<Counter> soft = new SoftReference<Counter>(prime) ; //soft has SoftReference to Counter Object created
