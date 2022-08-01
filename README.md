@@ -241,6 +241,10 @@
 ## java.util.function package
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
+## java.io package
+* [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
+* [Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 ------
 # Couch Base
 * [Couch Base](couch-base)
