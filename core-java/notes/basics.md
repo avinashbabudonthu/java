@@ -2,6 +2,7 @@
 ## Basics
 * JDK: JRE + Development Kit (tools like compilers(javac) and debuggers (JDB))
 * JRE - `Java Runtime Environment`: JVM + Library classes
+* Byte code: `.class` file
 * Javac: Java Compiler. Generates byte code by converting .java file to .class file
 * JVM
 	* Virtual machine for Java. Generates machine level language (native language) by converting .class(byte code) to machine level language
