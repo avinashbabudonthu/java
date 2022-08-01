@@ -622,11 +622,11 @@ Reader.read(char[] data)
 	* To write content to file
 	* newLine() - adds new line character based on underlying OS
 * Basic Stream \
-![picture](images/basic-streams.jpg)
+![picture](../notes/images/basic-streams.jpg)
 * Reader classes hierarchy \
-![picture](images/reader-classes-hierarchy.jpg)
+![picture](../notes/images/reader-classes-hierarchy.jpg)
 * Stream classes hierarchy \
-![picture](images/stream-classes-hierarchy.jpg)
+![picture](../notes/images/stream-classes-hierarchy.jpg)
 
 ### File IO Examples
 * [File IO Practice](../basics/src/main/java/com/java/io/FileIOPractice.java)
