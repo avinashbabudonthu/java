@@ -410,7 +410,7 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 * Group of same data type values
 * Fixed size
 * Index start with `0` - zero
-* Refer array examples - [ArraysPractice.java](../collections/src/test/java/com/util/ArraysPractice.java)
+* Refer array examples - [java.util.Arrays](../collections/src/test/java/com/util/ArraysPractice.java)
 	* parallelSort
 	* parallelSetAll
 	* setAll
@@ -468,13 +468,13 @@ for(int i: list){
 		* classes which extends java.lang.Error class
 		* Example: java.lang.NoClassDefFoundError, java.io.IOError
 * Exception Hirarchy in Java library\
-![picture](images/Exception-Hierarchy-1.png)
+![picture](../images/Exception-Hierarchy-1.png)
 * Error class hierarchy\
-![picture](images/error-class-hierarchy.gif)
+![picture](../images/error-class-hierarchy.gif)
 * Exception class hierarchy\
-![picture](images/exception-class-hierarchy.gif)
+![picture](../images/exception-class-hierarchy.gif)
 * RuntimeException class hierarchy\
-![picture](images/runtime-exception-hierarchy.jpg)
+![picture](../images/runtime-exception-hierarchy.jpg)
 * try block
 	* identifies the code in which exception can occur
 * catch block
