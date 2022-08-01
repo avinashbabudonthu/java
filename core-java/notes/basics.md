@@ -468,13 +468,13 @@ for(int i: list){
 		* classes which extends java.lang.Error class
 		* Example: java.lang.NoClassDefFoundError, java.io.IOError
 * Exception Hirarchy in Java library\
-![picture](../images/Exception-Hierarchy-1.png)
+![picture](../notes/images/Exception-Hierarchy-1.png)
 * Error class hierarchy\
-![picture](../images/error-class-hierarchy.gif)
+![picture](../notes/images/error-class-hierarchy.gif)
 * Exception class hierarchy\
-![picture](../images/exception-class-hierarchy.gif)
+![picture](../notes/images/exception-class-hierarchy.gif)
 * RuntimeException class hierarchy\
-![picture](../images/runtime-exception-hierarchy.jpg)
+![picture](../notes/images/runtime-exception-hierarchy.jpg)
 * try block
 	* identifies the code in which exception can occur
 * catch block
