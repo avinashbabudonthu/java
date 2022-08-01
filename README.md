@@ -192,6 +192,9 @@
 	* [ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
 * Strings
 	* [Notes](core-java/notes/strings.md)
+	* [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+	* [String Format Examples](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+	* [String Joiner Examples](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 * Runtime.Version class
 	* [Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
 
