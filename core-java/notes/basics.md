@@ -495,12 +495,12 @@ for(int i: list){
 * [TryWithResource.java](../basics/src/main/java/com/java/exceptions/TryWithResource.java)
 
 ## References
-* Different classes in java.lang.ref package
-	* Reference<T>
-	* WeakReference<T> extends Reference<T>
-	* SoftReference<T> extends Reference<T>
-	* PhantomReference<T> extends Reference<T>
-	* ReferenceQueue<T> extends Object
+* Different classes in `java.lang.ref` package
+	* `Reference<T>`
+	* `WeakReference<T>` extends `Reference<T>`
+	* `SoftReference<T>` extends `Reference<T>`
+	* `PhantomReference<T>` extends `Reference<T>`
+	* `ReferenceQueue<T>` extends `Object`
 * Types of reference variables in Java
 	* Strong reference
 	* Weak reference
