@@ -633,13 +633,6 @@ Reader.read(char[] data)
 * [Random Access File Practice](../basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [Read Input From Key board](../basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 
-## Multi Threading
-* [Notes](multi-threading.md)
-## JVM
-* [JVM](../../jvm)
-* [Materials](../../jvm/materials.md)
-* [Notes](../../jvm/notes.md)
-
 ## Big Decimal
 * The BigDecimal class provides operation for arithmetic, comparison, hashing, rounding, manipulation and format conversion
 * This method can handle very small and very big floating point numbers with great precision
