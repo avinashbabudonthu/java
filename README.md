@@ -228,7 +228,16 @@
 	* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
 * Dequeue Examples
 	* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
-
+* [java.util.Arrays](core-java/collections/src/test/java/com/util/ArraysPractice.java)
+	* parallelSort
+	* parallelSetAll
+	* setAll
+	* parallelPrefix
+	* deepEquals
+	* hashCode
+	* deepHashCode
+	* fill
+	* deepToString
 ## java.util.function package
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
