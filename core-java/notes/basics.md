@@ -623,6 +623,10 @@ Reader.read(char[] data)
 * BufferedWriter
 	* To write content to file
 	* newLine() - adds new line character based on underlying OS
+* File path separator
+```
+java.io.File.separator
+```
 * Basic Stream \
 ![picture](../notes/images/basic-streams.jpg)
 * Reader classes hierarchy \
