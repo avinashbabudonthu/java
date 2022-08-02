@@ -564,9 +564,11 @@ PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(
 	* Byte Streams - Interacts as bindary data
 	* Text Streams - Interacts as unicode characters
 * Base class to read binary data
-	* InputStream
+	* InputStream - for reading
+	* OutputStream - for writing
 * Base class to read text data
-	* Reader
+	* Reader - for reading
+	* Writer - for writing
 * Read individual byte
 	* End of the stream means read() method returns -1
 ```
