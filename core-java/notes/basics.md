@@ -626,6 +626,8 @@ Reader.read(char[] data)
 * Code to add line break while writing content to file
 ```
 import java.io.BufferedWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get("src/main/resources/files/file1.txt"));
 bufferedWriter.write("abc");
@@ -648,6 +650,8 @@ java.io.File.separator
 ```
 * Code to add file separator to String
 ```
+import java.io.File;
+
 String fileSeparator = File.separator;
 System.out.println("abc" + fileSeparator + "def");
 
