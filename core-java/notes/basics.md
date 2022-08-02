@@ -563,10 +563,10 @@ PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(
 * 2 categories in io streams
 	* Byte Streams - Interacts as bindary data
 	* Text Streams - Interacts as unicode characters
-* Base class to read binary data
+* Base class to read/write binary data
 	* InputStream - for reading
 	* OutputStream - for writing
-* Base class to read text data
+* Base class to read/write text data
 	* Reader - for reading
 	* Writer - for writing
 * Read individual byte
