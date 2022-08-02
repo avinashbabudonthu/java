@@ -615,17 +615,44 @@ Reader.read(char[] data)
 	* CharArrayWriter
 	* PipedWriter
 	* BufferedWriter
-* line break in unix - `\n`
-* line break in windows - ` \r\n`
 * BufferedReader
 	* Read file content
 	* Will read lines based on new line character of underlying OS
 * BufferedWriter
 	* To write content to file
 	* newLine() - adds new line character based on underlying OS
+* line break in unix - `\n`
+* line break in windows - ` \r\n`
+* Code to add line break while writing content to file
+```
+import java.io.BufferedWriter;
+
+BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get("src/main/resources/files/file1.txt"));
+bufferedWriter.write("abc");
+bufferedWriter.newLine();
+bufferedWriter.write("def");
+bufferedWriter.close();
+```
+* Code to add line break to String
+```
+String lineSeparator = System.getProperty("line.separator");
+System.out.println("abc" + lineSeparator + "def");
+
+Output:
+abc
+def
+```
 * File path separator
 ```
 java.io.File.separator
+```
+* Code to add file separator to String
+```
+String fileSeparator = File.separator;
+System.out.println("abc" + fileSeparator + "def");
+
+Output:
+abc\def
 ```
 * Basic Stream \
 ![picture](../notes/images/basic-streams.jpg)
