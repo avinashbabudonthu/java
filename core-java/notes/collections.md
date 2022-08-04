@@ -90,25 +90,44 @@
 		* traverse the collection 
 		* remove elements from collection selectively if required
 * Set implementations
-	* General implementations: TreeSet, HashSet, LinkedHashSet
-	* Special purpose implementations: ConcurrentSkipListSet, java.util.concurrent.CopyOnWriteArraySet, java.util.EnumSet
+	* General implementations
+		* HashSet
+		* LinkedHashSet
+		* TreeSet
+	* Special purpose implementations
+		* java.util.EnumSet
+		* java.util.concurrent.CopyOnWriteArraySet
+		* java.util.concurrent.ConcurrentSkipListSet 
 * SortedSet implementation
 	* TreeSet
 * Whenever we are inserting value to Set, how Set will check whether current object is duplicate or not?
-	* * Set will check equality of current object with every object already present in the set. 
+	* Set will check equality of current object with every object already present in the set. 
 	* First hashcode of both the objects (existing and new) will be  checked. If it is same then equals method will be called for these two objects. If equals return true then current object is duplicate of existing object. 
 	* If true current object will not be inserted.
 * List implementations
-	* General implementations: Vector, ArrayList, LinkedList
-	* Special purpose implementations: java.util.concurrent.CopyOnWriteArrayList
+	* General implementations
+		* ArrayList
+		* LinkedList
+		* Vector
+	* Special purpose implementations
+		* java.util.concurrent.CopyOnWriteArrayList
 * Queue implementation
 	* PriorityQueue
 * Deque implementations
 	* ArrayDeque
 	* LinkedList
 * Map implementations
-	* General implemenatitons: HashTable, HashMap, LinkedHashMap, TreeMap
-	* Special implemenatitons:  ConcurrentSkipListMap, EnumMap, ConcurrentHashMap, WeakHashMap, IdentityHashMap
+	* General implemenatitons
+		* HashTable
+		* HashMap
+		* LinkedHashMap
+		* TreeMap
+	* Special implemenatitons
+		* WeakHashMap
+		* IdentityHashMap
+		* EnumMap
+		* ConcurrentHashMap
+		* ConcurrentSkipListMap
 * SortedMap implementations
 	* TreeMap
 * java.util.concurrent.CopyOnWriteArrayList
