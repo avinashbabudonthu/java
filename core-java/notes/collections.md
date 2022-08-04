@@ -27,7 +27,8 @@
 	* Container
 	* simply an object which groups multiple elements into single unit
 * Collection sub interfaces
-	* Set, List, Queue, Deque
+	* Set, List, Queue
+* Map is not sub interface is Collection interface. But part of collections
 * Map sub interfaces
 	* SortedMap, NavigableMap, ConcurrentMap, ConcurrentNavigableMap
 * Some common methods in Collection interface
