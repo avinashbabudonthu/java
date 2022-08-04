@@ -196,7 +196,8 @@ roaster.stream().forEach(p -> System.out.println(p.getName()));
 double average = roster.stream().filter(p -> p.getGender() == Person.Sex.MALE).mapToInt(Person::getAge).average().getAsDouble();
 ```
 * terminal operation
-	* A terminal operation, such as forEach, produces a non-stream result, such as a primitive value (like a double value), a collection, or in the case of forEach, no value at all. * In this example, the parameter of the forEach operation is the lambda expression `person -> {System.out.println(person.getName());}` which invokes the method getName on the object person. (The Java runtime and compiler infer that the type of the object person is Person.)
+	* A terminal operation, such as forEach, produces a non-stream result, such as a primitive value (like a double value), a collection, or in the case of forEach, no value at all. 
+	* In this example, the parameter of the forEach operation is the lambda expression `person -> {System.out.println(person.getName());}` which invokes the method getName on the object person. (The Java runtime and compiler infer that the type of the object person is Person.)
 * pre-defined Reduction operations in Java API
 	* min
 	* max
