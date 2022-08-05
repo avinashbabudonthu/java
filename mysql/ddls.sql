@@ -173,3 +173,8 @@ alter table emp add constraint contact_number_email_uq unique(contact_number, em
 -- drop unique constraint
 alter table emp drop index contact_number_uq;
 alter table emp drop constraint contact_number_uq;
+
+-- change column size
+-- use CHANGE, but that means you have to give the column name twice (because CHANGE allows you to change the name of the column too)
+ALTER TABLE emp MODIFY COLUMN name VARCHAR(100);
+ALTER TABLE emp CHANGE COLUMN name name VARCHAR(100);
