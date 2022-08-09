@@ -367,6 +367,10 @@
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
 ------
+# [Graph Database](graph-db)
+* [Notes](graph-db/notes.md)
+* [Materials](graph-db/materials.md)
+------
 # GraphQL
 * [GraphQL](graphql)
 * [Notes](graphql/notes.md)
