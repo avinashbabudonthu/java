@@ -92,9 +92,9 @@ public class Query implements GraphQLQueryResolver {
 }
 ```
 * The names of the method must be one of the following, in this order:
-	* <field>
-	* is<field> – only if the field is of type Boolean
-	* get<field>
+	* `<field>`
+	* `is<field>` – only if the field is of type Boolean
+	* `get<field>`
 * The method must have parameters that correspond to any parameters in the GraphQL schema, and may optionally take a final parameter of type `graphql.schema.DataFetchingEnvironment`
 * The method must also return the correct return type for the type in the GraphQL scheme, as we're about to see. We can use any simple types, String, Int, List, etc., with the equivalent Java types, and the system just maps them automatically
 * The above defines the method `getRecentPosts`, which we'll use to handle any GraphQL queries for the `recentPosts` field in the schema defined earlier
