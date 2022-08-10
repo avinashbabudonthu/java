@@ -1,34 +1,28 @@
 # Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
-# angular
-* [Angular](angular)
+# [Angular](angular)
 * [Commands](angular/commands.md)
 * [Install Angular CLI](angular/install-angular-cli.md)
 * [Materials](angular/materials.md)
 * [Notes](angular/notes.md)
 ------
-# Angular JS
-* [Angular JS](angular-js)
+# [Angular JS](angular-js)
 * [Materials](angular-js/materials.md)
 ------
-# Ansible
-* [Ansible](ansible)
+# [Ansible](ansible)
 * [Materials](ansible/materials.md)
 ------
-# Apache Beam
-* [Apache Beam](apache-beam)
+# [Apache Beam](apache-beam)
 * [Materials](apache-beam/materials.md)
 * [Notes](apache-beam/notes.md)
 ## Examples
 * [Hello World](apache-beam/hello-world)
 ------
-# Apache POI
-* [Apache POI](apache-poi)
+# [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
 	* Method - readExcel()
 ------
-# Architect
-* [Architect](architect)
+# [Architect](architect)
 * [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
 * [Business Writing Skills](architect/business-writing-skills.md)
 * [Congitive Biase Critical Thikings](architect/cognitive-biase-critical-thinking.md)
@@ -80,8 +74,7 @@
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
 ------
-# AVRO
-* [AVRO](avro)
+# [AVRO](avro)
 * [avro-maven-plugin-practice](avro/avro-maven-plugin-practice)
 * [Serialization By Generating Classes](avro/serialization-by-generating-class)
 * [Serialization Using Parsers](avro/serialization-using-parsers)
@@ -89,31 +82,25 @@
 * [Notes](avro/notes.md)
 * [Setup](avro/setup.md)
 ------
-# AWS
-* [AWS](aws)
+# [AWS](aws)
 ------
-# Azure
-* [Azure](azure)
+# [Azure](azure)
 * [Materials](azure/materials.md)
 ------
-# Cassandra
-* [Cassandra](cassandra)
+# [Cassandra](cassandra)
 * [Materials](cassandra/materials.md)
 ------
-# Chocolatey
-* [Chocolatey](chocolatey)
+# [Chocolatey](chocolatey)
 * [Materials](chocolatey/materials.md)
 * [Notes](chocolatey/notes.md)
 ------
-# Commons compress
-* [Commons compress](commons-compress)
+# [Commons compress](commons-compress)
 * Compress to tar file - Refer **compressToTar()** in [Compress.java](commons-compress/commons-compress/src/test/java/com/tar/Compress.java)
 * Decompress tar file - Refer **decompress()** in [UnCompress.java](commons-compress/commons-compress/src/test/java/com/tar/UnCompress.java)
 * Compress to tar gz file - Refer **compressToTar()** in [Compress.java](commons-compress/commons-compress/src/test/java/com/tar/gz/Compress.java)
 * Decompress tar gz file - Refer **decompress()** in [UnCompress.java](commons-compress/commons-compress/src/test/java/com/tar/gz/UnCompress.java)
 ------
-# Commons Lang3
-* [commons Lang3](commons-lang3)
+# [commons Lang3](commons-lang3)
 * [BooleanUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtils.java)
 * [ExceptionUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/ExceptionUtils.java)
 * [StringUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
@@ -128,12 +115,10 @@
 * HackerEarth
 * Code Jam - Google's Coding Competitions
 ------
-# Concourse
-* [Concourse](concourse)
+# [Concourse](concourse)
 * [Materials](concourse/materials.md)
 ------
-# Core Java
-* [Core Java](core-java)
+# [Core Java](core-java)
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
 ## Examples
@@ -248,38 +233,32 @@
 ## java.math package
 * [java.math.BigDecimal](core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
 ------
-# Couch Base
-* [Couch Base](couch-base)
+# [Couch Base](couch-base)
 * [Materials](couch-base/materials.md)
 ## Examples
 * [Couch Base Spring Boot2 Data](couch-base/couch-base-spring-boot2-data)
 ------
-# Cucumber
-* [Cucumber](cucumber)
+# [Cucumber](cucumber)
 * [Materials](cucumber/materials.md)
 * [Notes](cucumber/notes.md)
 ## Examples
 * [Hello World](cucumber/hello-world)
 * [Cucumber Level 2](cucumber/cucumber-level-2)
 ------
-# Data Structures Algorithms
-* [Data Structures Algorithms](data-structures-algorithms)
+# [Data Structures Algorithms](data-structures-algorithms)
 * [Materials](data-structures-algorithms/materials.md)
 ------
-# Design Patterns
-* [Design Patterns](design-patterns)
+# [Design Patterns](design-patterns)
 * [SOLID Principles](design-patterns/solid-principles)
 * [Creational](design-patterns/creational)
 * [Behavioral](design-patterns/behavioral)
 * [Structural](design-patterns/structural)
 * [Materials](design-patterns/materials.md)
 ------
-# Devops
-* [Devops](devops)
+# [Devops](devops)
 * [Materials](devops/materials.md)
 ------
-# Docker
-* [Docker](docker)
+# [Docker](docker)
 * [Build Problems with Maven Plugin? Problems running the Maven Build?](docker/build-problems-with-maven-plugin.md)
 * [Commands](docker/commands.md)
 * [Cygwin TTY Error](docker/cygwin-tty-error.md)
@@ -309,45 +288,37 @@
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
-# Dozer
-* [Dozer](dozer)
+# [Dozer](dozer)
 * [Materials](dozer/materials.md)
 ------
-# Drools
-* [Drools](drools)
+# [Drools](drools)
 * [Drools Eclipse Plugin](drools/drools-eclipse-plugin)
 * [Hello World Example](drools/hello-world)
 * [Materials](drools/materials.md)
 * [notes.md](drools/notes.md)
 ------
-# Drop Wizard
-* [Drop wizard](drop-wizard)
+# [Drop wizard](drop-wizard)
 * [Materials](drop-wizard/materials.md)
 ------
-# Easy Mock
-* [Easy Mock](easy-mock)
+# [Easy Mock](easy-mock)
 ## Examples
 * [Easy Mock Examples](easy-mock/easy-mock)
 ------
-# ES6
-* [ES6](es6)
+# [ES6](es6)
 * [Notes](es6/notes.js)
 ------
-# Garbage Collection
-* [Garbage Collection](garbage-collection)
+# [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
 * [Notes](garbage-collection/notes.md)
 ------
-# Git
-* [Git](git)
+# [Git](git)
 * [Create app passwords in bitbucket](git/app-passwords.md)
 * [Git commands](git/commands.md)
 * [Git Materials](git/materials.md)
 * [Notes](git/notes.md)
 * [Connect to github repository using SSH key](git/ssh.md)
 ------
-# GCP Google Cloud Platform
-* [GCP Google Cloud Platform](google-cloud-platform)
+# [GCP Google Cloud Platform](google-cloud-platform)
 * [Pub Sub Consumer](google-cloud-platform/pub-sub-consumer)
 * [Pub Sub Publisher](google-cloud-platform/pub-sub-publisher)
 * [Spanner CRUD](google-cloud-platform/spanner-crud)
@@ -358,8 +329,7 @@
 * [Materials](google-cloud-platform/materials.md)
 * [Notes](google-cloud-platform/notes.md)
 ------
-# Gradle
-* [Gradle](gradle)
+# [Gradle](gradle)
 * [Commands](gradle/commands.md)
 * [Installation](gradle/installation.md)
 * [Materials](gradle/materials.md)
