@@ -371,48 +371,39 @@
 * [Notes](graph-db/notes.md)
 * [Materials](graph-db/materials.md)
 ------
-# GraphQL
-* [GraphQL](graphql)
+# [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ------
-# Groovy
-* [Groovy](groovy)
+# [Groovy](groovy)
 * [Materials](groovy/materials.md)
 ## Examples
 * [Groovy](groovy/groovy)
 ------
-# GSON
-* [GSON](gson)
+# [GSON](gson)
 * [Object To JSON String](gson/gson/src/test/java/com/gson/ObjectToJsonString.java)
 ------
-# Guava
-* [Guava](guava)
+# [Guava](guava)
 * [Materials](guava/materials.md)
 ------
-# H2 Database
-* [H2](h2)
+# [H2 Database](h2)
 * [Notes](h2/notes.md)
 ------
-# Heroku
-* [Heroku](heroku)
+# [Heroku](heroku)
 * [Deploy spring boot application](heroku/deploy-spring-boot-application.md)
 ------
-# Hibernate
-* [Hibernate](hibernate)
+# [Hibernate](hibernate)
 * [Materials](hibernate/materials.md)
 * [Practice Entites](orm/practice-entities)
 ## Examples
 * [Hibernate Basics](hibernate/hibernate-basics)
 ------
-# HTML Sanitizer
-* [HTML Sanitizer](html-sanitizer)
+# [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
 	* sanitize()
 * [Materials](html-sanitizer/materials.md)
 ------
-# IBM MQ
-* [IBM MQ](ibm-mq)
+# [IBM MQ](ibm-mq)
 ## Examples
 * [Send Receive Text Message](ibm-mq/ibm-mq/src/main/java/ibm/mq/send/receive/SendRecieveTextMessage.java)
 * [Message Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/MQMessageListener.java)
