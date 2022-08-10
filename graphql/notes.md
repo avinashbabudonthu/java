@@ -82,7 +82,7 @@ type Mutation {
 
 # Root Query Resolver
 * The root query needs to have special beans defined in the Spring context to handle the various fields in this root query. Unlike the schema definition, there's no restriction that there only be a single Spring bean for the root query fields
-* The only requirements are that the beans implement `graphql.kickstart.tools.GraphQLQueryResolver`, and that every field in the root query from the scheme has a method in one of these classes with the same name
+* The only requirements are that the beans implement `graphql.kickstart.tools.GraphQLQueryResolver`, and that every field in the root query from the schema has a method in one of these classes with the same name
 ```
 public class Query implements GraphQLQueryResolver {
     private PostDao postDao;
