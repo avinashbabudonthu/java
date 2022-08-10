@@ -86,7 +86,7 @@ type Mutation {
 ```
 public class Query implements GraphQLQueryResolver {
     private PostDao postDao;
-    public List<Post> recentPosts(int count, int offset) {
+    public List<Post> getRecentPosts(int count, int offset) {
         return postDao.getRecentPosts(count, offset);
     }
 }
@@ -96,7 +96,7 @@ public class Query implements GraphQLQueryResolver {
 	* `is<field>` – only if the field is of type Boolean
 	* `get<field>`
 * The method must have parameters that correspond to any parameters in the GraphQL schema, and may optionally take a final parameter of type `graphql.schema.DataFetchingEnvironment`
-* The method must also return the correct return type for the type in the GraphQL scheme, as we're about to see. We can use any simple types, String, Int, List, etc., with the equivalent Java types, and the system just maps them automatically
+* The method must also return the correct return type for the type in the GraphQL schema, as we're about to see. We can use any simple types, String, Int, List, etc., with the equivalent Java types, and the system just maps them automatically
 * The above defines the method `getRecentPosts`, which we'll use to handle any GraphQL queries for the `recentPosts` field in the schema defined earlier
 
 # Using Beans to Represent Types
@@ -151,7 +151,7 @@ public class Mutation implements GraphQLMutationResolver {
 ```
 
 # Introducing GraphiQL
-* GraphQL also has a companion tool called `GraphiQL`. This is a UI that's able to communicate with any GraphQL Server, and execute queries and mutations against it. A downloadable version of it exists as an Electron app, and can be retrieved from [here](https://github.com/skevy/graphiql-app).
+* GraphQL also has a companion tool called `GraphiQL`. This is a UI that's able to communicate with any GraphQL Server, and execute queries and mutations against it. A downloadable version of it exists as an Electron app, and can be retrieved from [github](https://github.com/skevy/graphiql-app).
 * It's also possible to include the web-based version of GraphiQL in our application automatically by adding the GraphiQL Spring Boot Starter dependency
 ```
 <dependency>
