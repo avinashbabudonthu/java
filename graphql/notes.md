@@ -77,7 +77,7 @@ type Mutation {
 
 # Writing the Schema
 * The GraphQL Tools library works by processing GraphQL Schema files to build the correct structure, and then wires special beans to this structure. The Spring Boot GraphQL starter automatically finds these schema files.
-* We need to save these files with the extension `.graphqls` and they can be present anywhere on the classpath. We can also have as many of these files as desired, so we can split the scheme up into modules as desired.
+* We need to save these files with the extension `.graphqls` and they can be present anywhere on the classpath. We can also have as many of these files as desired, so we can split the schema up into modules as desired.
 * The one requirement is that there must be exactly one root query, and up to one root mutation. We can't split this across files, unlike the rest of the scheme. This is a limitation of the GraphQL Schema definition itself, not the Java implementation.
 
 # Root Query Resolver
