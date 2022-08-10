@@ -86,8 +86,8 @@ type Mutation {
 ```
 public class Query implements GraphQLQueryResolver {
     private PostDao postDao;
-    public List<Post> getRecentPosts(int count, int offset) {
-        return postsDao.getRecentPosts(count, offset);
+    public List<Post> recentPosts(int count, int offset) {
+        return postDao.getRecentPosts(count, offset);
     }
 }
 ```
