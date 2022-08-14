@@ -863,9 +863,15 @@ public class FileIOPractice {
 
     @SneakyThrows
     private void downloadFileV2(URL url, String zipFileDownloadFilePath){
+	    // using Apache commons-io
         log.info("downloading file, url: {}, zip-file: {}", url.toString(), zipFileDownloadFilePath);
         FileUtils.copyURLToFile(url, new File(zipFileDownloadFilePath));
         log.info("file downloaded, url: {}, zip-file: {}", url.toString(), zipFileDownloadFilePath);
+	    
+	    // using Files
+	try (InputStream is = url.openStream()) {
+            Files.copy(is, new File("C:\test\file-1.txt").toPath(), StandardCopyOption.REPLACE_EXISTING);
+        }
     }
 	
     @SneakyThrows
