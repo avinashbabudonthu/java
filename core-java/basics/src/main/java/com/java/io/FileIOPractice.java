@@ -814,6 +814,15 @@ public class FileIOPractice {
 		System.out.println("tempDirPath: " + tempDirPath);
 	}
 	
+	@SneakyThrows
+    @Test
+    public void createTempDirectory(){
+        log.info("creating temp directory");
+        Path tempDirectory = Files.createTempDirectory("folder_prefix");
+        File file = tempDirectory.toFile();
+        log.info("temp directory created. path: {}", file.getAbsolutePath());
+    }
+	
 	/**
         * Output:
         * abc
@@ -834,16 +843,6 @@ public class FileIOPractice {
         System.out.println("abc" + fileSeparator + "def");
     }
 	
-    @SneakyThrows
-    @Test
-    public File createTempDirectory(){
-        log.info("creating temp directory");
-        Path tempDirectory = Files.createTempDirectory("folder_prefix");
-        File file = tempDirectory.toFile();
-        log.info("temp directory created. path: {}", file.getAbsolutePath());
-        return file;
-    }
-	
     // Download file to temp directory
     @SneakyThrows
     @Test
@@ -852,7 +851,7 @@ public class FileIOPractice {
         File tempDirectoryFile = createTempDirectory();
 
         // prepare URL to download file
-        String urlString = "https://abcd.com/data-download.zip";
+        String urlString = "https://abcd.com/data.zip";
         URL url = new URL(urlString);
 
         // destination file path with file name
@@ -870,7 +869,8 @@ public class FileIOPractice {
     }
 	
     @SneakyThrows
-    private void deleteDirectory(File file){
+    @Test
+    public void deleteDirectory(File file){
         String fileAbsolutePath = file.getAbsolutePath();
         log.info("deleting directory: {}", fileAbsolutePath);
         FileUtils.deleteDirectory(file);
