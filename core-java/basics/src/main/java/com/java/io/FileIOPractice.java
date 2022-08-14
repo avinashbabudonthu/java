@@ -813,5 +813,68 @@ public class FileIOPractice {
 		String tempDirPath = System.getProperty("java.io.tmpdir");
 		System.out.println("tempDirPath: " + tempDirPath);
 	}
+	
+	/**
+        * Output:
+        * abc
+        * def
+        */
+    @Test
+    public void lineSeparator(){
+	String lineSeparator = System.getProperty("line.separator");
+	System.out.println("abc" + lineSeparator + "def");
+    }
+    
+    /**
+     * Output: abc\def
+     */
+    @Test
+    public void fileSeparator(){
+        String fileSeparator = File.separator;
+        System.out.println("abc" + fileSeparator + "def");
+    }
+	
+    @SneakyThrows
+    @Test
+    public File createTempDirectory(){
+        log.info("creating temp directory");
+        Path tempDirectory = Files.createTempDirectory("folder_prefix");
+        File file = tempDirectory.toFile();
+        log.info("temp directory created. path: {}", file.getAbsolutePath());
+        return file;
+    }
+	
+    // Download file to temp directory
+    @SneakyThrows
+    @Test
+    public void downloadFile(){
+        // create temp directory
+        File tempDirectoryFile = createTempDirectory();
 
+        // prepare URL to download file
+        String urlString = "https://abcd.com/data-download.zip";
+        URL url = new URL(urlString);
+
+        // destination file path with file name
+        String zipFileDownloadFilePath = tempDirectoryFile.getAbsolutePath() + File.separator + "file.zip";
+
+        // download file
+        downloadFileV2(url, zipFileDownloadFilePath);
+    }
+
+    @SneakyThrows
+    private void downloadFileV2(URL url, String zipFileDownloadFilePath){
+        log.info("downloading file, url: {}, zip-file: {}", url.toString(), zipFileDownloadFilePath);
+        FileUtils.copyURLToFile(url, new File(zipFileDownloadFilePath));
+        log.info("file downloaded, url: {}, zip-file: {}", url.toString(), zipFileDownloadFilePath);
+    }
+	
+    @SneakyThrows
+    private void deleteDirectory(File file){
+        String fileAbsolutePath = file.getAbsolutePath();
+        log.info("deleting directory: {}", fileAbsolutePath);
+        FileUtils.deleteDirectory(file);
+        log.info("deleted directory: {}", fileAbsolutePath);
+    }
+	
 }
