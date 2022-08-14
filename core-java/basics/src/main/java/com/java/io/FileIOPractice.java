@@ -805,8 +805,10 @@ public class FileIOPractice {
 	}
 
 	/**
-	 * Execute directly
-	 * Execute with VM argument : -Djava.io.tmpdir=C:\Temp
+	 * Output on executing directly - C:\Users\{username}\AppData\Local\Temp\
+	 * 
+	 * Outout on execute with VM argument : -Djava.io.tmpdir=C:\Temp
+	 * C:\Temp
 	 */
 	@Test
 	public void tempFolder() {
