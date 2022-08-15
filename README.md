@@ -375,8 +375,7 @@
 * [Keep Listener Up and Running with Another Thread](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningWithAnotherThread.java)
 * [Send Receive By Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/SendAndReceiveByListener.java)
 ------
-# Jackson JSON
-* [Jackson JSON](jackson-json)
+# [Jackson JSON](jackson-json)
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
 * [Materials](jackson-json/materials.md)
 * [Notes](jackson-json/notes.md)
@@ -386,13 +385,11 @@
 * [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
 * [JSON file to object](jackson-json/notes.md#json-file-to-object)
 ------
-# JBoss
-* [JBoss](jboss)
+# [JBoss](jboss)
 * [Materials](jboss/materials.md)
 * [Notes](jboss/notes.md)
 ------
-# Jenkins
-* [Jenkins](jenkins)
+# [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)
 * [Configure global security](jenkins/configure-global-security.md)
 * [Create free style jon](jenkins/create-freestyle-job.md)
@@ -402,42 +399,34 @@
 * [Notes](jenkins/notes.md)
 * [Sqitch](jenkins/sqitch.md)
 ------
-# Jersey
-* [Jersey](jersey)
+# [Jersey](jersey)
 * [Materials](jersey/materials.md)
 ------
-# JFrog
-* [JFrog](jfrog)
+# [JFrog](jfrog)
 * [Installation](jfrog/installation.md)
 ------
-# Jhipster
-* [Jhipster](jhipster)
+# [Jhipster](jhipster)
 * [Notes](jhipster/notes.md)
 ------
-# JMeter
-* [JMeter](jmeter)
+# [JMeter](jmeter)
 * [Materials](jmeter/materials.md)
 * [Notes](jmeter/notes.md)
 ------
-# Jolt
-* [Jolt](jolt)
+# [Jolt](jolt)
 * [Materials](jolt/materials.md)
 * [Notes](jolt/notes.md)
 ------
-# JPA
-* [JPA](jpa)
+# [JPA](jpa)
 * [Materials](jpa/materials.md)
 * [Practice Entites](orm/practice-entities)
 ------
-# Junit 4
-* [Junit 4](junit-4)
+# [Junit 4](junit-4)
 * [Materials](junit-4/materials.md)
 * [Notes](junit-4/notes.md)
 ## Examples
 * [Junit 4](junit-4/junit-4)
 ------
-# Junit 5
-* [Junit 5](junit-5)
+# [Junit 5](junit-5)
 * [Materials](junit-5/materials.md)
 ## Examples
 * [AfterAnnotations.java](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
@@ -452,13 +441,11 @@
 * [Tags.java](junit-5/junit-5/src/test/java/com/junit5/Tags.java)
 * [Mockito](junit-5/junit-5/src/test/java/com/junit5/mockito/MockitoExtensionsPractice.java)
 ------
-# JVM
-* [JVM](jvm)
+# [JVM](jvm)
 * [Materials](jvm/materials.md)
 * [Notes](jvm/notes.md)
 ------
-# Kafka
-* [Kafka](kafka)
+# [Kafka](kafka)
 * [Materials](kafka/materials.md)
 * [Notes](kafka/notes.md)
 * [Kafka confluent platform setup](kafka/kafka-confluent-platform-setup.md)
@@ -474,21 +461,17 @@
 * [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
 * [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
 ------
-# Karate
-* [Karate](karate)
+# [Karate](karate)
 * [Materials](karate/materials.md)
 * [Notes](karate/notes.md)
 ------
-# Kerberos
-* [Kerberos](kerberos)
+# [Kerberos](kerberos)
 * [Materials](kerberos/materials.md)
 ------
-# Kibana
-* [Kibana](kibana)
+# [Kibana](kibana)
 * [Materials](kibana/materials.md)
 ------
-# Kubernetes
-* [Kubernetes](kubernetes)
+# [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
 * [Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf](kubernetes/Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf)
 * [Materials](kubernetes/materials.md)
@@ -499,26 +482,21 @@
 	* Container Orchestration
 	* Kubernetes architecture
 ------
-# Linux
-* [Linux](linux)
+# [Linux](linux)
 * [Commands](linux/commands.md)
 ------
-# Liquibase
-* [Liquibase](liquibase)
+# [Liquibase](liquibase)
 * [Materials](liquibase/materials.md)
 ------
-# Log4J
-* [Log4J](log4j)
+# [Log4J](log4j)
 * [Materials](log4j/materials.md)
 * [Notes](log4j/notes.md)
 ------
-# logging
-* [Logging](logging)
+# [Logging](logging)
 * [Materials](logging/materials.md)
 * [Notes](logging/notes.md)
 ------
-# Maven
-* [Maven](maven)
+# [Maven](maven)
 * [Commands](maven/commands.md)
 * [Installation](maven/installation.md)
 * [Materials](maven/materials.md)
@@ -532,8 +510,7 @@
 	* [Maven Surefire Plugin](maven/notes.md#maven-surefire-plugin)
 * [Sample pom xml file](maven/sample_pom.xml)
 ------
-# Microservices
-* [Microservices](micro-services)
+# [Microservices](micro-services)
 * [Materials](micro-services/materials.md)
 * [Notes](micro-services/notes.md)
 ## Examples
@@ -553,8 +530,7 @@
 * [Spring Cloud Config Server Client Eureka Zuul](micro-services/spring-cloud-config-server-client-euraka-zuul)
 * [Zuul Eureka](micro-services/zuul-eureka)
 ------
-# Mockito
-* [Mockito](mockito)
+# [Mockito](mockito)
 * [Materials](mockito/materials.md)
 * [Notes](mockito/notes.md)
 * [JDBCTemplate Mock](mockito/jdbc-template-mock.md)
@@ -562,8 +538,7 @@
 * [Mockito Examples](mockito/mockito)
 * [Mock Autowired Value Field In Spring With Mockito](mockito/notes.md#mock-autowired-value-field-in-spring-with-mockito)
 ------
-# Mongo DB
-* [Mongo DB](mongo)
+# [Mongo DB](mongo)
 * [Materials](mongo/materials.md)
 * [Notes](mongo/notes.md)
 * [Queries](mongo/queries.md)
@@ -571,8 +546,7 @@
 * [Mongo DB Core Java](mongo/mongo-db-core-java)
 * [Mongo DB Spring Boot2 Data XML](mongo/mongo-db-spring-boot2-data-xml)
 ------
-# MySQL Database
-* [MySQL Database](mysql)
+# [MySQL Database](mysql)
 ## Examples
 * [MySQL for Data Analytics and BI](mysql/mysql-for-data-analytics-and-bi)
 * Practice final query questions
@@ -603,24 +577,19 @@
 * [Variables](mysql/variables.sql)
 * [Views](mysql/views.sql)
 ------
-# Neo4J
-* [Neo4J](neo4j)
+# [Neo4J](neo4j)
 * [Notes](neo4j/notes.md)
 ------
-# Node JS
-* [Node JS](node-js)
+# [Node JS](node-js)
 * [Install Node JS](node-js/install-node-js.md)
 ------
-# NPM
-* [NPM](npm)
+# [NPM](npm)
 * [Commands](npm/commands.md)
 ------
-# Open CSV
-* [Open CSV](open-csv)
+# [Open CSV](open-csv)
 * [Read CSV File](open-csv/open-csv/src/test/java/com/read/ReadCSV.java)
 ------
-# Oracle Database
-* [Oracle Database](oracle)
+# [Oracle Database](oracle)
 * [Materials](oracle/materials.md)
 ## Examples
 * [Constraints](oracle/constraints.md)
@@ -632,55 +601,48 @@
 * [Queries](oracle/queries.md)
 * [Tables](oracle/tables.md)
 ------
-# ORM
-* [ORM](orm)
+# [ORM](orm)
 * [Practice Entites](orm/practice-entities)
 ------
-# Open Shift
-* [Open shift](open-shift)
+# [Open shift](open-shift)
 * [Materials](open-shift/materials.md)
 ------
-# Performance
+# [Performance](performance)
 * [Materials](performance/materials.md)
 ------
-# Postgre SQL Database
-* [Postgre SQL Database](postgre-sql)
+# [Postgre SQL Database](postgre-sql)
 * [Materials](postgre-sql/materials.md)
 ## Examples
 * [Practice Tables](postgre-sql/practice-tables.sql)
 * [Select Queries](postgre-sql/selects.sql)
+* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
+* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
 ------
-# Power Mock
-* [Power Mock](power-mock)
+# [Power Mock](power-mock)
 ## Examples
 * [Power Mock Examples](power-mock/power-mock)
 ------
-# Prometheus
-* [Prometheus](prometheus)
+# [Prometheus](prometheus)
 * [Materials](prometheus/materials.md)
 * [Notes](prometheus/notes.md)
 	* Setup Prometheus in Local
 	* Prometheus Queries
 ------
-# Rabbit MQ
-* [Rabbit MQ](rabbit-mq)
+# [Rabbit MQ](rabbit-mq)
 * [Notes](rabbit-mq/notes.md)
 ## Examples
 * [Rabbit MQ](rabbit-mq/rabbit-mq)
 ------
-# ReactJS
-* [ReactJS](react-js)
+# [ReactJS](react-js)
 * [Materials](react-js/materials.md)
 ------
-# Redis
-* [Redis](redis)
+# [Redis](redis)
 * [Commands](redis/commands.md)
 * [Materials](redis/materials.md)
 ## Examples
 * [Redis Core Java](redis/redis-core-java)
 ------
-# REST API
-* [REST API](rest-api)
+# [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)
 * [Materials](rest-api/materials.md)
 * [Notes](rest-api/notes.md)
@@ -693,8 +655,7 @@
 * [PATCH APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PatchController.java)
 * [DELETE APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/DeleteController.java)
 ------
-# REST API Clients
-* [REST API Clients](rest-api-clients)
+# [REST API Clients](rest-api-clients)
 ## CURL
 * https://www.keycdn.com/support/popular-curl-examples
 ## Rest Template
@@ -712,37 +673,30 @@
 * [Mock WebClient](rest-api-clients/rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
 * https://www.callicoder.com/spring-5-reactive-webclient-webtestclient-examples/
 ------
-# Servlets and JSPs
-* [Servlets and JSPs](servlets-jsps)
+# [Servlets and JSPs](servlets-jsps)
 * [Materials](servlets-jsps/materials.md)
 ------
-# Sonarqube
-* [Sonarqube](sonarqube)
+# [Sonarqube](sonarqube)
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
 ------
-# Splunk
-* [Splunk](splunk)
+# [Splunk](splunk)
 * [Materials](splunk/materials.md)
 ------
-# Spock
-* [Spock](spock)
+# [Spock](spock)
 * [Materials](spock/materials.md)
 ## Examples
 * [Spock Practice](spock/spock-practice)
 * [Spring Boot Spock](spock/springboot-spock)
 ------
-# Spring
-* [Spring](spring)
+# [Spring](spring)
 ------
-# SQL
-* [SQL](sql)
+# [SQL](sql)
 * [Materials](sql/materials.md)
 * [Notes](sql/notes.md)
 ## Examples
 * [Difference between Delete and Truncate Command](sql/delete-vs-truncate-command.md)
 ------
-# SQL Server Database
-* [SQL Server Database](sql-server)
+# [SQL Server Database](sql-server)
 * [Materials](sql-server/materials.md)
 ## Examples
 * [Alter Table](sql-server/alter-table.md)
@@ -759,21 +713,17 @@
 * [Select](sql-server/select.md)
 * [Views](sql-server/views.md)
 ------
-# Tableau
-* [Tableau](tableau)
+# [Tableau](tableau)
 ## Examples
 * [Setup](tableau/setup.md)
 ------
-# Teradata Database
-* [Teradata Database](teradata)
+# [Teradata Database](teradata)
 * [Commands](teradata/commands.sql)
 ------
-# Testing
-* [Testing](testing)
+# [Testing](testing)
 * [Materials](materials.md)
 ------
-# TypeScript
-* [TypeScript](typescript)
+# [TypeScript](typescript)
 * [Materials](typescript/materials.md)
 * [Notes](typescript/notes.md)
 ## Examples
@@ -784,44 +734,36 @@
 * [String](typescript/string)
 * [Variables](typescript/variables)
 ------
-# UML
-* [UML](uml)
+# [UML](uml)
 * [Notes](uml/notes.md)
 ------
-# Unit Testing
-* [Unit Testing](unit-testing)
+# [Unit Testing](unit-testing)
 * [Materials](unit-testing/materials.md)
 * [Notes](unit-testing/notes.md)
 ------
-# Util Logging
-* [Util Logging](util-logging)
+# [Util Logging](util-logging)
 * [Materials](util-logging/materials.md)
 * [Notes](util-logging/notes.md)
 ## Examples
 * [Util Logging](util-logging/util-logging)
 ------
-# Visual Studio Code
-* [Visual Studio Code](visual-studio-code)
+# [Visual Studio Code](visual-studio-code)
 * [Install Angular Essentials Extension](visual-studio-code/install-angular-essentionals-extensions.md)
 ------
-# Visual VM
-* [Visual VM](visual-vm)
+# [Visual VM](visual-vm)
 * [Materials](visual-vm/materials.md)
 * [Notes](visual-vm/notes.md)
 ------
-# Weblogic Queue
-* [Weblogic Queue](weblogic-queue)
+# [Weblogic Queue](weblogic-queue)
 ## Examples
 * [Weblogic Queue](weblogic-queue/weblogic-queue)
 	* [Receive Listener](weblogic-queue/weblogic-queue/src/test/java/com/jms/ReceiverListener.java)
 	* [Send Receive Message](weblogic-queue/weblogic-queue/src/test/java/com/jms/SendReceiveMessage.java)
 ------
-# Weld
-* [Weld](weld)
+# [Weld](weld)
 * [Materials](weld/materials.md)
 ------
-# Windows
-* [Windows](windows)
+# [Windows](windows)
 * [Commands](windows/commands.md)
 ------
 # Files
