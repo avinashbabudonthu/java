@@ -137,6 +137,5 @@
 * [Spring Transaction](transaction)
 * [Materials](spring-jdbc/materials.md)
 ------
-# Transaction
-* [Spring Webflux](web-flux)
+# [Spring Webflux](web-flux)
 * [Materials](web-flux/materials.md)
