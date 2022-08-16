@@ -441,6 +441,7 @@
 ------
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
+* [Materials](graphql/materials.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ------
 # [Groovy](groovy)
