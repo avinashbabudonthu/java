@@ -551,7 +551,8 @@
 * [Materials](jvm/materials.md)
 * [Notes](jvm/notes.md)
 ------
-# [JSON Web Tokens](jwt)
+# [JWT](jwt)
+* JWT - JSON Web Tokens
 * [Materials](jwt/materials.md)
 ------
 # [Kafka](kafka)
