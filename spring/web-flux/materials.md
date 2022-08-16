@@ -8,3 +8,6 @@
 
 # Spring Documentation
 * [https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux)
+
+# Youtube
+* https://www.youtube.com/watch?v=M3jNn3HMeWg&ab_channel=DefogTech
