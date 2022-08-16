@@ -9,7 +9,8 @@
 * W3c RDF - W3C standard SPARQL query languages
 ------
 # Graph data structure contains
-* nodes & links (or) vertices & edges
+* Nodes (or) Vertices
+* Relationships (or) Links (or) Edges
 ------
 # Property Graph:
 * Consists of nodes and edges
