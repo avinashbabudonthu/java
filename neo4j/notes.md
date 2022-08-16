@@ -11,7 +11,9 @@
   * Properties are key-value pairs.
   * Nodes are represented using circle and Relationships are represented using arrow keys. Relationship specifies the relation between two nodes.
   * There are two types of relationships between nodes according to their directions: Unidirectional and Bidirectional
-  * Each Relationship contains two nodes: "Start Node" or "From Node" and "To Node" or "End Node".
+  * Each Relationship contains two nodes: 
+   * "Start Node" and "End Node" or
+   * "From Node" and "To Node"
   * Both Nodes and Relationships contain properties.
 * Relationships should be directional in Property Graph Data Mode. If you create a relationship without a direction, it will through an error message.
 * There are three main building block of a GraphDB Data model:
