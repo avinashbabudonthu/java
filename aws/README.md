@@ -7,8 +7,7 @@
 ------
 ## [IAM Identity and Access Management](iam)
 ------
-## Npetune Graph DB
-* [Npetune Graph DB](neptune)
+## [Npetune Graph DB](neptune)
 * [Notes](neptune/notes.md)
 ------
 ## [RDS Relational Databases Service](rds)
