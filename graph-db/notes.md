@@ -44,7 +44,7 @@
 	* Relationships always have a type.
 	* Relationships form patterns of data.
 * Popular Graph Databases
-* Neo4j is the most popular Graph Database. Other Graph Databases are
+	* Neo4j is the most popular Graph Database. Other Graph Databases are
 	* Oracle NoSQL Database
 	* OrientDB
 	* HypherGraphDB
