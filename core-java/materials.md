@@ -70,3 +70,7 @@
 # Java 17
 ## Udemy
 * Java Programming Masterclass covering Java 11 & Java 17
+------
+# Multithreading
+* https://jenkov.com/tutorials/java-concurrency/index.html
+* Java Concurrency Utilities - java.util.concurrent - https://jenkov.com/tutorials/java-util-concurrent/index.html
