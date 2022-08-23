@@ -690,6 +690,7 @@
 # [Neo4J](neo4j)
 * [Notes](neo4j/notes.md)
 * [Materials](neo4j/materials.md)
+* [Installation](neo4j/installation.md)
 * [Queries](neo4j/queries.md)
 ------
 # [Node JS](node-js)
