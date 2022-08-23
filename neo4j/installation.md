@@ -7,5 +7,5 @@
 neo4j console
 ```
 * Open url - http://localhost:7474
-* Should see Neo4J runniung\
+* Should see Neo4J running\
 ![picture](imgs/neo4j-installation.png)
