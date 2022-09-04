@@ -98,6 +98,8 @@
 * [UML](#uml)
 * [Unit Testing](#unit-testing)
 * [Util Logging](#util-logging)
+* [Util methods](utils)
+	* [Generate random password](utils/generate-random-password.md)
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)
