@@ -94,7 +94,7 @@
 * [Tableau](#tableau)
 * [Teradata Database](#teradata-database)
 * [Testing](#testing)
-* [TinkerPop](#tinker-pop)
+* [TinkerPop](#tinkerpop)
 * [TypeScript](#typescript)
 * [UML](#uml)
 * [Unit Testing](#unit-testing)
