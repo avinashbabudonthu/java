@@ -1,4 +1,5 @@
 # Gremlin commands
+* Reference to below gremlin commands - https://tinkerpop.apache.org/docs/current/tutorials/getting-started/
 * Download gremlin console from [here](https://www.apache.org/dyn/closer.lua/tinkerpop/3.6.1/apache-tinkerpop-gremlin-console-3.6.1-bin.zip)
 * open gremlin console
 ```
