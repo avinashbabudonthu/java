@@ -451,6 +451,7 @@
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
+* [Commands](gremlin/commands.md)
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)
