@@ -68,7 +68,7 @@
 * [Microservices](#micro-services)
 * [Mockito](#mockito)
 * [Mongo DB](#mongo)
-* [MySQL Database](#mysql)
+* [MySQL Database](#mysql-database)
 * [Neo4J](#neo4j)
 * [Node JS](#node-js)
 * [NPM](#npm)
