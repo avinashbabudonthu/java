@@ -33,6 +33,7 @@
 * [Gradle](#gradle)
 * [Graph Database](#graph-database)
 * [GraphQL](#graphql)
+* [Gremlin](#gremlin)
 * [Groovy](#groovy)
 * [GSON](#gson)
 * [Guava](#guava)
@@ -447,6 +448,9 @@
 * [Notes](graphql/notes.md)
 * [Materials](graphql/materials.md)
 * [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
+------
+# [Gremlin](gremlin)
+* [Materials](gremlin/materials.md)
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)
