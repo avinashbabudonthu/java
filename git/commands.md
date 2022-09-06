@@ -41,7 +41,10 @@ git branch -a
 
 git branch --all
 ```
-
+* Count number of branches
+```
+git branch -r | wc -l
+```
 * switch to another branch
 ```
 git checkout branch-name
