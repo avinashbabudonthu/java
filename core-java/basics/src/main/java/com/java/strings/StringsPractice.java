@@ -281,8 +281,26 @@ public class StringsPractice {
 	@Test
 	public void replaceAll() {
 		String filePathWithName = "C:\\output-" + LocalDateTime.now().toString().replaceAll(":", "-") + ".txt";
-
 		System.out.println(filePathWithName);
+	}
+	
+	/**
+	* Example: 
+	* password: rC$6it
+	* before-password: rC$6it
+	* after-password: rC\$6it
+	* str: This is your password: rC$6it
+	*/
+	@Test
+	public void replaceAll(){
+		String str = "This is your password: {password}";
+		// If password contains backslash(\) or dollar($) symbols then exception will be thrown so escape them with Matcher.quoteReplacement
+		String password = generatePasswordV2(6);
+		System.out.println("before-password:" + password);
+		password = java.util.regex.Matcher.quoteReplacement(password);
+		System.out.println("after-password:" + password);
+		str = str.replaceAll("\\{password\\}", password);
+		System.out.println("str: " + str);
 	}
 
 	/**
