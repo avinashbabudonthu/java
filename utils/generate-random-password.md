@@ -2,6 +2,7 @@
 * Generate 6 character alpha numeric random password  with combination of lowercase, uppercase, special character, number, 2 random characters
 ```
 import java.util.Random;
+import java.util.regex.Matcher;
 
 /**
 * Example: 
