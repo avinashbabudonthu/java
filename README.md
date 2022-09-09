@@ -781,8 +781,8 @@
 * https://www.keycdn.com/support/popular-curl-examples
 
 ## Rest Template
-* [Rest Template object creation with read and connection time out](rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
-* [Rest Template](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md)
+* [Rest Template object creation with read and connection time out](/rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
+* [Rest Template](/rest-api-clients/rest-template.md)
 
 ## WebClient
 * Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
