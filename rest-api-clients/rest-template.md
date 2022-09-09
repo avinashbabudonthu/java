@@ -75,7 +75,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.MediaType;
 ```
-
+------
+# RestTemplate object creation with read timeout and connection timeout
+```
+public RestTemplate restTemplate() {
+	HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory();
+	httpRequestFactory.setConnectionRequestTimeout(20000); // in milli seconds
+	httpRequestFactory.setConnectTimeout(20000); // in milli seconds
+	httpRequestFactory.setReadTimeout(35000); // in milli seconds
+	return new RestTemplate(httpRequestFactory);
+}
+```
+------
 # Simple API that return String
 ## API
 ```
