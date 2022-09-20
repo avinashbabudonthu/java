@@ -5,6 +5,7 @@
 * [Angular JS](#angular-js)
 * [Ansible](#ansible)
 * [Apache Beam](#apache-beam)
+* [Apache Camel](#apache-camel)
 * [Apache POI](#apache-poi)
 * [Architect](#architect)
 * [AWS](#aws)
@@ -126,6 +127,9 @@
 * [Notes](apache-beam/notes.md)
 ## Examples
 * [Hello World](apache-beam/hello-world)
+------
+# [Apache Camel](apache-camel)
+* [Materials](apache-camel/materials.md)
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
