@@ -186,6 +186,9 @@
 ## Architecture diagram tools
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
+
+## Interview questions
+* https://www.softwaretestinghelp.com/java-architect-interview-questions/
 ------
 # [AVRO](avro)
 * [avro-maven-plugin-practice](avro/avro-maven-plugin-practice)
