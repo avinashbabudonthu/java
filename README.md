@@ -189,6 +189,7 @@
 
 ## Interview questions
 * https://www.softwaretestinghelp.com/java-architect-interview-questions/
+* https://www.indeed.com/career-advice/interviewing/java-architect-interview-questions
 ------
 # [AVRO](avro)
 * [avro-maven-plugin-practice](avro/avro-maven-plugin-practice)
