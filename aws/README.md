@@ -86,12 +86,17 @@
 
 # Udemy
 * AWS Essentials
+* Ultimate AWS Certified Solutions Architect Associate SAA-C03
+* Ultimate AWS Certified Developer Associate 2022 - NEW!
+* [NEW] Ultimate AWS Certified Cloud Practitioner - 2022
+* Practice Exams | AWS Certified Solutions Architect Associate
+* Practice Exams | AWS Certified Developer Associate 2022
 * Learn AWS - Deploy Java Spring Boot to AWS Elastic Beanstalk
 * Spring Framework DevOps on AWS
 * Docker in AWS - Deploy Java Spring Boot to AWS Fargate & ECS
 * Ultimate AWS Certified Developer Associate 2020 - NEW!
 * Kubernetes Hands-On - Deploy Microservices to the AWS Cloud
-	
+
 ## Others
 * [AWS Java SDK](https://aws.amazon.com/sdk-for-java)
 * [Amazon Cli Documentation](https://aws.amazon.com/cli)
