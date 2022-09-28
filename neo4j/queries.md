@@ -170,3 +170,9 @@ match(a:label1), (b:label1) where a.name="Node2" and b.name="Node3"
 create (a)-[rel:relation2{from: "Node2", to: "Node3"}]->(b)
 return a,b
 ```
+* Query by id
+```
+MATCH (s)
+WHERE ID(s) = 65110
+RETURN s
+```
