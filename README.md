@@ -104,6 +104,7 @@
 * [Util Logging](#util-logging)
 * [Util methods](utils)
 	* [Generate random password](utils/generate-random-password.md)
+	* [Reverse the number](utils/utils.md#reverse-the-number)
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)
