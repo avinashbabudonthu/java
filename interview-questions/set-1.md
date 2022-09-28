@@ -67,7 +67,7 @@ num1: 1292, num1Reverse: 2921, sum: 4213, sumReverse: 3124
 num1: 4213, num1Reverse: 3124, sum: 7337, sumReverse: 7337
 iterations: 3
 ```
-* input - -451
+* input - `-451`
 ```
 num1: -451, num1Reverse: -154, sum: -605, sumReverse: -506
 num1: -605, num1Reverse: -506, sum: -1111, sumReverse: -1111
