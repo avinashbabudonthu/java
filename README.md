@@ -188,7 +188,7 @@
 * [Draw.io](https://draw.io/)
 * [Gliffy](https://www.gliffy.com/)
 
-## Interview questions
+## Architect Interview questions
 * https://www.softwaretestinghelp.com/java-architect-interview-questions/
 * https://www.indeed.com/career-advice/interviewing/java-architect-interview-questions
 ------
