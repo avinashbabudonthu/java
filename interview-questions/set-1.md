@@ -34,7 +34,7 @@ public void palindrome() {
             }
         }
 
-        System.out.println(i);
+        System.out.println("iterations: "+ i);
     }
 
     private long reverseTheNumber(long number){
@@ -52,4 +52,24 @@ public void palindrome() {
         }
         return isNagative ? reverse * -1 : reverse;
     }
+```
+## Result
+* Input - 451
+```
+num1: 451, num1Reverse: 154, sum: 605, sumReverse: 506
+num1: 605, num1Reverse: 506, sum: 1111, sumReverse: 1111
+iterations: 2
+```
+* input - 349
+```
+num1: 349, num1Reverse: 943, sum: 1292, sumReverse: 2921
+num1: 1292, num1Reverse: 2921, sum: 4213, sumReverse: 3124
+num1: 4213, num1Reverse: 3124, sum: 7337, sumReverse: 7337
+iterations: 3
+```
+* input - -451
+```
+num1: -451, num1Reverse: -154, sum: -605, sumReverse: -506
+num1: -605, num1Reverse: -506, sum: -1111, sumReverse: -1111
+iterations: 2
 ```
