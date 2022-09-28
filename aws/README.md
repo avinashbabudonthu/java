@@ -59,6 +59,7 @@
 * AWS Certified DevOps Engineer: High Availability and Elasticity
 
 # Youtube
+* Top 50+ AWS Services Explained in 10 Minutes - https://www.youtube.com/watch?v=JIbIYCM48to&ab_channel=Fireship
 * [Introduction to AWS Services.mp4](https://www.youtube.com/watch?v=Z3SYDTMP3ME&list=PLAAFXN2OG73WoYuYevW5sYrc5UxbeRVZq&index=9&t=172s)
 * [AWS Budget Setup Tutorial.mp4](https://www.youtube.com/watch?v=fvz0cphjHjg&list=PLAAFXN2OG73WoYuYevW5sYrc5UxbeRVZq&index=11&ab_channel=StephaneMaarek)
 * Introduction To Amazon Web Services - AWS Tutorial for Beginners - AWS Training Videos.mp4
