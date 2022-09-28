@@ -177,10 +177,7 @@ WHERE ID(s) = 65110
 RETURN s
 ```
 ------
-# Neo4j Tutorial
-
 ## Fundamentals
-
 Store any kind of data using the following graph concepts:
 
 * **Node**: Graph data records
