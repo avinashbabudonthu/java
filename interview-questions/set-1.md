@@ -73,3 +73,35 @@ num1: -451, num1Reverse: -154, sum: -605, sumReverse: -506
 num1: -605, num1Reverse: -506, sum: -1111, sumReverse: -1111
 iterations: 2
 ```
+------
+# Character count
+* Problem statement
+```
+input: aaabbcccc
+output: a3b2c4
+```
+* Code
+```
+public void characterCount(){
+        String input = "aaabbcccc";
+        Map<String, Integer> map = new HashMap<>();
+        for(int i=0;i<input.length();i++){
+            String character = String.valueOf(input.charAt(i));
+            Integer count = map.getOrDefault(character, 0);
+            count++;
+            map.put(character, count);
+        }
+        System.out.println("map: " + map);
+
+        StringBuilder result = new StringBuilder();
+        map.forEach((character, count) -> {
+            result.append(character).append(count);
+        });
+        System.out.println("result: " + result);
+    }
+```
+* Output
+```
+map: {a=3, b=2, c=4}
+result: a3b2c4
+```
