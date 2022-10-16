@@ -521,6 +521,7 @@
 * [Notes](jdk/notes.md)
 ## [Keytool](jdk/key-tool)
 * [Keytool commands](jdk/key-tool/commands.md)
+* [Notes](jdk/key-tool/notes.md)
 ------
 # [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)
