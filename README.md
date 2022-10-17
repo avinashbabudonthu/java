@@ -802,6 +802,7 @@
 
 ## Rest Template
 * [Rest Template object creation with read and connection time out](/rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
+* [Create RestTemplate with SSL Verification Turnoff](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
 * [Rest Template](/rest-api-clients/rest-template.md)
 
 ## WebClient
