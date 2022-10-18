@@ -28,28 +28,39 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
 import java.util.Arrays;
 
-TrustStrategy acceptingTrustStrategy = (X509Certificate[] chain, String authType) -> true;
+@Value("${is.dev.mode}")
+private Boolean devmode;
 
-SSLContext sslContext = null;
-try {
-sslContext = org.apache.http.ssl.SSLContexts.custom()
-	.loadTrustMaterial(null, acceptingTrustStrategy)
-	.build();
-} catch (NoSuchAlgorithmException | KeyManagementException | KeyStoreException  e) {
-LOGGER.error("Error while creating restTemplate bean {}", e.getMessage());
-}
+public RestTemplate restTemplate() {
+        CloseableHttpClient httpClient;
+        if (Boolean.TRUE.equals(devmode)) {
+            TrustStrategy acceptingTrustStrategy = (X509Certificate[] chain, String authType) -> true;
 
-SSLConnectionSocketFactory csf = new SSLConnectionSocketFactory(sslContext);
+            SSLContext sslContext = null;
+            try {
+                sslContext = org.apache.http.ssl.SSLContexts.custom()
+                        .loadTrustMaterial(null, acceptingTrustStrategy)
+                        .build();
+            } catch (NoSuchAlgorithmException | KeyManagementException | KeyStoreException  e) {
+                LOGGER.error("Error while creating restTemplate bean: {}", e.getMessage());
+            }
 
-httpClient = HttpClients.custom()
-		.setSSLSocketFactory(csf)
-                .build();
+            SSLConnectionSocketFactory csf = new SSLConnectionSocketFactory(sslContext);
 
-HttpComponentsClientHttpRequestFactory requestFactory =
+            httpClient = HttpClients.custom()
+                    .setSSLSocketFactory(csf)
+                    .build();
+
+        } else {
+            httpClient = HttpClientBuilder.create().setDefaultRequestConfig(RequestConfig.DEFAULT).build();
+        }
+        HttpComponentsClientHttpRequestFactory requestFactory =
                 new HttpComponentsClientHttpRequestFactory();
-requestFactory.setHttpClient(httpClient);
-RestTemplate restTemplate = new RestTemplate(requestFactory);
-restTemplate.setInterceptors(Arrays.asList(new RestTemplateInterceptor()));
+        requestFactory.setHttpClient(httpClient);
+        RestTemplate restTemplate = new RestTemplate(requestFactory);
+        restTemplate.setInterceptors(Arrays.asList(new RestTemplateInterceptor()));
+        return restTemplate;
+}
 
 public static class RestTemplateInterceptor implements ClientHttpRequestInterceptor {
 
