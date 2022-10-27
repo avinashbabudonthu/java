@@ -591,3 +591,9 @@ ASSERT n.name IS UNIQUE
 ```
 return ()-->()
 ```
+* Select properties
+```
+MATCH (n)
+WHERE id(n) = 12345
+RETURN properties(n) as props
+```
