@@ -597,3 +597,11 @@ MATCH (n)
 WHERE id(n) = 12345
 RETURN properties(n) as props
 ```
+* select distinct labels
+```
+match(n) return distinct labels(n) limit 250;
+```
+* select properties for nodes
+```
+match(n1: label1) return properties(n1) limit 5;
+```
