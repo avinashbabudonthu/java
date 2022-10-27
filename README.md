@@ -139,6 +139,10 @@
 	* Method - readExcel()
 ------
 # [Architect](architect)
+## My Materials
+* [Notes](architect/notes.md)
+
+## Materials
 * [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
 * [Business Writing Skills](architect/business-writing-skills.md)
 * [Congitive Biase Critical Thikings](architect/cognitive-biase-critical-thinking.md)
