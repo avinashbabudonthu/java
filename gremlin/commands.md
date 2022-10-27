@@ -144,3 +144,7 @@ g.V().group().by(label).by("name")
 ```
 g.V().valueMap()
 ```
+* Count vertices
+```
+g.V().count()
+```
