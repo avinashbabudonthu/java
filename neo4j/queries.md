@@ -176,9 +176,9 @@ return a,b
 ```
 * Query by id
 ```
-MATCH (s)
-WHERE ID(s) = 65110
-RETURN s
+MATCH (s) WHERE ID(s) = 65110 RETURN s
+
+match(v1: label) where ID(v1) = 'id-value' return v1 limit 10;
 ```
 ------
 ## Fundamentals
