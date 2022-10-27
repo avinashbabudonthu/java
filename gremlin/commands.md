@@ -139,3 +139,8 @@ g.V().group().by(label)
 ```
 g.V().group().by(label).by("name")
 ```
+------
+* Check all vertices with properties
+```
+g.V().valueMap()
+```
