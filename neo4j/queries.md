@@ -179,6 +179,8 @@ return a,b
 MATCH (s) WHERE ID(s) = 65110 RETURN s
 
 match(v1: label) where ID(v1) = 'id-value' return v1 limit 10;
+
+MATCH (n) WHERE ID(n) IN [7, 8];
 ```
 ------
 ## Fundamentals
