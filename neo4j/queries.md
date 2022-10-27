@@ -46,6 +46,10 @@ match (Raul)-[r:PLAYER_OF]->(It) delete r
 match(a:person{name: "Jack"}) detach delete a
 match(a:person{name: "Jill"}) detach delete a
 ```
+* delete all nodes with specific label
+```
+match(a:label1) detach delete a
+```
 ------
 # Select
 * get all nodes
