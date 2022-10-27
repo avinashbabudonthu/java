@@ -583,3 +583,7 @@ Make `.name` property unique on nodes with `:Person` label
 DROP CONSTRAINT ON (n:Person)
 ASSERT n.name IS UNIQUE
 ```
+* Get all relationships
+```
+return ()-->()
+```
