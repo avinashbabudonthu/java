@@ -642,5 +642,25 @@ public class StringsPractice {
 		System.out.println(result1);
 		System.out.println(result2);
 	}
+	
+	@Test
+	public static String clobToString(java.sql.Clob clob) {
+
+		if (clob == null) {
+			return "";
+		}
+
+		java.io.Writer w = new java.io.StringWriter();
+
+		java.io.Reader in = null;
+		try {
+			in = clob.getCharacterStream();
+			org.apache.logging.log4j.core.util.IOUtils.copy(in, w);
+			return w.toString();
+		} catch (java.sql.SQLException | java.io.IOException exception) {
+			throw new RuntimeException(exception);
+		}
+
+	}
 
 }
