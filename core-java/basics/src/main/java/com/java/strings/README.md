@@ -1,5 +1,5 @@
 # [String Examples](StringsPractice.java)
-* Clob to String - [String Examples](StringsPractice.java) - clobToString
+* Clob to String conversion - clobToString
 ------
 # [String format](StringFormatPractice.java)
 ------
