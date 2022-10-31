@@ -1,2 +1,3 @@
 # String Examples list
-* Clob to String
+## Description - class name - method name
+* Clob to String - [StringsPractice.java] - clobToString
