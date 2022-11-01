@@ -1,3 +1,73 @@
+# Services
+* Elastic Cloud Compute - EC2
+* Virtual Private Cloud - VPC
+* Simple Storage Service - S3
+* RDS
+	* MySQL
+	* Sql Server
+	* Oracle
+	* MariaDB
+	* Amazon Aurora
+	* PostgreSQL
+	* SQLServer
+* Dynamo DB - Document DB
+* Redshift - Data warehouse
+* Route53
+* Elastic beanstalk - EB
+* CloudFront
+* Clout Watch - Collect and store logs and alert when application fails
+* Simple Queue Service - SQS
+* Web console
+* Command line utility
+* Software Development Kit - SDK
+* Robomaker
+* Load Balancing
+* Ground Station
+* Bracket
+* LightSail
+* Lambda
+	* Functions as a service
+	* Serverless computing
+* Serverless Repo
+	* Outposts
+	* Snow
+* Docker
+	* Container Registry
+	* ECS - Elastic Container Service
+	* EKS - Elastic Kubernetes Services
+	* Fargate
+	* App Runner
+* File Storage
+	* Simple Storage Service - S3
+	* Glacier
+	* Elastic Block Storage - EBS
+	* Elastic File System - EFS
+* Simple DB - No SQL
+* Graph DB
+	* Neptune
+* Elastic Cache
+	* Timestream
+	* Quantum Ledger
+* Analytics
+* Lake Formation
+* Kinesis
+* Elastic Map Reduce
+* Amazon MSK - Kafka
+* Glue
+* Machine Learning
+	* Sagemaker
+	* Rekognition
+	* LEX
+	* Deep Racer
+* Developer Essentials
+	* IAM
+	* Cognito
+	* SNS - Simple Notification Service
+	* SES - Simple Email Service
+	* Cloud Formation
+	* Amplify
+	* Budgets
+------
 # List of Projects
 ## [EBS Elastic Block Storage](ebs)
 ------
@@ -101,23 +171,3 @@
 ## Others
 * [AWS Java SDK](https://aws.amazon.com/sdk-for-java)
 * [Amazon Cli Documentation](https://aws.amazon.com/cli)
-
-# Services - Studying Order
-* Elastic Cloud Compute - EC2
-* Virtual Private Cloud - VPC
-* Simple Storage Service - S3
-* RDS - MySQL
-* RDS - Sql Server
-* RDS - Oracle
-* RDS - MariaDB
-* RDS - Amazon Aurora
-* Dynamo DB
-* Redshift
-* Route53
-* Elastic beanstalk - EB
-* CloudFront
-* Clout Watch - Collect and store logs and alert when application fails
-* Simple Queue Service - SQS
-* Web console
-* Command line utility
-* Software Development Kit - SDK

@@ -96,6 +96,7 @@
 * [Spring](#spring)
 * [SQL](#sql)
 * [SQL Server Database](#sql-server-database)
+* [Swagger Codegen](swagger-codegen)
 * [Tableau](#tableau)
 * [Teradata Database](#teradata-database)
 * [Testing](#testing)
@@ -866,6 +867,9 @@
 * [Primary Key](sql-server/primary-key.md)
 * [Select](sql-server/select.md)
 * [Views](sql-server/views.md)
+------
+# [Swagger Codegen](swagger-codegen)
+* [Commands](swagger-codegen/commands.md)
 ------
 # [Tableau](tableau)
 ## Examples
