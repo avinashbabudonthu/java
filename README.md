@@ -1,6 +1,6 @@
 # Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
-# Index Testing
+# Index
 * [Angular](#angular)
 * [Angular JS](#angular-js)
 * [Ansible](#ansible)
