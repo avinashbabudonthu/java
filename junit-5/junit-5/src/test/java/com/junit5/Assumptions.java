@@ -36,4 +36,5 @@ public class Assumptions {
 		org.junit.jupiter.api.Assumptions.assumingThat(name.equals("jack"),
 				() -> Assertions.assertEquals(10, 10));
 	}
+
 }

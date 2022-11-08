@@ -14,4 +14,5 @@ public class Exceptions {
 		});
 		Assertions.assertEquals(exception.getMessage(), "run time exception");
 	}
+
 }

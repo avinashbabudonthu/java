@@ -11,5 +11,4 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses(value = { HelloWorldJunitPractice.class, BeforeAfterJunitPractice.class, BeforeClassAfterClassJunitPractice.class })
 public class TestSuiteJunitPractice {
-
 }
