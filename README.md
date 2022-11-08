@@ -265,6 +265,19 @@
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
 * [Examples](#javautil-package)
 
+## [Date Practice](core-java/date-practice)
+* [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
+* [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
+* [Duration](core-java/date-practice/src/test/java/com/date/api/practice/DurationPractice.java)
+* [Instant](core-java/date-practice/src/test/java/com/date/api/practice/InstantPractice.java)
+* [LocateDate](core-java/date-practice/src/test/java/com/date/api/practice/LocalDatePractice.java)
+* [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
+* [LocalTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalTimePractice.java)
+* [OffsetDateTime](core-java/date-practice/src/test/java/com/date/api/practice/OffsetDateTimePractice.java)
+* [Util Date](core-java/date-practice/src/test/java/com/date/api/practice/UtilDate.java)
+* [ZoneDateTime](core-java/date-practice/src/test/java/com/date/api/practice/ZonedDateTimePractice.java)
+
 ## Generics
 * [Notes](core-java/notes/generics.md)
 * [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
