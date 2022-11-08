@@ -53,13 +53,13 @@ public class MockVoidMethods {
 
 	@Test
 	public void returnCustomResult() {
-		ArrayList<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<>();
 		Mockito.doAnswer((InvocationOnMock invocation) -> {
 			Object[] args = invocation.getArguments();
 			log.info("called with arguments: " + Arrays.toString(args));
 			List<String> list2 = new ArrayList<>();
 			list.add("jill");
-			return list2;
+			return list;
 		}).when(helloWorldMock).add(Mockito.anyList(), Mockito.anyString());
 		helloWorldMock.add(list, "jack");
 		log.info("list:{}", list);
