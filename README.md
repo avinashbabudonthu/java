@@ -266,6 +266,26 @@
 * [Examples](#javautil-package)
 
 ## [Date Practice](core-java/date-practice)
+### Date format conventions
+* java.util.Date to String conversion - java.text.DateFormat.format
+* String to java.util.Date conversion - java.text.DateFormat.parse
+* String to java.time.LocalDate conversion - java.time.LocalDate.parse(stringDate, java.time.format.DateTimeFormatter.ofPattern(input-date-format))
+* MM - Month in Number format
+* MMM - Month in English in short form
+* MMMM - Month in English in full form
+* dd - Date in 2 digits
+* d - Date in single digit
+* E (or) EEE - Day in shot form
+* EEEE - Day in full form
+* yyyy - Four digit year
+* HH - 24 hours timeline
+* hh - 12 hours timeline
+* mm - Minutes
+* ss - Seconds
+* SSS - Milli Seconds
+* a	- AM/PM
+* Z - Time Zone
+### Examples
 * [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
 * [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
 * [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
