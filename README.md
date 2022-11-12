@@ -287,17 +287,71 @@
 * Z - Time Zone
 ### Examples
 * [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
+	* createClock()
+	* clockMethods()
 * [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+	* localDateToGregorianCalendar()
+	* localDateToXmlGregorianCalendar()
+	* utilDateToXmlGregorianCalendar()
+	* xmlGregorianCalendarToUtilDate()
+	* xmlGregorianCalendarToGregorianCalendar()
+	* timeInMillisToGregorian()
 * [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
+	* convertDateFormat1()
+	* getDayOfWeek()
 * [Duration](core-java/date-practice/src/test/java/com/date/api/practice/DurationPractice.java)
+	* durationBetweenTwoDates()
 * [Instant](core-java/date-practice/src/test/java/com/date/api/practice/InstantPractice.java)
+	* createInstant()
+	* instantToOffsetDateTime()
+	* instantToUtilDate()
 * [LocateDate](core-java/date-practice/src/test/java/com/date/api/practice/LocalDatePractice.java)
+	* createLocalDateWithCurrentDate()
+	* createLocalDate()
+	* addDayWeekMonth()
+	* nextSunday()
+	* nextMonthSecondSaturday()
+	* convertLocalDateToUtilDate()
+	* convertStringToLocalDate()
 * [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
+	* createLocalDateTime()
+	* convertLocalDateTimeToUtilDate()
+	* convertLocalDateTimeToZonedDateTime()
+	* convertLocalDateTimeToStringTimeStamp()
+	* localDateTimeToOffsetDateTime()
 * [LocalTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalTimePractice.java)
+	* createLocalTime()
 * [OffsetDateTime](core-java/date-practice/src/test/java/com/date/api/practice/OffsetDateTimePractice.java)
+	* create
+	* offsetDateTimeToLocalDateTime
+	* offsetDateTimeToLocalDate
+	* offsetDateTimeToLocalTime
+	* offsetDateTimeToZonedDateTime
+	* offsetDateTimeToInstant
+	* offsetDateTimeToOffsetTime
+	* offsetDateTimeYearMonthDay
+	* offsetDateTimeHourMinuteSecond
+	* addYearMonthEtc
+	* subtractYearMonthEtc
+	* compare
+	* stringToOffsetDateTime
+	* offsetDateTimeToString
+	* convertUtilDateToOffsetDateTime
 * [Util Date](core-java/date-practice/src/test/java/com/date/api/practice/UtilDate.java)
+	* convertStringToDate
+	* convertDateToString
+	* convertDateToLocalDateTime
+	* convertUtilDateToLocalDate
+	* convertUtilDateToLocalTime
+	* convertUtilDateToZonedDateTime
+	* before
+	* after
+	* utilDateToTimeStamp
+	* timeStampToUtilDate
 * [ZoneDateTime](core-java/date-practice/src/test/java/com/date/api/practice/ZonedDateTimePractice.java)
-
+	* createZonedDateTime
+	* convertZonedDateTimeToUtilDate
+	* zonedDateTimeToOffsetDateTime
 ## Generics
 * [Notes](core-java/notes/generics.md)
 * [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
@@ -544,7 +598,6 @@
 * [Set-1](interview-questions/set-1.md)
 ------
 # [Jackson JSON](jackson-json)
-* [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
 * [Materials](jackson-json/materials.md)
 * [Notes](jackson-json/notes.md)
 ## Examples
@@ -552,6 +605,11 @@
 * [Ignore Unknow Properties](jackson-json/notes.md#ignore-unknow-properties)
 * [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
 * [JSON file to object](jackson-json/notes.md#json-file-to-object)
+* [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
+	* Json String to Map of String and Object - jsonStringToMapOfStringAndObject()
+	* Json String to Object list - jsonStringToObjectList()
+	* Enum to JSON vice versa - enumJsonToEnumObject()
+* [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
 ------
 # [JBoss](jboss)
 * [Materials](jboss/materials.md)
