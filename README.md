@@ -138,7 +138,7 @@
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
-	* Method - readExcel()
+	* Method - readExcel
 ------
 # [Architect](architect)
 ## My Materials
@@ -287,40 +287,40 @@
 * Z - Time Zone
 ### Examples
 * [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
-	* createClock()
-	* clockMethods()
+	* createClock
+	* clockMethods
 * [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
-	* localDateToGregorianCalendar()
-	* localDateToXmlGregorianCalendar()
-	* utilDateToXmlGregorianCalendar()
-	* xmlGregorianCalendarToUtilDate()
-	* xmlGregorianCalendarToGregorianCalendar()
-	* timeInMillisToGregorian()
+	* localDateToGregorianCalendar
+	* localDateToXmlGregorianCalendar
+	* utilDateToXmlGregorianCalendar
+	* xmlGregorianCalendarToUtilDate
+	* xmlGregorianCalendarToGregorianCalendar
+	* timeInMillisToGregorian
 * [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
-	* convertDateFormat1()
-	* getDayOfWeek()
+	* convertDateFormat1
+	* getDayOfWeek
 * [Duration](core-java/date-practice/src/test/java/com/date/api/practice/DurationPractice.java)
-	* durationBetweenTwoDates()
+	* durationBetweenTwoDates
 * [Instant](core-java/date-practice/src/test/java/com/date/api/practice/InstantPractice.java)
-	* createInstant()
-	* instantToOffsetDateTime()
-	* instantToUtilDate()
+	* createInstant
+	* instantToOffsetDateTime
+	* instantToUtilDate
 * [LocateDate](core-java/date-practice/src/test/java/com/date/api/practice/LocalDatePractice.java)
-	* createLocalDateWithCurrentDate()
-	* createLocalDate()
-	* addDayWeekMonth()
-	* nextSunday()
-	* nextMonthSecondSaturday()
-	* convertLocalDateToUtilDate()
-	* convertStringToLocalDate()
+	* createLocalDateWithCurrentDate
+	* createLocalDate
+	* addDayWeekMonth
+	* nextSunday
+	* nextMonthSecondSaturday
+	* convertLocalDateToUtilDate
+	* convertStringToLocalDate
 * [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
-	* createLocalDateTime()
-	* convertLocalDateTimeToUtilDate()
-	* convertLocalDateTimeToZonedDateTime()
-	* convertLocalDateTimeToStringTimeStamp()
-	* localDateTimeToOffsetDateTime()
+	* createLocalDateTime
+	* convertLocalDateTimeToUtilDate
+	* convertLocalDateTimeToZonedDateTime
+	* convertLocalDateTimeToStringTimeStamp
+	* localDateTimeToOffsetDateTime
 * [LocalTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalTimePractice.java)
-	* createLocalTime()
+	* createLocalTime
 * [OffsetDateTime](core-java/date-practice/src/test/java/com/date/api/practice/OffsetDateTimePractice.java)
 	* create
 	* offsetDateTimeToLocalDateTime
@@ -583,7 +583,7 @@
 ------
 # [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
-	* sanitize()
+	* sanitize
 * [Materials](html-sanitizer/materials.md)
 ------
 # [IBM MQ](ibm-mq)
@@ -606,9 +606,9 @@
 * [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
 * [JSON file to object](jackson-json/notes.md#json-file-to-object)
 * [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
-	* Json String to Map of String and Object - jsonStringToMapOfStringAndObject()
-	* Json String to Object list - jsonStringToObjectList()
-	* Enum to JSON vice versa - enumJsonToEnumObject()
+	* Json String to Map of String and Object - jsonStringToMapOfStringAndObject
+	* Json String to Object list - jsonStringToObjectList
+	* Enum to JSON vice versa - enumJsonToEnumObject
 * [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
 ------
 # [JBoss](jboss)
