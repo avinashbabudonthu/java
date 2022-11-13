@@ -525,6 +525,7 @@
 * [Git Materials](git/materials.md)
 * [Notes](git/notes.md)
 * [Connect to github repository using SSH key](git/ssh.md)
+* [Using username and key in cloning url](git/commands.md#using-username-and-key-in-cloning-url)
 ------
 # [GCP Google Cloud Platform](google-cloud-platform)
 * [Pub Sub Consumer](google-cloud-platform/pub-sub-consumer)
