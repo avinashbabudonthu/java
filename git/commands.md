@@ -425,3 +425,8 @@ $ git stash list
 stash @{0}: sample stash testing..
 ```
 ------
+## Using username and key in cloning url
+```
+https://username:passwordOrKey@bitbucket.org/repo/app.git
+https://testusername:AbcdqrcqscqHdch123456@bitbucket.org/repo/app.git
+```
