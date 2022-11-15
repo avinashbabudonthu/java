@@ -209,6 +209,7 @@
 * [Setup](avro/setup.md)
 ------
 # [AWS](aws)
+* [Certifications](aws/certifications.md)
 ------
 # [Azure](azure)
 * [Materials](azure/materials.md)
