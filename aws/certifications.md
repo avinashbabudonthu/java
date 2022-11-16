@@ -1,8 +1,5 @@
-# Vidoes order wise:
-* https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21
-* AWS Tutorial For Beginners | AWS Full Course - Learn AWS In 10 Hours | AWS Training | Edureka - https://www.youtube.com/watch?v=k1RI5locZE4&ab_channel=edureka%21
-------
 # List of certifications
+* https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21\
 ![picture](images/certifications.jpg)
 ## Do in following order:
 * AWS Certified Cloud Practitioner
@@ -38,8 +35,8 @@
 ------
 # Materials certification wise
 * AWS Certified Cloud Practitioner
-	* [NEW] Ultimate AWS Certified Cloud Practitioner - 2022
-	* [NEW] AWS Certified Cloud Practitioner 2022
+	* Udemy - [NEW] Ultimate AWS Certified Cloud Practitioner - 2022
+	* Udemy - [NEW] AWS Certified Cloud Practitioner 2022
 * AWS certified Developer Associate
 	* Udemy - Ultimate AWS Certified Developer Associate 2022 - NEW!
 	* Udemy - Practice Exams | AWS Certified Developer Associate 2022

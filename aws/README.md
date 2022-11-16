@@ -104,7 +104,7 @@
 	* Can be configured to monitor logs. For this we need configure awslogs agens on EC2 instance and tell which logs to send to cloud watch
 * Cloud Front
 	* this is content delivery network that allows to serve files globally
-
+------
 # Pluralsight
 * AWS Developer: The Big Picture
 * AWS Developer: Getting Started
@@ -127,7 +127,7 @@
 * AWS Certified DevOps Engineer: Monitoring, Metrics, and Logging
 * AWS Certified DevOps Engineer: Security, Governance, and Validation
 * AWS Certified DevOps Engineer: High Availability and Elasticity
-
+------
 # Youtube
 * Top 50+ AWS Services Explained in 10 Minutes
 	* https://www.youtube.com/watch?v=JIbIYCM48to&ab_channel=Fireship
@@ -158,7 +158,7 @@
 	* https://www.youtube.com/watch?v=HoXEyXIf6_U
 * AWS Fargate and ECS - Deploy Spring Microservices
 	* https://www.youtube.com/watch?v=2oXVYxIPs88
-
+------
 # Udemy
 * AWS Essentials
 * Ultimate AWS Certified Solutions Architect Associate SAA-C03
@@ -170,7 +170,7 @@
 * Spring Framework DevOps on AWS
 * Docker in AWS - Deploy Java Spring Boot to AWS Fargate & ECS
 * Kubernetes Hands-On - Deploy Microservices to the AWS Cloud
-
+------
 ## Others
 * [AWS Java SDK](https://aws.amazon.com/sdk-for-java)
 * [Amazon Cli Documentation](https://aws.amazon.com/cli)
