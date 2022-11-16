@@ -1,6 +1,7 @@
 # List of certifications
-* https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21\
+* https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21
 ![picture](images/certifications.jpg)
+------
 ## Do in following order:
 * AWS Certified Cloud Practitioner
 * AWS Certified Solutions Architect - Associate
