@@ -1,15 +1,16 @@
 # Vidoes order wise:
 * https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21
-* https://www.youtube.com/watch?v=rjoO9rGeItc&list=PLAAFXN2OG73V8qTua-k25iI_6zfO1n-3b&index=123&ab_channel=edureka%21
+* AWS Tutorial For Beginners | AWS Full Course - Learn AWS In 10 Hours | AWS Training | Edureka - https://www.youtube.com/watch?v=k1RI5locZE4&ab_channel=edureka%21
 ------
 # List of certifications
 ![picture](images/certifications.jpg)
 ## Do in following order:
-* AWS certified Developer Associate
-* aws certified solutions architect - associate
-* aws certified solutions architect - professional
-* AWS certified SysOps Administrator Associate
-* AWS certified DevOps Engineer Professional
+* AWS Certified Cloud Practitioner
+* AWS Certified Solutions Architect - Associate
+* AWS Certified Developer - Associate
+* AWS Certified Solutions Architect - Professional
+* AWS Certified SysOps Administrator - Associate
+* AWS Certified DevOps Engineer - Professional
 ------
 # Exam details
 * aws certified solutions architect - associate
@@ -34,3 +35,11 @@
 	* multiple choice questions and multiple answers
 	* 170 minutes
 	* $300 USD
+------
+# Materials certification wise
+* AWS Certified Cloud Practitioner
+	* [NEW] Ultimate AWS Certified Cloud Practitioner - 2022
+	* [NEW] AWS Certified Cloud Practitioner 2022
+* AWS certified Developer Associate
+	* Udemy - Ultimate AWS Certified Developer Associate 2022 - NEW!
+	* Udemy - Practice Exams | AWS Certified Developer Associate 2022
