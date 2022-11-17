@@ -6,9 +6,13 @@
 * AWS Certified Cloud Practitioner
 * AWS Certified Solutions Architect - Associate
 * AWS Certified Developer - Associate
-* AWS Certified Solutions Architect - Professional
 * AWS Certified SysOps Administrator - Associate
+* AWS Certified Solutions Architect - Professional
 * AWS Certified DevOps Engineer - Professional
+* AWS Certified Data Analytics - Speciality
+* AWS Certified Machine Learning - Speciality
+* AWS Certified Database - Speciality
+* AWS Certified Advanced Networking - Speciality
 ------
 # Exam details
 * aws certified solutions architect - associate
@@ -41,3 +45,6 @@
 * AWS certified Developer Associate
 	* Udemy - Ultimate AWS Certified Developer Associate 2022 - NEW!
 	* Udemy - Practice Exams | AWS Certified Developer Associate 2022
+------
+# Next set of certifications
+![picture](images/certifications-2.jpg)
