@@ -51,7 +51,7 @@ public class LocalePractice {
 	}
 
 	@Test
-	public void test() {
+	public void localObjectLanguageWise() {
 		Locale enUS = new Locale("en", "US");
 		System.out.println(enUS.toString());
 

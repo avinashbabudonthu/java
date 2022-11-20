@@ -15,13 +15,13 @@ public class ResourceBundlePractice {
 	public void propertyResourceBundle() {
 		Locale enUSLocale = new Locale("en", "US");
 		ResourceBundle defaultResourceBundle = ResourceBundle.getBundle("labels", enUSLocale);
-		System.out.println(defaultResourceBundle.getString("label1")); // Welcome to I18N
-		System.out.println(defaultResourceBundle.getString("label2.label3")); // Welcome to ResourceBundle
+		System.out.println(defaultResourceBundle.getString("label1")); // US English Label 1
+		System.out.println(defaultResourceBundle.getString("label2.label3")); // US English Label 2.Label 3
 
 		Locale deLocale = new Locale("telugu");
 		ResourceBundle daResourceBundle = ResourceBundle.getBundle("labels", deLocale);
-		System.out.println(daResourceBundle.getString("label1")); // Let's learn to I18N
-		System.out.println(daResourceBundle.getString("label2.label3")); // Let's learn PropertyResourceBundle
+		System.out.println(daResourceBundle.getString("label1")); // Telugu Label
+		System.out.println(daResourceBundle.getString("label2.label3")); // Telugu Label2.Label3
 
 		// get all keys in a ResourceBundle
 		Set<String> keys = defaultResourceBundle.keySet();

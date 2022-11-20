@@ -369,15 +369,16 @@
 
 ## Java 8
 * [Notes](core-java/notes/java-8-notes.md)
-### Examples
+
+## [Java 9](core-java/java-9)
+* [Notes](core-java/java-9/notes.md)
+
+## Java 8 Examples
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
 * [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
 * [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
 * [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
 * [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
-
-## [Java 9](core-java/java-9)
-* [Notes](core-java/java-9/notes.md)
 
 ## java.lang package
 * Integer class
@@ -432,15 +433,46 @@
 	* deepHashCode
 	* fill
 	* deepToString
+* [Locale](core-java/internationalization/src/test/java/com/internationalization/LocalePractice.java)
+	* localObjectByCountry
+	* createLocalObject
+	* localObjectLanguageWise
+* [ResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/ResourceBundlePractice.java)
+	* listResourceBundle
+		* [MyListResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/MyListResourceBundle.java)
+		* [MyListResourceBundle_telugu](core-java/internationalization/src/test/java/com/resource/bundle/MyListResourceBundle_telugu.java)
+	* propertyResourceBundle
+		* [labels.properties](core-java/internationalization/src/main/resources/labels.properties)
+		* [labels_telugu.properties](core-java/internationalization/src/main/resources/labels_telugu.properties)
+	
 ## java.util.function package
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
+
 ## java.io package
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+
 ## java.math package
 * [java.math.BigDecimal](core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
+
+## java.text package
+* [DecimalFormat](core-java/internationalization/src/test/java/com/internationalization/DecimalFormatPractice.java)
+	* createDecimalFormatObject
+	* applyNewPatterns
+	* formatNumber
+	* formatNumberSpecificToLocale
+	* customDecimalFormats
+	* groupingDigits
+* [NumberFormat](core-java/internationalization/src/test/java/com/internationalization/NumberLocalePractice.java)
+	* createNumberFormatObject
+	* formatNumber
+	* formatCurrency
+	* formatPercentage
+	* minMaxNoOfDigits
+	* roundingNumbers
+	* parseNumber
 ------
 # [Couch Base](couch-base)
 * [Materials](couch-base/materials.md)
