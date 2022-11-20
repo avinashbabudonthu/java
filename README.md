@@ -287,6 +287,8 @@
 ## Core Java Examples
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 
+## Enum Example
+
 ## [Date Practice](core-java/date-practice)
 ### Date format conventions
 * java.util.Date to String conversion - java.text.DateFormat.format
