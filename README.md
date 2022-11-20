@@ -288,6 +288,26 @@
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 
 ## Enum Example
+* [Enum Basics](core-java/basics/src/test/java/com/enums/EnumPractice.java)
+	* [DaysEnum](core-java/basics/src/main/java/com/enums/DaysEnum.java)
+	* [DaysEnum2](core-java/basics/src/main/java/com/enums/DaysEnum2.java)
+	* [EnumImpl](core-java/basics/src/main/java/com/enums/EnumImpl.java)
+	* [EnumMethods](core-java/basics/src/main/java/com/enums/EnumMethods.java)
+	* [IEnum](core-java/basics/src/main/java/com/enums/IEnum.java)
+	* accessEnumValue
+	* iterateEnum
+	* enumInIf
+	* enumInSwitch
+	* iterateEnumWithArgumentedConstructor
+	* enumToString
+	* valueOf
+	* enumMethods
+	* enumImplementingInterface
+	* enumSet
+	* enumMap
+* [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
+	* [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
+	* lookupMap
 
 ## [Date Practice](core-java/date-practice)
 ### Date format conventions
