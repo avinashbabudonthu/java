@@ -248,8 +248,6 @@
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
-## Examples
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 
 ## [Annotations](core-java/annotations)
 * [Notes](core-java/notes/annotations.md)
@@ -265,6 +263,29 @@
 * [Notes](core-java/notes/collections.md)
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
 * [Examples](#javautil-package)
+	
+## Generics
+* [Notes](core-java/notes/generics.md)
+* [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+* [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
+
+## Multi threading
+* [Notes](core-java/notes/multi-threading.md)
+
+## Reactive Programming
+* [Notes](core-java/notes/reactive-programming.md)
+
+## Serialization
+* [Notes](core-java/notes/serialization.md)
+
+## Java 8
+* [Notes](core-java/notes/java-8-notes.md)
+
+## [Java 9](core-java/java-9)
+* [Notes](core-java/java-9/notes.md)
+
+## Core Java Examples
+* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 
 ## [Date Practice](core-java/date-practice)
 ### Date format conventions
@@ -353,25 +374,6 @@
 	* createZonedDateTime
 	* convertZonedDateTimeToUtilDate
 	* zonedDateTimeToOffsetDateTime
-## Generics
-* [Notes](core-java/notes/generics.md)
-* [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-* [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
-
-## Multi threading
-* [Notes](core-java/notes/multi-threading.md)
-
-## Reactive Programming
-* [Notes](core-java/notes/reactive-programming.md)
-
-## Serialization
-* [Notes](core-java/notes/serialization.md)
-
-## Java 8
-* [Notes](core-java/notes/java-8-notes.md)
-
-## [Java 9](core-java/java-9)
-* [Notes](core-java/java-9/notes.md)
 
 ## Java 8 Examples
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
