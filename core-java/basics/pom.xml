@@ -19,13 +19,16 @@
 		<guava>29.0-jre</guava>
 		<commons-io>2.8.0</commons-io>
 		<tika>1.24.1</tika>
+		<junit>4.13.2</junit>
+		<jaxb-api>2.3.1</jaxb-api>
+		<log4j-core>2.13.0</log4j-core>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13.2</version>
+			<version>${junit}</version>
 		</dependency>
 
 		<dependency>
@@ -64,6 +67,18 @@
 			<artifactId>tika-parsers</artifactId>
 			<version>${tika}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${jaxb-api}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j-core}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,8 +89,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>9</source>
+					<target>9</target>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -108,6 +108,9 @@
 * [Util methods](utils)
 	* [Generate random password](utils/generate-random-password.md)
 	* [Reverse the number](utils/utils.md#reverse-the-number)
+	* [UUID Generator](core-java/internationalization/src/test/java/com/java/util/RequestUUIDGenerator.java)
+	* [Create Basic Auth Header](core-java/internationalization/src/test/java/com/java/util/Utils.java)
+		* createBasicAuthHeader
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)
@@ -397,6 +400,11 @@
 	* convertZonedDateTimeToUtilDate
 	* zonedDateTimeToOffsetDateTime
 
+# Serialization Examples
+* [Model classes](core-java/date-practice/src/main/java/com/serialization)
+* [Serialize](core-java/date-practice/src/test/java/com/serialization/Serialize.java)
+* [DeSerialize](core-java/date-practice/src/test/java/com/serialization/DeSerialize.java)
+	
 ## Java 8 Examples
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
 * [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
@@ -468,7 +476,16 @@
 	* propertyResourceBundle
 		* [labels.properties](core-java/internationalization/src/main/resources/labels.properties)
 		* [labels_telugu.properties](core-java/internationalization/src/main/resources/labels_telugu.properties)
-	
+* [Base64](core-java/internationalization/src/test/java/com/java/util/Base64EncodeDecodePractice.java)
+	* encode
+	* decode
+	* usernameAndPassword
+* [Arrays](core-java/internationalization/src/test/java/com/java/util/HashCodes.java)
+	* hashCodeFromArray
+	* longHashCode
+	* floatHashCode
+
+
 ## java.util.function package
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)

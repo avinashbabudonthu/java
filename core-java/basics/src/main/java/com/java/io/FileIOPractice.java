@@ -116,18 +116,6 @@ public class FileIOPractice {
 	}
 
 	/**
-	 * method to get line separator based on underlying operating system instead of hard coding
-	 */
-	@Test
-	public void lineSeparator() {
-		String lineSeparator = System.getProperty("line.separator").toString();
-		System.out.println("abc" + lineSeparator + "def");
-
-		String lineSeparator2 = File.separator;
-		System.out.println("lineSeperator2: " + lineSeparator2);
-	}
-
-	/**
 	 * Create a directory
 	 */
 	@Test
@@ -824,17 +812,18 @@ public class FileIOPractice {
         File file = tempDirectory.toFile();
         log.info("temp directory created. path: {}", file.getAbsolutePath());
     }
-	
+
 	/**
-        * Output:
-        * abc
-        * def
-        */
-    @Test
-    public void lineSeparator(){
-	String lineSeparator = System.getProperty("line.separator");
-	System.out.println("abc" + lineSeparator + "def");
-    }
+	 * method to get line separator based on underlying operating system instead of hard coding
+	 */
+	@Test
+	public void lineSeparator() {
+		String lineSeparator = System.getProperty("line.separator").toString();
+		System.out.println("abc" + lineSeparator + "def");
+
+		String lineSeparator2 = File.separator;
+		System.out.println("lineSeperator2: " + lineSeparator2);
+	}
     
     /**
      * Output: abc\def
@@ -849,8 +838,9 @@ public class FileIOPractice {
     @SneakyThrows
     @Test
     public void downloadFile(){
+		Path tempDirectory = Files.createTempDirectory("folder_prefix");
         // create temp directory
-        File tempDirectoryFile = createTempDirectory();
+        File tempDirectoryFile = tempDirectory.toFile();
 
         // prepare URL to download file
         String urlString = "https://abcd.com/data.zip";

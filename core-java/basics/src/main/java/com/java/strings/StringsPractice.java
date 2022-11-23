@@ -15,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.sql.Clob;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -276,15 +277,6 @@ public class StringsPractice {
 	}
 
 	/**
-	 * Output: C:\output-2018-02-15T16-20-19.002.txt
-	 */
-	@Test
-	public void replaceAll() {
-		String filePathWithName = "C:\\output-" + LocalDateTime.now().toString().replaceAll(":", "-") + ".txt";
-		System.out.println(filePathWithName);
-	}
-	
-	/**
 	* Example: 
 	* password: rC$6it
 	* before-password: rC$6it
@@ -295,12 +287,16 @@ public class StringsPractice {
 	public void replaceAll(){
 		String str = "This is your password: {password}";
 		// If password contains backslash(\) or dollar($) symbols then exception will be thrown so escape them with Matcher.quoteReplacement
-		String password = generatePasswordV2(6);
-		System.out.println("before-password:" + password);
+		String password = "rC$6it";
+		System.out.println("before-password:" + password); // before-password:rC$6it
 		password = java.util.regex.Matcher.quoteReplacement(password);
-		System.out.println("after-password:" + password);
+		System.out.println("after-password:" + password); // after-password:rC\$6it
 		str = str.replaceAll("\\{password\\}", password);
-		System.out.println("str: " + str);
+		System.out.println("str: " + str); // str: This is your password: rC$6it
+
+		// Example 2
+		String filePathWithName = "C:\\output-" + LocalDateTime.now().toString().replaceAll(":", "-") + ".txt";
+		System.out.println(filePathWithName); // C:\output-2018-02-15T16-20-19.002.txt
 	}
 
 	/**
@@ -644,7 +640,11 @@ public class StringsPractice {
 	}
 	
 	@Test
-	public static String clobToString(java.sql.Clob clob) {
+	public void clobToString(){
+		clobToString(null);
+	}
+
+	private String clobToString(java.sql.Clob clob) {
 
 		if (clob == null) {
 			return "";
