@@ -108,8 +108,8 @@
 * [Util methods](utils)
 	* [Generate random password](utils/generate-random-password.md)
 	* [Reverse the number](utils/utils.md#reverse-the-number)
-	* [UUID Generator](core-java/internationalization/src/test/java/com/java/util/RequestUUIDGenerator.java)
-	* [Create Basic Auth Header](core-java/internationalization/src/test/java/com/java/util/Utils.java)
+	* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
+	* [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java)
 		* createBasicAuthHeader
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
@@ -401,9 +401,9 @@
 	* zonedDateTimeToOffsetDateTime
 
 # Serialization Examples
-* [Model classes](core-java/date-practice/src/main/java/com/serialization)
-* [Serialize](core-java/date-practice/src/test/java/com/serialization/Serialize.java)
-* [DeSerialize](core-java/date-practice/src/test/java/com/serialization/DeSerialize.java)
+* [Model classes](core-java/basics/src/main/java/com/serialization)
+* [Serialize](core-java/basics/src/test/java/com/serialization/Serialize.java)
+* [DeSerialize](core-java/basics/src/test/java/com/serialization/DeSerialize.java)
 	
 ## Java 8 Examples
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
@@ -476,11 +476,11 @@
 	* propertyResourceBundle
 		* [labels.properties](core-java/internationalization/src/main/resources/labels.properties)
 		* [labels_telugu.properties](core-java/internationalization/src/main/resources/labels_telugu.properties)
-* [Base64](core-java/internationalization/src/test/java/com/java/util/Base64EncodeDecodePractice.java)
+* [Base64](core-java/basics/src/test/java/com/java/util/Base64EncodeDecodePractice.java)
 	* encode
 	* decode
 	* usernameAndPassword
-* [Arrays](core-java/internationalization/src/test/java/com/java/util/HashCodes.java)
+* [Arrays](core-java/basics/src/test/java/com/java/util/HashCodes.java)
 	* hashCodeFromArray
 	* longHashCode
 	* floatHashCode

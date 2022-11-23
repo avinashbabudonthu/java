@@ -74,3 +74,8 @@
 # Multithreading
 * Java Concurrency and Multithreading Tutorial - https://jenkov.com/tutorials/java-concurrency/index.html
 * Java Concurrency Utilities - java.util.concurrent - https://jenkov.com/tutorials/java-util-concurrent/index.html
+------
+# Serialization
+## Pluralsight
+* Java Fundamentals: The Core Platform
+* Persisting Objects with Serialization
