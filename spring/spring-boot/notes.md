@@ -91,7 +91,7 @@ public class PurchaseOrderController {
 * So spring boot auto configures `DispatcherServlet` using `DispatcherServletAutoConfiguration`
 * All REST requests will reach to `DispatcherServlet`
 * `DispatcherServlet` follows `Frontend controller` pattern
-
+------
 ## Get Port number of application
 ```
 @Autowired
@@ -99,7 +99,7 @@ private org.springframework.core.env.Environment environment;
 
 String port = environment.getProperty("local.server.port");
 ```
-
+------
 ## Command Line Argument in Spring Boot
 ### Command Line Arguments Spring Boot 1.x while running with Maven plugin
 * Pass argument using -Drun.arguments
@@ -146,7 +146,8 @@ gradlew bootRun -Pargs=--server.port=9090
 mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=9090
 gradlew bootRun -Pargs=--server.port=9090
 ```
-### short command line arguments
+------
+### Short Command Line Arguments
 * Spring Boot converts command-line arguments to properties and adds them as environment variables
 * We can use short command-line arguments `–port=9090` instead of `–server.port=9090` by using a placeholder in our application.properties
 ```
@@ -176,6 +177,7 @@ public class Application extends SpringBootServletInitializer {
     }
 }
 ```
+------
 ### Passing Command-Line Arguments to the SpringBootTest
 * With the release of Spring Boot 2.2, we gained the possibility to inject command-line arguments during testing using @SpringBootTest and its args attribute
 ```

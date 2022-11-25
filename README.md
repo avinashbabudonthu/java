@@ -1086,6 +1086,11 @@
 * [Spring Boot](spring/spring-boot)
 * [Materials](spring-boot/materials.md)
 * [Notes](spring-boot/notes.md)
+	* Difference between model object and entity object
+	* Get Port number of application
+	* Command Line Argument in Spring Boot
+	* Short Command Line Arguments
+	* Passing Command-Line Arguments to the SpringBootTest
 * [Properties](spring-boot/properties.md)
 
 ### Spring Boot 1
