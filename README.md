@@ -1027,58 +1027,58 @@
 * [AOP with Spring Annotations](aop/aop-annotations)
 * [Materials](aop/materials.md)
 ------
-## Batch
+## Spring Batch
 * [spring Batch](batch)
 * [Materials](batch/materials.md)
 * [Custom Item Reader](batch/custom-item-reader)
 * [Hello world](batch/hello-world)
 ------
-## Cloud
+## Spring Cloud
 * [Cloud](cloud)
 * [Materials](cloud/materials.md)
 ## Examples
 * [Example 1](cloud/example-1)
 ------
-## Cloud Stream
+## Spring Cloud Stream
 * [Spring Cloud Stream](cloud-stream)
 * [Materials](cloud-stream/materials.md)
 ------
-## Core
+## Spring Core
 * [Dependency injection using XML](core/dependency-injection-xml)
 * [Dependency injection using annotations](core/dependency-injection-annotations)
 * [Dependency injection using java config](core/dependency-injection-java-config)
 * [Materials](core/materials.md)
 ------
-## Data Mongo
+## Spring Data Mongo
 * [Spring Data Mongo](data-mongo)
 * [Materials](data-mongo/materials.md)
 ------
-## Data Rest
+## Spring Data Rest
 * [Data Rest](data-rest)
 * [Materials](data-rest/materials.md)
 ------
-## Integration
+## Spring Integration
 * [Spring Integartion](integration)
 * [Materials](integration/materials.md)
 * [Notes](integration/notes.md)
 ------
-## JMS
+## Spring JMS
 * [Spring JMS](jms)
 * [Materials](jms/materials.md)
 ------
-## MVC
+## Spring MVC
 * [Spring MVC](mvc)
 * [Materials](mvc/materials.md)
 ------
-## ORM
+## Spring ORM
 * [Spring ORM](orm)
 * [Materials](orm/materials.md)
 ------
-## Retry
+## Spring Retry
 * [Spring Retry](retry)
 * [Materials](retry/materials.md)
 ------
-## Security
+## Spring Security
 * [Spring Security](security)
 * [Materials](security/materials.md)
 ------
@@ -1155,15 +1155,15 @@
 * [Versioning](spring-boot/spring-boot-2/versioning)
 * [War Deploy To Tomcat 9](spring-boot/spring-boot-2/war-to-tomacat9)
 ------
-## Security
+## Spring Security
 * [Spring JDBC](spring-jdbc)
 * [Materials](spring-jdbc/materials.md)
 ------
-## Transaction
+## Spring Transaction
 * [Spring Transaction](transaction)
 * [Materials](spring-jdbc/materials.md)
 ------
-## [Webflux](web-flux)
+## [Spring Webflux](web-flux)
 * [Materials](web-flux/materials.md)
 ------
 # [SQL](sql)
