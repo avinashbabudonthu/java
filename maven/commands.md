@@ -29,9 +29,13 @@ mvn install
 ```
 mvn deploy
 ```
-* Project dependencies in detail
+* Project dependencies in detail in tree structure
 ```
 mvn dependency:tree
+```
+* Project dependencies in detail in tree structure - specific dependency
+```
+mvn dependency:tree -Dincludes=[groupId]:[artifactId]
 ```
 * Install local jars to maven local repository
 ```
