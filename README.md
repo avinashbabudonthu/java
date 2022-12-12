@@ -12,6 +12,7 @@
 * [Azure](#azure)
 * [Cassandra](#cassandra)
 * [Chocolatey](#chocolatey)
+* [Cloud](#cloud)
 * [Commons compress](#commons-compress)
 * [commons Lang3](#commons-lang3)
 * [Coding Web sites](#coding-web-sites)
@@ -224,6 +225,9 @@
 # [Chocolatey](chocolatey)
 * [Materials](chocolatey/materials.md)
 * [Notes](chocolatey/notes.md)
+------
+# [Cloud](cloud)
+* [Notes](cloud/notes.md)
 ------
 # [Commons compress](commons-compress)
 * Compress to tar file - Refer **compressToTar()** in [Compress.java](commons-compress/commons-compress/src/test/java/com/tar/Compress.java)
