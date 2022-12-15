@@ -113,6 +113,8 @@
 	* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
 	* [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java)
 		* createBasicAuthHeader
+	* [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java)
+		* generate10DigitRandomNumber
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)

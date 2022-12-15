@@ -16,4 +16,11 @@ public class Utils {
 				+ DatatypeConverter.printBase64Binary(credentials.getBytes("UTF-8"));
 		log.info("basic authorization header={}", basicAuthorizationHeader);
 	}
+
+	@Test
+	public void generate10DigitRandomNumber(){
+		long number = (long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L;
+		log.info("number={}", number);
+	}
+
 }
