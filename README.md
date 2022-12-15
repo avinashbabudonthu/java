@@ -942,11 +942,12 @@
 ------
 # [Postgre SQL Database](postgre-sql)
 * [Materials](postgre-sql/materials.md)
-## Examples
+* [Notes](postgre-sql/notes.md)
+	* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
+	* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
+* [Partitions](postgre-sql/partitions.sql)
 * [Practice Tables](postgre-sql/practice-tables.sql)
 * [Select Queries](postgre-sql/selects.sql)
-* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
-* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
 ------
 # [Postman](postman)
 * [Materials](postman/materials.md)

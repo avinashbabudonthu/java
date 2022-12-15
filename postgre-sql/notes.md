@@ -13,7 +13,7 @@ private Date runFrom;
 @Temporal(TemporalType.TIMESTAMP)
 private Date runFrom;
 ```
-
+------
 # Mapping XML type
 * This Java class can be used to enable Hibernate to store and retrieve PostgreSQL "xml" typed fields as String objects. It's trivially adapted to parse the XML into a DOM and store from a DOM or whatever your preferred XML representation instead.
 * To tell Hibernate to use this UserType for a given mapped field, specify a Type annotation on the property, like:
