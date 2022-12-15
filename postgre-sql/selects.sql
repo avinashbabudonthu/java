@@ -1,7 +1,7 @@
 -- select all records from table
-select * from emp;
-select * from dept;
-select * from salgrade;
+SELECT * FROM EMP;
+SELECT * FROM DEPT;
+SELECT * FROM SALGRADE;
 
 -- Describe
 select column_name from information_schema.columns where table_name = 'emp';
