@@ -948,6 +948,7 @@
 	* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
 	* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
 * [Partitions](postgre-sql/partitions.sql)
+* [Partitions On Demand](postgre-sql/partitions-on-demand.sql)
 * [Practice Tables](postgre-sql/practice-tables.sql)
 * [Select Queries](postgre-sql/selects.sql)
 ------
