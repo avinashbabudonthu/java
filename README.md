@@ -943,6 +943,9 @@
 * [Materials](performance/materials.md)
 ------
 # [Postgre SQL Database](postgre-sql)
+* [Create Queries](postgre-sql/create-queries.sql)
+* [Drop Queries](postgre-sql/drop-queries.sql)
+* [Insert Queries](postgre-sql/insert-queries.sql)
 * [Materials](postgre-sql/materials.md)
 * [Notes](postgre-sql/notes.md)
 	* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)

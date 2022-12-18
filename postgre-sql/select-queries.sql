@@ -2,6 +2,8 @@
 SELECT * FROM EMP;
 SELECT * FROM DEPT;
 SELECT * FROM SALGRADE;
+select * from MY_TABLE;
+select * from "MY_TABLE_2022-12-16";
 
 -- Describe
 select column_name from information_schema.columns where table_name = 'emp';
@@ -58,3 +60,23 @@ SELECT (DATE_PART('hour', '08:56:10'::time - '08:54:55'::time) * 60 +
              DATE_PART('minute', '08:56:10'::time - '08:54:55'::time)) * 60 +
              DATE_PART('second', '08:56:10'::time - '08:54:55'::time);
 -- Result: 75
+
+-- current date
+select current_date;
+
+-- current date with timestamp
+select current_timestamp;
+
+-- current date in YYYY_MM_DD format
+SELECT TO_CHAR(CURRENT_TIMESTAMP, 'YYYY_MM_DD');
+
+-- count number of partitions on table - tab
+SELECT count(*) AS partitions FROM pg_catalog.pg_inherits WHERE inhparent = 'tab'::regclass;
+SELECT * FROM pg_catalog.pg_inherits WHERE inhparent = 'tab'::regclass;
+
+-- partition details
+select * from pg_class where relispartition is true;
+select * from pg_class where relispartition is FALSE;
+
+-- partitions of table - tab
+SELECT * FROM PG_CLASS WHERE RELNAME LIKE 'tab%';
