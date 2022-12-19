@@ -953,7 +953,7 @@
 * [Partitions](postgre-sql/partitions.sql)
 * [Partitions On Demand](postgre-sql/partitions-on-demand.sql)
 * [Practice Tables](postgre-sql/practice-tables.sql)
-* [Select Queries](postgre-sql/selects.sql)
+* [Select Queries](postgre-sql/select-queries.sql)
 ------
 # [Postman](postman)
 * [Materials](postman/materials.md)

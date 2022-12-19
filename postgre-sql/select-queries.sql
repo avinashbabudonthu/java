@@ -62,6 +62,7 @@ SELECT (DATE_PART('hour', '08:56:10'::time - '08:54:55'::time) * 60 +
 -- Result: 75
 
 -- current date
+-- The PostgreSQL CURRENT_DATE function returns the current date (the system date on the machine running PostgreSQL) as a value in the 'YYYY-MM-DD' format. In this format, ‘YYYY’ is a 4-digit year, ‘MM’ is a 2-digit month, and ‘DD’ is a 2-digit day. The returned value is a date data type.
 select current_date;
 
 -- current date with timestamp
@@ -73,6 +74,17 @@ SELECT TO_CHAR(CURRENT_TIMESTAMP, 'YYYY_MM_DD');
 -- count number of partitions on table - tab
 SELECT count(*) AS partitions FROM pg_catalog.pg_inherits WHERE inhparent = 'tab'::regclass;
 SELECT * FROM pg_catalog.pg_inherits WHERE inhparent = 'tab'::regclass;
+SELECT
+    nmsp_parent.nspname AS parent_schema,
+    parent.relname      AS parent,
+    nmsp_child.nspname  AS child_schema,
+    child.relname       AS child
+FROM pg_inherits
+    JOIN pg_class parent            ON pg_inherits.inhparent = parent.oid
+    JOIN pg_class child             ON pg_inherits.inhrelid   = child.oid
+    JOIN pg_namespace nmsp_parent   ON nmsp_parent.oid  = parent.relnamespace
+    JOIN pg_namespace nmsp_child    ON nmsp_child.oid   = child.relnamespace
+WHERE parent.relname='parent_table_name';
 
 -- partition details
 select * from pg_class where relispartition is true;
