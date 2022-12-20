@@ -42,6 +42,7 @@
 * AWS Certified Cloud Practitioner
 	* Udemy - [NEW] Ultimate AWS Certified Cloud Practitioner - 2022
 	* Udemy - [NEW] AWS Certified Cloud Practitioner 2022
+	* Udemy - 6 Practice Exams | AWS Certified Cloud Practitioner CLF-C01
 * AWS certified Developer Associate
 	* Udemy - Ultimate AWS Certified Developer Associate 2022 - NEW!
 	* Udemy - Practice Exams | AWS Certified Developer Associate 2022

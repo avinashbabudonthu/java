@@ -101,6 +101,7 @@
 * [Swagger Codegen](swagger-codegen)
 * [Tableau](#tableau)
 * [Teradata Database](#teradata-database)
+* [Terraform](#terraform)
 * [Testing](#testing)
 * [TinkerPop](#tinkerpop)
 * [TypeScript](#typescript)
@@ -217,6 +218,18 @@
 ------
 # [AWS](aws)
 * [Certifications](aws/certifications.md)
+* [Materials](aws/materials.md)
+* [Notes](aws/notes.md)
+* [EBS Elastic Block Storage](aws/ebs)
+* [EC2 Elastic Compute Cloud](aws/ec2)
+* [ECS Elastic Container Service](aws/ecs)
+* [IAM Identity and Access Management](aws/iam)
+* [Npetune Graph DB](aws/neptune)
+	* [Notes](aws/neptune/notes.md)
+* [RDS Relational Databases Service](aws/rds)
+* [S3 Simple Storage Service](aws/s3)
+* [SQS Simple Queue Service](aws/sqs)
+* [VPC Virtual Private Cloud](aws/vpc)
 ------
 # [Azure](azure)
 * [Materials](azure/materials.md)
@@ -1215,6 +1228,11 @@
 ------
 # [Teradata Database](teradata)
 * [Commands](teradata/commands.sql)
+------
+# [Terraform](terraform)
+* [Commands](terraform/commands.md)
+* [Materials](terraform/materials.md)
+* [Notes](terraform/notes.md)
 ------
 # [Testing](testing)
 * [Materials](materials.md)

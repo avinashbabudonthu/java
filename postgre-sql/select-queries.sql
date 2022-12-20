@@ -62,7 +62,8 @@ SELECT (DATE_PART('hour', '08:56:10'::time - '08:54:55'::time) * 60 +
 -- Result: 75
 
 -- current date
--- The PostgreSQL CURRENT_DATE function returns the current date (the system date on the machine running PostgreSQL) as a value in the 'YYYY-MM-DD' format. In this format, ‘YYYY’ is a 4-digit year, ‘MM’ is a 2-digit month, and ‘DD’ is a 2-digit day. The returned value is a date data type.
+-- The PostgreSQL CURRENT_DATE function returns the current date (the system date on the machine running PostgreSQL) as a value in the 'YYYY-MM-DD' format. 
+-- In this format, ‘YYYY’ is a 4-digit year, ‘MM’ is a 2-digit month, and ‘DD’ is a 2-digit day. The returned value is a date data type.
 select current_date;
 
 -- current date with timestamp
