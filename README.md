@@ -121,7 +121,8 @@
 * [Weblogic Queue](#weblogic-queue)
 * [Weld](#weld)
 * [Windows](#windows)
-* [Other Files](#other-files)
+* Other Files
+	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 ------
 # [Angular](angular)
 * [Commands](angular/commands.md)
@@ -1282,6 +1283,3 @@
 ------
 # [Windows](windows)
 * [Commands](windows/commands.md)
-------
-# Other Files
-* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
