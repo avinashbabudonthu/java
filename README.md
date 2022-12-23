@@ -116,6 +116,12 @@
 		* createBasicAuthHeader
 	* [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java)
 		* generate10DigitRandomNumber
+	* [Generate N Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java)
+		* generateNDigitRandomNumber
+	* [Generate Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java)
+		* generateRandomNumberInRange
+	* [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java)
+		* generateNDigitRandomNumberInRange
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)
