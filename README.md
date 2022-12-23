@@ -20,6 +20,7 @@
 * [Core Java](#core-java)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
+* [Database](#database)
 * [Data Structures Algorithms](#data-structures-algorithms)
 * [Design Patterns](#design-patterns)
 * [Devops](#devops)
@@ -554,6 +555,11 @@
 * [Hello World](cucumber/hello-world)
 * [Cucumber Level 2](cucumber/cucumber-level-2)
 ------
+# [Database](database)
+* [Notes](database/notes.md)
+	* What Is Sharding?
+	* Database Sharding vs. Partitioning: What’s the Difference?
+------
 # [Data Structures Algorithms](data-structures-algorithms)
 * [Materials](data-structures-algorithms/materials.md)
 ------
@@ -970,6 +976,7 @@
 * [Notes](postgre-sql/notes.md)
 	* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
 	* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
+	
 * [Partitions](postgre-sql/partitions.sql)
 * [Partitions On Demand](postgre-sql/partitions-on-demand.sql)
 * [Practice Tables](postgre-sql/practice-tables.sql)

@@ -113,3 +113,11 @@ public class SQLXMLType implements org.hibernate.usertype.UserType {
     }
 }
 ```
+------
+# Partitioning
+* DDL Partitioning
+	* https://www.postgresql.org/docs/current/ddl-partitioning.html
+	* Example - partitions.sql
+* Automatic On Demand Partitioning
+	* https://www.cybertec-postgresql.com/en/automatic-partition-creation-in-postgresql/
+	* Example - partitions-on-demand.sql

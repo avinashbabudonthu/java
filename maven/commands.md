@@ -75,7 +75,7 @@ mvn clean test -Dtest=<test-class-name>
 ```
 * Creating java project using maven archetype plugin
 ```
-mvn archetype:generate -DgroupId=com.test -DartifactId=maven-hello-world -DarchetypArtifactId=maven-archetype-quickstart -DintetactiveMode=false
+mvn archetype:generate -DgroupId=com.test -DartifactId=maven-hello-world -DarchetypArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 * Create web project using maven archetype plugin
 ```
