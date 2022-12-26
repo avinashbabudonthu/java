@@ -1,119 +1,541 @@
 {
 	"info": {
-		"_postman_id": "05806923-380a-4ccc-94eb-da1aad8b4925",
+		"_postman_id": "1bd7248f-325c-4d88-ac5d-8cbcce7f03ef",
 		"name": "rest-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "return-string",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8083/gets/return-string",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"gets",
-						"return-string"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "return-map-as-json",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8083/gets/return-map-as-json",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"gets",
-						"return-map-as-json"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "student-object-as-json",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8083/gets/student-object-as-json",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"gets",
-						"student-object-as-json"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "list-of-students-as-json",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8083/gets/list-of-students-as-json",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8083",
-					"path": [
-						"gets",
-						"list-of-students-as-json"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "save-student",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\": \"jim\",\n\t\"cource\": \"spring boot 2\",\n\t\"joiningDate\": \"2020-03-26\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "GetController",
+			"item": [
+				{
+					"name": "/with-mandatory-request-headers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "default"
+							},
+							{
+								"key": "name",
+								"value": "jack",
+								"type": "default"
+							},
+							{
+								"key": "course",
+								"value": "spring",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-mandatory-request-headers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-mandatory-request-headers"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:9000/students",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9000",
-					"path": [
-						"students"
-					]
+				{
+					"name": "/with-optional-request-headers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "default"
+							},
+							{
+								"key": "name",
+								"value": "jack",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "course",
+								"value": "spring",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-optional-request-headers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-optional-request-headers"
+							]
+						}
+					},
+					"response": []
 				},
-				"description": "class: com.rest.api.controller.PostController<br/>method:saveStudent<br/>Check Location in response headers to check URI to get new student object"
-			},
-			"response": []
+				{
+					"name": "/with-optional-default-value-request-headers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "default"
+							},
+							{
+								"key": "name",
+								"value": "jack",
+								"type": "default"
+							},
+							{
+								"key": "course",
+								"value": "spring",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-optional-default-value-request-headers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-optional-default-value-request-headers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-mandatory-request-params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-mandatory-request-params?id=1&name=jack&course=spring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-mandatory-request-params"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "jack"
+								},
+								{
+									"key": "course",
+									"value": "spring"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-optional-request-params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-optional-request-params?id=1&name=jack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-optional-request-params"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "jack"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-optional-default-value-request-params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-optional-default-value-request-params?id=1&name=jack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-optional-default-value-request-params"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "jack"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return-string",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/gets/return-string",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"gets",
+								"return-string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return-map-as-json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/gets/return-map-as-json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"gets",
+								"return-map-as-json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "student-object-as-json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/gets/student-object-as-json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"gets",
+								"student-object-as-json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-of-students-as-json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/gets/list-of-students-as-json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"gets",
+								"list-of-students-as-json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-request-headers-as-list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "ids",
+								"value": "100",
+								"type": "default"
+							},
+							{
+								"key": "ids",
+								"value": "101",
+								"type": "default"
+							},
+							{
+								"key": "ids",
+								"value": "102",
+								"type": "default"
+							},
+							{
+								"key": "name",
+								"value": "jack",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-request-headers-as-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-request-headers-as-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-request-params-as-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-request-params-as-list?ids=100&ids=101&ids=102&name=jack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-request-params-as-list"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "100"
+								},
+								{
+									"key": "ids",
+									"value": "101"
+								},
+								{
+									"key": "ids",
+									"value": "102"
+								},
+								{
+									"key": "name",
+									"value": "jack"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/with-path-variables/{id}/{name}/{course}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/gets/with-path-variables/100/jack/spring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"gets",
+								"with-path-variables",
+								"100",
+								"jack",
+								"spring"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PostController",
+			"item": [
+				{
+					"name": "save-student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"jim\",\n\t\"course\": \"spring boot 2\",\n\t\"joiningDate\": \"2020-03-26\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/posts/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"posts",
+								"students"
+							]
+						},
+						"description": "class: com.rest.api.controller.PostController<br/>method:saveStudent<br/>Check Location in response headers to check URI to get new student object"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PutController",
+			"item": [
+				{
+					"name": "/student1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 100,\r\n    \"name\": \"jack\",\r\n    \"course\": \"spring\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/puts/student1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"puts",
+								"student1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PatchController",
+			"item": [
+				{
+					"name": "/student1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 100,\r\n    \"name\": \"jack\",\r\n    \"course\": \"spring\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/patchs/student1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"patchs",
+								"student1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeleteController",
+			"item": [
+				{
+					"name": "/delete-1/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "name",
+								"value": "jack",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/deletes/delete-1/100?course=spring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"deletes",
+								"delete-1",
+								"100"
+							],
+							"query": [
+								{
+									"key": "course",
+									"value": "spring"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
