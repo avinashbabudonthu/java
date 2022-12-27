@@ -1,5 +1,12 @@
 # Git Commands
-
+------
+# Basic Git Concepts
+* Default branch name: main
+* Default remote name: origin
+* Current branch reference: HEAD
+* Parent of HEAD: HEAD^ or HEAD~1
+* Grandparent of HEAD: HEAD^^ or HEAD~2
+------
 * Git version
 ```
 git --version
@@ -29,7 +36,14 @@ git clone repository-url
 ```
 git clone --branch branch_name repo_url
 ```
-
+* Create a branch
+```
+git branch <branch>
+```
+* Create a branch and switch to it using the checkout command
+```
+git checkout -b <branch>
+```
 * Current branch
 ```
 git branch
@@ -38,8 +52,13 @@ git branch
 * Check all branches
 ```
 git branch -a
-
 git branch --all
+```
+* `git branch` useful flags
+```
+-a: Display all branches (local & remote)
+-r: Display remote branches
+-v: Display branches with last commit
 ```
 * Count number of branches
 ```
@@ -111,12 +130,20 @@ git add src/main/java/*
 ```
 git commit -m "commit message"
 ```
+* If you want to add all changes made to tracked files & commit
+```
+git commit -a -m "<message>"
+or
+git commit -am "<message>"
+```
 * Push the changes to current branch. Send all commits from local repository to remote repository
 ```
 git push
 ```
 * Push changes to master branch
 ```
+git push <remote name> <branch>
+
 git push origin master
 (or)
 git push -u origin master
@@ -141,13 +168,18 @@ git reset --hard HEAD
 ```
 git reset --hard origin/master
 ```
+* Add a remote repository
+```
+git remote add <remote name> <url>
+```
 * If you haven't connected your local repository to a remote server, To add a remote server to a local repository
 ```
 git remote add origin [repo_url]
 ```
-* Create a new local repository
+* Create a new local repository (or) Initialize a local repository. The `<directory>` is optional. If you don't specify it, the current directory will be used
 ```
 git init
+git init <directory>
 ```
 * Create new remote repository and check in local new repository to remote repository
 	* Create new repository in github website
@@ -189,17 +221,23 @@ git config --global user.password "your password"
 ```
 git config --local credential.helper ""
 ```
+* Display remote repositories
+```
+git remote
+```
 * List all currently configured remote repository URLs
 ```
 git remote -v
 ```
-* Get commit id
+* Display the commit history
 ```
 git log
 ```
 * Remove files from the staging area
 ```
 git reset HEAD file-name
+or
+git reset <file>
 ```
 * Remove ignored files
 ```
@@ -244,6 +282,20 @@ git remote set-url origin git@github.com:avinashbabudonthu/python.git
 git remote remove <name>
 git remote remove heroku
 ```
+* Rename a remote repository
+```
+git remote rename <old name> <new name>
+```
+* Fetch changes from a remote repository
+```
+git fetch <remote name>
+```
+
+* Fetch changes from a particular branch
+```
+git fetch <remote name> <branch>
+```
+
 * Allow long paths
 ```
 git config --system core.longpaths true
@@ -266,13 +318,17 @@ git rm [file-name]
 git status
 git commit -m "commit-message"
 ```
+* You can also remove it from staging area only using `--cached` flag
+```
+git rm --cached <file>
+```
 * If remove file from directory then git does not know about it, then execute following commands
 ```
 git add -u
 git status
 git commit -m "commit-message"
 ```
-* Moving files with git
+* Move or rename a file
 ```
 git mv [file-name] [folder-name-with-path]
 git commit -m "commit-message"
@@ -287,6 +343,43 @@ git commit -m "commit-message"
 ```
 git reset --merge
 ```
+* Checkout a previous commit
+```
+git checkout <commit id>
+```
+* Revert a commit
+```
+git revert <commit id>
+```
+* Reset a commit
+```
+git reset <commit id>
+```
+* You can also add the --hard flag to delete all changes, but use it with caution
+```
+git reset --hard <commit id>
+```
+* Display the changes to unstaged files
+```
+git diff
+```
+* You can also use the --staged flag to display the changes to staged files
+```
+git diff --staged
+```
+* Display the changes between two commits
+```
+git diff <commit id 01> <commit id 02>
+```
+------
+# Useful flags:
+* --no-ff: Create a merge commit even if the merge resolves as a fast-forward
+* --squash: Squash all commits from the specified branch into a single commit
+* Fast forward merge\
+![picture](images/fast-forward-merge.jpg)
+* Non fast forward merge\
+![picture](images/non-fast-forward-merge.jpg)
+* It is suggested to not use the `--squash` flag as it will squash all commits into a single commit, leading to a messy commit history
 ------
 # Cherry Pick
 * branch1 - commit1
