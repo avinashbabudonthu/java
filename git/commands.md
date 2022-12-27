@@ -1,5 +1,3 @@
-# Git Commands
-------
 # Basic Git Concepts
 * Default branch name: main
 * Default remote name: origin
@@ -7,6 +5,7 @@
 * Parent of HEAD: HEAD^ or HEAD~1
 * Grandparent of HEAD: HEAD^^ or HEAD~2
 ------
+# Git Commands
 * Git version
 ```
 git --version
