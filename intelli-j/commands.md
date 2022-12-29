@@ -8,7 +8,7 @@ ctrl x
 ```
 ctrl y
 ```
-* folder method or block
+* fold method or block
 ```
 ctrl -
 ```
@@ -85,4 +85,10 @@ ctrl u
 * Version control like Git popup
 ```
 alt `
+```
+* auto remove imports
+```
+ctrl shift a
+type "optimize imports on the fly"
+Enable check box next to "Optimize imports on the fly"
 ```

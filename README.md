@@ -707,6 +707,7 @@
 ------
 # [IntelliJ](intelli-j)
 * [Commands](intelli-j/commands.md)
+* [Commands Cheet Sheet](intelli-j/commands-cheat-sheet.pdf)
 ------
 # [Interview Questions](interview-questions)
 * [Set-1](interview-questions/set-1.md)
