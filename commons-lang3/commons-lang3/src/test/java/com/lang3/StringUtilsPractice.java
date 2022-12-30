@@ -22,4 +22,34 @@ public class StringUtilsPractice {
 		log.info("result2={}", result2); // false
 	}
 
+	@Test
+	public void equalsAny(){
+		String name1 = "john";
+		String name2 = "jim";
+		String name3 = "jane";
+
+		String input1 = "jack";
+		boolean result1 = StringUtils.equalsAny(input1, name1, name2, name3);
+		System.out.println(result1);
+
+		String input2 = "jim";
+		boolean result2 = StringUtils.equalsAny(input2, name1, name2, name3);
+		System.out.println(result2);
+	}
+
+	@Test
+	public void equalsAnyIgnoreCase(){
+		String name1 = "john";
+		String name2 = "jim";
+		String name3 = "jane";
+
+		String input1 = "jack";
+		boolean result1 = StringUtils.equalsAnyIgnoreCase(input1, name1, name2, name3);
+		System.out.println(result1);
+
+		String input2 = "JIM";
+		boolean result2 = StringUtils.equalsAnyIgnoreCase(input2, name1, name2, name3);
+		System.out.println(result2);
+	}
+
 }

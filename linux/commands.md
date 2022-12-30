@@ -143,3 +143,11 @@ tar –cvzf documents.tar.gz ~/Documents
 ```
 tar -cvf documents.tar ~/Documents
 ```
+* Install python pip in linux:
+```
+sudo apt-get install python-pip
+```
+* Install aws cli
+```
+sudo pip install --upgrade awscli
+```

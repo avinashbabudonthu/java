@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.Test;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -61,8 +62,26 @@ public class JsonStringToObject {
 	public void enumJsonToEnumObject() {
 		String enumJsonString = new ObjectMapper().writeValueAsString(Days.MONDAY);
 		log.info("enumJsonString={}", enumJsonString);
-
-		Days days = new ObjectMapper().readValue("THURSDAY", Days.class);
-
 	}
+
+	@SneakyThrows
+	@Test
+	public void jsonStringToJsonNode(){
+		final String jsonString = "[{\"id\": \"1\", \"name\": \"jim\"}, {\"id\": \"2\", \"name\": \"jill\"}]";
+
+		ObjectMapper objectMapper = new ObjectMapper();
+		JsonNode jsonNode = objectMapper.readTree(jsonString);
+		System.out.println(jsonNode);
+
+		JsonNode index0 = jsonNode.get(0);
+		System.out.println(index0);
+
+		JsonNode id = index0.get("id");
+		JsonNode name = index0.get("name");
+		System.out.println(id); // "1"
+		System.out.println(name); // "jim"
+		System.out.println(id.textValue()); // 1
+		System.out.println(name.textValue()); // jim
+	}
+
 }

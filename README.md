@@ -14,7 +14,7 @@
 * [Chocolatey](#chocolatey)
 * [Cloud](#cloud)
 * [Commons compress](#commons-compress)
-* [commons Lang3](#commons-lang3)
+* [Commons Lang3](#commons-lang3)
 * [Coding Web sites](#coding-web-sites)
 * [Concourse](#concourse)
 * [Core Java](#core-java)
@@ -262,6 +262,8 @@
 # [commons Lang3](commons-lang3)
 * [BooleanUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtils.java)
 * [ExceptionUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/ExceptionUtils.java)
+* [ObjectUtilsPractice](commons-lang3/commons-lang3/src/test/java/com/lang3/ObjectUtilsPractice.java)
+* [RandomStringUtilsPractice](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
 * [StringUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
 * [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 ------
@@ -724,6 +726,7 @@
 	* Json String to Map of String and Object - jsonStringToMapOfStringAndObject
 	* Json String to Object list - jsonStringToObjectList
 	* Enum to JSON vice versa - enumJsonToEnumObject
+	* JSON String to JSON Node - jsonStringToJsonNode
 * [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
 ------
 # [JBoss](jboss)
