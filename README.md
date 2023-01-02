@@ -769,6 +769,21 @@
 # [JPA](jpa)
 * [Materials](jpa/materials.md)
 * [Practice Entites](orm/practice-entities)
+
+## Examples
+* [Boolean column mapping](jpa/jpapractice/src/main/java/booleancolumn/mapping)
+* [Callback Annotations](jpa/jpapractice/src/main/java/com/jpa/practice/callback/annotations)
+* [CRUD Operations](jpa/jpapractice/src/main/java/com/jpa/practice/crud)
+* [Datatype Mapping](jpa/jpapractice/src/main/java/com/jpa/practice/datatype/mapping)
+* [Listeners](jpa/jpapractice/src/main/java/com/jpa/practice/listeners)
+* [Queries](jpa/jpapractice/src/main/java/com/jpa/queries/practice)
+* [Practice Models](jpa/jpapractice/src/main/java/com/jpa/queries/practice/model)
+* [Many to One Using JoinColumn](jpa/jpapractice/src/main/java/many/to/one/join/column)
+* [Many to One Using JoinTable](jpa/jpapractice/src/main/java/many/to/one/join/table)
+* [One to Many Using JoinColumn](jpa/jpapractice/src/main/java/one/to/many/join/column)
+* [One to Many Using JoinTable](jpa/jpapractice/src/main/java/one/to/many/join/table)
+* [One to One Using JoinColumn](jpa/jpapractice/src/main/java/one/to/one/join/column)
+* [One to One Using JoinTable](jpa/jpapractice/src/main/java/one/to/one/join/table)
 ------
 # [Junit 4](junit-4)
 * [Materials](junit-4/materials.md)

@@ -1,0 +1,1 @@
+# Save boolean column value as 1 or 0 in database column
