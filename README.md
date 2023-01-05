@@ -1112,6 +1112,19 @@
 * [Dependency injection using java config](spring/core/dependency-injection-java-config)
 * [Materials](core/materials.md)
 ------
+spring/data-jpa/springdatajpapractice/src/main/java
+## Spring Data JPA
+* [Data JPA](spring/data-jpa)
+	* [Delete](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaDeleteController.java)
+	* [Save](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaSaveController.java)
+	* [Update](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaUpdateController.java)
+	* [General](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/GeneralController.java)
+	* [Select Queries](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaSelectController.java)
+	* [Select Queries](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+	* [Custom Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepositoryImpl.java)
+	* [Rest Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/rest/EmployeeJpaRestRepository.java)
+	* [Tables](spring/data-jpa/springdatajpapractice/src/main/resources/sql/tables.sql)
+------
 ## Spring Data Mongo
 * [Spring Data Mongo](spring/data-mongo)
 * [Materials](spring/data-mongo/materials.md)
