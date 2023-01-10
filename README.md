@@ -297,6 +297,7 @@
 * [Notes](core-java/notes/collections.md)
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
 * [Examples](#javautil-package)
+* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
 	
 ## Generics
 * [Notes](core-java/notes/generics.md)

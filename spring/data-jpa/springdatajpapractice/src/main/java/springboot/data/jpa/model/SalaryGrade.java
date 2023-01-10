@@ -14,9 +14,9 @@ public class SalaryGrade {
     private Long grade;
 
     public SalaryGrade(Long highSalary, Long lowSalary, Long grade) {
-	this.highSalary = highSalary;
-	this.lowSalary = lowSalary;
-	this.grade = grade;
+        this.highSalary = highSalary;
+        this.lowSalary = lowSalary;
+        this.grade = grade;
     }
 
     public SalaryGrade() {
@@ -25,29 +25,29 @@ public class SalaryGrade {
     @Id
     @Column(name = "GRADE")
     public Long getGrade() {
-	return grade;
+        return grade;
     }
 
     public void setGrade(Long grade) {
-	this.grade = grade;
+        this.grade = grade;
     }
 
     @Column(name = "HISAL")
     public Long getHighSalary() {
-	return highSalary;
+        return highSalary;
     }
 
     public void setHighSalary(Long highSalary) {
-	this.highSalary = highSalary;
+        this.highSalary = highSalary;
     }
 
     @Column(name = "LOSAL")
     public Long getLowSalary() {
-	return lowSalary;
+        return lowSalary;
     }
 
     public void setLowSalary(Long lowSalary) {
-	this.lowSalary = lowSalary;
+        this.lowSalary = lowSalary;
     }
 
 }
