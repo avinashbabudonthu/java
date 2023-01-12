@@ -105,7 +105,6 @@
 * [Teradata Database](#teradata-database)
 * [Terraform](#terraform)
 * [Testing](#testing)
-* [TinkerPop](#tinkerpop)
 * [TypeScript](#typescript)
 * [UML](#uml)
 * [Unit Testing](#unit-testing)
@@ -1289,9 +1288,6 @@ spring/data-jpa/springdatajpapractice/src/main/java
 ------
 # [Testing](testing)
 * [Materials](materials.md)
-------
-# [TinkerPop](tinker-pop)
-* [Materials](tinker-pop/materials.md)
 ------
 # [TypeScript](typescript)
 * [Materials](typescript/materials.md)
