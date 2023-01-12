@@ -316,14 +316,11 @@
 * [Notes](core-java/notes/java-8-notes.md)
 
 ## [Java 9](core-java/java-9)
+* [Notes](core-java/java-9/README.md)
 * [Notes](core-java/java-9/notes.md)
 
 ## [Java 11](core-java/java-11)
-* [Collections](core-java/java-11/java-11/src/main/java/com/java/CollectionsPractice.java)
-* [File IO](core-java/java-11/java-11/src/main/java/com/java/FilesPractice.java)
-* [Lambdas](core-java/java-11/java-11/src/main/java/com/java/Lambdas.java)
-* [Predicate](core-java/java-11/java-11/src/main/java/com/java/PredicatePractice.java)
-* [Strings](core-java/java-11/java-11/src/main/java/com/java/Strings.java)
+* [NewFeaturesPractice](core-java/java-11/java-11/src/main/java/com/java/NewFeaturesPractice.java)
 
 ## Core Java Examples
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)

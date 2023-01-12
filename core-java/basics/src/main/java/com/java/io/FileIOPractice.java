@@ -1,53 +1,24 @@
 package com.java.io;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Writer;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
+import org.junit.Test;
+
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.DirectoryStream;
 import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
-import java.nio.file.StandardOpenOption;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.Formatter;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.StringJoiner;
+import java.nio.file.*;
+import java.util.*;
 import java.util.stream.Stream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
-
-import org.apache.commons.io.FileUtils;
-import org.junit.Test;
-
-import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class FileIOPractice {
@@ -865,14 +836,15 @@ public class FileIOPractice {
             Files.copy(is, new File("C:\test\file-1.txt").toPath(), StandardCopyOption.REPLACE_EXISTING);
         }
     }
-	
+
     @SneakyThrows
-    @Test
-    public void deleteDirectory(File file){
-        String fileAbsolutePath = file.getAbsolutePath();
-        log.info("deleting directory: {}", fileAbsolutePath);
-        FileUtils.deleteDirectory(file);
-        log.info("deleted directory: {}", fileAbsolutePath);
-    }
+	@Test
+	public void deleteDirectory(){
+		File file = null; // file object
+		String fileAbsolutePath = file.getAbsolutePath();
+		log.info("deleting directory: {}", fileAbsolutePath);
+		FileUtils.deleteDirectory(file);
+		log.info("deleted directory: {}", fileAbsolutePath);
+	}
 	
 }
