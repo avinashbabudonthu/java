@@ -71,7 +71,7 @@
 * [Log4J](#log4j)
 * [Logging](#logging)
 * [Maven](#maven)
-* [Microservices](#micro-services)
+* [Microservices](#microservices)
 * [Mockito](#mockito)
 * [Model Mapper](#model-mapper)
 * [Mongo DB](#mongo)
