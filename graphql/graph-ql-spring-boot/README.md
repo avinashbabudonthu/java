@@ -1,10 +1,9 @@
-# Maven command to create this example
-```
-mvn archetype:generate -DgroupId=com.java -DartifactId=graph-ql-spring-boot -Dversion=2022.05.27 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-```
+# About
+* Dependencies - [pom.xml](pom.xml)
+* Application properties - [application.yml](src/main/resources/application.yml)
+* Graphql schema - [query.graphqls](src/main/resources/schema/query.graphqls)
+    * firstQuery - [firstQuery method](src/main/java/com/java/query/Query.java)
 
-# Steps
-* Refer dependencies in [pom.xml](pom.xml)
-
-# References
-* [https://github.com/graphql-java-kickstart/graphql-spring-boot](https://github.com/graphql-java-kickstart/graphql-spring-boot)
+# Run App
+* Run main class - [App](src/main/java/com/java/App.java)
+* Open url - http://localhost:9000/graphiql

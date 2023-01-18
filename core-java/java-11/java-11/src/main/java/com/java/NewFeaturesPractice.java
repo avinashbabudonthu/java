@@ -172,4 +172,15 @@ public class NewFeaturesPractice {
         System.out.println(nestedMembers);
     }
 
+    /**
+     * Output:
+     * hello-hello-hello-hello-hello-
+     */
+    @Test
+    public void stringRepeat(){
+        String str = "hello-";
+        String result = str.repeat(5);
+        System.out.println(result);
+    }
+
 }

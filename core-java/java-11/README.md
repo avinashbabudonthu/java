@@ -1,26 +1,21 @@
 # Java 11 features
-* JEP 181: Nest-Based Access Control
-* JEP 309: Dynamic Class-File Constants
-* JEP 315: Improve Aarch64 Intrinsics
-* JEP 318: Epsilon: A No-Op Garbage Collector (Experimental)
-* JEP 320: Remove the Java EE and CORBA Modules
-* JEP 321: HTTP Client (Standard)
-* JEP 323: Local-Variable Syntax for Lambda Parameters
-* JEP 324: Key Agreement with Curve25519 and Curve448
-* JEP 327: Unicode 10
-* JEP 328: Flight Recorder
-* JEP 329: ChaCha20 and Poly1305 Cryptographic Algorithms
-* JEP 330: Launch Single-File Source-Code Programs
-* JEP 331: Low-Overhead Heap Profiling
-* JEP 332: Transport Layer Security (TLS) 1.3
-* JEP 333: ZGC: A Scalable Low-Latency Garbage Collector (Experimental)
-* JEP 335: Deprecate the Nashorn JavaScript Engine
-* JEP 336: Deprecate the Pack200 Tools and API
-------
-# JEP 181: Nest-Based Access Control
-
-* Further Reading - [JEP 181: Nest-Based Access Control](https://openjdk.org/jeps/181)
-* [java-11-nest-based-access-control](https://mkyong.com/java/java-11-nest-based-access-control/)
+1. JEP 181: Nest-Based Access Control
+2. JEP 309: Dynamic Class-File Constants
+3. JEP 315: Improve Aarch64 Intrinsics
+4. JEP 318: Epsilon: A No-Op Garbage Collector (Experimental)
+5. JEP 320: Remove the Java EE and CORBA Modules
+6. JEP 321: HTTP Client (Standard)
+7. JEP 323: Local-Variable Syntax for Lambda Parameters
+8. JEP 324: Key Agreement with Curve25519 and Curve448
+9. JEP 327: Unicode 10
+10. JEP 328: Flight Recorder
+11. JEP 329: ChaCha20 and Poly1305 Cryptographic Algorithms
+12. JEP 330: Launch Single-File Source-Code Programs
+13. JEP 331: Low-Overhead Heap Profiling
+14. JEP 332: Transport Layer Security (TLS) 1.3
+15. JEP 333: ZGC: A Scalable Low-Latency Garbage Collector (Experimental)
+16. JEP 335: Deprecate the Nashorn JavaScript Engine
+17. JEP 336: Deprecate the Pack200 Tools and API
 ------
 # Java 11 developer features
 * New HTTP Client APIs `java.net.http.*`
@@ -28,6 +23,11 @@
 * Java fright recorder (JFR)
 * Launch single-file program `java ClassName.java`
 * Support `ChaCha20` cryptography algorithm
+------
+# JEP 181: Nest-Based Access Control
+
+* Further Reading - [JEP 181: Nest-Based Access Control](https://openjdk.org/jeps/181)
+* [java-11-nest-based-access-control](https://mkyong.com/java/java-11-nest-based-access-control/)
 ------
 # Running Java Files
 * A major change in this version is that we don't need to compile the Java source files with `javac` explicitly anymore:
@@ -64,30 +64,63 @@ Hello Java 11!
 * In order to enable it, use the `-XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC` flag
 * Further Reading - [JEP 318: Epsilon: A No-Op Garbage Collector (Experimental)](https://openjdk.org/jeps/318)
 ------
-# Flight Recorder
-* Java Flight Recorder (JFR) is now open-source in Open JDK, whereas it used to be a commercial product in Oracle JDK. JFR is a profiling tool that we can use to gather diagnostics and profiling data from a running Java application
+# JEP 328: Flight Recorder
+* Java Flight Recorder (JFR) is now open-source in Open JDK 11, whereas it used to be a commercial product in Oracle JDK. JFR is a profiling tool that we can use to gather diagnostics and profiling data from a running Java application
 * To start a 120 seconds JFR recording, we can use the following parameter
 ```
 -XX:StartFlightRecording=duration=120s,settings=profile,filename=java-demo-app.jfr
 ```
+* The below command starts a 60 seconds JFR recording on a Java application, dumps the recorded data into a ‘.jfr’ file
+```
+$ java -XX:StartFlightRecording=duration=60s,settings=profile,filename=app.jfr MyApp
+```
+* So what to do with the .jfr file? We can use [Java Mission Control (JMC)](https://openjdk.org/projects/jmc/) to analyze and visualize the .jfr file
 * We can use JFR in production since its performance overhead is usually below 1%. Once the time elapses, we can access the recorded data saved in a JFR file; however, in order to analyze and visualize the data, we need to make use of another tool called `JDK Mission Control (JMC)`
 ------
 # JEP 320: Remove the Java EE and CORBA Modules
 * Standalone versions of the Java EE technologies are available on third-party sites; therefore, there is no need for Java SE to include them.
 * Java 9 deprecated the following Java EE and CORBA modules and now removed in Java 11. If you want to migrate to Java 11, make sure your project didn’t use any of the following packages or tools
 * Removed packages
-	* Java API for XML-Based Web Services (java.xml.ws)
-	* Java Architecture for XML Binding (java.xml.bind)
-	* Common Annotations (java.xml.ws.annotation)
-	* JavaBeans Activation Framework (java.activation)
-	* Common Object Request Broker Architecture (java.corba)
-	* JavaTransaction API (java.transaction)
-	* Aggregator module for the six modules above (java.se.ee)
+	* java.xml.ws - Java API for XML-Based Web Services
+	* java.xml.ws.annotation - Common Annotations
+	* java.xml.bind - Java Architecture for XML Binding
+	* java.activation - JavaBeans Activation Framework
+	* java.corba - Common Object Request Broker Architecture
+	* java.transaction - JavaTransaction API
+	* java.se.ee - Aggregator module for the six modules above
 * Removed Tools
 	* wsgen and wsimport (from jdk.xml.ws)
 	* schemagen and xjc (from jdk.xml.bind)
 	* idlj, orbd, servertool, and tnamesrv (from java.corba)
 * Further Reading - [JEP 320: Remove the Java EE and CORBA Modules](https://openjdk.org/jeps/320)
+------
+# 6. JEP 321: HTTP Client (Standard)
+* This HTTP Client API, in the java.net.http package was introduced in Java 9, updated in Java 10, now a standard feature in Java 11.
+* A Java 11 HttpClient to send a simple GET request
+```
+HttpClient httpClient = HttpClient.newBuilder()
+            .version(HttpClient.Version.HTTP_1_1)
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+
+HttpRequest request = HttpRequest.newBuilder()
+		.GET()
+		.uri(URI.create("https://localhost:8080/get"))
+		.setHeader("User-Agent", "Java 11 HttpClient Bot")
+		.build();
+
+HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+HttpHeaders headers = response.headers();
+headers.map().forEach((key, value) -> System.out.println(key + ":" + value));
+
+System.out.println(response.statusCode());
+
+System.out.println(response.body());
+```
+* Further Reading
+	* [JEP 321: HTTP Client (Standard)](https://openjdk.org/jeps/321)
+	* [Java 11 HttpClient Examples](https://mkyong.com/java/java-11-httpclient-examples/)
 ------
 # JMC and JavaFX
 * JDK Mission Control (JMC) is no longer included in the JDK. A standalone version of JMC is now available as a separate download
@@ -105,3 +138,8 @@ Hello Java 11!
 * Upgraded Transport Layer Security (TLS) to version 1.3 brings security and performance improvements
 * Introduced a low latency garbage collector, ZGC, as an experimental feature with low pause times
 * Support for Unicode 10 brings more characters, symbols, and emojis
+------
+# References
+* https://mkyong.com/java/what-is-new-in-java-11/
+* https://www.javatpoint.com/java-8-vs-java-11
+* https://www.tutorialspoint.com/java11/java11_quick_guide.htm
