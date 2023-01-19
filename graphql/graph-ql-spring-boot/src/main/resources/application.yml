@@ -1,1 +1,7 @@
 server.port: 9000
+
+# changing /graphiql url to /app-ui
+# graphiql.mapping: /app-ui
+
+# changing default /graphql end point to /app
+# graphql.servlet.mapping: /app
