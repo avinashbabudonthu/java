@@ -1,3 +1,11 @@
 type Query {
     firstQuery: String
+	fullName(firstName: String, lastName: String): String
+	studentRequest(student: Student): String
+}
+
+input Student{
+	id: Int
+	firstName: String
+	lastName: String
 }

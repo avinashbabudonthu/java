@@ -30,6 +30,277 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "fullName-without-arguments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\r\n    fullName\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fullName-with-arguments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    fullName(firstName: \"jack\", lastName: \"jill\")\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\r\n    studentRequest(student: {\r\n        id: 100\r\n        firstName: \"jack\"\r\n        lastName: \"jill\"\r\n    })\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\r\n    studentRequest(student: {\r\n        id: 100,\r\n        firstName: \"jack\",\r\n        lastName: \"jill\"\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 06:04:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"studentRequest\": \"100 jack jill\"\n    }\n}"
+				},
+				{
+					"name": "example-2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\r\n    studentRequest(student: {\r\n        id: 100\r\n        firstName: \"jack\"\r\n        lastName: \"jill\"\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 06:05:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"studentRequest\": \"100 jack jill\"\n    }\n}"
+				},
+				{
+					"name": "example-3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\r\n    studentRequest(student: {\r\n        id: 100\r\n        firstName: \"jack\"\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 06:06:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"studentRequest\": \"100 jack null\"\n    }\n}"
+				}
+			]
 		}
 	]
 }
