@@ -669,10 +669,8 @@
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [Materials](graphql/materials.md)
-## Projects
-<details>
-<summary>[GraphQL Spring Boot](graphql/graph-ql-spring-boot)</summary>
-<p>
+# Projects
+# [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ## Files
 	* Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
 	* Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
@@ -713,8 +711,6 @@ graphql.servlet.mapping: /app
   * [student5SubjectsWithResolvedAndFilter method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
   * [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student5Resolver.java)
   * [SubjectEnum](graphql/graph-ql-spring-boot/src/main/java/com/java/util/SubjectEnum.java)
-</p>
-</details>
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
