@@ -5,6 +5,8 @@ type Query {
 	mandatoryField(student: Student2): String
 	studentAsResponse(id: Int, firstName: String, lastName: String): StudentResponse
 	responseWithList(id: Int): Student3
+	student4SubjectsWithResolver(id: Int): Student4
+	student5SubjectsWithResolvedAndFilter(id: Int): Student5
 }
 
 input Student{
@@ -36,4 +38,22 @@ type Subject {
 	id: Int
 	name: String
 	marks: Float
+}
+
+type Student4 {
+	id: Int
+	firstName: String
+	lastName: String
+	subjects: [Subject]
+}
+type Student5 {
+	id: Int
+	firstName: String
+	lastName: String
+	subjects(subjectEnum: SubjectEnum): [Subject]
+}
+
+enum SubjectEnum {
+	Java,
+	GraphQL
 }

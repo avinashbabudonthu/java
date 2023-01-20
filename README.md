@@ -669,7 +669,52 @@
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [Materials](graphql/materials.md)
-* [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
+## Projects
+<details>
+<summary>[GraphQL Spring Boot](graphql/graph-ql-spring-boot)</summary>
+<p>
+## Files
+	* Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
+	* Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
+	* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+
+## Run App
+	* Run main class - [App](graphql/graph-ql-spring-boot/src/main/java/com/java/App.java)
+	* Open url - http://localhost:9000/graphiql
+	  * UI to write and execute graphql queries
+	* Postman collection - [graph-ql-spring-boot.postman_collection.json](graphql/graph-ql-spring-boot/files/graph-ql-spring-boot.postman_collection.json)
+	* Import to postman to check graphql queries
+
+## Examples
+* Graphql schema - [query.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+* firstQuery - [firstQuery method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+* fullName - [fullName method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+* studentRequest - [studentRequest method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+* Update default `/graphiql` url - refer [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
+```
+graphiql.mapping: /app-ui
+```
+* Update default `/graphql` url - refer [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
+```
+graphql.servlet.mapping: /app
+```
+* JSON as response
+  * studentAsResponse - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+  * [studentAsResponse method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+* Response with list
+  * responseWithList - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+  * [responseWithList method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+* student4SubjectsWithResolver
+  * student4SubjectsWithResolver - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+  * [student4SubjectsWithResolver method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+  * [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student4Resolver.java)
+* student5SubjectsWithResolvedAndFilter
+  * student5SubjectsWithResolvedAndFilter - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+  * [student5SubjectsWithResolvedAndFilter method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+  * [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student5Resolver.java)
+  * [SubjectEnum](graphql/graph-ql-spring-boot/src/main/java/com/java/util/SubjectEnum.java)
+</p>
+</details>
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
@@ -1116,7 +1161,6 @@
 * [Dependency injection using java config](spring/core/dependency-injection-java-config)
 * [Materials](core/materials.md)
 ------
-spring/data-jpa/springdatajpapractice/src/main/java
 ## Spring Data JPA
 * [Data JPA](spring/data-jpa)
 	* [Delete](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaDeleteController.java)
@@ -1141,6 +1185,11 @@ spring/data-jpa/springdatajpapractice/src/main/java
 * [Spring Integartion](spring/integration)
 * [Materials](spring/integration/materials.md)
 * [Notes](spring/integration/notes.md)
+------
+## Spring JDBC
+* [JDBC](spring/jdbc)
+* [Notes](spring/jdbc/notes.md)
+* [Examples](spring/jdbc/spring-jdbc)
 ------
 ## Spring JMS
 * [Spring JMS](spring/jms)

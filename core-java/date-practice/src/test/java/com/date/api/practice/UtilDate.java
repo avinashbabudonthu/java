@@ -124,19 +124,22 @@ public class UtilDate {
 
 	@Test
 	public void before() {
-		Date date1 = new Date(2020, 4, 3);
-		Date date2 = new Date(2020, 4, 2);
+		Date date1 = new Date(120, 4, 3);
+		Date date2 = new Date(120, 4, 2);
 
 		Boolean isDate1BeforeDate2 = date1.before(date2);
+		// date1=Sun May 03 00:00:00 IST 2020, date2=Sat May 02 00:00:00 IST 2020, before=false
 		log.info("date1={}, date2={}, before={}", date1, date2, isDate1BeforeDate2);
 	}
 
 	@Test
 	public void after() {
-		Date date1 = new Date(2020, 4, 3);
-		Date date2 = new Date(2020, 4, 2);
+		Date date1 = new Date(120, 4, 3);
+		Date date2 = new Date(120, 4, 2);
 
 		Boolean isDate1AfterDate2 = date1.after(date2);
+
+		// date1=Sun May 03 00:00:00 IST 2020, date2=Sat May 02 00:00:00 IST 2020, after=true
 		log.info("date1={}, date2={}, after={}", date1, date2, isDate1AfterDate2);
 	}
 

@@ -64,4 +64,20 @@ public class Query implements GraphQLQueryResolver {
         return student3;
     }
 
+    public Student4 student4SubjectsWithResolver(Integer id){
+        return Student4.builder()
+                .id(id)
+                .firstName("jim")
+                .lastName("john")
+                .build();
+    }
+
+    public Student5 student5SubjectsWithResolvedAndFilter(Integer id){
+        return Student5.builder()
+                .id(id)
+                .firstName("jim")
+                .lastName("john")
+                .build();
+    }
+
 }
