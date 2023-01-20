@@ -672,16 +672,16 @@
 # Projects
 # [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
 ## Files
-	* Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
-	* Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
-	* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+* Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
+* Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
+* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 
 ## Run App
-	* Run main class - [App](graphql/graph-ql-spring-boot/src/main/java/com/java/App.java)
-	* Open url - http://localhost:9000/graphiql
-	  * UI to write and execute graphql queries
-	* Postman collection - [graph-ql-spring-boot.postman_collection.json](graphql/graph-ql-spring-boot/files/graph-ql-spring-boot.postman_collection.json)
-	* Import to postman to check graphql queries
+* Run main class - [App](graphql/graph-ql-spring-boot/src/main/java/com/java/App.java)
+* Open url - http://localhost:9000/graphiql
+  * UI to write and execute graphql queries
+* Postman collection - [graph-ql-spring-boot.postman_collection.json](graphql/graph-ql-spring-boot/files/graph-ql-spring-boot.postman_collection.json)
+* Import to postman to check graphql queries
 
 ## Examples
 * Graphql schema - [query.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
