@@ -1,3 +1,4 @@
+# The Root Query for the application
 type Query {
     firstQuery: String
 	fullName(firstName: String, lastName: String): String
@@ -6,7 +7,12 @@ type Query {
 	studentAsResponse(id: Int, firstName: String, lastName: String): StudentResponse
 	responseWithList(id: Int): Student3
 	student4SubjectsWithResolver(id: Int): Student4
-	student5SubjectsWithResolvedAndFilter(id: Int): Student5
+	student5SubjectsWithResolverAndFilter(id: Int): Student5
+}
+
+# The Root Mutation for the application
+type Mutation {
+	createStudent(studentRequest: StudentRequest1): StudentResponse
 }
 
 input Student{
@@ -54,6 +60,13 @@ type Student5 {
 }
 
 enum SubjectEnum {
+	All,
 	Java,
 	GraphQL
+}
+
+input StudentRequest1 {
+	id: Int,
+	firstName: String,
+	lastName: String
 }

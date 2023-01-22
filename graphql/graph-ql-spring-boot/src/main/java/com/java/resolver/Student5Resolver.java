@@ -36,6 +36,11 @@ public class Student5Resolver implements GraphQLResolver<Student5> {
             subjects.add(subject2);
         }
 
+        if(subjectEnum.name().equalsIgnoreCase("All")){
+            subjects.add(subject1);
+            subjects.add(subject2);
+        }
+
 
         return subjects;
     }

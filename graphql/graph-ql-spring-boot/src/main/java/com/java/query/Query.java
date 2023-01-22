@@ -72,7 +72,7 @@ public class Query implements GraphQLQueryResolver {
                 .build();
     }
 
-    public Student5 student5SubjectsWithResolvedAndFilter(Integer id){
+    public Student5 student5SubjectsWithResolverAndFilter(Integer id){
         return Student5.builder()
                 .id(id)
                 .firstName("jim")

@@ -684,7 +684,7 @@
 * Import to postman to check graphql queries
 
 ## Examples
-* Graphql schema - [query.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 * firstQuery - [firstQuery method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
 * fullName - [fullName method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
 * studentRequest - [studentRequest method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
@@ -697,20 +697,24 @@ graphiql.mapping: /app-ui
 graphql.servlet.mapping: /app
 ```
 * JSON as response
-  * studentAsResponse - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-  * [studentAsResponse method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+	* studentAsResponse - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+	* [studentAsResponse method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
 * Response with list
-  * responseWithList - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-  * [responseWithList method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+	* responseWithList - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+	* [responseWithList method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
 * student4SubjectsWithResolver
-  * student4SubjectsWithResolver - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-  * [student4SubjectsWithResolver method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-  * [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student4Resolver.java)
-* student5SubjectsWithResolvedAndFilter
-  * student5SubjectsWithResolvedAndFilter - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-  * [student5SubjectsWithResolvedAndFilter method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-  * [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student5Resolver.java)
-  * [SubjectEnum](graphql/graph-ql-spring-boot/src/main/java/com/java/util/SubjectEnum.java)
+	* student4SubjectsWithResolver - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+	* [student4SubjectsWithResolver method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+	* [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student4Resolver.java)
+* student5SubjectsWithResolverAndFilter
+	* student5SubjectsWithResolverAndFilter - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+	* [student5SubjectsWithResolverAndFilter method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
+	* [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student5Resolver.java)
+	* [SubjectEnum](graphql/graph-ql-spring-boot/src/main/java/com/java/util/SubjectEnum.java)
+* createStudent - This is mutation operation
+	* createStudent - Refer `type Mutation` - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
+	* [createStudent method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Mutation.java)
+	* createStudent - request in postman
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
