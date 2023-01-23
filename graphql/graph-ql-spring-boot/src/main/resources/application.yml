@@ -5,6 +5,3 @@ server.port: 9000
 
 # changing default /graphql end point to /app
 # graphql.servlet.mapping: /app
-
-# property for graphql java client
-graphql.client.url: http://localhost:9000/graphql

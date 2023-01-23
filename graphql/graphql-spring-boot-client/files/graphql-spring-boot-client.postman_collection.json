@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "11db2c6f-a2ea-46d0-b709-149cfef152a2",
+		"name": "graphql-spring-boot-client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "studentRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/api/v1/studentRequest/100/jack/jill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v1",
+						"studentRequest",
+						"100",
+						"jack",
+						"jill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentRequest-with-variables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/api/v1/studentRequest/variables/100/jack/jill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"v1",
+						"studentRequest",
+						"variables",
+						"100",
+						"jack",
+						"jill"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

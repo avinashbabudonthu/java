@@ -715,6 +715,10 @@ graphql.servlet.mapping: /app
 	* createStudent - Refer `type Mutation` - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 	* [createStudent method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Mutation.java)
 	* createStudent - request in postman
+# [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
+* This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
+* Run above project before testing this project
+* [Refer methods](graphql/graphql-spring-boot-client/src/main/java/com/java/client/GraphQLClientController.java)
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
