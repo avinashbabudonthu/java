@@ -719,6 +719,7 @@ graphql.servlet.mapping: /app
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
 * Run above project before testing this project
 * [Refer methods](graphql/graphql-spring-boot-client/src/main/java/com/java/client/GraphQLClientController.java)
+* [Postman Collection](graphql/graphql-spring-boot-client/files/graphql-spring-boot-client.postman_collection.json)
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
