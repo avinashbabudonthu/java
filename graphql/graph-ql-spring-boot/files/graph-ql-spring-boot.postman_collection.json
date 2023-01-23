@@ -995,7 +995,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query {\r\n    student5SubjectsWithResolverAndFilter(id: 100){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: All){\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
+						"query": "query {\r\n    student5SubjectsWithResolverAndFilter(id: 100){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: GraphQL){\r\n            id\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
 						"variables": ""
 					}
 				},
@@ -1009,7 +1009,8 @@
 					"path": [
 						"graphql"
 					]
-				}
+				},
+				"description": "# 3 Steps to declare variable\n* Add variable in JSON section below Graphql body section\n* Give variable data type after `query`\n```\n$id: Int\n```\n* Use variable in actual query"
 			},
 			"response": [
 				{
@@ -1020,7 +1021,7 @@
 						"body": {
 							"mode": "graphql",
 							"graphql": {
-								"query": "query {\r\n    student5SubjectsWithResolvedAndFilter(id: 100){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: GraphQL){\r\n            id\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
+								"query": "query {\r\n    student5SubjectsWithResolverAndFilter(id: 100){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: GraphQL){\r\n            id\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
 								"variables": ""
 							}
 						},
@@ -1062,7 +1063,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 20 Jan 2023 09:36:35 GMT"
+							"value": "Mon, 23 Jan 2023 03:21:32 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -1074,7 +1075,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"student5SubjectsWithResolvedAndFilter\": {\n            \"id\": 100,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"subjects\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"GraphQL\",\n                    \"marks\": 4.98\n                }\n            ]\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"student5SubjectsWithResolverAndFilter\": {\n            \"id\": 100,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"subjects\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"GraphQL\",\n                    \"marks\": 4.98\n                }\n            ]\n        }\n    }\n}"
 				},
 				{
 					"name": "example-2",
@@ -1139,6 +1140,134 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"data\": {\n        \"student5SubjectsWithResolverAndFilter\": {\n            \"id\": 100,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"subjects\": [\n                {\n                    \"name\": \"Java\",\n                    \"marks\": 4.99\n                },\n                {\n                    \"name\": \"GraphQL\",\n                    \"marks\": 4.98\n                }\n            ]\n        }\n    }\n}"
+				},
+				{
+					"name": "with-graphql-one-variable",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query student5SubjectsWithResolverAndFilter($id: Int) {\r\n    student5SubjectsWithResolverAndFilter(id: $id){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: All){\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
+								"variables": "{\r\n    \"id\": 100\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 03:15:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"student5SubjectsWithResolverAndFilter\": {\n            \"id\": 100,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"subjects\": [\n                {\n                    \"name\": \"Java\",\n                    \"marks\": 4.99\n                },\n                {\n                    \"name\": \"GraphQL\",\n                    \"marks\": 4.98\n                }\n            ]\n        }\n    }\n}"
+				},
+				{
+					"name": "with-graphql-multiple-variables",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query resolverAndFilter($id: Int, $subject: SubjectEnum){\r\n    student5SubjectsWithResolverAndFilter(id: $id){\r\n        id\r\n        firstName\r\n        lastName\r\n        subjects(subjectEnum: $subject){\r\n            name\r\n            marks\r\n        }\r\n    }\r\n}",
+								"variables": "{\r\n    \"id\": 100,\r\n    \"subject\": \"All\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 03:23:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"student5SubjectsWithResolverAndFilter\": {\n            \"id\": 100,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"subjects\": [\n                {\n                    \"name\": \"Java\",\n                    \"marks\": 4.99\n                },\n                {\n                    \"name\": \"GraphQL\",\n                    \"marks\": 4.98\n                }\n            ]\n        }\n    }\n}"
 				}
 			]
 		},
@@ -1164,9 +1293,139 @@
 					"path": [
 						"graphql"
 					]
-				}
+				},
+				"description": "# 3 Steps to declare variable\n* Add variable in JSON section below Graphql body section\n* Give variable data type after `query`\n* Use variable in actual query"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation {\r\n    createStudent(studentRequest: {\r\n        id: 100,\r\n        firstName: \"jack\"\r\n        lastName: \"jill\"\r\n    }) {\r\n        id,\r\n        firstName,\r\n        lastName\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 03:13:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"firstName\": \"jack\",\n            \"lastName\": \"jill\"\n        }\n    }\n}"
+				},
+				{
+					"name": "with-graphql-variable",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation ($createStudent: StudentRequest1) {\r\n    createStudent(studentRequest: $createStudent) {\r\n        id,\r\n        firstName,\r\n        lastName\r\n    }\r\n}",
+								"variables": "{\r\n    \"createStudent\": {\r\n        \"id\": 101,\r\n        \"firstName\": \"jack\",\r\n        \"lastName\": \"jill\"\r\n    }\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jan 2023 03:17:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 101,\n            \"firstName\": \"jack\",\n            \"lastName\": \"jill\"\n        }\n    }\n}"
+				}
+			]
 		}
 	]
 }

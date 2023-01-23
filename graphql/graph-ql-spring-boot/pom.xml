@@ -60,6 +60,13 @@
 			<version>${graphql.version}</version>
 		</dependency>
 
+		<!-- For GraphQL client -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-webclient-spring-boot-starter</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!-- GraphQL dependencies end -->
 
 	</dependencies>
