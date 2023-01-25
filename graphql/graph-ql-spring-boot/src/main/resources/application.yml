@@ -5,3 +5,15 @@ server.port: 9000
 
 # changing default /graphql end point to /app
 # graphql.servlet.mapping: /app
+
+# to specify graphql schema location
+# graphql.tools.schema-location-pattern=*/*.graphqls
+
+# If objects referred in circular dependency then this restrict the level depth to avoid
+# StackOverflowError
+# graphql.servlet.maxQueryDepth: 5
+
+# disable voyager - for production
+# voyager.enabled=false
+
+graphql.servlet.exception-handlers-enabled: true

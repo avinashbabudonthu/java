@@ -67,6 +67,13 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<!-- graphql voyager -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>voyager-spring-boot-starter</artifactId>
+			<version>${graphql.version}</version>
+		</dependency>
+
 		<!-- GraphQL dependencies end -->
 
 	</dependencies>

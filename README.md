@@ -70,6 +70,7 @@
 * [Liquibase](#liquibase)
 * [Log4J](#log4j)
 * [Logging](#logging)
+* [Lombok](#lombok)
 * [Maven](#maven)
 * [Microservices](#microservices)
 * [Mockito](#mockito)
@@ -715,11 +716,35 @@ graphql.servlet.mapping: /app
 	* createStudent - Refer `type Mutation` - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 	* [createStudent method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Mutation.java)
 	* createStudent - request in postman
+* to specify graphql schema location
+```
+graphql.tools.schema-location-pattern=*/*.graphqls
+```
+* If objects referred in circular dependency then this restrict the level depth to avoid StackOverflowError
+```
+graphql.servlet.maxQueryDepth: 5
+```
+## Enable voyager to visualize graphql schema
+* Add below dependency
+```
+<dependency>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>voyager-spring-boot-starter</artifactId>
+	<version>11.0.0</version>
+</dependency>
+```
+* Open url - `http://localhost:9000/voyager`
+* Add below property in application.yml/properties to diable voyage in prod environment
+```
+voyager.enabled=false
+```
+
 # [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
 * Run above project before testing this project
 * [Refer methods](graphql/graphql-spring-boot-client/src/main/java/com/java/client/GraphQLClientController.java)
 * [Postman Collection](graphql/graphql-spring-boot-client/files/graphql-spring-boot-client.postman_collection.json)
+
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
@@ -926,6 +951,9 @@ graphql.servlet.mapping: /app
 # [Logging](logging)
 * [Materials](logging/materials.md)
 * [Notes](logging/notes.md)
+------
+# [Lombok](lombok)
+* [Materials](materials.md)
 ------
 # [Maven](maven)
 * [Commands](maven/commands.md)
