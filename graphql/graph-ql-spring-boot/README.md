@@ -128,6 +128,22 @@ query dataFetcherResult($id: Int){
 # File Upload
 * Write mutation operation - refer `fileUpload` in `type Mutation` in [schema.graphqls](src/main/resources/schema/schema.graphqls)
 * Write `fileUpload` method [Mutation resolver class](src/main/java/com/java/query/Mutation.java)
-* Using `DataFetchingEnvironment` we can get `graphql.kickstart.servlet.context.DefaultGraphQLServletContext`
+* Using `graphql.schema.DataFetchingEnvironment` we can get `graphql.kickstart.servlet.context.DefaultGraphQLServletContext`
   * `DefaultGraphQLServletContext` class contains reference to - `javax.servlet.http.HttpServletRequest`, `javax.servlet.http.HttpServletResponse`, `javax.servlet.http.Part` etc
 * Postman collection - [fileUpload](files/graph-ql-spring-boot.postman_collection.json)
+
+# [DataFetchingEnvironment](https://github.com/graphql-java/graphql-java/blob/master/src/main/java/graphql/schema/DataFetchingEnvironment.java)
+* package - graphql.schema.DataFetchingEnvironment
+* [Java doc](https://javadoc.io/doc/com.graphql-java/graphql-java/12.0/graphql/schema/DataFetchingEnvironment.html)
+* [Graphql Documentation](https://www.graphql-java.com/documentation/data-fetching#the-interesting-parts-of-the-datafetchingenvironment)
+* This should be last parameter in resolver methods
+* Method
+  * getSelectionSet() - fields requested
+  * getContext() - returns `graphql.kickstart.servlet.context.DefaultGraphQLServletContext`
+    * Created once per request
+    * Passed to all resolved during that request
+  * getVariables()
+    * get variables if used any during graphql query
+  * getDataLoader() & getDataLoaderRegistry()
+    * Used to solve `N+1` problem
+  
