@@ -51,6 +51,7 @@ type Student4 {
 	firstName: String
 	lastName: String
 	subjects: [Subject]
+	exception: String
 }
 type Student5 {
 	id: Int

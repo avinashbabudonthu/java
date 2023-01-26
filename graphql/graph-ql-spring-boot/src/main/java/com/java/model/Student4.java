@@ -17,5 +17,6 @@ public class Student4 {
     private String firstName;
     private String lastName;
     private List<Subject> subjects;
+    private String exception;
 
 }

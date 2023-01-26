@@ -21,6 +21,8 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<graphql.version>11.0.0</graphql.version>
+		<slf4j>1.7.5</slf4j>
+		<log4j-core>2.13.0</log4j-core>
 	</properties>
 
 	<dependencies>
@@ -39,6 +41,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j}</version>
+		</dependency>
+
+		<!--<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j-core}</version>
+		</dependency>-->
 
 		<!-- GraphQL dependencies start -->
 		<dependency>

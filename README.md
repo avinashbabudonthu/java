@@ -739,6 +739,8 @@ graphql.servlet.maxQueryDepth: 5
 voyager.enabled=false
 ```
 
+* [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
+
 # [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
 * Run above project before testing this project
@@ -954,6 +956,10 @@ voyager.enabled=false
 ------
 # [Lombok](lombok)
 * [Materials](materials.md)
+## [Lombok Examples](lombok/lombok)
+* [Test class](lombok/lombok/src/test/java/com/java/StudentTest)
+	* [Data annotation](lombok/lombok/src/main/java/com/java/Student.java)
+	* [NonNull annotation](lombok/lombok/src/main/java/com/java/Student2.java)
 ------
 # [Maven](maven)
 * [Commands](maven/commands.md)

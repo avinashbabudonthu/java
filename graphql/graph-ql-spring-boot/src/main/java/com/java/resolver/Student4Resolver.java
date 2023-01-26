@@ -1,14 +1,17 @@
 package com.java.resolver;
 
+import com.java.exceptions.RuntimeException1;
 import com.java.model.Student4;
 import com.java.model.Subject;
 import graphql.kickstart.tools.GraphQLResolver;
 import graphql.schema.DataFetchingEnvironment;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @Component
 public class Student4Resolver implements GraphQLResolver<Student4> {
 
@@ -28,6 +31,12 @@ public class Student4Resolver implements GraphQLResolver<Student4> {
         subjects.add(subject2);
 
         return subjects;
+    }
+
+    public String exception(Student4  student4, DataFetchingEnvironment dfe){
+        log.info("Inside exception method");
+
+        throw new RuntimeException1("Runtime exception 1");
     }
 
 }
