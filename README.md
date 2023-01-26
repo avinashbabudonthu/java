@@ -744,6 +744,8 @@ voyager.enabled=false
 * [Async Resolvers](graphql/graph-ql-spring-boot/README.md#async-resolvers)
 * [File Upload](graphql/graph-ql-spring-boot/README.md#file-upload)
 * [DataFetchingEnvironment](graphql/graph-ql-spring-boot/README.md#DataFetchingEnvironment)
+* [Scalars](graphql/graph-ql-spring-boot/README.md#Scalars)
+* [Listeners](graphql/graph-ql-spring-boot/README.md#Listeners)
 
 # [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)

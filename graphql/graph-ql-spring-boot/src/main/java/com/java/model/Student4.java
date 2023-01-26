@@ -19,4 +19,7 @@ public class Student4 {
     private List<Subject> subjects;
     private String exception;
     private Subject dataFetcherResult;
+    private String selectionSet;
+    private Integer age;
+
 }

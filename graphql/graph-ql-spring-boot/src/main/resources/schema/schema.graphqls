@@ -1,3 +1,5 @@
+scalar NonNegativeInt
+
 # The Root Query for the application
 type Query {
     firstQuery: String
@@ -56,7 +58,10 @@ type Student4 {
 	subjects3: [Subject]
 	exception: String
 	dataFetcherResult: Subject
+	selectionSet: String
+	age: NonNegativeInt
 }
+
 type Student5 {
 	id: Int
 	firstName: String

@@ -7,6 +7,8 @@ import graphql.execution.DataFetcherResult;
 import graphql.kickstart.execution.error.GenericGraphQLError;
 import graphql.kickstart.tools.GraphQLResolver;
 import graphql.schema.DataFetchingEnvironment;
+import graphql.schema.DataFetchingFieldSelectionSet;
+import graphql.schema.SelectedField;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Component
@@ -98,6 +101,14 @@ public class Student4Resolver implements GraphQLResolver<Student4> {
 
                     return subjects;
                 }, executorService);
+    }
+
+    public String selectionSet(Student4 student4, DataFetchingEnvironment environment){
+        DataFetchingFieldSelectionSet dataFetchingFieldSelectionSet = environment.getSelectionSet();
+        List<SelectedField> selectedFieldList = dataFetchingFieldSelectionSet.getFields();
+        List<String> fields = selectedFieldList.stream().map(SelectedField::getName).collect(Collectors.toList());
+        String fieldsCommaSeparated = fields.stream().collect(Collectors.joining(", "));
+        return fieldsCommaSeparated;
     }
 
 }

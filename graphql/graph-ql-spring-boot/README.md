@@ -147,3 +147,40 @@ query dataFetcherResult($id: Int){
   * getDataLoader() & getDataLoaderRegistry()
     * Used to solve `N+1` problem
   
+# Scalars
+* To use extra data types in graphql schema file
+* Refer - https://github.com/graphql-java/graphql-java-extended-scalars
+* Add below dependency in [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>com.graphql-java</groupId>
+    <artifactId>graphql-java-extended-scalars</artifactId>
+    <version>20.0</version>
+    <exclusions>
+        <exclusion>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
+* Refer available scalars in class `graphql.scalars.ExtendedScalars`
+* Add scalar to schema file - [schema.graphqls](src/main/resources/schema/schema.graphqls)
+```
+scalar NonNegativeInt
+```
+* Refer `type Student4` in [schema.graphqls](src/main/resources/schema/schema.graphqls) using `NonNegativeInt` for `age` property
+* `age` property in [Student4.java](src/main/java/com/java/model/Student4.java)
+* Create bean for `NonNegativeInt` - [ScalarConfig](src/main/java/com/java/config/ScalarConfig.java)
+
+# Listeners
+* Write class implements `graphql.kickstart.servlet.core.GraphQLServletListener` - [LoggingListener.java](src/main/java/com/java/listners/LoggingListener.java)
+* Override `onRequest` method
+* This listener executes for each request. Framework class which execute these listeners  is `graphql.kickstart.servlet.AbstractGraphQLHttpServlet`
+  * Refer method - `doRequest(HttpServletRequest request, HttpServletResponse response)`
+* Postman collection - [servlet-listeners](files/graph-ql-spring-boot.postman_collection.json)
+* Log in console
+```
+2023-01-26 22:15:08.087  INFO 16232 --- [nio-9000-exec-1] com.java.listners.LoggingListener        : Request execution started
+2023-01-26 22:15:08.089  INFO 16232 --- [nio-9000-exec-1] com.java.listners.LoggingListener        : Request compelted. Time taken=2 ms
+```
