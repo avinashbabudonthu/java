@@ -738,6 +738,7 @@ graphql.servlet.maxQueryDepth: 5
 ```
 voyager.enabled=false
 ```
+* Github - https://github.com/IvanGoncharov/graphql-voyager
 
 * [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
 * [DataFetcherResult](graphql/graph-ql-spring-boot/README.md#DataFetcherResult)
