@@ -113,3 +113,14 @@ query dataFetcherResult($id: Int){
     }
 }
 ```
+
+# Async Resolvers
+* Return CompletableFuture from resolver methods. Refer following methods from [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
+    * subjects2
+    * subjects3
+* With log messages in above methods we can see that these resolvers executed by differnt threads
+```
+2023-01-26 20:11:12.172  INFO 17736 --- [pool-1-thread-2] com.java.resolver.Student4Resolver       : current thread=Thread[pool-1-thread-2,5,main]
+2023-01-26 20:11:12.170  INFO 17736 --- [pool-1-thread-1] com.java.resolver.Student4Resolver       : current thread=Thread[pool-1-thread-1,5,main]
+```
+* Postman collection - [asyncResolvers](files/graph-ql-spring-boot.postman_collection.json)

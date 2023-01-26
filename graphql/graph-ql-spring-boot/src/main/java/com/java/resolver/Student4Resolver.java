@@ -12,10 +12,15 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Slf4j
 @Component
 public class Student4Resolver implements GraphQLResolver<Student4> {
+
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
     public List<Subject> subjects(Student4 student4, DataFetchingEnvironment dfe) {
         Subject subject1 = Subject.builder()
@@ -49,6 +54,50 @@ public class Student4Resolver implements GraphQLResolver<Student4> {
                         .build())
                 .error(new GenericGraphQLError("Could not get marks details"))
                 .build();
+    }
+
+    public CompletableFuture<List<Subject>> subjects2(Student4 student4, DataFetchingEnvironment dfe){
+        return CompletableFuture.supplyAsync(
+                () -> {
+                    log.info("current thread={}", Thread.currentThread());
+                    Subject subject1 = Subject.builder()
+                            .id(1)
+                            .name("Java")
+                            .marks(4.99D)
+                            .build();
+                    Subject subject2 = Subject.builder()
+                            .id(1)
+                            .name("GraphQL")
+                            .marks(4.98D)
+                            .build();
+                    List<Subject> subjects = new ArrayList<>();
+                    subjects.add(subject1);
+                    subjects.add(subject2);
+
+                    return subjects;
+                }, executorService);
+    }
+
+    public CompletableFuture<List<Subject>> subjects3(Student4 student4, DataFetchingEnvironment dfe){
+        return CompletableFuture.supplyAsync(
+                () -> {
+                    log.info("current thread={}", Thread.currentThread());
+                    Subject subject1 = Subject.builder()
+                            .id(1)
+                            .name("Spring Boot")
+                            .marks(4.97D)
+                            .build();
+                    Subject subject2 = Subject.builder()
+                            .id(1)
+                            .name("Neptune")
+                            .marks(4.96D)
+                            .build();
+                    List<Subject> subjects = new ArrayList<>();
+                    subjects.add(subject1);
+                    subjects.add(subject2);
+
+                    return subjects;
+                }, executorService);
     }
 
 }

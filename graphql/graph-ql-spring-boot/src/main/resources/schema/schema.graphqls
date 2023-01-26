@@ -51,6 +51,8 @@ type Student4 {
 	firstName: String
 	lastName: String
 	subjects: [Subject]
+	subjects2: [Subject]
+	subjects3: [Subject]
 	exception: String
 	dataFetcherResult: Subject
 }
