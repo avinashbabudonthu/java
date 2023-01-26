@@ -124,3 +124,10 @@ query dataFetcherResult($id: Int){
 2023-01-26 20:11:12.170  INFO 17736 --- [pool-1-thread-1] com.java.resolver.Student4Resolver       : current thread=Thread[pool-1-thread-1,5,main]
 ```
 * Postman collection - [asyncResolvers](files/graph-ql-spring-boot.postman_collection.json)
+
+# File Upload
+* Write mutation operation - refer `fileUpload` in `type Mutation` in [schema.graphqls](src/main/resources/schema/schema.graphqls)
+* Write `fileUpload` method [Mutation resolver class](src/main/java/com/java/query/Mutation.java)
+* Using `DataFetchingEnvironment` we can get `graphql.kickstart.servlet.context.DefaultGraphQLServletContext`
+  * `DefaultGraphQLServletContext` class contains reference to - `javax.servlet.http.HttpServletRequest`, `javax.servlet.http.HttpServletResponse`, `javax.servlet.http.Part` etc
+* Postman collection - [fileUpload](files/graph-ql-spring-boot.postman_collection.json)

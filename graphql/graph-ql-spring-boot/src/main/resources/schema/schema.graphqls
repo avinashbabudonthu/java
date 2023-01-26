@@ -13,6 +13,7 @@ type Query {
 # The Root Mutation for the application
 type Mutation {
 	createStudent(studentRequest: StudentRequest1): StudentResponse
+	fileUpload: ID!
 }
 
 input Student{
