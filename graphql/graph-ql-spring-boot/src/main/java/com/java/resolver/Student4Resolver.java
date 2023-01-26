@@ -3,6 +3,8 @@ package com.java.resolver;
 import com.java.exceptions.RuntimeException1;
 import com.java.model.Student4;
 import com.java.model.Subject;
+import graphql.execution.DataFetcherResult;
+import graphql.kickstart.execution.error.GenericGraphQLError;
 import graphql.kickstart.tools.GraphQLResolver;
 import graphql.schema.DataFetchingEnvironment;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +17,7 @@ import java.util.List;
 @Component
 public class Student4Resolver implements GraphQLResolver<Student4> {
 
-    public List<Subject> subjects(Student4 student4, DataFetchingEnvironment dfe){
+    public List<Subject> subjects(Student4 student4, DataFetchingEnvironment dfe) {
         Subject subject1 = Subject.builder()
                 .id(1)
                 .name("Java")
@@ -33,10 +35,20 @@ public class Student4Resolver implements GraphQLResolver<Student4> {
         return subjects;
     }
 
-    public String exception(Student4  student4, DataFetchingEnvironment dfe){
+    public String exception(Student4 student4, DataFetchingEnvironment dfe) {
         log.info("Inside exception method");
 
         throw new RuntimeException1("Runtime exception 1");
+    }
+
+    public DataFetcherResult<Subject> dataFetcherResult(Student4 student4, DataFetchingEnvironment dfe) {
+        return DataFetcherResult.<Subject>newResult()
+                .data(Subject.builder()
+                        .id(1)
+                        .name("Java")
+                        .build())
+                .error(new GenericGraphQLError("Could not get marks details"))
+                .build();
     }
 
 }

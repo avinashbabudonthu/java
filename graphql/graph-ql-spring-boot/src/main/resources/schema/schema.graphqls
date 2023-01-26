@@ -52,6 +52,7 @@ type Student4 {
 	lastName: String
 	subjects: [Subject]
 	exception: String
+	dataFetcherResult: Subject
 }
 type Student5 {
 	id: Int

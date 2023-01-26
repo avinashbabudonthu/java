@@ -1,11 +1,11 @@
 # Execption handling
 * Create custom exception - [RuntimeException1](src/main/java/com/java/exceptions/RuntimeException1.java)
-* Throw exception from anywhere in application - exception method in [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
+* Throw exception from anywhere in application - `exception` method in [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
 * Enable exception handling using below property in [application.yml](src/main/resources/application.yml)
 ```
 graphql.servlet.exception-handlers-enabled: true
 ```
-* Create Exception handler class - handleRuntimeException1 method in [GraphqlExceptionHandler](src/main/java/com/java/exceptions/handlers/GraphqlExceptionHandler.java)
+* Create Exception handler class - `handleRuntimeException1` method in [GraphqlExceptionHandler](src/main/java/com/java/exceptions/handlers/GraphqlExceptionHandler.java)
 * Refer - exception-handling in [postman collection](files/graph-ql-spring-boot.postman_collection.json)
 * API URL
 ```
@@ -13,7 +13,7 @@ http://localhost:9000/graphql
 ```
 * Request body
 ```
-query student4SubjectsWithResolver($id: Int) {
+query exception($id: Int) {
     student4SubjectsWithResolver(id: $id){
         id,
         firstName,
@@ -32,7 +32,7 @@ query student4SubjectsWithResolver($id: Int) {
     "id": 1000
 }
 ```
-* Output
+* Response
 ```
 {
     "errors": [
@@ -58,6 +58,57 @@ query student4SubjectsWithResolver($id: Int) {
                 }
             ],
             "exception": null
+        }
+    }
+}
+```
+
+# DataFetcherResult
+* Used to return data and errors in final response
+* Return `DataFetcherResult<Subject>` from method - refer `dataFetcherResult` method in [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
+* Postman collection - [dataFetcherResult](files/graph-ql-spring-boot.postman_collection.json)
+* API
+```
+http://localhost:9000/graphql
+```
+* Request body
+```
+query dataFetcherResult($id: Int){
+    student4SubjectsWithResolver(id: $id) {
+        id,
+        firstName,
+        dataFetcherResult {
+            id,
+            name,
+            marks
+        }
+    }
+}
+```
+* Graphql variables
+```
+{
+    "id": 1000
+}
+```
+* Response
+```
+{
+    "errors": [
+        {
+            "message": "Could not get marks details",
+            "locations": []
+        }
+    ],
+    "data": {
+        "student4SubjectsWithResolver": {
+            "id": 1000,
+            "firstName": "jim",
+            "dataFetcherResult": {
+                "id": 1,
+                "name": "Java",
+                "marks": null
+            }
         }
     }
 }

@@ -18,5 +18,5 @@ public class Student4 {
     private String lastName;
     private List<Subject> subjects;
     private String exception;
-
+    private Subject dataFetcherResult;
 }

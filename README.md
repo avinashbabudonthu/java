@@ -740,6 +740,7 @@ voyager.enabled=false
 ```
 
 * [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
+* [DataFetcherResult](graphql/graph-ql-spring-boot/README.md#DataFetcherResult)
 
 # [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
