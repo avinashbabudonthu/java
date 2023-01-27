@@ -191,12 +191,12 @@ public class Mutation implements GraphQLMutationResolver {
 
 # Introducing GraphiQL
 * GraphQL also has a companion tool called `GraphiQL`. This is a UI that's able to communicate with any GraphQL Server, and execute queries and mutations against it. A downloadable version of it exists as an Electron app, and can be retrieved from [github](https://github.com/skevy/graphiql-app).
-* It's also possible to include the web-based version of GraphiQL in our application automatically by adding the GraphiQL Spring Boot Starter dependency
+* It's also possible to include the web-based version of GraphiQL in our application automatically by adding the GraphiQL Spring Boot Starter dependency. Refer [pom.xml](graph-ql-spring-boot/pom.xml)
 ```
 <dependency>
-    <groupId>com.graphql-java</groupId>
-    <artifactId>graphiql-spring-boot-starter</artifactId>
-    <version>5.0.2</version>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>graphiql-spring-boot-starter</artifactId>
+	<version>11.0.0</version>
 </dependency>
 ```
 * This will only work if we're hosting our GraphQL API on the default endpoint of `/graphql`. we'll need the standalone application if that's not the case
