@@ -141,7 +141,7 @@ query dataFetcherResult($id: Int){
   * getSelectionSet() - fields requested
   * getContext() - returns `graphql.kickstart.servlet.context.DefaultGraphQLServletContext`
     * Created once per request
-    * Passed to all resolved during that request
+    * Passed to all resolvers during that request
   * getVariables()
     * get variables if used any during graphql query
   * getDataLoader() & getDataLoaderRegistry()
@@ -184,3 +184,18 @@ scalar NonNegativeInt
 2023-01-26 22:15:08.087  INFO 16232 --- [nio-9000-exec-1] com.java.listners.LoggingListener        : Request execution started
 2023-01-26 22:15:08.089  INFO 16232 --- [nio-9000-exec-1] com.java.listners.LoggingListener        : Request compelted. Time taken=2 ms
 ```
+
+# Pagination
+* Yet to prepare example
+* Example Reference
+  * https://www.youtube.com/watch?v=J9Nq0Fq7t_8&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=20&ab_channel=PhilipStarritt
+* References
+  * https://graphql.org/learn/pagination/
+
+# Data Loader
+* Yet to prepare example
+* Example Reference
+  * https://www.youtube.com/watch?v=YsM2VSnWUcg&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=21&ab_channel=PhilipStarritt  
+  * https://www.youtube.com/watch?v=tbxskis_ny4&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=22&ab_channel=PhilipStarritt
+* Reference
+  * https://github.com/graphql-java/java-dataloader

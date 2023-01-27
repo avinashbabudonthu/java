@@ -720,10 +720,11 @@ graphql.servlet.mapping: /app
 ```
 graphql.tools.schema-location-pattern=*/*.graphqls
 ```
-* If objects referred in circular dependency then this restrict the level depth to avoid StackOverflowError
+* If objects referred in circular dependency then this restrict the level of depth to avoid StackOverflowError
 ```
 graphql.servlet.maxQueryDepth: 5
 ```
+
 ## Enable voyager to visualize graphql schema
 * Add below dependency
 ```
@@ -740,6 +741,7 @@ voyager.enabled=false
 ```
 * Github - https://github.com/IvanGoncharov/graphql-voyager
 
+## Other Examples
 * [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
 * [DataFetcherResult](graphql/graph-ql-spring-boot/README.md#DataFetcherResult)
 * [Async Resolvers](graphql/graph-ql-spring-boot/README.md#async-resolvers)
@@ -747,8 +749,10 @@ voyager.enabled=false
 * [DataFetchingEnvironment](graphql/graph-ql-spring-boot/README.md#DataFetchingEnvironment)
 * [Scalars](graphql/graph-ql-spring-boot/README.md#Scalars)
 * [Listeners](graphql/graph-ql-spring-boot/README.md#Listeners)
+* [Pagination](graphql/graph-ql-spring-boot/README.md#Pagination)
+* [Data Loader](graphql/graph-ql-spring-boot/README.md#data-loader)
 
-# [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
+## [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
 * Run above project before testing this project
 * [Refer methods](graphql/graphql-spring-boot-client/src/main/java/com/java/client/GraphQLClientController.java)
