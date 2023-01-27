@@ -56,20 +56,59 @@ type Mutation {
 ```
 * The `!` at the end of some names indicates that it's a non-nullable type. Any type that doesn't have this can be null in the response from the server. The GraphQL service handles these correctly, allowing us to request child fields of nullable types safely.
 * The GraphQL Service also exposes the schema itself using a standard set of fields, allowing any client to query for the schema definition ahead of time.
-* This allows the client to automatically detect when the schema changes, and allows for clients that dynamically adapt to the way the schema works. One incredibly useful example of this is the GraphiQL tool, which allows us to interact with any GraphQL API.
+* This allows the client to automatically detect when the schema changes, and allows for clients that dynamically adapt to the way the schema works. One incredibly useful example of this is the `GraphiQL` tool, which allows us to interact with any GraphQL API.
 
 # Introducing GraphQL Spring Boot Starter
-* All we need for this to work is the correct dependencies
+* All we need for this to work is the correct dependencies. Refer [pom.xml](graph-ql-spring-boot/pom.xml)
 ```
+<graphql.version>11.0.0</graphql.version>
+
 <dependency>
-    <groupId>com.graphql-java</groupId>
-    <artifactId>graphql-spring-boot-starter</artifactId>
-    <version>5.0.2</version>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>graphql-spring-boot-starter</artifactId>
+	<version>${graphql.version}</version>
 </dependency>
+
 <dependency>
-    <groupId>com.graphql-java</groupId>
-    <artifactId>graphql-java-tools</artifactId>
-    <version>5.2.4</version>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>graphql-java-tools</artifactId>
+	<version>${graphql.version}</version>
+</dependency>
+
+<!-- GraphQL UI tool -->
+<dependency>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>graphiql-spring-boot-starter</artifactId>
+	<version>${graphql.version}</version>
+</dependency>
+
+<!-- For GraphQL client -->
+<dependency>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>graphql-webclient-spring-boot-starter</artifactId>
+	<version>1.0.0</version>
+</dependency>
+
+<!-- graphql voyager -->
+<!-- Voyager generates GUI for graphql schema -->
+<dependency>
+	<groupId>com.graphql-java-kickstart</groupId>
+	<artifactId>voyager-spring-boot-starter</artifactId>
+	<version>${graphql.version}</version>
+</dependency>
+
+<!-- Graphql Scalars for extra data types like Date, PositiveInt etc -->
+<!-- Refer https://github.com/graphql-java/graphql-java-extended-scalars -->
+<dependency>
+	<groupId>com.graphql-java</groupId>
+	<artifactId>graphql-java-extended-scalars</artifactId>
+	<version>20.0</version>
+	<exclusions>
+		<exclusion>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java</artifactId>
+		</exclusion>
+	</exclusions>
 </dependency>
 ```
 * Spring Boot will automatically pick these up and set up the appropriate handlers to work

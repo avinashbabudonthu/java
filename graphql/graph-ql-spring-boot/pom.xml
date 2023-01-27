@@ -88,6 +88,7 @@
         </dependency>
 
         <!-- graphql voyager -->
+        <!-- Voyager generates GUI for graphql schema -->
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>voyager-spring-boot-starter</artifactId>
