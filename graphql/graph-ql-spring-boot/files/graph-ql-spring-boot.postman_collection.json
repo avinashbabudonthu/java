@@ -1590,6 +1590,109 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "customGraphQLContextExample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "admin",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query customGraphQLContextExample($id: Int) {\r\n    student4SubjectsWithResolver(id: $id) {\r\n        id,\r\n        firstName,\r\n        lastName,\r\n        customGraphQLContext\r\n    }\r\n}",
+						"variables": "{\r\n    \"id\": 1000\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "userId",
+								"value": "admin",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query customGraphQLContextExample($id: Int) {\r\n    student4SubjectsWithResolver(id: $id) {\r\n        id,\r\n        firstName,\r\n        lastName,\r\n        customGraphQLContext\r\n    }\r\n}",
+								"variables": "{\r\n    \"id\": 1000\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Jan 2023 06:56:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"student4SubjectsWithResolver\": {\n            \"id\": 1000,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"customGraphQLContext\": \"customGraphQLContext\"\n        }\n    }\n}"
+				}
+			]
 		}
 	]
 }
