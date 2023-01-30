@@ -208,7 +208,7 @@ scalar NonNegativeInt
 * `dataLoadersProblem` method in [Query.java](src/main/java/com/java/query/Query.java)
 * We are returning 4 students in list
 * We have resolver for address - `address` method [Student6Resolver](src/main/java/com/java/resolver/Student6Resolver.java)
-* Resolver method will be called multiple times. Once for each student object. This is call `N+1` problem
+* Resolver method will be called multiple times. Once for each student object. This is called `N+1` problem
 ```
 Getting student address
 Getting student address
