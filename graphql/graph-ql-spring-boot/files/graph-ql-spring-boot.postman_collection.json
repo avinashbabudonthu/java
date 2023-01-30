@@ -1693,6 +1693,188 @@
 					"body": "{\n    \"data\": {\n        \"student4SubjectsWithResolver\": {\n            \"id\": 1000,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"customGraphQLContext\": \"customGraphQLContext\"\n        }\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "dataLoadersExample",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query dataLoadersExample {\r\n    dataLoadersExample {\r\n        id,\r\n        name,\r\n        course,\r\n        address {\r\n            hNo,\r\n            street,\r\n            city,\r\n            pin\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query dataLoadersExample {\r\n    dataLoadersExample {\r\n        id,\r\n        name,\r\n        course,\r\n        address {\r\n            hNo,\r\n            street,\r\n            city,\r\n            pin\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Jan 2023 08:20:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"dataLoadersExample\": [\n            {\n                \"id\": 1,\n                \"name\": \"jack\",\n                \"course\": \"java\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 2,\n                \"name\": \"jill\",\n                \"course\": \"rest\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 3,\n                \"name\": \"jim\",\n                \"course\": \"graphql\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 4,\n                \"name\": \"john\",\n                \"course\": \"aws\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "dataLoadersSolution",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query dataLoadersSolution {\r\n    dataLoadersSolution {\r\n        id,\r\n        name,\r\n        course,\r\n        address {\r\n            hNo,\r\n            street,\r\n            city,\r\n            pin\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query dataLoadersExample {\r\n    dataLoadersExample {\r\n        id,\r\n        name,\r\n        course,\r\n        address {\r\n            hNo,\r\n            street,\r\n            city,\r\n            pin\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Jan 2023 08:20:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"dataLoadersExample\": [\n            {\n                \"id\": 1,\n                \"name\": \"jack\",\n                \"course\": \"java\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 2,\n                \"name\": \"jill\",\n                \"course\": \"rest\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 3,\n                \"name\": \"jim\",\n                \"course\": \"graphql\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            },\n            {\n                \"id\": 4,\n                \"name\": \"john\",\n                \"course\": \"aws\",\n                \"address\": {\n                    \"hNo\": \"1234\",\n                    \"street\": \"street\",\n                    \"city\": \"city\",\n                    \"pin\": null\n                }\n            }\n        ]\n    }\n}"
+				}
+			]
 		}
 	]
 }

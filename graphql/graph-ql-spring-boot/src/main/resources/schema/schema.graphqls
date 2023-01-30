@@ -10,6 +10,8 @@ type Query {
 	responseWithList(id: Int): Student3
 	student4SubjectsWithResolver(id: Int): Student4
 	student5SubjectsWithResolverAndFilter(id: Int): Student5
+	dataLoadersProblem: [Student6]
+	dataLoadersSolution: [Student7]
 }
 
 # The Root Mutation for the application
@@ -80,4 +82,25 @@ input StudentRequest1 {
 	id: Int,
 	firstName: String,
 	lastName: String
+}
+
+type Student6 {
+	id: Int,
+	name: String
+	course: String,
+	address: Address
+}
+
+type Student7 {
+	id: Int,
+	name: String
+	course: String,
+	address: Address
+}
+
+type Address {
+	hNo: String,
+	street: String,
+	city: String,
+	pin: Int
 }

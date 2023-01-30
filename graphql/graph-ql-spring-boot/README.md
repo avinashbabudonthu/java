@@ -201,8 +201,30 @@ scalar NonNegativeInt
 * In resolver - get our context from `graphql.schema.DataFetchingEnvironment`. Refer `customGraphQLContext` method in [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
 * Postman collection - [customGraphQLContextExample](files/graph-ql-spring-boot.postman_collection.json)
 
-# Data Loader
-* Yet to prepare example
+# Data Loader problem
+* Used to solve `N+1 fetch problem`. Refer https://springhow.com/n-plus-1-selects-problem-in-hibernate/
+* We have [Student6 class](src/main/java/com/java/model/Student6.java)
+* Refer - dataLoadersExample in [schema.graphqls](src/main/resources/schema/schema.graphqls)
+* `dataLoadersProblem` method in [Query.java](src/main/java/com/java/query/Query.java)
+* We are returning 4 students in list
+* We have resolver for address - `address` method [Student6Resolver](src/main/java/com/java/resolver/Student6Resolver.java)
+* Resolver method will be called multiple times. Once for each student object. This is call `N+1` problem
+```
+Getting student address
+Getting student address
+Getting student address
+Getting student address
+```
+* dataLoadersExample - [Postman collection](files/graph-ql-spring-boot.postman_collection.json)
+
+# Data Loader solution
+* Create [DataLoaderRegistryFactory](src/main/java/com/java/data/loader/DataLoaderRegistryFactory.java)
+* Write `create` method return `org.dataloader.DataLoaderRegistry`
+* Register our Dataload methods to `org.dataloader.DataLoaderRegistry`
+* Register our [DataLoaderRegistryFactory](src/main/java/com/java/data/loader/DataLoaderRegistryFactory.java) to [CustomGraphQLContextBuilder](src/main/java/com/java/context/CustomGraphQLContextBuilder.java) - refer `build` method
+* In resolver method call `dataLoader.load` method. Refer [Student7Resolver](src/main/java/com/java/resolver/Student7Resolver.java)
+* dataLoadersSolution - [Postman collection](files/graph-ql-spring-boot.postman_collection.json)
+
 * Example Reference
   * https://www.youtube.com/watch?v=YsM2VSnWUcg&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=21&ab_channel=PhilipStarritt  
   * https://www.youtube.com/watch?v=tbxskis_ny4&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=22&ab_channel=PhilipStarritt

@@ -754,7 +754,8 @@ voyager.enabled=false
 * [Listeners](graphql/graph-ql-spring-boot/README.md#Listeners)
 * [Pagination](graphql/graph-ql-spring-boot/README.md#Pagination)
 * [Custom Context](graphql/graph-ql-spring-boot/README.md#custom-context)
-* [Data Loader](graphql/graph-ql-spring-boot/README.md#data-loader)
+* [Data Loader problem](graphql/graph-ql-spring-boot/README.md#data-loader-problem)
+* [Data Loader solution](graphql/graph-ql-spring-boot/README.md#data-loader-solution)
 
 ## [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)

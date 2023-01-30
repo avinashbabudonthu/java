@@ -2,6 +2,7 @@ package com.java.query;
 
 import com.java.model.*;
 import graphql.kickstart.tools.GraphQLQueryResolver;
+import graphql.schema.DataFetchingEnvironment;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -78,6 +79,68 @@ public class Query implements GraphQLQueryResolver {
                 .firstName("jim")
                 .lastName("john")
                 .build();
+    }
+
+    public List<Student6> dataLoadersProblem(DataFetchingEnvironment environment){
+        Student6 student6_1 = Student6.builder()
+                .id(1L)
+                .name("jack")
+                .course("java")
+                .build();
+        Student6 student6_2 = Student6.builder()
+                .id(2L)
+                .name("jill")
+                .course("rest")
+                .build();
+        Student6 student6_3 = Student6.builder()
+                .id(3L)
+                .name("jim")
+                .course("graphql")
+                .build();
+        Student6 student6_4 = Student6.builder()
+                .id(4L)
+                .name("john")
+                .course("aws")
+                .build();
+
+        List<Student6> student6List = new ArrayList<>();
+        student6List.add(student6_1);
+        student6List.add(student6_2);
+        student6List.add(student6_3);
+        student6List.add(student6_4);
+
+        return student6List;
+    }
+
+    public List<Student7> dataLoadersSolution(DataFetchingEnvironment environment){
+        Student7 student1 = Student7.builder()
+                .id(1L)
+                .name("jack")
+                .course("java")
+                .build();
+        Student7 student2 = Student7.builder()
+                .id(2L)
+                .name("jill")
+                .course("rest")
+                .build();
+        Student7 student3 = Student7.builder()
+                .id(3L)
+                .name("jim")
+                .course("graphql")
+                .build();
+        Student7 student4 = Student7.builder()
+                .id(4L)
+                .name("john")
+                .course("aws")
+                .build();
+
+        List<Student7> list = new ArrayList<>();
+        list.add(student1);
+        list.add(student2);
+        list.add(student3);
+        list.add(student4);
+
+        return list;
     }
 
 }
