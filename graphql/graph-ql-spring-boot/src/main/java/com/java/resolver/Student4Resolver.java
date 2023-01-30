@@ -1,5 +1,6 @@
 package com.java.resolver;
 
+import com.java.context.CustomGraphQLContext;
 import com.java.exceptions.RuntimeException1;
 import com.java.model.Student4;
 import com.java.model.Subject;
@@ -109,6 +110,14 @@ public class Student4Resolver implements GraphQLResolver<Student4> {
         List<String> fields = selectedFieldList.stream().map(SelectedField::getName).collect(Collectors.toList());
         String fieldsCommaSeparated = fields.stream().collect(Collectors.joining(", "));
         return fieldsCommaSeparated;
+    }
+
+    public String customGraphQLContext(Student4 student4, DataFetchingEnvironment dataFetchingEnvironment){
+        CustomGraphQLContext context = dataFetchingEnvironment.getContext();
+
+        log.info("userId={}", context.getUserId());
+
+        return "customGraphQLContext";
     }
 
 }

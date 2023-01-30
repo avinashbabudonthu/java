@@ -191,6 +191,15 @@ scalar NonNegativeInt
   * https://www.youtube.com/watch?v=J9Nq0Fq7t_8&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=20&ab_channel=PhilipStarritt
 * References
   * https://graphql.org/learn/pagination/
+  
+# Custom Context
+* Custom GraphQL Context will be build once per request. Passed to all resolvers during request
+* So we can use this to pass `authentication/authorization` information
+* Write class implementing `graphql.kickstart.servlet.context.GraphQLServletContext`. Refer [CustomGraphQLContext](src/main/java/com/java/context/CustomGraphQLContext.java)
+* Write class implementing `graphql.kickstart.servlet.context.GraphQLServletContextBuilder`. Refer [CustomGraphQLContextBuilder](src/main/java/com/java/context/CustomGraphQLContextBuilder.java)
+  * In `build` method return our [CustomGraphQLContext](src/main/java/com/java/context/CustomGraphQLContext.java)
+* In resolver - get our context from `graphql.schema.DataFetchingEnvironment`. Refer `customGraphQLContext` method in [Student4Resolver](src/main/java/com/java/resolver/Student4Resolver.java)
+* Postman collection - [customGraphQLContextExample](files/graph-ql-spring-boot.postman_collection.json)
 
 # Data Loader
 * Yet to prepare example

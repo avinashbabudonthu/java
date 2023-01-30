@@ -21,5 +21,6 @@ public class Student4 {
     private Subject dataFetcherResult;
     private String selectionSet;
     private Integer age;
+    private String customGraphQLContext;
 
 }

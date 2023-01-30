@@ -60,6 +60,7 @@ type Student4 {
 	dataFetcherResult: Subject
 	selectionSet: String
 	age: NonNegativeInt
+	customGraphQLContext: String
 }
 
 type Student5 {

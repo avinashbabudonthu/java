@@ -233,6 +233,9 @@
 * [EC2 Elastic Compute Cloud](aws/ec2)
 * [ECS Elastic Container Service](aws/ecs)
 * [IAM Identity and Access Management](aws/iam)
+* [Lambda](aws/lambda)
+	* [Materials](aws/lambda/materials.md)
+	* [Notes](aws/lambda/notes.md)
 * [Npetune Graph DB](aws/neptune)
 	* [Notes](aws/neptune/notes.md)
 * [RDS Relational Databases Service](aws/rds)
@@ -750,6 +753,7 @@ voyager.enabled=false
 * [Scalars](graphql/graph-ql-spring-boot/README.md#Scalars)
 * [Listeners](graphql/graph-ql-spring-boot/README.md#Listeners)
 * [Pagination](graphql/graph-ql-spring-boot/README.md#Pagination)
+* [Custom Context](graphql/graph-ql-spring-boot/README.md#custom-context)
 * [Data Loader](graphql/graph-ql-spring-boot/README.md#data-loader)
 
 ## [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
