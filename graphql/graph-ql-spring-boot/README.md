@@ -224,9 +224,66 @@ Getting student address
 * Register our [DataLoaderRegistryFactory](src/main/java/com/java/data/loader/DataLoaderRegistryFactory.java) to [CustomGraphQLContextBuilder](src/main/java/com/java/context/CustomGraphQLContextBuilder.java) - refer `build` method
 * In resolver method call `dataLoader.load` method. Refer [Student7Resolver](src/main/java/com/java/resolver/Student7Resolver.java)
 * dataLoadersSolution - [Postman collection](files/graph-ql-spring-boot.postman_collection.json)
-
 * Example Reference
   * https://www.youtube.com/watch?v=YsM2VSnWUcg&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=21&ab_channel=PhilipStarritt  
   * https://www.youtube.com/watch?v=tbxskis_ny4&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=22&ab_channel=PhilipStarritt
 * Reference
   * https://github.com/graphql-java/java-dataloader
+  
+# Instrumentation
+* Capability to look at the graphql coming in, when exactly it is executing in the server
+* We can provide code that executes at various different stages during the execution of query
+* Main interface `graphql.execution.instrumentation.Instrumentation`
+* Class `graphql.execution.instrumentation.SimpleInstrumentation` implements `graphql.execution.instrumentation.Instrumentation` interface
+* Refer [RequestLoggingInstrumentation](src/main/java/com/java/instrumentation/RequestLoggingInstrumentation.java)
+* Example 1 - request body
+```
+query customGraphQLContextExample($id: Int) {
+    student4SubjectsWithResolver(id: $id) {
+        id,
+        firstName,
+        lastName,
+        customGraphQLContext
+    }
+}
+```
+* Graphql variables
+```
+{
+    "id": 1000
+}
+```
+* Log from [RequestLoggingInstrumentation](src/main/java/com/java/instrumentation/RequestLoggingInstrumentation.java)
+```
+2023-01-31 12:26:13.599  INFO 2348 --- [nio-9000-exec-7] com.java.listners.LoggingListener        : Request execution started
+2023-01-31 12:26:13.599  INFO 19696 --- [nio-9000-exec-9] c.j.i.RequestLoggingInstrumentation      : executionId=010adf9d-7540-4ed1-af77-b8326e73bc42, query=query customGraphQLContextExample($id: Int) {
+    student4SubjectsWithResolver(id: $id) {
+        id,
+        firstName,
+        lastName,
+        customGraphQLContext
+    }
+}, variables={id=1000}
+2023-01-31 12:26:13.603  INFO 19696 --- [nio-9000-exec-9] com.java.resolver.Student4Resolver       : userId=admin
+2023-01-31 12:26:13.603  INFO 19696 --- [nio-9000-exec-9] c.j.i.RequestLoggingInstrumentation      : executionId=010adf9d-7540-4ed1-af77-b8326e73bc42 completed successfully. time=4 ms
+2023-01-31 12:26:13.604  INFO 19696 --- [nio-9000-exec-9] com.java.listners.LoggingListener        : Request compelted. Time taken=25 ms
+```
+
+# Tracing Enabled
+* Add below property in application yml/properties
+```
+graphql.servlet.tracingEnabled: true
+```
+* tracing - [Postman collection](files/graph-ql-spring-boot.postman_collection.json)
+
+# Correlation ID
+* Prints in every log message
+* Steps
+  * Add correlation id to MDC. Refer `beginExecutionWithMDC` method in [RequestLoggingInstrumentation](src/main/java/com/java/instrumentation/RequestLoggingInstrumentation.java)
+  * Add correlation_id in log pattern. Refer `logging.pattern.console` property in [application.yml](src/main/resources/application.yml)
+  
+# DataLoader Key Context
+* https://www.youtube.com/watch?v=nuRYRRAQh_Y&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=29&ab_channel=PhilipStarritt
+
+# Spring Security Authorization
+* https://www.youtube.com/watch?v=_T_0VB3AoV4&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&index=30&ab_channel=PhilipStarritt

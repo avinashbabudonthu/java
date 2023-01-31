@@ -756,6 +756,11 @@ voyager.enabled=false
 * [Custom Context](graphql/graph-ql-spring-boot/README.md#custom-context)
 * [Data Loader problem](graphql/graph-ql-spring-boot/README.md#data-loader-problem)
 * [Data Loader solution](graphql/graph-ql-spring-boot/README.md#data-loader-solution)
+* [Instrumentation](graphql/graph-ql-spring-boot/README.md#Instrumentation)
+* [Tracing Enabled](graphql/graph-ql-spring-boot/README.md#Tracing-Enabled)
+* [Correlation ID](graphql/graph-ql-spring-boot/README.md#Correlation-ID)
+* [DataLoader Key Context](graphql/graph-ql-spring-boot/README.md#DataLoader-Key-Context)
+* [Spring Security Authorization](graphql/graph-ql-spring-boot/README.md#Spring-Security-Authorization)
 
 ## [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
 * This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)

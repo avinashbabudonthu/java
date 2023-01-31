@@ -16,4 +16,12 @@ server.port: 9000
 # disable voyager - for production
 # voyager.enabled=false
 
-graphql.servlet.exception-handlers-enabled: true
+graphql:
+  servlet:
+    exception-handlers-enabled: true
+    # tracingEnabled: true
+
+# spring uses - base.xml, console-appender.xml, defaults.xml for logging. below log pattern taken from defaults.xml
+logging:
+  pattern:
+    console: -%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %clr(%X{correlation_id}) %clr(:) %m%n}
