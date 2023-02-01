@@ -1695,6 +1695,109 @@
 			]
 		},
 		{
+			"name": "tracing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "admin",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query customGraphQLContextExample($id: Int) {\r\n    student4SubjectsWithResolver(id: $id) {\r\n        id,\r\n        firstName,\r\n        lastName,\r\n        customGraphQLContext\r\n    }\r\n}",
+						"variables": "{\r\n    \"id\": 1000\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "userId",
+								"value": "admin",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query customGraphQLContextExample($id: Int) {\r\n    student4SubjectsWithResolver(id: $id) {\r\n        id,\r\n        firstName,\r\n        lastName,\r\n        customGraphQLContext\r\n    }\r\n}",
+								"variables": "{\r\n    \"id\": 1000\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1241"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Jan 2023 07:53:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"extensions\": {\n        \"tracing\": {\n            \"version\": 1,\n            \"startTime\": \"2023-01-31T07:53:12.422294200Z\",\n            \"endTime\": \"2023-01-31T07:53:12.424841400Z\",\n            \"duration\": 2743900,\n            \"parsing\": {\n                \"startOffset\": 774400,\n                \"duration\": 596300\n            },\n            \"validation\": {\n                \"startOffset\": 1205200,\n                \"duration\": 380800\n            },\n            \"execution\": {\n                \"resolvers\": [\n                    {\n                        \"path\": [\n                            \"student4SubjectsWithResolver\"\n                        ],\n                        \"parentType\": \"Query\",\n                        \"returnType\": \"Student4\",\n                        \"fieldName\": \"student4SubjectsWithResolver\",\n                        \"startOffset\": 1478800,\n                        \"duration\": 132900\n                    },\n                    {\n                        \"path\": [\n                            \"student4SubjectsWithResolver\",\n                            \"id\"\n                        ],\n                        \"parentType\": \"Student4\",\n                        \"returnType\": \"Int\",\n                        \"fieldName\": \"id\",\n                        \"startOffset\": 1780100,\n                        \"duration\": 46800\n                    },\n                    {\n                        \"path\": [\n                            \"student4SubjectsWithResolver\",\n                            \"firstName\"\n                        ],\n                        \"parentType\": \"Student4\",\n                        \"returnType\": \"String\",\n                        \"fieldName\": \"firstName\",\n                        \"startOffset\": 1930800,\n                        \"duration\": 37700\n                    },\n                    {\n                        \"path\": [\n                            \"student4SubjectsWithResolver\",\n                            \"lastName\"\n                        ],\n                        \"parentType\": \"Student4\",\n                        \"returnType\": \"String\",\n                        \"fieldName\": \"lastName\",\n                        \"startOffset\": 2050700,\n                        \"duration\": 36500\n                    },\n                    {\n                        \"path\": [\n                            \"student4SubjectsWithResolver\",\n                            \"customGraphQLContext\"\n                        ],\n                        \"parentType\": \"Student4\",\n                        \"returnType\": \"String\",\n                        \"fieldName\": \"customGraphQLContext\",\n                        \"startOffset\": 2167900,\n                        \"duration\": 212900\n                    }\n                ]\n            }\n        }\n    },\n    \"data\": {\n        \"student4SubjectsWithResolver\": {\n            \"id\": 1000,\n            \"firstName\": \"jim\",\n            \"lastName\": \"john\",\n            \"customGraphQLContext\": \"customGraphQLContext\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
 			"name": "dataLoadersExample",
 			"request": {
 				"method": "POST",
