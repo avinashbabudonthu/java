@@ -324,7 +324,12 @@
 * [Notes](core-java/java-9/notes.md)
 
 ## [Java 11](core-java/java-11)
+* [Materials](core-java/java-11/materials.md)
+* [Notes](core-java/java-11/notes.md)
 * [NewFeaturesPractice](core-java/java-11/java-11/src/main/java/com/java/NewFeaturesPractice.java)
+
+## [Java 17](core-java/java-17)
+* [Materials](core-java/java-17/materials.md)
 
 ## Core Java Examples
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
