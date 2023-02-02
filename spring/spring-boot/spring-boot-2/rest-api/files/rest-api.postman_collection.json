@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1bd7248f-325c-4d88-ac5d-8cbcce7f03ef",
+		"_postman_id": "358d74fc-034d-481c-bd87-5fc24f68643d",
 		"name": "rest-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -426,6 +426,77 @@
 							]
 						},
 						"description": "class: com.rest.api.controller.PostController<br/>method:saveStudent<br/>Check Location in response headers to check URI to get new student object"
+					},
+					"response": []
+				},
+				{
+					"name": "/request-body-with-enum-name",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var requestBody1 = {\r",
+									"    \"id\": 1000,\r",
+									"    \"name\": \"ana\",\r",
+									"    \"course\": \"rest\",\r",
+									"    \"gender\": \"MALE\"\r",
+									"}\r",
+									"\r",
+									"var requestBody2 = {\r",
+									"    \"id\": 1000,\r",
+									"    \"name\": \"ana\",\r",
+									"    \"course\": \"rest\",\r",
+									"    \"gender\": \"FEMALE\"\r",
+									"}\r",
+									"\r",
+									"var requestBody3 = {\r",
+									"    \"id\": 1000,\r",
+									"    \"name\": \"ana\",\r",
+									"    \"course\": \"rest\",\r",
+									"    \"gender\": \"male\"\r",
+									"}\r",
+									"\r",
+									"var requestBody4 = {\r",
+									"    \"id\": 1000,\r",
+									"    \"name\": \"ana\",\r",
+									"    \"course\": \"rest\",\r",
+									"    \"gender\": \"female\"\r",
+									"}\r",
+									"\r",
+									"pm.environment.set(\"requestBody1\", JSON.stringify(requestBody1));\r",
+									"pm.environment.set(\"requestBody2\", JSON.stringify(requestBody2));\r",
+									"pm.environment.set(\"requestBody3\", JSON.stringify(requestBody3));\r",
+									"pm.environment.set(\"requestBody4\", JSON.stringify(requestBody4));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{requestBody2}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/posts/request-body-with-enum-name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"posts",
+								"request-body-with-enum-name"
+							]
+						}
 					},
 					"response": []
 				}

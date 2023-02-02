@@ -7,12 +7,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import com.rest.api.model.Student2;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.rest.api.model.Student;
 
+@Slf4j
 @RestController
 @RequestMapping(value = "/posts")
 public class PostController {
@@ -49,4 +53,13 @@ public class PostController {
 
 		return ResponseEntity.noContent().build();
 	}
+
+	@PostMapping(value = "/request-body-with-enum-name", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+	public Student2 studentWithEnum(@RequestBody Student2 student2){
+		log.info("student2={}", student2);
+
+		return student2;
+	}
+
+
 }
