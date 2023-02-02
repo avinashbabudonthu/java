@@ -96,3 +96,4 @@ build
 /gradle/
 */gradle/*
 gradle
+*/.aws-sam/*

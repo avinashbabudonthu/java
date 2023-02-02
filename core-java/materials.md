@@ -79,3 +79,6 @@
 ## Pluralsight
 * Java Fundamentals: The Core Platform
 * Persisting Objects with Serialization
+------
+# Annotations
+* https://reflectoring.io/java-annotation-processing/

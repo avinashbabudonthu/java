@@ -148,3 +148,7 @@ g.V().valueMap()
 ```
 g.V().count()
 ```
+* Get all properties of vertex with id 1
+```
+g.V(1).valueMap()
+```

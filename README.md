@@ -236,7 +236,11 @@
 * [Lambda](aws/lambda)
 	* [Materials](aws/lambda/materials.md)
 	* [Notes](aws/lambda/notes.md)
+	* [Examples](aws/lambda/README.md)
+		* [Installations](aws/lambda/README.md#Installations)
+		* [First Lambda Function](aws/lambda/README.md#First-Lambda-Function)
 * [Npetune Graph DB](aws/neptune)
+	* [Materials](aws/neptune/materials.md)
 	* [Notes](aws/neptune/notes.md)
 * [RDS Relational Databases Service](aws/rds)
 * [S3 Simple Storage Service](aws/s3)
@@ -777,6 +781,8 @@ voyager.enabled=false
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
 * [Commands](gremlin/commands.md)
+* [Examples](gremlin/README.md)
+	* [Gremlin Console](gremlin/README.md#Gremlin-Console)
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)
@@ -841,6 +847,7 @@ voyager.enabled=false
 * [Notes](jboss/notes.md)
 ------
 # [JDK](jdk)
+* [Materials](jdk/materials.md)
 * [Notes](jdk/notes.md)
 ## [Keytool](jdk/key-tool)
 * [Keytool commands](jdk/key-tool/commands.md)
