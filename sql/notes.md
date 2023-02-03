@@ -36,7 +36,10 @@
 * Microsoft Access
 
 # Joins
+* Joins\
 ![picture alt](imgs/joins.jpg "Joins")
+* Joins Detailed Explanation\
+![picture alt](imgs/joins-v2.jpg "Joins")
 
 # SQL Commands
 ![picture alt](imgs/sql-commands.jpg "Joins")
