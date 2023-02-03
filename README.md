@@ -823,6 +823,7 @@ voyager.enabled=false
 # [IntelliJ](intelli-j)
 * [Commands](intelli-j/commands.md)
 * [Commands Cheet Sheet](intelli-j/commands-cheat-sheet.pdf)
+* [Materials](intelli-j/materials.md)
 ------
 # [Interview Questions](interview-questions)
 * [Set-1](interview-questions/set-1.md)
