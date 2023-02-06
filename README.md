@@ -312,6 +312,7 @@
 * [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
 
 ## Multi threading
+* [Materials](core-java/multi-threading/materials.md)
 * [Notes](core-java/notes/multi-threading.md)
 
 ## Reactive Programming
@@ -781,8 +782,8 @@ voyager.enabled=false
 # [Gremlin](gremlin)
 * [Materials](gremlin/materials.md)
 * [Commands](gremlin/commands.md)
-* [Examples](gremlin/README.md)
-	* [Gremlin Console](gremlin/README.md#Gremlin-Console)
+## [Examples](gremlin/README.md)
+* [Gremlin Console](gremlin/README.md#Gremlin-Console)
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)

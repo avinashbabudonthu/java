@@ -24,3 +24,4 @@ g.V()
 ```
 :exit
 ```
+* Gremlin console docker container - https://hub.docker.com/r/tinkerpop/gremlin-console

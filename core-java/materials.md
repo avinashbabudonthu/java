@@ -63,18 +63,6 @@
 ## Udemy
 * What's New in Java 9 - Modules and More!
 ------
-# Java 11
-## Udemy
-* Java Programming Masterclass covering Java 11 & Java 17
-------
-# Java 17
-## Udemy
-* Java Programming Masterclass covering Java 11 & Java 17
-------
-# Multithreading
-* Java Concurrency and Multithreading Tutorial - https://jenkov.com/tutorials/java-concurrency/index.html
-* Java Concurrency Utilities - java.util.concurrent - https://jenkov.com/tutorials/java-util-concurrent/index.html
-------
 # Serialization
 ## Pluralsight
 * Java Fundamentals: The Core Platform
