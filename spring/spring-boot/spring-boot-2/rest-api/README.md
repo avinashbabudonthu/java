@@ -33,7 +33,9 @@ http://localhost:9000/gets/enum-as-request-param?gender=MALE
 http://localhost:9000/gets/enum-as-request-param?gender=male
 ```
 * GetController/enum-as-request-param - Postman collection - [rest-api.postman_collection.json](files/rest-api.postman_collection.json)
-* Reference - https://medium.com/javarevisited/an-effective-way-to-use-java-enums-in-your-spring-application-485c969794a8
+* References
+  * https://medium.com/javarevisited/an-effective-way-to-use-java-enums-in-your-spring-application-485c969794a8
+  * https://www.baeldung.com/spring-enum-request-param
 
 # Student object as request body
 * [Post Controller](src/main/java/com/rest/api/controller/PostController.java)
