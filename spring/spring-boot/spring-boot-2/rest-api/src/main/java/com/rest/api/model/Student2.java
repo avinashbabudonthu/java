@@ -19,6 +19,5 @@ public class Student2 {
 	private List<String> idList;
 	private String name;
 	private String course;
-	private Date joiningDate;
 	private GenderEnum gender;
 }

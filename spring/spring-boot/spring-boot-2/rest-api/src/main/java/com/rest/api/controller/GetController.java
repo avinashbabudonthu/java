@@ -1,6 +1,8 @@
 package com.rest.api.controller;
 
 import com.rest.api.model.Student;
+import com.rest.api.model.Student2;
+import com.rest.api.util.GenderEnum;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -104,6 +106,12 @@ public class GetController {
                                     @PathVariable("name")String name,
                                     @PathVariable("course")String course){
         return Student.builder().id(id).name(name).course(course).joiningDate(new Date()).build();
+    }
+
+    @GetMapping(value = "/enum-as-request-param", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Student2 enumAsRequestParameter(@RequestParam("gender") GenderEnum genderEnum){
+        Student2 student2 = Student2.builder().gender(genderEnum).build();
+        return student2;
     }
 
 }
