@@ -152,3 +152,11 @@ g.V().count()
 ```
 g.V(1).valueMap()
 ```
+* Print node label
+```
+g.V(id).label()
+```
+* Vertex with id `outVertextId` from vertex with id `id1` with out edge label `edgeLabel1`
+```
+g.V("id1").out("edgeLabel1").hasId("outVertextId")
+```

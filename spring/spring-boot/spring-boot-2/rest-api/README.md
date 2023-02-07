@@ -17,8 +17,8 @@
   * Check methods - `getGender`, `getValue`
 * Default enum conversion work with name. If we need to work with value then we need to write static method and annotate with `com.fasterxml.jackson.annotation.JsonCreator`. Refer `getGender` method in [GenderEnum](src/main/java/com/rest/api/util/GenderEnum.java)
 * PostController/request-body-with-enum-name - postman collection - [rest-api.postman_collection.json](files/rest-api.postman_collection.json)
-* Reference - https://fullstackdeveloper.guru/2020/05/08/how-to-map-enum-types-to-json-requests-in-spring-boot-automatically/
-* Controller - [Post Controller](src/main/java/com/rest/api/controller/PostController.java)
+* References
+  * https://fullstackdeveloper.guru/2020/05/08/how-to-map-enum-types-to-json-requests-in-spring-boot-automatically/
 
 # Enum as request parameter and path variable
 * `enumAsRequestParameter` method - [GetController](src/main/java/com/rest/api/controller/GetController.java)
