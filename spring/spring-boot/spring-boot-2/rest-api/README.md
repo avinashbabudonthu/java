@@ -10,7 +10,8 @@
 * [Put Controller](src/main/java/com/rest/api/controller/PutController.java)
 ------
 # Examples
-# Request body with enum property - `studentWithEnum` method
+# Request body with enum property
+* `studentWithEnum` method - [Post Controller](src/main/java/com/rest/api/controller/PostController.java)
 * [Student2](src/main/java/com/rest/api/model/Student2.java)
 * [GenderEnum](src/main/java/com/rest/api/util/GenderEnum.java)
   * Check methods - `getGender`, `getValue`
@@ -20,9 +21,8 @@
 * Controller - [Post Controller](src/main/java/com/rest/api/controller/PostController.java)
 
 # Enum as request parameter and path variable
-* Controller - [GetController](src/main/java/com/rest/api/controller/GetController.java)
+* `enumAsRequestParameter` method - [GetController](src/main/java/com/rest/api/controller/GetController.java)
 * [GenderEnum](src/main/java/com/rest/api/util/GenderEnum.java)
-* Method in Controller - `enumAsRequestParameter`
 * By default, works for enum name but if we want enum to conversion to work with properties like code etc
   * Write annotation and declare `Component` - [ParameterConverter](src/main/java/com/rest/api/config/ParameterConverter.java)
   * Write converter class to convert code to enum. Refer - [StringToGenderEnumConverter](src/main/java/com/rest/api/config/StringToGenderEnumConverter.java)
