@@ -27,7 +27,7 @@
   * Write annotation and declare `Component` - [ParameterConverter](src/main/java/com/rest/api/config/ParameterConverter.java)
   * Write converter class to convert code to enum. Refer - [StringToGenderEnumConverter](src/main/java/com/rest/api/config/StringToGenderEnumConverter.java)
   * Register [StringToGenderEnumConverter](src/main/java/com/rest/api/config/StringToGenderEnumConverter.java) to spring beans. Refer - [WebConfig](src/main/java/com/rest/api/config/WebConfig.java)
-* Now this below both APIs work
+* Now both APIs work
 ```
 http://localhost:9000/gets/enum-as-request-param?gender=MALE
 http://localhost:9000/gets/enum-as-request-param?gender=male
