@@ -11,13 +11,4 @@ public class StringToGenderEnumConverter implements Converter<String, GenderEnum
         return GenderEnum.getGender(s);
     }
 
-//    @Override
-//    public JavaType getInputType(TypeFactory typeFactory) {
-//        return SimpleType.constructUnsafe(String.class);
-//    }
-//
-//    @Override
-//    public JavaType getOutputType(TypeFactory typeFactory) {
-//        return SimpleType.constructUnsafe(GenderEnum.class);
-//    }
 }
