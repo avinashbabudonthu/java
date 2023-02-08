@@ -343,7 +343,7 @@ mvn help:effective-pom
 	* way 1: One way to choose what profile is being executed is in the settings.xml file. There you can set the active profile
 	```
 <activeProfiles>
-	<activeProfile>Arty</activeProfile>
+	<activeProfile>test</activeProfile>
 </activeProfiles>
 	```
 	* way 2: Another way is to add -P profile-name to the Maven command line.
