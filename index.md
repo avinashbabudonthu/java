@@ -3,3 +3,6 @@
 # Index
 * [Maven](#maven)
 ------
+# [Maven](maven)
+* [Installation](maven/installation.md)
+* [Notes](maven/notes.md)

@@ -133,6 +133,22 @@ mvn help:effective-pom
    </repository>
 </repositories>
 ```
+* sample repositories tag
+```
+<repositories>
+    <repository>
+        <id>spring-snapshot</id>
+        <name>Spring Maven Repository</name>
+        <url>http://repo.springsource.org/libs-snapshot</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+</repositories>
+```
 * settings.xml	
 	* The repositories for download and deployment are defined by the repositories and distributionManagement elements of the POM. However, certain settings such as username and password should not be distributed along with the pom.xml. This type of information should exist on the build server in the settings.xml
 * servers tag
@@ -171,13 +187,13 @@ mvn help:effective-pom
 * package	
 	* run compile goal first
 	* run unit test cases
-	* packages the application based on packaging type we declared in pom.xml"
+	* packages the application based on packaging type we declared in `pom.xml`
 * install	
 	* Runs package goal
-	* copies generated package into local repository based on groupId, artifactId, version declared in pom.xml
+	* copies generated package into `local repository` based on groupId, artifactId, version declared in pom.xml
 * deploy
 	* Runs install goal
-	* copies generated package into remote repository
+	* copies generated package into `remote repository`
 * How to give specific name to out application jar/war	
 	* using `<finalName>MavenHelloWorld</finalName>` tag in `<build>` tag
 	* Now our war name will be MavenHelloWorld.war
@@ -212,22 +228,6 @@ mvn help:effective-pom
 * import	
 	* deals with dependencyManagement
 	* DependencyManagement deals with sharing resources across multiple poms
-* sample repositories tag
-```
-<repositories>
-    <repository>
-        <id>spring-snapshot</id>
-        <name>Spring Maven Repository</name>
-        <url>http://repo.springsource.org/libs-snapshot</url>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-        <releases>
-            <enabled>false</enabled>
-        </releases>
-    </repository>
-</repositories>
-```
 * plugin repositories - for downloading plugins	
 ```
 <pluginRepositories>
@@ -340,7 +340,12 @@ mvn help:effective-pom
 ```
 * activation
 	* Inside the profile element you can see a activation element. This element describes the condition that triggers this build profile to be used
-	* way 1: One way to choose what profile is being executed is in the settings.xml file. There you can set the active profile. 
+	* way 1: One way to choose what profile is being executed is in the settings.xml file. There you can set the active profile
+	```
+<activeProfiles>
+	<activeProfile>Arty</activeProfile>
+</activeProfiles>
+	```
 	* way 2: Another way is to add -P profile-name to the Maven command line.
 	* To see which profile will activate in a certain build, use the maven-help-plugin: `mvn help:active-profiles`
 * How to get effective pom into a text file	
