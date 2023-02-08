@@ -355,7 +355,8 @@ mvn help:effective-pom > c:\poms\test.txt
 mvn exec:java -Dexec.mainClass=com.camel.spring.CamelSpringHelloWorld
 ```
 ------
-# Maven install plugin to install any jar automatically before building our war/jar
+# maven-install-plugin
+* Maven install plugin to install any jar automatically before building our war/jar
 ```
  <plugin>
 <groupId>org.apache.maven.plugins</groupId>
@@ -426,7 +427,8 @@ mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
 </build>
 ```
 ------
-* How to Run “Execute” Java Main Class Using Maven Command
+# exec-maven-plugin
+* How to run `exec:java` to execute main class using maven command
 	* mvn exec:java
 ```
 <plugin>
@@ -437,7 +439,7 @@ mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
 </configuration>
 </plugin>
 ```
-
+------
 ## Maven dependency scopes
 * compile
 	* This is maven default scope
