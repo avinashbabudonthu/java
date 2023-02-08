@@ -405,6 +405,8 @@ mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
 	<password>{encrypted_password}</password>
 </servers>
 ```
+------
+# maven-war-plugin
 * In Spring boot applications we will not have web.xml then in pom.xml if we are adding maven-web-plugin then this will complain like web.xml is missing. To resolve this error we need to add <failOnMissingWebXml> tag value to false
 ```
 <build>
@@ -420,6 +422,7 @@ mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
 </plugins>
 </build>
 ```
+------
 * How to Run “Execute” Java Main Class Using Maven Command
 	* mvn exec:java
 ```
