@@ -117,6 +117,8 @@ mvn help:effective-pom
     <localRepository>        d:\data\java\products\maven\repository    </localRepository>
 </settings>
 ```
+------
+# repositories tag
 * Remote repository configuration in `pom.xml`. Put the following XML elements right after `<dependencies>` element	
 	* If your internal repository requires authentication, the `id` element can be used in your `settings.xml` file to specify login information
 ```
@@ -149,6 +151,7 @@ mvn help:effective-pom
     </repository>
 </repositories>
 ```
+------
 * settings.xml	
 	* The repositories for download and deployment are defined by the repositories and distributionManagement elements of the POM. However, certain settings such as username and password should not be distributed along with the pom.xml. This type of information should exist on the build server in the settings.xml
 * servers tag
@@ -522,17 +525,6 @@ compile				  | compile			| 	 			  | runtime			|
 provided			  | provided		| 	 			  | provided		| 
 runtime				  | runtime			| 	 			  | runtime			| 
 test				  | test			| 	 			  | test			|
-
-## Maven Pull from remote repository - repositories tag
-```
-<repositories>
-    <repository>
-        <id>browserid-snapshots</id>
-        <name>browserid-snapshots</name>
-        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </repository>
-</repositories>
-```
 
 ## Maven Push to remote repository - distributionManagement tag
 ```
