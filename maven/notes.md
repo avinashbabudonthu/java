@@ -117,7 +117,7 @@ mvn help:effective-pom
     <localRepository>        d:\data\java\products\maven\repository    </localRepository>
 </settings>
 ```
-* Remote repository configuration in pom.xml. Put the following XML elements right after `<dependencies>` element	
+* Remote repository configuration in `pom.xml`. Put the following XML elements right after `<dependencies>` element	
 	* If your internal repository requires authentication, the `id` element can be used in your `settings.xml` file to specify login information
 ```
 <repositories>
