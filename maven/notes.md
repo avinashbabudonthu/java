@@ -107,23 +107,29 @@ mvn help:effective-pom
 * local repository
 	* local machine
 	* default location	`user-home/.m2`
-* central repository
-	* repository provided by maven
 * remote repository	
 	* repository of specific organization
-* we can specify another location for your local repository by following entry in settings.xml	
+* central repository
+	* repository provided by maven
+* we can specify another location for your local repository by following entry in `settings.xml`
 ```
 <settings>
     <localRepository>        d:\data\java\products\maven\repository    </localRepository>
 </settings>
 ```
-* Remote repository configuration in pom.xml. Put the following XML elements right after the <dependencies> element	
-	* If your internal repository requires authentication, the `id` element can be used in your settings file to specify login information
+* Remote repository configuration in pom.xml. Put the following XML elements right after `<dependencies>` element	
+	* If your internal repository requires authentication, the `id` element can be used in your `settings.xml` file to specify login information
 ```
 <repositories>
    <repository>
        <id>jenkov.code</id>
        <url>http://maven.jenkov.com/maven2/lib</url>
+	   <releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
    </repository>
 </repositories>
 ```
