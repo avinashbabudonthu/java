@@ -126,3 +126,7 @@ mvn test -Dtest=com.test.EmployeeService
 ```
 mvn test -Dtest="com.tests.**"
 ```
+* Execute main class
+```
+mvn exec:java -Dexec.mainClass=com.camel.spring.CamelSpringHelloWorld
+```

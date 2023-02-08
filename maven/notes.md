@@ -351,7 +351,8 @@ mvn help:effective-pom > c:\poms\test.txt
 ```
 mvn exec:java -Dexec.mainClass=com.camel.spring.CamelSpringHelloWorld
 ```
-* Maven install plugin to install any jar automatically before building our war/jar
+------
+# Maven install plugin to install any jar automatically before building our war/jar
 ```
  <plugin>
 <groupId>org.apache.maven.plugins</groupId>
@@ -375,6 +376,7 @@ mvn exec:java -Dexec.mainClass=com.camel.spring.CamelSpringHelloWorld
 </executions>
 </plugin>
 ```
+------
 * Runnning test cases using maven
 ```
 mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
