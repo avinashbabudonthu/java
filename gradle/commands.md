@@ -2,6 +2,10 @@
 ```
 gradle --version
 ```
+* Check gradle wrapper version
+```
+gradlew --version
+```
 * Help on gradle commands
 ```
 gradle --help
@@ -53,6 +57,10 @@ gradle properties
 * Package the project. Similar to mvn package
 ```
 gradle build
+```
+* Copy jar to local repository
+```
+gradle install
 ```
 * To see gradle tasks
 ```
@@ -114,13 +122,13 @@ gradle clean build --execlude-task test
 ```
 gradle clean build -x checkStyle -x test -x pmd -x findbugs
 ```
-* Upgradle gradle wrapper. If your existing Gradle-based build uses the Gradle Wrapper, you can easily upgrade by running the wrapper task, specifying the desired Gradle version
+* Upgrade gradle wrapper. If your existing Gradle-based build uses the Gradle Wrapper, you can easily upgrade by running the wrapper task, specifying the desired Gradle version
 ```
 gradlew wrapper --gradle-version 5.0
 
 ./gradlew wrapper --gradle-version=7.6 --distribution-type=bin
 ```
-* Force Gradle to execute all tasks ignoring up-to-date checks using the --rerun-tasks option
+* Force Gradle to execute all tasks ignoring up-to-date checks. use `--rerun-tasks` flag
 ```
 gradle compileJava --rerun-tasks
 ```
