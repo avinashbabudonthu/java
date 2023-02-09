@@ -24,9 +24,9 @@
 * [Maven version plugin](maven/notes.md#Maven-version-plugin)
 ------
 # [Gradle](gradle)
-* [Commands](gradle/commands.md)
-* [Installation](gradle/installation.md)
 * [Materials](gradle/materials.md)
+* [Installation](gradle/installation.md)
+* [Commands](gradle/commands.md)
 * [Plugins](gradle/plugins.md)
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
