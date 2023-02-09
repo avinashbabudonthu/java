@@ -1,5 +1,7 @@
 # Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
+# [Index V2](index.md)
+------
 # Index
 * [Angular](#angular)
 * [Angular JS](#angular-js)
@@ -33,7 +35,6 @@
 * [Garbage Collection](#garbage-collection)
 * [Git](#git)
 * [GCP Google Cloud Platform](#google-cloud-platform)
-* [Gradle](#gradle)
 * [Graph Database](#graph-database)
 * [GraphQL](#graphql)
 * [Gremlin](#gremlin)
@@ -666,14 +667,6 @@
 * [Commands](google-cloud-platform/commands.md)
 * [Materials](google-cloud-platform/materials.md)
 * [Notes](google-cloud-platform/notes.md)
-------
-# [Gradle](gradle)
-* [Commands](gradle/commands.md)
-* [Installation](gradle/installation.md)
-* [Materials](gradle/materials.md)
-* [Plugins](gradle/plugins.md)
-* [Properties](gradle/properties.md)
-* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
 ------
 # [Graph Database](graph-db)
 * [Notes](graph-db/notes.md)

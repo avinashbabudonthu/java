@@ -1,6 +1,7 @@
 # Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
 # Index
+* [Gradle](#gradle)
 * [Maven](#maven)
 ------
 # [Maven](maven)
@@ -21,3 +22,11 @@
 * [exec-maven-plugin](maven/notes.md#exec-maven-plugin)
 * [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
 * [Maven version plugin](maven/notes.md#Maven-version-plugin)
+------
+# [Gradle](gradle)
+* [Commands](gradle/commands.md)
+* [Installation](gradle/installation.md)
+* [Materials](gradle/materials.md)
+* [Plugins](gradle/plugins.md)
+* [Properties](gradle/properties.md)
+* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
