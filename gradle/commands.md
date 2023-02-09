@@ -114,9 +114,11 @@ gradle clean build --execlude-task test
 ```
 gradle clean build -x checkStyle -x test -x pmd -x findbugs
 ```
-* Upgradle gradle wrapper
+* Upgradle gradle wrapper. If your existing Gradle-based build uses the Gradle Wrapper, you can easily upgrade by running the wrapper task, specifying the desired Gradle version
 ```
 gradlew wrapper --gradle-version 5.0
+
+./gradlew wrapper --gradle-version=7.6 --distribution-type=bin
 ```
 * Force Gradle to execute all tasks ignoring up-to-date checks using the --rerun-tasks option
 ```
