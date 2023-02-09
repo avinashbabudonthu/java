@@ -524,15 +524,15 @@ test				  | test			| 	 			  | test			|
     </site>
   </distributionManagement>
 ```
-
-## Maven Spring Boot Plugin
+------
+# Maven Spring Boot Plugin
 ```
 <plugin>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-maven-plugin</artifactId>
 </plugin>
 ```
-
+------
 ## Maven Execute Exec Plugin
 * Add `exec-maven-plugin` plugin under `build/plugins` in `pom.xml`
 * Configure full packaged class name of main class in the plugin
@@ -554,8 +554,8 @@ test				  | test			| 	 			  | test			|
 	</configuration>
  </plugin>
 ```
-
-## Maven compile plugin
+------
+# Maven compile plugin
 * For Java 8
 ```
 <plugin>
@@ -617,8 +617,8 @@ test				  | test			| 	 			  | test			|
     </plugins>
 </build>	
 ```
-
-## Maven Surefire Plugin
+------
+# Maven Surefire Plugin
 * Java 11 - surefire plugin we add an additional argument `--illegal-access=permit` to allow all reflection access for third party libraries
 ```
 <plugin>
@@ -639,8 +639,8 @@ WARNING: Please consider reporting this to the maintainers of org.codehaus.groov
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
 ```
-
-## maven-failsafe-plugin
+------
+# maven-failsafe-plugin
 * Java 11 - failsafe plugins we add an additional argument `--illegal-access=permit` to allow all reflection access for third party libraries
 ```
 <plugin>
@@ -654,8 +654,8 @@ WARNING: All illegal access operations will be denied in a future release
     </configuration>
 </plugin>
 ```
-
-## Skip Test Cases
+------
+# Skip Test Cases
 * To skip running the tests for a particular project, set the skipTests property to true
 ```
 <project>
@@ -709,8 +709,8 @@ mvn install -Dmaven.test.skip=true
   [...]
 </project>
 ```
-
-## Maven version plugin
+------
+# Maven version plugin
 * This plugin helps finding the latest plugin or dependency versions for your modules
 ```
 <plugin>

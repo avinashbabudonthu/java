@@ -20,3 +20,4 @@
 * [Maven war plugin](maven/notes.md#maven-war-plugin)
 * [exec-maven-plugin](maven/notes.md#exec-maven-plugin)
 * [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
+* [Maven version plugin](maven/notes.md#Maven-version-plugin)
