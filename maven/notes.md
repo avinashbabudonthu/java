@@ -68,7 +68,6 @@ mvn archetype:generate
 ```
 * SNAPSHOT
 	* SNAPSHOT is a special version that indicates a current development copy. Unlike regular versions, Maven checks for a new SNAPSHOT version in a remote repository for every build
-	* For example Now data-service team will release SNAPSHOT of its updated code every time to repository say data-service:1.0-SNAPSHOT replacing a older SNAPSHOT jar
 * modelVersion
 	* what version of the POM model you are using. Use the one matching the Maven version you are using. Version 4.0.0 matches Maven version 2 and 3
 * Super POM
@@ -153,13 +152,13 @@ mvn help:effective-pom
 ```
 ------
 * settings.xml	
-	* The repositories for download and deployment are defined by the repositories and distributionManagement elements of the POM. However, certain settings such as username and password should not be distributed along with the pom.xml. This type of information should exist on the build server in the settings.xml
+	* The repositories for download and deployment are defined by the `repositories` and `distributionManagement` elements of the POM. However, certain settings such as username and password should not be distributed along with the pom.xml. This type of information should exist on the build server in the settings.xml
 * servers tag
 	* id: This is the ID of the server (not of the user to login as) that matches the id element of the repository/mirror that Maven tries to connect to
 	* username, password: These elements appear as a pair denoting the login and password required to authenticate to this server
 	* privateKey, passphrase: Like the previous two elements, this pair specifies a path to a private key (default is ${user.home}/.ssh/id_dsa) and a passphrase, if required. The passphrase and password elements may be externalized in the future, but for now they must be set plain-text in the settings.xml file.
 	* filePermissions, directoryPermissions: When a repository file or directory is created on deployment, these are the permissions to use. The legal  values of each is a three digit number corrosponding to *nix file permissions, ie. 664, or 775.
-	* Note: If you use a private key to login to the server, make sure you omit the <password> element. Otherwise, the key will be ignored.
+	* Note: If you use a private key to login to the server, make sure you omit the `<password>` element. Otherwise, the key will be ignored.
 ```
 <servers>
 	<server>
@@ -197,12 +196,12 @@ mvn help:effective-pom
 * deploy
 	* Runs install goal
 	* copies generated package into `remote repository`
-* How to give specific name to out application jar/war	
+* How to give specific name to our application jar/war	
 	* using `<finalName>MavenHelloWorld</finalName>` tag in `<build>` tag
 	* Now our war name will be MavenHelloWorld.war
 ```
 <finalName>MavenHelloWorld</finalName>
-(or)
+
 <finalName>{project.artifactId}</finalName>
 ```
 * Dependency types	
@@ -210,27 +209,6 @@ mvn help:effective-pom
 	* default packaging type is jar
 * pom dependency type	
 	* If we declare dependency type as pom then all dependencies in that pom will be downloaded to our application
-* There are 6 scopes in maven	
-	* compile
-	* provided
-	* runtime
-	* test
-	* system
-	* import
-* compile (this is scope, do not confuse with compile goal)	
-	* Default scope
-	* Artifacts are available every where
-* provided	
-	* like compile, means artifact going to be provided by deployed environment
-* runtime	
-	* not needed for compilation but needed for execution
-* test	
-	* only available for the test compilation and execution phase
-* system	
-	* to specify a path to the jar on our file system
-* import	
-	* deals with dependencyManagement
-	* DependencyManagement deals with sharing resources across multiple poms
 * plugin repositories - for downloading plugins	
 ```
 <pluginRepositories>
@@ -278,7 +256,8 @@ mvn help:effective-pom
 	* install
 	* deploy
 * validate
-	* validates the project is correct and has all the necessary information is available 
+	* validates the project is correct and has all the necessary information is available
+	* This also makes sure the dependencies are downloaded.
 * compile
 	* phase where our source code is compiled. Here test code will not compile
 * test
@@ -303,11 +282,6 @@ mvn help:effective-pom
 	* everything related to removing temporary files from the output directory, including generated source files, compiled classes, previous JAR files etc
 * site
 	* everything related to generating documentation for your project. In fact, site can generate a complete website with documentation for your   project
-* mvn validate
-	* validates that the project is correct and all necessary information is available.
-	* This makes sure the dependencies are downloaded
-* validate
-	* Validates that the project is correct and all necessary information is available. This also makes sure the dependencies are downloaded.
 * compile
 	* Compiles the source code of the project.
 * test
@@ -319,7 +293,7 @@ mvn help:effective-pom
 * verify
 	* run any checks to verify the package is valid and meets quality criteria
 * install
-	* Install the package into the local repository, for use as a dependency in other projects locally. This is part of default build life cycle
+	* Install the package into the local repository to use as dependency in other projects locally. This is part of default build life cycle
 * deploy
 	* Copies the final package to the remote repository for sharing with other developers and projects.
 * Maven Build Profiles
@@ -440,7 +414,8 @@ mvn -f dashboard/domain/pom.xml -Dtest=DomainTestsSuite test
 </plugin>
 ```
 ------
-## Maven dependency scopes
+# Maven dependency scopes
+* There are 6 scopes in maven	
 * compile
 	* This is maven default scope
 	* Dependencies with compile scope are needed to build, test, and run the project
@@ -527,8 +502,9 @@ compile				  | compile			| 	 			  | runtime			|
 provided			  | provided		| 	 			  | provided		| 
 runtime				  | runtime			| 	 			  | runtime			| 
 test				  | test			| 	 			  | test			|
-
-## Maven Push to remote repository - distributionManagement tag
+------
+# distributionManagement tag
+* To push to remote repository
 ```
 <distributionManagement>
     <repository>

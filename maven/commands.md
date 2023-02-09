@@ -130,3 +130,11 @@ mvn test -Dtest="com.tests.**"
 ```
 mvn exec:java -Dexec.mainClass=com.camel.spring.CamelSpringHelloWorld
 ```
+* Effective POM
+```
+mvn help:effective-pom
+```
+* Effective pom to text file
+```
+mvn help:effective-pom > c:\poms\test.txt
+```
