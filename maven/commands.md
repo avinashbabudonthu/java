@@ -33,6 +33,10 @@ mvn deploy
 ```
 mvn dependency:tree
 ```
+* Project dependencies in detail in tree structure to file
+```
+mvn dependency:tree > C:\poms\dependencies.txt
+```
 * Project dependencies in detail in tree structure - specific dependency
 ```
 mvn dependency:tree -Dincludes=[groupId]:[artifactId]
@@ -41,11 +45,25 @@ mvn dependency:tree -Dincludes=[groupId]:[artifactId]
 ```
 mvn install:install-file -Dfile=path-to-jar-file/ojdbc.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
 ```
-* Maven build timestamp
+* Maven build timestamp - `${maven.build.timestamp}`
 ```
-${maven.build.timestamp}
+<properties>
+	<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+</properties>
 
-<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+<build>
+		<finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 ```
 * Project dependencies are the dependencies declared in your pom. To copy them with their transitive dependencies
 ```
@@ -57,10 +75,6 @@ mvn -U [goal]
 mvn -U clean package
 mvn --update-snapshots [goal]
 mvn --update-snapshots clean package
-```
-* To run specific tests in a class from command prompt	
-```
-mvn clean test -Dtest=<test-class-name>
 ```
 * Maven eclipse plugin
 ```
