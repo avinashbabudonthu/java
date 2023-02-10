@@ -219,4 +219,21 @@ public class OffsetDateTimePractice {
 		log.info("convertedDate={}, offsetDateTime={}", convertedDate, offsetDateTime);
 	}
 
+	/**
+	 * Convert OffsetDateTime to java.util.Date
+	 *
+	 * Output:
+	 * offsetDateTime1=2023-02-10T07:07:49.611022900+05:30
+	 * date=Fri Feb 10 07:07:49 IST 2023
+	 *
+	 */
+	@Test
+	public void covertOffsetDateTimeToUtilDate(){
+		OffsetDateTime offsetDateTime1 = OffsetDateTime.now();
+		log.info("offsetDateTime1={}", offsetDateTime1);
+
+		Date date = Date.from(offsetDateTime1.toInstant());
+		log.info("date={}", date);
+	}
+
 }

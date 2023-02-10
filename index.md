@@ -67,7 +67,42 @@
 
 # Strings
 * [Notes](core-java/notes/strings.md)
-* [Examples](core-java/basics/src/main/java/com/java/strings/README.md)
+* [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+	* Create String - createString
+	* getbyteArrayFromString
+	* getAsciValueOfCharsInString
+	* convertByteArrayToString
+	* divideString
+	* stringToCharArray
+	* convertCase
+	* capitalizeFirstChar
+	* stringShift
+	* printAllSubStringsOfSpecifiedLength
+	* sortStringsInSentnceByLength
+	* replaceAll
+	* removeSpacesInString
+	* lastNCharactersOfString
+	* split
+	* splitByPipe
+	* subString
+	* stringToEBCDIC
+	* stringToBytes
+	* removeHTMLFromString
+	* stringToInputStream
+	* generateExcelCellNames
+	* inputStreamToString
+	* rotateString
+	* Clob to String conversion - clobToString
+* [String format](StringFormatPractice.java)
+	* String format conventions and flags - stringFormatConventionsAndFlags
+	* String format - stringFormat
+	* To use (%) percentage symbol in String - format2
+* [String Joiner](StringJoinerPractice.java)
+	* Comma seprated String - commaSeparatedString
+	* String join - stringJoin
+	* List of Employee objects to comma separated first names - listOfEmployeeToCommaSeparatedFirstName
+	* merge 2 string joiners - merge
+	* String joiner length - length
 
 # [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
@@ -189,6 +224,7 @@
 	* stringToOffsetDateTime
 	* offsetDateTimeToString
 	* convertUtilDateToOffsetDateTime
+	* covertOffsetDateTimeToUtilDate
 * [Util Date](core-java/date-practice/src/test/java/com/date/api/practice/UtilDate.java)
 	* convertStringToDate
 	* convertDateToString
