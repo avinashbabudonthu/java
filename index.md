@@ -282,17 +282,17 @@
 * [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
 
-# [Java 17](core-java/java-17)
-* [Materials](core-java/java-17/materials.md)
+# [Java 9](core-java/java-9)
+* [Notes](core-java/java-9/README.md)
+* [Notes](core-java/java-9/notes.md)
 
 # [Java 11](core-java/java-11)
 * [Materials](core-java/java-11/materials.md)
 * [Notes](core-java/java-11/notes.md)
 * [NewFeaturesPractice](core-java/java-11/java-11/src/main/java/com/java/NewFeaturesPractice.java)
 
-# [Java 9](core-java/java-9)
-* [Notes](core-java/java-9/README.md)
-* [Notes](core-java/java-9/notes.md)
+# [Java 17](core-java/java-17)
+* [Materials](core-java/java-17/materials.md)
 
 # Reactive Programming
 * [Notes](core-java/notes/reactive-programming.md)
