@@ -4,7 +4,7 @@
 * [Core Java](#core-java)
 * [Gradle](#gradle)
 * [JDK](#jdk)
-	* [Keytool](#key-tool)
+	* [Keytool](#keytool)
 * [Maven](#maven)
 * [UML](#uml)
 ------
