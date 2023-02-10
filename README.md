@@ -49,7 +49,6 @@
 * [Interview Questions](#interview-questions)
 * [Jackson JSON](#jackson-json)
 * [JBoss](#jboss)
-* [JDK](#jdk)
 * [Jenkins](#jenkins)
 * [Jersey](#jersey)
 * [JFrog](#jfrog)
@@ -545,13 +544,6 @@ voyager.enabled=false
 # [JBoss](jboss)
 * [Materials](jboss/materials.md)
 * [Notes](jboss/notes.md)
-------
-# [JDK](jdk)
-* [Materials](jdk/materials.md)
-* [Notes](jdk/notes.md)
-## [Keytool](jdk/key-tool)
-* [Keytool commands](jdk/key-tool/commands.md)
-* [Notes](jdk/key-tool/notes.md)
 ------
 # [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)

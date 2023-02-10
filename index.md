@@ -3,6 +3,8 @@
 # Index
 * [Core Java](#core-java)
 * [Gradle](#gradle)
+* [JDK](#jdk)
+	* [Keytool](#key-tool)
 * [Maven](#maven)
 * [UML](#uml)
 ------
@@ -308,6 +310,22 @@
 # Reactive Programming
 * [Notes](core-java/notes/reactive-programming.md)
 ------
+# [Gradle](gradle)
+* [Materials](gradle/materials.md)
+* [Installation](gradle/installation.md)
+* [Commands](gradle/commands.md)
+* [Plugins](gradle/plugins.md)
+* [Properties](gradle/properties.md)
+* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
+------
+# [JDK](jdk)
+* [Materials](jdk/materials.md)
+* [Notes](jdk/notes.md)
+
+## [Keytool](jdk/key-tool)
+* [Keytool commands](jdk/key-tool/commands.md)
+* [Notes](jdk/key-tool/notes.md)
+------
 # [Maven](maven)
 * [Materials](maven/materials.md)
 * [Installation](maven/installation.md)
@@ -326,14 +344,6 @@
 * [exec-maven-plugin](maven/notes.md#exec-maven-plugin)
 * [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
 * [Maven version plugin](maven/notes.md#Maven-version-plugin)
-------
-# [Gradle](gradle)
-* [Materials](gradle/materials.md)
-* [Installation](gradle/installation.md)
-* [Commands](gradle/commands.md)
-* [Plugins](gradle/plugins.md)
-* [Properties](gradle/properties.md)
-* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
 ------
 # [UML](uml)
 * [Notes](uml/notes.md)
