@@ -4,6 +4,7 @@
 * [Core Java](#core-java)
 * [Gradle](#gradle)
 * [Maven](#maven)
+* [UML](#uml)
 ------
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
@@ -35,9 +36,6 @@
 	* hashCodeFromArray
 	* longHashCode
 	* floatHashCode
-* [File IO - FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
-* [File IO - java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
-* [File IO - Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 * [java.math.BigDecimal](core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
 * [DecimalFormat](core-java/internationalization/src/test/java/com/internationalization/DecimalFormatPractice.java)
 	* createDecimalFormatObject
@@ -54,6 +52,19 @@
 	* minMaxNoOfDigits
 	* roundingNumbers
 	* parseNumber
+* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
+* [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java) - createBasicAuthHeader
+* [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generate10DigitRandomNumber
+* [Generate N Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumber
+* [Generate Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateRandomNumberInRange
+* [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumberInRange
+* [Generate random password](utils/generate-random-password.md)
+* [Reverse the number](utils/utils.md#reverse-the-number)
+
+# File IO
+* [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
+* [Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 
 # [Annotations](core-java/annotations)
 * [Notes](core-java/notes/annotations.md)
@@ -323,3 +334,6 @@
 * [Plugins](gradle/plugins.md)
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
+------
+# [UML](uml)
+* [Notes](uml/notes.md)

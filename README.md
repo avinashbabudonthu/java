@@ -106,23 +106,8 @@
 * [Terraform](#terraform)
 * [Testing](#testing)
 * [TypeScript](#typescript)
-* [UML](#uml)
 * [Unit Testing](#unit-testing)
 * [Util Logging](#util-logging)
-* [Util methods](utils)
-	* [Generate random password](utils/generate-random-password.md)
-	* [Reverse the number](utils/utils.md#reverse-the-number)
-	* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
-	* [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java)
-		* createBasicAuthHeader
-	* [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java)
-		* generate10DigitRandomNumber
-	* [Generate N Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java)
-		* generateNDigitRandomNumber
-	* [Generate Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java)
-		* generateRandomNumberInRange
-	* [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java)
-		* generateNDigitRandomNumberInRange
 * [Visual Studio Code](#visual-studio-code)
 * [Visual VM](#visual-vm)
 * [Weblogic Queue](#weblogic-queue)
@@ -1125,9 +1110,6 @@ voyager.enabled=false
 * [Interface](typescript/interface)
 * [String](typescript/string)
 * [Variables](typescript/variables)
-------
-# [UML](uml)
-* [Notes](uml/notes.md)
 ------
 # [Unit Testing](unit-testing)
 * [Materials](unit-testing/materials.md)
