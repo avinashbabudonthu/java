@@ -93,11 +93,11 @@
 	* inputStreamToString
 	* rotateString
 	* Clob to String conversion - clobToString
-* [String format](StringFormatPractice.java)
+* [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
 	* String format conventions and flags - stringFormatConventionsAndFlags
 	* String format - stringFormat
 	* To use (%) percentage symbol in String - format2
-* [String Joiner](StringJoinerPractice.java)
+* [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 	* Comma seprated String - commaSeparatedString
 	* String join - stringJoin
 	* List of Employee objects to comma separated first names - listOfEmployeeToCommaSeparatedFirstName
