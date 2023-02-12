@@ -37,7 +37,6 @@
 * [Graph Database](#graph-database)
 * [GraphQL](#graphql)
 * [Gremlin](#gremlin)
-* [Groovy](#groovy)
 * [GSON](#gson)
 * [Guava](#guava)
 * [H2 Database](#h2-database)
@@ -478,11 +477,6 @@ voyager.enabled=false
 * [Commands](gremlin/commands.md)
 ## [Examples](gremlin/README.md)
 * [Gremlin Console](gremlin/README.md#Gremlin-Console)
-------
-# [Groovy](groovy)
-* [Materials](groovy/materials.md)
-## Examples
-* [Groovy](groovy/groovy)
 ------
 # [GSON](gson)
 * [Object To JSON String](gson/gson/src/test/java/com/gson/ObjectToJsonString.java)

@@ -1,8 +1,12 @@
 * Java plugin
 ```
 apply plugin: "java"
-(or)
-plugins { id "java", id "maven", id "eclipse" }
+
+plugins {
+    id "java"
+    id "maven"
+    id "eclipse" 
+}
 ```
 * Groovy Plugin
 ```

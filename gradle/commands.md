@@ -28,7 +28,13 @@ gradle model
 ```
 * Check dependencies hierarchy
 ```
-gradle dependencies (or) gradle dependencies --configuration runtime
+gradle dependencies
+
+gradle dependencies --configuration runtime
+```
+* Write gradle dependencies to file
+```
+gradle dependencies > C:\dependencies.txt
 ```
 * Initialize project as gradle project
 ```
@@ -122,7 +128,7 @@ gradle clean build --execlude-task test
 ```
 gradle clean build -x checkStyle -x test -x pmd -x findbugs
 ```
-* Upgrade gradle wrapper. If your existing Gradle-based build uses the Gradle Wrapper, you can easily upgrade by running the wrapper task, specifying the desired Gradle version
+* Upgrade gradle wrapper. If you have existing Gradle-based build that uses the Gradle Wrapper, you can easily upgrade by running the wrapper task, specifying the desired Gradle version
 ```
 gradlew wrapper --gradle-version 5.0
 

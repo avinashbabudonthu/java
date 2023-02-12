@@ -3,6 +3,7 @@
 # Index
 * [Core Java](#core-java)
 * [Gradle](#gradle)
+* [Groovy](#groovy)
 * [JDK](#jdk)
 	* [Keytool](#keytool)
 * [Junit 4](#junit-4)
@@ -320,6 +321,11 @@
 * [Plugins](gradle/plugins.md)
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
+------
+# [Groovy](groovy)
+* [Materials](groovy/materials.md)
+## Examples
+* [Groovy](groovy/groovy)
 ------
 # [JDK](jdk)
 * [Materials](jdk/materials.md)
