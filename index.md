@@ -326,6 +326,13 @@
 * [Materials](groovy/materials.md)
 ## Examples
 * [Groovy](groovy/groovy)
+* [Basics](groovy/basics)
+* [Collections](groovy/collections)
+* [Date Time API](groovy/date-time)
+* [File IO](groovy/file-io)
+* [grape](groovy/grape)
+* [String](groovy/strings)
+* [XML](groovy/xml)
 ------
 # [JDK](jdk)
 * [Materials](jdk/materials.md)
