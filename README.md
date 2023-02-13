@@ -1,7 +1,5 @@
 # Single Repo For All Java Examples, topic wise in Alphabetical Order
 ------
-# [Index V2](index.md)
-------
 # Index
 * [Angular](#angular)
 * [Angular JS](#angular-js)
@@ -19,6 +17,7 @@
 * [Commons Lang3](#commons-lang3)
 * [Coding Web sites](#coding-web-sites)
 * [Concourse](#concourse)
+* [Core Java](#core-java)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
 * [Database](#database)
@@ -34,9 +33,11 @@
 * [Garbage Collection](#garbage-collection)
 * [Git](#git)
 * [GCP Google Cloud Platform](#google-cloud-platform)
+* [Gradle](#gradle)
 * [Graph Database](#graph-database)
 * [GraphQL](#graphql)
 * [Gremlin](#gremlin)
+* [Groovy](#groovy)
 * [GSON](#gson)
 * [Guava](#guava)
 * [H2 Database](#h2-database)
@@ -48,6 +49,8 @@
 * [Interview Questions](#interview-questions)
 * [Jackson JSON](#jackson-json)
 * [JBoss](#jboss)
+* [JDK](#jdk)
+	* [Keytool](#keytool)
 * [Jenkins](#jenkins)
 * [Jersey](#jersey)
 * [JFrog](#jfrog)
@@ -55,6 +58,9 @@
 * [JMeter](#jmeter)
 * [Jolt](#jolt)
 * [JPA](#jpa)
+* [Junit 4](#junit-4)
+* [Junit 5](#junit-5)
+* [JVM](#jvm)
 * [JWT](#jwt)
 * [Kafka](#kafka)
 * [Karate](#karate)
@@ -66,6 +72,7 @@
 * [Log4J](#log4j)
 * [Logging](#logging)
 * [Lombok](#lombok)
+* [Maven](#maven)
 * [Microservices](#microservices)
 * [Mockito](#mockito)
 * [Model Mapper](#model-mapper)
@@ -101,6 +108,7 @@
 * [Terraform](#terraform)
 * [Testing](#testing)
 * [TypeScript](#typescript)
+* [UML](#uml)
 * [Unit Testing](#unit-testing)
 * [Util Logging](#util-logging)
 * [Visual Studio Code](#visual-studio-code)
@@ -265,6 +273,308 @@
 # [Concourse](concourse)
 * [Materials](concourse/materials.md)
 ------
+# [Core Java](core-java)
+* [Materials](core-java/materials.md)
+* [Notes](core-java/notes/basics.md)
+* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
+* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
+* [Runtime class - ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
+* [Runtime class - ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
+* [Runtime class - ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
+* [Runtime.Version class - Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
+* [Optional class - Notes](core-java/notes/optional.md)
+* [Optional class - Code Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+* [Locale](core-java/internationalization/src/test/java/com/internationalization/LocalePractice.java)
+	* localObjectByCountry
+	* createLocalObject
+	* localObjectLanguageWise
+* [ResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/ResourceBundlePractice.java)
+	* listResourceBundle
+		* [MyListResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/MyListResourceBundle.java)
+		* [MyListResourceBundle_telugu](core-java/internationalization/src/test/java/com/resource/bundle/MyListResourceBundle_telugu.java)
+	* propertyResourceBundle
+		* [labels.properties](core-java/internationalization/src/main/resources/labels.properties)
+		* [labels_telugu.properties](core-java/internationalization/src/main/resources/labels_telugu.properties)
+* [Base64](core-java/basics/src/test/java/com/java/util/Base64EncodeDecodePractice.java)
+	* encode
+	* decode
+	* usernameAndPassword
+* [HashCodes](core-java/basics/src/test/java/com/java/util/HashCodes.java)
+	* hashCodeFromArray
+	* longHashCode
+	* floatHashCode
+* [java.math.BigDecimal](core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
+* [DecimalFormat](core-java/internationalization/src/test/java/com/internationalization/DecimalFormatPractice.java)
+	* createDecimalFormatObject
+	* applyNewPatterns
+	* formatNumber
+	* formatNumberSpecificToLocale
+	* customDecimalFormats
+	* groupingDigits
+* [NumberFormat](core-java/internationalization/src/test/java/com/internationalization/NumberLocalePractice.java)
+	* createNumberFormatObject
+	* formatNumber
+	* formatCurrency
+	* formatPercentage
+	* minMaxNoOfDigits
+	* roundingNumbers
+	* parseNumber
+* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
+* [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java) - createBasicAuthHeader
+* [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generate10DigitRandomNumber
+* [Generate N Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumber
+* [Generate Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateRandomNumberInRange
+* [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumberInRange
+* [Generate random password](utils/generate-random-password.md)
+* [Reverse the number](utils/utils.md#reverse-the-number)
+
+# File IO
+* [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
+* [Read Input From Keyboard](core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+
+# [Annotations](core-java/annotations)
+* [Notes](core-java/notes/annotations.md)
+* [Java Docs](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
+* Custom annotation
+	* [Custom annotation](core-java/annotations/src/main/java/com/custom/annotations)
+	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
+* Repeating annotations
+	* [Repeating annotations](core-java/annotations/src/main/java/com/repeating/annotation)
+	* [BookTest](core-java/annotations/src/test/java/com/repeating/annotation/BookTest.java)
+
+# Strings
+* [Notes](core-java/notes/strings.md)
+* [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+	* Create String - createString
+	* getbyteArrayFromString
+	* getAsciValueOfCharsInString
+	* convertByteArrayToString
+	* divideString
+	* stringToCharArray
+	* convertCase
+	* capitalizeFirstChar
+	* stringShift
+	* printAllSubStringsOfSpecifiedLength
+	* sortStringsInSentnceByLength
+	* replaceAll
+	* removeSpacesInString
+	* lastNCharactersOfString
+	* split
+	* splitByPipe
+	* subString
+	* stringToEBCDIC
+	* stringToBytes
+	* removeHTMLFromString
+	* stringToInputStream
+	* generateExcelCellNames
+	* inputStreamToString
+	* rotateString
+	* Clob to String conversion - clobToString
+* [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+	* String format conventions and flags - stringFormatConventionsAndFlags
+	* String format - stringFormat
+	* To use (%) percentage symbol in String - format2
+* [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+	* Comma seprated String - commaSeparatedString
+	* String join - stringJoin
+	* List of Employee objects to comma separated first names - listOfEmployeeToCommaSeparatedFirstName
+	* merge 2 string joiners - merge
+	* String joiner length - length
+
+# [Collections](core-java/collections)
+* [Notes](core-java/notes/collections.md)
+* [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
+* [Examples](#javautil-package)
+* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
+* List Examples
+	* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
+	* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
+	* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
+* Set Examples
+	* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
+	* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
+	* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
+	* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
+	* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
+	* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
+* Map Examples
+	* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+	* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
+	* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
+	* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
+	* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
+	* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
+	* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
+	* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
+	* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
+	* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
+* Queue Examples
+	* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
+* Dequeue Examples
+	* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
+* [Arrays](core-java/collections/src/test/java/com/util/ArraysPractice.java)
+	* parallelSort
+	* parallelSetAll
+	* setAll
+	* parallelPrefix
+	* deepEquals
+	* hashCode
+	* deepHashCode
+	* fill
+	* deepToString
+
+# Serialization Examples
+* [Notes](core-java/notes/serialization.md)
+* [Model classes](core-java/basics/src/main/java/com/serialization)
+* [Serialize](core-java/basics/src/test/java/com/serialization/Serialize.java)
+* [DeSerialize](core-java/basics/src/test/java/com/serialization/DeSerialize.java)
+
+# [Date Practice](core-java/date-practice)
+## Date format conventions
+* java.util.Date to String conversion - java.text.DateFormat.format
+* String to java.util.Date conversion - java.text.DateFormat.parse
+* String to java.time.LocalDate conversion - java.time.LocalDate.parse(stringDate, java.time.format.DateTimeFormatter.ofPattern(input-date-format))
+* MM - Month in Number format
+* MMM - Month in English in short form
+* MMMM - Month in English in full form
+* dd - Date in 2 digits
+* d - Date in single digit
+* E (or) EEE - Day in shot form
+* EEEE - Day in full form
+* yyyy - Four digit year
+* HH - 24 hours timeline
+* hh - 12 hours timeline
+* mm - Minutes
+* ss - Seconds
+* SSS - Milli Seconds
+* a	- AM/PM
+* Z - Time Zone
+## Examples
+* [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
+	* createClock
+	* clockMethods
+* [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+	* localDateToGregorianCalendar
+	* localDateToXmlGregorianCalendar
+	* utilDateToXmlGregorianCalendar
+	* xmlGregorianCalendarToUtilDate
+	* xmlGregorianCalendarToGregorianCalendar
+	* timeInMillisToGregorian
+* [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
+	* convertDateFormat1
+	* getDayOfWeek
+* [Duration](core-java/date-practice/src/test/java/com/date/api/practice/DurationPractice.java)
+	* durationBetweenTwoDates
+* [Instant](core-java/date-practice/src/test/java/com/date/api/practice/InstantPractice.java)
+	* createInstant
+	* instantToOffsetDateTime
+	* instantToUtilDate
+* [LocateDate](core-java/date-practice/src/test/java/com/date/api/practice/LocalDatePractice.java)
+	* createLocalDateWithCurrentDate
+	* createLocalDate
+	* addDayWeekMonth
+	* nextSunday
+	* nextMonthSecondSaturday
+	* convertLocalDateToUtilDate
+	* convertStringToLocalDate
+* [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
+	* createLocalDateTime
+	* convertLocalDateTimeToUtilDate
+	* convertLocalDateTimeToZonedDateTime
+	* convertLocalDateTimeToStringTimeStamp
+	* localDateTimeToOffsetDateTime
+* [LocalTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalTimePractice.java)
+	* createLocalTime
+* [OffsetDateTime](core-java/date-practice/src/test/java/com/date/api/practice/OffsetDateTimePractice.java)
+	* create
+	* offsetDateTimeToLocalDateTime
+	* offsetDateTimeToLocalDate
+	* offsetDateTimeToLocalTime
+	* offsetDateTimeToZonedDateTime
+	* offsetDateTimeToInstant
+	* offsetDateTimeToOffsetTime
+	* offsetDateTimeYearMonthDay
+	* offsetDateTimeHourMinuteSecond
+	* addYearMonthEtc
+	* subtractYearMonthEtc
+	* compare
+	* stringToOffsetDateTime
+	* offsetDateTimeToString
+	* convertUtilDateToOffsetDateTime
+	* covertOffsetDateTimeToUtilDate
+* [Util Date](core-java/date-practice/src/test/java/com/date/api/practice/UtilDate.java)
+	* convertStringToDate
+	* convertDateToString
+	* convertDateToLocalDateTime
+	* convertUtilDateToLocalDate
+	* convertUtilDateToLocalTime
+	* convertUtilDateToZonedDateTime
+	* before
+	* after
+	* utilDateToTimeStamp
+	* timeStampToUtilDate
+* [ZoneDateTime](core-java/date-practice/src/test/java/com/date/api/practice/ZonedDateTimePractice.java)
+	* createZonedDateTime
+	* convertZonedDateTimeToUtilDate
+	* zonedDateTimeToOffsetDateTime
+
+# Enum
+* [Enum Basics](core-java/basics/src/test/java/com/enums/EnumPractice.java)
+	* [DaysEnum](core-java/basics/src/main/java/com/enums/DaysEnum.java)
+	* [DaysEnum2](core-java/basics/src/main/java/com/enums/DaysEnum2.java)
+	* [EnumImpl](core-java/basics/src/main/java/com/enums/EnumImpl.java)
+	* [EnumMethods](core-java/basics/src/main/java/com/enums/EnumMethods.java)
+	* [IEnum](core-java/basics/src/main/java/com/enums/IEnum.java)
+	* accessEnumValue
+	* iterateEnum
+	* enumInIf
+	* enumInSwitch
+	* iterateEnumWithArgumentedConstructor
+	* enumToString
+	* valueOf
+	* enumMethods
+	* enumImplementingInterface
+	* enumSet
+	* enumMap
+* [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
+	* [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
+	* lookupMap
+
+# Multi threading
+* [Materials](core-java/multi-threading/materials.md)
+* [Notes](core-java/notes/multi-threading.md)
+
+# Generics
+* [Notes](core-java/notes/generics.md)
+* [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+* [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
+
+# Java 8 Examples
+* [Notes](core-java/notes/java-8-notes.md)
+* [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
+* [Functional Interface](core-java/java-8/java8/src/main/java/com/functional/interfaces)
+* [Constructor References](core-java/java-8/java8/src/main/java/com/constructor/references/FunctionalInterface1.java)
+* [Lambda Expressions](core-java/java-8/java8/src/main/java/com/lambda/expressions)
+* [Method Reference](core-java/java-8/java8/src/main/java/com/method/references)
+* [BiFunctional Interface](core-java/java-8/java8/src/main/java/com/java/util/function/BiFunctionPractice.java)
+* [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
+
+# [Java 9](core-java/java-9)
+* [Notes](core-java/java-9/README.md)
+* [Notes](core-java/java-9/notes.md)
+
+# [Java 11](core-java/java-11)
+* [Materials](core-java/java-11/materials.md)
+* [Notes](core-java/java-11/notes.md)
+* [NewFeaturesPractice](core-java/java-11/java-11/src/main/java/com/java/NewFeaturesPractice.java)
+
+# [Java 17](core-java/java-17)
+* [Materials](core-java/java-17/materials.md)
+
+# Reactive Programming
+* [Notes](core-java/notes/reactive-programming.md)
+------
 # [Couch Base](couch-base)
 * [Materials](couch-base/materials.md)
 ## Examples
@@ -368,6 +678,14 @@
 * [Commands](google-cloud-platform/commands.md)
 * [Materials](google-cloud-platform/materials.md)
 * [Notes](google-cloud-platform/notes.md)
+------
+# [Gradle](gradle)
+* [Materials](gradle/materials.md)
+* [Installation](gradle/installation.md)
+* [Commands](gradle/commands.md)
+* [Plugins](gradle/plugins.md)
+* [Properties](gradle/properties.md)
+* [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
 ------
 # [Graph Database](graph-db)
 * [Notes](graph-db/notes.md)
@@ -478,6 +796,18 @@ voyager.enabled=false
 ## [Examples](gremlin/README.md)
 * [Gremlin Console](gremlin/README.md#Gremlin-Console)
 ------
+# [Groovy](groovy)
+* [Materials](groovy/materials.md)
+## Examples
+* [Groovy](groovy/groovy)
+* [Basics](groovy/groovy/basics)
+* [Collections](groovy/groovy/collections)
+* [Date Time API](groovy/groovy/date-time)
+* [File IO](groovy/groovy/file-io)
+* [grape](groovy/groovy/grape)
+* [String](groovy/groovy/strings)
+* [XML](groovy/groovy/xml)
+------
 # [GSON](gson)
 * [Object To JSON String](gson/gson/src/test/java/com/gson/ObjectToJsonString.java)
 ------
@@ -536,6 +866,14 @@ voyager.enabled=false
 * [Materials](jboss/materials.md)
 * [Notes](jboss/notes.md)
 ------
+# [JDK](jdk)
+* [Materials](jdk/materials.md)
+* [Notes](jdk/notes.md)
+
+## [Keytool](jdk/key-tool)
+* [Keytool commands](jdk/key-tool/commands.md)
+* [Notes](jdk/key-tool/notes.md)
+------
 # [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)
 * [Configure global security](jenkins/configure-global-security.md)
@@ -581,6 +919,39 @@ voyager.enabled=false
 * [One to Many Using JoinTable](jpa/jpapractice/src/main/java/one/to/many/join/table)
 * [One to One Using JoinColumn](jpa/jpapractice/src/main/java/one/to/one/join/column)
 * [One to One Using JoinTable](jpa/jpapractice/src/main/java/one/to/one/join/table)
+------
+# [Junit 4](junit-4)
+* [Materials](junit-4/materials.md)
+* [Notes](junit-4/notes.md)
+## Examples
+* [Junit 4](junit-4/junit-4)
+* [Before After Annotations](junit-4/junit-4/src/test/java/junit/practice/before/after/annotations/BeforeAfterJunitPractice.java)
+* [BeforeClass and AfterClass Annotations](junit-4/junit-4/src/test/java/junit/practice/beforeclass/afterclass/annotations/BeforeClassAfterClassJunitPractice.java)
+* [Categories](junit-4/junit-4/src/test/java/junit/practice/cateogies/CategoriesJunitPractice.java)
+* [Exceptions](junit-4/junit-4/src/test/java/junit/practice/exception/ExceptionJunitPractice.java)
+* [Hello World](junit-4/junit-4/src/test/java/junit/practice/hello/world/HelloWorldJunitPractice.java)
+* [Parameterized Test Cases](junit-4/junit-4/src/test/java/junit/practice/parameterized/test/ParamaterizedTestsJunitPractice.java)
+* [Test Suite](junit-4/junit-4/src/test/java/junit/practice/test/suite/TestSuiteJunitPractice.java)
+* [Timeout](junit-4/junit-4/src/test/java/junit/practice/time/out/TimeoutJunitPractice.java)
+------
+# [Junit 5](junit-5)
+* [Materials](junit-5/materials.md)
+## Examples
+* [AfterAnnotations.java](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
+* [AssertionsJunit5.java](junit-5/junit-5/src/test/java/com/junit5/AssertionsJunit5.java)
+* [Assumptions.java](junit-5/junit-5/src/test/java/com/junit5/Assumptions.java)
+* [BeforeAnnotations.java](junit-5/junit-5/src/test/java/com/junit5/BeforeAnnotations.java)
+* [DisabledAnnotation.java](junit-5/junit-5/src/test/java/com/junit5/DisabledAnnotation.java)
+* [DisplayNameAnnotation.java](junit-5/junit-5/src/test/java/com/junit5/DisplayNameAnnotation.java)
+* [DynamicTest.java](junit-5/junit-5/src/test/java/com/junit5/DynamicTest.java)
+* [Exceptions.java](junit-5/junit-5/src/test/java/com/junit5/Exceptions.java)
+* [SelectPackagesTestSuite.java](junit-5/junit-5/src/test/java/com/junit5/SelectPackagesTestSuite.java)
+* [Tags.java](junit-5/junit-5/src/test/java/com/junit5/Tags.java)
+* [Mockito](junit-5/junit-5/src/test/java/com/junit5/mockito/MockitoExtensionsPractice.java)
+------
+# [JVM](jvm)
+* [Materials](jvm/materials.md)
+* [Notes](jvm/notes.md)
 ------
 # [JWT](jwt)
 * JWT - JSON Web Tokens
@@ -643,6 +1014,25 @@ voyager.enabled=false
 * [Test class](lombok/lombok/src/test/java/com/java/StudentTest)
 	* [Data annotation](lombok/lombok/src/main/java/com/java/Student.java)
 	* [NonNull annotation](lombok/lombok/src/main/java/com/java/Student2.java)
+------
+# [Maven](maven)
+* [Materials](maven/materials.md)
+* [Installation](maven/installation.md)
+* [Notes](maven/notes.md)
+* [Commands](maven/commands.md)
+* [Sample pom xml file](maven/sample_pom.xml)
+* [Maven install plugin to install any jar automatically before building our war/jar](maven/notes.md#maven-install-plugin)
+* [repositories tag](maven/notes.md#repositories-tag)
+* [Maven Push to remote repository - distributionManagement tag](maven/notes.md#distributionmanagement-tag)
+* [Maven compiler plugin](maven/notes.md#maven-compile-plugin)
+* [Maven Spring Boot Plugin](maven/notes.md#maven-spring-boot-plugin)
+* [Maven Execute Exec Plugin](maven/notes.md#maven-execute-exec-plugin)
+* [Skip Test Cases](maven/notes.md#skip-test-cases)
+* [Maven Surefire Plugin](maven/notes.md#maven-surefire-plugin)
+* [Maven war plugin](maven/notes.md#maven-war-plugin)
+* [exec-maven-plugin](maven/notes.md#exec-maven-plugin)
+* [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
+* [Maven version plugin](maven/notes.md#Maven-version-plugin)
 ------
 # [Microservices](micro-services)
 * [Materials](micro-services/materials.md)
@@ -1060,6 +1450,9 @@ voyager.enabled=false
 * [Interface](typescript/interface)
 * [String](typescript/string)
 * [Variables](typescript/variables)
+------
+# [UML](uml)
+* [Notes](uml/notes.md)
 ------
 # [Unit Testing](unit-testing)
 * [Materials](unit-testing/materials.md)
