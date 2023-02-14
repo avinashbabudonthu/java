@@ -119,7 +119,7 @@
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 ------
-# [Angular](angular)
+# [Angular](angular){:target="_blank"}
 * [Commands](angular/commands.md)
 * [Install Angular CLI](angular/install-angular-cli.md)
 * [Materials](angular/materials.md)
@@ -798,10 +798,22 @@ voyager.enabled=false
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)
+* [Notes](groovy/notes.md)
 ## Examples
+* [Installation](groovy/notes.md#Installation)
 * [Groovy](groovy/groovy)
 * [Basics](groovy/groovy/basics)
+	* [ClosuresPractice](groovy/groovy/basics/src/test/java/com/closures/ClosuresPractice.groovy)
+	* [EnumPractice](groovy/groovy/basics/src/test/java/com/enums/EnumPractice.groovy)
+		* [Days enum](groovy/groovy/basics/src/main/java/com/enums/Days.groovy)
+	* [DoWhile](groovy/groovy/basics/src/test/java/com/loops/DoWhile.groovy)
+	* [ForWhile](groovy/groovy/basics/src/test/java/com/loops/ForWhile.groovy)
+	* [While](groovy/groovy/basics/src/test/java/com/loops/WhileLoop.groovy)
+	* [VariablesPractice](groovy/groovy/basics/src/test/java/com/variables/VariablesPractice.groovy)
 * [Collections](groovy/groovy/collections)
+	* [Arrays][groovy/groovy/collections/src/test/java/com/array/ArrayPractice.groovy]
+	* [ArrayList][groovy/groovy/collections/src/test/java/com/array/list/ArrayListPractice.groovy]
+	* [Range][groovy/groovy/collections/src/test/java/com/util/RangePractice.groovy]
 * [Date Time API](groovy/groovy/date-time)
 * [File IO](groovy/groovy/file-io)
 * [grape](groovy/groovy/grape)

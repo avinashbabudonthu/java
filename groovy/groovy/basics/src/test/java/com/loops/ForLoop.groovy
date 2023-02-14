@@ -28,6 +28,12 @@ class ForLoop {
         names.forEach({
             println "hello, $it"
         })
+
+        println "------------------------"
+
+        names.forEach({name ->
+            println "hello, $name"
+        })
     }
 
     @Test

@@ -28,11 +28,11 @@
   </dependencies>
 
   <modules>
-    <module>strings</module>
-    <module>date-time</module>
-    <module>collections</module>
     <module>basics</module>
+    <module>collections</module>
+    <module>date-time</module>
     <module>file-io</module>
+    <module>strings</module>
     <module>xml</module>
   </modules>
 

@@ -8,6 +8,8 @@ class RangePractice {
     void rangeOfNumbers(){
         def numbers = 1..10
         println "$numbers"
+        println "from = $numbers.from"
+        println "to = $numbers.to"
         for(number in numbers){
             println "$number"
         }
