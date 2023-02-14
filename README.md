@@ -119,7 +119,7 @@
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 ------
-# [Angular](angular){:target="_blank"}
+# [Angular](angular)
 * [Commands](angular/commands.md)
 * [Install Angular CLI](angular/install-angular-cli.md)
 * [Materials](angular/materials.md)
