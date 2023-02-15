@@ -129,4 +129,21 @@ public class LocalDatePractice {
 		log.info("localDate5: {}", localDate5);
 		log.info("formatter4.format(localDate5): {}", formatter4.format(localDate5));
 	}
+
+	@Test
+	public void convertLocalDateToString(){
+		LocalDate localDate = LocalDate.now();
+		log.info("localDate={}", localDate); // localDate=2023-02-15
+
+		// To yyyyMMdd
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+		String date1 = localDate.format(dateTimeFormatter);
+		log.info("date1={}", date1); // date1=20230215
+
+		// To MMyyyydd
+		DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("MMyyyydd");
+		String date2 = localDate.format(dateTimeFormatter2);
+		log.info("date2={}", date2); // date2=02202315
+	}
+
 }

@@ -479,6 +479,7 @@
 	* nextMonthSecondSaturday
 	* convertLocalDateToUtilDate
 	* convertStringToLocalDate
+	* convertLocalDateToString
 * [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
 	* createLocalDateTime
 	* convertLocalDateTimeToUtilDate
@@ -812,9 +813,9 @@ voyager.enabled=false
 	* [While](groovy/groovy/basics/src/test/java/com/loops/WhileLoop.groovy)
 	* [VariablesPractice](groovy/groovy/basics/src/test/java/com/variables/VariablesPractice.groovy)
 * [Collections](groovy/groovy/collections)
-	* [Arrays][groovy/groovy/collections/src/test/java/com/array/ArrayPractice.groovy]
-	* [ArrayList][groovy/groovy/collections/src/test/java/com/array/list/ArrayListPractice.groovy]
-	* [Range][groovy/groovy/collections/src/test/java/com/util/RangePractice.groovy]
+	* [Arrays](groovy/groovy/collections/src/test/java/com/array/ArrayPractice.groovy)
+	* [ArrayList](groovy/groovy/collections/src/test/java/com/array/list/ArrayListPractice.groovy)
+	* [Range](groovy/groovy/collections/src/test/java/com/util/RangePractice.groovy)
 * [Date Time API](groovy/groovy/date-time)
 * [File IO](groovy/groovy/file-io)
 * [grape](groovy/groovy/grape)

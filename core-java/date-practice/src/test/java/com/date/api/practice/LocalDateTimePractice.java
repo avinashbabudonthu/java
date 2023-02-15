@@ -54,7 +54,7 @@ public class LocalDateTimePractice {
 		Timestamp timestamp = Timestamp.valueOf(localDateTime);
 		long time = timestamp.getTime();
 		String timeStampAsString = String.valueOf(time);
-		log.info("timeStampAsString: {}", timeStampAsString);
+		log.info("timeStampAsString: {}", timeStampAsString); // timeStampAsString: 1676428834505
 	}
 
 	@Test
