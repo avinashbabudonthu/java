@@ -7,9 +7,11 @@ class RangePractice {
     @Test
     void rangeOfNumbers(){
         def numbers = 1..10
-        println "$numbers"
-        println "from = $numbers.from"
-        println "to = $numbers.to"
+        println "$numbers" // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        println "from = $numbers.from" // from = 1
+        println "to = $numbers.to" // to = 10
+
+        // print each number
         for(number in numbers){
             println "$number"
         }

@@ -1,8 +1,8 @@
 # Groovy Notes
-* Groovy official website [http://www.groovy-lang.org/](http://www.groovy-lang.org/){:target="_blank"}
+* Groovy official website [http://www.groovy-lang.org/](http://www.groovy-lang.org/)
 ------
 # Installation
-* Download groovy [https://groovy.apache.org/download.html](https://groovy.apache.org/download.html){:target="_blank"}
+* Download groovy [https://groovy.apache.org/download.html](https://groovy.apache.org/download.html)
 * Download windows installer
 * Install using `.msi`
 * Select `Complete` installation

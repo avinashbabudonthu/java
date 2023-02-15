@@ -816,10 +816,30 @@ voyager.enabled=false
 	* [Arrays](groovy/groovy/collections/src/test/java/com/array/ArrayPractice.groovy)
 	* [ArrayList](groovy/groovy/collections/src/test/java/com/array/list/ArrayListPractice.groovy)
 	* [Range](groovy/groovy/collections/src/test/java/com/util/RangePractice.groovy)
-* [Date Time API](groovy/groovy/date-time)
+		* rangeOfNumbers
+		* rangeOfLetters
+		* rangeOfEnums
+		* from
+		* to
+		* usingRangeInForLoop
+		* rangeForEachWithClosure
+		* rangeEachWithClosure
+		* rangeEachWithCloseWithCustomVariable
+* [Date Time](groovy/groovy/date-time)
+	* [DatePractice](groovy/groovy/date-time/src/test/java/com/date/time/DatePractice.groovy)
+		* todayDate
 * [File IO](groovy/groovy/file-io)
+	* [ReadFile](groovy/groovy/file-io/src/test/java/com/groovy/ReadFile.groovy)
+		* readAllContentOfFileFromAbsolutePath
+		* exists
+		* displayFilesInADirectory
+		* displayFilesInDirectoryAndSubDirectory
 * [grape](groovy/groovy/grape)
+	* [Materials](groovy/groovy/grape/materials.md)
 * [String](groovy/groovy/strings)
+	* [StringsPractice](groovy/groovy/strings/src/test/java/com/strings/StringsPractice.groovy)
+		* declareString
+		* 
 * [XML](groovy/groovy/xml)
 ------
 # [GSON](gson)

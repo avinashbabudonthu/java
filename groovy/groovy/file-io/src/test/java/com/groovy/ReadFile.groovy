@@ -24,6 +24,7 @@ class ReadFile {
         final File file = new File(filePath)
 
         println "Is xml exist? - ${file.exists()}"
+        println "Is file exists? - " + file.exists()
     }
 
     /**
@@ -33,9 +34,14 @@ class ReadFile {
     void displayFilesInADirectory(){
         final String directoryPath = "E:\\Backup\\Java-Prep\\groovy\\projects\\groovy\\xml-io\\src\\test\\java\\com\\read\\xml"
         final File filePath = new File(directoryPath)
-        filePath.eachFile {file ->
-            println "${file.getAbsolutePath()}"
+        if(filePath.exists()){
+            filePath.eachFile {file ->
+                println "${file.getAbsolutePath()}"
+            }
+        }else {
+            println "path does not exist"
         }
+
     }
 
     /**
