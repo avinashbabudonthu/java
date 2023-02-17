@@ -3,3 +3,4 @@
 
 # Others
 * Immutables in Java - Are Setters Allowed? - https://reflectoring.io/java-immutables/
+* https://www.tutorialspoint.com/design_pattern/index.htm
