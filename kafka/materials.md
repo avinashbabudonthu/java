@@ -12,6 +12,7 @@
 * Kafka & Kafka Streams With Java Spring Boot - Hands-on Coding
 
 # Youtube
+* [Apache Kafka Explained](https://www.youtube.com/watch?v=JalUUBKdcA0&t=1s&ab_channel=Finematics)
 * [kafka schema registry](https://www.youtube.com/watch?v=5fjw62LGYNg)
 
 # Kafka Streams Examples

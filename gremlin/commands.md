@@ -160,3 +160,11 @@ g.V(id).label()
 ```
 g.V("id1").out("edgeLabel1").hasId("outVertextId")
 ```
+* node with proeprty name containing. `label` is optional
+```
+g.V().has("property", TextP.containing("value"))
+g.V().has("name", TextP.containing("ji"))
+
+g.V().has("label", "property", TextP.containing("value"))
+g.V().has("person", "name", TextP.containing("ji"))
+```
