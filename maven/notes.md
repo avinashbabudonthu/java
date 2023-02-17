@@ -728,3 +728,6 @@ mvn versions:display-plugin-updates
 ```
 * You will see a list of plugins used in your project with newer versions available. Update all of those plugins to the lastest stable version. After you've updated your plugin versions make sure that your project still compiles and runs properly
 * Use mvn -N ... from your projects root directory to just check your parent POM in case of multi-module projects.
+------
+# Build scan
+* https://scans.gradle.com/?_ga=2.176353708.821953821.1675911397-2076437657.1675676943#maven

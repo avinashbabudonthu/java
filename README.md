@@ -717,11 +717,13 @@
 ------
 # [Gradle](gradle)
 * [Materials](gradle/materials.md)
+* [Notes](gradle/notes.md)
 * [Installation](gradle/installation.md)
 * [Commands](gradle/commands.md)
 * [Plugins](gradle/plugins.md)
 * [Properties](gradle/properties.md)
 * [Upload archives to remote repository](gradle/upload-archives-to-remote-repository.md)
+* [Build scan](gradle/notes.md/#Build-scan)
 ------
 # [Graph Database](graph-db)
 * [Notes](graph-db/notes.md)
@@ -1101,6 +1103,8 @@ voyager.enabled=false
 * [exec-maven-plugin](maven/notes.md#exec-maven-plugin)
 * [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
 * [Maven version plugin](maven/notes.md#Maven-version-plugin)
+* [Build scan](maven/notes.md#Build-scan)
+
 ------
 # [Microservices](micro-services)
 * [Materials](micro-services/materials.md)
