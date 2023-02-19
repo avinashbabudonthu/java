@@ -11,9 +11,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.java.maven</groupId>
     <artifactId>repository</artifactId>
-    <version>1.0.0</version>
 
     <name>repository</name>
     <url>http://maven.apache.org</url>

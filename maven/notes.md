@@ -733,3 +733,193 @@ mvn versions:display-plugin-updates
 * https://scans.gradle.com/?_ga=2.176353708.821953821.1675911397-2076437657.1675676943#maven
 ------
 # Maven multi module project
+* A multi-module project is built from an aggregator POM that manages a group of submodules. In most cases, the aggregator is located in the project's root directory and must have packaging of type pom.
+* The submodules are regular Maven projects, and they can be built separately or through the aggregator POM.
+* By building the project through the aggregator POM, each project that has a packaging type different from pom will result in a built archive file
+## Benefits of Using Multi-Modules
+* The significant advantage of using this approach is that we may reduce duplication
+* Let's say we have an application that consists of several modules, a front-end module and a back-end module. Now imagine we work on them and change the functionality, which affects them both. In that case, without a specialized build tool, we'd have to build both components separately or write a script to compile the code, run tests, and show the results. Then, after we got even more modules in the project, it would become harder to manage and maintain.
+* In the real world, projects may need certain Maven plugins to perform various operations during the build lifecycle, to share dependencies and profiles, and to include other BOM projects.
+* Therefore, when leveraging multi-modules, we can build our application's modules in a single command, and if the order matters, Maven will figure it out for us. We can also share a vast amount of configuration with other modules
+## Parent POM
+* Maven supports inheritance in a way that each pom.xml file has the implicit parent POM. It's called Super POM and can be located in the Maven binaries. These two files are merged by Maven and form the Effective POM
+* We can create our own pom.xml file, which will serve us as the parent project. Then we can include in it all configuration with dependencies, and set it as the parent of our child modules, so they'll inherit from it.
+* Besides the inheritance, Maven provides the notion of aggregation. A parent POM that leverages this functionality is called an aggregate POM. Basically, this kind of POM declares its modules explicitly in its pom.xml file.
+
+## Submodules
+* Submodules, or subprojects, are regular Maven projects that inherit from the parent POM. As we already know, inheritance lets us share the configuration and dependencies with submodules. However, if we'd like to build or release our project in one shot, we have to declare our submodules explicitly in the parent POM. Ultimately, our parent POM will be the parent, as well as the aggregate POM.
+
+## Building the Application
+* Now that we understand Maven's submodules and hierarchy, let's build a sample application to demonstrate them. We'll use Maven's command-line interface to generate our projects
+* Create parent project
+```
+mvn archetype:generate -DgroupId=com.java.maven -DartifactId=parent -Dversion=1.0.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+* Open `pom.xml` in parent. Change `<packaging>` to `pom`
+```
+<packaging>pom</packaging>
+```
+* Create sub module. Navigate indide to `parent`, execute following commands
+```
+mvn archetype:generate -DgroupId=com.java.maven -DartifactId=controller -Dversion=1.0.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.java.maven -DartifactId=service -Dversion=1.0.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.java.maven -DartifactId=repository -Dversion=1.0.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+* In parent `pom.xml` we can see `<modules>` tag added with list of sub modules
+```
+<modules>
+	<module>controller</module>
+	<module>service</module>
+	<module>repository</module>
+</modules>
+```
+* In each sub module `pom.xml` we can see `<parent>` tag
+```
+<parent>
+	<groupId>com.java.maven</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0</version>
+</parent>
+```
+## Building the Project
+* Execute below command from parent folder. This will package all sub modules
+```
+mvn package
+```
+* `package` command result
+```
+
+C:\parent>mvn package
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] parent                                                             [pom]
+[INFO] controller                                                         [jar]
+[INFO] service                                                            [jar]
+[INFO] repository                                                         [jar]
+[INFO]
+[INFO] -----------------------< com.java.maven:parent >------------------------
+[INFO] Building parent 1.0.0                                              [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] ---------------------< com.java.maven:controller >----------------------
+[INFO] Building controller 1.0.0                                          [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ controller ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\controller\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ controller ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ controller ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\controller\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ controller ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ controller ---
+[INFO] Surefire report directory: C:\github\java\maven\parent\controller\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.java.maven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ controller ---
+[INFO]
+[INFO] -----------------------< com.java.maven:service >-----------------------
+[INFO] Building service 1.0.0                                             [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ service ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\service\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ service ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\service\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ service ---
+[INFO] Surefire report directory: C:\github\java\maven\parent\service\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.java.maven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ service ---
+[INFO]
+[INFO] ---------------------< com.java.maven:repository >----------------------
+[INFO] Building repository 1.0.0                                          [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ repository ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\repository\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ repository ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ repository ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\github\java\maven\parent\repository\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ repository ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ repository ---
+[INFO] Surefire report directory: C:\github\java\maven\parent\repository\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.java.maven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ repository ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for parent 1.0.0:
+[INFO]
+[INFO] parent ............................................. SUCCESS [  0.003 s]
+[INFO] controller ......................................... SUCCESS [  1.449 s]
+[INFO] service ............................................ SUCCESS [  0.559 s]
+[INFO] repository ......................................... SUCCESS [  0.381 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.494 s
+[INFO] Finished at: 2023-02-19T07:27:41+05:30
+[INFO] ------------------------------------------------------------------------
+```
+# Import
+* Import to IDE. IntelliJ in below screen
+![picture](images/maven-multi-module.jpg)
