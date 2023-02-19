@@ -16,6 +16,7 @@
 * [Maven frequently asked questions](https://maven.apache.org/general.html)
 * [Maven available plugins](https://maven.apache.org/plugins/index.html)
 * [POM References](http://maven.apache.org/pom.html)
+* [Maven Multi Module Project](https://www.baeldung.com/maven-multi-module)
 
 # Box
 * `maven` folder
