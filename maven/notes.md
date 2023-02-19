@@ -1,5 +1,5 @@
 # Maven Notes
-
+------
 # Quick Notes
 * What is Maven?
 	* Build tool to automate the build process
@@ -731,3 +731,5 @@ mvn versions:display-plugin-updates
 ------
 # Build scan
 * https://scans.gradle.com/?_ga=2.176353708.821953821.1675911397-2076437657.1675676943#maven
+------
+# Maven multi module project

@@ -1104,7 +1104,7 @@ voyager.enabled=false
 * [Maven dependency scopes](maven/notes.md#Maven-dependency-scopes)
 * [Maven version plugin](maven/notes.md#Maven-version-plugin)
 * [Build scan](maven/notes.md#Build-scan)
-
+* [Maven multi module project](maven/notes.md#Maven-multi-module-project)
 ------
 # [Microservices](micro-services)
 * [Materials](micro-services/materials.md)
