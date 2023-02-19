@@ -1524,6 +1524,7 @@ voyager.enabled=false
 * [Variables](typescript/variables)
 ------
 # [UML](uml)
+* [Materials](uml/materials.md)
 * [Notes](uml/notes.md)
 ------
 # [Unit Testing](unit-testing)
