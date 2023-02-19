@@ -921,5 +921,5 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 ```
 # Import
-* Import to IDE. IntelliJ in below screen
+* Import to IDE. IntelliJ in below screen\
 ![picture](images/maven-multi-module.jpg)
