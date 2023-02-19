@@ -940,7 +940,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 	</dependencies>
 </dependencyManagement>
 ```
-* By declaring the spring-core version in the parent, all submodules that depend on spring-core can declare the dependency using only the groupId and artifactId, and the version will be inherited
+* By declaring the `junit` version in the parent, all submodules that depend on `junit` can declare the dependency using only the groupId and artifactId, and the version will be inherited
 ```
 <dependency>
 	<groupId>junit</groupId>
