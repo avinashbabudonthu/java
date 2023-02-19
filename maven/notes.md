@@ -968,8 +968,8 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 ```
 
 ## dependencyManagement vs dependencies
-* dependencies - dependencies downloaded automatically - means sub modules no need to write `<dependency>` tag 
-* dependencyManagement - sub module have to declare `<dependency>` to inherit dependencies from parent
+* `dependencies` tag - dependencies downloaded automatically - means sub modules no need to write `<dependency>` tag 
+* `dependencyManagement` tag - sub module have to declare `<dependency>` to inherit dependencies from parent
 * Refer [parent/pom.xml](parent/pom.xml)
 * If we comment `<dependencies>` and uncomment `<dependencyManagement>` then compilation error will come in sub module test classes
 	* [controller/AppTest](parent/controller/src/test/java/com/java/maven/AppTest.java)
