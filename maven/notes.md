@@ -927,18 +927,18 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 ## Enable Dependency Management in Parent Project
 * Dependency management is a mechanism for centralizing the dependency information for a multi-module parent project and its children.
 * When you have a set of projects or modules that inherit a common parent, you can put all the required information about the dependencies in the common pom.xml file. This will simplify the references to the artifacts in the child POMs.
-* Let's take a look at a sample parent's `pom.xml`
-``
+* parent [parent/pom.xml](parent/pom.xml)
+```
 <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</dependencyManagement>
 ```
 * By declaring the spring-core version in the parent, all submodules that depend on spring-core can declare the dependency using only the groupId and artifactId, and the version will be inherited
 ```
