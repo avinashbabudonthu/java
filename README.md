@@ -76,7 +76,7 @@
 * [Microservices](#microservices)
 * [Mockito](#mockito)
 * [Model Mapper](#model-mapper)
-* [Mongo DB](#mongo)
+* [Mongo DB](#mongo-DB)
 * [MySQL Database](#mysql-database)
 * [Neo4J](#neo4j)
 * [Node JS](#node-js)
@@ -1140,7 +1140,7 @@ voyager.enabled=false
 # [Mongo DB](mongo)
 * [Materials](mongo/materials.md)
 * [Notes](mongo/notes.md)
-* [Queries](mongo/queries.md)
+* [Queries](mongo/queries.js)
 ## Examples
 * [Mongo DB Core Java](mongo/mongo-db-core-java)
 * [Mongo DB Spring Boot2 Data XML](mongo/mongo-db-spring-boot2-data-xml)
@@ -1248,9 +1248,10 @@ voyager.enabled=false
 * [Materials](react-js/materials.md)
 ------
 # [Redis](redis)
-* [Commands](redis/commands.md)
 * [Materials](redis/materials.md)
+* [Commands](redis/commands.md)
 ## Examples
+* [Download Redis for windows](https://github.com/MicrosoftArchive/redis/releases)
 * [Redis Core Java](redis/redis-core-java)
 ------
 # [REST API](rest-api)
@@ -1346,6 +1347,32 @@ voyager.enabled=false
 ## Spring Data Mongo
 * [Spring Data Mongo](spring/data-mongo)
 * [Materials](spring/data-mongo/materials.md)
+## Examples
+## [Spring Data Mongo](spring/data-mongo/spring-data-mongo)
+* Add following dependency in [pom.xml](spring/data-mongo/spring-data-mongo/pom.xml)
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-mongodb</artifactId>
+</dependency>
+```
+* Add below properties in [application.yml](spring/data-mongo/spring-data-mongo/src/main/resources/application.yml)
+```
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: database1
+```
+* Write repository interface extends `org.springframework.data.mongodb.repository.MongoRepository`. Refer [StudentRepository](spring/data-mongo/spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
+* [StudentService](spring/data-mongo/spring-data-mongo/src/main/java/com/app/service/StudentService.java)
+* APIs - refer [StudentController](spring/data-mongo/spring-data-mongo/src/main/java/com/app/controller/StudentController.java)
+	* /save-student
+	* /student-by-id/{id}
+	* /all-students
+	* /delete-student-by-id/{id}
+* [Postman collection](spring/data-mongo/spring-data-mongo/files/spring-data-mongo.postman_collection.json)
 ------
 ## Spring Data Rest
 * [Data Rest](spring/data-rest)

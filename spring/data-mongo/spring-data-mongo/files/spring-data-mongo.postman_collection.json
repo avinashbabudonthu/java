@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "a829099a-13a8-4b07-a0f5-7250f7ab85d5",
+		"name": "spring-data-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/save-student",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var student1 = {\r",
+							"    \"name\": \"Ana\",\r",
+							"    \"email\": \"ana@gmail.com\",\r",
+							"    \"subject\": [\r",
+							"        {\r",
+							"            \"name\": \"spring data mongo\",\r",
+							"            \"grade\": 4.0\r",
+							"        }\r",
+							"    ],\r",
+							"    \"department\": {\r",
+							"        \"name\": \"CSE\",\r",
+							"        \"location\": \"Hyderabad\"\r",
+							"    }\r",
+							"}\r",
+							"\r",
+							"pm.environment.set(\"requestBody1\", JSON.stringify(student1));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{requestBody1}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/v1/save-student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"save-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/student-by-id/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/student-by-id/63f361981bed9a45b805336d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"student-by-id",
+						"63f361981bed9a45b805336d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/all-students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete-student-by-id/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/delete-student-by-id/63f357adc3d92d04b1f15548",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"delete-student-by-id",
+						"63f357adc3d92d04b1f15548"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
