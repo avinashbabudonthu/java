@@ -1,5 +1,5 @@
 # create and use database
-use database2
+use database1
 
 # check database in use
 db
@@ -9,7 +9,8 @@ show dbs
 
 # create collection named - emp
 db.createCollection("collectionName")
-db.createCollection("emp")
+db.createCollection("emp")
+db.createCollection("company")
 
 # show all collections
 show collections
