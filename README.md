@@ -1252,7 +1252,6 @@ voyager.enabled=false
 * [Commands](redis/commands.md)
 ## Examples
 * [Download Redis for windows](https://github.com/MicrosoftArchive/redis/releases)
-* [Redis Core Java](redis/redis-core-java)
 ------
 # [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)
