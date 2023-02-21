@@ -1377,7 +1377,7 @@ spring:
 	* /students-by-name-or-email
 
 ## Print mongo queries in logging
-* Add below property in application.properties/yaml in spring boot project
+* Add below property in application.properties/yaml in spring boot project. Refer - [application.yml](spring/data-mongo/spring-data-mongo/src/main/resources/application.yml)
 ```
 logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
 ```
