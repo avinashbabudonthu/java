@@ -1,4 +1,4 @@
-# Installation in windows
+# Windows Installation
 * Go to https://www.terraform.io/
 * Click Download button
 * Download terraform as per OS and version
@@ -11,3 +11,6 @@
 ```
 terraform -version
 ```
+------
+# Notes
+* Terraform HCL by HCL - HashiCorp Configuration Language

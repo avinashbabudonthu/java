@@ -27,3 +27,7 @@ $ terraform show
 ```
 $ cat terraform.tfstate
 ```
+* Initialize
+```
+terraform init
+```

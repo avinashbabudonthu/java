@@ -125,6 +125,312 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/students-by-name/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/students-by-name/Ana",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"students-by-name",
+						"Ana"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/students-by-name/Ana",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"students-by-name",
+								"Ana"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 Feb 2023 05:41:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f361981bed9a45b805336d\",\n        \"name\": \"Ana\",\n        \"email\": \"ana@gmail.com\",\n        \"subject\": [\n            {\n                \"name\": \"spring data mongo\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"CSE\",\n            \"location\": \"Hyderabad\"\n        }\n    },\n    {\n        \"id\": \"63f457f89d23a7a6c5a3a47c\",\n        \"name\": \"Ana\",\n        \"email\": \"ana2@gmail.com\",\n        \"subject\": null,\n        \"department\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/students-by-name-email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/students-by-name-email?name=Ana&email=ana@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"students-by-name-email"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ana"
+						},
+						{
+							"key": "email",
+							"value": "ana@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/students-by-name-email?name=Ana&email=ana@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"students-by-name-email"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Ana"
+								},
+								{
+									"key": "email",
+									"value": "ana@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 Feb 2023 05:57:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f361981bed9a45b805336d\",\n        \"name\": \"Ana\",\n        \"email\": \"ana@gmail.com\",\n        \"subject\": [\n            {\n                \"name\": \"spring data mongo\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"CSE\",\n            \"location\": \"Hyderabad\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/students-by-name-or-email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/students-by-name-or-email?name=Ana&email=ana2@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"students-by-name-or-email"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ana"
+						},
+						{
+							"key": "email",
+							"value": "ana2@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/students-by-name-email?name=Ana&email=ana@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"students-by-name-email"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Ana"
+								},
+								{
+									"key": "email",
+									"value": "ana@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 Feb 2023 05:57:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f361981bed9a45b805336d\",\n        \"name\": \"Ana\",\n        \"email\": \"ana@gmail.com\",\n        \"subject\": [\n            {\n                \"name\": \"spring data mongo\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"CSE\",\n            \"location\": \"Hyderabad\"\n        }\n    }\n]"
+				},
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/students-by-name-or-email?name=Ana&email=ana2@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"students-by-name-or-email"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Ana"
+								},
+								{
+									"key": "email",
+									"value": "ana2@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 Feb 2023 06:00:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f361981bed9a45b805336d\",\n        \"name\": \"Ana\",\n        \"email\": \"ana@gmail.com\",\n        \"subject\": [\n            {\n                \"name\": \"spring data mongo\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"CSE\",\n            \"location\": \"Hyderabad\"\n        }\n    },\n    {\n        \"id\": \"63f457f89d23a7a6c5a3a47c\",\n        \"name\": \"Ana\",\n        \"email\": \"ana2@gmail.com\",\n        \"subject\": null,\n        \"department\": null\n    }\n]"
+				}
+			]
 		}
 	]
 }

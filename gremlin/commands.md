@@ -168,3 +168,17 @@ g.V().has("name", TextP.containing("ji"))
 g.V().has("label", "property", TextP.containing("value"))
 g.V().has("person", "name", TextP.containing("ji"))
 ```
+* Query by label
+```
+g.V().hasLabel("labelValue")
+```
+* Row number or limit the number of nodes
+```
+g.V().limit(10)
+
+g.V().hasLabel("labelValue").limit(10)
+```
+* Remove duplicates
+```
+g.V().hasLabel("labelValue").dedup()
+```

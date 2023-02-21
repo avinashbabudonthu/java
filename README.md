@@ -1271,9 +1271,10 @@ voyager.enabled=false
 * https://www.keycdn.com/support/popular-curl-examples
 
 ## Rest Template
+* [Rest Template](/rest-api-clients/rest-template.md)
 * [Rest Template object creation with read and connection time out](/rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
 * [Create RestTemplate with SSL Verification Turnoff](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
-* [Rest Template](/rest-api-clients/rest-template.md)
+* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
 
 ## WebClient
 * Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
@@ -1547,9 +1548,11 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Commands](teradata/commands.sql)
 ------
 # [Terraform](terraform)
-* [Commands](terraform/commands.md)
 * [Materials](terraform/materials.md)
 * [Notes](terraform/notes.md)
+* [Commands](terraform/commands.md)
+## Examples
+* [Windows Installation](terraform/notes.md#Windows-Installation)
 ------
 # [Testing](testing)
 * [Materials](materials.md)
