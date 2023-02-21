@@ -22,7 +22,19 @@ db.student.insert({"name": "Jim", "mail": "jim@gmail.com",
     "department": {"name": "CSE", "lcoation":"India"}})
 db.student.insert({"name": "Jane", "mail": "jane@gmail.com", 
     "subject": [{"name": "Java", "grade": 4.0}, {"name": "Mongo", "marks":4.0}]})
-db.student.insert({"name": "Ana", "mail": "ana2@gmail.com"})
+db.student.insert({"name": "Ana", "mail": "ana2@gmail.com"})
+
+# update multiple documents
+db.student.update({"name": "John"}, 
+    {$set: {"name": "John1", "mail": "john@gmail.com"}},
+    {multi: true}
+    )
+
+# remove all documents
+db.student.remove({})
+
+# remove document by name
+db.student.remove({"name": "Jack"})
 
 # count documents in student collection
 db.student.count()
@@ -49,15 +61,3 @@ db.student.find({$or: [{"name": "Jane"}, {"name": "Jack"}]})
 
 # update one document
 db.student.update({"name": "Jack"}, {$set: {"mail": "jack@gmail.com"}})
-
-# update multiple documents
-db.student.update({"name": "John"}, 
-    {$set: {"name": "John1", "mail": "john@gmail.com"}},
-    {multi: true}
-    )
-
-# remove all documents
-db.student.remove({})
-
-# remove document by name
-db.student.remove({"name": "Jack"})
