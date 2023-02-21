@@ -3,7 +3,6 @@ package com.app.controller;
 import com.app.entity.Student;
 import com.app.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,6 +35,21 @@ public class StudentController {
     @DeleteMapping(value = "/delete-student-by-id/{id}", produces = TEXT_PLAIN_VALUE)
     public String deleteStudentById(@PathVariable("id")String id){
         return studentService.deleteStudentById(id);
+    }
+
+    @GetMapping(value = "/students-by-name/{name}", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByName(@PathVariable("name") String name){
+        return studentService.findStudentsByName(name);
+    }
+
+    @GetMapping(value = "/students-by-name-email", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByNameAndEmail(@RequestParam("name") String name,@RequestParam("email") String email){
+        return studentService.findStudentsByNameAndEmail(name, email);
+    }
+
+    @GetMapping(value = "/students-by-name-or-email", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByNameOrEmail(@RequestParam("name") String name,@RequestParam("email") String email){
+        return studentService.findStudentsByNameOrEmail(name, email);
     }
 
 }

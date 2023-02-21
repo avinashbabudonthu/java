@@ -1366,12 +1366,28 @@ spring:
 ```
 * Write repository interface extends `org.springframework.data.mongodb.repository.MongoRepository`. Refer [StudentRepository](spring/data-mongo/spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
 * [StudentService](spring/data-mongo/spring-data-mongo/src/main/java/com/app/service/StudentService.java)
+* [Postman collection](spring/data-mongo/spring-data-mongo/files/spring-data-mongo.postman_collection.json)
 * APIs - refer [StudentController](spring/data-mongo/spring-data-mongo/src/main/java/com/app/controller/StudentController.java)
 	* /save-student
 	* /student-by-id/{id}
 	* /all-students
 	* /delete-student-by-id/{id}
-* [Postman collection](spring/data-mongo/spring-data-mongo/files/spring-data-mongo.postman_collection.json)
+	* /students-by-name/{name}
+	* /students-by-name-email
+	* /students-by-name-or-email
+
+## Print mongo queries in logging
+* Add below property in application.properties/yaml in spring boot project
+```
+logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+```
+* Output
+```
+o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class com.app.entity.Student in collection: student
+
+o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } fields: Document{{}} for class: class com.app.entity.Student in collection: student
+```
+* Reference - https://www.baeldung.com/spring-boot-mongodb-logging
 ------
 ## Spring Data Rest
 * [Data Rest](spring/data-rest)

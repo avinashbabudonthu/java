@@ -1,15 +1,15 @@
-# create and use database
-use database1
-
-# check database in use
-db
-
 # show all databases
-show dbs
+show dbs
+
+# create and use database
+use database1
+
+# check database in use
+db
 
 # create collection named - emp
 db.createCollection("collectionName")
-db.createCollection("emp")
+db.createCollection("emp")
 db.createCollection("company")
 
 # show all collections
@@ -21,7 +21,8 @@ db.student.insert({"name": "John"})
 db.student.insert({"name": "Jim", "mail": "jim@gmail.com", 
     "department": {"name": "CSE", "lcoation":"India"}})
 db.student.insert({"name": "Jane", "mail": "jane@gmail.com", 
-    "subject": [{"name": "Java", "grade": 4.0}, {"name": "Mongo", "marks":4.0}]})
+    "subject": [{"name": "Java", "grade": 4.0}, {"name": "Mongo", "marks":4.0}]})
+db.student.insert({"name": "Ana", "mail": "ana2@gmail.com"})
 
 # count documents in student collection
 db.student.count()

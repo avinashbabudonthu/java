@@ -29,4 +29,17 @@ public class StudentService {
         studentRepository.deleteById(id);
         return "student deleted";
     }
+
+    public List<Student> findStudentsByName(String name){
+        return studentRepository.findByName(name);
+    }
+
+    public List<Student> findStudentsByNameAndEmail(String name, String email){
+        return studentRepository.findByNameAndEmail(name, email);
+    }
+
+    public List<Student> findStudentsByNameOrEmail(String name, String email){
+        return studentRepository.findByNameOrEmail(name, email);
+    }
+
 }
