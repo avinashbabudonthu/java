@@ -1,9 +1,6 @@
 package com.app.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -26,7 +23,8 @@ public class Student {
     @Field(value = "mail")
     private String email;
 
-    private List<Subject> subject;
+    @Field(value = "subjects")
+    private List<Subject> subjects;
 
     private Department department;
 

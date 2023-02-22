@@ -1,6 +1,7 @@
 package com.app.controller;
 
 import com.app.entity.Student;
+import com.app.model.PaginatedResponse;
 import com.app.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,6 +38,11 @@ public class StudentController {
         return studentService.deleteStudentById(id);
     }
 
+    @DeleteMapping(value = "/delete-all-students", produces = TEXT_PLAIN_VALUE)
+    public String deleteAllStudents(){
+        return studentService.deleteAllStudents();
+    }
+
     @GetMapping(value = "/students-by-name/{name}", produces = APPLICATION_JSON_VALUE)
     public List<Student> findStudentsByName(@PathVariable("name") String name){
         return studentService.findStudentsByName(name);
@@ -50,6 +56,32 @@ public class StudentController {
     @GetMapping(value = "/students-by-name-or-email", produces = APPLICATION_JSON_VALUE)
     public List<Student> findStudentsByNameOrEmail(@RequestParam("name") String name,@RequestParam("email") String email){
         return studentService.findStudentsByNameOrEmail(name, email);
+    }
+
+    @GetMapping(value = "/all-students-pagination", produces = APPLICATION_JSON_VALUE)
+    public PaginatedResponse<Student> findStudentsByPagination(@RequestParam("pageNumber") Integer pageNumber,
+                                                               @RequestParam("pageSize")Integer pageSize){
+        return studentService.findStudentsByPagination(pageNumber, pageSize);
+    }
+
+    @GetMapping(value = "/all-students-with-sorting", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findAllStudentsWithSorting(@RequestParam("sortProperty") String sortProperty, @RequestParam("sortOrder") String sortOrder){
+        return studentService.findAllStudentsWithSorting(sortProperty, sortOrder);
+    }
+
+    @GetMapping(value = "/all-students-by-department-name", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByDepartmentName(@RequestParam("departmentName") String departmentName){
+        return studentService.findStudentsByDepartmentName(departmentName);
+    }
+
+    @GetMapping(value = "/all-students-by-email-like", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByEmailLike(@RequestParam("email") String email){
+        return studentService.findStudentsByEmailLike(email);
+    }
+
+    @GetMapping(value = "/all-students-name-starting-with", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByNameStartsWith(@RequestParam("name")String name){
+        return studentService.findStudentsByNameStartsWith(name);
     }
 
 }

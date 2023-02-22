@@ -1144,6 +1144,9 @@ voyager.enabled=false
 ## Examples
 * [Mongo DB Core Java](mongo/mongo-db-core-java)
 * [Mongo DB Spring Boot2 Data XML](mongo/mongo-db-spring-boot2-data-xml)
+* Pagination
+	* Refer limit, skip in [Queries](mongo/queries.js)
+	* Reference - https://www.educba.com/mongodb-pagination/
 ------
 # [MySQL Database](mysql)
 ## Examples
@@ -1366,6 +1369,7 @@ spring:
       database: database1
 ```
 * Write repository interface extends `org.springframework.data.mongodb.repository.MongoRepository`. Refer [StudentRepository](spring/data-mongo/spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
+* [StudentRepository](spring/data-mongo/spring-data-mongo/src/main/java/com/app/repository/StudentRepository.java)
 * [StudentService](spring/data-mongo/spring-data-mongo/src/main/java/com/app/service/StudentService.java)
 * [Postman collection](spring/data-mongo/spring-data-mongo/files/spring-data-mongo.postman_collection.json)
 * APIs - refer [StudentController](spring/data-mongo/spring-data-mongo/src/main/java/com/app/controller/StudentController.java)
@@ -1376,7 +1380,11 @@ spring:
 	* /students-by-name/{name}
 	* /students-by-name-email
 	* /students-by-name-or-email
-
+	* /all-students-pagination
+	* /all-students-with-sorting
+	* /all-students-by-department-name
+	* /all-students-by-email-like
+	* /all-students-name-starting-with
 ## Print mongo queries in logging
 * Add below property in application.properties/yaml in spring boot project. Refer - [application.yml](spring/data-mongo/spring-data-mongo/src/main/resources/application.yml)
 ```

@@ -431,6 +431,416 @@
 					"body": "[\n    {\n        \"id\": \"63f361981bed9a45b805336d\",\n        \"name\": \"Ana\",\n        \"email\": \"ana@gmail.com\",\n        \"subject\": [\n            {\n                \"name\": \"spring data mongo\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"CSE\",\n            \"location\": \"Hyderabad\"\n        }\n    },\n    {\n        \"id\": \"63f457f89d23a7a6c5a3a47c\",\n        \"name\": \"Ana\",\n        \"email\": \"ana2@gmail.com\",\n        \"subject\": null,\n        \"department\": null\n    }\n]"
 				}
 			]
+		},
+		{
+			"name": "/delete-all-students",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/delete-all-students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"delete-all-students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/all-students-pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students-pagination?pageNumber=1&pageSize=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students-pagination"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/all-students-pagination?pageNumber=0&pageSize=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"all-students-pagination"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 03:36:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"pageNumber\": 0,\n    \"pageSize\": 2,\n    \"list\": [\n        {\n            \"id\": \"63f586e2c380b1d8872fc7c7\",\n            \"name\": \"Jack\",\n            \"email\": null,\n            \"subject\": null,\n            \"department\": null\n        },\n        {\n            \"id\": \"63f586e2c380b1d8872fc7c8\",\n            \"name\": \"John\",\n            \"email\": null,\n            \"subject\": null,\n            \"department\": null\n        }\n    ],\n    \"totalSize\": 5,\n    \"resultSize\": 2\n}"
+				},
+				{
+					"name": "example-2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/all-students-pagination?pageNumber=1&pageSize=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"all-students-pagination"
+							],
+							"query": [
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 03:36:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"pageNumber\": 1,\n    \"pageSize\": 2,\n    \"list\": [\n        {\n            \"id\": \"63f586e2c380b1d8872fc7c9\",\n            \"name\": \"Jim\",\n            \"email\": \"jim@gmail.com\",\n            \"subject\": null,\n            \"department\": {\n                \"name\": \"CSE\",\n                \"location\": \"India\"\n            }\n        },\n        {\n            \"id\": \"63f586e2c380b1d8872fc7ca\",\n            \"name\": \"Jane\",\n            \"email\": \"jane@gmail.com\",\n            \"subject\": [\n                {\n                    \"name\": \"Java\",\n                    \"grade\": 4,\n                    \"marks\": null\n                },\n                {\n                    \"name\": \"Mongo\",\n                    \"grade\": null,\n                    \"marks\": 4\n                }\n            ],\n            \"department\": null\n        }\n    ],\n    \"totalSize\": 5,\n    \"resultSize\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "/all-students-with-sorting",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"ascSortOrder\", \"ASC\");\r",
+							"pm.environment.set(\"descSortOrder\", \"DESC\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students-with-sorting?sortProperty=name&sortOrder={{descSortOrder}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students-with-sorting"
+					],
+					"query": [
+						{
+							"key": "sortProperty",
+							"value": "name"
+						},
+						{
+							"key": "sortOrder",
+							"value": "{{descSortOrder}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/all-students-by-department-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students-by-department-name?departmentName=Dept2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students-by-department-name"
+					],
+					"query": [
+						{
+							"key": "departmentName",
+							"value": "Dept2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/all-students-by-department-name?departmentName=Dept1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"all-students-by-department-name"
+							],
+							"query": [
+								{
+									"key": "departmentName",
+									"value": "Dept1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 06:39:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f5b78bc380b1d8872fc7ec\",\n        \"name\": \"Jack\",\n        \"email\": \"jack@gmail.com\",\n        \"subjects\": [\n            {\n                \"name\": \"Java\",\n                \"grade\": 4,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"Dept1\",\n            \"location\": \"Hyerabad\"\n        }\n    }\n]"
+				},
+				{
+					"name": "example-2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/all-students-by-department-name?departmentName=Dept2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"all-students-by-department-name"
+							],
+							"query": [
+								{
+									"key": "departmentName",
+									"value": "Dept2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 06:39:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"63f5b78bc380b1d8872fc7ed\",\n        \"name\": \"John\",\n        \"email\": \"john@gmail.com\",\n        \"subjects\": [\n            {\n                \"name\": \"MongoDB\",\n                \"grade\": 3.9,\n                \"marks\": null\n            }\n        ],\n        \"department\": {\n            \"name\": \"Dept2\",\n            \"location\": \"Hyerabad\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/all-students-by-email-like",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"gmail\", \"gmail\");\r",
+							"pm.environment.set(\"yahoo\", \"yahoo\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students-by-email-like?email={{yahoo}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students-by-email-like"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "{{yahoo}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/all-students-name-starting-with",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/all-students-name-starting-with?name=Jimmy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"all-students-name-starting-with"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Jimmy"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
