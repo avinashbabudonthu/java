@@ -17,6 +17,40 @@ g = traversal().withEmbedded(graph)
 ```
 g.V()
 ```
+* Query by label
+```
+g.V().hasLabel("labelValue")
+```
+* Row number or limit the number of nodes
+```
+g.V().limit(10)
+
+g.V().hasLabel("labelValue").limit(10)
+```
+* Remove duplicates
+```
+g.V().hasLabel("labelValue").dedup()
+```
+* Drop vertices with label
+```
+g.V().hasLabel("labelValue").drop()
+```
+* Drop vertices with id
+```
+g.V(id).drop()
+```
+* All edges
+```
+g.E()
+```
+* Query edges with label
+```
+g.E().hasLabel("labelName")
+```
+* Drop edges with label
+```
+g.E().hasLabel("labelName").drop()
+```
 * Vertex with id 1
 ```
 g.V(1)
@@ -167,18 +201,4 @@ g.V().has("name", TextP.containing("ji"))
 
 g.V().has("label", "property", TextP.containing("value"))
 g.V().has("person", "name", TextP.containing("ji"))
-```
-* Query by label
-```
-g.V().hasLabel("labelValue")
-```
-* Row number or limit the number of nodes
-```
-g.V().limit(10)
-
-g.V().hasLabel("labelValue").limit(10)
-```
-* Remove duplicates
-```
-g.V().hasLabel("labelValue").dedup()
 ```
