@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 @SuppressWarnings("all")
 @Slf4j
@@ -154,6 +155,47 @@ public class UtilDate {
 	public void timeStampToUtilDate() {
 		Date date1 = new Date(1598443483219L);
 		log.info("date1={}", date1);
+	}
+
+	@Test
+	public void getMilliSeconds(){
+		Date date = new Date();
+		long millis = date.getTime();
+		log.info("millis={}", millis); // millis=1677156320679
+	}
+
+	@Test
+	public void dateFromMilliSeconds(){
+		long millis = 1677156320679L;
+		Date date = new Date(millis);
+		log.info("date={}", date);
+	}
+
+	@Test
+	public void addTwoDates(){
+		Date date1 = new Date();
+		Date date2 = new Date();
+		log.info("date1={}, date2={}", date1, date2);
+
+		long date1Millis = date1.getTime();
+		long date2Millis = date2.getTime();
+		long addedMillis = date1Millis + date2Millis;
+		Date resultDate = new Date(addedMillis);
+		log.info("resultDate={}", resultDate);
+	}
+
+	@Test
+	public void dateDiff(){
+		Date date = new Date();
+		long dateMillis = date.getTime();
+		log.info("date={}", date);
+
+		Date sixHoursNextDate = new Date(dateMillis + 21_600_000L);
+		long sixHouseMillis = sixHoursNextDate.getTime();
+		log.info("sixHoursNextDate={}", sixHoursNextDate);
+
+		long differenceInHours = TimeUnit.HOURS.convert((sixHouseMillis-dateMillis), TimeUnit.MILLISECONDS);
+		log.info("differenceInHours={}", differenceInHours);
 	}
 
 }

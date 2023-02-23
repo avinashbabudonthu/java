@@ -202,3 +202,11 @@ g.V().has("name", TextP.containing("ji"))
 g.V().has("label", "property", TextP.containing("value"))
 g.V().has("person", "name", TextP.containing("ji"))
 ```
+* Find all edges going out from node
+```
+g.V().hasLabel("labelName").outE().label().dedup()
+```
+* Find all edges going in to node
+```
+g.V().hasLabel("labelName").inE().label().dedup()
+```

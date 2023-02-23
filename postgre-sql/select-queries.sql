@@ -93,3 +93,6 @@ select * from pg_class where relispartition is FALSE;
 
 -- partitions of table - tab
 SELECT * FROM PG_CLASS WHERE RELNAME LIKE 'tab%';
+
+-- rownum or limit number of rows
+SELECT * FROM EMP LIMIT 10;
