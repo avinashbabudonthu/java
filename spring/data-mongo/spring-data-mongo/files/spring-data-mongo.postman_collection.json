@@ -841,6 +841,28 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/students-by-name-native-query/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/students-by-name-native-query/Ami",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"students-by-name-native-query",
+						"Ami"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

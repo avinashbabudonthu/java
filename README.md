@@ -1385,6 +1385,7 @@ spring:
 	* /all-students-by-department-name
 	* /all-students-by-email-like
 	* /all-students-name-starting-with
+	* /students-by-name-native-query/{name}
 ## Print mongo queries in logging
 * Add below property in application.properties/yaml in spring boot project. Refer - [application.yml](spring/data-mongo/spring-data-mongo/src/main/resources/application.yml)
 ```
@@ -1397,6 +1398,12 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Documen
 o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } fields: Document{{}} for class: class com.app.entity.Student in collection: student
 ```
 * Reference - https://www.baeldung.com/spring-boot-mongodb-logging
+
+## Relatioship between collections
+* use `org.springframework.data.mongodb.core.mapping.DBRef` annotation
+* Refer
+	* `address` property in [Student class](spring/data-mongo/spring-data-mongo/src/main/java/com/app/entity/Student.java)
+	* [Address class](spring/data-mongo/spring-data-mongo/src/main/java/com/app/entity/Address.java)
 ------
 ## Spring Data Rest
 * [Data Rest](spring/data-rest)

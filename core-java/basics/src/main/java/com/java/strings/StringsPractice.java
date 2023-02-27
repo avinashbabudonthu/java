@@ -347,6 +347,14 @@ public class StringsPractice {
 
         log.info("-- split by word --");
         Arrays.stream(split2).filter(str -> str.matches("\\w+")).forEach(str -> log.info("--{}--", str));
+
+        // split empty String
+        String str = "";
+        String[] str2 = str.split(",");
+        System.out.println(Arrays.toString(str2));
+        for(String str3 : str2){
+            System.out.println(str3);
+        }
     }
 
     /**

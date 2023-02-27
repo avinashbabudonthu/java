@@ -48,6 +48,11 @@ public class StudentController {
         return studentService.findStudentsByName(name);
     }
 
+    @GetMapping(value = "/students-by-name-native-query/{name}", produces = APPLICATION_JSON_VALUE)
+    public List<Student> findStudentsByNameByNativeQuery(@PathVariable("name") String name){
+        return studentService.findStudentsByNameByNativeQuery(name);
+    }
+
     @GetMapping(value = "/students-by-name-email", produces = APPLICATION_JSON_VALUE)
     public List<Student> findStudentsByNameAndEmail(@RequestParam("name") String name,@RequestParam("email") String email){
         return studentService.findStudentsByNameAndEmail(name, email);

@@ -2,6 +2,7 @@ package com.app.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -27,5 +28,10 @@ public class Student {
     private List<Subject> subjects;
 
     private Department department;
+
+    // Reference to other collection
+//    @DBRef
+    @DBRef(lazy = true) // to enable lazy loading
+    private Address address;
 
 }

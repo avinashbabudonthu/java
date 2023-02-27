@@ -10,7 +10,8 @@ db
 // create collection named - emp
 db.createCollection("collectionName")
 db.createCollection("emp")
-db.createCollection("company")
+db.createCollection("company")
+db.createCollection("address")
 
 // show all collections
 show collections
@@ -52,10 +53,10 @@ db.student.insertMany([
 
     {"name": "Jason", "mail": "jason@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}},
 
-    {"name": "Jimmy", "mail": "jimmy@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}},
-    
-    {"name": "Jimmy2", "mail": "jimmy2@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}},
-    
+    {"name": "Jimmy", "mail": "jimmy@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}},
+    
+    {"name": "Jimmy2", "mail": "jimmy2@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}},
+    
     {"name": "Jimmy3", "mail": "jimmy3@yahoo.com", "subjects": [{"name": "Spring Data Mongo", "grade": 3.5}], "department": {"name": "Dept11", "location": "Hyerabad"}}
 
 ])
@@ -84,7 +85,7 @@ db.student.find({}).pretty()
 db.student.find({"_id": ObjectId("63f3513cc3d92d04b1f15533")})
 
 // find document by name
-db.student.find({"name": "Ana"})
+db.student.find({"name": "Ami"})
 
 // find first document
 db.student.findOne()
@@ -162,7 +163,7 @@ db.student.aggregate(
 
 // like query - no need of double quotes
 db.student.find({"mail": /gmail/})
-db.student.find({"mail": /yahoo/})
-
-// name starts with Jimmy
+db.student.find({"mail": /yahoo/})
+
+// name starts with Jimmy
 db.student.find({"name": /^Jimmy/})

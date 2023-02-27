@@ -41,6 +41,10 @@ public class StudentService {
         return studentRepository.findByName(name);
     }
 
+    public List<Student> findStudentsByNameByNativeQuery(String name) {
+        return studentRepository.findByNameByNativeQuery(name);
+    }
+
     public List<Student> findStudentsByNameAndEmail(String name, String email) {
         return studentRepository.findByNameAndEmail(name, email);
     }
