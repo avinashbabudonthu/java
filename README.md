@@ -1409,8 +1409,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Data Rest](spring/data-rest)
 * [Materials](spring/data-rest/materials.md)
 ------
-## Spring Integration
-* [Spring Integartion](spring/integration)
+## [Spring Integartion](spring/integration)
 * [Materials](spring/integration/materials.md)
 * [Notes](spring/integration/notes.md)
 ------
