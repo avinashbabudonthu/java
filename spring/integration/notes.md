@@ -90,7 +90,7 @@
 	* Service is triggered by the arrival of message into channel
 * Output of service sent to output channel\
 ![picture](imgs/service-activator-result.jpg)
-* Icon for service activator
+* Icon for service activator\
 ![picture](imgs/service-activator-icon.jpg)
 * Service activator configuration must specify the message channel that is polls for messages and the calss of the service bean
 	* If service produces results, the output is sent to an output channel
@@ -105,5 +105,5 @@
 * 2 types of gateways
 	* Synchronous gateways - cause application to block while SI system process the request
 	* Asynchronous gateways - allows application to continue and retrieve results from the SI process later
-* Icon for Gateway
+* Icon for Gateway\
 ![picture](imgs/gateway-icon.jpg)
