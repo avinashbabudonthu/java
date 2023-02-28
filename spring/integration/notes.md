@@ -83,3 +83,27 @@
 ![picture](imgs/content-router.jpg)
 * Recipient list Router\
 ![picture](imgs/recipient-list-router.jpg)
+------
+# Service activator
+* Message endpoing connect spring object or bean to message channel
+	* Object or bean as service
+	* Service is triggered by the arrival of message into channel
+* Output of service sent to output channel\
+![picture](imgs/service-activator-result.jpg)
+* Icon for service activator
+![picture](imgs/service-activator-icon.jpg)
+* Service activator configuration must specify the message channel that is polls for messages and the calss of the service bean
+	* If service produces results, the output is sent to an output channel
+* Argument to service method could be either Message or an orbitrary type
+* When service method has not arguments, that service activator called as `event-style Service Activator`
+------
+# Gateway
+* Spring integration gateways serves as facade to Spring integration system
+	* It hides SI API or any messaging API from the application
+	* Gateway is defined by an interface
+	* SI implements gateway interface under the covers
+* 2 types of gateways
+	* Synchronous gateways - cause application to block while SI system process the request
+	* Asynchronous gateways - allows application to continue and retrieve results from the SI process later
+* Icon for Gateway
+![picture](imgs/gateway-icon.jpg)
