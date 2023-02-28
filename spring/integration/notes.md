@@ -21,6 +21,9 @@
 	* remove some messages from channel based on header, content etc
 * Transformer
 	* convert message content or structure
+* Router
+	* Content Routers - To one of the channels based on content
+	* Recipient list Routers - To all channels
 * Enricher
 	* Add content to message header or payload
 * Service activator
@@ -62,3 +65,21 @@
 	* Outbound - Get messages from SI channel to outside applications, databases etc
 * Adapters are represented by following icons in EIP diagrams\
 ![picture](imgs/inbound-outbound.jpg)
+* Comes with number of built in adapters
+	* Stream adapters (like standard Input and Output stream adapters)
+	* File Adapters
+	* JMS Adapters
+	* JDBC & JPA Adapters
+	* FTP and Secure FTP Adapters
+	* Feed (RSS, Atom etc) Adapters
+	* Mail Adapters
+	* MongoDB Adapters
+	* UDP Adapters
+	* Twitter Adapters
+* Adapters may (usually does) require the addition of another SI module
+------
+# Router
+* Content Router\
+![picture](imgs/content-router.jpg)
+* Recipient list Router\
+![picture](imgs/recipient-list-router.jpg)
