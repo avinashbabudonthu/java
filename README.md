@@ -145,8 +145,11 @@
 	* Method - readExcel
 ------
 # [Architect](architect)
-## My Materials
 * [Notes](architect/notes.md)
+* [Naming conventions](architect/notes.md#Naming-conventions)
+* [Non Functional Requirements](architect/notes.md#Non-Functional-Requirements)
+* [Career path](architect/notes.md#Career-path)
+
 
 ## Materials
 * [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
@@ -1569,7 +1572,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Windows Installation](terraform/notes.md#Windows-Installation)
 ------
 # [Testing](testing)
-* [Materials](materials.md)
+* [Materials](testing/materials.md)
 ------
 # [TypeScript](typescript)
 * [Materials](typescript/materials.md)

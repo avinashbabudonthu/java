@@ -15,7 +15,8 @@
 * Solution oriented - Architect
 * Delivery oriented - Manager
 
-# NFR - Non Functional Requirements
+# Non Functional Requirements
+* NFRs
 * Availability
 	* System uptime requirements and SLA. For e.g. 99 or 99.5
 * Maintainability
@@ -40,3 +41,23 @@
 * Usability
 	* UX requirements
 	* Accessibility requirements
+------
+# Career path
+* Software architect
+* Application architect
+* Technical architect
+* Solutions architect
+* Enterprise architect
+
+## Software architect
+* architect has no specific responsibilities that differ from any software developers.  He just has more authority and influence
+
+## Application architect
+* pplication architect has responsibility for an application.  If you work for a software company, this may be a product line.  It might also be some kind of internal software
+* you have a team of software developers that works on some application and then an application architect who works closely with them
+
+## Solutions architect
+* Where an application architect’s purview is (broadly speaking) a codebase, a solution architect generally has less granular responsibilities.  This can certainly span multiple codebases
+
+## Enterprise architect
+* solution architect to see what they do and the granularity at which they focus.  Where solution architects work with an ecosystem of products comprising a “solution,” enterprise architects work with the whole organization
