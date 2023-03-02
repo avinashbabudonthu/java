@@ -17,6 +17,14 @@ g = traversal().withEmbedded(graph)
 ```
 g.V()
 ```
+* Get `id` of node
+```
+g.V().limit(1).id()
+```
+* Get node label
+```
+g.V(id).label()
+```
 * Query by label
 ```
 g.V().hasLabel("labelValue")
@@ -31,13 +39,17 @@ g.V().hasLabel("labelValue").limit(10)
 ```
 g.V().hasLabel("labelValue").dedup()
 ```
-* Drop vertices with label
+* Drop or remove nodes with label
 ```
 g.V().hasLabel("labelValue").drop()
 ```
-* Drop vertices with id
+* Drop or remove node with id
 ```
 g.V(id).drop()
+```
+* Drop or remove property
+```
+g.V().hasLabel("labelName").properties("propertyName").drop()
 ```
 * All edges
 ```
@@ -178,6 +190,10 @@ g.V().group().by(label).by("name")
 ```
 g.V().valueMap()
 ```
+* Get properties of node
+```
+g.V("nodeId").properties()
+```
 * Count vertices
 ```
 g.V().count()
@@ -185,10 +201,6 @@ g.V().count()
 * Get all properties of vertex with id 1
 ```
 g.V(1).valueMap()
-```
-* Print node label
-```
-g.V(id).label()
 ```
 * Vertex with id `outVertextId` from vertex with id `id1` with out edge label `edgeLabel1`
 ```
@@ -209,4 +221,8 @@ g.V().hasLabel("labelName").outE().label().dedup()
 * Find all edges going in to node
 ```
 g.V().hasLabel("labelName").inE().label().dedup()
+```
+* Node without specific property
+```
+g.V().hasLabel("label").hasNot("property").valueMap()
 ```

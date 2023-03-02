@@ -25,6 +25,9 @@
 * [Design Patterns](#design-patterns)
 * [Devops](#devops)
 * [Docker](#docker)
+* [Docker Compose](#docker-compose)
+* [Docker Swarm](#docker-swarm)
+* [Docker Fabric 8 Maven Plugin](#fabric8-maven-plugin)
 * [Dozer](#dozer)
 * [Drools](#drools)
 * [Drop wizard](#drop-wizard)
@@ -645,29 +648,29 @@
 * [Materials](devops/materials.md)
 ------
 # [Docker](docker)
-* [Build Problems with Maven Plugin? Problems running the Maven Build?](docker/build-problems-with-maven-plugin.md)
+* [Materials](docker/materials.md)
+* [Notes](docker/notes.md)
 * [Commands](docker/commands.md)
+* [Installation](docker/installation.md)
+* [MySQL container](docker/my-sql-container.md)
+* [Build Problems with Maven Plugin? Problems running the Maven Build?](docker/build-problems-with-maven-plugin.md)
 * [Cygwin TTY Error](docker/cygwin-tty-error.md)
 * [Docker Files](docker/docker-files.md)
-	* Build docker image for spring boot maven appliation
-	* Build docker image for spring boot gradle appliation
-* [Installation](docker/installation.md)
+* [Build docker image for spring boot maven appliation](docker/docker-files.md#Build-docker-image-for-spring-boot-maven-appliation)
+* [Build docker image for spring boot gradle appliation](docker/docker-files.md#Build-docker-image-for-spring-boot-gradle-appliation)
 * [Using labs.play-with-docker.com](docker/labs-play-with-docker.md)
-* [Materials](docker/materials.md)
-* [MySQL container](docker/my-sql-container.md)
-* [Notes](docker/notes.md)
-
-## [Docker Compose](docker/docker-compose)
+------
+# [Docker Compose](docker/docker-compose)
 * [Commands](docker/docker-compose/docker-compose-commands.md)
 * [Files](docker/docker-compose/docker-compose-files.md)
 	* Run 2 mysql containers and connect to docker network
 * [Notes](docker/docker-compose/docker-compose-notes.md)
-
-## [Docker Swarm](docker/docker-swarm)
+------
+# [Docker Swarm](docker/docker-swarm)
 * [Commands](docker/docker-swarm/docker-swarm-commands.md)
 * [Notes](docker/docker-swarm/docker-swarm-notes.md)
-
-## [Fabric 8 Maven Plugin](docker/fabric8-maven-plugin)
+------
+# [Fabric 8 Maven Plugin](docker/fabric8-maven-plugin)
 * [Plugin](docker/fabric8-maven-plugin/plugin.txt)
 * [Settings](docker/fabric8-maven-plugin/settings.xml)
 ------
@@ -1573,6 +1576,8 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 ------
 # [Testing](testing)
 * [Materials](testing/materials.md)
+* [Notes](testing/notes.md)
+* [Testing Methodologies](testing/notes.md#Testing-Methodologies)
 ------
 # [TypeScript](typescript)
 * [Materials](typescript/materials.md)
