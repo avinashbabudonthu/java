@@ -232,7 +232,7 @@
 	* [Examples](aws/lambda/README.md)
 		* [Installations](aws/lambda/README.md#Installations)
 		* [First Lambda Function](aws/lambda/README.md#First-Lambda-Function)
-* [Npetune Graph DB](aws/neptune)
+* [Neptune Graph DB](aws/neptune)
 	* [Materials](aws/neptune/materials.md)
 	* [Notes](aws/neptune/notes.md)
 * [RDS Relational Databases Service](aws/rds)
