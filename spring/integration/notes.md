@@ -12,7 +12,7 @@
 * Message contains
 	* Header - Contains system information for example timestamp when message is created
 	* Content (payload) - information to be exchanged between applications\
-* ![picture](imgs/message.jpg)
+![picture](imgs/message.jpg)
 
 # Types of Message Endpoints
 * Adapters

@@ -1415,9 +1415,11 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Data Rest](spring/data-rest)
 * [Materials](spring/data-rest/materials.md)
 ------
-## [Spring Integartion](spring/integration)
+## [Spring Integration](spring/integration)
 * [Materials](spring/integration/materials.md)
 * [Notes](spring/integration/notes.md)
+## Examples
+* [File Adapter](spring/integration/file-adapter)
 ------
 ## Spring JDBC
 * [JDBC](spring/jdbc)
