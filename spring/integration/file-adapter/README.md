@@ -6,7 +6,8 @@
 * Add following dependencies in [pom.xml](pom.xml)
     * spring-boot-starter-parent
     * spring-boot-starter-integration
-    * spring-integration-file - For spring provided File adapter lib classes
+    * spring-integration-file
+      * For spring provided File adapter lib classes
     * lombok - optional
 * Spring boot main class - [App.java](src/main/java/com/spring/integration/App.java)
 * Write component class for transform operation - [Transform.java](src/main/java/com/spring/integration/component/Transform.java)
