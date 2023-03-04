@@ -2,7 +2,10 @@
 ------
 # Steps
 * Refer dependencies in [pom.xml](pom.xml)
-* Spring boot main class - [App.java](src/main/java/com/spring/integration/App.java)
+* Spring boot main class - [App.java](src/main/java/com/spring/integration/App.java) and add annotations
+  * org.springframework.boot.autoconfigure.SpringBootApplication
+  * org.springframework.integration.config.EnableIntegration
+  * org.springframework.integration.annotation.IntegrationComponentScan
 * Create constants class - [Constants.java](src/main/java/com/spring/integration/util/Constants.java)
 * Create `requestChannel`, `replyChannel` as beans - [IntegrationConfig.java](src/main/java/com/spring/integration/config/IntegrationConfig.java)
 * Create an interface and annotate with `org.springframework.integration.annotation.MessagingGateway` - [IntegrationGateway.java](src/main/java/com/spring/integration/service/IntegrationGateway.java)
