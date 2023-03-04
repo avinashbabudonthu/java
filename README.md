@@ -1420,6 +1420,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Notes](spring/integration/notes.md)
 ## Examples
 * [File Adapter](spring/integration/file-adapter)
+* [Using Annotations MessagingGateway Gateway ServiceActivator](spring/integration/gateway-annotations)
 ------
 ## Spring JDBC
 * [JDBC](spring/jdbc)
