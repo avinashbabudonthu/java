@@ -14,4 +14,4 @@
 * Access API. Import postman collection - [postman collection](files/gateway-annotations.postman_collection.json)
 ------
 # Flow
-* [AppController.java](src/main/java/com/spring/integration/controller/AppController.java) &rarr; [IntegrationGateway.java](src/main/java/com/spring/integration/service/IntegrationGateway.java) &rarr; [IntegrationService.java](src/main/java/com/spring/integration/service/IntegrationService.java) &rarr; Response
+* [AppController.java](src/main/java/com/spring/integration/controller/AppController.java).sendMessage(..) &rarr; [IntegrationGateway.java](src/main/java/com/spring/integration/service/IntegrationGateway.java)sendMessage(..) &rarr; [IntegrationService.java](src/main/java/com/spring/integration/service/IntegrationService.java).sendMessage(..) &rarr; Response
