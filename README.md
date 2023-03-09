@@ -1407,8 +1407,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 	* `address` property in [Student class](spring/data-mongo/spring-data-mongo/src/main/java/com/app/entity/Student.java)
 	* [Address class](spring/data-mongo/spring-data-mongo/src/main/java/com/app/entity/Address.java)
 ------
-## Spring Data Rest
-* [Data Rest](spring/data-rest)
+## [Spring Data Rest](spring/data-rest)
 * [Materials](spring/data-rest/materials.md)
 ------
 ## [Spring Integration](spring/integration)
@@ -1420,33 +1419,26 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Transformer](spring/integration/transformer)
 * [HeaderEnricher](spring/integration/header-enricher)
 ------
-## Spring JDBC
-* [JDBC](spring/jdbc)
+## [Spring JDBC](spring/jdbc)
 * [Notes](spring/jdbc/notes.md)
 * [Examples](spring/jdbc/spring-jdbc)
 ------
-## Spring JMS
-* [Spring JMS](spring/jms)
+## [Spring JMS](spring/jms)
 * [Materials](spring/jms/materials.md)
 ------
-## Spring MVC
-* [Spring MVC](spring/mvc)
+## [Spring MVC](spring/mvc)
 * [Materials](spring/mvc/materials.md)
 ------
-## Spring ORM
-* [Spring ORM](spring/orm)
+## [Spring ORM](spring/orm)
 * [Materials](spring/orm/materials.md)
 ------
-## Spring Retry
-* [Spring Retry](spring/retry)
+## [Spring Retry](spring/retry)
 * [Materials](spring/retry/materials.md)
 ------
-## Spring Security
-* [Spring Security](spring/security)
+## [Spring Security](spring/security)
 * [Materials](spring/security/materials.md)
 ------
-## Spring Boot
-* [Spring Boot](spring/spring-boot)
+## [Spring Boot](spring/spring-boot)
 * [Materials](spring/spring-boot/materials.md)
 * [Notes](spring/spring-boot/notes.md)
 	* Difference between model object and entity object
@@ -1457,7 +1449,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 	* What is Dispatcher Servlet?
 * [Properties](spring/spring-boot/properties.md)
 
-### Spring Boot 1
+### [Spring Boot 1](spring/spring-boot/spring-boot-1)
 * [Context Path Change](spring/spring-boot/spring-boot-1/context-path-change)
 * [Spring Boot Data Jpa With H2 DB](spring/spring-boot/spring-boot-1/data-jpa-h2)
 * [Hello-World](spring/spring-boot/spring-boot-1/hello-world)
@@ -1468,7 +1460,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Thin Launcher](spring/spring-boot/spring-boot-1/thin-launcher)
 * [Web Integration Test Cases](spring/spring-boot/spring-boot-1/web-integration-test)
 
-### Spring Boot 2
+### [Spring Boot 2](spring/spring-boot/spring-boot-2)
 * [ActiveMQ](spring/spring-boot/spring-boot-2/activemq)
 * [Response Header to Each API](spring/spring-boot/spring-boot-2/api-response-header)
 * [Async Controller](spring/spring-boot/spring-boot-2/async-controller)
@@ -1524,13 +1516,11 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Versioning](spring/spring-boot/spring-boot-2/versioning)
 * [War Deploy To Tomcat 9](spring/spring-boot/spring-boot-2/war-to-tomacat9)
 ------
-## Spring Security
-* [Spring JDBC](spring/spring-jdbc)
-* [Materials](spring/spring-jdbc/materials.md)
+## [Spring Security](spring/security)
+* [Materials](spring/security/materials.md)
 ------
-## Spring Transaction
-* [Spring Transaction](spring/transaction)
-* [Materials](spring/spring-jdbc/materials.md)
+## [Spring Transaction](spring/transaction)
+* [Materials](spring/transaction/materials.md)
 ------
 ## [Spring Webflux](spring/web-flux)
 * [Materials](spring/web-flux/materials.md)
