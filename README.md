@@ -80,6 +80,7 @@
 * [Mockito](#mockito)
 * [Model Mapper](#model-mapper)
 * [Mongo DB](#mongo-DB)
+* [Mybatis](#mybatis)
 * [MySQL Database](#mysql-database)
 * [Neo4J](#neo4j)
 * [Node JS](#node-js)
@@ -1154,6 +1155,10 @@ voyager.enabled=false
 	* Refer limit, skip in [Queries](mongo/queries.js)
 	* Reference - https://www.educba.com/mongodb-pagination/
 ------
+# [Mybatis](mybatis)
+* [Materials](mybatis/materials.md)
+
+------
 # [MySQL Database](mysql)
 ## Examples
 * [MySQL for Data Analytics and BI](mysql/mysql-for-data-analytics-and-bi)
@@ -1434,9 +1439,6 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 ------
 ## [Spring Retry](spring/retry)
 * [Materials](spring/retry/materials.md)
-------
-## [Spring Security](spring/security)
-* [Materials](spring/security/materials.md)
 ------
 ## [Spring Boot](spring/spring-boot)
 * [Materials](spring/spring-boot/materials.md)
