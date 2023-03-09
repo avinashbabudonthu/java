@@ -1314,32 +1314,29 @@ voyager.enabled=false
 * [Spring Boot Spock](spock/springboot-spock)
 ------
 # [Spring](spring)
-# AOP Aspect Oriented Programming
-* [Spring AOP](spring/aop)
+------
+## [Spring AOP](spring/aop)
 * [AOP with Spring Annotations](spring/aop/aop-annotations)
 * [Materials](spring/aop/materials.md)
 ------
-## Spring Batch
-* [spring Batch](spring/batch)
+## [Spring Batch](spring/batch)
 * [Materials](spring/batch/materials.md)
 * [Custom Item Reader](spring/batch/custom-item-reader)
 * [Hello world](spring/batch/hello-world)
 ------
-## Spring Cloud
-* [Cloud](spring/cloud)
+## [Spring Cloud](spring/cloud)
 * [Materials](spring/cloud/materials.md)
 ## Examples
 * [Example 1](spring/cloud/example-1)
 ------
-## Spring Cloud Stream
-* [Spring Cloud Stream](spring/cloud-stream)
+## [Spring Cloud Stream](spring/cloud-stream)
 * [Materials](spring/cloud-stream/materials.md)
 ------
-## Spring Core
+## [Spring Core](spring/core)
+* [Materials](core/materials.md)
 * [Dependency injection using XML](spring/core/dependency-injection-xml)
 * [Dependency injection using annotations](spring/core/dependency-injection-annotations)
 * [Dependency injection using java config](spring/core/dependency-injection-java-config)
-* [Materials](core/materials.md)
 ------
 ## Spring Data JPA
 * [Data JPA](spring/data-jpa)
@@ -1353,8 +1350,7 @@ voyager.enabled=false
 	* [Rest Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/rest/EmployeeJpaRestRepository.java)
 	* [Tables](spring/data-jpa/springdatajpapractice/src/main/resources/sql/tables.sql)
 ------
-## Spring Data Mongo
-* [Spring Data Mongo](spring/data-mongo)
+## [Spring Data Mongo](spring/data-mongo)
 * [Materials](spring/data-mongo/materials.md)
 ## Examples
 ## [Spring Data Mongo](spring/data-mongo/spring-data-mongo)

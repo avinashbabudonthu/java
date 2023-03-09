@@ -117,6 +117,10 @@ v2 = g.addV("software").property(id, 3).property("name", "lop").property("lang",
 ```
 g.addE("created").from(v1).to(v2).property(id,9).property("weight", 0.4)
 ```
+* Add edge between existing nodes
+```
+g.V("node1Id").as("n1").V("node2Id").as("n2").addE("edgeLabel").from("n1").to("n2").propety("weight", 0.5)
+```
 * All vertices
 ```
 g.V()
@@ -201,6 +205,10 @@ g.V().count()
 * Get all properties of vertex with id 1
 ```
 g.V(1).valueMap()
+```
+* Get all properties along with ID and label
+```
+g.V(1).valueMap(true)
 ```
 * Vertex with id `outVertextId` from vertex with id `id1` with out edge label `edgeLabel1`
 ```
