@@ -105,6 +105,11 @@ gradle testClasses
 ```
 gradle test
 ```
+* Execute specific test class
+```
+gradlew test --tests "a.b.c.MyTestFile.mySingleTest"
+gradle test --tests "a.b.c.MyTestFile.mySingleTest"
+```
 * Execute multiple tasks
 ```
 gradle clean compileJava test build

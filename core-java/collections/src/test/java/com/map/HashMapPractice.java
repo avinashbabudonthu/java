@@ -101,4 +101,30 @@ public class HashMapPractice {
         names.remove(1);
         log.info("after - names={}", names);
     }
+
+    @Test
+    public void putIfAbsent(){
+        Map<Integer, String> names = new HashMap<>();
+        names.put(1, "jim");
+        names.put(2, "jack");
+        names.put(3, "jill");
+        names.put(4, "john");
+        log.info("1 - names={}", names); // 1 - names={1=jim, 2=jack, 3=jill, 4=john}
+
+        names.putIfAbsent(5, "ana");
+        log.info("2 - names={}", names); // 2 - names={1=jim, 2=jack, 3=jill, 4=john, 5=ana}
+
+        names.putIfAbsent(5, "jane");
+        log.info("3 - names={}", names); // 3 - names={1=jim, 2=jack, 3=jill, 4=john, 5=ana}
+
+        names.put(null, "jim");
+        log.info("4 - names={}", names); // 4 - names={null=jim, 1=jim, 2=jack, 3=jill, 4=john, 5=ana}
+
+        names.put(5, null);
+        log.info("5 - names={}", names); // 5 - names={null=jim, 1=jim, 2=jack, 3=jill, 4=john, 5=null}
+
+        names.put(null, null);
+        log.info("6 - names={}", names); // 6 - names={null=null, 1=jim, 2=jack, 3=jill, 4=john, 5=null}
+    }
+
 }
