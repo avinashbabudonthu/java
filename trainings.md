@@ -1,4 +1,4 @@
-# List of trainings
+# Trainings
 ------
 # Core Java
 * Oops concepts
