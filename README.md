@@ -122,6 +122,7 @@
 * [Windows](#windows)
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
+	* [Trainings](trainings.md)
 ------
 # [Angular](angular)
 * [Commands](angular/commands.md)
@@ -1484,7 +1485,8 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Global Exception Handling with Hibernate Validation](spring/spring-boot/spring-boot-2/global-exception-handling-with-hibenate-validator)
 * [Global Filters Exception Handling](spring/spring-boot/spring-boot-2/global-filters-exception-handling)
 * [Spring Boot 2 with Gradle](spring/spring-boot/spring-boot-2/gradle)
-* [GraphQl](spring/spring-boot/spring-boot-2/graphql)
+* [GraphQl V1](spring/spring-boot/spring-boot-2/graphql)
+* [GraphQl V2]((#graphql))
 * [Hello-World](spring/spring-boot/spring-boot-2/hello-world)
 * [Hello World using Spring cli](spring/spring-boot/spring-boot-2/hello-world-using-spring-cli)
 * [Hello World Using Spring Initializer](spring/spring-boot/spring-boot-2/hello-world-using-spring-initializer)
