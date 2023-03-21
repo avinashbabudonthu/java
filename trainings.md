@@ -1,17 +1,30 @@
 # List of trainings
 ------
-# Java
+# Core Java
 * Oops concepts
 * Naming conventions
 * Access specifiers
-* Collecitons
-	* List - ArrayList
-	* Set - LinkedHashSet, Treeset
-	* Map - LinkedHashMap, TreeMap
-* Git
-	* Commands
-	* Github/BitBucket/Gitlab accounts creation
-	* Git Conflicts
+* Collecitons - List
+	* ArrayList
+* Collecitons - Set
+	* LinkedHashSet
+	* Treeset
+* Collecitons - Map
+	* LinkedHashMap
+	* TreeMap
+------
+# Git
+* Github/BitBucket/Gitlab accounts creation
+* TortoiseGit Installation
+* SourceTree installation
+* Basic concepts
+* Git commands
+* Cherry Pick
+* Git Stash Commands
+* Using username and key in cloning url
+* Connect to github repository using SSH key
+* Create app passwords in bitbucket
+* Git Conflicts
 ------
 # Spring Boot
 * Hello-World
