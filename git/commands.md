@@ -9,29 +9,49 @@
 * Git version
 ```
 git --version
+git version
 ```
-
 * Overview of all useful commands
 ```
 git help
 ```
-
 * Complete list of all git commands
 ```
 git help -a
 ```
-
 * List all git concepts
 ```
 git help -g
 ```
-
+* Configure the author email address to be used with your commits
+```
+git config --global user.email "test@gmail.com"
+```
+* Configure the author name to be used with your commits
+```
+git config --global user.name "User defined name"
+```
+* configure the author password
+```
+git config --global user.password "your password"
+```
+* Will remove user credential details from local repository
+```
+git config --local credential.helper ""
+```
+* Change the default branch to `main`
+```
+git config --global init.defaultBranch main
+```
+* List git configs
+```
+git config --global --list
+```
 * Clone git repository
 ```
 git clone repository-url
 ```
-
-* Clone a repository from remote to local with specific branch_name
+* Clone a repository from remote to local with branch name
 ```
 git clone --branch branch_name repo_url
 ```
@@ -41,13 +61,12 @@ git branch <branch>
 ```
 * Create a branch and switch to it using the checkout command
 ```
-git checkout -b <branch>
+git checkout -b [branch]
 ```
 * Current branch
 ```
 git branch
 ```
-
 * Check all branches
 ```
 git branch -a
@@ -67,21 +86,16 @@ git branch -r | wc -l
 ```
 git checkout branch-name
 ```
-
-* Create a new branch and switch to it
-```
-git checkout -b branch-name
-```
-
 * Delete the feature branch from local repository
 ```
-git branch -d branch_name
-(or)
-git branch -D branch_name
-(or)
 git branch --delete branch_name
+git branch -d branch_name
+git branch -D branch_name
 ```
-
+* change the default branch from master to main
+```
+git branch -m main
+```
 * Merge branch-1 to current branch
 ```
 git merge branch-1
@@ -99,24 +113,23 @@ git merge branch-1 master
 ```
 git pull
 ```
-
+* Check status
+```
+git status
+```
 * Make all files ready to commit. Add all files to staging
 ```
 git add *
-
 git add .
 ```
-
 * Add file to staging (ready to commit)
 ```
 git add file-name
 ```
-
 * Add all files with extension .java ready to staging
 ```
 git add **/*.java
 ```
-
 * Add all files with extension .java and .html ready to staging
 ```
 git add **/*.java **/*.html
@@ -129,10 +142,9 @@ git add src/main/java/*
 ```
 git commit -m "commit message"
 ```
-* If you want to add all changes made to tracked files & commit
+* Add all changes made to tracked files & commit
 ```
 git commit -a -m "<message>"
-or
 git commit -am "<message>"
 ```
 * Push the changes to current branch. Send all commits from local repository to remote repository
@@ -142,9 +154,7 @@ git push
 * Push changes to master branch
 ```
 git push <remote name> <branch>
-
 git push origin master
-(or)
 git push -u origin master
 ```
 * Push specific branch to your remote repository
@@ -154,10 +164,6 @@ git push origin [branch_name]
 * Push all branches to your remote repository
 ```
 git push --all origin
-```
-* Changed files and those you still need to add or commit
-```
-git status
 ```
 * Revert all local changes
 ```
@@ -175,10 +181,15 @@ git remote add <remote name> <url>
 ```
 git remote add origin [repo_url]
 ```
-* Create a new local repository (or) Initialize a local repository. The `<directory>` is optional. If you don't specify it, the current directory will be used
+* Create a new local repository (or) Initialize a local repository. The `[directory]` is optional. If you don't specify it, the current directory will be used
 ```
 git init
-git init <directory>
+git init [directory]
+```
+* Initital repo with `main` as default branch
+```
+git init -b main
+git init -b main [directory]
 ```
 * Create new remote repository and check in local new repository to remote repository
 	* Create new repository in github website
@@ -202,23 +213,6 @@ git checkout -- file1.txt
 * Revert files with specific extension
 ```
 git checkout -- **/*.java
-```
-
-* Configure the author email address to be used with your commits
-```
-git config --global user.email "test@gmail.com"
-```
-* Configure the author name to be used with your commits
-```
-git config --global user.name "User defined name"
-```
-* configure the author password
-```
-git config --global user.password "your password"
-```
-* Will remove user credential details from local repository
-```
-git config --local credential.helper ""
 ```
 * Display remote repositories
 ```

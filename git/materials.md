@@ -19,6 +19,7 @@
 
 # Udemy
 * Git & GitHub Masterclass
+* Git Complete: The definitive, step-by-step guide to Git
 
 # Others
 * [https://jeffkreeftmeijer.com/git-flow/](https://jeffkreeftmeijer.com/git-flow/)
