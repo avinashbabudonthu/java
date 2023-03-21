@@ -1,4 +1,4 @@
-# Materials in order
+# Materials in study order
 * Youtube - [Introduction-to-Git-&-GitHub.mp4](https://www.youtube.com/watch?v=0kRuGWBuS_o&ab_channel=edureka%21)
 * Youtube - [Git-Tutorial-For-Beginners.mp4](https://www.youtube.com/watch?v=AQ9ksXoBAOg&ab_channel=Simplilearn)
 * Youtube - [Git-Tutorial-for-Beginners-2.mp4](https://www.youtube.com/watch?v=WbwIoQYP6no&t=57s&ab_channel=Telusko)
