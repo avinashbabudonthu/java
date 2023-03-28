@@ -129,6 +129,8 @@ g.V()
 ```
 g.V(1).has("name", eq("marko")).values("name")
 g.V().has("name", eq("marko"))
+
+g.V().has("label", "property", "value")
 g.V().has("person", "name", "marko")
 ```
 * Edge with label created from vertex with label as person and name as marko 
