@@ -8,7 +8,7 @@ C:\....\apache-tinkerpop-gremlin-console-3.6.1-bin\apache-tinkerpop-gremlin-cons
 ```
 graph = TinkerFactory.createModern()
 ```
-* create graph
+* create graph traversal
 ```
 g = traversal().withEmbedded(graph)
 ```
