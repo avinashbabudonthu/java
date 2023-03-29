@@ -1,11 +1,10 @@
-# Gremlin commands
-* Reference to below gremlin commands - https://tinkerpop.apache.org/docs/current/tutorials/getting-started/
-* Download gremlin console from [here](https://www.apache.org/dyn/closer.lua/tinkerpop/3.6.1/apache-tinkerpop-gremlin-console-3.6.1-bin.zip)
+# Gremlin Console
+* Download gremlin console - https://www.apache.org/dyn/closer.lua/tinkerpop/3.6.1/apache-tinkerpop-gremlin-console-3.6.1-bin.zip
 * open gremlin console
 ```
 C:\....\apache-tinkerpop-gremlin-console-3.6.1-bin\apache-tinkerpop-gremlin-console-3.6.1>bin\gremlin.bat
 ```
-* create modern graph
+* create modern graph. This contains graph with 6 nodes for practice
 ```
 graph = TinkerFactory.createModern()
 ```
@@ -13,21 +12,52 @@ graph = TinkerFactory.createModern()
 ```
 g = traversal().withEmbedded(graph)
 ```
-* All vertices
+* count nodes
+```
+g.V().count()
+```
+* exit gremlin console
+```
+:exit
+```
+* clear gremlin console
+```
+:cls
+:C
+```
+* Gremlin console docker container - https://hub.docker.com/r/tinkerpop/gremlin-console
+------
+# Gremlin commands
+* Setup gremlin console to practice below commands - [Gremlin Console](#Gremlin-Console)
+* create graph object with 6 nodes for practice
+```
+graph = TinkerFactory.createModern()
+```
+* above command creates following graph\
+![picture](imgs/tinkerpop-modern.png)
+* create new graph without existing nodes or edges
+```
+graph = TinkerGraph.open()
+```
+* create graph traversal
+```
+g = traversal().withEmbedded(graph)
+```
+* count nodes
+```
+g.V().count()
+```
+* get all nodes
 ```
 g.V()
 ```
-* Get `id` of node
+* count all edges
 ```
-g.V().limit(1).id()
+g.E().count()
 ```
-* Get node label
+* get all edges
 ```
-g.V(id).label()
-```
-* Query by label
-```
-g.V().hasLabel("labelValue")
+g.E()
 ```
 * Row number or limit the number of nodes
 ```
@@ -35,184 +65,194 @@ g.V().limit(10)
 
 g.V().hasLabel("labelValue").limit(10)
 ```
-* Remove duplicates
-```
-g.V().hasLabel("labelValue").dedup()
-```
-* Drop or remove nodes with label
-```
-g.V().hasLabel("labelValue").drop()
-```
-* Drop or remove node with id
-```
-g.V(id).drop()
-```
-* Drop or remove property
-```
-g.V().hasLabel("labelName").properties("propertyName").drop()
-```
-* All edges
-```
-g.E()
-```
-* Query edges with label
-```
-g.E().hasLabel("labelName")
-```
-* Drop edges with label
-```
-g.E().hasLabel("labelName").drop()
-```
-* Vertex with id 1
+* node with id 1
 ```
 g.V(1)
 ```
-* get name of the vertex with id 1
+* get node `id`
+```
+g.V().limit(1).id()
+```
+* get node `label`
+```
+g.V(id).label()
+```
+* query by label
+```
+g.V().hasLabel("labelValue")
+```
+* remove duplicates
+```
+g.V().hasLabel("labelValue").dedup()
+```
+* drop remove delete nodes with label
+```
+g.V().hasLabel("labelValue").drop()
+```
+* drop remove delete node with id
+```
+g.V(id).drop()
+```
+* drop remove delete property
+```
+g.V().hasLabel("labelName").properties("propertyName").drop()
+```
+* get edge with label
+```
+g.E().hasLabel("labelName")
+```
+* drop remove delete edge with label
+```
+g.E().hasLabel("labelName").drop()
+```
+* get name property of node with id 1
 ```
 g.V(1).values("name")
 ```
-* Edges coming out from vertext 1
+* out edges from node with id 1
 ```
 g.V(1).outE()
 ```
-* Edge with label `knows` coming out from vertex 1
+* edge with label `knows` coming out from node with id 1
 ```
 g.V(1).outE("knows")
 ```
-* name of the vertex with knows edge from vertix 1
+* nodes with out edge `knows` from node 1
 ```
 g.V(1).outE("knows").inV().values("name")
 g.V(1).out("knows").values("name")
+g.V(1).out("knows")
 ```
-* name of the vertex with knows edge from vertex and vertex with property age greater than 30
+* nodes with out edge `knows` from node 1 and `age > 30`
 ```
 g.V(1).out("knows").has("age", gt(30)).values("name")
 ```
-* name of the vertex with knows edge from vertex and vertex with property age less than 30
+* nodes with out edge `knows` from node 1 and `age < 30`
 ```
 g.V(1).out("knows").has("age", lt(30)).values("name")
 ```
-* * name of the vertex with knows edge from vertex and vertex with property age equal to 30
+* nodes with out edge `knows` from node 1 and `age == 30`
 ```
 g.V(1).out("knows").has("age", eq(30)).values("name")
 ```
-------
-* Create new graph
+* create node n1. label - person, properties - id, name, age
 ```
-graph = TinkerGraph.open()
+n1 = g.addV("person").property(id, 1).property("name", "marko").property("age", 29).next()
 ```
-* Create graph traversal
+* create node n2. label - software, properties - id, name, lang
 ```
-g = traversal().withEmbedded(graph)
+n2 = g.addV("software").property(id, 3).property("name", "lop").property("lang", "java").next()
 ```
-* Create vertex v1
+* create edge from n1 to n2. properties - id, weight
 ```
-v1 = g.addV("person").property(id, 1).property("name", "marko").property("age", 29).next()
+g.addE("created").from(n1).to(n2).property(id,9).property("weight", 0.4)
 ```
-* Create vertex v2
-```
-v2 = g.addV("software").property(id, 3).property("name", "lop").property("lang", "java").next()
-```
-* Create edge from v1 to v2
-```
-g.addE("created").from(v1).to(v2).property(id,9).property("weight", 0.4)
-```
-* Add edge between existing nodes
+* add edge between existing nodes. properties - weight
 ```
 g.V("node1Id").as("n1").V("node2Id").as("n2").addE("edgeLabel").from("n1").to("n2").propety("weight", 0.5)
 ```
-* All vertices
+* node with name property equal to marko
 ```
-g.V()
-```
-* Vertex with name property equal to marko
-```
-g.V(1).has("name", eq("marko")).values("name")
+g.V().has("name", eq("marko")).values("name")
 g.V().has("name", eq("marko"))
-
+```
+* node with `label==person`, `name==marko`
+```
 g.V().has("label", "property", "value")
 g.V().has("person", "name", "marko")
 ```
-* Edge with label created from vertex with label as person and name as marko 
+* out edge with `label==created` from node with `label==person` and `name==marko` 
 ```
 g.V().has("person", "name", "marko").outE("created")
 ```
-* Vertices with edge created from vertex with name marko
+* nodes with out edge `label==created` from node with `label==person` and `name==marko`
 ```
 g.V().has("person", "name", "marko").outE("created").inV()
 g.V().has("person", "name", "marko").out("created")
 ```
-* Name of vertices with edge created from vertex with name marko
-```
-g.V().has("person", "name", "marko").out("created").values("name")
-```
-------
-* Create modern graph
-```
-graph = TinkerFactory.createModern()
-```
-* Create graph traversal
-```
-g = traversal().withEmbedded(graph)
-```
-* ages of vertices with name in vadas or marko
+* `age` property of nodes with `label==person` and `name in (vadas ,marko)`
 ```
 g.V().has("person", "name", within("vadas","marko")).values("age")
 ```
-* average of ages of vertices with name in vadas or marko
+* average `age` of nodes with `label==person` and `name in (vadas ,marko)`
 ```
 g.V().has("person", "name", within("vadas", "marko")).values("age").mean()
 ```
-* To vertex with created edge from person with name marko vertex
+* node with out edge `label==created` from node with `label==person` and `name=marko`
 ```
 g.V().has("person", "name", "marko").out("created")
 ```
-* Vertices with created as in edge
+* nodes providing `in` edge with `label==created` to the node that has `out` edge with `label==created` from node with `label==person and name==marko`
 ```
 g.V().has("person", "name", "marko").out("created").in("created")
+
+gremlin> g.V().has("person", "name", "marko")
+==>v[1]
+gremlin> g.V().has("person", "name", "marko").out("created")
+==>v[3]
+gremlin> g.V().has("person", "name", "marko").out("created").in("created")  -> nodes providing `in` edge to v[3]
+==>v[1]
+==>v[4]
+==>v[6]
 ```
-* Name and age of vertices with created as in edge
+* excluding node from final result nodes
 ```
-g.V().has("person", "name", "marko").out("created").in("created").values("name", "age")
-```
-* Vertices with created as in edge exluding marko
-```
-g.V().has("person", "name", "marko").as("exclude").out("created").in("created").where(neq("exclude")).values("name")
+g.V().has("person", "name", "marko").as("exclude").out("created").in("created").where(neq("exclude"))
+
+gremlin> g.V().has("person", "name", "marko")
+==>v[1]
+gremlin> g.V().has("person", "name", "marko").as("exclude")
+==>v[1]
+gremlin> g.V().has("person", "name", "marko").as("exclude").out("created")
+==>v[3]
+gremlin> g.V().has("person", "name", "marko").as("exclude").out("created").in("created")
+==>v[1]
+==>v[4]
+==>v[6]
+gremlin> g.V().has("person", "name", "marko").as("exclude").out("created").in("created").where(neq("exclude"))
+==>v[4]
+==>v[6]
 ```
 * Gremlin to iterate through all vertices and traverse out twice from each. Gremlin will label each vertex in that path with "a", "b" and "c", respectively. We can then use select to extract the contents of that label
 ```
 g.V().as("a").out().as("b").out().as("c").select("a", "b", "c")
 ```
-* Group vertices by label
+* order by label ascending order
+```
+gremlin> g.V().order().by(label, desc).valueMap(true)
+==>[id:3,label:software,name:[lop],lang:[java]]
+==>[id:5,label:software,name:[ripple],lang:[java]]
+==>[id:1,label:person,name:[marko],age:[29]]
+==>[id:2,label:person,name:[vadas],age:[27]]
+==>[id:4,label:person,name:[josh],age:[32]]
+==>[id:6,label:person,name:[peter],age:[35]]
+```
+* group by label
 ```
 g.V().group().by(label)
+==>[software:[v[3],v[5]],person:[v[1],v[2],v[4],v[6]]]
 ```
-* Group vertices by label. display names of those vertices
+* group by label and display names
 ```
 g.V().group().by(label).by("name")
 ```
-------
-* Check all vertices with properties
+* get all nodes with properties. do not get `id` and `label`
 ```
 g.V().valueMap()
 ```
-* Get properties of node
+* get properties of node
 ```
 g.V("nodeId").properties()
 ```
-* Count vertices
-```
-g.V().count()
-```
-* Get all properties of vertex with id 1
+* get all properties of vertex with id 1
 ```
 g.V(1).valueMap()
 ```
-* Get all properties along with ID and label
+* get `id` and `label` also with other properties
 ```
 g.V(1).valueMap(true)
 ```
-* Vertex with id `outVertextId` from vertex with id `id1` with out edge label `edgeLabel1`
+* node with id `outVertextId` from node with id `id1` with out edge label `edgeLabel1`
 ```
 g.V("id1").out("edgeLabel1").hasId("outVertextId")
 ```
@@ -223,16 +263,21 @@ g.V().has("name", TextP.containing("ji"))
 
 g.V().has("label", "property", TextP.containing("value"))
 g.V().has("person", "name", TextP.containing("ji"))
+
+gremlin> g.V().has("person", "name", TextP.containing("jo")).valueMap(true)
+==>[id:4,label:person,name:[josh],age:[32]]
+gremlin> g.V().has("person", "name", containing("jo")).valueMap(true)
+==>[id:4,label:person,name:[josh],age:[32]]
 ```
-* Find all edges going out from node
+* get all edges going out from node
 ```
 g.V().hasLabel("labelName").outE().label().dedup()
 ```
-* Find all edges going in to node
+* get all `in` edges to node with `label=labelName`
 ```
 g.V().hasLabel("labelName").inE().label().dedup()
 ```
-* Node without specific property
+* node with label and not has property
 ```
 g.V().hasLabel("label").hasNot("property").valueMap()
 ```
