@@ -16,4 +16,4 @@
 * https://github.com/matiassingers/awesome-readme
 * Box - git/Git Pocket Guide.pdf
 * Box - progit.pdf
-* https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+* Git documentation - https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud

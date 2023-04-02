@@ -516,3 +516,29 @@ stash @{0}: sample stash testing..
 https://username:passwordOrKey@bitbucket.org/repo/app.git
 https://testusername:AbcdqrcqscqHdch123456@bitbucket.org/repo/app.git
 ```
+------
+# Git Rebase
+* Git Rebase & Squash many commits
+* open git bash
+```
+git checkout develop
+git pull
+git checkout [our-feature-branch]
+git rebase -i develop
+press i
+replace push -> squash
+press Esc
+:wq
+100dd -- meaning of this line -> XXdd removes the XX lines
+press i
+enter commit message
+press esc
+:wq
+git push -f
+```
+* Abort rebase
+```
+$ git rebase --abort
+```
+* Reference - https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+------

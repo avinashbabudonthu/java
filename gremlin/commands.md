@@ -12,6 +12,15 @@ graph = TinkerFactory.createModern()
 ```
 g = traversal().withEmbedded(graph)
 ```
+* Above 2 commands combined as follows
+```
+g = TinkerFactory.createModern().traversal()
+```
+* practice graph with more nodes and edges
+```
+gremlin> g = TinkerFactory.createGratefulDead().traversal()
+==>graphtraversalsource[tinkergraph[vertices:808 edges:8049], standard]
+```
 * count nodes
 ```
 g.V().count()
@@ -43,9 +52,33 @@ graph = TinkerGraph.open()
 ```
 g = traversal().withEmbedded(graph)
 ```
+* Above 2 commands combined as follows
+```
+g = TinkerFactory.createModern().traversal()
+```
+* practice graph with more nodes and edges
+```
+gremlin> g = TinkerFactory.createGratefulDead().traversal()
+==>graphtraversalsource[tinkergraph[vertices:808 edges:8049], standard]
+```
 * count nodes
 ```
-g.V().count()
+gremlin> g.V().count()
+==>6
+
+gremlin> g.V().fold()
+==>[v[1],v[2],v[3],v[4],v[5],v[6]]
+
+gremlin> g.V().fold().count()
+==>1
+
+gremlin> g.V().fold().count(local)
+==>6
+```
+* groupCount - get the count of each group
+```
+gremlin> g.V().groupCount().by(label)
+==>[software:2,person:4]
 ```
 * get all nodes
 ```
@@ -68,6 +101,14 @@ g.V().hasLabel("labelValue").limit(10)
 * node with id 1
 ```
 g.V(1)
+
+g.V().hasId(1)
+
+gremlin> g.V().hasId(1, 2, 3, 4)
+==>v[1]
+==>v[2]
+==>v[3]
+==>v[4]
 ```
 * get node `id`
 ```
@@ -105,7 +146,7 @@ g.E().hasLabel("labelName")
 ```
 g.E().hasLabel("labelName").drop()
 ```
-* get name property of node with id 1
+* get `name` property of node with id 1
 ```
 g.V(1).values("name")
 ```
@@ -150,6 +191,19 @@ g.addE("created").from(n1).to(n2).property(id,9).property("weight", 0.4)
 * add edge between existing nodes. properties - weight
 ```
 g.V("node1Id").as("n1").V("node2Id").as("n2").addE("edgeLabel").from("n1").to("n2").propety("weight", 0.5)
+```
+* add multiple nodes and mulitple edges and respective properties
+```
+gremlin> g.addV('company').
+        property('name','datastax').as('ds').
+    addV('software').
+        property('name','dse graph').as('dse').
+    addV('software').
+        property('name','tinkerpop').as('tp').
+    addE('develops').from('ds').to('dse').
+    addE('uses').from('dse').to('tp').
+    addE('likes').from('ds').to('tp').
+    iterate()
 ```
 * node with name property equal to marko
 ```
@@ -227,6 +281,16 @@ gremlin> g.V().order().by(label, desc).valueMap(true)
 ==>[id:4,label:person,name:[josh],age:[32]]
 ==>[id:6,label:person,name:[peter],age:[35]]
 ```
+* order edges by `id`
+```
+gremlin> g.V().outE().order().by(id)
+==>e[7][1-knows->2]
+==>e[8][1-knows->4]
+==>e[9][1-created->3]
+==>e[10][4-created->5]
+==>e[11][4-created->3]
+==>e[12][6-created->3]
+```
 * group by label
 ```
 g.V().group().by(label)
@@ -246,11 +310,21 @@ g.V("nodeId").properties()
 ```
 * get all properties of vertex with id 1
 ```
-g.V(1).valueMap()
+gremlin> g.V().valueMap()
+==>[name:[marko],age:[29]]
+==>[name:[vadas],age:[27]]
 ```
 * get `id` and `label` also with other properties
 ```
-g.V(1).valueMap(true)
+gremlin> g.V().valueMap(true)
+==>[id:1,label:person,name:[marko],age:[29]]
+==>[id:2,label:person,name:[vadas],age:[27]]
+```
+* get `id` and `label` with other properties. Alternative to `valueMap(true)`
+```
+gremlin> g.V().elementMap()
+==>[id:1,label:person,name:marko,age:29]
+==>[id:2,label:person,name:vadas,age:27]
 ```
 * node with id `outVertextId` from node with id `id1` with out edge label `edgeLabel1`
 ```
@@ -280,4 +354,152 @@ g.V().hasLabel("labelName").inE().label().dedup()
 * node with label and not has property
 ```
 g.V().hasLabel("label").hasNot("property").valueMap()
+```
+* keep the current element if the provided traversal emits a result. get all nodes which have out edges
+```
+gremlin> g.V().filter(outE())
+==>v[1]
+==>v[4]
+==>v[6]
+```
+* keep the current element if the provided traversal doesn’t emit a result. get all nodes which don't have out edge
+```
+gremlin> g.V().not(outE())
+==>v[2]
+==>v[3]
+==>v[5]
+```
+* keep the current element if it matches the predicate referencing another element. 
+```
+gremlin> g.V(1).as("other").
+    out("knows").
+    where(gt("other")).by("age").
+    elementMap()
+==>[id:4,label:person,name:josh,age:32]
+```
+* store the current element in the side-effect with the provided key
+```
+gremlin> g.V().hasLabel("person").store("n1").select("n1")
+==>[v[1]]
+==>[v[1],v[2]]
+==>[v[1],v[2],v[4]]
+==>[v[1],v[2],v[4],v[6]]
+```
+* store vs as
+```
+gremlin> g.V().hasLabel("person").store("n1").select("n1")
+==>[v[1]]
+==>[v[1],v[2]]
+==>[v[1],v[2],v[4]]
+==>[v[1],v[2],v[4],v[6]]
+gremlin> g.V().hasLabel("person").as("n1").select("n1")
+==>v[1]
+==>v[2]
+==>v[4]
+==>v[6]
+```
+* aggregate - store all elements held by all current traversers in the side-effect with the provided key
+```
+gremlin> g.V().hasLabel("person").aggregate("n1").select("n1")
+==>[v[1],v[2],v[4],v[6]]
+==>[v[1],v[2],v[4],v[6]]
+==>[v[1],v[2],v[4],v[6]]
+==>[v[1],v[2],v[4],v[6]]
+```
+* union(branch1, branch2, …​) - execute all branches and emit their results
+```
+gremlin> g.V().hasLabel("person").union(out("created"), out("knows"), count())
+==>v[3]
+==>v[5]
+==>v[3]
+==>v[3]
+==>v[2]
+==>v[4]
+==>4
+```
+* choose(condition, true-branch, false-branch) - if/then/else-based traversal. If the condition matches (yields something), execute the true-branch, otherwise follow the false-branch.
+```
+gremlin> g.V().hasLabel("person").choose(has("age", gt(30)), constant("senior"), constant("junior"))
+==>junior
+==>junior
+==>senior
+==>senior
+```
+* min, max, sum, mean, count
+```
+gremlin> g.V().hasLabel("person").values("age").union(min(), max(), sum(), mean(), count())
+==>27
+==>35
+==>123
+==>30.75
+==>4
+```
+* path
+```
+gremlin> g.V().outE().inV().path()
+==>[v[1],e[9][1-created->3],v[3]]
+==>[v[1],e[7][1-knows->2],v[2]]
+==>[v[1],e[8][1-knows->4],v[4]]
+==>[v[4],e[10][4-created->5],v[5]]
+==>[v[4],e[11][4-created->3],v[3]]
+==>[v[6],e[12][6-created->3],v[3]]
+
+gremlin> g.V().outE().inV().path().by(label)
+==>[person,created,software]
+==>[person,knows,person]
+==>[person,knows,person]
+==>[person,created,software]
+==>[person,created,software]
+==>[person,created,software]
+
+gremlin> g.V().outE().inV().path().by("name").by(label)
+==>[marko,created,lop]
+==>[marko,knows,vadas]
+==>[marko,knows,josh]
+==>[josh,created,ripple]
+==>[josh,created,lop]
+==>[peter,created,lop]
+```
+* as(label)…​select(Pop, label) - select values from previously labeled steps
+```
+gremlin> g.V(1).as("a").out("knows").as("a").select("a")
+==>v[2]
+==>v[4]
+
+gremlin> g.V(1).as("a").out("knows").as("a").select(first, "a")
+==>v[1]
+==>v[1]
+
+gremlin> g.V(1).as("a").out("knows").as("a").select(last, "a")
+==>v[2]
+==>v[4]
+
+gremlin> g.V(1).as("a").out("knows").as("a").select(all, "a")
+==>[v[1],v[2]]
+==>[v[1],v[4]]
+```
+* `project`
+```
+gremlin> g.V().hasLabel("person").
+    project("name", "label", "softwareName", "softwareLang").
+    by("name").
+    by(outE("created").label()).
+    by(out("created").values("name")).
+    by(out("created").values("lang"))
+==>[name:marko,label:created,softwareName:lop,softwareLang:java]
+==>[name:vadas]
+==>[name:josh,label:created,softwareName:ripple,softwareLang:java]
+==>[name:peter,label:created,softwareName:lop,softwareLang:java]
+
+gremlin> g.V().hasLabel("person").as("person").
+    out("created").as("sw").
+    project("name", "label", "softwareName", "softwareLang").
+    by(select("person").values("name")).
+    by(select("person").outE("created").label()).
+    by(select("sw").values("name")).
+    by(select("sw").values("lang"))
+==>[name:marko,label:created,softwareName:lop,softwareLang:java]
+==>[name:josh,label:created,softwareName:ripple,softwareLang:java]
+==>[name:josh,label:created,softwareName:lop,softwareLang:java]
+==>[name:peter,label:created,softwareName:lop,softwareLang:java]
 ```
