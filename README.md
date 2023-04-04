@@ -1535,6 +1535,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Difference between Delete and Truncate Command](sql/delete-vs-truncate-command.md)
 * [SQL Comprehensive Diagram](sql/sql-comprehensive-diagram.jpg)
 * [Client Server Model](sql/The+Client-Server+Model.pdf)
+* [Inner Join, Left Join, Right Join, Full Join](sql/Joins-Inner-Left-Right-Full-Joins.pdf)
 ------
 # [SQL Server Database](sql-server)
 * [Materials](sql-server/materials.md)
