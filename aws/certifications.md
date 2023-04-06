@@ -2,8 +2,20 @@
 * https://www.youtube.com/watch?v=Gat9uLmDJ5I&ab_channel=edureka%21
 ![picture](images/certifications.jpg)
 ------
-## Do in following order:
+# List of certifications
 * AWS Certified Cloud Practitioner
+* AWS Certified Solutions Architect - Associate
+* AWS Certified Solutions Architect - Professional
+* AWS Certified Developer - Associate
+* AWS Certified DevOps Engineer - Professional
+* AWS Certified SysOps Administrator - Associate
+* AWS Certified Data Analytics - Speciality
+* AWS Certified Machine Learning - Speciality
+* AWS Certified Database - Speciality
+* AWS Certified Advanced Networking - Speciality
+------
+# Certifications order
+* `Optional` - AWS Certified Cloud Practitioner
 * AWS Certified Solutions Architect - Associate
 * AWS Certified Solutions Architect - Professional
 * AWS Certified Developer - Associate
