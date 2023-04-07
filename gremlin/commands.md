@@ -61,6 +61,10 @@ g = TinkerFactory.createModern().traversal()
 gremlin> g = TinkerFactory.createGratefulDead().traversal()
 ==>graphtraversalsource[tinkergraph[vertices:808 edges:8049], standard]
 ```
+* get all nodes
+```
+g.V()
+```
 * count nodes
 ```
 gremlin> g.V().count()
@@ -75,22 +79,13 @@ gremlin> g.V().fold().count()
 gremlin> g.V().fold().count(local)
 ==>6
 ```
-* groupCount - get the count of each group
+* get all edges
 ```
-gremlin> g.V().groupCount().by(label)
-==>[software:2,person:4]
-```
-* get all nodes
-```
-g.V()
+g.E()
 ```
 * count all edges
 ```
 g.E().count()
-```
-* get all edges
-```
-g.E()
 ```
 * Row number or limit the number of nodes
 ```
@@ -118,7 +113,7 @@ g.V().limit(1).id()
 ```
 g.V(id).label()
 ```
-* query by label
+* get node by label
 ```
 g.V().hasLabel("labelValue")
 ```
@@ -194,16 +189,13 @@ g.V("node1Id").as("n1").V("node2Id").as("n2").addE("edgeLabel").from("n1").to("n
 ```
 * add multiple nodes and mulitple edges and respective properties
 ```
-gremlin> g.addV('company').
-        property('name','datastax').as('ds').
-    addV('software').
-        property('name','dse graph').as('dse').
-    addV('software').
-        property('name','tinkerpop').as('tp').
-    addE('develops').from('ds').to('dse').
-    addE('uses').from('dse').to('tp').
-    addE('likes').from('ds').to('tp').
-    iterate()
+g.addV('company').property('name','datastax').as('ds').
+addV('software').property('name','dse graph').as('dse').
+addV('software').property('name','tinkerpop').as('tp').
+addE('develops').from('ds').to('dse').
+addE('uses').from('dse').to('tp').
+addE('likes').from('ds').to('tp').
+iterate()
 ```
 * node with name property equal to marko
 ```
@@ -271,7 +263,7 @@ gremlin> g.V().has("person", "name", "marko").as("exclude").out("created").in("c
 ```
 g.V().as("a").out().as("b").out().as("c").select("a", "b", "c")
 ```
-* order by label ascending order
+* order by label descending order
 ```
 gremlin> g.V().order().by(label, desc).valueMap(true)
 ==>[id:3,label:software,name:[lop],lang:[java]]
@@ -296,9 +288,15 @@ gremlin> g.V().outE().order().by(id)
 g.V().group().by(label)
 ==>[software:[v[3],v[5]],person:[v[1],v[2],v[4],v[6]]]
 ```
+* groupCount - get the count of each group
+```
+gremlin> g.V().groupCount().by(label)
+==>[software:2,person:4]
+```
 * group by label and display names
 ```
-g.V().group().by(label).by("name")
+gremlin> g.V().group().by(label).by("name")
+==>[software:[lop,ripple],person:[marko,vadas,josh,peter]]
 ```
 * get all nodes with properties. do not get `id` and `label`
 ```
@@ -308,13 +306,13 @@ g.V().valueMap()
 ```
 g.V("nodeId").properties()
 ```
-* get all properties of vertex with id 1
+* get all properties of nodes
 ```
 gremlin> g.V().valueMap()
 ==>[name:[marko],age:[29]]
 ==>[name:[vadas],age:[27]]
 ```
-* get `id` and `label` also with other properties
+* get `id` and `label` with other properties
 ```
 gremlin> g.V().valueMap(true)
 ==>[id:1,label:person,name:[marko],age:[29]]
@@ -330,7 +328,7 @@ gremlin> g.V().elementMap()
 ```
 g.V("id1").out("edgeLabel1").hasId("outVertextId")
 ```
-* node with proeprty name containing. `label` is optional
+* node with property name containing. `label` is optional
 ```
 g.V().has("property", TextP.containing("value"))
 g.V().has("name", TextP.containing("ji"))
@@ -340,10 +338,11 @@ g.V().has("person", "name", TextP.containing("ji"))
 
 gremlin> g.V().has("person", "name", TextP.containing("jo")).valueMap(true)
 ==>[id:4,label:person,name:[josh],age:[32]]
+
 gremlin> g.V().has("person", "name", containing("jo")).valueMap(true)
 ==>[id:4,label:person,name:[josh],age:[32]]
 ```
-* get all edges going out from node
+* get all edges going out from node with label `labelName`
 ```
 g.V().hasLabel("labelName").outE().label().dedup()
 ```
@@ -351,9 +350,10 @@ g.V().hasLabel("labelName").outE().label().dedup()
 ```
 g.V().hasLabel("labelName").inE().label().dedup()
 ```
-* node with label and not has property
+* node with label and not has `property`
 ```
 g.V().hasLabel("label").hasNot("property").valueMap()
+g.V().hasLabel("label").hasNot("property").elementMap()
 ```
 * keep the current element if the provided traversal emits a result. get all nodes which have out edges
 ```
@@ -372,9 +372,9 @@ gremlin> g.V().not(outE())
 * keep the current element if it matches the predicate referencing another element. 
 ```
 gremlin> g.V(1).as("other").
-    out("knows").
-    where(gt("other")).by("age").
-    elementMap()
+            out("knows").
+            where(gt("other")).by("age").
+            elementMap()
 ==>[id:4,label:person,name:josh,age:32]
 ```
 * store the current element in the side-effect with the provided key
@@ -392,6 +392,7 @@ gremlin> g.V().hasLabel("person").store("n1").select("n1")
 ==>[v[1],v[2]]
 ==>[v[1],v[2],v[4]]
 ==>[v[1],v[2],v[4],v[6]]
+
 gremlin> g.V().hasLabel("person").as("n1").select("n1")
 ==>v[1]
 ==>v[2]
@@ -408,7 +409,13 @@ gremlin> g.V().hasLabel("person").aggregate("n1").select("n1")
 ```
 * union(branch1, branch2, …​) - execute all branches and emit their results
 ```
-gremlin> g.V().hasLabel("person").union(out("created"), out("knows"), count())
+gremlin> g.V().hasLabel("person")
+        .union
+            (
+                out("created"),
+                out("knows"),
+                count()
+            )
 ==>v[3]
 ==>v[5]
 ==>v[3]
@@ -502,4 +509,19 @@ gremlin> g.V().hasLabel("person").as("person").
 ==>[name:josh,label:created,softwareName:ripple,softwareLang:java]
 ==>[name:josh,label:created,softwareName:lop,softwareLang:java]
 ==>[name:peter,label:created,softwareName:lop,softwareLang:java]
+
+gremlin> g.V().hasLabel("person").as("person").
+    out("created").as("sw").
+    select("person").outE("created").label().as("edgeLabel").
+    project("name", "label", "software", "softwareLang").
+    by(select("person").values("name")).
+    by(select("edgeLabel")).
+    by(select("sw").values("name")).
+    by(select("sw").values("name"))
+==>[name:marko,label:created,software:lop,softwareLang:lop]
+==>[name:josh,label:created,software:ripple,softwareLang:ripple]
+==>[name:josh,label:created,software:ripple,softwareLang:ripple]
+==>[name:josh,label:created,software:lop,softwareLang:lop]
+==>[name:josh,label:created,software:lop,softwareLang:lop]
+==>[name:peter,label:created,software:lop,softwareLang:lop]
 ```

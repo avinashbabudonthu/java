@@ -1291,6 +1291,9 @@ voyager.enabled=false
 * [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
 
 ## WebClient
+* [Materials](rest-api-clients/web-client/materials.md)
+
+## Examples
 * Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
 ```
 <dependency>
@@ -1301,7 +1304,6 @@ voyager.enabled=false
 * [GET API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/GetControllerTest.java)
 * [POST API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/PostControllerTest.java)
 * [Mock WebClient](rest-api-clients/rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
-* https://www.callicoder.com/spring-5-reactive-webclient-webtestclient-examples/
 ------
 # [Servlets and JSPs](servlets-jsps)
 * [Materials](servlets-jsps/materials.md)
