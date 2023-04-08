@@ -550,11 +550,13 @@
 * [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
 	* [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
 	* lookupMap
-
+------
 # Multi threading
 * [Materials](core-java/multi-threading/materials.md)
 * [Notes](core-java/notes/multi-threading.md)
-
+## Examnples
+* [Thread Practice](core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java)
+------
 # Generics
 * [Notes](core-java/notes/generics.md)
 * [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
