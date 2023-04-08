@@ -8,11 +8,13 @@ import org.junit.jupiter.api.Test;
 public class ThreadPractice {
 
     /**
-     * inside thread2 run method
      * inside thread1 run method
      * inside thread3 run method
+     * inside thread2 run method
      * inside thread4 run method
      * inside thread5 run method
+     * inside thread7 run method, name=worker thread 7
+     * inside Thread1.run method, name=Thread-6, id=19
      */
     @DisplayName("Create thread")
     @Test
@@ -48,6 +50,15 @@ public class ThreadPractice {
 
         // thread5
         new Thread(() -> log.info("inside thread5 run method")).start();
+
+        // By extends java.lang.Thread
+        Thread thread6 = new Thread6();
+        thread6.start();
+
+        // Thread create with Runnable and name
+        Runnable runnable = () -> log.info("inside thread7 run method, name={}", Thread.currentThread().getName());
+        Thread thread7 = new Thread(runnable, "worker thread 7");
+        thread7.start();
     }
 
     /**
@@ -113,6 +124,48 @@ public class ThreadPractice {
         });
         thread.setName("worker thread 1");
         thread.setPriority(Thread.MAX_PRIORITY);
+        thread.start();
+    }
+
+    /**
+     * output:
+     * Critical exception occurred in Misbehave worker thread 1. Error is Intentional exception
+     */
+    @Test
+    void exceptionHandling(){
+        Thread thread = new Thread(() -> {
+            throw new RuntimeException("Intentional exception");
+        });
+
+        // set exception handling
+        thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                log.info("Critical exception occurred in {}. Error is {}", t.getName(), e.getMessage());
+            }
+        });
+
+        thread.setName("Misbehave worker thread 1");
+
+        thread.start();
+    }
+
+    /**
+     * If we call start() method 2 times then IllegalStateException will be thrown
+     *
+     * output:
+     * inside thread run method
+     *
+     * java.lang.IllegalThreadStateException
+     * 	at java.lang.Thread.start(Thread.java:708)
+     * 	at com.java.ThreadPractice.illegalStateException(ThreadPractice.java:157)
+     *
+     */
+    @DisplayName("Illegal state exception")
+    @Test
+    void illegalStateException(){
+        Thread thread = new Thread(() -> log.info("inside thread run method"));
+        thread.start();
         thread.start();
     }
 }

@@ -554,7 +554,7 @@
 # Multi threading
 * [Materials](core-java/multi-threading/materials.md)
 * [Notes](core-java/notes/multi-threading.md)
-## Examnples
+## Examples
 * [Thread Practice](core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java)
 ------
 # Generics
