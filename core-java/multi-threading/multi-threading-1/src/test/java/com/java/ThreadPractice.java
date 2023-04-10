@@ -4,6 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @Slf4j
 public class ThreadPractice {
 
@@ -166,6 +170,61 @@ public class ThreadPractice {
     void illegalStateException(){
         Thread thread = new Thread(() -> log.info("inside thread run method"));
         thread.start();
+        // thread.start(); // throws IllegalStateException if this line is uncommented
+    }
+
+    /**
+     * If interrupt() method is called any thread then InterruptedException is thrown.
+     * {@link BlockingThread} class is sleeping for 500,000 milli seconds, so interrupt() method called
+     * on this thread, so this throws InterruptedException which is handled in catch block of
+     * {@link BlockingThread#run()} method
+     *
+     * output:
+     * Starting BlockingThread, name=main
+     * Started BlockingThread, name=main
+     * Exiting BlockingThread, name=worker thread 1
+     *
+     * java.lang.InterruptedException: sleep interrupted
+     * 	at java.lang.Thread.sleep(Native Method)
+     */
+    @DisplayName("Thread.interrupt method")
+    @Test
+    void interrupt(){
+        log.info("Starting BlockingThread, name={}", Thread.currentThread().getName());
+        Thread thread = new Thread(new BlockingThread(), "worker thread 1");
         thread.start();
+        log.info("Started BlockingThread, name={}", Thread.currentThread().getName());
+        thread.interrupt();
+    }
+
+    @DisplayName("join method")
+    @Test
+    void joinMethod() throws InterruptedException {
+        List<Long> numbers = Arrays.asList(0L, 1234L, 2345L, 23L, 3456L);
+        List<FactorialThread> threads = new ArrayList<>();
+
+        for(Long number : numbers){
+            threads.add(new FactorialThread(number));
+        }
+        
+        for(Thread thread : threads){
+            thread.setDaemon(true);
+            thread.start();
+        }
+
+        for(Thread thread : threads){
+            // thread.join(); // this call will make current thread to wait until all threads are finished
+            // thread.join(1000 * 2); // current thread waits maximum 2 seconds
+            thread.join(1000 * 2);
+        }
+        
+        for(int i=0;i<numbers.size();i++){
+            FactorialThread thread = threads.get(i);
+            if(thread.getIsFinished()){
+                log.info("factorial of number={} is {}", numbers.get(i), thread.getResult());
+            }else{
+                log.info("factorial of number={} is still in progress", numbers.get(i));
+            }
+        }
     }
 }
