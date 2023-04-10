@@ -1579,6 +1579,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Materials](testing/materials.md)
 * [Notes](testing/notes.md)
 * [Testing Methodologies](testing/notes.md#Testing-Methodologies)
+* [Smoke Testing vs Sanity Testing](testing/notes.md#Smoke-Testing-vs-Sanity-Testing)
 ------
 # [TypeScript](typescript)
 * [Materials](typescript/materials.md)
