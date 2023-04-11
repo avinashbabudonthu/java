@@ -453,3 +453,17 @@ public class MyRunnableMain {
 	* To place a request to jvm to reschedule the thread which has gone to wait state by calling wait() method
 * volatile
 	* preventing threads caching variable that is changing(from the same thread or by other thread)
+------
+# Runnable vs. Callable
+* The Runnable interface is very similar to the Callable interface. The Runnable interface represents a task that can be executed concurrently by a thread or an ExecutorService. The Callable can only be executed by an ExecutorService. Both interfaces only has a single method. There is one small difference between the Callable and Runnable interface though. The difference between the Runnable and Callable interface is more easily visible when you see the interface declarations.
+```
+public interface Runnable {
+    public void run();
+}
+
+public interface Callable{
+    public Object call() throws Exception;
+}
+```
+* The main difference between the Runnable run() method and the Callable call() method is that the call() method can return an Object from the method call. Another difference between call() and run() is that call() can throw an exception, whereas run() cannot (except for unchecked exceptions - subclasses of RuntimeException).
+* If you need to submit a task to a Java ExecutorService and you need a result from the task, then you need to make your task implement the Callable interface. Otherwise your task can just implement the Runnable interface
