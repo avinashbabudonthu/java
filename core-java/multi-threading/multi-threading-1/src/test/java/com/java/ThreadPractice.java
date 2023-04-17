@@ -67,7 +67,7 @@ public class ThreadPractice {
     /**
      * Before executing thread. id=1, name=main
      * After executing thread. id=1, name=main
-     * inside thread. id=14, name=Thread-1
+     * inside thread. id=14, name=worker-thread-1
      */
     @DisplayName("Print thread id name")
     @Test
@@ -75,9 +75,9 @@ public class ThreadPractice {
         log.info("Before executing thread. id={}, name={}", Thread.currentThread().getId(), Thread.currentThread().getName());
         Thread thread = new Thread(() -> {
             log.info("inside thread. id={}, name={}", Thread.currentThread().getId(), Thread.currentThread().getName());
-        });
-        log.info("After executing thread. id={}, name={}", Thread.currentThread().getId(), Thread.currentThread().getName());
+        }, "worker-thread-1");
         thread.start();
+        log.info("After executing thread. id={}, name={}", Thread.currentThread().getId(), Thread.currentThread().getName());
     }
 
     /**
@@ -91,6 +91,7 @@ public class ThreadPractice {
     void sleep() throws InterruptedException {
         log.info("Before execution");
         long startTime = System.currentTimeMillis();
+
         // sleep method takes milli seconds
         new Thread(() -> {
             log.info("inside thread run method, name={}", Thread.currentThread().getName());
@@ -132,7 +133,7 @@ public class ThreadPractice {
 
     /**
      * output:
-     * Critical exception occurred in Misbehave worker thread 1. Error is Intentional exception
+     * Critical exception occurred in - Misbehave worker thread 1. Error is - Intentional exception
      */
     @Test
     void exceptionHandling() {
@@ -144,17 +145,16 @@ public class ThreadPractice {
         thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
-                log.info("Critical exception occurred in {}. Error is {}", t.getName(), e.getMessage());
+                log.info("Critical exception occurred in - {}. Error is - {}", t.getName(), e.getMessage());
             }
         });
 
         thread.setName("Misbehave worker thread 1");
-
         thread.start();
     }
 
     /**
-     * If we call start() method 2 times then IllegalStateException will be thrown
+     * If we call start() method 2 times then IllegalThreadStateException will be thrown
      * <p>
      * output:
      * inside thread run method
@@ -172,7 +172,7 @@ public class ThreadPractice {
     }
 
     /**
-     * If interrupt() method is called any thread then InterruptedException is thrown.
+     * If interrupt() method is called on any thread then InterruptedException is thrown.
      * {@link BlockingThread} class is sleeping for 500,000 milli seconds, so interrupt() method called
      * on this thread, so this throws InterruptedException which is handled in catch block of
      * {@link BlockingThread#run()} method
@@ -195,6 +195,12 @@ public class ThreadPractice {
         thread.interrupt();
     }
 
+    void joinMethod1(){
+        Thread thread1 = new Thread(() -> {
+            log.info("Inside run method, name={}", Thread.currentThread().getName());
+        }, "worker-thread-1");
+    }
+
     @DisplayName("join method")
     @Test
     void joinMethod() throws InterruptedException {
@@ -212,8 +218,7 @@ public class ThreadPractice {
 
         for (Thread thread : threads) {
             // thread.join(); // this call will make current thread to wait until all threads are finished
-            // thread.join(1000 * 2); // current thread waits maximum 2 seconds
-            thread.join(1000 * 2);
+            thread.join(1000 * 2); // current thread waits maximum 2 seconds
         }
 
         for (int i = 0; i < numbers.size(); i++) {
