@@ -743,20 +743,20 @@
 * [Notes](graphql/notes.md)
 * [Materials](graphql/materials.md)
 # Projects
-# [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
-## Files
+### [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
+### Files
 * Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
 * Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
 * Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 
-## Run App
+### Run App
 * Run main class - [App](graphql/graph-ql-spring-boot/src/main/java/com/java/App.java)
 * Open url - http://localhost:9000/graphiql
   * UI to write and execute graphql queries
 * Postman collection - [graph-ql-spring-boot.postman_collection.json](graphql/graph-ql-spring-boot/files/graph-ql-spring-boot.postman_collection.json)
 * Import to postman to check graphql queries
 
-## Examples
+### Examples
 * Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
 * firstQuery - [firstQuery method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
 * fullName - [fullName method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
@@ -797,7 +797,7 @@ graphql.tools.schema-location-pattern=*/*.graphqls
 graphql.servlet.maxQueryDepth: 5
 ```
 
-## Enable voyager to visualize graphql schema
+### Enable voyager to visualize graphql schema
 * Add below dependency
 ```
 <dependency>
@@ -813,7 +813,7 @@ voyager.enabled=false
 ```
 * Github - https://github.com/IvanGoncharov/graphql-voyager
 
-## Other Examples
+### Other Examples
 * [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
 * [DataFetcherResult](graphql/graph-ql-spring-boot/README.md#DataFetcherResult)
 * [Async Resolvers](graphql/graph-ql-spring-boot/README.md#async-resolvers)

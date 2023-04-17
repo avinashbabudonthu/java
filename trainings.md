@@ -1,18 +1,5 @@
 # Trainings
 ------
-# Core Java
-* Oops concepts
-* Naming conventions
-* Access specifiers
-* Collecitons - List
-	* ArrayList
-* Collecitons - Set
-	* LinkedHashSet
-	* Treeset
-* Collecitons - Map
-	* LinkedHashMap
-	* TreeMap
-------
 # Git
 * Github/BitBucket/Gitlab accounts creation
 * TortoiseGit Installation
@@ -25,6 +12,101 @@
 * Connect to github repository using SSH key
 * Create app passwords in bitbucket
 * Git Conflicts
+------
+# Maven
+
+------
+# Core Java
+* Basics
+* Oops concepts
+* Naming conventions
+* Access specifiers
+* Class
+* Object
+* Interface
+* Primitive Data Types
+* Wrapper classes
+* Type Casting
+* Strings
+* Arrays
+* Loops
+* Exception Handling
+* Generics
+* References
+* Collecitons - List
+	* ArrayList
+	* LinkedList
+	* CopyOnWriteArrayList
+* Collecitons - Set
+	* HashSet
+	* LinkedHashSet
+	* TreeSet
+	* EnumSet
+* Collecitons - Map
+	* HashMap
+	* LinkedHashMap
+	* TreeMap
+	* ConcurrentHashMap
+	* EnumMap
+	* Collections.synchronizedMap vs. ConcurrentHashMap
+* Collections - Queue
+* File IO
+* BigDecimal
+* Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java
+* Integer class
+* Runtime class
+* Locale
+* Optional
+* Resource Bundle
+* Base64 encoding decoding
+* HashCodes
+* Decimal Format
+* Number Format
+* UUID Generator
+* Annotations
+* Serialization
+* Date time APIs
+* Enum
+* Multithreading
+* java.util.concurrency
+* Java 9
+* Java 11
+* Java 17
+* Reactive Programming
+------
+# Logging
+* Log4J
+* Util Logging
+------
+# Design Patterns
+* SOLID Principle
+* Creational
+* Behavioral
+* Structural
+------
+# Jackson JSON
+------
+# Unit Testing
+* Junit 4
+* Junit 5
+* Mockito
+* Powermock
+* Easy Mock
+* Spock
+------
+# Database
+* SQL
+* Oracle
+* MySQL
+* Postgre
+* SQL Server
+* Neo4J
+* Gremlin
+------
+# ORM
+* JPA
+* Hibernate
+* Mybatis
 ------
 # Spring Boot
 * Hello-World
@@ -82,3 +164,20 @@
 * Versioning
 * War Deploy To Tomcat 9
 * ActiveMQ
+------
+# Rest Clients
+* CURL
+* RestTemplate
+* WebClient
+* java.net.http.HttpClient - from Java 11
+------
+# Others
+* Lombok
+* Splunk
+* Redis
+* Swagger Codegen
+* Terraform
+* Visual Studio Code
+* Visual VM
+------
+# UML
