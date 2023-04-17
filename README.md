@@ -908,6 +908,8 @@ voyager.enabled=false
 ------
 # [HikariCP](hikari-cp)
 * [Materials](hikari-cp/materials.md)
+## Examples
+
 ------
 # [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
