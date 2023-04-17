@@ -195,16 +195,35 @@ public class ThreadPractice {
         thread.interrupt();
     }
 
+    /**
+     * output:
+     * Starting thread, name=main
+     * Inside run method, name=worker-thread-1
+     * Completed thread, name=main
+     */
+    @DisplayName("Join method Example 1")
+    @Test
     void joinMethod1(){
+        log.info("Starting thread, name={}", Thread.currentThread().getName());
         Thread thread1 = new Thread(() -> {
             log.info("Inside run method, name={}", Thread.currentThread().getName());
         }, "worker-thread-1");
+        thread1.start();
+
+        try {
+            // thread1.join(); // this call will make current thread to wait until all threads are finished
+            thread1.join(1000 * 2); // current thread waits maximum 2 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        log.info("Completed thread, name={}", Thread.currentThread().getName());
     }
 
-    @DisplayName("join method")
+    @DisplayName("join method example 2")
     @Test
-    void joinMethod() throws InterruptedException {
-        List<Long> numbers = Arrays.asList(0L, 1234L, 2345L, 23L, 3456L);
+    void joinMethod2() throws InterruptedException {
+        List<Long> numbers = Arrays.asList(0L, 1234L, 2345L, 2L, 3456L);
         List<FactorialThread> threads = new ArrayList<>();
 
         for (Long number : numbers) {
@@ -242,10 +261,30 @@ public class ThreadPractice {
     @DisplayName("Create ExecutorService")
     @Test
     void createExecutorService(){
+        /**
+         * Creates an Executor that uses a single worker thread operating off an unbounded queue.
+         * (Note however that if this single thread terminates due to a failure during execution prior to shutdown,
+         * a new one will take its place if needed to execute subsequent tasks.) Tasks are guaranteed to execute sequentially,
+         * and no more than one task will be active at any given time. Unlike the otherwise equivalent newFixedThreadPool(1)
+         * the returned executor is guaranteed not to be reconfigurable to use additional threads
+         */
         ExecutorService executorService1 = Executors.newSingleThreadExecutor();
         log.info("executorService1={}", executorService1);
+
+        /**
+         * Creates a thread pool that reuses a fixed number of threads operating off a shared unbounded queue.
+         * At any point, at most nThreads threads will be active processing tasks.
+         * If additional tasks are submitted when all threads are active, they will wait in the queue until a thread is available.
+         * If any thread terminates due to a failure during execution prior to shutdown,
+         * a new one will take its place if needed to execute subsequent tasks.
+         * The threads in the pool will exist until it is explicitly shutdown
+         */
         ExecutorService executorService2 = Executors.newFixedThreadPool(10);
         log.info("executorService2={}", executorService2);
+
+        /**
+         * Creates a thread pool that can schedule commands to run after a given delay, or to execute periodically.
+         */
         ExecutorService executorService3 = Executors.newScheduledThreadPool(10);
         log.info("executorService3={}", executorService3);
     }
@@ -263,7 +302,7 @@ public class ThreadPractice {
     void executorServiceMethods() {
         // execute(Runnable)
         Runnable thread1 = () -> log.info("Thread1, name={}", Thread.currentThread().getName());
-        ExecutorService executorService = Executors.newFixedThreadPool(10); // creates thread pool with 10 threads executing tasks
+        ExecutorService executorService = Executors.newFixedThreadPool(10); // creates thread pool with 10 threads
         executorService.execute(thread1); // Runnable to be executed by one of the threads in ExecutorService
         executorService.shutdown();
 
@@ -301,7 +340,9 @@ public class ThreadPractice {
     }
 
     /**
-     * The invokeAny() method takes a collection of Callable objects, or subinterfaces of Callable. Invoking this method does not return a Future, but returns the result of one of the Callable objects. You have no guarantee about which of the Callable's results you get. Just one of the ones that finish.
+     * The invokeAny() method takes a collection of Callable objects, or subinterfaces of Callable.
+     * Invoking this method does not return a Future, but returns the result of one of the Callable objects.
+     * You have no guarantee about which of the Callable's results you get. Just one of the ones that finish.
      * If one Callable finishes, so that a result is returned from invokeAny(), then the rest of the Callable instances are cancelled.
      * If one of the tasks complete (or throws an exception), the rest of the Callable's are cancelled.
      *
@@ -390,6 +431,7 @@ public class ThreadPractice {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
         try {
             List<Future<String>> resultList = executorService.invokeAll(callableSet);
+            executorService.shutdown();
 
             for(Future<String> future : resultList){
                 log.info("result={}", future.get());
@@ -410,6 +452,14 @@ public class ThreadPractice {
      * and once all threads have finished current tasks, the ExecutorService shuts down.
      * All tasks submitted to the ExecutorService before shutdown() is called, are executed.
      * Here is an example of performing a Java ExecutorService shutdown
+     *
+     * Javadoc:
+     * Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
+     * Invocation has no additional effect if already shut down.
+     * This method does not wait for previously submitted tasks to complete execution. Use awaitTermination to do that.
+     *
+     * output:
+     * Thread1, name=pool-1-thread-1
      */
     @DisplayName("shutdown method")
     @Test
@@ -426,6 +476,8 @@ public class ThreadPractice {
      * There are no guarantees given about the executing tasks. Perhaps they stop, perhaps the execute until the end.
      * It is a best effort attempt. Here is an example of calling ExecutorService shutdownNow:
      *
+     * output:
+     * Thread1, name=pool-1-thread-1
      */
     @DisplayName("shutdownNow method")
     @Test
@@ -441,6 +493,10 @@ public class ThreadPractice {
      * the ExecutorService has shutdown completely, or until a given time out occurs.
      * The awaitTermination() method is typically called after calling shutdown() or shutdownNow().
      * Here is an example of calling ExecutorService awaitTermination()
+     *
+     * output:
+     * Thread1, name=pool-1-thread-1
+     * await=true
      */
     @DisplayName("shutdownNow method")
     @Test
@@ -470,6 +526,10 @@ public class ThreadPractice {
      * await=true
      * result=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
      * result=[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+     * Inside callable1, thread-name=pool-2-thread-1
+     * Inside callable2, thread-name=pool-2-thread-2
+     * result2=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     * result2=[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
      */
     @DisplayName("Using Callable and Future to get result from thread execution")
     @Test
@@ -488,9 +548,11 @@ public class ThreadPractice {
         };
 
         ExecutorService executorService = Executors.newFixedThreadPool(4);
+        // submit callables to executorService
         Future<List<Integer>> resultFuture = executorService.submit(callable1);
         Future<List<Integer>> resultFuture2 = executorService.submit(callable2);
         executorService.shutdown();
+
         try {
             boolean await = executorService.awaitTermination(1, TimeUnit.HOURS);
             log.info("await={}", await);
@@ -506,6 +568,23 @@ public class ThreadPractice {
             log.info("result={}", result2);
         } catch (InterruptedException | ExecutionException e) {
             log.error("Exception while getting result from Future", e);
+        }
+
+        // method 2
+        // submit callables to executorService
+        ExecutorService executorService2  = Executors.newFixedThreadPool(5);
+        Set<Callable<List<Integer>>> callableSet = new HashSet<>();
+        callableSet.add(callable1);
+        callableSet.add(callable2);
+        try {
+            List<Future<List<Integer>>> futureList = executorService2.invokeAll(callableSet);
+            executorService2.shutdown();
+
+            for(Future<List<Integer>> future: futureList){
+                log.info("result2={}", future.get());
+            }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
         }
     }
 

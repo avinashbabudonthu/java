@@ -46,6 +46,7 @@
 * [H2 Database](#h2-database)
 * [Heroku](#heroku)
 * [Hibernate](#hibernate)
+* [HikariCP](#hikaricp)
 * [HTML Sanitizer](#html-sanitizer)
 * [IBM MQ](#ibm-mq)
 * [IntelliJ](#intellij)
@@ -904,6 +905,9 @@ voyager.enabled=false
 * [Practice Entites](orm/practice-entities)
 ## Examples
 * [Hibernate Basics](hibernate/hibernate-basics)
+------
+# [HikariCP](hikari-cp)
+* [Materials](hikari-cp/materials.md)
 ------
 # [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
