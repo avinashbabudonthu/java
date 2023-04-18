@@ -885,7 +885,6 @@ voyager.enabled=false
 * [String](groovy/groovy/strings)
 	* [StringsPractice](groovy/groovy/strings/src/test/java/com/strings/StringsPractice.groovy)
 		* declareString
-		* 
 * [XML](groovy/groovy/xml)
 ------
 # [GSON](gson)
@@ -909,7 +908,7 @@ voyager.enabled=false
 # [HikariCP](hikari-cp)
 * [Materials](hikari-cp/materials.md)
 ## Examples
-
+* [HikariCP creation and query execution](hikari-cp/hikari-cp-1/README.md)
 ------
 # [HTML Sanitizer](html-sanitizer)
 * [HTML Sanitize Method](html-sanitizer/html-sanitizer/src/test/java/com/java/html/sanitizer/HtmlSanitizer.java)
