@@ -1479,6 +1479,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Hibernate Bean Validation](spring/spring-boot/spring-boot-2/bean-validation)
 * [Spring Boot 2 Circle CI Integration](spring/spring-boot/spring-boot-2/circle-ci)
 * [CommandLineRunner - Execute some logic after starting of application](spring/spring-boot/spring-boot-2/command-line-runner)
+* [Configuration Properties](spring/spring-boot/spring-boot-2/configuration-properties)
 * [Context path change](spring/spring-boot/spring-boot-2/context-path-change)
 * [Spring Boot 2 Data JPA](spring/spring-boot/spring-boot-2/data-jpa)
 * [Docker build push](spring/spring-boot/spring-boot-2/docker-build-push)
