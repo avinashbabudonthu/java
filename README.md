@@ -33,6 +33,7 @@
 * [Drop wizard](#drop-wizard)
 * [Easy Mock](#easy-mock)
 * [ES6](#es6)
+* [Feign](#feign)
 * [Garbage Collection](#garbage-collection)
 * [Git](#git)
 * [GCP Google Cloud Platform](#google-cloud-platform)
@@ -697,6 +698,9 @@
 ------
 # [ES6](es6)
 * [Notes](es6/notes.js)
+------
+# [Feign](feign)
+* [Materials](feign/materials.md)
 ------
 # [Garbage Collection](garbage-collection)
 * [Materials](garbage-collection/materials.md)
