@@ -1087,6 +1087,9 @@ voyager.enabled=false
 # [Log4J](log4j)
 * [Materials](log4j/materials.md)
 * [Notes](log4j/notes.md)
+## Examples
+* [Log4J Properties With Console Appender](log4j/log4j-console-appender.properties)
+* [Log4J Properties With Console and File Appender](log4j/log4j-console-file-appender.properties)
 ------
 # [Logging](logging)
 * [Materials](logging/materials.md)

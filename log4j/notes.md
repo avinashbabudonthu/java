@@ -1,4 +1,4 @@
-## Formats
+# Formats
 Format            					| Description
 ------------------------------------| ------------------------------------
 %d{yyyy-MM-dd HH:mm:ss}           	| Date and time format, refer to SimpleDateFormat JavaDoc           
@@ -8,8 +8,11 @@ Format            					| Description
 %L									|	The line number from where the logging request
 %m%n								| The message to log and line break
 %M									| To get method name in log. logging with location is 4 - 20 times slower than without location
+%t                  | Current thread name
 
-## Priorities
+* https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout
+------
+# Priorities
 * If priority is defined in log4j.properties, only the same or above priority message will be logged
 ```
 package org.apache.log4j;
@@ -26,3 +29,4 @@ public class Priority {
   ----
 }
 ```
+------
