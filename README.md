@@ -1264,6 +1264,10 @@ voyager.enabled=false
 ------
 # [Postman](postman)
 * [Materials](postman/materials.md)
+* [Notes](postman/notes.md)
+* [Get response into Test script](postman/notes.md)
+* [Print response to console](postman/notes.md)
+* [Print response json into Body Visualize tab](postman/notes.md)
 ------
 # [Power Mock](power-mock)
 ## Examples
