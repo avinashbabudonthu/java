@@ -17,6 +17,7 @@
 * [Commons Lang3](#commons-lang3)
 * [Coding Web sites](#coding-web-sites)
 * [Concourse](#concourse)
+* [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
@@ -283,6 +284,12 @@
 # [Concourse](concourse)
 * [Materials](concourse/materials.md)
 ------
+# [Connection Pooling](connection-pooling)
+* [Notes](connection-pooling/notes.md)
+* [Materials](connection-pooling/materials.md)
+## Examples
+* [HikariCP](#hikaricp)
+------
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
@@ -330,6 +337,7 @@
 	* minMaxNoOfDigits
 	* roundingNumbers
 	* parseNumber
+	* [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
 * [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
 * [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java) - createBasicAuthHeader
 * [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generate10DigitRandomNumber
