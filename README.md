@@ -1478,6 +1478,8 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 	* Passing Command-Line Arguments to the SpringBootTest
 	* What is Dispatcher Servlet?
 * [Properties](spring/spring-boot/properties.md)
+	* Do not convert dates to timestamp while creating JSON using Jackson
+	* Allow cors
 
 ### [Spring Boot 1](spring/spring-boot/spring-boot-1)
 * [Context Path Change](spring/spring-boot/spring-boot-1/context-path-change)

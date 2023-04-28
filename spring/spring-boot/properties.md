@@ -3,3 +3,7 @@
 ```
 spring.jackson.serialization.write-dates-as-timestamp=false
 ```
+* Allow cors
+```
+web.cors.allowed-origins: ${cors_allowed_origins:http://localhost:4200}
+```
