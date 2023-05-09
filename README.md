@@ -72,6 +72,7 @@
 * [Karate](#karate)
 * [Kerberos](#kerberos)
 * [Kibana](#kibana)
+* [Kotlin](#kotlin)
 * [Kubernetes](#kubernetes)
 * [Linux](#linux)
 * [Liquibase](#liquibase)
@@ -114,6 +115,7 @@
 * [Teradata Database](#teradata-database)
 * [Terraform](#terraform)
 * [Testing](#testing)
+* [Thymeleaf](#thymeleaf)
 * [TypeScript](#typescript)
 * [UML](#uml)
 * [Unit Testing](#unit-testing)
@@ -1079,6 +1081,9 @@ voyager.enabled=false
 # [Kibana](kibana)
 * [Materials](kibana/materials.md)
 ------
+# [Kotlin](kotlin)
+* [[Materials](kotlin/materials.md)
+------
 # [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
 * [Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf](kubernetes/Kubernetes-For-Beginners-Mumshad-Mannambeth.pdf)
@@ -1608,6 +1613,9 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Notes](testing/notes.md)
 * [Testing Methodologies](testing/notes.md#Testing-Methodologies)
 * [Smoke Testing vs Sanity Testing](testing/notes.md#Smoke-Testing-vs-Sanity-Testing)
+------
+# [Thymeleaf](thymeleaf)
+* [Materials](materials.md)
 ------
 # [TypeScript](typescript)
 * [Materials](typescript/materials.md)
