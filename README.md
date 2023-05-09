@@ -1082,7 +1082,7 @@ voyager.enabled=false
 * [Materials](kibana/materials.md)
 ------
 # [Kotlin](kotlin)
-* [[Materials](kotlin/materials.md)
+* [Materials](kotlin/materials.md)
 ------
 # [Kubernetes](kubernetes)
 * [Commands](kubernetes/commands.md)
