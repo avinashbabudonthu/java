@@ -938,9 +938,11 @@ voyager.enabled=false
 * [Send Receive By Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/SendAndReceiveByListener.java)
 ------
 # [IntelliJ](intelli-j)
-* [Commands](intelli-j/commands.md)
-* [Commands Cheet Sheet](intelli-j/commands-cheat-sheet.pdf)
 * [Materials](intelli-j/materials.md)
+* [Commands Cheet Sheet](intelli-j/commands-cheat-sheet.pdf)
+* [Commands File](intelli-j/commands.md)
+* [Commands](intelli-j/commands.md#commands)
+* [Generate serial version UID in Intellij](intelli-j/commands.md#Generate-serial-version-UID-in-Intellij)
 ------
 # [Interview Questions](interview-questions)
 * [Set-1](interview-questions/set-1.md)
