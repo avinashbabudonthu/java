@@ -943,6 +943,7 @@ voyager.enabled=false
 * [Commands File](intelli-j/commands.md)
 * [Commands](intelli-j/commands.md#commands)
 * [Generate serial version UID in Intellij](intelli-j/commands.md#Generate-serial-version-UID-in-Intellij)
+* [Remove import wildcards](intelli-j/commands.md#Remove-import-wildcards)
 ------
 # [Interview Questions](interview-questions)
 * [Set-1](interview-questions/set-1.md)
