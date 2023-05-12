@@ -20,3 +20,4 @@
 * [Spring Boot REST API with JWT](https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/#Securing-RESTful-APIs-with-JWTs)
 * [JWT Authentication Server](https://medium.com/@xoor/jwt-authentication-service-44658409e12c)
 * [Centralized Authorization JWT Spring Boot 2](http://blog.marcosbarbero.com/centralized-authorization-jwt-spring-boot2/)
+* [Logging](https://howtodoinjava.com/spring-boot2/logging/logging-application-properties/)

@@ -1500,7 +1500,6 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Properties](spring/spring-boot/properties.md)
 	* Do not convert dates to timestamp while creating JSON using Jackson
 	* Allow cors
-
 ### [Spring Boot 1](spring/spring-boot/spring-boot-1)
 * [Context Path Change](spring/spring-boot/spring-boot-1/context-path-change)
 * [Spring Boot Data Jpa With H2 DB](spring/spring-boot/spring-boot-1/data-jpa-h2)
