@@ -17,3 +17,4 @@
 * Box - git/Git Pocket Guide.pdf
 * Box - progit.pdf
 * Git documentation - https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+* Merging vs Rebasing - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
