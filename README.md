@@ -148,7 +148,9 @@
 * [Hello World](apache-beam/hello-world)
 ------
 # [Apache Camel](apache-camel)
-* [Materials](apache-camel/materials.md)
+* [Notes](apache-camel/notes.md)
+* [Introduction](apache-camel/notes.md#Introduction)
+* [Unit testing](apache-camel/notes.md#Unit-testing)
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
