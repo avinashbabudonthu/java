@@ -14,12 +14,6 @@
 * Youtube - AWS Budget Setup Tutorial - https://www.youtube.com/watch?v=fvz0cphjHjg&list=PLAAFXN2OG73WoYuYevW5sYrc5UxbeRVZq&index=11&ab_channel=StephaneMaarek
 * Youtube - AWS-CloudWatch-Logs-1080p.mp4
 * Youtube - Amazon-CloudWatch-Tutorial-AWS-Certification-Cloud-Monitoring-Tools-AWS-Tutorial.mp4
-* Youtube - Introduction to Amazon DynamoDB | Edureka
-	* https://www.youtube.com/watch?v=ovEq4L6tGfc
-* Youtube - AWS DynamoDB Tutorial | AWS Services | AWS Tutorial For Beginners | AWS Training Video | Simplilearn
-	* https://www.youtube.com/watch?v=2mVR_Qgx_RU
-* Youtube - AWS Lambda & DynamoDB - AWS Serverless Part I
-	* https://www.youtube.com/watch?v=ijyeE-pXFk0
 * Youtube - Streaming Logs to CloudWatch from EC2
 	* https://www.youtube.com/watch?v=mJXcxe6Kxwg
 * Youtube - AWS - CloudWatch Metrics, Alarms, Pricing, Events, Detailed Monitoring
@@ -30,3 +24,12 @@
 	* https://www.youtube.com/watch?v=2oXVYxIPs88
 * Others - [AWS Java SDK](https://aws.amazon.com/sdk-for-java)
 * Others - [Amazon Cli Documentation](https://aws.amazon.com/cli)
+------
+# Dynamo DB Materials in study order
+* Youtube - Introduction to Amazon DynamoDB | Edureka
+	* https://www.youtube.com/watch?v=ovEq4L6tGfc
+* Youtube - AWS DynamoDB Tutorial | AWS Services | AWS Tutorial For Beginners | AWS Training Video | Simplilearn
+	* https://www.youtube.com/watch?v=2mVR_Qgx_RU
+* Youtube - AWS Lambda & DynamoDB - AWS Serverless Part I
+	* https://www.youtube.com/watch?v=ijyeE-pXFk0
+	
