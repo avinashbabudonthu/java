@@ -14,6 +14,15 @@ fun main() {
     var name4: String = "$name1 $name2"
     println("name4: $name4") // name4: Jack John
 
+    var multilineString: String = """Welcome to Kotlin
+        multi line String
+    """
+    /*
+    multilineString: Welcome to Kotlin
+        multi line String
+     */
+    println("multilineString: $multilineString")
+
     accessCharacterInString("Java")
     accessCharacterInString("Kotlin")
     length("Java")
@@ -24,6 +33,57 @@ fun main() {
     compareTo("Kotlin", "Java") // result: 1
     indexOf()
     concat()
+
+    var result: String = template("Hello", "World")
+    println("result: $result") // result: Hello-World
+    println("result.length: ${result.length}") // result.length: 11
+
+    lastIndex()
+    dropFirstNCharacters()
+    dropLastNCharacter()
+
+    var str: String = "hello ' world"
+    println("str: $str") // str: hello ' world
+
+    var str2: String = "hello \" world"
+    println("str2: $str2") // str2: hello " world
+
+    getOrNull()
+    getOrElse()
+}
+
+// getOrNull() function returns a character at the given index or null if the index is out of bounds of this char sequence
+fun getOrNull(){
+    var str: String = "Kotlin"
+    println("str: ${str.getOrNull(1)}") // str: o
+    println("str: ${str.getOrNull(10)}") // str: null
+}
+
+fun getOrElse() {
+    var str: String = "Kotlin"
+    println("str: ${str.getOrElse(1) { 'A' }}") // str: o
+    println("str: ${str.getOrElse(10) {'B'}}") // str: B
+}
+
+fun dropFirstNCharacters() {
+    var str: String = "HelloWorld";
+    var str2: String = str.drop(2) // n == 2
+    println("str: $str, str2: $str2") // str: HelloWorld, str2: lloWorld
+}
+
+fun dropLastNCharacter() {
+    var str: String = "HelloWorld";
+    var str2: String = str.dropLast(2) // n == 2
+    println("str: $str, str2: $str2") // str: HelloWorld, str2: HelloWor
+}
+
+fun lastIndex() {
+    var name: String = "Hello World"
+    println("name.lastIndex: ${name.lastIndex}") // name.lastIndex: 10
+}
+
+fun template(name1: String, name2: String): String {
+    return "$name1-$name2"
 }
 
 /**
@@ -76,7 +136,7 @@ fun indexOf() {
     println("indexOfKotlin: $indexOfKotlin") // indexOfKotlin: 23
 }
 
-fun concat(){
+fun concat() {
     var str1: String = "Java"
     var str2: String = "Kotlin"
     var str3: String = str1 + " " + str2
