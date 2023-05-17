@@ -26,10 +26,9 @@
 * Others - [Amazon Cli Documentation](https://aws.amazon.com/cli)
 ------
 # Dynamo DB Materials in study order
-* Youtube - Introduction to Amazon DynamoDB | Edureka
-	* https://www.youtube.com/watch?v=ovEq4L6tGfc
 * Youtube - AWS DynamoDB Tutorial | AWS Services | AWS Tutorial For Beginners | AWS Training Video | Simplilearn
 	* https://www.youtube.com/watch?v=2mVR_Qgx_RU
+* Youtube - Introduction to Amazon DynamoDB | Edureka
+	* https://www.youtube.com/watch?v=ovEq4L6tGfc
 * Youtube - AWS Lambda & DynamoDB - AWS Serverless Part I
 	* https://www.youtube.com/watch?v=ijyeE-pXFk0
-	
