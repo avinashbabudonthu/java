@@ -390,41 +390,43 @@
 # Strings
 * [Notes](core-java/notes/strings.md)
 * [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-	* Create String - createString
-	* getbyteArrayFromString
-	* getAsciValueOfCharsInString
-	* convertByteArrayToString
-	* divideString
-	* stringToCharArray
-	* convertCase
-	* capitalizeFirstChar
-	* stringShift
-	* printAllSubStringsOfSpecifiedLength
-	* sortStringsInSentnceByLength
-	* replaceAll
-	* removeSpacesInString
-	* lastNCharactersOfString
-	* split
-	* splitByPipe
-	* subString
-	* stringToEBCDIC
-	* stringToBytes
-	* removeHTMLFromString
-	* stringToInputStream
-	* generateExcelCellNames
-	* inputStreamToString
-	* rotateString
-	* Clob to String conversion - clobToString
+* createString
+* getbyteArrayFromString
+* getAsciValueOfCharsInString
+* convertByteArrayToString
+* divideString
+* stringToCharArray
+* convertCase
+* capitalizeFirstChar
+* stringShift
+* printAllSubStringsOfSpecifiedLength
+* sortStringsInSentnceByLength
+* replaceAll
+* removeSpacesInString
+* lastNCharactersOfString
+* split
+* splitByPipe
+* subString
+* stringToEBCDIC
+* stringToBytes
+* removeHTMLFromString
+* stringToInputStream
+* generateExcelCellNames
+* inputStreamToString
+* rotateString
+* clobToString
+* removeStringFromEnd
 * [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-	* String format conventions and flags - stringFormatConventionsAndFlags
-	* String format - stringFormat
-	* To use (%) percentage symbol in String - format2
+* stringFormatConventionsAndFlags
+* stringFormat
+* usePercentageSymbolInStringFormat
 * [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
-	* Comma seprated String - commaSeparatedString
-	* String join - stringJoin
-	* List of Employee objects to comma separated first names - listOfEmployeeToCommaSeparatedFirstName
-	* merge 2 string joiners - merge
-	* String joiner length - length
+* commaSeparatedString
+* stringJoin
+* listOfEmployeeToCommaSeparatedFirstName
+* merge
+* length
+* prefixSuffixEachStringInListOfString
 
 # [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)

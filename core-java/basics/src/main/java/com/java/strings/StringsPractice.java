@@ -654,4 +654,16 @@ public class StringsPractice {
         }
     }
 
+    @Test
+    public void removeStringFromEnd(){
+        log.info("{}", StringUtils.removeEnd(null, "*")); //null
+        log.info("{}", StringUtils.removeEnd("", "*")); // ""
+        log.info("{}", StringUtils.removeEnd("*", null)); // *
+        log.info("{}", StringUtils.removeEnd("www.domain.com", ".com.")); // www.domain.com
+        log.info("{}", StringUtils.removeEnd("www.domain.com", ".com")); // www.domain
+        log.info("{}", StringUtils.removeEnd("www.domain.com", "domain")); // www.domain.com
+        log.info("{}", StringUtils.removeEnd("abc", "")); // abc
+        log.info("{}", StringUtils.removeEnd("abc,", ",")); // abc
+    }
+
 }

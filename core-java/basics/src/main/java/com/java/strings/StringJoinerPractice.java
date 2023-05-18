@@ -65,7 +65,7 @@ public class StringJoinerPractice {
 
         String str = employeeList.stream().map(x -> x.getFirstName())
                 .collect(Collectors.joining(",", "prefix-", "-suffix"));
-        System.out.println("str:" + str);
+        System.out.println("str:" + str); // str:prefix-jack,john,jim,jane-suffix
     }
 
     /**
@@ -112,6 +112,23 @@ public class StringJoinerPractice {
         stringJoiner.add("jane");
 
         System.out.println("stringJoiner.length==" + stringJoiner.length());
+    }
+
+    @Test
+    public void prefixSuffixEachStringInListOfString(){
+        List<String> names = new ArrayList<>();
+        names.add("jack");
+        names.add("john");
+        names.add("jill");
+        names.add("jane");
+        names.add("june");
+        log.info("names={}", names); // names=[jack, john, jill, jane, june]
+
+        StringJoiner stringJoiner = new StringJoiner(",");
+        for(String name: names){
+            stringJoiner.add("'" + name + "'");
+        }
+        log.info("stringJoiner.toString: {}", stringJoiner.toString()); // stringJoiner.toString: 'jack','john','jill','jane','june'
     }
 
 }

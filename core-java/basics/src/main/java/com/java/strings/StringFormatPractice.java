@@ -85,7 +85,7 @@ public class StringFormatPractice {
      * Ana got 90% percentage
      */
     @Test
-    public void format2() {
+    public void usePercentageSymbolInStringFormat() {
         String str2 = "Ana got %s%% percentage";
         String result = String.format(str2, "90");
         System.out.println(result);
