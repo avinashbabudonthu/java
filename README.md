@@ -390,43 +390,43 @@
 # Strings
 * [Notes](core-java/notes/strings.md)
 * [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-* createString
-* getbyteArrayFromString
-* getAsciValueOfCharsInString
-* convertByteArrayToString
-* divideString
-* stringToCharArray
-* convertCase
-* capitalizeFirstChar
-* stringShift
-* printAllSubStringsOfSpecifiedLength
-* sortStringsInSentnceByLength
-* replaceAll
-* removeSpacesInString
-* lastNCharactersOfString
-* split
-* splitByPipe
-* subString
-* stringToEBCDIC
-* stringToBytes
-* removeHTMLFromString
-* stringToInputStream
-* generateExcelCellNames
-* inputStreamToString
-* rotateString
-* clobToString
-* removeStringFromEnd
+* [createString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [getbyteArrayFromString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [getAsciValueOfCharsInString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [convertByteArrayToString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [divideString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [stringToCharArray](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [convertCase](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [capitalizeFirstChar](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [stringShift](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [printAllSubStringsOfSpecifiedLength](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [sortStringsInSentnceByLength](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [replaceAll](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [removeSpacesInString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [lastNCharactersOfString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [split](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [splitByPipe](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [subString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [stringToEBCDIC](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [stringToBytes](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [removeHTMLFromString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [stringToInputStream](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [generateExcelCellNames](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [inputStreamToString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [rotateString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [clobToString](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [removeStringFromEnd](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
 * [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* stringFormatConventionsAndFlags
-* stringFormat
-* usePercentageSymbolInStringFormat
+* [stringFormatConventionsAndFlags](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [stringFormat](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [usePercentageSymbolInStringFormat](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
 * [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
-* commaSeparatedString
-* stringJoin
-* listOfEmployeeToCommaSeparatedFirstName
-* merge
-* length
-* prefixSuffixEachStringInListOfString
+* [commaSeparatedString](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [stringJoin](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [listOfEmployeeToCommaSeparatedFirstName](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [merge](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [length](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [prefixSuffixEachStringInListOfString](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 
 # [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
@@ -434,41 +434,41 @@
 * [Examples](#javautil-package)
 * [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
 * List Examples
-	* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
-	* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
-	* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
+* [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
+* [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
+* [CopyOnWriteArrayListPractice](core-java/collections/src/test/java/com/list/CopyOnWriteArrayListPractice.java)
 * Set Examples
-	* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
-	* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
-	* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
-	* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
-	* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
-	* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
+* [HashSet](core-java/collections/src/test/java/com/set/HashSetPractice.java)
+* [LinkedHashSet](core-java/collections/src/test/java/com/set/LinkedHashSetPractice.java)
+* [TreeSet](core-java/collections/src/test/java/com/set/TreeSetPractice.java)
+* [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
+* [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
+* [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
 * Map Examples
-	* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
-	* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
-	* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
-	* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
-	* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
-	* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
-	* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
-	* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
-	* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
-	* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
+* [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+* [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
+* [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
+* [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
+* [ConcurrentSkipListMap](core-java/collections/src/test/java/com/map/ConcurrentSkipListMapPractice.java)
+* [EnumMap](core-java/collections/src/test/java/com/map/EnumMapPractice.java)
+* [IdentityHashMap](core-java/collections/src/test/java/com/map/IdentityHashMapPractice.java)
+* [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
+* [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
+* [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
 * Queue Examples
-	* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
+* [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
 * Dequeue Examples
-	* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
+* [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 * [Arrays](core-java/collections/src/test/java/com/util/ArraysPractice.java)
-	* parallelSort
-	* parallelSetAll
-	* setAll
-	* parallelPrefix
-	* deepEquals
-	* hashCode
-	* deepHashCode
-	* fill
-	* deepToString
+* parallelSort
+* parallelSetAll
+* setAll
+* parallelPrefix
+* deepEquals
+* hashCode
+* deepHashCode
+* fill
+* deepToString
 
 # Serialization Examples
 * [Notes](core-java/notes/serialization.md)
@@ -498,95 +498,95 @@
 * Z - Time Zone
 ## Examples
 * [Clock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
-	* createClock
-	* clockMethods
+* [createClock](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
+* [clockMethods](core-java/date-practice/src/test/java/com/date/api/practice/ClockPractice.java)
 * [Conversion from class to class](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
-	* localDateToGregorianCalendar
-	* localDateToXmlGregorianCalendar
-	* utilDateToXmlGregorianCalendar
-	* xmlGregorianCalendarToUtilDate
-	* xmlGregorianCalendarToGregorianCalendar
-	* timeInMillisToGregorian
+* [localDateToGregorianCalendar](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [localDateToXmlGregorianCalendar](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [utilDateToXmlGregorianCalendar](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [xmlGregorianCalendarToUtilDate](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [xmlGregorianCalendarToGregorianCalendar](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
+* [timeInMillisToGregorian](core-java/date-practice/src/test/java/com/date/api/practice/ConversionFromClassToClass.java)
 * [Date Utils](core-java/date-practice/src/test/java/com/date/api/practice/DateUtils.java)
-	* convertDateFormat1
-	* getDayOfWeek
+* convertDateFormat1
+* getDayOfWeek
 * [Duration](core-java/date-practice/src/test/java/com/date/api/practice/DurationPractice.java)
-	* durationBetweenTwoDates
+* durationBetweenTwoDates
 * [Instant](core-java/date-practice/src/test/java/com/date/api/practice/InstantPractice.java)
-	* createInstant
-	* instantToOffsetDateTime
-	* instantToUtilDate
+* createInstant
+* instantToOffsetDateTime
+* instantToUtilDate
 * [LocateDate](core-java/date-practice/src/test/java/com/date/api/practice/LocalDatePractice.java)
-	* createLocalDateWithCurrentDate
-	* createLocalDate
-	* addDayWeekMonth
-	* nextSunday
-	* nextMonthSecondSaturday
-	* convertLocalDateToUtilDate
-	* convertStringToLocalDate
-	* convertLocalDateToString
+* createLocalDateWithCurrentDate
+* createLocalDate
+* addDayWeekMonth
+* nextSunday
+* nextMonthSecondSaturday
+* convertLocalDateToUtilDate
+* convertStringToLocalDate
+* convertLocalDateToString
 * [LocalDateTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalDateTimePractice.java)
-	* createLocalDateTime
-	* convertLocalDateTimeToUtilDate
-	* convertLocalDateTimeToZonedDateTime
-	* convertLocalDateTimeToStringTimeStamp
-	* localDateTimeToOffsetDateTime
+* createLocalDateTime
+* convertLocalDateTimeToUtilDate
+* convertLocalDateTimeToZonedDateTime
+* convertLocalDateTimeToStringTimeStamp
+* localDateTimeToOffsetDateTime
 * [LocalTime](core-java/date-practice/src/test/java/com/date/api/practice/LocalTimePractice.java)
-	* createLocalTime
+* createLocalTime
 * [OffsetDateTime](core-java/date-practice/src/test/java/com/date/api/practice/OffsetDateTimePractice.java)
-	* create
-	* offsetDateTimeToLocalDateTime
-	* offsetDateTimeToLocalDate
-	* offsetDateTimeToLocalTime
-	* offsetDateTimeToZonedDateTime
-	* offsetDateTimeToInstant
-	* offsetDateTimeToOffsetTime
-	* offsetDateTimeYearMonthDay
-	* offsetDateTimeHourMinuteSecond
-	* addYearMonthEtc
-	* subtractYearMonthEtc
-	* compare
-	* stringToOffsetDateTime
-	* offsetDateTimeToString
-	* convertUtilDateToOffsetDateTime
-	* covertOffsetDateTimeToUtilDate
+* create
+* offsetDateTimeToLocalDateTime
+* offsetDateTimeToLocalDate
+* offsetDateTimeToLocalTime
+* offsetDateTimeToZonedDateTime
+* offsetDateTimeToInstant
+* offsetDateTimeToOffsetTime
+* offsetDateTimeYearMonthDay
+* offsetDateTimeHourMinuteSecond
+* addYearMonthEtc
+* subtractYearMonthEtc
+* compare
+* stringToOffsetDateTime
+* offsetDateTimeToString
+* convertUtilDateToOffsetDateTime
+* covertOffsetDateTimeToUtilDate
 * [Util Date](core-java/date-practice/src/test/java/com/date/api/practice/UtilDate.java)
-	* convertStringToDate
-	* convertDateToString
-	* convertDateToLocalDateTime
-	* convertUtilDateToLocalDate
-	* convertUtilDateToLocalTime
-	* convertUtilDateToZonedDateTime
-	* before
-	* after
-	* utilDateToTimeStamp
-	* timeStampToUtilDate
+* convertStringToDate
+* convertDateToString
+* convertDateToLocalDateTime
+* convertUtilDateToLocalDate
+* convertUtilDateToLocalTime
+* convertUtilDateToZonedDateTime
+* before
+* after
+* utilDateToTimeStamp
+* timeStampToUtilDate
 * [ZoneDateTime](core-java/date-practice/src/test/java/com/date/api/practice/ZonedDateTimePractice.java)
-	* createZonedDateTime
-	* convertZonedDateTimeToUtilDate
-	* zonedDateTimeToOffsetDateTime
+* createZonedDateTime
+* convertZonedDateTimeToUtilDate
+* zonedDateTimeToOffsetDateTime
 
 # Enum
 * [Enum Basics](core-java/basics/src/test/java/com/enums/EnumPractice.java)
-	* [DaysEnum](core-java/basics/src/main/java/com/enums/DaysEnum.java)
-	* [DaysEnum2](core-java/basics/src/main/java/com/enums/DaysEnum2.java)
-	* [EnumImpl](core-java/basics/src/main/java/com/enums/EnumImpl.java)
-	* [EnumMethods](core-java/basics/src/main/java/com/enums/EnumMethods.java)
-	* [IEnum](core-java/basics/src/main/java/com/enums/IEnum.java)
-	* accessEnumValue
-	* iterateEnum
-	* enumInIf
-	* enumInSwitch
-	* iterateEnumWithArgumentedConstructor
-	* enumToString
-	* valueOf
-	* enumMethods
-	* enumImplementingInterface
-	* enumSet
-	* enumMap
+* [DaysEnum](core-java/basics/src/main/java/com/enums/DaysEnum.java)
+* [DaysEnum2](core-java/basics/src/main/java/com/enums/DaysEnum2.java)
+* [EnumImpl](core-java/basics/src/main/java/com/enums/EnumImpl.java)
+* [EnumMethods](core-java/basics/src/main/java/com/enums/EnumMethods.java)
+* [IEnum](core-java/basics/src/main/java/com/enums/IEnum.java)
+* accessEnumValue
+* iterateEnum
+* enumInIf
+* enumInSwitch
+* iterateEnumWithArgumentedConstructor
+* enumToString
+* valueOf
+* enumMethods
+* enumImplementingInterface
+* enumSet
+* enumMap
 * [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
-	* [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
-	* lookupMap
+* [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
+* lookupMap
 ------
 # Multi threading
 * [Materials](core-java/multi-threading/materials.md)
