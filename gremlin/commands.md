@@ -525,3 +525,20 @@ gremlin> g.V().hasLabel("person").as("person").
 ==>[name:josh,label:created,software:lop,softwareLang:lop]
 ==>[name:peter,label:created,software:lop,softwareLang:lop]
 ```
+* Update property of node
+```
+g.V(4192).property('name','Jim')
+```
+* Update property of node - also work with the Vertex directly and do
+```
+v = g.V(4192).next()
+v.property('name','Jim')
+```
+* Update property of node - In case the `property()` method generates an array of values rather than updating the value, use `Cardinality`. This will replace the property value instead of appending into the list
+```
+g.V(4192)v.property(Cardinality.single, 'name', 'Jim').next()
+```
+* Update multiple properties at one
+```
+g.V(4192).property('name','John').property('age',30)
+```
