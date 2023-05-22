@@ -1,3 +1,0 @@
-# One-to-Many relationship - JoinTabele
-* One-to-Many relationship from CD4 table to Musician4 table
-* Unidirectional mapping using JoinTabele from CD4 pojo to Musician4 pojo
