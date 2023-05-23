@@ -1285,6 +1285,9 @@ voyager.enabled=false
 * [Notes](no-sql/notes.md)
 * [Types of NoSQL Databases](no-sql/notes.md#Types-of-NoSQL-Databases)
 * [Columnar database](no-sql/notes.md#Columnar-database)
+* [Key-Value store](no-sql/notes.md#Key-Value-store)
+* [Graph database](no-sql/notes.md#Graph-database)
+* [Document database](no-sql/notes.md#Document-database)
 ------
 # [NPM](npm)
 * [Commands](npm/commands.md)
