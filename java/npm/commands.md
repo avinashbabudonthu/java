@@ -25,3 +25,7 @@ npm install -g npm@y
 
 npm install -g npm@9.3.0
 ```
+* Configurations
+```
+npm config list
+```
