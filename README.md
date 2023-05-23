@@ -1,2 +1,2 @@
-# Single Repo For All Java Examples, topic wise in Alphabetical Order
+# Single repo for all Java stack 
 * [Table of Contents](java/README.md#index)
