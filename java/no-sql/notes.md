@@ -10,4 +10,6 @@
 * Good for things like Data warehouse and analytics
 * Reduces disk io requirements
 * Examples
-    * [cassandra](../README.md#cassandra)
+* [Apache cassandra](../README.md#cassandra)
+* Apache HBase
+* Amazon Redshift

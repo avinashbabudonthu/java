@@ -1284,6 +1284,7 @@ voyager.enabled=false
 * [Materials](no-sql/materials.md)
 * [Notes](no-sql/notes.md)
 * [Types of NoSQL Databases](no-sql/notes.md#Types-of-NoSQL-Databases)
+* [Columnar database](no-sql/notes.md#Columnar-database)
 ------
 # [NPM](npm)
 * [Commands](npm/commands.md)
