@@ -1,12 +1,12 @@
 # Installing node
-* Download latest version of node from [here](https://nodejs.org/en/)
+* Download latest version of node from - https://nodejs.org/en/
 * Install
 * Check node version
 ```
 node --version
 node -v
 ```
-* We will get `npm` automaticall when we install node js
+* `npm` also installed when we install `node js`
 * Check npm version
 ```
 npm --version
