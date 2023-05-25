@@ -1279,6 +1279,8 @@ voyager.enabled=false
 ------
 # [Node JS](node-js)
 * [Install Node JS](node-js/install-node-js.md)
+* [Hello World Folder](node-js/hello-world)
+* [Hello World](node-js/hello-world/README.md#hello-world)
 ------
 # [No SQL](no-sql)
 * [Materials](no-sql/materials.md)
