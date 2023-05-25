@@ -21,7 +21,7 @@ node variables.js
 node variables
 ```
 ------
-# [String](strings.js)
+# [Strings](strings.js)
 # [Objects](objects.js)
 # [Arrays](arrays.js)
 # [Conditions](conditions.js)
