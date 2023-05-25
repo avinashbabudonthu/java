@@ -1,4 +1,4 @@
-# Table of Contents
+# Table of Contents (Sorted order)
 * [Angular](#angular)
 * [Angular JS](#angular-js)
 * [Ansible](#ansible)
