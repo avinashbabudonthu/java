@@ -4,6 +4,7 @@ console.log(x);
 var y = "world";
 console.log(y);
 
+// string concat
 console.log(x+y);
 
 // multilin strings

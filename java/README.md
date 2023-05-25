@@ -1279,8 +1279,17 @@ voyager.enabled=false
 ------
 # [Node JS](node-js)
 * [Install Node JS](node-js/install-node-js.md)
+* [Notes](node-js/notes.md)
 * [Hello World Folder](node-js/hello-world)
 * [Hello World](node-js/hello-world/README.md#hello-world)
+* [Variables](node-js/hello-world/README.md#variables)
+* [Strings](node-js/hello-world/README.md#strings)
+* [Objects](node-js/hello-world/README.md#objects)
+* [Arrays](node-js/hello-world/README.md#arrays)
+* [Conditions](node-js/hello-world/README.md#conditions)
+* [Loops](node-js/hello-world/README.md#loops)
+* [Functions](node-js/hello-world/README.md#functions)
+* [Promises](node-js/hello-world/README.md#promises)
 ------
 # [No SQL](no-sql)
 * [Materials](no-sql/materials.md)
