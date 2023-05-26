@@ -1367,10 +1367,9 @@ voyager.enabled=false
 * [Materials](react-js/materials.md)
 ------
 # [Redis](redis)
+* Download Redis for windows - https://github.com/MicrosoftArchive/redis/releases
 * [Materials](redis/materials.md)
 * [Commands](redis/commands.md)
-## Examples
-* [Download Redis for windows](https://github.com/MicrosoftArchive/redis/releases)
 ------
 # [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)
