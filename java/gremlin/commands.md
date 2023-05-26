@@ -318,7 +318,7 @@ gremlin> g.V().valueMap(true)
 ==>[id:1,label:person,name:[marko],age:[29]]
 ==>[id:2,label:person,name:[vadas],age:[27]]
 ```
-* get `id` and `label` with other properties. Alternative to `valueMap(true)`
+* get `id` and `label` with other properties. Alternative to `valueMap(true)`. If property has list then `elementMap` returns 1st value from the list to display so better to use `valueMap(true)` which displays list of values
 ```
 gremlin> g.V().elementMap()
 ==>[id:1,label:person,name:marko,age:29]

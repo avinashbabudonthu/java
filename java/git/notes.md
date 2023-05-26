@@ -174,6 +174,32 @@ git config --global user.email "my-email@gmail.com"
 ```
 git config --global core.editor "code --wait"
 ```
+* Reset config
+```
+git config --global --unset core.editor
+```
+* If we have more variables for one config you can use
+```
+git config --global --unset-all user.name
+```
+* We can simply edit the config file and then remove the setting by hand
+```
+git config --global --edit
+```
+* If we have the same key repeated (because you did an --add instead of --edit), this command will not work then can do 
+```
+git config --replace-all core.editor "your_value"
+```
+* can edit the file at `C:\Users\%USERNAME%\.gitconfig`
+* Can find the location of configurations with below command
+```
+git config -l --show-origin
+
+output:
+file:C:/Users/%USERNAME%/.gitconfig       user.name=Testing Name
+file:C:/Users/%USERNAME%/.gitconfig       user.email=testing.name@mail.com
+file:C:/Users/%USERNAME%/.gitconfig       core.editor=code wait
+```
 
 # push local repo to git
 * Create repository in github
