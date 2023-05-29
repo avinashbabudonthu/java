@@ -1290,6 +1290,7 @@ voyager.enabled=false
 * [Loops](node-js/hello-world/README.md#loops)
 * [Functions](node-js/hello-world/README.md#functions)
 * [Promises](node-js/hello-world/README.md#promises)
+* [Project 1](node-js/project-1)
 ------
 # [No SQL](no-sql)
 * [Materials](no-sql/materials.md)

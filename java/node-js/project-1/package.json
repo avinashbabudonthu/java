@@ -1,0 +1,14 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "node project 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Donthu Avinash Babu",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}

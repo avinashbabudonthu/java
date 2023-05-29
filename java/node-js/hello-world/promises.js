@@ -25,6 +25,57 @@ function fun1(data) {
     });
 }
 
-fun1(true).then(
-    (successMessage) => console.log(successMessage)
+// { status: 'success', message: 'all good' }
+// fun1(true).then(
+//     (successMessage) => {
+//         console.log(successMessage);
+//     },
+//     (errorMessage) => {
+//         console.log(errorMessage);
+//     }
+// );
+
+// { status: 'error', message: 'something wrong' }
+// fun1(false).then(
+//     (successMessage) => {
+//         console.log(successMessage);
+//     },
+//     (errorMessage) => {
+//         console.log(errorMessage);
+//     }
+// );
+
+// chaining promises - writing above 2 fun1 calls in single code
+/*
+1 - first fun1 call - {"status":"success","message":"all good"}
+2 - second fun1 call - {"status":"error","message":"something wrong"}
+*/
+// fun1(true).then(
+//     (successMessage) => {
+//         console.log('1 - first fun1 call - ' + JSON.stringify(successMessage));
+//         return fun1(false);
+//     }
+// ).then(
+//     (successMessage) => {
+//         console.log('2 - second fun1 call - ' + JSON.stringify(successMessage));
+//     },
+//     (errorMessage) => {
+//         console.log('3 - second fun1 call - ' + JSON.stringify(errorMessage));
+//     }
+// );
+
+// 7 - Error occured
+fun1(false).then(
+    (successMessage) => {
+        console.log('4 - fun1 call - ' + JSON.stringify(successMessage));
+        return fun1(false);
+    }
+).then(
+    (successMessage) => {
+        console.log('5 - fun1 call - ' + JSON.stringify(successMessage));
+    }
+).catch(
+    () => {
+        console.log("7 - Error occured");
+    }
 );
