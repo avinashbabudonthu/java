@@ -16,3 +16,9 @@ npm init
 npm install express --save
 ```
 * create [server.js](server.js) file to write our REST APIs
+* We wrote 2 APIs - `GET` & `POST`
+* Run below command to start application
+```
+node server
+```
+* Refer APIs - Import [postman-collection](postman-collection/express.postman_collection.json)
