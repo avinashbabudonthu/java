@@ -30,3 +30,4 @@ npm install -g npm@9.3.0
 npm config list
 ```
 * artifacts download location - `C:\\Users\\%USERNAME%\\.npmrc`
+* [npm config](npm-config.pdf)
