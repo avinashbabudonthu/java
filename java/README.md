@@ -619,7 +619,22 @@
 
 # [Java 17](core-java/java-17)
 * [Materials](core-java/java-17/materials.md)
-
+* [Notes](core-java/java-17/notes.md)
+* [JDK 17 Features](core-java/java-17/notes.md#JDK-17-Features)
+* [Sealed Class](core-java/java-17/notes.md#Generate-sealed-Classes)
+* [Top 5 Java 17 features](core-java/java-17/notes.md#Top-5-Java-17-features)
+* [Java Record Datatype](core-java/java-17/notes.md#Java-Records)
+* [Text Blocks](core-java/java-17/notes.md#Java-text-blocks)
+* [Helpful NullPointerException guidance](core-java/java-17/notes.md#Helpful-NullPointerException-guidance)
+* [Java17 Practice Project](core-java/java-17/java-17)
+* [switchCase](core-java/java-17/java-17/src/test/java/com/java/Java17FeaturesTest.java)
+* [Sealed class] - Refer classes
+	* [Subjects](core-java/java-17/java-17/src/main/java/com/java/Subjects.java)
+	* [Java](core-java/java-17/java-17/src/main/java/com/java/Java.java) extends `Subjects` and `final`
+	* [Spring](core-java/java-17/java-17/src/main/java/com/java/Spring.java) extends `Subjects` and `final`
+	* [SQL](core-java/java-17/java-17/src/main/java/com/java/SQL.java) extends `Subjects` and `final`
+* [record datatype - recordDataType()](core-java/java-17/java-17/src/test/java/com/java/Java17FeaturesTest.java)
+	
 # Reactive Programming
 * [Notes](core-java/notes/reactive-programming.md)
 ------
