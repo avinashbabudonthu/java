@@ -26,3 +26,12 @@ Views										| Global Secondary Indexes
 * Mandatory attribute is called `partition_key`
 * Optional attribute is called `sort_key` or `range_key`
 * Primary key is mandatory in dynamo db
+------
+# Tables naming conventions
+* prefix table names to create namespaces
+* prefix.tablename (or) prefix_tablename
+* Ex: test.users, test.tasks (or) test_users, test_tasks
+* Not mandatory but good to follow
+------
+# Datatypes
+* Scalar types

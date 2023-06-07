@@ -70,6 +70,7 @@
 	* Budgets
 ------
 # Introduction to AWS services
+
 ## AWS Global Data Centers
 * `AWS Region`: Whenever we are using AWS services typically we deploy our application in AWS geographical area. That geographical area is called `AWS Regions`
 * Across world there are different AWS regions available
@@ -131,12 +132,11 @@
 		* Project management
 		* Issue tracking\
 ![picture](images/devops-services.jpg)
-
-### AWS Cloudwatch Notes
-#### Stream EC2 logs to Cloud watch and create alarm based on log message
+------
+# AWS Cloudwatch Notes Stream EC2 logs to Cloud watch and create alarm based on log message
 ![picture](images/cloud-watch/stream-logs-cloud-watch-create-alarm-flow.jpg)
-
-### Billing And Budget Setup
+------
+# Billing And Budget Setup
 * By default IAM users will not have access to Billing dashboard
 * Login to root account
 * Go to billing dashboard
