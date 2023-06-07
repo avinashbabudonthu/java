@@ -10,5 +10,8 @@
 	* High Volume
 	* High Variety
 	* High Velocity
-* Terminology comparison with SQL
-* Tables - Tables
+------
+# Terminology comparison with SQL
+SQL                | Dynamo DB
+------------------ | ------------------
+Table              | Table
