@@ -636,7 +636,7 @@
 * [record datatype - recordDataType()](core-java/java-17/java-17/src/test/java/com/java/Java17FeaturesTest.java)
 
 # [JDK 19 Java 19](core-java/jdk-19)
-* [Materials](core-java/jdk-19/jdk-19.md#Materials)
+* [Materials](core-java/jdk-19/jdk-19.md#Materials-in-study-order)
 * [Notes](core-java/jdk-19/jdk-19.md#Notes)
 
 # Reactive Programming
