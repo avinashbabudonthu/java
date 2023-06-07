@@ -634,7 +634,11 @@
 	* [Spring](core-java/java-17/java-17/src/main/java/com/java/Spring.java) extends `Subjects` and `final`
 	* [SQL](core-java/java-17/java-17/src/main/java/com/java/SQL.java) extends `Subjects` and `final`
 * [record datatype - recordDataType()](core-java/java-17/java-17/src/test/java/com/java/Java17FeaturesTest.java)
-	
+
+# [JDK 19 Java 19](core-java/jdk-19)
+* [Materials](core-java/jdk-19/jdk-19.md#Materials)
+* [Notes](core-java/jdk-19/jdk-19.md#Notes)
+
 # Reactive Programming
 * [Notes](core-java/notes/reactive-programming.md)
 ------
