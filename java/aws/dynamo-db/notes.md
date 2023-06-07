@@ -10,8 +10,12 @@
 	* High Volume
 	* High Variety
 	* High Velocity
+* DACS - DynamoDB Accelerator Service. Caching service provided by AWS
 ------
 # Terminology comparison with SQL
-SQL                | Dynamo DB
------------------- | ------------------
-Table              | Table
+SQL                							| Dynamo DB
+------------------ 							| ------------------
+Table              							| Table
+Rows			   							| Items
+Columns			   							| Attributes
+Primary Keys - Multicolumn and optional		| Primary keys - Mandatory, Minimum one and maximum two attributes
