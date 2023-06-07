@@ -19,3 +19,10 @@ Table              							| Table
 Rows			   							| Items
 Columns			   							| Attributes
 Primary Keys - Multicolumn and optional		| Primary keys - Mandatory, Minimum one and maximum two attributes
+Indexes										| Local Secondary Indexes
+Views										| Global Secondary Indexes
+------
+* JSON document store
+* Mandatory attribute is called `partition_key`
+* Optional attribute is called `sort_key` or `range_key`
+* Primary key is mandatory in dynamo db
