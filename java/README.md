@@ -5,6 +5,7 @@
 * [Apache Beam](#apache-beam)
 * [Apache Camel](#apache-camel)
 * [Apache POI](#apache-poi)
+* [Google APIGEE](#apigee)
 * [Architect](#architect)
 * [AWS](#aws)
 * [Azure](#azure)
@@ -154,6 +155,10 @@
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
 	* Method - readExcel
+------
+# [APIGEE](apigee)
+* [Materials](apigee#Materials-in-study-order)
+* [Notes](apigee#Notes)
 ------
 # [Architect](architect)
 * [Notes](architect/notes.md)
@@ -1217,7 +1222,6 @@ voyager.enabled=false
 * [Materials](micro-services/materials.md)
 * [Notes](micro-services/notes.md)
 ## Examples
-* [Google APIGEE](micro-services/apigee)
 * [Deploy Spring Microservices to AWS Fargate](micro-services/deploy-spring-microservices-to-aws-ecs-fargate)
 * [Example 1](micro-services/example-1)
 * [Feign Eureka](micro-services/feign-eureka)
