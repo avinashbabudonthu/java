@@ -157,8 +157,8 @@
 	* Method - readExcel
 ------
 # [APIGEE](apigee)
-* [Materials](apigee#Materials-in-study-order)
-* [Notes](apigee#Notes)
+* [Materials](apigee/apigee.md#Materials-in-study-order)
+* [Notes](apigee/apigee.md#Notes)
 ------
 # [Architect](architect)
 * [Notes](architect/notes.md)
