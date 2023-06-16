@@ -55,7 +55,7 @@
 * [Jackson JSON](#jackson-json)
 * [JBoss](#jboss)
 * [JDK](#jdk)
-	* [Keytool](#keytool)
+* [Keytool](#keytool)
 * [Jenkins](#jenkins)
 * [Jersey](#jersey)
 * [JFrog](#jfrog)
@@ -1037,10 +1037,10 @@ voyager.enabled=false
 # [JDK](jdk)
 * [Materials](jdk/materials.md)
 * [Notes](jdk/notes.md)
-
-## [Keytool](jdk/key-tool)
-* [Keytool commands](jdk/key-tool/commands.md)
+------
+# [Keytool](jdk/key-tool)
 * [Notes](jdk/key-tool/notes.md)
+* [Keytool commands](jdk/key-tool/commands.md)
 ------
 # [Jenkins](jenkins)
 * [Add new user](jenkins/add-new-user.md)
