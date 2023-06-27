@@ -1192,6 +1192,7 @@ voyager.enabled=false
 ## Examples
 * [Log4J Properties With Console Appender](log4j/log4j-console-appender.properties)
 * [Log4J Properties With Console and File Appender](log4j/log4j-console-file-appender.properties)
+* [Create log file name with date suffix](log4j/log4j-1/README.md)
 ------
 # [Logging](logging)
 * [Materials](logging/materials.md)
