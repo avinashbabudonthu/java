@@ -1396,6 +1396,7 @@ voyager.enabled=false
 # [ProtoBuff Protocol Buffer](protobuf)
 * [Materials in study order](protobuf/protobuf.md#Materials-in-study-order)
 * [AddressBook Proto file](protobuf/proto-files/address-book.proto)
+* [Installation](protobuf/protobuf.md#Installation)
 ------
 # [Rabbit MQ](rabbit-mq)
 * [Notes](rabbit-mq/notes.md)
