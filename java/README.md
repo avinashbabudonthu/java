@@ -1450,7 +1450,7 @@ voyager.enabled=false
 * [Sonarqube 7.8 setup with MySQL](sonarqube/sonar-qube-7.8-setup.md)
 ------
 # [SourceTree](source-tree)
-* [Materials in study order](source-tree#Materials-in-study-order)
+* [Materials in study order](source-tree/source-tree.md#Materials-in-study-order)
 ------
 # [Splunk](splunk)
 * [Materials](splunk/materials.md)
