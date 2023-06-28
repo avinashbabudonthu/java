@@ -1,5 +1,7 @@
 # Materials in study order
 * https://www.baeldung.com/google-protocol-buffer
+* https://protobuf.dev/getting-started/javatutorial/
+* https://www.tutorialspoint.com/protobuf/index.htm
 ------
 # Installation
 * Download protobuf - https://github.com/protocolbuffers/protobuf/releases
@@ -7,6 +9,7 @@
 * Extract
 * Execute below command to generate source file from proto file
 ```
+protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/myFile.proto
 protoc -I=C:\..\proto-files --java_out=C:\..\proto-files myFile.proto
 ```
 * `protoc` command will generate Java output file from our `myFile.proto` file

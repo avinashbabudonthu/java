@@ -1395,8 +1395,11 @@ voyager.enabled=false
 ------
 # [ProtoBuff Protocol Buffer](protobuf)
 * [Materials in study order](protobuf/protobuf.md#Materials-in-study-order)
-* [AddressBook Proto file](protobuf/proto-files/address-book.proto)
 * [Installation](protobuf/protobuf.md#Installation)
+* [AddressBook Proto file](protobuf/proto-files/address-book.proto)
+* [AddressBook Proto file with Enum](protobuf/proto-files/addressBook2.proto)
+	* java_multiple_files - to generate multiple java files rather one file
+	* using enum
 ------
 # [Rabbit MQ](rabbit-mq)
 * [Notes](rabbit-mq/notes.md)
