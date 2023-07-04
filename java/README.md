@@ -1683,6 +1683,8 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 # [Spring Boot 3](spring/spring-boot/spring-boot-3)
 * [Notes](spring/spring-boot/spring-boot-3/spring-boot-3.md)
 * [Hello World](spring/spring-boot/spring-boot-3/hello-world)
+* [Hello World - Setup logging level of any package](spring/spring-boot/spring-boot-3/hello-world/README.md#Setup-logging-level-of-any-package)
+* [Hello World - Enable more end points from spring boot actuator](spring/spring-boot/spring-boot-3/hello-world/README.md#Enable-more-end-points-from-spring-boot-actuator)
 ------
 ## [Spring Security](spring/security)
 * [Materials](spring/security/materials.md)

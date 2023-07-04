@@ -1,5 +1,4 @@
-## Difference between model object and entity object
-
+# Difference between model object and entity object
 * The advantage of using the same objects for entities and MVC model classes is that it is simpler, in that you need fewer classes to get the job done.
 There are two main disadvantages I see. First, entity classes are transactional, since they are bound to database read and write operations. If model classes are also entity classes, this means the MVC layer of the application has to deal with transactions. In Spring this is done with the OpenSessionInViewFilter, which holds a transaction open for the duration of the MVC operation. This approach can be made to work, but it is also considered an anti-pattern (i.e. a bad idea) by many, including myself.
 Second, as applications become more complex, differences start to emerge between persistence considerations and presentation considerations. If you only have one class shared between the layers it starts to get pulled in two directions and can end up kind of messy and ugly.
@@ -85,14 +84,14 @@ public class PurchaseOrderController {
 	* MITRE, CWE-915 - Improperly Controlled Modification of Dynamically-Determined Object Attributes - http://cwe.mitre.org/data/definitions/915.html
 	* Two Security Vulnerabilities in the Spring Framework’s MVC by Ryan Berg and Dinis Cruz - https://o2platform.files.wordpress.com/2011/07/ounce_springframework_vulnerabilities.pdf
 ------
-## What is Dispatcher Servlet?
+# What is Dispatcher Servlet?
 * We add `sprin-boot-starter-web` dependency which has transitive dependency on `spring web mvc`
 * So `DispatcherServlet` class added to our class path
 * So spring boot auto configures `DispatcherServlet` using `DispatcherServletAutoConfiguration`
 * All REST requests will reach to `DispatcherServlet`
 * `DispatcherServlet` follows `Frontend controller` pattern
 ------
-## Get Port number of application
+# Get Port number of application
 ```
 @Autowired
 private org.springframework.core.env.Environment environment;

@@ -1,2 +1,9 @@
 server:
   port: 9000
+
+# to define - org.springframework package logging level as debug
+# logging.level.org.springframework: debug
+
+# to enable more links from actuator
+#management.endpoints.web.exposure.include: '*'
+management.endpoints.web.exposure.include: health,metrics

@@ -16,9 +16,10 @@ public class GetController {
     public List<Record> findStudents() {
         record Student(String name, long id, String course, double grade){}
         List<Record> studentList = new ArrayList<>();
-        studentList.add(new Student("name1", 100L, "java", 4.0));
-        studentList.add(new Student("name2", 101L, "spring", 3.9));
-        studentList.add(new Student("name3", 102L, "spring boot", 4.1));
+        studentList.add(new Student("name1", 101L, "java", 4.0));
+        studentList.add(new Student("name2", 102L, "spring", 3.9));
+        studentList.add(new Student("name3", 103L, "spring boot", 4.1));
+        studentList.add(new Student("name4", 104L, "kafka", 3.8));
         return studentList;
     }
 }
