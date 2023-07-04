@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "7205967f-1f42-46c1-839a-a615c5eca837",
+		"name": "hello-world",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "output-1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Jul 2023 05:52:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"name1\",\n        \"id\": 100,\n        \"course\": \"java\",\n        \"grade\": 4\n    },\n    {\n        \"name\": \"name2\",\n        \"id\": 101,\n        \"course\": \"spring\",\n        \"grade\": 3.9\n    },\n    {\n        \"name\": \"name3\",\n        \"id\": 102,\n        \"course\": \"spring boot\",\n        \"grade\": 4.1\n    }\n]"
+				}
+			]
+		}
+	]
+}
