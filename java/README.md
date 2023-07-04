@@ -1682,6 +1682,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 ------
 # [Spring Boot 3](spring/spring-boot/spring-boot-3)
 * [Notes](spring/spring-boot/spring-boot-3/spring-boot-3.md)
+* [Hello World](spring/spring-boot/spring-boot-3/hello-world)
 ------
 ## [Spring Security](spring/security)
 * [Materials](spring/security/materials.md)
