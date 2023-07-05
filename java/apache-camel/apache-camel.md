@@ -1,6 +1,7 @@
 # Materials in study order
 * https://www.masterspringboot.com/camel/camel-with-spring-boot-example-masterspringboot/
 * https://reflectoring.io/spring-camel/
+* https://www.masterspringboot.com/camel/camel-kafka-with-spring-boot-example/
 ------
 # Introduction
 * http://www.mastertheintegration.com/camel/camel-introduction.html
