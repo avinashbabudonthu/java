@@ -158,6 +158,7 @@
 * [Materials](apache-camel/apache-camel.md#Materials-in-study-order)
 * [Introduction](apache-camel/apache-camel.md#Introduction)
 * [Unit testing](apache-camel/apache-camel.md#Unit-testing)
+* [Maven command to create apache camel spring boot application](apache-camel/apache-camel.md# Maven-command-to-create-apache-camel-spring-boot-application)
 * [spring Boot 3 Apache Camel Hello World POC](apache-camel/camel-spring-boot-3)
 ------
 # [Apache POI](apache-poi)

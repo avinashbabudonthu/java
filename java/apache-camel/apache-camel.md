@@ -10,3 +10,9 @@
 ------
 # Unit testing
 * The Guide to Testing in Apache Camel - https://tomd.xyz/camel-testing/
+------
+# Maven command to create apache camel spring boot application
+* Execute below command
+```
+mvn archetype:generate -DgroupId="com.java" -DartifactId="camel-spring-boot-application"  -DarchetypeGroupId="org.apache.camel.archetypes" -DarchetypeArtifactId="camel-archetype-spring-boot" -DinteractiveMode=false 
+```
