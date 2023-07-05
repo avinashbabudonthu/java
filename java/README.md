@@ -154,9 +154,10 @@
 * [Hello World](apache-beam/hello-world)
 ------
 # [Apache Camel](apache-camel)
-* [Notes](apache-camel/notes.md)
+* [Notes](apache-camel/apache-camel.md)
 * [Introduction](apache-camel/notes.md#Introduction)
 * [Unit testing](apache-camel/notes.md#Unit-testing)
+* [spring Boot 3 Apache Camel Hello World POC](apache-camel/camel-spring-boot-3)
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
