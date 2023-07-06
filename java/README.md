@@ -174,8 +174,6 @@
 * [Naming conventions](architect/notes.md#Naming-conventions)
 * [Non Functional Requirements](architect/notes.md#Non-Functional-Requirements)
 * [Career path](architect/notes.md#Career-path)
-
-
 ## Materials
 * [1001+Ways+to+Wow+the+Media.pdf](architect/1001+Ways+to+Wow+the+Media.pdf)
 * [Business Writing Skills](architect/business-writing-skills.md)
@@ -1688,6 +1686,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Hello World](spring/spring-boot/spring-boot-3/hello-world)
 * [Hello World - Setup logging level of any package](spring/spring-boot/spring-boot-3/hello-world/README.md#Setup-logging-level-of-any-package)
 * [Hello World - Enable more end points from spring boot actuator](spring/spring-boot/spring-boot-3/hello-world/README.md#Enable-more-end-points-from-spring-boot-actuator)
+* [Spring MVC Web Application - Tasks App](spring/spring-boot/spring-boot-3/tasks-app)
 ------
 ## [Spring Security](spring/security)
 * [Materials](spring/security/materials.md)
