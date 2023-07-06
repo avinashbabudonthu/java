@@ -11,6 +11,7 @@
 * [Azure](#azure)
 * [Cassandra](#cassandra)
 * [Chocolatey](#chocolatey)
+* [ClickHouse](#ClickHouse)
 * [Cloud](#cloud)
 * [Commons compress](#commons-compress)
 * [Commons Lang3](#commons-lang3)
@@ -297,6 +298,12 @@
 # [Chocolatey](chocolatey)
 * [Materials](chocolatey/materials.md)
 * [Notes](chocolatey/notes.md)
+------
+# [ClickHouse](click-house)
+* [Notes](click-house/click-house.md)
+* [Materials in study order](click-house/click-house.md#Materials-in-study-order)
+* [Quick start](click-house/click-house.md#Quick-start)
+* [Java Language Client Options for ClickHouse](click-house/click-house.md#Java-Language-Client-Options-for-ClickHouse)
 ------
 # [Cloud](cloud)
 * [Notes](cloud/notes.md)
@@ -1698,13 +1705,18 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Materials](spring/web-flux/materials.md)
 ------
 # [SQL](sql)
-* [Materials](sql/materials.md)
-* [Notes](sql/notes.md)
-## Examples
+* [Materials](sql/sql.md#Materials)
+* [Notes](sql/sql.md)
 * [Difference between Delete and Truncate Command](sql/delete-vs-truncate-command.md)
 * [SQL Comprehensive Diagram](sql/sql-comprehensive-diagram.jpg)
 * [Client Server Model](sql/The+Client-Server+Model.pdf)
 * [Inner Join, Left Join, Right Join, Full Join](sql/Joins-Inner-Left-Right-Full-Joins.pdf)
+* [What is OLAP?](sql/sql.md#What-is-OLAP)
+* [Steps in Setting up databases](sql/sql.md#Steps-in-Setting-up-databases)
+* [Joins](sql/sql.md#Joins)
+* [SQL Commands](sql/sql.md#SQL-Commands)
+* [Normal Forms](sql/sql.md#Normal-Forms)
+* [Transaction Control Language](sql/sql.md#Transaction-Control-Language)
 ------
 # [SQL Server Database](sql-server)
 * [Materials](sql-server/materials.md)

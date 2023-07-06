@@ -46,3 +46,21 @@ spring.mvc.view.suffix=.jsp
 * Using `name` in [login2.jsp](src/main/resources/META-INF/resources/WEB-INF/jsp/login2.jsp) as `${name}`
 * * Start application and hit url in browser - http://localhost:9000/login2?name=Ram
 ------
+# Final Login page
+* Create [login3.jsp](src/main/resources/META-INF/resources/WEB-INF/jsp/login3.jsp)
+* write [LoginController](src/main/java/com/tasks/controller/LoginController.java). Method `login3` and return `login3` jsp name
+* Write [AuthenticationService](src/main/java/com/tasks/service/AuthenticationService.java)
+* write [LoginController](src/main/java/com/tasks/controller/LoginController.java). Method `gotToWelcome` and return `welcome` jsp name
+  * Validates entered credentials then either return `welcome` or `login` page
+* Open url - http://localhost:9000/login3
+------
+# SessionAttributes
+* We added `name` to `ModelMap` while navigating to `welcome` page
+* Navigate `welcome` to `tasks` page then `name` won't come
+* We need to declare `SessionAttributes` in [LoginController](src/main/java/com/tasks/controller/LoginController.java) and [TaskController](src/main/java/com/tasks/controller/TaskController.java)
+* Then `name` property will be in `session` scope
+* Open url - http://localhost:9000/login3
+* Enter credentials - admin/dummy
+* Navigates `welcome` page, we can see name
+* Click on `Tasks` link. Navigates to `Tasks` page. we can see name
+* Now name will come in pages - `welcome`, `tasks`
