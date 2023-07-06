@@ -36,3 +36,4 @@ ORDER BY timestamp
 ```
 ------
 # Java Language Client Options for ClickHouse
+* https://clickhouse.com/docs/en/integrations/java
