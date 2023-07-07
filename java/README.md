@@ -56,7 +56,7 @@
 * [Jackson JSON](#jackson-json)
 * [JBoss](#jboss)
 * [JDK](#jdk)
-* [Keytool](#keytool)
+* [JDK Keytool](#keytool)
 * [Jenkins](#jenkins)
 * [Jersey](#jersey)
 * [JFrog](#jfrog)
@@ -1154,6 +1154,7 @@ voyager.enabled=false
 * [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
 * [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
 * [Setup Kafka with Docker](kafka/setup-with-docker/setup-with-docker.md)
+* [kafka streams word count example](kafka/kafka-streams/word-count)
 ------
 # [Karate](karate)
 * [Materials](karate/materials.md)
@@ -1717,6 +1718,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [SQL Commands](sql/sql.md#SQL-Commands)
 * [Normal Forms](sql/sql.md#Normal-Forms)
 * [Transaction Control Language](sql/sql.md#Transaction-Control-Language)
+* [Difference between Views and Materialized Views in SQL](sql/sql.md#Difference-between-Views-and-Materialized-Views-in-SQL)
 ------
 # [SQL Server Database](sql-server)
 * [Materials](sql-server/materials.md)

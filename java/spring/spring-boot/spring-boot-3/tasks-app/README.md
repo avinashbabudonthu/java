@@ -64,3 +64,25 @@ spring.mvc.view.suffix=.jsp
 * Navigates `welcome` page, we can see name
 * Click on `Tasks` link. Navigates to `Tasks` page. we can see name
 * Now name will come in pages - `welcome`, `tasks`
+------
+# JSTL Tags
+* Add following dependencies in [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>jakarta.servlet.jsp.jstl</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>glassfish-jstl</artifactId>
+</dependency>
+```
+------
+# Spring boot validation
+* Add following dependency in [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```

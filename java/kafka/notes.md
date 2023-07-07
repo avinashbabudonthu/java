@@ -56,6 +56,9 @@
 * Kafka 0.10.1 and 0.10.2 - end of 2016 to March 2017
 	* Improved Connect API
 	* Single Message Transforms API
+
+# Architecture
+![picture](images/Apache-Kafka-Architecture.png)
 	
 ## Kafka Terminology and Client APIs
 * Broker: all kafka clients interact with
