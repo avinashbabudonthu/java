@@ -12,6 +12,10 @@ Creating kafka_kafka_1     ... done
 * To connect to kafka ui tool like `Offset Explorer`
 * Zookeeper url - `http://localhost:22181`
 * Kafka broker url - `http://localhost:29092`
+* Stop containers
+```
+docker-compose down
+```
 ------
 # Reference
 * https://www.baeldung.com/ops/kafka-docker-setup
