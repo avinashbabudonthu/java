@@ -1153,7 +1153,7 @@ voyager.enabled=false
 * [Kafka Streams](kafka/kafka-streams)
 * [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
 * [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
-* [SEtup Kafka with Docker](kafka/setup-with-docker/setup-with-docker.md)
+* [Setup Kafka with Docker](kafka/setup-with-docker/setup-with-docker.md)
 ------
 # [Karate](karate)
 * [Materials](karate/materials.md)
