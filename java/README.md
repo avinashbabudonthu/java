@@ -1701,7 +1701,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Spring MVC Web Application - Tasks App](spring/spring-boot/spring-boot-3/tasks-app)
 ------
 ## [Spring Security](spring/security)
-* [Materials](spring/security/materials.md)
+* [Materials](spring/security/spring-security.md#Materials-in-study-order)
 ------
 ## [Spring Transaction](spring/transaction)
 * [Materials](spring/transaction/materials.md)
