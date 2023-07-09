@@ -1700,8 +1700,9 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Hello World - Enable more end points from spring boot actuator](spring/spring-boot/spring-boot-3/hello-world/README.md#Enable-more-end-points-from-spring-boot-actuator)
 * [Spring MVC Web Application - Tasks App](spring/spring-boot/spring-boot-3/tasks-app)
 ------
-## [Spring Security](spring/security)
+# [Spring Security](spring/security)
 * [Materials](spring/security/spring-security.md#Materials-in-study-order)
+* [Basic Authentiction Hello World Application](spring/security/hello-world)
 ------
 ## [Spring Transaction](spring/transaction)
 * [Materials](spring/transaction/materials.md)
