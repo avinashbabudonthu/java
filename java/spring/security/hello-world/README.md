@@ -14,3 +14,4 @@
 * Hit API - http://localhost:9000/api/v1/students
 * Enter credentials - user/password-generated-above
 ![picture](imgs/creds-in-postman.jpg)
+* [postman collection](postman/hello-world.postman_collection.json)
