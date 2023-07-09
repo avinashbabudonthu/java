@@ -1141,7 +1141,7 @@ voyager.enabled=false
 ------
 # [Kafka](kafka)
 * [Materials](kafka/materials.md)
-* [Notes](kafka/notes.md)
+* [Notes](kafka/kafka.md)
 * [Kafka confluent platform setup](kafka/kafka-confluent-platform-setup.md)
 * [Kafka connect notes](kafka/kafka-connect-notes.md)
 * [Commands](kafka/commands.md)
@@ -1155,6 +1155,7 @@ voyager.enabled=false
 * [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
 * [Setup Kafka with Docker](kafka/setup-with-docker/setup-with-docker.md)
 * [kafka streams word count example](kafka/kafka-streams/word-count)
+* [Kafka and Kafka UI with Docker](kafka/kafka.md#Kafka-and-Kafka-UI-with-Docker)
 ------
 # [Karate](karate)
 * [Materials](karate/materials.md)
