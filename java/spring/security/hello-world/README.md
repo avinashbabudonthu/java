@@ -12,6 +12,8 @@
 * Start the application. Check the console for default random password
 ![picture](imgs/default-random-password.jpg)
 * Hit API - http://localhost:9000/api/v1/students
-* Enter credentials - user/password-generated-above
+* Enter credentials
+	* username - user
+	* password - password-generated-above
 ![picture](imgs/creds-in-postman.jpg)
 * [postman collection](postman/hello-world.postman_collection.json)
