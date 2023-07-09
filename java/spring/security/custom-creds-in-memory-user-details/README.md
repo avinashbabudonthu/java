@@ -1,7 +1,20 @@
 # Spring Boot Spring Security Custom Credentials with InMemoryUserDetailsManager
 * Add spring security dependency in [pom.xml](pom.xml)
 * Properties - [application.properties](src/main/resources/application.properties)
-* 
+* Create `InMemoryUserDetailsManager` bean - [AppConfig.java](src/main/java/com/java/config/AppConfig.java)
+  * inMemoryUserDetailsManager() - with default password encoder
+  * inMemoryUserDetailsManager2() - with custom password encoder
+* Controller class - [AppController.java](src/main/java/com/java/controller/AppController.java)
+* Main class - [App.java](src/main/java/com/java/App.java)
+* Start the application
+* If using default password encoder, user credentials 
+  * http://localhost:9000/api/v1/students
+  * username - admin
+  * password - dummy
+* If using custom password encoder, user credentials
+  * http://localhost:9000/api/v1/students
+  * username - admin2
+  * password - dummy2
 ------
 # Reference Documentation
 For further reference, please consider the following sections:
