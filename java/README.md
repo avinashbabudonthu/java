@@ -1702,7 +1702,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 ------
 # [Spring Security](spring/security)
 * [Materials](spring/security/spring-security.md#Materials-in-study-order)
-* [Basic Authentiction Hello World Application](spring/security/hello-world)
+* [Basic Authentiction Hello World Application](spring/security/hello-world/README.md)
 ------
 ## [Spring Transaction](spring/transaction)
 * [Materials](spring/transaction/materials.md)
