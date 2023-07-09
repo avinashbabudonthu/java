@@ -1,5 +1,7 @@
 # Spring Boot Spring Security Custom Credentials with InMemoryUserDetailsManager
 * Add spring security dependency in [pom.xml](pom.xml)
+* Properties - [application.properties](src/main/resources/application.properties)
+* 
 ------
 # Reference Documentation
 For further reference, please consider the following sections:
