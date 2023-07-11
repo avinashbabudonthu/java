@@ -8,8 +8,8 @@ import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import lombok.extern.slf4j.Slf4j;
-import mockito.dependency.EmployeeDao;
-import mockito.dependency.EmployeeService;
+import com.mockito.dependency.EmployeeDao;
+import com.mockito.dependency.EmployeeService;
 
 @Slf4j
 @RunWith(MockitoJUnitRunner.class)

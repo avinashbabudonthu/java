@@ -81,7 +81,7 @@
 * [Lombok](#lombok)
 * [Maven](#maven)
 * [Microservices](#microservices)
-* [Mockito](#mockito)
+* [Mockito with Junit 4](#mockito)
 * [Model Mapper](#model-mapper)
 * [Mongo DB](#mongo-DB)
 * [Mybatis](#mybatis)
@@ -104,6 +104,8 @@
 * [ReactJS](#react-js)
 * [Redis](#redis)
 * [REST API](#rest-api)
+* [Rest API With Spring Boot 2](#Rest-API-With-Spring-Boot-2)
+* [Rest API With Spring Boot 3](#Rest-API-With-Spring-Boot-3)
 * [REST API Client - CURL](#curl)
 * [REST API Client - RestTemplate](#RestTemplate)
 * [REST API Client - WebClient](#WebClient)
@@ -640,7 +642,6 @@
 * [Supplier](core-java/java-8/java8/src/main/java/com/java/util/function/SupplierPractice.java)
 
 # [Java 9](core-java/java-9)
-* [Notes](core-java/java-9/README.md)
 * [Notes](core-java/java-9/notes.md)
 
 # [Java 11](core-java/java-11)
@@ -1109,10 +1110,13 @@ voyager.enabled=false
 * [One to One Using JoinTable](jpa/jpapractice/src/main/java/one/to/one/join/table)
 ------
 # [Junit 4](junit-4)
-* [Materials](junit-4/materials.md)
+* [Materials](junit-4/junit-4.md#Materials-in-study-order)
 * [Notes](junit-4/notes.md)
-## Examples
-* [Junit 4](junit-4/junit-4)
+* [Junit Features](junit-4/junit-4.md#Junit-Features)
+* [Junit Annotations](junit-4/junit-4.md#Junit-Annotations)
+* [Method in org.junit.Assert class](junit-4/junit-4.md#Methods-in-Assert)
+* [Junit 4 Notes](junit-4/junit-4.md#Notes)
+* [Junit 4 Project](junit-4/junit-4)
 * [Before After Annotations](junit-4/junit-4/src/test/java/junit/practice/before/after/annotations/BeforeAfterJunitPractice.java)
 * [BeforeClass and AfterClass Annotations](junit-4/junit-4/src/test/java/junit/practice/beforeclass/afterclass/annotations/BeforeClassAfterClassJunitPractice.java)
 * [Categories](junit-4/junit-4/src/test/java/junit/practice/cateogies/CategoriesJunitPractice.java)
@@ -1123,19 +1127,20 @@ voyager.enabled=false
 * [Timeout](junit-4/junit-4/src/test/java/junit/practice/time/out/TimeoutJunitPractice.java)
 ------
 # [Junit 5](junit-5)
-* [Materials](junit-5/materials.md)
-## Examples
-* [AfterAnnotations.java](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
-* [AssertionsJunit5.java](junit-5/junit-5/src/test/java/com/junit5/AssertionsJunit5.java)
-* [Assumptions.java](junit-5/junit-5/src/test/java/com/junit5/Assumptions.java)
-* [BeforeAnnotations.java](junit-5/junit-5/src/test/java/com/junit5/BeforeAnnotations.java)
-* [DisabledAnnotation.java](junit-5/junit-5/src/test/java/com/junit5/DisabledAnnotation.java)
-* [DisplayNameAnnotation.java](junit-5/junit-5/src/test/java/com/junit5/DisplayNameAnnotation.java)
-* [DynamicTest.java](junit-5/junit-5/src/test/java/com/junit5/DynamicTest.java)
-* [Exceptions.java](junit-5/junit-5/src/test/java/com/junit5/Exceptions.java)
-* [SelectPackagesTestSuite.java](junit-5/junit-5/src/test/java/com/junit5/SelectPackagesTestSuite.java)
-* [Tags.java](junit-5/junit-5/src/test/java/com/junit5/Tags.java)
-* [Mockito](junit-5/junit-5/src/test/java/com/junit5/mockito/MockitoExtensionsPractice.java)
+* [Materials](junit-5/junit-5.md#Materials-in-study-order)
+* [Junit 5 Dependencies](junit-5/junit-5.md#Dependencies)
+* [Junit4 Compatibility](junit-5/junit-5.md#For-Junit4-Compatibility)
+* [AfterAll AfterEach annotations](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
+* [org.junit.jupiter.api.Assertions in Junit 5](junit-5/junit-5/src/test/java/com/junit5/AssertionsJunit5.java)
+* [Assumptions](junit-5/junit-5/src/test/java/com/junit5/Assumptions.java) - Assumptions are used to run tests only if certain conditions are met
+* [BeforeAll BeforeEach annotations](junit-5/junit-5/src/test/java/com/junit5/BeforeAnnotations.java)
+* [Disabled annotation](junit-5/junit-5/src/test/java/com/junit5/DisabledAnnotation.java)
+* [DisplayName annotation](junit-5/junit-5/src/test/java/com/junit5/DisplayNameAnnotation.java)
+* [Dynamic Test](junit-5/junit-5/src/test/java/com/junit5/DynamicTest.java) - JUnit 5 Dynamic Tests feature, which allows to declare and run test cases generated at run-time
+* [Exceptions](junit-5/junit-5/src/test/java/com/junit5/Exceptions.java)
+* [SelectPackagesTestSuite](junit-5/junit-5/src/test/java/com/junit5/SelectPackagesTestSuite.java)
+* [Tags](junit-5/junit-5/src/test/java/com/junit5/Tags.java)
+* [Mockito with Junit 5](junit-5/junit-5/src/test/java/com/junit5/mockito/MockitoExtensionsPractice.java) - using `@ExtendWith(MockitoExtension.class)` annotation
 ------
 # [JVM](jvm)
 * [Materials](jvm/materials.md)
@@ -1270,13 +1275,23 @@ voyager.enabled=false
 # [Model Mapper](model-mapper)
 * [Materials](model-mapper/materials.md)
 ------
-# [Mockito](mockito)
-* [Materials](mockito/materials.md)
-* [Notes](mockito/notes.md)
-* [JDBCTemplate Mock](mockito/jdbc-template-mock.md)
-## Examples
-* [Mockito Examples](mockito/mockito)
-* [Mock Autowired Value Field In Spring With Mockito](mockito/notes.md#mock-autowired-value-field-in-spring-with-mockito)
+# [Mockito with Junit 4](mockito)
+* [Materials](mockito/mockito.md#Materials-in-study-order)
+* [Notes](mockito/mockito.md#Notes)
+* [Mock Autowired Value Field In Spring With Mockito](mockito/mockito.md#mock-autowired-value-field-in-spring-with-mockito)
+* [JDBCTemplate Mock](mockito/mockito.md#jdbcTemplate-object-mocking-and-stubbing)
+* [Argument Captures](mockito/mockito.md#Argument-Captures)
+* [Throwing Checked Exceptions](mockito/mockito/src/test/java/com/mockito/CheckedException.java)
+* [Mock void methods](mockito/mockito/src/test/java/com/mockito/MockVoidMethods.java)
+* [Pass null values while mocking](mockito/mockito/src/test/java/com/mockito/PassNullValues.java)
+* [Throw unchecked exceptions](mockito/mockito/src/test/java/com/mockito/UncheckedException.java)
+* [Argument Captor](mockito/mockito/src/test/java/com/mockito/argument/captor/MathUtilsTest.java)
+* [Manual Dependency Injection](mockito/mockito/src/test/java/com/mockito/dependency/EmployeeServiceTest1.java)
+* [Dependency Injection with initMocks call in Before method](mockito/mockito/src/test/java/com/mockito/dependency/EmployeeServiceTestAnnotations.java)
+* [Dependency Injection with RunWith annotation with MockitoJunitRunner class](mockito/mockito/src/test/java/com/mockito/dependency/EmployeeServiceTestAnnotations2.java)
+* [Hello World Examples](mockito/mockito/src/test/java/com/mockito/hello/world/HelloWorldTest.java)
+* [Class with lombok logs](mockito/mockito/src/test/java/com/mockito/lombok/inject/EmployeeControllerTest.java)
+* [Wrong Type of Return value](mockito/mockito/src/test/java/com/mockito/wrong/type/of/returnvalue/WrongTypeOfReturnValueTest.java)
 ------
 # [Mongo DB](mongo)
 * [Materials](mongo/materials.md)
@@ -1439,8 +1454,8 @@ voyager.enabled=false
 * [REST API A to Z](rest-api/rest-api-a-to-z)
 * [Materials](rest-api/rest-api.md#Materials-in-study-order)
 * [Notes](rest-api/rest-api.md#What-is-webservice)
-
-# Using Spring Boot
+------
+# Rest API With Spring Boot 2
 * [API Controllers](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller)
 * [Get APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/GetController.java)
 	* returnString
@@ -1710,6 +1725,24 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Hello World - Enable more end points from spring boot actuator](spring/spring-boot/spring-boot-3/hello-world/README.md#Enable-more-end-points-from-spring-boot-actuator)
 * [Spring MVC Web Application - Tasks App](spring/spring-boot/spring-boot-3/tasks-app)
 * [Spring Boot 3 With H2 Database](spring/security/with-h2-db/README.md)
+------
+# Rest API With Spring Boot 3
+* [Spring Boot 3 Rest API Project](spring/spring-boot/spring-boot-3/rest-api)
+* [Return String](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Return List of String](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Return Object as JSON](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Return Object list as JSON](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using request params](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using list of request params](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using path variables](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using list of path variables](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using request headers](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using request params and headers](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using path variables and headers](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using request params, variables, headers](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Pass json as request body](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Validate properties in request body object using annotations](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
+* [Using enum in request object property](spring/spring-boot/spring-boot-3/rest-api/src/main/java/com/java/controller/AppController.java)
 ------
 # [Spring Security](spring/security)
 * [Materials](spring/security/spring-security.md#Materials-in-study-order)

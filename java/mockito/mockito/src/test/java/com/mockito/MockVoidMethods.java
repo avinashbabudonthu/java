@@ -12,7 +12,7 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import lombok.extern.slf4j.Slf4j;
-import mockito.hello.world.HelloWorld;
+import com.mockito.hello.world.HelloWorld;
 
 @Slf4j
 @RunWith(MockitoJUnitRunner.class)
