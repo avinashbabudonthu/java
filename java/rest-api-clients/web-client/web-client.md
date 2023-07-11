@@ -14,4 +14,4 @@
 	<artifactId>spring-boot-starter-webflux</artifactId>
 </dependency>
 ```
-* Refer [pom.xml](../rest-api-clients/rest-api-clients/pom.xml)
+* Refer [pom.xml](../rest-api-clients/pom.xml)

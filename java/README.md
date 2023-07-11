@@ -1455,7 +1455,7 @@ voyager.enabled=false
 * [Rest Template](rest-api-clients/rest-template.md)
 * [Rest Template object creation with read and connection time out](rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
 * [RestTemplate with SSL Verification off](rest-api-clients/rest-template.md#resttemplate-with-ssl-verification-off)
-* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
+* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](rest-api-clients/rest-template.md#resttemplate-with-ssl-verification-off)
 ------
 # WebClient
 * [Materials](rest-api-clients/web-client/web-client.md)
