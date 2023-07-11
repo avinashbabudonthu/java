@@ -1437,13 +1437,28 @@ voyager.enabled=false
 ------
 # [REST API](rest-api)
 * [REST API A to Z](rest-api/rest-api-a-to-z)
-* [Materials](rest-api/materials.md)
-* [Notes](rest-api/notes.md)
+* [Materials](rest-api/rest-api.md#Materials-in-study-order)
+* [Notes](rest-api/rest-api.md#What-is-webservice)
 
-## Using Spring Boot
+# Using Spring Boot
 * [API Controllers](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller)
 * [Get APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/GetController.java)
+	* returnString
+	* mapAsJson
+	* studentObjectAsJson
+	* listOfStudentsAsJson
+	* withMandatoryRequestHeaders
+	* withOptionalDefaultValueRequestHeaders
+	* withMandatoryRequestParams
+	* withOptionalRequestParams
+	* withOptionalDefaultValueRequestParams
+	* requestHeaderList
+	* requestParamList
+	* pathVariables
+	* enumAsRequestParameter
 * [POST APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PostController.java)
+	* saveStudent
+	* studentWithEnum
 * [PUT APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PutController.java)
 * [PATCH APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PatchController.java)
 * [DELETE APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/DeleteController.java)
