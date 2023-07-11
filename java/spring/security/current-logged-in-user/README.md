@@ -1,22 +1,13 @@
-# Spring Boot Spring Security Custom Credentials with InMemoryUserDetailsManager
-* Add spring security dependency in [pom.xml](pom.xml)
-* Properties - [application.properties](src/main/resources/application.properties)
-* Create `InMemoryUserDetailsManager` bean - [AppConfig.java](src/main/java/com/java/config/AppConfig.java)
-  * inMemoryUserDetailsManager() - with default password encoder
-  * inMemoryUserDetailsManager2() - with custom password encoder - creating 1 user
-  * * inMemoryUserDetailsManager3() - with custom password encoder - creating multiple user
-* Controller class - [AppController.java](src/main/java/com/java/controller/AppController.java)
+# Getting logged in user details in spring security
+* Add spring security dependencies in [pom.xml](pom.xml)
+* controller class - [AppController.java](src/main/java/com/java/controller/AppController.java)
+* config class to create users - [SecurityConfig.java](src/main/java/com/java/config/SecurityConfig.java)
 * Main class - [App.java](src/main/java/com/java/App.java)
-* Start the application
-* If using default password encoder, user credentials 
-  * http://localhost:9000/api/v1/students
+* Start main class
+* Hit API - http://localhost:8080/api/v1/username
   * username - admin
   * password - dummy
-* If using custom password encoder, user credentials
-  * http://localhost:9000/api/v1/students
-  * username - admin2
-  * password - dummy2
-* Import [Postman collection](postman/custom-creds-in-memory-user-details.postman_collection.json) for APIs
+* Import [Postman Collection](postman/current-logged-in-user.postman_collection.json) for API details
 ------
 # Reference Documentation
 For further reference, please consider the following sections:
@@ -30,6 +21,7 @@ For further reference, please consider the following sections:
 ------
 # Guides
 The following guides illustrate how to use some features concretely:
+
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)

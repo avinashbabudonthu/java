@@ -1,4 +1,4 @@
-# Create RestTemplate with SSL Verification Turnoff
+# RestTemplate with SSL Verification off
 ```
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;

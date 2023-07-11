@@ -189,3 +189,34 @@ public class ApplicationTest {
     }
 }
 ```
+------
+# Spring Boot connecting to mysql using docker
+* Launch MySQL using Docker
+```
+docker run --detach --env MYSQL_ROOT_PASSWORD=rootpassword1 --env MYSQL_USER=user1 --env MYSQL_PASSWORD=password1 --env MYSQL_DATABASE=mydb1 --name mysql --publish 3306:3306 mysql:8-oracle
+```
+* application.properties configuration
+```
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb1
+spring.datasource.username=user1
+spring.datasource.password=password1
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+#user1@localhost:3306
+```
+* mysqlsh commands
+```
+mysqlsh
+\connect user1@localhost:3306
+\sql
+use mydb1
+select * from emp;
+\quit
+```
+* Docker Commands
+```
+docker container ls
+docker container stop ID
+```
+* Installation - https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html

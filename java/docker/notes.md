@@ -287,3 +287,10 @@ mvn clean package docker:push
 ```
 * But keeping credentials in pom.xml is not preferable. so we can remove from pom.xml and keep in `settings.xml`
 	* Refer [settings.xml](../fabric8-maven-plugin)
+------
+# How do I add myself to the docker users group on Windows
+* Run this command from an administrator command window to add your user id to the docker-users group and log back into your user account for it to take effect
+```
+net localgroup docker-users "your-user-id" /ADD
+```
+* `your-user-id` is your local Windows user name. You can determine this by looking at the folder name under `C:\Users\`

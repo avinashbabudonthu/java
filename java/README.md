@@ -104,7 +104,9 @@
 * [ReactJS](#react-js)
 * [Redis](#redis)
 * [REST API](#rest-api)
-* [REST API Clients](#rest-api-clients)
+* [REST API Client - CURL](#curl)
+* [REST API Client - RestTemplate](#RestTemplate)
+* [REST API Client - WebClient](#WebClient)
 * [Servlets and JSPs](#servlets-jsps)
 * [Sonarqube](#sonarqube)
 * [SourceTree](#sourceTree)
@@ -747,6 +749,7 @@
 * [Build docker image for spring boot maven appliation](docker/docker-files.md#Build-docker-image-for-spring-boot-maven-appliation)
 * [Build docker image for spring boot gradle appliation](docker/docker-files.md#Build-docker-image-for-spring-boot-gradle-appliation)
 * [Using labs.play-with-docker.com](docker/labs-play-with-docker.md)
+* [How do I add myself to the docker users group on Windows](docker/notes.md#How-do-I-add-myself-to-the-docker-users-group-on-Windows)
 ------
 # [Docker Compose](docker/docker-compose)
 * [Commands](docker/docker-compose/docker-compose-commands.md)
@@ -1445,30 +1448,21 @@ voyager.enabled=false
 * [PATCH APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/PatchController.java)
 * [DELETE APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/DeleteController.java)
 ------
-# [REST API Clients](rest-api-clients)
-## CURL
+# CURL
 * https://www.keycdn.com/support/popular-curl-examples
-
-## Rest Template
-* [Rest Template](/rest-api-clients/rest-template.md)
-* [Rest Template object creation with read and connection time out](/rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
-* [Create RestTemplate with SSL Verification Turnoff](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
-* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](https://github.com/avinashbabudonthu/java/blob/master/rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
-
-## WebClient
-* [Materials](rest-api-clients/web-client/materials.md)
-
-## Examples
-* Add below dependency. Refer [pom.xml](rest-api-clients/rest-api-clients/pom.xml)
-```
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-webflux</artifactId>
-</dependency>
-```
-* [GET API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/GetControllerTest.java)
-* [POST API](rest-api-clients/rest-api-clients/src/test/java/com/web/client/PostControllerTest.java)
-* [Mock WebClient](rest-api-clients/rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
+------
+# RestTemplate
+* [Rest Template](rest-api-clients/rest-template.md)
+* [Rest Template object creation with read and connection time out](rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
+* [RestTemplate with SSL Verification off](rest-api-clients/rest-template.md#resttemplate-with-ssl-verification-off)
+* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](rest-api-clients/rest-template.md#create-resttemplate-with-ssl-verification-turnoff)
+------
+# WebClient
+* [Materials](rest-api-clients/web-client/web-client.md)
+* [Dependency](rest-api-clients/web-client/web-client.md#Dependency)
+* [GET API](rest-api-clients/src/test/java/com/web/client/GetControllerTest.java)
+* [POST API](rest-api-clients/src/test/java/com/web/client/PostControllerTest.java)
+* [Mock WebClient](rest-api-clients/src/test/java/com/web/client/WebClientMock.java)
 ------
 # [Servlets and JSPs](servlets-jsps)
 * [Materials](servlets-jsps/materials.md)
@@ -1610,7 +1604,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 ## [Spring Retry](spring/retry)
 * [Materials](spring/retry/materials.md)
 ------
-## [Spring Boot](spring/spring-boot)
+# [Spring Boot](spring/spring-boot)
 * [Materials](spring/spring-boot/materials.md)
 * [Notes](spring/spring-boot/notes.md)
 	* Difference between model object and entity object
@@ -1622,8 +1616,9 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Properties](spring/spring-boot/properties.md)
 	* Do not convert dates to timestamp while creating JSON using Jackson
 	* Allow cors
-	
-## [Spring Boot 1](spring/spring-boot/spring-boot-1)
+* [Spring Boot connecting to mysql using docker](spring/spring-boot/notes.md#Spring-Boot-connecting-to-mysql-using-docker)
+------	
+# [Spring Boot 1](spring/spring-boot/spring-boot-1)
 * [Context Path Change](spring/spring-boot/spring-boot-1/context-path-change)
 * [Spring Boot Data Jpa With H2 DB](spring/spring-boot/spring-boot-1/data-jpa-h2)
 * [Hello-World](spring/spring-boot/spring-boot-1/hello-world)
@@ -1633,8 +1628,8 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Multi Tenant Datasource](spring/spring-boot/spring-boot-1/multi-tenant-datasource)
 * [Thin Launcher](spring/spring-boot/spring-boot-1/thin-launcher)
 * [Web Integration Test Cases](spring/spring-boot/spring-boot-1/web-integration-test)
-
-## [Spring Boot 2](spring/spring-boot/spring-boot-2)
+------
+# [Spring Boot 2](spring/spring-boot/spring-boot-2)
 * [ActiveMQ](spring/spring-boot/spring-boot-2/activemq)
 * [Response Header to Each API](spring/spring-boot/spring-boot-2/api-response-header)
 * [Async Controller](spring/spring-boot/spring-boot-2/async-controller)
@@ -1689,7 +1684,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Spring Boot 2 Maven Integartion with Sonarqube Running with MySql](spring/spring-boot/spring-boot-2/spring-boot-sonarqube)
 * [Swagger](spring-boot/spring-boot-2/swagger)
 * [Transactional annotation to internal method calls(private or public)](spring/spring-boot/spring-boot-2/transactional-internal-methods)
-* [Unit Testing](spring/spring-boot/spring-boot-2/unit-testing)
+* [Spring Boot 2 Unit Testing](spring/spring-boot/spring-boot-2/unit-testing)
 * [Versioning](spring/spring-boot/spring-boot-2/versioning)
 * [War Deploy To Tomcat 9](spring/spring-boot/spring-boot-2/war-to-tomacat9)
 ------
@@ -1699,11 +1694,14 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Hello World - Setup logging level of any package](spring/spring-boot/spring-boot-3/hello-world/README.md#Setup-logging-level-of-any-package)
 * [Hello World - Enable more end points from spring boot actuator](spring/spring-boot/spring-boot-3/hello-world/README.md#Enable-more-end-points-from-spring-boot-actuator)
 * [Spring MVC Web Application - Tasks App](spring/spring-boot/spring-boot-3/tasks-app)
+* [Spring Boot 3 With H2 Database](spring/security/with-h2-db/README.md)
 ------
 # [Spring Security](spring/security)
 * [Materials](spring/security/spring-security.md#Materials-in-study-order)
 * [Basic Authentiction Hello World Application](spring/security/hello-world/README.md)
 * [Basic Authentiction Inmemory Custom credentials](spring/security/custom-creds-in-memory-user-details/README.md)
+* [Get current logged in user details](spring/security/current-logged-in-user/README.md)
+* [With H2 Database](spring/security/with-h2-db/README.md)
 ------
 ## [Spring Transaction](spring/transaction)
 * [Materials](spring/transaction/materials.md)
