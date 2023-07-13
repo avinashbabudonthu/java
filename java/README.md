@@ -358,6 +358,7 @@
 * [Runtime class - ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
 * [Runtime class - ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
 * [Runtime.Version class - Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
+* [Reference Check](core-java/basics/src/main/java/com/basics/ReferenceCheck.java)
 * Optional class
 	* [Notes](core-java/notes/optional.md)
 	* [Code Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
