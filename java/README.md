@@ -23,6 +23,7 @@
 * [Cucumber](#cucumber)
 * [Database](#database)
 * [Data Structures Algorithms](#data-structures-algorithms)
+* [dbeaver](#dbeaver)
 * [Design Patterns](#design-patterns)
 * [Devops](#devops)
 * [Docker](#docker)
@@ -697,6 +698,11 @@
 ------
 # [Data Structures Algorithms](data-structures-algorithms)
 * [Materials](data-structures-algorithms/materials.md)
+------
+# [dbeaver](dbeaver)
+* [DBeaver](dbeaver/dbeaver.md)
+* [Download](dbeaver/dbeaver.md#Download)
+* [Materials](dbeaver/dbeaver.md#Materials-in-study-order)
 ------
 # [Design Patterns](design-patterns)
 * [Materials](design-patterns/materials.md)
