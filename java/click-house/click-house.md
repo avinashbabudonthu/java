@@ -1,5 +1,6 @@
 # Materials in study order
 * https://clickhouse.com/docs/en/intro
+* Run clickhouse in local using docker - https://www.bytebase.com/blog/how-to-run-clickhouse-with-docker-and-connect-using-mysql-client/
 ------
 # Quick start
 * https://clickhouse.com/docs/en/getting-started/quick-start
@@ -144,3 +145,4 @@ INSERT INTO employees (id, name, designation, manager, hired_on, salary, commiss
 SELECT designation,COUNT(*) AS nbr, (AVG(salary)) AS avg_salary FROM employees GROUP BY designation ORDER BY avg_salary DESC;
 SELECT name,hired_on FROM employees ORDER BY hired_on;
 ```
+* Reference - https://www.bytebase.com/blog/how-to-run-clickhouse-with-docker-and-connect-using-mysql-client/
