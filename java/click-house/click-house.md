@@ -47,7 +47,7 @@ docker run -d --name tutorial-clickhouse-server -p 8123:8123 --ulimit nofile=262
 ```
 docker ps -a
 ```
-* copy users.xml from container to local folder
+* copy `users.xml` from container to local folder
 ```
 docker cp <container-id>:/etc/clickhouse-server/users.xml .
 ```
@@ -59,7 +59,7 @@ docker cp <container-id>:/etc/clickhouse-server/users.xml .
     </default>
 </users>
 ```
-* Copy changes users.xml to container
+* Copy changed `users.xml` to container
 ```
 docker cp users.xml <container-id>:/etc/clickhouse-server/users.xml
 ```

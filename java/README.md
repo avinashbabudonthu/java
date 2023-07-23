@@ -313,7 +313,7 @@
 * [Materials in study order](click-house/click-house.md#Materials-in-study-order)
 * [Quick start](click-house/click-house.md#Quick-start)
 * [Java Language Client Options for ClickHouse](click-house/click-house.md#Java-Language-Client-Options-for-ClickHouse)
-* [# Run clickhouse in local using docker](click-house/click-house.md#Run-clickhouse-in-local-using-docker)
+* [Run clickhouse in local using docker](click-house/click-house.md#Run-clickhouse-in-local-using-docker)
 ------
 # [Cloud](cloud)
 * [Notes](cloud/notes.md)
