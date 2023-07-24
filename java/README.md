@@ -1465,6 +1465,25 @@ voyager.enabled=false
 * [Materials](rest-api/rest-api.md#Materials-in-study-order)
 * [Notes](rest-api/rest-api.md#What-is-webservice)
 ------
+# [RestTemplate](rest-template)
+* [Notes](rest-template/rest-template.md)
+* [RestTemplate with SSL Verification off](rest-template/rest-template.md#resttemplate-with-ssl-verification-off)
+* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](rest-template/rest-template.md#resttemplate-with-ssl-verification-off)
+* [API imports](rest-template/rest-template.md#API-imports)
+* [Client imports](rest-template/rest-template.md#Client-imports)
+* [RestTemplate object creation with read timeout and connection timeout](rest-template/rest-template.md#RestTemplate-object-creation-with-read-timeout-and-connection-timeout)
+* [Simple API that return String](rest-template/rest-template.md#Simple-API-that-return-String)
+* [Simple API that return list of Objects](rest-template/rest-template.md#Simple-API-that-return-list-of-Objects)
+* [With request parameters](rest-template/rest-template.md#With-request-parameters)
+* [With path variables](rest-template/rest-template.md#With-path-variables)
+* [With request headers](rest-template/rest-template.md#With-request-headers)
+* [With request body](rest-template/rest-template.md#With-request-body)
+* [With request body and request headers](rest-template/rest-template.md#With-request-body-and-request-headers)
+* [With request headers only](rest-template/rest-template.md#With-request-headers-only)
+* [With request header and request param](rest-template/rest-template.md#With-request-header-and-request-param)
+* [With request param only](rest-template/rest-template.md#With-request-param-only)
+* [With body request header request param and path variable](rest-template/rest-template.md#With-body-request-header-request-param-and-path-variable)
+------
 # Rest API With Spring Boot 2
 * [API Controllers](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller)
 * [Get APIs](spring/spring-boot/spring-boot-2/rest-api/src/main/java/com/rest/api/controller/GetController.java)
@@ -1492,10 +1511,7 @@ voyager.enabled=false
 * https://www.keycdn.com/support/popular-curl-examples
 ------
 # RestTemplate
-* [Rest Template](rest-api-clients/rest-template.md)
-* [Rest Template object creation with read and connection time out](rest-api-clients/rest-template.md#resttemplate-object-creation-with-read-timeout-and-connection-timeout)
-* [RestTemplate with SSL Verification off](rest-api-clients/rest-template.md#resttemplate-with-ssl-verification-off)
-* [Intercept API calls with Rest Template - Refer RestTemplateInterceptor class](rest-api-clients/rest-template.md#resttemplate-with-ssl-verification-off)
+
 ------
 # WebClient
 * [Materials](rest-api-clients/web-client/web-client.md)
