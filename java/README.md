@@ -315,6 +315,9 @@
 * [Quick start](click-house/click-house.md#Quick-start)
 * [Java Language Client Options for ClickHouse](click-house/click-house.md#Java-Language-Client-Options-for-ClickHouse)
 * [Run clickhouse in local using docker](click-house/click-house.md#Run-clickhouse-in-local-using-docker)
+* [Create Database and users](click-house/click-house.md#Create-Database-and-users)
+* [Create tables](click-house/click-house.md#Create-tables)
+* [Insert data](click-house/click-house.md#Insert-data)
 ------
 # [Cloud](cloud)
 * [Notes](cloud/notes.md)
