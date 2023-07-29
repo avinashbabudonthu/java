@@ -1888,4 +1888,10 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Materials](weld/materials.md)
 ------
 # [Windows](windows)
-* [Commands](windows/commands.md)
+* [Commands](windows/windows.md)
+* [Hosts file path in windows 10](windows/windows.md#Hosts-file-path-in-windows-10)
+* [Open current folder explorer from cmd](windows/windows.md#Open-current-folder-explorer-from-cmd)
+* [Open chrome and open url](windows/windows.md#Open-chrome-and-open-url)
+* [Delete files](windows/windows.md)
+* [Copy files](windows/windows.md)
+* [Rename files](windows/windows.md)
