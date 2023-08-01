@@ -25,7 +25,7 @@ public interface EmployeeJpaRepository extends JpaRepository<Employee, Integer>,
 
     List<Employee> findByNameNot(String value);
 
-    // select * from emp where where name like 'test'
+    // select * from emp where name like 'test'
     List<Employee> findByNameLike(String value);
 
     List<Employee> findByNameNotLike(String value);

@@ -52,4 +52,23 @@ public class StringUtilsPractice {
 		System.out.println(result2);
 	}
 
+	/**
+	 *
+	 * abcd
+	 */
+	@Test
+	public void subString() {
+		String str1 = "abcd";
+		log.info("{}", StringUtils.substring(str1, 1)); // bcd
+		log.info("{}", StringUtils.substring(str1, 0, 10)); // abcd
+
+		String str2 = "";
+		log.info("{}", StringUtils.substring(str2, 1)); // ""
+		log.info("{}", StringUtils.substring(str2, 0, 10)); // ""
+
+		String str3 = null;
+		log.info("{}", StringUtils.substring(str3, 1)); // null
+		log.info("{}", StringUtils.substring(str3, 0, 10)); // null
+	}
+
 }

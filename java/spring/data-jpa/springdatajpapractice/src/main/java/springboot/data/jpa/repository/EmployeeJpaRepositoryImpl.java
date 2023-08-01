@@ -4,7 +4,7 @@ package springboot.data.jpa.repository;
 public class EmployeeJpaRepositoryImpl implements EmployeeJpaRepositoryCustom {
 
     @Override
-    public String cutomMethod() {
+    public String customMethod() {
         return "Custom method";
     }
 

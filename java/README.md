@@ -52,6 +52,7 @@
 * [HikariCP](#hikaricp)
 * [HTML Sanitizer](#html-sanitizer)
 * [IBM MQ](#ibm-mq)
+* [Integration Testing](#Integration-Testing)
 * [IntelliJ](#intellij)
 * [Interview Questions](#interview-questions)
 * [Jackson JSON](#jackson-json)
@@ -329,12 +330,25 @@
 * Decompress tar gz file - Refer **decompress()** in [UnCompress.java](commons-compress/commons-compress/src/test/java/com/tar/gz/UnCompress.java)
 ------
 # [commons Lang3](commons-lang3)
-* [BooleanUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtils.java)
+* [BooleanUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtilsPractice.java)
+* [BooleanUtils - toBoolean](commons-lang3/commons-lang3/src/test/java/com/lang3/BooleanUtilsPractice.java)
 * [ExceptionUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/ExceptionUtils.java)
 * [ObjectUtilsPractice](commons-lang3/commons-lang3/src/test/java/com/lang3/ObjectUtilsPractice.java)
+* [ObjectUtilsPractice - isEmpty](commons-lang3/commons-lang3/src/test/java/com/lang3/ObjectUtilsPractice.java)
+* [ObjectUtilsPractice - isNotEmpty](commons-lang3/commons-lang3/src/test/java/com/lang3/ObjectUtilsPractice.java)
 * [RandomStringUtilsPractice](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
+* [RandomStringUtilsPractice - random](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
+* [RandomStringUtilsPractice - randomAlphabetic](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
+* [RandomStringUtilsPractice - randomAlphanumeric](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
+* [RandomStringUtilsPractice - randomNumeric](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
+* [RandomStringUtilsPractice - randomPrint](commons-lang3/commons-lang3/src/test/java/com/lang3/RandomStringUtilsPractice.java)
 * [StringUtils](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
+* [StringUtils - isNoneBlank](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
+* [StringUtils - equalsAny](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
+* [StringUtils - equalsAnyIgnoreCase](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
+* [StringUtils - subString](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
 * [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
+* [ToStringBuilder - reflectionToString](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 ------
 # Coding Web sites
 * [Hacker Rank](https://hackerrank.com/)
@@ -955,9 +969,10 @@ voyager.enabled=false
 
 ------
 # [Gremlin](gremlin)
-* [Materials](gremlin/materials.md)
-* [Gremlin Console](gremlin/commands.md#Gremlin-Console)
-* [Commands](gremlin/commands.md)
+* [Materials](gremlin/gremlin.md#Gremlin-Materials-in-study-order)
+* [Gremlin Console](gremlin/gremlin.md#Gremlin-Console)
+* [Commands](gremlin/gremlin.md#Gremlin-commands)
+* Gremling Query Fromatter - https://tinkerpop.apache.org/gremlint/
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)
@@ -1031,12 +1046,14 @@ voyager.enabled=false
 * [Materials](html-sanitizer/materials.md)
 ------
 # [IBM MQ](ibm-mq)
-## Examples
 * [Send Receive Text Message](ibm-mq/ibm-mq/src/main/java/ibm/mq/send/receive/SendRecieveTextMessage.java)
 * [Message Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/MQMessageListener.java)
 * [Keep Listener Up and Running](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningByMain.java)
 * [Keep Listener Up and Running with Another Thread](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningWithAnotherThread.java)
 * [Send Receive By Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/SendAndReceiveByListener.java)
+------
+# [integration testing](integration-testing)
+* [Spring Boot 1 Integration Test Cases](integration-testing/integration-test)
 ------
 # [IntelliJ](intelli-j)
 * [Materials](intelli-j/materials.md)
@@ -1568,17 +1585,25 @@ voyager.enabled=false
 ------
 # Spring Data JPA
 * [Materials](spring/data-jpa/data-jpa.md#Materials-in-study-order)
-* [Data JPA](spring/data-jpa)
 * [Spring Data JPA Maven Dependencies](spring/data-jpa/springdatajpapractice/pom.xml)
-* [Delete](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaDeleteController.java)
-* [Save](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaSaveController.java)
-* [Update](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaUpdateController.java)
-* [General](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/GeneralController.java)
-* [Select Queries](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaSelectController.java)
-* [Select Queries](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
-* [Custom Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepositoryImpl.java)
-* [Rest Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/rest/EmployeeJpaRestRepository.java)
 * [Tables](spring/data-jpa/springdatajpapractice/src/main/resources/sql/tables.sql)
+* [Save Controller](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaSaveController.java)
+* [Save Jpa Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+* [Select Queries](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+* [Update Controller](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaUpdateController.java)
+* [Update Jpa Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+* [Delete Controller](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/EmployeeDataJpaDeleteController.java)
+* [Delete Jpa Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+* Custom Repository
+	* [Controller - customMethod](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa//controller/EmployeeDataJpaSelectController.java)
+	* [EmployeeJpaRepositoryCustom](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepositoryCustom.java)
+	* [EmployeeJpaRepositoryImpl implements EmployeeJpaRepositoryCustom](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepositoryImpl.java)
+	* [EmployeeJpaRepository implements EmployeeJpaRepositoryCustom](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/repository/EmployeeJpaRepository.java)
+* [Rest Repository](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/rest/EmployeeJpaRestRepository.java)
+* [General - Contains APIs to get below](spring/data-jpa/springdatajpapractice/src/main/java/springboot/data/jpa/controller/GeneralController.java)
+	* Primary Datasource
+	* Entity Manager
+	* JpaRepository
 ------
 ## [Spring Data Mongo](spring/data-mongo)
 * [Materials](spring/data-mongo/materials.md)
@@ -1684,7 +1709,6 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Spring Boot Data Jpa With H2 DB](spring/spring-boot/spring-boot-1/data-jpa-h2)
 * [Hello-World](spring/spring-boot/spring-boot-1/hello-world)
 * [Https](spring/spring-boot/spring-boot-1/https)
-* [Integration Test Cases](spring/spring-boot/spring-boot-1/integration-test)
 * [Mockito](spring/spring-boot/spring-boot-1/mockito)
 * [Multi Tenant Datasource](spring/spring-boot/spring-boot-1/multi-tenant-datasource)
 * [Thin Launcher](spring/spring-boot/spring-boot-1/thin-launcher)

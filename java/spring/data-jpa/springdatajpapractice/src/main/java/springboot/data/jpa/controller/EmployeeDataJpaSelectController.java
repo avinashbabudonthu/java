@@ -329,8 +329,8 @@ public class EmployeeDataJpaSelectController {
 	}
 
 	@RequestMapping(value = "/customMethod", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody String cutomMethod() {
-		return employeeJpaRepository.cutomMethod();
+	public @ResponseBody String customMethod() {
+		return employeeJpaRepository.customMethod();
 	}
 
 	@GetMapping(value = "/findByDeptNameOrderByHireDateAndName", produces = MediaType.APPLICATION_JSON_VALUE)
