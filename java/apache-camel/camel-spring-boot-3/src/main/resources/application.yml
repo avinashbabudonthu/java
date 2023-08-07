@@ -1,4 +1,6 @@
 server:
   port: 8080
 
-timer.period: 2000
+route1.timer.period: 1000 # in milliseconds
+route3.timer.period: 3000 # in milliseconds
+route4.timer.period: 5000 # in milliseconds

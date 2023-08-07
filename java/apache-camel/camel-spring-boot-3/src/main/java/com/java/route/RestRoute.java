@@ -10,7 +10,7 @@ public class RestRoute extends RouteBuilder {
     public void configure() throws Exception {
         restConfiguration().host("localhost").port("8080");
 
-        from("timer:hello?period={{timer.period}}")
+        from("timer:route1?period={{route1.timer.period}}")
             .setHeader("id", simple("${random(6,9)}"))
             .to("rest:get:example/{id}")
             .log("${body}")
