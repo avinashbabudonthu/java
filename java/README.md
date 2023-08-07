@@ -173,8 +173,8 @@
 * [Maven command to create apache camel spring boot application](apache-camel/apache-camel.md#Maven-command-to-create-apache-camel-spring-boot-application)
 * [spring Boot 3 Apache Camel Hello World POC](apache-camel/camel-spring-boot-3)
 * [spring Boot 3 Apache Camel Timer route calling Rest API](apache-camel/camel-spring-boot-3/README.md#Timer-route-calling-Rest-API)
-* [spring Boot 3 Apache Camel Timer route](apache-camel/camel-spring-boot-3README.md#Timer-route)
-* [Stop Router](apache-camel/camel-spring-boot-3README.md#Stop-Router)
+* [spring Boot 3 Apache Camel Timer route](apache-camel/camel-spring-boot-3/README.md#Timer-route)
+* [Stop Router](apache-camel/camel-spring-boot-3/README.md#Stop-Router)
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
