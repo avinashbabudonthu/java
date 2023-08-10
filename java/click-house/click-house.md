@@ -210,6 +210,25 @@ Which queries are supported
 Whether or not the data is replicated
 There are many engines to choose from, but for a simple table on a single-node ClickHouse server, MergeTree is your likely choice.
 ```
+* Create table which stored last 14 months data. Any data inserted not in this range will be delete automatically. See `TTL toDateTime(creationTimestamp) + toIntervalMonth(14)`
+```
+CREATE TABLE employees(
+    id          integer,
+    name        text,
+    designation text,
+    manager     integer,
+    hired_on    date,
+    salary      integer,
+    commission  float,
+    dept        integer,
+	creationTimestamp DateTime64(3) COMMENT 'Record creation timestamp in milliseconds'
+)
+ENGINE = MergeTree()
+PRIMARY KEY id
+ORDER BY id
+TTL toDateTime(creationTimestamp) + toIntervalMonth(14)
+;
+```
 ------
 # Insert data
 * Insert data to employees table
