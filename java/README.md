@@ -56,6 +56,7 @@
 * [IntelliJ](#intellij)
 * [Interview Questions](#interview-questions)
 * [Jackson JSON](#jackson-json)
+* [Javascript](#Javascript)
 * [JBoss](#jboss)
 * [JDK](#jdk)
 * [JDK Keytool](#keytool)
@@ -1083,6 +1084,10 @@ voyager.enabled=false
 	* Enum to JSON vice versa - enumJsonToEnumObject
 	* JSON String to JSON Node - jsonStringToJsonNode
 * [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
+------
+# [Javascript](javascript)
+* [Random number](javascript#Random-number)
+* [Materials in study order](javascript#Materials-in-study-order)
 ------
 # [JBoss](jboss)
 * [Materials](jboss/materials.md)
