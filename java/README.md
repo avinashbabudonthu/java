@@ -1086,8 +1086,8 @@ voyager.enabled=false
 * [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
 ------
 # [Javascript](javascript)
-* [Random number](javascript#Random-number)
-* [Materials in study order](javascript#Materials-in-study-order)
+* [Random number](javascript/javascript.md#Random-number)
+* [Materials in study order](javascript/javascript.md#Materials-in-study-order)
 ------
 # [JBoss](jboss)
 * [Materials](jboss/materials.md)
