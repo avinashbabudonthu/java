@@ -1,9 +1,11 @@
 package com.java.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 import java.util.Optional;
 
+@Slf4j
 public class OptionalPractice {
 
     /**
@@ -96,5 +98,36 @@ public class OptionalPractice {
         String nullName = null;
         String name = Optional.ofNullable(nullName).orElseGet(() -> "ana");
         System.out.println(name);
+    }
+
+    @Test
+    public void map() {
+        Address address1 = Address.builder()
+                .hNo("100")
+                .street("dummy")
+                .build();
+
+        Optional<Address> address1Optional = Optional.of(address1);
+
+        Address address2 = Address.builder()
+                .hNo("100")
+                .build();
+
+        Optional<Address> address2Optional = Optional.of(address2);
+
+        Student student1 = Student.builder()
+                .id(1)
+                .name("jim")
+                .address(address1Optional.map(Address::getStreet).orElse("UNKNOWN"))
+                .build();
+        log.info("student1={}", student1); // student1=Student(id=1, name=jim, address=dummy)
+
+        Student student2 = Student.builder()
+                .id(1)
+                .name("jim")
+                .address(address2Optional.map(Address::getStreet).orElse("UNKNOWN"))
+                .build();
+        log.info("student2={}", student2); // student2=Student(id=1, name=jim, address=UNKNOWN)
+
     }
 }

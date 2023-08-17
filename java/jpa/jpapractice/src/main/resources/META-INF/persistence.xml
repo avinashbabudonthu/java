@@ -24,12 +24,14 @@
 		<class>com.jpa.practice.callback.annotations.Student</class>
 		<class>com.jpa.practice.listeners.Student2</class>
 		<class>booleancolumn.mapping.Certificate</class>
+		<class>many.to.many.join.table.Student3</class>
+		<class>many.to.many.join.table.Course3</class>
 		
 		<properties>
 			<!-- Specify data base name -->
 			<property name="javax.persisitence.database-product-name" value="H2"/>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:h2:file:E:/Backup/JavaPrep/practiceProjects/JPAProjects/JpaPractice/src/main/resources/db;MV_STORE=FALSE"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:h2:file:C:/github/java/java/jpa/jpapractice/src/main/resources/db;MV_STORE=FALSE"/>
 			<property name="javax.persistence.jdbc.user" value="admin"/>
 			<property name="javax.persistence.jdbc.password" value="admin"/>
 			

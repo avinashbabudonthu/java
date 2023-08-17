@@ -35,6 +35,6 @@ public class App {
 		String queryString = "select o from CD3 o";
 		Query query = entityManager.createQuery(queryString);
 		List<CD3> cds = query.getResultList();
-		cds.stream().forEach(System.out::println);
+		cds.forEach(System.out::println);
 	}
 }

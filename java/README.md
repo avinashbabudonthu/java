@@ -384,7 +384,16 @@
 * [Reference Check](core-java/basics/src/main/java/com/basics/ReferenceCheck.java)
 * Optional class
 	* [Notes](core-java/notes/optional.md)
-	* [Code Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+	* [Optional Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+		* empty
+		* isPresent
+		* map
+		* ofNullable
+		* ofNullablefV2
+		* ofV1
+		* ofV2
+		* orElse
+		* orElseGet
 * [Locale](core-java/internationalization/src/test/java/com/internationalization/LocalePractice.java)
 	* localObjectByCountry
 	* createLocalObject
@@ -1146,6 +1155,7 @@ voyager.enabled=false
 * [One to Many Using JoinTable](jpa/jpapractice/src/main/java/one/to/many/join/table)
 * [One to One Using JoinColumn](jpa/jpapractice/src/main/java/one/to/one/join/column)
 * [One to One Using JoinTable](jpa/jpapractice/src/main/java/one/to/one/join/table)
+* [Many to Many Using JoinTable](jpa/jpapractice/src/main/java/many/to/many/join/table)
 ------
 # [Junit 4](junit-4)
 * [Materials](junit-4/junit-4.md#Materials-in-study-order)
