@@ -1866,6 +1866,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Commands](swagger-codegen/commands.md)
 ------
 # [Tableau](tableau)
+* [Materials](tableau/tableau.md#Materials-in-study-order)
 * [Setup](tableau/tableau.md#setup.md)
 ------
 # [Teradata Database](teradata)
