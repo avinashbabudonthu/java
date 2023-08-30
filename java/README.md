@@ -115,6 +115,7 @@
 * [Servlets and JSPs](#servlets-jsps)
 * [Sonarqube](#sonarqube)
 * [SourceTree](#sourceTree)
+* [Spinnaker](#spinnaker)
 * [Splunk](#splunk)
 * [Spock](#spock)
 * [Spring](#spring)
@@ -261,12 +262,10 @@
 * [AWS Cloudwatch Notes Stream EC2 logs to Cloud watch and create alarm based on log message](aws/notes.md#AWS-Cloudwatch-Notes-Stream-EC2-logs-to-Cloud-watch-and-create-alarm-based-on-log-message)
 * [Billing And Budget Setup](aws/notes.md#Billing-And-Budget-Setup)
 * [Naming conventions](aws/notes.md#Naming-conventions)
-* [AWS Quick Notes](aws/definitions.xlsx)
 * [AWS CLI Commands](aws/aws-cli-commands.md)
 * [Certifications](aws/certifications.md)
 * [Dynamo DB](aws/dynamo-db)
 * [Dynamo DB Materials in study order](aws/materials.md#Dynamo-DB-Materials-in-study-order)
-* [Dynamo DB - Notes](aws/dynamo-db/notes.md)
 * [Dynamo DB Notes](aws/dynamo-db/notes.md#Dynamo-DB-Notes)
 * [Terminology comparison with SQL](aws/dynamo-db/notes.md#Terminology-comparison-with-SQL)
 * [Tables naming conventions](aws/dynamo-db/notes.md#Tables-naming-conventions)
@@ -1566,6 +1565,9 @@ voyager.enabled=false
 ------
 # [SourceTree](source-tree)
 * [Materials in study order](source-tree/source-tree.md#Materials-in-study-order)
+------
+# [Spinnaker](spinnaker)
+* [Materials](spinnaker/spinnaker.md#Materials)
 ------
 # [Splunk](splunk)
 * [Materials](splunk/splunk.md#Materials-in-study-order)
