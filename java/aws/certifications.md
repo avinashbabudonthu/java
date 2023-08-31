@@ -16,7 +16,7 @@
 ------
 # Certifications order
 * `Optional` - AWS Certified Cloud Practitioner
-* AWS Certified Solutions Architect - Associate
+* AWS Certified Solutions Architect - Associate - https://aws.amazon.com/certification/certified-solutions-architect-associate/
 * AWS Certified Solutions Architect - Professional
 * AWS Certified Developer - Associate
 * AWS Certified DevOps Engineer - Professional
