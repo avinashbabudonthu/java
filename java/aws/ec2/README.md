@@ -26,7 +26,7 @@
 * Can be used to configure or manage running instance
 * Getting instance metadata
 	* Window instance - open url - http://169.254.169.254/latest/meta-data/
-	* Linux instnace - curl url from instnace
+	* Linux instance - curl url from instance
 		* $ curl http://169.254.169.254/latest/meta-data/
 		* $ GET http://169.254.169.254/latest/meta-data/
 * all meta data is returned as text (content type text/plain)
