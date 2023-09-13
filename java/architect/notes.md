@@ -16,7 +16,8 @@
 * Delivery oriented - Manager
 
 # Non Functional Requirements
-* NFRs
+* NFRs - Availability, Maintainability, Performance, Portability, Reliability, Security, Scalability, Usability
+
 * Availability
 	* System uptime requirements and SLA. For e.g. 99 or 99.5
 * Maintainability
@@ -53,7 +54,7 @@
 * architect has no specific responsibilities that differ from any software developers.  He just has more authority and influence
 
 ## Application architect
-* pplication architect has responsibility for an application.  If you work for a software company, this may be a product line.  It might also be some kind of internal software
+* Application architect has responsibility for an application.  If you work for a software company, this may be a product line.  It might also be some kind of internal software
 * you have a team of software developers that works on some application and then an application architect who works closely with them
 
 ## Solutions architect
