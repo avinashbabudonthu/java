@@ -439,6 +439,11 @@
 * [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumberInRange
 * [Generate random password](utils/generate-random-password.md)
 * [Reverse the number](utils/utils.md#reverse-the-number)
+* [Properties file](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - create](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - read](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - readFromClasspath](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - print](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 
 # File IO
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
