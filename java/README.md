@@ -112,7 +112,7 @@
 * [REST API Client - CURL](#curl)
 * [REST API Client - RestTemplate](#RestTemplate)
 * [REST API Client - WebClient](#WebClient)
-* [RestTemplate](#rest-template)
+* [RestTemplate](#resttemplate)
 * [Security](#security)
 * [Servlets and JSPs](#servlets-jsps)
 * [Sonarqube](#sonarqube)
