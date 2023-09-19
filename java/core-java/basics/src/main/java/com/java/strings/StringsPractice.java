@@ -666,4 +666,15 @@ public class StringsPractice {
         log.info("{}", StringUtils.removeEnd("abc,", ",")); // abc
     }
 
+    @Test
+    public void readOccurrenceOfCharFromLast() {
+        String url = "https://www.employees.com/list/2018/employees";
+        // extract /2018/employees string from url
+        String str1 = url.substring(StringUtils.lastOrdinalIndexOf(url, "/", 2));
+        log.info("str1={}", str1); // str1=/2018/employees
+
+        String str2 = url.substring(StringUtils.lastOrdinalIndexOf(url, "/", 2)+1);
+        log.info("str2={}", str2); // str2=2018/employees
+    }
+
 }
