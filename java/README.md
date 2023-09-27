@@ -495,6 +495,7 @@
 * [Zip File extract](core-java/basics/src/main/java/com/java/io/ZipFileExamples.java)
 * [Zip File readZipFile](core-java/basics/src/main/java/com/java/io/ZipFileExamples.java)
 * [Zip File writeToFileInZip1](core-java/basics/src/main/java/com/java/io/ZipFileExamples.java)
+* [Zip File zip4j Reference](https://github.com/srikanth-lingala/zip4j)
 
 # [Annotations](core-java/annotations)
 * [Notes](core-java/notes/annotations.md)
