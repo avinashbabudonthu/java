@@ -238,4 +238,21 @@ public class ZipFileExamples {
         }
     }
 
+    @Test
+    public void invalidCompressionMethod() {
+        try {
+            URL zipFileUrl = getClass().getClassLoader().getResource("CatalogMapping-sources.zip");
+            assert null != zipFileUrl;
+            String zipFileStr = zipFileUrl.getFile();
+            String destinationDir = Files.createTempDirectory("zip_extract_test_").toFile().getAbsolutePath();
+            try (net.lingala.zip4j.ZipFile zipFile = new net.lingala.zip4j.ZipFile(new File(zipFileStr))) {
+                log.info("Unzipping, zipFileStr={}, isZipFileValid={}, destinationDir={}", zipFileStr, zipFile.isValidZipFile(), destinationDir);
+                zipFile.extractAll(destinationDir);
+                log.info("Unzipped, zipFileStr={}, destinationDir={}", zipFileStr, destinationDir);
+            }
+        } catch (Exception e) {
+            log.error("Exception while unzipping", e);
+        }
+    }
+
 }

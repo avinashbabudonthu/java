@@ -19,6 +19,7 @@
 * [Concourse](#concourse)
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
+* [Core Java Reflection](#Core-Java-Reflection)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
 * [Database](#database)
@@ -708,6 +709,9 @@
 * [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
 * [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
 * lookupMap
+------
+# [Core Java Reflection](core-java/reflection)
+* [Is Java Reflection Good or Bad Practice](core-java/reflection/reflection.md#Is-Java-Reflection-Good-or-Bad-Practice)
 ------
 # Multi threading
 * [Materials](core-java/multi-threading/materials.md)

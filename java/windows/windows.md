@@ -31,3 +31,19 @@ copy C:\my-folder\*.txt C:\my-folder-2
 ```
 ren C:\my-folder\file1.txt C:\my-folder\file1-renamed.txt
 ```
+------
+# Force stop service
+* Click the `Start` menu
+* Click Run or in the search bar type `services.msc`
+* Press Enter
+* Look for the service and check the `Properties` and identify its service name
+* Once found, open a command prompt. Type
+```
+sc queryex [servicename]
+```
+* Identity `PID`
+* Execute below command to force kill
+```
+taskkill /pid [pid number] /f
+taskkill /pid 1258 /f
+```
