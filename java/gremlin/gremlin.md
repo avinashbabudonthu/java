@@ -90,6 +90,10 @@ gremlin> g.V().fold().count()
 gremlin> g.V().fold().count(local)
 ==>6
 ```
+* get nodes by label
+```
+g.V().hasLabel("labelValue")
+```
 * get all edges
 ```
 g.E()
@@ -123,6 +127,14 @@ g.V().limit(1).id()
 * get node `label`
 ```
 g.V(id).label()
+```
+* sort by label asc
+```
+g.V().label().sort(asc)
+```
+* sort by label desc
+```
+g.V().label().sort(desc)
 ```
 * get node by label
 ```
@@ -170,7 +182,7 @@ g.V(1).outE("knows").inV().values("name")
 g.V(1).out("knows").values("name")
 g.V(1).out("knows")
 ```
-* nodes with out edge `knows` from node 1 and `age > 30`
+* nodes with edge `knows` from node 1 and `age > 30`
 ```
 g.V(1).out("knows").has("age", gt(30)).values("name")
 ```
