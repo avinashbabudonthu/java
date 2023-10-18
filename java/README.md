@@ -849,6 +849,7 @@
 * [Build docker image for spring boot gradle appliation](docker/docker-files.md#Build-docker-image-for-spring-boot-gradle-appliation)
 * [Using labs.play-with-docker.com](docker/labs-play-with-docker.md)
 * [How do I add myself to the docker users group on Windows](docker/notes.md#How-do-I-add-myself-to-the-docker-users-group-on-Windows)
+* [Docker Tomcat](docker/notes.md#Docker-Tomcat)
 ------
 # [Docker Compose](docker/docker-compose)
 * [Commands](docker/docker-compose/docker-compose-commands.md)
@@ -1043,7 +1044,8 @@ voyager.enabled=false
 * [Materials](gremlin/gremlin.md#Gremlin-Materials-in-study-order)
 * [Gremlin Console](gremlin/gremlin.md#Gremlin-Console)
 * [Commands](gremlin/gremlin.md#Gremlin-commands)
-* Gremling Query Fromatter - https://tinkerpop.apache.org/gremlint/
+* Gremlin Query Fromatter - https://tinkerpop.apache.org/gremlint/
+* Gremlin queries performance analysis - https://tinkerpop.apache.org/docs/3.6.4/reference/#profile-step
 ------
 # [Groovy](groovy)
 * [Materials](groovy/materials.md)

@@ -294,3 +294,15 @@ mvn clean package docker:push
 net localgroup docker-users "your-user-id" /ADD
 ```
 * `your-user-id` is your local Windows user name. You can determine this by looking at the folder name under `C:\Users\`
+------
+# Docker commands
+* login to Container
+```
+docker run -i -t busybox:1.36
+```
+------
+# Docker Tomcat
+* Pull tomcat image
+```
+
+```
