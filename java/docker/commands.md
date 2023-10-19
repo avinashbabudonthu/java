@@ -124,9 +124,14 @@ docker rm -f [container-id]
 ```
 docker container prune
 ```
-* Remove all the containers running or stopped present in the system
+* Remove all `containers` running or stopped present in the system
 ```
 docker rm -f $(docker ps -a -q)
+docker rm -f $(docker ps -aq)
+```
+* Remove all `containers` including its `volumes`
+```
+docker rm -vf $(docker ps -aq)
 ```
 * Save container changes. New image is created which can be seen under 'docker images' with the same name passed in the command
 ```
@@ -232,4 +237,10 @@ docker volume ls
 * Delete all volumes currently in use
 ```
 docker volume prune
+```
+* Remove all images
+```
+docker image prune --all --force
+
+docker rmi -f $(docker images -aq)
 ```
