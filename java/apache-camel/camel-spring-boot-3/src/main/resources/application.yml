@@ -1,6 +1,21 @@
 server:
-  port: 8080
+  port: 9000
 
 route1.timer.period: 1000 # in milliseconds
 route3.timer.period: 3000 # in milliseconds
 route4.timer.period: 5000 # in milliseconds
+
+camel:
+  component:
+    kafka:
+      brokers: localhost:29092
+      auto-offset-reset: earliest
+  health.enabled: false
+
+app:
+  rest.route: false
+  route1: false
+  route2: false
+  route3: false
+  route4: false
+  kafka.route: true

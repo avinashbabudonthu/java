@@ -15,6 +15,8 @@ import com.app.service.KafkaProducer;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.List;
+
 @Slf4j
 @RestController
 public class AppController {
@@ -29,6 +31,15 @@ public class AppController {
 		kafkaProducer.sendStudentMessageAsync(student);
 		log.info("After Send student, student={}", student);
 		return student;
+	}
+
+	@SneakyThrows
+	@PostMapping(value = "/v1/student-list", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+	public List<Student> saveStudentList(@RequestBody List<Student> studentList) {
+		log.info("Before Send student, student={}", studentList);
+		kafkaProducer.sendStudentListAsync(studentList);
+		log.info("After Send student, student={}", studentList);
+		return studentList;
 	}
 
 	@SneakyThrows

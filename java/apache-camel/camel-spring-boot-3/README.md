@@ -8,7 +8,7 @@
 * `timer.period` in [RestRoute.java](src/main/java/com/java/route/RestRoute.java) is in [application.yml](src/main/resources/application.yml)
 ------
 # Timer route
-* Simple timer route - [SimpleRoute.java](src/main/java/com/java/route/TimerRoute.java)
+* Simple timer route - [TimerRoute.java](src/main/java/com/java/route/TimerRoute.java)
 * Sample output
 ```
 2023-08-07T10:36:24.888+05:30  INFO 16116 --- [           main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.0.0-RC1 (camel-1) started in 296ms (build:0ms init:0ms start:296ms)
@@ -49,3 +49,14 @@ Process finished with exit code 130
 # Stop Router
 * Write route - [StopRoute.java](src/main/java/com/java/route/StopRoute.java)
 * Processor to stop this route after 5 executions - [StopRouteProcessor.java](src/main/java/com/java/processor/StopRouteProcessor.java)
+------
+# Kafka Router
+* Add dependency in pom or gradle file - [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>org.apache.camel.springboot</groupId>
+    <artifactId>camel-kafka-starter</artifactId>
+</dependency>
+```
+* Write route - [KafkaRoute.java](src/main/java/com/java/route/KafkaRoute.java)
+* Property to enable/disable this route `app.kafka.route` - [application.yml](src/main/resources/application.yml)

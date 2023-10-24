@@ -1,9 +1,10 @@
 package com.app.service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
+import com.app.model.Student;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.header.Header;
 import org.apache.kafka.common.header.internals.RecordHeader;
@@ -14,11 +15,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import com.app.model.Student;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Component
 @Slf4j
@@ -26,6 +26,9 @@ public class KafkaProducer {
 
 	@Autowired
 	private KafkaTemplate<Integer, String> kafkaTemplate;
+
+	@Autowired
+	private KafkaTemplate<Integer, List<String>> kafkaTemplate2;
 
 	@Autowired
 	private ObjectMapper objectMapper;
@@ -63,6 +66,27 @@ public class KafkaProducer {
 				handleFailure(key, value, throwable);
 			}
 		});
+	}
+
+	@SneakyThrows
+	public void sendStudentListAsync(List<Student> studentList) {
+		log.info("Send student={} to Kafka topic asynchronously", studentList);
+		for(Student student : studentList) {
+			Integer key = student.getId();
+			String message = objectMapper.writeValueAsString(student);
+			ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.sendDefault(key, message);
+			listenableFuture.addCallback(new ListenableFutureCallback<SendResult<Integer, String>>() {
+				@Override
+				public void onSuccess(SendResult<Integer, String> sendResult) {
+					handleSuccess(key, message, sendResult);
+				}
+
+				@Override
+				public void onFailure(Throwable throwable) {
+					handleFailure(key, message, throwable);
+				}
+			});
+		}
 	}
 
 	@SneakyThrows
