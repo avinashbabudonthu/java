@@ -58,5 +58,15 @@ Process finished with exit code 130
     <artifactId>camel-kafka-starter</artifactId>
 </dependency>
 ```
+* Add following properties in [application yaml or properties file](src/main/resources/application.yml)
+```
+camel:
+  component:
+    kafka:
+      brokers: localhost:29092
+      auto-offset-reset: earliest
+  health.enabled: false
+```
+* [KafkaRouteComponent.java](src/main/java/com/java/processor/KafkaRouteComponent.java) used in route to build message
 * Write route - [KafkaRoute.java](src/main/java/com/java/route/KafkaRoute.java)
 * Property to enable/disable this route `app.kafka.route` - [application.yml](src/main/resources/application.yml)
