@@ -23,9 +23,10 @@ public class KafkaRoute extends RouteBuilder {
                     .routeId("kafkaRoute")
                     .log("kafkaRoute started")
 
-                    .bean(kafkaRouteComponent, "kafkaMessage")
-//                    .bean(kafkaRouteComponent, "kafkaMessageList")
-
+//                    .bean(kafkaRouteComponent, "kafkaMessage")
+                    .bean(kafkaRouteComponent, "kafkaMessageList")
+//                    .bean(kafkaRouteComponent, "kafkaMessageProducerRecord")
+                    .split(body())
                     .setHeader(KafkaConstants.KEY, constant("100"))
 //                    .setHeader("kafka.KEY", constant("100")) // this or above
 

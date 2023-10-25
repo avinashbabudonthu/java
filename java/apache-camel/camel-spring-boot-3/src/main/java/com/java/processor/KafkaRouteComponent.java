@@ -1,5 +1,6 @@
 package com.java.processor;
 
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -20,6 +21,10 @@ public class KafkaRouteComponent {
                 "Hello World - " + UUID.randomUUID(),
                 "Hello World - " + UUID.randomUUID(),
                 "Hello World - " + UUID.randomUUID());
+    }
+
+    public ProducerRecord<String, String> kafkaMessageProducerRecord() {
+        return new ProducerRecord<>("topic-1", "100", "Hello World");
     }
 
 }
