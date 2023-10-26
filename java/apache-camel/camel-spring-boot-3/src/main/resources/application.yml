@@ -18,4 +18,5 @@ app:
   route2: false
   route3: false
   route4: false
-  kafka.route: true
+  kafka.route: false
+  kafka.route.list: true

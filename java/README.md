@@ -181,6 +181,7 @@
 * [spring Boot 3 Apache Camel Timer route](apache-camel/camel-spring-boot-3/README.md#Timer-route)
 * [Stop Router](apache-camel/camel-spring-boot-3/README.md#Stop-Router)
 * [Kafka Route](apache-camel/camel-spring-boot-3/README.md#Kafka-Router)
+* [Kafka Route Send List with key using split](apache-camel/camel-spring-boot-3/README.md#Kafka-Route-Send-List-with-key)
 ------
 # [Apache POI](apache-poi)
 * [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)

@@ -70,3 +70,24 @@ camel:
 * [KafkaRouteComponent.java](src/main/java/com/java/processor/KafkaRouteComponent.java) used in route to build message
 * Write route - [KafkaRoute.java](src/main/java/com/java/route/KafkaRoute.java)
 * Property to enable/disable this route `app.kafka.route` - [application.yml](src/main/resources/application.yml)
+------
+# Kafka Route Send List with key
+* Add dependency in pom or gradle file - [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>org.apache.camel.springboot</groupId>
+    <artifactId>camel-kafka-starter</artifactId>
+</dependency>
+```
+* Add following properties in [application yaml or properties file](src/main/resources/application.yml)
+```
+camel:
+  component:
+    kafka:
+      brokers: localhost:29092
+      auto-offset-reset: earliest
+  health.enabled: false
+```
+* [KafkaRouteComponent.java](src/main/java/com/java/processor/KafkaRouteComponent.java) - `kafkaMessageList` - used in route to build messages
+* Write route - `kafkaRouteList` - [KafkaRoute.java](src/main/java/com/java/route/KafkaRoute.java)
+* Property to enable/disable this route `app.kafka.route.list` - [application.yml](src/main/resources/application.yml)
