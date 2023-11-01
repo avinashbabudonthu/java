@@ -1279,8 +1279,8 @@ voyager.enabled=false
 * [Kafka and Kafka UI with Docker](kafka/kafka.md#Kafka-and-Kafka-UI-with-Docker)
 ------
 # [Karate](karate)
-* [Materials](karate/materials.md)
-* [Notes](karate/notes.md)
+* [Materials](karate/karate.md#Materials)
+* [Notes](karate/karate.md#Notes)
 ------
 # [Kerberos](kerberos)
 * [Materials](kerberos/materials.md)
