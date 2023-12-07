@@ -309,7 +309,10 @@
 * [VPC Virtual Private Cloud - Notes](aws/vpc/notes.md)
 ------
 # [Azure](azure)
-* [Materials](azure/materials.md)
+* [Materials](azure/azure.md#Materials)
+* [Notes](azure/azure.md#Notes)
+* [Services](azure/azure.md#Services)
+* [Cloud Shell](azure/azure.md#Cloud-Shell)
 ------
 # [Cassandra](cassandra)
 * [Materials](cassandra/materials.md)
