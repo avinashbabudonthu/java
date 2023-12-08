@@ -1944,11 +1944,11 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Commands](teradata/commands.sql)
 ------
 # [Terraform](terraform)
-* [Materials](terraform/materials.md)
-* [Notes](terraform/notes.md)
-* [Commands](terraform/commands.md)
-## Examples
-* [Windows Installation](terraform/notes.md#Windows-Installation)
+* [Materials](terraform/terraform.md#Materials)
+* [Notes](terraform/terraform.md#Notes)
+* [Windows Installation](terraform/terraform.md#Windows-Installation)
+* [Commands](terraform/terraform.md#Commands)
+* [Terraform Azure](terraform/terraform-azure.md)
 ------
 # [Testing](testing)
 * [Materials](testing/materials.md)
