@@ -560,6 +560,7 @@
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
 * [Examples](#javautil-package)
 * [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
+
 * List Examples
 * [ArrayList](core-java/collections/src/test/java/com/list/ArrayListPractice.java)
 * [LinkedList](core-java/collections/src/test/java/com/list/LinkedListPractice.java)
@@ -571,8 +572,12 @@
 * [EnumSet](core-java/collections/src/test/java/com/set/EnumSetPractice.java)
 * [CopyOnWriteArraySetPractice](core-java/collections/src/test/java/com/set/CopyOnWriteArraySetPractice.java)
 * [ConcurrentSkipListSetPractice](core-java/collections/src/test/java/com/set/ConcurrentSkipListSetPractice.java)
+
 * Map Examples
 * [HashMap](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+* Remove nodes of map2 from map1 - [HashMap - removeAll](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+* Remove nodes of map2 from map1 - [HashMap - removeAllV2](core-java/collections/src/test/java/com/map/HashMapPractice.java)
+
 * [LinkedHashMap](core-java/collections/src/test/java/com/map/LinkedHashMapPractice.java)
 * [TreeMap](core-java/collections/src/test/java/com/map/TreeMapPractice.java)
 * [ConcurrentHashMap](core-java/collections/src/test/java/com/map/ConcurrentHashMapPractice.java)
@@ -582,8 +587,11 @@
 * [MapStreams](core-java/collections/src/test/java/com/map/MapStreamsPractice.java)
 * [WeakHashMap](core-java/collections/src/test/java/com/map/WeakHashMapPractice.java)
 * [Collections.synchronizedMap vs. ConcurrentHashMap](core-java/collections/java-synchronizedmap-vs-concurrenthashmap.md)
+
+
 * Queue Examples
 * [PriorityQueuePractice](core-java/collections/src/test/java/com/queue/PriorityQueuePractice.java)
+
 * Dequeue Examples
 * [ArrayDeQueuePractice](core-java/collections/src/test/java/com/dequeue/ArrayDeQueuePractice.java)
 * [Arrays](core-java/collections/src/test/java/com/util/ArraysPractice.java)

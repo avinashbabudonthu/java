@@ -18,5 +18,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "myRg001" {
   name = "001-my-rg"
-  location = "South India"
+  location = "southindia"
 }

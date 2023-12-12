@@ -127,4 +127,57 @@ public class HashMapPractice {
         log.info("6 - names={}", names); // 6 - names={null=null, 1=jim, 2=jack, 3=jill, 4=john, 5=null}
     }
 
+    // remove all keys of map2 from map1
+    /**
+     * map1={1=one, 2=two, 3=three, 4=four, 5=five}
+     * map2={1=one, 2=two}
+     * map1={3=three, 4=four, 5=five}
+     * map2={1=one, 2=two}
+     */
+    @Test
+    public void removeAll() {
+        Map<String, String> map1 = new HashMap<>();
+        map1.put("1", "one");
+        map1.put("2", "two");
+        map1.put("3", "three");
+        map1.put("4", "four");
+        map1.put("5", "five");
+        log.info("map1={}", map1);
+
+        Map<String, String> map2 = new HashMap<>();
+        map2.put("1", "one");
+        map2.put("2", "two");
+        log.info("map2={}", map2);
+
+        map1.keySet().removeAll(map2.keySet());
+        log.info("map1={}", map1);
+        log.info("map2={}", map2);
+    }
+
+    /**
+     * map1={1=one, 2=two, 3=three, 4=four, 5=five}
+     * map2={1=one, 2=two}
+     * map1={3=three, 4=four, 5=five}
+     * map2={1=one, 2=two}
+     */
+    @Test
+    public void removeAllV2() {
+        Map<String, String> map1 = new HashMap<>();
+        map1.put("1", "one");
+        map1.put("2", "two");
+        map1.put("3", "three");
+        map1.put("4", "four");
+        map1.put("5", "five");
+        log.info("map1={}", map1);
+
+        Map<String, String> map2 = new HashMap<>();
+        map2.put("1", "one");
+        map2.put("2", "two");
+        log.info("map2={}", map2);
+
+        map1.entrySet().removeAll(map2.entrySet());
+        log.info("map1={}", map1);
+        log.info("map2={}", map2);
+    }
+
 }
