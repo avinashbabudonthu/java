@@ -3,7 +3,7 @@ package com.java.threads;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Thread1 extends Thread{
+public class NewThread extends Thread{
 
     @Override
     public void run() {

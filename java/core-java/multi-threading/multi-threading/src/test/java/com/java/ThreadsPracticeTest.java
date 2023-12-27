@@ -1,12 +1,10 @@
 package com.java;
 
-import com.java.threads.Thread1;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
-public class ThreadsPractice {
+public class ThreadsPracticeTest {
 
     @Test
     void createThread1() {
@@ -26,17 +24,6 @@ public class ThreadsPractice {
             log.info("t1");
         });
 
-        t1.start();
-    }
-
-    /**
-     * class extends Thread
-     * {@link com.java.threads.Thread1}
-     */
-    @Test
-    void createThread3() {
-        Thread t1 = new Thread1();
-        t1.setName("New Employee thread");
         t1.start();
     }
 
@@ -118,6 +105,5 @@ public class ThreadsPractice {
 
         t1.start();
     }
-
 
 }
