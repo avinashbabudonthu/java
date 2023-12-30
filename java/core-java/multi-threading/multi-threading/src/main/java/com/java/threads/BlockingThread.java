@@ -9,7 +9,7 @@ public class BlockingThread implements Runnable{
     public void run() {
         try {
             log.info("Executing blocking thread");
-            Thread.sleep(5000000);
+            Thread.sleep(1000 * 50000);
             log.info("Exiting blocking thread");
         } catch(InterruptedException e) {
             System.out.println("Interrupted exiting blocking thread");

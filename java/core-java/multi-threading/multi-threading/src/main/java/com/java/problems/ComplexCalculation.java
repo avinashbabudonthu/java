@@ -1,4 +1,4 @@
-package com.java.threads.problems;
+package com.java.problems;
 
 import java.math.BigInteger;
 
