@@ -1566,7 +1566,7 @@ voyager.enabled=false
 ------
 # [Ractive Programming](ractive-programming)
 ## Examples
-* [Mono Practice](ractive-programming/ractive-programming/src/test/java/com/zeros/in/MonoPracticeTest.java)
+* [Mono Practice](ractive-programming/reactive-programming/src/test/java/com/zeros/in/MonoPracticeTest.java)
 ------
 # [ReactJS](react-js)
 * [Materials](react-js/materials.md)
