@@ -595,27 +595,6 @@ public class FileIOPractice {
         log.info("temp directory created. path: {}", file.getAbsolutePath());
     }
 
-	/**
-	 * method to get line separator based on underlying operating system instead of hard coding
-	 */
-	@Test
-	public void lineSeparator() {
-		String lineSeparator = System.getProperty("line.separator").toString();
-		System.out.println("abc" + lineSeparator + "def");
-
-		String lineSeparator2 = File.separator;
-		System.out.println("lineSeperator2: " + lineSeparator2);
-	}
-    
-    /**
-     * Output: abc\def
-     */
-    @Test
-    public void fileSeparator(){
-        String fileSeparator = File.separator;
-        System.out.println("abc" + fileSeparator + "def");
-    }
-	
     // Download file to temp directory
     @SneakyThrows
     @Test

@@ -1,4 +1,4 @@
-package com.java.lang;
+package com.ab.java.lang;
 
 import org.junit.Test;
 

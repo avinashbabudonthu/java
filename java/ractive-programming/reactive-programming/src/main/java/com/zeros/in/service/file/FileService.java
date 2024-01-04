@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Objects;
 import java.util.function.Consumer;
 
 @Slf4j
@@ -27,34 +26,35 @@ public class FileService {
         read("file02.txt").subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
         read("file03.txt").subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
         write("file04.txt", "This is file4").subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
+        write("file05.txt", "This is file5").subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
         delete("file04.txt").subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
     }
 
     private Mono<String> read(String fileName) {
         return Mono.fromSupplier(() -> readFile(fileName));
-                // .subscribe(ON_NEXT, ON_ERROR, ON_COMPLETE);
     }
 
     private Mono<Void> write(String fileName, String content) {
         return Mono.fromRunnable(() -> writeFile(fileName, content));
     }
 
-    private Mono<Void> delete(String fileName) {
+    private Mono<Void> delete(final String fileName) {
         return Mono.fromRunnable(() -> deleteFile(fileName));
     }
 
     private String readFile(String fileName) {
+        log.info("Reading file={}", fileName);
         String content = "";
         try {
             content = Files.readString(PATH.resolve(fileName));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return content;
     }
 
     private void writeFile(String fileName, String content) {
+        log.info("Writing file={}", fileName);
         try {
             Files.writeString(PATH.resolve(fileName), content);
         } catch (IOException e) {
@@ -63,6 +63,7 @@ public class FileService {
     }
 
     private void deleteFile(String fileName) {
+        log.info("Deleting file={}", fileName);
         try {
             Files.delete(PATH.resolve(fileName));
         } catch (IOException e) {
