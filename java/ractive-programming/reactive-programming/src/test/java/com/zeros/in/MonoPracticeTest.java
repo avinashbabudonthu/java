@@ -11,6 +11,9 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+/**
+ * Mono creation - just, fromSupplier, fromCallable, fromRunnable, fromFuture
+ */
 @Slf4j
 public class MonoPracticeTest {
 
@@ -30,6 +33,7 @@ public class MonoPracticeTest {
         Mono<String> mono = Mono.just("Hello Mono");
         log.info("mono={}", mono);
 
+        // below both consumers are valid
         // Consumer<Object> consumer = i -> log.info("received={}", i);
         Consumer<String> consumer = i -> log.info("received={}", i);
         mono.subscribe(consumer);
@@ -44,10 +48,10 @@ public class MonoPracticeTest {
         Consumer<String> consumer = i -> log.info("{}", i);
         // errorConsumer
         Consumer<Throwable> errorConsumer = error -> log.info("error={}", error.getMessage());
-        // completed
-        Runnable runnable = () -> log.info("Completed");
+        // completeConsumer
+        Runnable completeConsumer = () -> log.info("Completed");
 
-        mono.subscribe(consumer, errorConsumer, runnable);
+        mono.subscribe(consumer, errorConsumer, completeConsumer);
     }
 
 
@@ -61,9 +65,9 @@ public class MonoPracticeTest {
         // errorConsumer
         Consumer<Throwable> errorConsumer = error -> log.info("error={}", error.getMessage());
         // completed
-        Runnable runnable = () -> log.info("Completed");
+        Runnable completeConsumer = () -> log.info("Completed");
 
-        mono.subscribe(consumer, errorConsumer, runnable);
+        mono.subscribe(consumer, errorConsumer, completeConsumer);
     }
 
     @Test
@@ -107,7 +111,7 @@ public class MonoPracticeTest {
 
     @Test
     void fromSupplier() {
-        // getName gets invoked whether we use monoJust or not
+        // getName gets invoked if we create mono with method - just
         log.info("Using just");
         Mono<String> monoJust = Mono.just(getName());
 
@@ -122,7 +126,7 @@ public class MonoPracticeTest {
     @Test
     void fromCallable() {
         log.info("Using callable");
-        Callable<String> callable = () -> getName();
+        Callable<String> callable = this::getName;
         Mono<String> monoCallable = Mono.fromCallable(callable);
         log.info("Adding subscriber");
         monoCallable.subscribe(ON_NEXT);
@@ -152,7 +156,7 @@ public class MonoPracticeTest {
         // getNameMonoWithSleep().subscribe(ON_NEXT);
         // getNameMonoWithSleep();
 
-        // 2nd method executes supplier & executes async means blocks 3rd call
+        // 2nd method executes supplier & executes async means do block 3rd call
         // but 2nd method call does not print output because main thread is completed & call executed in different thread
         /*
         Inside getNameMonoWithSleep
@@ -163,8 +167,8 @@ public class MonoPracticeTest {
         // getNameMonoWithSleep().subscribeOn(Schedulers.boundedElastic()).subscribe(ON_NEXT);
         // getNameMonoWithSleep();
 
-        // 2nd method executes supplier & executes async means blocks 3rd call
-        // block() makes main thread to wait until execution completes.
+        // 2nd method executes supplier & executes async means do block 3rd call
+        // block() makes main thread to wait until execution completes
         // returns value - we need to handle it
         /*
         Inside getNameMonoWithSleep
@@ -187,7 +191,7 @@ public class MonoPracticeTest {
     @Test
     void fromFuture() {
         // only calling this does not print return because this is not in main. Executing in different thread
-        // so blocking main thread for completable future to finish execution
+        // so blocking main thread with "sleep(2)" for completable future to finish execution
         Mono.fromFuture(getNameCompletableFuture()).subscribe(ON_NEXT);
         sleep(2);
     }

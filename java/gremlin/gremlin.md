@@ -565,3 +565,13 @@ g.V(4192)v.property(Cardinality.single, 'name', 'Jim').next()
 ```
 g.V(4192).property('name','John').property('age',30)
 ```
+------
+# Connect remote server
+* Use below command to connect to remote server
+```
+:remote connect tinkerpop.server [yaml file path with connection details]
+```
+* Get currently connected server details
+```
+:remote current
+```
