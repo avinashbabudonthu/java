@@ -20,6 +20,17 @@ import java.util.function.Consumer;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * Flux can be created in following ways:
+ * just
+ * fromIterable
+ * fromArray
+ * fromStream
+ * range
+ * interval
+ * fluxFromMono
+ * create
+ */
 @Slf4j
 public class FluxPracticeTest {
 
@@ -144,7 +155,7 @@ public class FluxPracticeTest {
     }
 
     @Test
-    void fluxFromList() {
+    void fluxFromIterable() {
         List<Integer> numbers = getNumbers(10);
         Flux.fromIterable(numbers).subscribe(ON_NEXT);
     }
@@ -384,6 +395,18 @@ public class FluxPracticeTest {
         IntStream.range(0, 10).forEach(value -> nameProducer.produce());
     }
 
+    /**
+     * received : Thread-8: Leon Fadel
+     *  received : Thread-7: Miss Alphonse Stokes
+     *  received : Thread-0: Jerrold Wiza
+     *  received : Thread-3: Miss Virgilio Larkin
+     *  received : Thread-1: Marianna Nienow
+     *  received : Thread-9: Janine Rogahn
+     *  received : Thread-5: Genaro Gusikowski
+     *  received : Thread-4: Lou Schimmel
+     *  received : Thread-6: Phoebe Reinger MD
+     *  received : Thread-2: Annice Yost MD
+     */
     @Test
     void createWithExternalConsumerAndRunnable() {
         NameProducer nameProducer = new NameProducer();

@@ -25,13 +25,6 @@ public class StockPriceObserver {
         }
     }
 
-    private void execute2() {
-        generateStockPrice().subscribe(
-                (num) -> log.info("num={}", num)
-        );
-        sleep(10);
-    }
-
     private void execute() {
 
         CountDownLatch countDownLatch = new CountDownLatch(1);

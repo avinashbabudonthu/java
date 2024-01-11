@@ -97,7 +97,7 @@ public class MonoPracticeTest {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log.info("Interrupted exception, message={}", e.getMessage());
         }
     }
 
@@ -156,7 +156,7 @@ public class MonoPracticeTest {
         // getNameMonoWithSleep().subscribe(ON_NEXT);
         // getNameMonoWithSleep();
 
-        // 2nd method executes supplier & executes async means do block 3rd call
+        // 2nd method executes supplier & executes async means do not block 3rd call
         // but 2nd method call does not print output because main thread is completed & call executed in different thread
         /*
         Inside getNameMonoWithSleep
@@ -167,7 +167,7 @@ public class MonoPracticeTest {
         // getNameMonoWithSleep().subscribeOn(Schedulers.boundedElastic()).subscribe(ON_NEXT);
         // getNameMonoWithSleep();
 
-        // 2nd method executes supplier & executes async means do block 3rd call
+        // 2nd method executes supplier & executes async means do not block 3rd call
         // block() makes main thread to wait until execution completes
         // returns value - we need to handle it
         /*
