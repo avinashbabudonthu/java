@@ -1,0 +1,7 @@
+server.port: 9000
+
+# change default url of /graphiql
+graphiql.mapping: /app-ui
+
+# change default api url of /graphql
+graphql.servlet.mapping: /query-practice

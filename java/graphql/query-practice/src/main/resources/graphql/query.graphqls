@@ -1,0 +1,16 @@
+type Query {
+
+    findName: String
+    findAllNames: [String]
+    fullName(firstName: String, lastName: String): String
+    fullName2(student: Student): String
+
+}
+
+# Student
+input Student {
+    # exclamation in the end means null values are not allowed for this field in request and response
+    firstName: String!
+    lastName: String
+
+}
