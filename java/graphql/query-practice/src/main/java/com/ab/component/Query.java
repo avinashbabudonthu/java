@@ -1,6 +1,7 @@
 package com.ab.component;
 
 import com.ab.model.Student;
+import com.ab.model.StudentResponse;
 import com.ab.service.QueryService;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,14 @@ public class Query implements GraphQLQueryResolver {
 
     public String fullName2(Student student) {
         return queryService.fullName(student);
+    }
+
+    public StudentResponse student() {
+        return queryService.findStudentResponse();
+    }
+
+    public List<StudentResponse> allStudents() {
+        return queryService.findAllStudents();
     }
 
 }

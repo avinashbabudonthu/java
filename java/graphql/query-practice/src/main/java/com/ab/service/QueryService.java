@@ -1,6 +1,7 @@
 package com.ab.service;
 
 import com.ab.model.Student;
+import com.ab.model.StudentResponse;
 import com.ab.repository.QueryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,4 +35,13 @@ public class QueryService {
     public String fullName(Student student) {
         return queryRepository.fullName(student);
     }
+
+    public StudentResponse findStudentResponse() {
+        return queryRepository.findStudentResponse();
+    }
+
+    public List<StudentResponse> findAllStudents() {
+        return queryRepository.findAllStudents();
+    }
+
 }
