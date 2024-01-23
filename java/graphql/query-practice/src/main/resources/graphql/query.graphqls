@@ -25,4 +25,11 @@ type StudentResponse {
     email: String
     street: String
     city: String
+    subjectResponses: [SubjectResponse]
+}
+
+type SubjectResponse {
+    id: Int
+    name: String
+    grade: Float
 }
