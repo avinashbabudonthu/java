@@ -26,10 +26,18 @@ type StudentResponse {
     street: String
     city: String
     subjectResponses: [SubjectResponse]
+    filteredSubjects(subjectEnum : SubjectEnum): [SubjectResponse]
+    filteredSubjectsWithArray(subjectEnumList: [SubjectEnum]): [SubjectResponse]
 }
 
 type SubjectResponse {
     id: Int
     name: String
     grade: Float
+}
+
+enum SubjectEnum {
+    Java,
+    MySQL,
+    MongoDB
 }

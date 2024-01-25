@@ -20,5 +20,6 @@ public class StudentResponse {
     private String street;
     private String city;
     private List<SubjectResponse> subjectResponses;
-
+    private List<SubjectResponse> filteredSubjects;
+    private  List<SubjectResponse> filteredSubjectsWithArray;
 }

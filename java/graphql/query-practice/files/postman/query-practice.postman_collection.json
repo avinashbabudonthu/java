@@ -579,7 +579,417 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "response-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        street\r\n        city\r\n        subjectResponses {\r\n            id\r\n            name\r\n            grade\r\n        }\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/graphql",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7161"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 06:30:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"allStudents\": [\n            {\n                \"id\": 889,\n                \"firstName\": \"Terica\",\n                \"lastName\": \"Corwin\",\n                \"email\": \"Toccara@graphql.com\",\n                \"street\": \"7049 O'Keefe Via\",\n                \"city\": \"Lake Marianoton\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 8962,\n                        \"name\": \"As I Lay Dying\",\n                        \"grade\": 4.39\n                    },\n                    {\n                        \"id\": 748036019,\n                        \"name\": \"The Little Foxes\",\n                        \"grade\": 2.6\n                    },\n                    {\n                        \"id\": 9969503,\n                        \"name\": \"Antic Hay\",\n                        \"grade\": 2.04\n                    },\n                    {\n                        \"id\": 7286,\n                        \"name\": \"Tirra Lirra by the River\",\n                        \"grade\": 1.34\n                    },\n                    {\n                        \"id\": 774091726,\n                        \"name\": \"Such, Such Were the Joys\",\n                        \"grade\": 1.18\n                    },\n                    {\n                        \"id\": 581,\n                        \"name\": \"I Will Fear No Evil\",\n                        \"grade\": 3.26\n                    },\n                    {\n                        \"id\": 1,\n                        \"name\": \"Of Mice and Men\",\n                        \"grade\": 3.12\n                    },\n                    {\n                        \"id\": 595819476,\n                        \"name\": \"A Scanner Darkly\",\n                        \"grade\": 4.46\n                    },\n                    {\n                        \"id\": 190,\n                        \"name\": \"The Little Foxes\",\n                        \"grade\": 2.63\n                    },\n                    {\n                        \"id\": 127581866,\n                        \"name\": \"Now Sleeps the Crimson Petal\",\n                        \"grade\": 1.8\n                    }\n                ]\n            },\n            {\n                \"id\": 44507320,\n                \"firstName\": \"Jere\",\n                \"lastName\": \"Howell\",\n                \"email\": \"Kyoko@graphql.com\",\n                \"street\": \"936 Amparo Ridge\",\n                \"city\": \"West Bridgettfurt\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 9244,\n                        \"name\": \"Of Mice and Men\",\n                        \"grade\": 3.85\n                    },\n                    {\n                        \"id\": 1572174,\n                        \"name\": \"Jacob Have I Loved\",\n                        \"grade\": 2.73\n                    },\n                    {\n                        \"id\": 81578465,\n                        \"name\": \"Stranger in a Strange Land\",\n                        \"grade\": 2.19\n                    },\n                    {\n                        \"id\": 7,\n                        \"name\": \"Gone with the Wind\",\n                        \"grade\": 1.64\n                    },\n                    {\n                        \"id\": 622051953,\n                        \"name\": \"Wildfire at Midnight\",\n                        \"grade\": 2.17\n                    },\n                    {\n                        \"id\": 7,\n                        \"name\": \"It's a Battlefield\",\n                        \"grade\": 4.41\n                    },\n                    {\n                        \"id\": 1,\n                        \"name\": \"A Darkling Plain\",\n                        \"grade\": 3.16\n                    },\n                    {\n                        \"id\": 1,\n                        \"name\": \"No Longer at Ease\",\n                        \"grade\": 2.28\n                    },\n                    {\n                        \"id\": 1,\n                        \"name\": \"Death Be Not Proud\",\n                        \"grade\": 2.4\n                    },\n                    {\n                        \"id\": 912161,\n                        \"name\": \"Antic Hay\",\n                        \"grade\": 4.61\n                    }\n                ]\n            },\n            {\n                \"id\": 75608228,\n                \"firstName\": \"Chase\",\n                \"lastName\": \"Bayer\",\n                \"email\": \"Marcos@graphql.com\",\n                \"street\": \"162 Hilll Land\",\n                \"city\": \"Justinfurt\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 0,\n                        \"name\": \"Paths of Glory\",\n                        \"grade\": 4.42\n                    },\n                    {\n                        \"id\": 9293322,\n                        \"name\": \"Little Hands Clapping\",\n                        \"grade\": 4.15\n                    },\n                    {\n                        \"id\": 6185,\n                        \"name\": \"The Way Through the Woods\",\n                        \"grade\": 4.84\n                    },\n                    {\n                        \"id\": 12,\n                        \"name\": \"O Jerusalem!\",\n                        \"grade\": 2.34\n                    },\n                    {\n                        \"id\": 3781912,\n                        \"name\": \"The Way Through the Woods\",\n                        \"grade\": 2.17\n                    },\n                    {\n                        \"id\": 6,\n                        \"name\": \"Infinite Jest\",\n                        \"grade\": 2.75\n                    },\n                    {\n                        \"id\": 1675,\n                        \"name\": \"The Wind's Twelve Quarters\",\n                        \"grade\": 2.89\n                    },\n                    {\n                        \"id\": 24813085,\n                        \"name\": \"This Side of Paradise\",\n                        \"grade\": 4.52\n                    },\n                    {\n                        \"id\": 227,\n                        \"name\": \"It's a Battlefield\",\n                        \"grade\": 4.77\n                    },\n                    {\n                        \"id\": 911,\n                        \"name\": \"Death Be Not Proud\",\n                        \"grade\": 4.45\n                    }\n                ]\n            },\n            {\n                \"id\": 296823652,\n                \"firstName\": \"Myung\",\n                \"lastName\": \"Heidenreich\",\n                \"email\": \"Carlo@graphql.com\",\n                \"street\": \"3225 Spinka Valleys\",\n                \"city\": \"Abigailland\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 7861587,\n                        \"name\": \"From Here to Eternity\",\n                        \"grade\": 4.09\n                    },\n                    {\n                        \"id\": 6,\n                        \"name\": \"What's Become of Waring\",\n                        \"grade\": 2.19\n                    },\n                    {\n                        \"id\": 2750,\n                        \"name\": \"Nine Coaches Waiting\",\n                        \"grade\": 1.61\n                    },\n                    {\n                        \"id\": 5,\n                        \"name\": \"A Handful of Dust\",\n                        \"grade\": 2.02\n                    },\n                    {\n                        \"id\": 50,\n                        \"name\": \"When the Green Woods Laugh\",\n                        \"grade\": 2.35\n                    },\n                    {\n                        \"id\": 39473,\n                        \"name\": \"Of Mice and Men\",\n                        \"grade\": 2.36\n                    },\n                    {\n                        \"id\": 32685,\n                        \"name\": \"The Wealth of Nations\",\n                        \"grade\": 4.15\n                    },\n                    {\n                        \"id\": 59,\n                        \"name\": \"A Confederacy of Dunces\",\n                        \"grade\": 4.7\n                    },\n                    {\n                        \"id\": 585787578,\n                        \"name\": \"Edna O'Brien\",\n                        \"grade\": 3.28\n                    },\n                    {\n                        \"id\": 840,\n                        \"name\": \"Postern of Fate\",\n                        \"grade\": 3.74\n                    }\n                ]\n            },\n            {\n                \"id\": 73029545,\n                \"firstName\": \"Lissa\",\n                \"lastName\": \"Brown\",\n                \"email\": \"Garret@graphql.com\",\n                \"street\": \"67228 Gaylord Walk\",\n                \"city\": \"South Christian\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"Sleep the Brave\",\n                        \"grade\": 3.42\n                    },\n                    {\n                        \"id\": 4751,\n                        \"name\": \"A Farewell to Arms\",\n                        \"grade\": 3.12\n                    },\n                    {\n                        \"id\": 490,\n                        \"name\": \"The Other Side of Silence\",\n                        \"grade\": 4.92\n                    },\n                    {\n                        \"id\": 20307,\n                        \"name\": \"The Moving Toyshop\",\n                        \"grade\": 2.98\n                    },\n                    {\n                        \"id\": 40,\n                        \"name\": \"The Road Less Traveled\",\n                        \"grade\": 4.66\n                    },\n                    {\n                        \"id\": 1696,\n                        \"name\": \"An Instant In The Wind\",\n                        \"grade\": 1.36\n                    },\n                    {\n                        \"id\": 36409,\n                        \"name\": \"The Road Less Traveled\",\n                        \"grade\": 2.18\n                    },\n                    {\n                        \"id\": 7,\n                        \"name\": \"I Will Fear No Evil\",\n                        \"grade\": 1.32\n                    },\n                    {\n                        \"id\": 80955,\n                        \"name\": \"The Moon by Night\",\n                        \"grade\": 3.38\n                    },\n                    {\n                        \"id\": 8302,\n                        \"name\": \"The Heart Is Deceitful Above All Things\",\n                        \"grade\": 2.35\n                    }\n                ]\n            },\n            {\n                \"id\": 469590701,\n                \"firstName\": \"Byron\",\n                \"lastName\": \"Prosacco\",\n                \"email\": \"William@graphql.com\",\n                \"street\": \"63019 Swaniawski Harbors\",\n                \"city\": \"McGlynnbury\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 43,\n                        \"name\": \"The Stars' Tennis Balls\",\n                        \"grade\": 3.32\n                    },\n                    {\n                        \"id\": 1,\n                        \"name\": \"Surprised by Joy\",\n                        \"grade\": 4.62\n                    },\n                    {\n                        \"id\": 9386719,\n                        \"name\": \"I Will Fear No Evil\",\n                        \"grade\": 3.52\n                    },\n                    {\n                        \"id\": 78062708,\n                        \"name\": \"A Time to Kill\",\n                        \"grade\": 2.93\n                    },\n                    {\n                        \"id\": 458,\n                        \"name\": \"A Darkling Plain\",\n                        \"grade\": 3.82\n                    },\n                    {\n                        \"id\": 54,\n                        \"name\": \"The Stars' Tennis Balls\",\n                        \"grade\": 3.69\n                    },\n                    {\n                        \"id\": 633443,\n                        \"name\": \"After Many a Summer Dies the Swan\",\n                        \"grade\": 4.58\n                    },\n                    {\n                        \"id\": 3972,\n                        \"name\": \"Brandy of the Damned\",\n                        \"grade\": 3.21\n                    },\n                    {\n                        \"id\": 586967,\n                        \"name\": \"Great Work of Time\",\n                        \"grade\": 1.54\n                    },\n                    {\n                        \"id\": 89186,\n                        \"name\": \"A Handful of Dust\",\n                        \"grade\": 3.26\n                    }\n                ]\n            },\n            {\n                \"id\": 9134,\n                \"firstName\": \"Wendell\",\n                \"lastName\": \"Ruecker\",\n                \"email\": \"Clint@graphql.com\",\n                \"street\": \"339 Tyler Burgs\",\n                \"city\": \"Schoenberg\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 46014515,\n                        \"name\": \"If Not Now, When?\",\n                        \"grade\": 4.88\n                    },\n                    {\n                        \"id\": 81270871,\n                        \"name\": \"A Glass of Blessings\",\n                        \"grade\": 4.73\n                    },\n                    {\n                        \"id\": 56058,\n                        \"name\": \"A Swiftly Tilting Planet\",\n                        \"grade\": 1\n                    },\n                    {\n                        \"id\": 27,\n                        \"name\": \"Infinite Jest\",\n                        \"grade\": 3.21\n                    },\n                    {\n                        \"id\": 60,\n                        \"name\": \"An Acceptable Time\",\n                        \"grade\": 4.46\n                    },\n                    {\n                        \"id\": 47,\n                        \"name\": \"The Last Enemy\",\n                        \"grade\": 3.18\n                    },\n                    {\n                        \"id\": 83720187,\n                        \"name\": \"A Time of Gifts\",\n                        \"grade\": 2.93\n                    },\n                    {\n                        \"id\": 9,\n                        \"name\": \"Many Waters\",\n                        \"grade\": 1.82\n                    },\n                    {\n                        \"id\": 47,\n                        \"name\": \"This Side of Paradise\",\n                        \"grade\": 3.05\n                    },\n                    {\n                        \"id\": 8,\n                        \"name\": \"Recalled to Life\",\n                        \"grade\": 3.73\n                    }\n                ]\n            },\n            {\n                \"id\": 52467912,\n                \"firstName\": \"Fumiko\",\n                \"lastName\": \"Kilback\",\n                \"email\": \"Felicita@graphql.com\",\n                \"street\": \"7374 Nolan Inlet\",\n                \"city\": \"Lake Cyndiview\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 13722265,\n                        \"name\": \"The Other Side of Silence\",\n                        \"grade\": 2.72\n                    },\n                    {\n                        \"id\": 18701479,\n                        \"name\": \"Terrible Swift Sword\",\n                        \"grade\": 1.07\n                    },\n                    {\n                        \"id\": 8401,\n                        \"name\": \"Eyeless in Gaza\",\n                        \"grade\": 3.33\n                    },\n                    {\n                        \"id\": 5252,\n                        \"name\": \"By Grand Central Station I Sat Down and Wept\",\n                        \"grade\": 4.12\n                    },\n                    {\n                        \"id\": 93186,\n                        \"name\": \"A Swiftly Tilting Planet\",\n                        \"grade\": 4.89\n                    },\n                    {\n                        \"id\": 2977214,\n                        \"name\": \"The Green Bay Tree\",\n                        \"grade\": 3.84\n                    },\n                    {\n                        \"id\": 3,\n                        \"name\": \"The Doors of Perception\",\n                        \"grade\": 1.56\n                    },\n                    {\n                        \"id\": 3590260,\n                        \"name\": \"In a Glass Darkly\",\n                        \"grade\": 4.98\n                    },\n                    {\n                        \"id\": 6882604,\n                        \"name\": \"An Instant In The Wind\",\n                        \"grade\": 2.58\n                    },\n                    {\n                        \"id\": 2949778,\n                        \"name\": \"The Curious Incident of the Dog in the Night-Time\",\n                        \"grade\": 2.52\n                    }\n                ]\n            },\n            {\n                \"id\": 786531659,\n                \"firstName\": \"Juan\",\n                \"lastName\": \"Bailey\",\n                \"email\": \"Rodrick@graphql.com\",\n                \"street\": \"81922 Laure Square\",\n                \"city\": \"Bergstromview\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 8624,\n                        \"name\": \"The Parliament of Man\",\n                        \"grade\": 3.44\n                    },\n                    {\n                        \"id\": 849,\n                        \"name\": \"Taming a Sea Horse\",\n                        \"grade\": 1.62\n                    },\n                    {\n                        \"id\": 8867,\n                        \"name\": \"If Not Now, When?\",\n                        \"grade\": 1.96\n                    },\n                    {\n                        \"id\": 255708479,\n                        \"name\": \"Françoise Sagan\",\n                        \"grade\": 1.72\n                    },\n                    {\n                        \"id\": 3025779,\n                        \"name\": \"Stranger in a Strange Land\",\n                        \"grade\": 1.56\n                    },\n                    {\n                        \"id\": 20326,\n                        \"name\": \"Noli Me Tangere\",\n                        \"grade\": 1.89\n                    },\n                    {\n                        \"id\": 67732,\n                        \"name\": \"I Know Why the Caged Bird Sings\",\n                        \"grade\": 4.98\n                    },\n                    {\n                        \"id\": 11155053,\n                        \"name\": \"The Way Through the Woods\",\n                        \"grade\": 4.13\n                    },\n                    {\n                        \"id\": 13626,\n                        \"name\": \"The Widening Gyre\",\n                        \"grade\": 4.61\n                    },\n                    {\n                        \"id\": 6,\n                        \"name\": \"A Monstrous Regiment of Women\",\n                        \"grade\": 1.96\n                    }\n                ]\n            },\n            {\n                \"id\": 586309,\n                \"firstName\": \"Evan\",\n                \"lastName\": \"Bayer\",\n                \"email\": \"Lamont@graphql.com\",\n                \"street\": \"1408 Jed Course\",\n                \"city\": \"Marlinview\",\n                \"subjectResponses\": [\n                    {\n                        \"id\": 4829289,\n                        \"name\": \"A Time of Gifts\",\n                        \"grade\": 4.43\n                    },\n                    {\n                        \"id\": 83,\n                        \"name\": \"To Sail Beyond the Sunset\",\n                        \"grade\": 1.52\n                    },\n                    {\n                        \"id\": 9247,\n                        \"name\": \"The Moving Toyshop\",\n                        \"grade\": 4.63\n                    },\n                    {\n                        \"id\": 907170693,\n                        \"name\": \"In Death Ground\",\n                        \"grade\": 3.13\n                    },\n                    {\n                        \"id\": 990,\n                        \"name\": \"A Time to Kill\",\n                        \"grade\": 4.33\n                    },\n                    {\n                        \"id\": 81204007,\n                        \"name\": \"The Road Less Traveled\",\n                        \"grade\": 1.66\n                    },\n                    {\n                        \"id\": 16454,\n                        \"name\": \"The Skull Beneath the Skin\",\n                        \"grade\": 4.06\n                    },\n                    {\n                        \"id\": 6370,\n                        \"name\": \"Now Sleeps the Crimson Petal\",\n                        \"grade\": 1.72\n                    },\n                    {\n                        \"id\": 40531,\n                        \"name\": \"Ring of Bright Water\",\n                        \"grade\": 3.96\n                    },\n                    {\n                        \"id\": 5750882,\n                        \"name\": \"Tirra Lirra by the River\",\n                        \"grade\": 2.22\n                    }\n                ]\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "response-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        street\r\n        city\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/graphql",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1372"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 06:31:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"allStudents\": [\n            {\n                \"id\": 0,\n                \"firstName\": \"Earle\",\n                \"lastName\": \"McCullough\",\n                \"email\": \"Pamelia@graphql.com\",\n                \"street\": \"052 Dannie Walk\",\n                \"city\": \"Richiemouth\"\n            },\n            {\n                \"id\": 67,\n                \"firstName\": \"Deneen\",\n                \"lastName\": \"Schimmel\",\n                \"email\": \"Keith@graphql.com\",\n                \"street\": \"27990 Ritchie Flat\",\n                \"city\": \"Port Kaycetown\"\n            },\n            {\n                \"id\": 688,\n                \"firstName\": \"Cicely\",\n                \"lastName\": \"Bruen\",\n                \"email\": \"Becki@graphql.com\",\n                \"street\": \"5337 Streich Bypass\",\n                \"city\": \"North Debiburgh\"\n            },\n            {\n                \"id\": 34,\n                \"firstName\": \"Enda\",\n                \"lastName\": \"Schamberger\",\n                \"email\": \"Garrett@graphql.com\",\n                \"street\": \"93260 Hintz Walk\",\n                \"city\": \"New Stephania\"\n            },\n            {\n                \"id\": 955220,\n                \"firstName\": \"Albina\",\n                \"lastName\": \"Jacobson\",\n                \"email\": \"Coreen@graphql.com\",\n                \"street\": \"9428 Abbott Knolls\",\n                \"city\": \"New Kyle\"\n            },\n            {\n                \"id\": 9961,\n                \"firstName\": \"Lynwood\",\n                \"lastName\": \"Feil\",\n                \"email\": \"Jae@graphql.com\",\n                \"street\": \"69475 Tyrell Prairie\",\n                \"city\": \"Port Tanekastad\"\n            },\n            {\n                \"id\": 991995792,\n                \"firstName\": \"Desmond\",\n                \"lastName\": \"Stoltenberg\",\n                \"email\": \"Elvera@graphql.com\",\n                \"street\": \"97959 Kuhn Summit\",\n                \"city\": \"Raylenemouth\"\n            },\n            {\n                \"id\": 7558933,\n                \"firstName\": \"Karlene\",\n                \"lastName\": \"Spinka\",\n                \"email\": \"Jann@graphql.com\",\n                \"street\": \"360 Clint Brook\",\n                \"city\": \"Lake Yuetteland\"\n            },\n            {\n                \"id\": 94629,\n                \"firstName\": \"Jacob\",\n                \"lastName\": \"Emmerich\",\n                \"email\": \"Lionel@graphql.com\",\n                \"street\": \"462 Walter Locks\",\n                \"city\": \"Greenholtshire\"\n            },\n            {\n                \"id\": 5,\n                \"firstName\": \"Rod\",\n                \"lastName\": \"Von\",\n                \"email\": \"Louvenia@graphql.com\",\n                \"street\": \"0482 Stokes Squares\",\n                \"city\": \"Rockystad\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "allStudents-filteredSubjects",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"/**\r",
+									"request 1\r",
+									"\r",
+									"query load_students {\r",
+									"    allStudents {\r",
+									"        id\r",
+									"        firstName\r",
+									"        lastName\r",
+									"        email\r",
+									"        city\r",
+									"        street\r",
+									"        filteredSubjects(subjectEnum: Java) {\r",
+									"            id\r",
+									"            name\r",
+									"            grade\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"*/\r",
+									"\r",
+									"/**\r",
+									"request 2\r",
+									"\r",
+									"query load_students {\r",
+									"    allStudents {\r",
+									"        id\r",
+									"        firstName\r",
+									"        lastName\r",
+									"        email\r",
+									"        city\r",
+									"        street\r",
+									"        filteredSubjects(subjectEnum: MySQL) {\r",
+									"            id\r",
+									"            name\r",
+									"            grade\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"*/\r",
+									"\r",
+									"/**\r",
+									"request 3\r",
+									"\r",
+									"query load_students {\r",
+									"    allStudents {\r",
+									"        id\r",
+									"        firstName\r",
+									"        lastName\r",
+									"        email\r",
+									"        city\r",
+									"        street\r",
+									"        filteredSubjects(subjectEnum: MongoDB) {\r",
+									"            id\r",
+									"            name\r",
+									"            grade\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        city\r\n        street\r\n        filteredSubjects(subjectEnum: MongoDB) {\r\n            id\r\n            name\r\n            grade\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "response-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        city\r\n        street\r\n        filteredSubjects(subjectEnum: MongoDB) {\r\n            id\r\n            name\r\n            grade\r\n        }\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/graphql",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2071"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 07:11:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"allStudents\": [\n            {\n                \"id\": 1,\n                \"firstName\": \"Jerrica\",\n                \"lastName\": \"Barton\",\n                \"email\": \"Jeremy@graphql.com\",\n                \"city\": \"New Jefferson\",\n                \"street\": \"2706 MacGyver Parks\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 80315,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.49\n                    }\n                ]\n            },\n            {\n                \"id\": 1067,\n                \"firstName\": \"Brad\",\n                \"lastName\": \"Hansen\",\n                \"email\": \"Lester@graphql.com\",\n                \"city\": \"Tereseburgh\",\n                \"street\": \"7627 Dooley Viaduct\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 8465648,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.39\n                    }\n                ]\n            },\n            {\n                \"id\": 727,\n                \"firstName\": \"Gayle\",\n                \"lastName\": \"Kertzmann\",\n                \"email\": \"Siobhan@graphql.com\",\n                \"city\": \"South Mirthatown\",\n                \"street\": \"896 Kohler Extensions\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 70014840,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.23\n                    }\n                ]\n            },\n            {\n                \"id\": 6,\n                \"firstName\": \"Callie\",\n                \"lastName\": \"Graham\",\n                \"email\": \"Yer@graphql.com\",\n                \"city\": \"East Shanteborough\",\n                \"street\": \"02478 Krajcik Fields\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 87629645,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.05\n                    }\n                ]\n            },\n            {\n                \"id\": 13208,\n                \"firstName\": \"Ralph\",\n                \"lastName\": \"Greenholt\",\n                \"email\": \"Kimber@graphql.com\",\n                \"city\": \"Lake Bentonville\",\n                \"street\": \"38729 Sanford Passage\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 2746432,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 3.81\n                    }\n                ]\n            },\n            {\n                \"id\": 6414720,\n                \"firstName\": \"Jerrold\",\n                \"lastName\": \"Crona\",\n                \"email\": \"Brittaney@graphql.com\",\n                \"city\": \"West Lyndia\",\n                \"street\": \"82951 Bernhard Pines\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 82788531,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.01\n                    }\n                ]\n            },\n            {\n                \"id\": 77608882,\n                \"firstName\": \"Alisia\",\n                \"lastName\": \"Bartell\",\n                \"email\": \"Dagmar@graphql.com\",\n                \"city\": \"McLaughlinview\",\n                \"street\": \"5190 Deangelo Mountain\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 43,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.52\n                    }\n                ]\n            },\n            {\n                \"id\": 50162655,\n                \"firstName\": \"Amalia\",\n                \"lastName\": \"Bergstrom\",\n                \"email\": \"Iluminada@graphql.com\",\n                \"city\": \"Lake Kenethshire\",\n                \"street\": \"608 Kozey Fork\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 519628929,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 2.92\n                    }\n                ]\n            },\n            {\n                \"id\": 78926,\n                \"firstName\": \"Malik\",\n                \"lastName\": \"Marks\",\n                \"email\": \"Denisha@graphql.com\",\n                \"city\": \"South Brittanyburgh\",\n                \"street\": \"91857 Fredda Circle\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 25478,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 3.05\n                    }\n                ]\n            },\n            {\n                \"id\": 7,\n                \"firstName\": \"Malorie\",\n                \"lastName\": \"Hayes\",\n                \"email\": \"Orlando@graphql.com\",\n                \"city\": \"Hansenfurt\",\n                \"street\": \"8493 Wuckert Island\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 2372,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.81\n                    }\n                ]\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "allStudents-filteredSubjectsArray",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"/**\r",
+									"request 1\r",
+									"\r",
+									"query load_students {\r",
+									"    allStudents {\r",
+									"        id\r",
+									"        firstName\r",
+									"        lastName\r",
+									"        email\r",
+									"        city\r",
+									"        street\r",
+									"        filteredSubjectsWithArray(subjectEnumList: [MySQL, Java]) {\r",
+									"            id\r",
+									"            name\r",
+									"            grade\r",
+									"        }\r",
+									"    }\r",
+									"}\r",
+									"*/\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        city\r\n        street\r\n        filteredSubjectsWithArray(subjectEnumList: [MySQL, Java]) {\r\n            id\r\n            name\r\n            grade\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "response-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query load_students {\r\n    allStudents {\r\n        id\r\n        firstName\r\n        lastName\r\n        email\r\n        city\r\n        street\r\n        filteredSubjects(subjectEnum: MongoDB) {\r\n            id\r\n            name\r\n            grade\r\n        }\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/graphql",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2071"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 07:11:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"allStudents\": [\n            {\n                \"id\": 1,\n                \"firstName\": \"Jerrica\",\n                \"lastName\": \"Barton\",\n                \"email\": \"Jeremy@graphql.com\",\n                \"city\": \"New Jefferson\",\n                \"street\": \"2706 MacGyver Parks\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 80315,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.49\n                    }\n                ]\n            },\n            {\n                \"id\": 1067,\n                \"firstName\": \"Brad\",\n                \"lastName\": \"Hansen\",\n                \"email\": \"Lester@graphql.com\",\n                \"city\": \"Tereseburgh\",\n                \"street\": \"7627 Dooley Viaduct\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 8465648,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.39\n                    }\n                ]\n            },\n            {\n                \"id\": 727,\n                \"firstName\": \"Gayle\",\n                \"lastName\": \"Kertzmann\",\n                \"email\": \"Siobhan@graphql.com\",\n                \"city\": \"South Mirthatown\",\n                \"street\": \"896 Kohler Extensions\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 70014840,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.23\n                    }\n                ]\n            },\n            {\n                \"id\": 6,\n                \"firstName\": \"Callie\",\n                \"lastName\": \"Graham\",\n                \"email\": \"Yer@graphql.com\",\n                \"city\": \"East Shanteborough\",\n                \"street\": \"02478 Krajcik Fields\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 87629645,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.05\n                    }\n                ]\n            },\n            {\n                \"id\": 13208,\n                \"firstName\": \"Ralph\",\n                \"lastName\": \"Greenholt\",\n                \"email\": \"Kimber@graphql.com\",\n                \"city\": \"Lake Bentonville\",\n                \"street\": \"38729 Sanford Passage\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 2746432,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 3.81\n                    }\n                ]\n            },\n            {\n                \"id\": 6414720,\n                \"firstName\": \"Jerrold\",\n                \"lastName\": \"Crona\",\n                \"email\": \"Brittaney@graphql.com\",\n                \"city\": \"West Lyndia\",\n                \"street\": \"82951 Bernhard Pines\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 82788531,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 1.01\n                    }\n                ]\n            },\n            {\n                \"id\": 77608882,\n                \"firstName\": \"Alisia\",\n                \"lastName\": \"Bartell\",\n                \"email\": \"Dagmar@graphql.com\",\n                \"city\": \"McLaughlinview\",\n                \"street\": \"5190 Deangelo Mountain\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 43,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.52\n                    }\n                ]\n            },\n            {\n                \"id\": 50162655,\n                \"firstName\": \"Amalia\",\n                \"lastName\": \"Bergstrom\",\n                \"email\": \"Iluminada@graphql.com\",\n                \"city\": \"Lake Kenethshire\",\n                \"street\": \"608 Kozey Fork\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 519628929,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 2.92\n                    }\n                ]\n            },\n            {\n                \"id\": 78926,\n                \"firstName\": \"Malik\",\n                \"lastName\": \"Marks\",\n                \"email\": \"Denisha@graphql.com\",\n                \"city\": \"South Brittanyburgh\",\n                \"street\": \"91857 Fredda Circle\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 25478,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 3.05\n                    }\n                ]\n            },\n            {\n                \"id\": 7,\n                \"firstName\": \"Malorie\",\n                \"lastName\": \"Hayes\",\n                \"email\": \"Orlando@graphql.com\",\n                \"city\": \"Hansenfurt\",\n                \"street\": \"8493 Wuckert Island\",\n                \"filteredSubjects\": [\n                    {\n                        \"id\": 2372,\n                        \"name\": \"MongoDB\",\n                        \"grade\": 4.81\n                    }\n                ]\n            }\n        ]\n    }\n}"
+						}
+					]
 				}
 			]
 		},

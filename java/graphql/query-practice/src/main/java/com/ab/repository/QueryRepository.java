@@ -2,6 +2,7 @@ package com.ab.repository;
 
 import com.ab.model.Student;
 import com.ab.model.StudentResponse;
+import com.ab.model.SubjectResponse;
 import com.ab.util.Util;
 import com.github.javafaker.Address;
 import org.springframework.stereotype.Repository;
@@ -52,6 +53,47 @@ public class QueryRepository {
             );
         }
         return studentResponseList;
+    }
+
+    private List<StudentResponse> prepareData() {
+        List<StudentResponse> studentResponseList = new ArrayList<>();
+        Address address = Util.FAKER.address();
+        for (int i = 1; i <= 3; i++) {
+            studentResponseList.add(StudentResponse.builder()
+                    .id(Long.parseLong(String.valueOf(i)))
+                    .firstName(address.firstName())
+                    .lastName(address.lastName())
+                    .email(address.firstName() + "@graphql.com")
+                    .street(address.streetAddress())
+                    .city(address.city())
+                    .build());
+        }
+
+        return studentResponseList;
+    }
+
+    public List<SubjectResponse> findSubjects() {
+        List<SubjectResponse> subjectResponseList = new ArrayList<>();
+        subjectResponseList.add(SubjectResponse.builder()
+                .id(Util.FAKER.number().randomNumber())
+                .name("Java")
+                .grade(Util.FAKER.number().randomDouble(2,1, 5))
+                .build());
+        subjectResponseList.add(SubjectResponse.builder()
+                .id(Util.FAKER.number().randomNumber())
+                .name("MySQL")
+                .grade(Util.FAKER.number().randomDouble(2,1, 5))
+                .build());
+        subjectResponseList.add(SubjectResponse.builder()
+                .id(Util.FAKER.number().randomNumber())
+                .name("MongoDB")
+                .grade(Util.FAKER.number().randomDouble(2,1, 5))
+                .build());
+        return subjectResponseList;
+    }
+
+    public List<StudentResponse> findAllStudentsV2() {
+        return prepareData();
     }
 
 }
