@@ -1175,7 +1175,8 @@ voyager.enabled=false
 ------
 # [JBoss](jboss)
 * [Materials](jboss/materials.md)
-* [Notes](jboss/notes.md)
+* [7.2.0 Notes](jboss/7.2.0/notes.md)
+* [7.4.0 Notes](jboss/7.4.0/notes.md)
 ------
 # [JDK](jdk)
 * [Materials](jdk/materials.md)
