@@ -24,9 +24,3 @@
 	* https://www.youtube.com/watch?v=2oXVYxIPs88
 * Others - [AWS Java SDK](https://aws.amazon.com/sdk-for-java)
 * Others - [Amazon Cli Documentation](https://aws.amazon.com/cli)
-------
-# Dynamo DB Materials in study order
-* Youtube - https://www.youtube.com/watch?v=2mVR_Qgx_RU
-* Udemy - AWS DynamoDB - The Complete Guide (Build 18+ Hands On Demos)
-* Youtube - https://www.youtube.com/watch?v=ovEq4L6tGfc
-* Youtube - https://www.youtube.com/watch?v=ijyeE-pXFk0
