@@ -1,0 +1,4 @@
+server.port: 9001
+
+# property for graphql java client
+graphql.client.url: http://localhost:9000/graphql

@@ -53,6 +53,7 @@
 * [HikariCP](#hikaricp)
 * [HTML Sanitizer](#html-sanitizer)
 * [IBM MQ](#ibm-mq)
+* [Infinispan](#Infinispan)
 * [Integration Testing](#Integration-Testing)
 * [IntelliJ](#intellij)
 * [Interview Questions](#interview-questions)
@@ -956,101 +957,8 @@
 ------
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
-* [Materials](graphql/materials.md)
-# Projects
-### [GraphQL Spring Boot](graphql/graph-ql-spring-boot)
-### Files
-* Dependencies - [pom.xml](graphql/graph-ql-spring-boot/pom.xml)
-* Application properties - [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
-* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-
-### Run App
-* Run main class - [App](graphql/graph-ql-spring-boot/src/main/java/com/java/App.java)
-* Open url - http://localhost:9000/graphiql
-  * UI to write and execute graphql queries
-* Postman collection - [graph-ql-spring-boot.postman_collection.json](graphql/graph-ql-spring-boot/files/graph-ql-spring-boot.postman_collection.json)
-* Import to postman to check graphql queries
-
-### Examples
-* Graphql schema - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-* firstQuery - [firstQuery method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-* fullName - [fullName method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-* studentRequest - [studentRequest method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-* Update default `/graphiql` url - refer [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
-```
-graphiql.mapping: /app-ui
-```
-* Update default `/graphql` url - refer [application.yml](graphql/graph-ql-spring-boot/src/main/resources/application.yml)
-```
-graphql.servlet.mapping: /app
-```
-* JSON as response
-	* studentAsResponse - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-	* [studentAsResponse method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-* Response with list
-	* responseWithList - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-	* [responseWithList method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-* student4SubjectsWithResolver
-	* student4SubjectsWithResolver - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-	* [student4SubjectsWithResolver method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-	* [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student4Resolver.java)
-* student5SubjectsWithResolverAndFilter
-	* student5SubjectsWithResolverAndFilter - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-	* [student5SubjectsWithResolverAndFilter method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Query.java)
-	* [subjects method](graphql/graph-ql-spring-boot/src/main/java/com/java/resolver/Student5Resolver.java)
-	* [SubjectEnum](graphql/graph-ql-spring-boot/src/main/java/com/java/util/SubjectEnum.java)
-* createStudent - This is mutation operation
-	* createStudent - Refer `type Mutation` - [schema.graphqls](graphql/graph-ql-spring-boot/src/main/resources/schema/schema.graphqls)
-	* [createStudent method](graphql/graph-ql-spring-boot/src/main/java/com/java/query/Mutation.java)
-	* createStudent - request in postman
-* to specify graphql schema location
-```
-graphql.tools.schema-location-pattern=*/*.graphqls
-```
-* If objects referred in circular dependency then this restrict the level of depth to avoid StackOverflowError
-```
-graphql.servlet.maxQueryDepth: 5
-```
-
-### Enable voyager to visualize graphql schema
-* Add below dependency
-```
-<dependency>
-	<groupId>com.graphql-java-kickstart</groupId>
-	<artifactId>voyager-spring-boot-starter</artifactId>
-	<version>11.0.0</version>
-</dependency>
-```
-* Open url - `http://localhost:9000/voyager`
-* Add below property in application.yml/properties to diable voyage in prod environment
-```
-voyager.enabled=false
-```
-* Github - https://github.com/IvanGoncharov/graphql-voyager
-
-### Other Examples
-* [Exception handling](graphql/graph-ql-spring-boot/README.md#execption-handling)
-* [DataFetcherResult](graphql/graph-ql-spring-boot/README.md#DataFetcherResult)
-* [Async Resolvers](graphql/graph-ql-spring-boot/README.md#async-resolvers)
-* [File Upload](graphql/graph-ql-spring-boot/README.md#file-upload)
-* [DataFetchingEnvironment](graphql/graph-ql-spring-boot/README.md#DataFetchingEnvironment)
-* [Scalars](graphql/graph-ql-spring-boot/README.md#Scalars)
-* [Listeners](graphql/graph-ql-spring-boot/README.md#Listeners)
-* [Pagination](graphql/graph-ql-spring-boot/README.md#Pagination)
-* [Custom Context](graphql/graph-ql-spring-boot/README.md#custom-context)
-* [Data Loader problem](graphql/graph-ql-spring-boot/README.md#data-loader-problem)
-* [Data Loader solution](graphql/graph-ql-spring-boot/README.md#data-loader-solution)
-* [Instrumentation](graphql/graph-ql-spring-boot/README.md#Instrumentation)
-* [Tracing Enabled](graphql/graph-ql-spring-boot/README.md#Tracing-Enabled)
-* [Correlation ID](graphql/graph-ql-spring-boot/README.md#Correlation-ID)
-* [DataLoader Key Context](graphql/graph-ql-spring-boot/README.md#DataLoader-Key-Context)
-* [Spring Security Authorization](graphql/graph-ql-spring-boot/README.md#Spring-Security-Authorization)
-
-## [GraphQL Spring Boot Client](graphql/graphql-spring-boot-client)
-* This project is Java client for GraphQL queries (Similar to RestTemplate for REST API)
-* Run above project before testing this project
-* [Refer methods](graphql/graphql-spring-boot-client/src/main/java/com/java/client/GraphQLClientController.java)
-* [Postman Collection](graphql/graphql-spring-boot-client/files/graphql-spring-boot-client.postman_collection.json)
+* [Materials](graphql/notes.md#Materials)
+* [Example - ]
 
 ------
 # [Gremlin](gremlin)
@@ -1138,6 +1046,10 @@ voyager.enabled=false
 * [Keep Listener Up and Running with Another Thread](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningWithAnotherThread.java)
 * [Send Receive By Listener](ibm-mq/ibm-mq/src/main/java/ibm/mq/listener/practice/SendAndReceiveByListener.java)
 ------
+# [Infinispan](infinispan)
+* [Notes](Infinispan/notes.md)
+* [Materials in study order](Infinispan/notes.md#Materials-in-study-order)
+------
 # [integration testing](integration-testing)
 * [Spring Boot 1 Integration Test Cases](integration-testing/integration-test)
 ------
@@ -1178,6 +1090,7 @@ voyager.enabled=false
 * [7.4.0 Download](jboss/7.4.0/notes.md#Download)
 * [7.4.0 Documentation](jboss/7.4.0/notes.md#Documentation)
 * [7.4.0 Zip archive Installation](jboss/7.4.0/notes.md#Zip-archive-Installation)
+* [7.4.0 Setup Oracle Datasoource](jboss/7.4.0/notes.md#Setup-Oracle-Datasoource)
 ------
 # [JDK](jdk)
 * [Materials](jdk/materials.md)
@@ -1351,11 +1264,11 @@ voyager.enabled=false
 * [Notes](logging/notes.md)
 ------
 # [Lombok](lombok)
-* [Materials](materials.md)
-## [Lombok Examples](lombok/lombok)
-* [Test class](lombok/lombok/src/test/java/com/java/StudentTest)
-	* [Data annotation](lombok/lombok/src/main/java/com/java/Student.java)
-	* [NonNull annotation](lombok/lombok/src/main/java/com/java/Student2.java)
+* [Notes](lombok/notes.md)
+* [Materials](lombok/notes.md#Materials)
+* [Example - Data annotation](lombok/lombok/src/main/java/com/java/Student.java)
+* [Example - NonNull annotation](lombok/lombok/src/main/java/com/java/Student2.java)
+* [Example - StudentTest](lombok/lombok/src/test/java/com/java/StudentTest.java)
 ------
 # [Maven](maven)
 * [Materials](maven/materials.md)

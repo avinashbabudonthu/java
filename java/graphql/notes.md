@@ -1,3 +1,10 @@
+# Materials
+* Udemy: GraphQL API with Java Spring Boot & Spring Framework
+* Youtube: https://www.youtube.com/watch?v=nju6jFW8CVw&list=PLiwhu8iLxKwL1TU0RMM6z7TtkyW-3-5Wi&ab_channel=PhilipStarritt
+* Youtube: https://www.youtube.com/watch?v=atA2OovQBic&ab_channel=SpringAcademy
+* Youtube: https://www.youtube.com/watch?v=zX2I7-aIldE&ab_channel=TechPrimers
+* Documentation - https://www.graphql-java.com/documentation/getting-started
+------
 # What Is GraphQL?
 * Traditional REST APIs work with the concept of Resources that the server manages. We can manipulate these resources in some standard ways, following the various HTTP verbs. This works very well as long as our API fits the resource concept, but quickly falls apart when we need to deviate from it.
 * This also suffers when the client needs data from multiple resources at the same time, such as requesting a blog post and the comments. Typically, this is solved either by having the client make multiple requests, or having the server supply extra data that might not always be required, leading to larger response sizes.

@@ -1,0 +1,106 @@
+scalar NonNegativeInt
+
+# The Root Query for the application
+type Query {
+    firstQuery: String
+	fullName(firstName: String, lastName: String): String
+	studentRequest(student: Student): String
+	mandatoryField(student: Student2): String
+	studentAsResponse(id: Int, firstName: String, lastName: String): StudentResponse
+	responseWithList(id: Int): Student3
+	student4SubjectsWithResolver(id: Int): Student4
+	student5SubjectsWithResolverAndFilter(id: Int): Student5
+	dataLoadersProblem: [Student6]
+	dataLoadersSolution: [Student7]
+}
+
+# The Root Mutation for the application
+type Mutation {
+	createStudent(studentRequest: StudentRequest1): StudentResponse
+	fileUpload: ID!
+}
+
+input Student{
+	id: Int
+	firstName: String
+	lastName: String
+}
+
+input Student2{
+	id: Int
+	firstName: String! # non null / mandatory field
+	lastName: String
+}
+
+type StudentResponse{
+	id: Int
+	firstName: String
+	lastName: String
+}
+
+type Student3 {
+	id: Int
+	firstName: String
+	lastName: String
+	subjects: [Subject]
+}
+
+type Subject {
+	id: Int
+	name: String
+	marks: Float
+}
+
+type Student4 {
+	id: Int
+	firstName: String
+	lastName: String
+	subjects: [Subject]
+	subjects2: [Subject]
+	subjects3: [Subject]
+	exception: String
+	dataFetcherResult: Subject
+	selectionSet: String
+	age: NonNegativeInt
+	customGraphQLContext: String
+}
+
+type Student5 {
+	id: Int
+	firstName: String
+	lastName: String
+	subjects(subjectEnum: SubjectEnum): [Subject]
+}
+
+enum SubjectEnum {
+	All,
+	Java,
+	GraphQL
+}
+
+input StudentRequest1 {
+	id: Int,
+	firstName: String,
+	lastName: String
+}
+
+type Student6 {
+	id: Int,
+	name: String
+	course: String,
+	address: Address
+}
+
+type Student7 {
+	id: Int,
+	name: String
+	course: String,
+	address: Address
+}
+
+type Address {
+	hNo: String,
+	street: String,
+	city: String,
+	pin: Int
+}

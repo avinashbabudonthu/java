@@ -1,4 +1,0 @@
-type Query {
-    helloWorld: String
-    helloWorld2: String
-}
