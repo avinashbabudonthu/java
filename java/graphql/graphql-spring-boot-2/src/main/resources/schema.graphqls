@@ -4,6 +4,7 @@ type Query {
     example1(id: Int, name: String): String
     example2(request2: Request2): String
     example3(request3: Request3): String
+    example5(request: Request0005): Response0005
 }
 
 input Request2 {
@@ -13,6 +14,18 @@ input Request2 {
 }
 
 input Request3 {
+    id: Int!
+    name: String!
+    number: Float!
+}
+
+input Request0005 {
+    id: Int!
+    name: String!
+    number: Float!
+}
+
+type Response0005 {
     id: Int!
     name: String!
     number: Float!

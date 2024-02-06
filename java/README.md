@@ -964,6 +964,7 @@
 	* [Request object as input](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0002)
 	* [Null validation on fields](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0003)
 	* [Change default urls](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0004)
+	* [Request object and response object](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0005)
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/gremlin.md#Gremlin-Materials-in-study-order)
