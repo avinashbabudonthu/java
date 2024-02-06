@@ -958,11 +958,12 @@
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [Materials](graphql/notes.md#Materials)
-* [GraphQL Hello Wold](graphql/graphql-spring-boot-2/src/main/java/com/ab/hello/world)
-* [Simple input request](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0001)
-* [Request object as input](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0002)
-* [Null validation on fields](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0003)
-* [Change default urls](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0004)
+* Spring Boot 2 GraphQL Examples
+	* [GraphQL Hello Wold](graphql/graphql-spring-boot-2/src/main/java/com/ab/hello/world)
+	* [Simple input request](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0001)
+	* [Request object as input](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0002)
+	* [Null validation on fields](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0003)
+	* [Change default urls](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0004)
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/gremlin.md#Gremlin-Materials-in-study-order)
