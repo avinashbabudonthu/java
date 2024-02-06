@@ -1,5 +1,5 @@
 # GraphQL Hello Wold
 * Returns simple String
-* [fullName - Query.java](Query.java)
+* `fullName` method in [Query.java](Query.java)
+* `fullName` in [schema.graphqls](../../../../../resources/schema.graphqls)
 * [Postman Collection](hello-world.postman_collection.json)
-* `fullName` in [schema.graphqls](../../../../resources/schema.graphqls)
