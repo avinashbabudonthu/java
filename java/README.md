@@ -958,7 +958,7 @@
 # [GraphQL](graphql)
 * [Notes](graphql/notes.md)
 * [Materials](graphql/notes.md#Materials)
-* Spring Boot 2 GraphQL Examples
+* [Spring Boot 2 GraphQL Examples](graphql/graphql-spring-boot-2)
 	* [GraphQL Hello Wold](graphql/graphql-spring-boot-2/src/main/java/com/ab/hello/world)
 	* [Simple input request](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0001)
 	* [Request object as input](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0002)
