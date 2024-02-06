@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "a0d91e2e-5f51-4d2f-89f2-8bbf3283806d",
+		"name": "example0003",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28691884"
+	},
+	"item": [
+		{
+			"name": "example3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query example3 {\r\n    example3(request3: {\r\n        id: 100\r\n        name: \"Jim\"\r\n        number: 2.34\r\n    })\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0001-success-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query example3 {\r\n    example3(request3: {\r\n        id: 100\r\n        name: \"Jim\"\r\n        number: 2.34\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Feb 2024 09:10:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"example3\": \"100, Jim, 2.34\"\n    }\n}"
+				},
+				{
+					"name": "0002-missing-id",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query example3 {\r\n    example3(request3: {\r\n        name: \"Jim\"\r\n        number: 2.34\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "697"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Feb 2024 09:11:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": null,\n    \"errors\": [\n        {\n            \"message\": \"Validation error of type WrongType: argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='name', value=StringValue{value='Jim'}}, ObjectField{name='number', value=FloatValue{value=2.34}}]}' is missing required fields '[id]' @ 'example3'\",\n            \"locations\": [\n                {\n                    \"line\": 2,\n                    \"column\": 14,\n                    \"sourceName\": null\n                }\n            ],\n            \"description\": \"argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='name', value=StringValue{value='Jim'}}, ObjectField{name='number', value=FloatValue{value=2.34}}]}' is missing required fields '[id]'\",\n            \"validationErrorType\": \"WrongType\",\n            \"queryPath\": [\n                \"example3\"\n            ],\n            \"errorType\": \"ValidationError\",\n            \"path\": null,\n            \"extensions\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "0003-missing-name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query example3 {\r\n    example3(request3: {\r\n        id: 100\r\n        number: 2.34\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "687"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Feb 2024 09:12:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": null,\n    \"errors\": [\n        {\n            \"message\": \"Validation error of type WrongType: argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='id', value=IntValue{value=100}}, ObjectField{name='number', value=FloatValue{value=2.34}}]}' is missing required fields '[name]' @ 'example3'\",\n            \"locations\": [\n                {\n                    \"line\": 2,\n                    \"column\": 14,\n                    \"sourceName\": null\n                }\n            ],\n            \"description\": \"argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='id', value=IntValue{value=100}}, ObjectField{name='number', value=FloatValue{value=2.34}}]}' is missing required fields '[name]'\",\n            \"validationErrorType\": \"WrongType\",\n            \"queryPath\": [\n                \"example3\"\n            ],\n            \"errorType\": \"ValidationError\",\n            \"path\": null,\n            \"extensions\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "0004-missing-number",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query example3 {\r\n    example3(request3: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "691"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Feb 2024 09:12:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": null,\n    \"errors\": [\n        {\n            \"message\": \"Validation error of type WrongType: argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='id', value=IntValue{value=100}}, ObjectField{name='name', value=StringValue{value='Jim'}}]}' is missing required fields '[number]' @ 'example3'\",\n            \"locations\": [\n                {\n                    \"line\": 2,\n                    \"column\": 14,\n                    \"sourceName\": null\n                }\n            ],\n            \"description\": \"argument 'request3' with value 'ObjectValue{objectFields=[ObjectField{name='id', value=IntValue{value=100}}, ObjectField{name='name', value=StringValue{value='Jim'}}]}' is missing required fields '[number]'\",\n            \"validationErrorType\": \"WrongType\",\n            \"queryPath\": [\n                \"example3\"\n            ],\n            \"errorType\": \"ValidationError\",\n            \"path\": null,\n            \"extensions\": null\n        }\n    ]\n}"
+				},
+				{
+					"name": "0005-missing-fields",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query example3 {\r\n    example3(request3: {\r\n        \r\n    })\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "497"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Feb 2024 09:13:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": null,\n    \"errors\": [\n        {\n            \"message\": \"Validation error of type WrongType: argument 'request3' with value 'ObjectValue{objectFields=[]}' is missing required fields '[number, name, id]' @ 'example3'\",\n            \"locations\": [\n                {\n                    \"line\": 2,\n                    \"column\": 14,\n                    \"sourceName\": null\n                }\n            ],\n            \"description\": \"argument 'request3' with value 'ObjectValue{objectFields=[]}' is missing required fields '[number, name, id]'\",\n            \"validationErrorType\": \"WrongType\",\n            \"queryPath\": [\n                \"example3\"\n            ],\n            \"errorType\": \"ValidationError\",\n            \"path\": null,\n            \"extensions\": null\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

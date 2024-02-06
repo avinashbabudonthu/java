@@ -1,0 +1,19 @@
+type Query {
+
+    fullName: String
+    example1(id: Int, name: String): String
+    example2(request2: Request2): String
+    example3(request3: Request3): String
+}
+
+input Request2 {
+    id: Int
+    name: String
+    doubleNumber: Float
+}
+
+input Request3 {
+    id: Int!
+    name: String!
+    number: Float!
+}
