@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "0e3600d3-90e6-466a-adb6-37f6dbd5107d",
+		"name": "example0008",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28691884"
+	},
+	"item": [
+		{
+			"name": "example0008",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0001-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 10:00:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"name\": \"Jim\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}

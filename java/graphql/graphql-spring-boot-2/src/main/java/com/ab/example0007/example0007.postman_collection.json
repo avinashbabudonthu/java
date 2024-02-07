@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "01954bf1-6fb4-4d9b-93ef-39c10e6c7130",
+		"name": "example0007",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28691884"
+	},
+	"item": [
+		{
+			"name": "example0007",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"/**\r",
+							"Request body 1\r",
+							"\r",
+							"query findAllStudents2 {\r",
+							"    findAllStudents2 {\r",
+							"        id\r",
+							"        name\r",
+							"        subjects(subjectName: \"Java\") {\r",
+							"            id\r",
+							"            name\r",
+							"        }\r",
+							"    }\r",
+							"}\r",
+							"\r",
+							"*/\r",
+							"\r",
+							"/**\r",
+							"Request body 2\r",
+							"\r",
+							"query findAllStudents2 {\r",
+							"    findAllStudents2 {\r",
+							"        id\r",
+							"        name\r",
+							"        subjects(subjectName: \"MySQL\") {\r",
+							"            id\r",
+							"            name\r",
+							"        }\r",
+							"    }\r",
+							"}\r",
+							"\r",
+							"*/\r",
+							"\r",
+							"/**\r",
+							"Request body 3\r",
+							"\r",
+							"query findAllStudents2 {\r",
+							"    findAllStudents2 {\r",
+							"        id\r",
+							"        name\r",
+							"        subjects(subjectName: \"All\") {\r",
+							"            id\r",
+							"            name\r",
+							"        }\r",
+							"    }\r",
+							"}\r",
+							"\r",
+							"*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query findAllStudents2 {\r\n    findAllStudents2 {\r\n        id\r\n        name\r\n        subjects(subjectName: \"All\") {\r\n            id\r\n            name\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0001-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query findAllStudents2 {\r\n    findAllStudents2 {\r\n        id\r\n        name\r\n        subjects(subjectName: \"Java\") {\r\n            id\r\n            name\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 09:33:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"findAllStudents2\": [\n            {\n                \"id\": 1,\n                \"name\": \"Jim\",\n                \"subjects\": [\n                    {\n                        \"id\": 100,\n                        \"name\": \"Java\"\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Jill\",\n                \"subjects\": []\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "0002-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query findAllStudents2 {\r\n    findAllStudents2 {\r\n        id\r\n        name\r\n        subjects(subjectName: \"MySQL\") {\r\n            id\r\n            name\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "104"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 09:39:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"findAllStudents2\": [\n            {\n                \"id\": 1,\n                \"name\": \"Jim\",\n                \"subjects\": []\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Jill\",\n                \"subjects\": []\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "0003-response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query findAllStudents2 {\r\n    findAllStudents2 {\r\n        id\r\n        name\r\n        subjects(subjectName: \"All\") {\r\n            id\r\n            name\r\n        }\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/graphql",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "214"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Feb 2024 09:42:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"findAllStudents2\": [\n            {\n                \"id\": 1,\n                \"name\": \"Jim\",\n                \"subjects\": [\n                    {\n                        \"id\": 100,\n                        \"name\": \"Java\"\n                    },\n                    {\n                        \"id\": 101,\n                        \"name\": \"GraphQL\"\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Jill\",\n                \"subjects\": [\n                    {\n                        \"id\": 102,\n                        \"name\": \"Spring Boot\"\n                    },\n                    {\n                        \"id\": 103,\n                        \"name\": \"Docker\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}

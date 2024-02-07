@@ -1,0 +1,13 @@
+type Mutation {
+    createStudent(student: Student0008): StudentResponse0008
+}
+
+input Student0008 {
+    id: Int
+    name: String
+}
+
+type StudentResponse0008 {
+    id: Int
+    name: String
+}

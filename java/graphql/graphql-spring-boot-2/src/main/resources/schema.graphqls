@@ -5,6 +5,8 @@ type Query {
     example2(request2: Request2): String
     example3(request3: Request3): String
     example5(request: Request0005): Response0005
+    findAllStudents: [Student0006]
+    findAllStudents2: [Student0007]
 }
 
 input Request2 {
@@ -29,4 +31,26 @@ type Response0005 {
     id: Int!
     name: String!
     number: Float!
+}
+
+type Student0006 {
+    id: Int
+    name: String
+    subjects: [Subject0006]
+}
+
+type Subject0006 {
+    id: Int
+    name: String
+}
+
+type Student0007 {
+    id: Int
+    name: String
+    subjects(subjectName: String): [Subject0007]
+}
+
+type Subject0007 {
+    id: Int
+    name: String
 }
