@@ -1,20 +1,20 @@
 {
 	"info": {
-		"_postman_id": "4203f2f6-a643-4cb8-ac51-fa3c4d49ef09",
-		"name": "example0008",
+		"_postman_id": "e0294f89-9ea9-47f8-8f84-a0b398b601fe",
+		"name": "example0001",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28691884"
 	},
 	"item": [
 		{
-			"name": "example0008",
+			"name": "example0001",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}",
+						"query": "query example1 {\r\n    example1(id: 1, name: \"Jim\")\r\n}",
 						"variables": ""
 					}
 				},
@@ -37,10 +37,7 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "graphql",
-							"graphql": {
-								"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}"
-							}
+							"mode": "graphql"
 						},
 						"url": {
 							"raw": "http://localhost:9000/graphql",
@@ -76,11 +73,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "50"
+							"value": "42"
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 07 Feb 2024 10:00:19 GMT"
+							"value": "Thu, 08 Feb 2024 07:30:12 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -92,20 +89,20 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"name\": \"Jim\"\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"example1\": \"id = 1, name = Jim\"\n    }\n}"
 				}
 			]
 		},
 		{
-			"name": "example0008-with-variables",
+			"name": "example0001-with-variable",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation createStudent ($request: Student0008) {\r\n    createStudent(student: $request) {\r\n        id\r\n        name\r\n    }\r\n}",
-						"variables": "{\r\n    \"request\": {\r\n        \"id\": 100,\r\n        \"name\": \"Jim\"\r\n    }\r\n}"
+						"query": "query example1 ($id1: Int, $name1: String) {\r\n    example1(id: $id1, name: $name1)\r\n}",
+						"variables": "{\r\n    \"id1\": 1,\r\n    \"name1\": \"Jim\"\r\n}"
 					}
 				},
 				"url": {
@@ -127,11 +124,7 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "graphql",
-							"graphql": {
-								"query": "mutation createStudent ($request: Student0008) {\r\n    createStudent(student: $request) {\r\n        id\r\n        name\r\n    }\r\n}",
-								"variables": "{\r\n    \"request\": {\r\n        \"id\": 100,\r\n        \"name\": \"Jim\"\r\n    }\r\n}"
-							}
+							"mode": "graphql"
 						},
 						"url": {
 							"raw": "http://localhost:9000/graphql",
@@ -167,11 +160,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "50"
+							"value": "42"
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 08 Feb 2024 07:40:24 GMT"
+							"value": "Thu, 08 Feb 2024 07:29:34 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -183,9 +176,77 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"name\": \"Jim\"\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"example1\": \"id = 1, name = Jim\"\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "/v1/example1/{id}/{name}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"id\", 100);\r",
+							"pm.environment.set(\"name\", \"Jim\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/v1/example1/{{id}}/{{name}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"example1",
+						"{{id}}",
+						"{{name}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/example1/{id}/{name}",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"id\", 100);\r",
+							"pm.environment.set(\"name\", \"Jim\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/v2/example1/{{id}}/{{name}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v2",
+						"example1",
+						"{{id}}",
+						"{{name}}"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

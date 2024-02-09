@@ -40,7 +40,7 @@
 		</dependency>
 
 		<!-- GraphQL dependencies -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
@@ -56,8 +56,36 @@
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java-tools</artifactId>
 			<version>5.2.4</version>
+		</dependency>-->
+		<!-- GraphQL dependencies end -->
+
+		<!-- GraphQL dependencies update -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-spring-boot-starter</artifactId>
+			<version>11.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphiql-spring-boot-starter</artifactId>
+			<version>11.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-java-tools</artifactId>
+			<version>11.0.1</version>
 		</dependency>
 		<!-- GraphQL dependencies end -->
+
+		<!-- GraphQL client -->
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>graphql-webclient-spring-boot-starter</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- GraphQL client end -->
 
 		<dependency>
 			<groupId>com.github.javafaker</groupId>

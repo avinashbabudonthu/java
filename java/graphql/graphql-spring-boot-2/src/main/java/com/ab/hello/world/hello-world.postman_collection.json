@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "233206fe-c80c-4ad1-a780-3eebd1d8122d",
+		"_postman_id": "a15809ba-0e50-4625-a9ae-6c8a42b5ad97",
 		"name": "hello-world",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28691884"
@@ -27,6 +27,25 @@
 					"port": "9000",
 					"path": [
 						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "full-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/full-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"full-name"
 					]
 				}
 			},

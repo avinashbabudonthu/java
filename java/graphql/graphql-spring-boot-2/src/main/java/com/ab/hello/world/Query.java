@@ -1,7 +1,7 @@
 package com.ab.hello.world;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.github.javafaker.Faker;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
 @Component

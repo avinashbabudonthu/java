@@ -1,6 +1,6 @@
 package com.ab.example0006;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

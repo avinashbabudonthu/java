@@ -968,6 +968,8 @@
 	* [GraphQL Resolver](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0006)
 	* [GraphQL Resolver with filter](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0007)
 	* [Mutation](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0008)
+	* [GraphQL Spring Boot Client](graphql/graphql-spring-boot-2/src/main/java/com/ab/hello/world)
+	* [GraphQL Spring Boot Client with variables](graphql/graphql-spring-boot-2/src/main/java/com/ab/example0001)
 ------
 # [Gremlin](gremlin)
 * [Materials](gremlin/gremlin.md#Gremlin-Materials-in-study-order)

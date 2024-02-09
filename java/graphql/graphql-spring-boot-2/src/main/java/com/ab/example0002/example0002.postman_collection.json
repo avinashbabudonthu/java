@@ -1,20 +1,20 @@
 {
 	"info": {
-		"_postman_id": "4203f2f6-a643-4cb8-ac51-fa3c4d49ef09",
-		"name": "example0008",
+		"_postman_id": "049002ee-f60d-4474-a78e-f1d074831743",
+		"name": "example0002",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28691884"
 	},
 	"item": [
 		{
-			"name": "example0008",
+			"name": "example0002",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}",
+						"query": "query example3 {\r\n    example3(request3: {\r\n        id: 100\r\n        name: \"Jim\"\r\n        doubleNumber: 1.23\r\n    })\r\n}",
 						"variables": ""
 					}
 				},
@@ -32,15 +32,12 @@
 			},
 			"response": [
 				{
-					"name": "0001-response",
+					"name": "response-1",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "graphql",
-							"graphql": {
-								"query": "mutation createStudent {\r\n    createStudent(student: {\r\n        id: 100\r\n        name: \"Jim\"\r\n    }) {\r\n        id\r\n        name\r\n    }\r\n}"
-							}
+							"mode": "graphql"
 						},
 						"url": {
 							"raw": "http://localhost:9000/graphql",
@@ -76,11 +73,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "50"
+							"value": "38"
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 07 Feb 2024 10:00:19 GMT"
+							"value": "Tue, 06 Feb 2024 08:42:43 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -92,20 +89,20 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"name\": \"Jim\"\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"example3\": \"100, Jim, 1.23\"\n    }\n}"
 				}
 			]
 		},
 		{
-			"name": "example0008-with-variables",
+			"name": "example0002-with-variables",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation createStudent ($request: Student0008) {\r\n    createStudent(student: $request) {\r\n        id\r\n        name\r\n    }\r\n}",
-						"variables": "{\r\n    \"request\": {\r\n        \"id\": 100,\r\n        \"name\": \"Jim\"\r\n    }\r\n}"
+						"query": "query example2 ($request: Request2) {\r\n    example2(request2: $request)\r\n}",
+						"variables": "{\r\n    \"request\": {\r\n        \"id\": 100,\r\n        \"name\": \"Jim\",\r\n        \"doubleNumber\": 1.23\r\n    }\r\n}"
 					}
 				},
 				"url": {
@@ -122,16 +119,12 @@
 			},
 			"response": [
 				{
-					"name": "0001-response",
+					"name": "response-1",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "graphql",
-							"graphql": {
-								"query": "mutation createStudent ($request: Student0008) {\r\n    createStudent(student: $request) {\r\n        id\r\n        name\r\n    }\r\n}",
-								"variables": "{\r\n    \"request\": {\r\n        \"id\": 100,\r\n        \"name\": \"Jim\"\r\n    }\r\n}"
-							}
+							"mode": "graphql"
 						},
 						"url": {
 							"raw": "http://localhost:9000/graphql",
@@ -167,11 +160,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "50"
+							"value": "38"
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 08 Feb 2024 07:40:24 GMT"
+							"value": "Tue, 06 Feb 2024 08:42:43 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -183,7 +176,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"createStudent\": {\n            \"id\": 100,\n            \"name\": \"Jim\"\n        }\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"example3\": \"100, Jim, 1.23\"\n    }\n}"
 				}
 			]
 		}
