@@ -1,6 +1,6 @@
 # Introduction to AWS services
 ------
-# Lnks:
+# Important Links:
 * Console - http://aws.amazon.com
 * Certification - https://aws.amazon.com/certification
 ------

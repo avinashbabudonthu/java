@@ -27,7 +27,12 @@
 * High availablity
 * Suited for read heavy applications
 * DACS - DynamoDB Accelerator Service. Caching service provided by AWS
-
+------
+# AWS CLI Commands
+* Get tables list
+```
+aws dynamodb list-tables
+```
 ------
 # Terminology comparison with SQL
 SQL                							| Dynamo DB
