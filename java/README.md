@@ -288,6 +288,7 @@
 * [SQS - Simple Queue Service](aws/sqs)
 * [VPC - Virtual Private Cloud](aws/vpc)
 * CloudFront
+* ELB - Elastic Loan Balancing
 * Robomaker
 * Load Balancing
 * Ground Station

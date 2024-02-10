@@ -88,8 +88,8 @@
 	* Enter required details
 ------
 # Naming conventions
+* AMI - Amazon Machine Image
 * NAT - Network Address Translation
 * ACL - Access Control List
 * WAF - Web Application Firewall
 * EIP - Elastic IP addresses
-* AMI - Amazon Machine Images
