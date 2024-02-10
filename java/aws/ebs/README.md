@@ -1,4 +1,4 @@
-# EBS Elastic Block Store
+# EBS Elastic Block store
 * Persistent block level storage volumes offering consistent and low-latency performance
 * Automatically replicated within its availability zone
 * Snapshots stored durably in Amazon S3

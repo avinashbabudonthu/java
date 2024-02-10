@@ -12,6 +12,7 @@
 * [Create table with local dynamo db setup](dynamo-db-practice/src/test/java/com/ab/DynamoDBPracticeTest.java)
 ------
 # Dynamo DB Notes
+* NoSQL database from AWS. Supports both document and key-value store models
 * Serverless Cloud NoSQL database
 * Fast 
 * Flexible 

@@ -1,77 +1,10 @@
-# AWS Notes
-
-# Services
-* Elastic Cloud Compute - EC2
-* Virtual Private Cloud - VPC
-* Simple Storage Service - S3
-* RDS
-	* MySQL
-	* Sql Server
-	* Oracle
-	* MariaDB
-	* Amazon Aurora
-	* PostgreSQL
-* Dynamo DB - Document DB
-* Redshift - Data warehouse
-* Route53
-* Elastic beanstalk - EB
-* CloudFront
-* Clout Watch - Collect and store logs and alert when application fails
-* Simple Queue Service - SQS
-* Web console
-* Command line utility
-* Software Development Kit - SDK
-* Robomaker
-* Load Balancing
-* Ground Station
-* Bracket
-* LightSail
-* Lambda
-	* Functions as a service
-	* Serverless computing
-* Serverless Repo
-	* Outposts
-	* Snow
-* Docker
-	* Container Registry
-	* ECS - Elastic Container Service
-	* EKS - Elastic Kubernetes Services
-	* Fargate
-	* App Runner
-* File Storage
-	* Simple Storage Service - S3
-	* Glacier
-	* Elastic Block Storage - EBS
-	* Elastic File System - EFS
-* Simple DB - No SQL
-* Graph DB
-	* Neptune
-* Elastic Cache
-	* Timestream
-	* Quantum Ledger
-* Analytics
-* Lake Formation
-* Kinesis
-* Elastic Map Reduce
-* Amazon MSK - Kafka
-* Glue
-* Machine Learning
-	* Sagemaker
-	* Rekognition
-	* LEX
-	* Deep Racer
-* Developer Essentials
-	* IAM
-	* Cognito
-	* SNS - Simple Notification Service
-	* SES - Simple Email Service
-	* Cloud Formation
-	* Amplify
-	* Budgets
-------
 # Introduction to AWS services
-
-## AWS Global Data Centers
+------
+# Lnks:
+* Console - http://aws.amazon.com
+* Certification - https://aws.amazon.com/certification
+------
+# AWS Global Data Centers
 * Data Center -> Availability Zone -> Region
 * `Data Centers`: facility that provides shared access to applications and data using a complex network, compute, and storage infrastructure
 * `Availability Zones`: 2 or more data centers are called `Availability Zones`
@@ -156,17 +89,7 @@
 ------
 # Naming conventions
 * NAT - Network Address Translation
+* ACL - Access Control List
+* WAF - Web Application Firewall
 * EIP - Elastic IP addresses
 * AMI - Amazon Machine Images
-* Elastic Beanstalk
-	* service that makes it easy to run our code and scale it on AWS. Under the cover this will simply run our code in EC2
-* Dynamo DB
-	* NoSQL database from AWS. Supports both document and key-value store models
-* Redshift
-	* Amazon data warehousing solution
-* Cloud watch
-	* monitoring service for other aws services
-	* Alerting service for other aws services
-	* Can be configured to monitor logs. For this we need configure awslogs agens on EC2 instance and tell which logs to send to cloud watch
-* Cloud Front
-	* this is content delivery network that allows to serve files globally

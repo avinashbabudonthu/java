@@ -1,2 +1,0 @@
-# Neptune Graph DB Notes
-

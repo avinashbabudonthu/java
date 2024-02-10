@@ -263,50 +263,64 @@
 * [Setup](avro/setup.md)
 ------
 # [AWS](aws)
+* [AWS Cli Command](aws/aws-cli-commands.md)
+* [Certifications](aws/certifications.md) 
 * [Materials](aws/materials.md)
 * [AWS Notes](aws/notes.md)
-* [Data centers & Availability Zones & Regions](aws/notes.md#AWS-Global-Data-Centers)
-* [AWS Cloudwatch Notes Stream EC2 logs to Cloud watch and create alarm based on log message](aws/notes.md#AWS-Cloudwatch-Notes-Stream-EC2-logs-to-Cloud-watch-and-create-alarm-based-on-log-message)
-* [Billing And Budget Setup](aws/notes.md#Billing-And-Budget-Setup)
-* [Naming conventions](aws/notes.md#Naming-conventions)
-* [AWS CLI Commands](aws/aws-cli-commands.md)
-* [Certifications](aws/certifications.md)
-* [Dynamo DB](aws/dynamo-db/dynamo-db.md)
-* [Terminology comparison with SQL](aws/dynamo-db/notes.md#Terminology-comparison-with-SQL)
-* [Tables naming conventions](aws/dynamo-db/notes.md#Tables-naming-conventions)
-* [EBS Elastic Block Storage](aws/ebs)
-* [EC2 Elastic Compute Cloud](aws/ec2)
-* [ECS Elastic Container Service](aws/ecs)
-* [IAM Identity and Access Management](aws/iam)
+
+## AWS Services
+* [Cloud Formation](aws/cloud-formation)
+* [Cloud Front](aws/cloud-front)
+* [Cloud Watch](aws/cloud-watch)
+* [Dynamo DB - No SQL Database](aws/dynamo-db)
+* [EB - Elastic Beanstalk](aws/eb)
+* [EBS - Elastic Block Store](aws/ebs)
+* [EC2 - Elastic Compute Cloud](aws/ec2)
+* [ECS - Elastic Container Service](aws/ecs)
+* [Glacier](aws/glacier)
+* [IAM - Identity and Access Management](aws/iam)
 * [Lambda](aws/lambda)
-* [Lambda - Materials](aws/lambda/materials.md)
-* [Lambda - Notes](aws/lambda/notes.md)
-* [Lambda - Examples](aws/lambda/README.md)
-* [Lambda - Installations](aws/lambda/README.md#Installations)
-* [Lambda - First Lambda Function](aws/lambda/README.md#First-Lambda-Function)
-* [Neptune Graph DB](aws/neptune)
-* [Neptune Graph DB - Materials](aws/neptune/materials.md)
-* [Neptune Graph DB - Notes](aws/neptune/notes.md)
-* [RDS Relational Databases Service](aws/rds)
-* [RDS Relational Databases Service - Notes](aws/rds/notes.md)
-* [S3 Simple Storage Service](aws/s3)
-* [S3 Simple Storage Service - Notes](aws/s3/notes.md)
-* [S3 Simple Storage Service - createBucket](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - getListOfBuckets](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - deleteBuckets](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - uploadObjectToBucket](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - downLoadObject](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - listObjects](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [S3 Simple Storage Service - deleteObjects](aws/s3/s3/src/test/java/com/s3/S3Practice.java)
-* [SQS Simple Queue Service](aws/sqs)
-* [SQS Simple Queue Service - Notes](aws/sqs/notes.md)
-* [SQS Simple Queue Service - getQueueURL](aws/sqs/sqs/src/test/java/com/sqs/SqsPractice.java)
-* [SQS Simple Queue Service - listQueues](aws/sqs/sqs/src/test/java/com/sqs/SqsPractice.java)
-* [SQS Simple Queue Service - sendMessageToQueue](aws/sqs/sqs/src/test/java/com/sqs/SqsPractice.java)
-* [SQS Simple Queue Service - getMessageFromQueue](aws/sqs/sqs/src/test/java/com/sqs/SqsPractice.java)
-* [SQS Simple Queue Service - deleteMessageFromQueue](aws/sqs/sqs/src/test/java/com/sqs/SqsPractice.java)
-* [VPC Virtual Private Cloud](aws/vpc)
-* [VPC Virtual Private Cloud - Notes](aws/vpc/notes.md)
+* [Neptune - Graph Database](aws/neptune)
+* [RDS - Relational Dtabase Service](aws/rds)
+* [Redshift](aws/redshift)
+* [Route53](aws/route53)
+* [S3 - Simple Storage Service](aws/s3)
+* [SQS - Simple Queue Service](aws/sqs)
+* [VPC - Virtual Private Cloud](aws/vpc)
+* CloudFront
+* Robomaker
+* Load Balancing
+* Ground Station
+* Bracket
+* LightSail
+* Lambda - Functions as a service
+* Lambda - Serverless computing
+* Outposts
+* Snow
+* ECR - Elastic Container Registry
+* EKS - Elastic Kubernetes Services
+* Fargate
+* App Runner
+* EFS - Elastic File System
+* Simple DB - No SQL
+* Timestream
+* Quantum Ledger
+* Analytics
+* Lake Formation
+* Kinesis
+* Elastic Map Reduce
+* Amazon MSK - Kafka
+* Glue
+* Sagemaker
+* Rekognition
+* LEX
+* Deep Racer
+* Cognito
+* SNS - Simple Notification Service
+* SES - Simple Email Service
+* Cloud Formation
+* Amplify
+* Budgets
 ------
 # [Azure](azure)
 * [Materials](azure/azure.md#Materials)
