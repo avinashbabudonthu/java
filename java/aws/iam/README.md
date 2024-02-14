@@ -1,6 +1,7 @@
 # IAM Identity and Access Management
-
+------
 # Creating IAM user for aws account
+* ![picture](imgs/high-level-view-1.jpg)
 * when we first create AWS account, the email and password we used is called `root user`
 * `root user` can be used for
 	* console access

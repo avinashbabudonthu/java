@@ -20,6 +20,7 @@
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
 * [Core Java Reflection](#Core-Java-Reflection)
+* [Core Java Regex Regula Expression](#Core-Java-Regex)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
 * [Database](#database)
@@ -288,7 +289,8 @@
 * [SQS - Simple Queue Service](aws/sqs)
 * [VPC - Virtual Private Cloud](aws/vpc)
 * CloudFront
-* ELB - Elastic Loan Balancing
+* ELB - Elastic Load Balancing
+* CloudTrail - Audit Trail
 * Robomaker
 * Load Balancing
 * Ground Station
@@ -740,6 +742,9 @@
 ------
 # [Core Java Reflection](core-java/reflection)
 * [Is Java Reflection Good or Bad Practice](core-java/reflection/reflection.md#Is-Java-Reflection-Good-or-Bad-Practice)
+------
+# [Core Java Regex](core-java/regex)
+* [Regular Expressions Examples](core-java/regex/README.md#Regular-Expressions-Examples)
 ------
 # Multi threading
 * [Materials](core-java/multi-threading/materials.md)
@@ -1355,6 +1360,7 @@
 * [Hello World Examples](mockito/mockito/src/test/java/com/mockito/hello/world/HelloWorldTest.java)
 * [Class with lombok logs](mockito/mockito/src/test/java/com/mockito/lombok/inject/EmployeeControllerTest.java)
 * [Wrong Type of Return value](mockito/mockito/src/test/java/com/mockito/wrong/type/of/returnvalue/WrongTypeOfReturnValueTest.java)
+* [How to resolve Unneccessary Stubbing exception](mockito.md#How-to-resolve-Unneccessary-Stubbing-exception)
 ------
 # [Mongo DB](mongo)
 * [Materials](mongo/materials.md)

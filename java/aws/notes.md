@@ -93,3 +93,4 @@
 * ACL - Access Control List
 * WAF - Web Application Firewall
 * EIP - Elastic IP addresses
+* ASG - Auto Scaling Group

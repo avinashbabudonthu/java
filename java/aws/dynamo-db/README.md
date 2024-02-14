@@ -57,7 +57,6 @@ Views										| Global Secondary Indexes
 ------
 # Datatypes
 * Scalar types
-* 
 ------
 * DynamoDB spread across 3 regions globally
 * Read consistency
