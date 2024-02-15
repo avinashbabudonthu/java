@@ -67,7 +67,7 @@
 		* Issue tracking\
 ![picture](images/devops-services.jpg)
 ------
-# AWS Cloudwatch Notes Stream EC2 logs to Cloud watch and create alarm based on log message
+# Cloudwatch
 ![picture](images/cloud-watch/stream-logs-cloud-watch-create-alarm-flow.jpg)
 ------
 # Billing And Budget Setup
@@ -91,6 +91,12 @@
 * AMI - Amazon Machine Image
 * NAT - Network Address Translation
 * ACL - Access Control List
+* NACL - Network Access Control List
 * WAF - Web Application Firewall
 * EIP - Elastic IP addresses
 * ASG - Auto Scaling Group
+* KMS - Key Management Service
+* ACM - Amazon Certificate Manager
+* SG - Security Groups
+* EFS - Elastic File Service
+* AES - Advanced Encryption Standard
