@@ -100,3 +100,4 @@
 * SG - Security Groups
 * EFS - Elastic File Service
 * AES - Advanced Encryption Standard
+* IPAM - IP Address Manager
