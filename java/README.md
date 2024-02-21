@@ -20,6 +20,7 @@
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
 * [Core Java Reflection](#Core-Java-Reflection)
+* [Core Java Properties files Examples](#Properties-files-Examples)
 * [Core Java Regex Regula Expression](#Core-Java-Regex)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
@@ -462,6 +463,8 @@
 * [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumberInRange
 * [Generate random password](utils/generate-random-password.md)
 * [Reverse the number](utils/utils.md#reverse-the-number)
+
+# Properties files Examples
 * [Properties file](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 * [Properties file - create](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 * [Properties file - read](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
