@@ -89,4 +89,71 @@ public class PropertiesFileExamples {
             log.error("Exception while reading properties file", e);
         }
     }
+
+    @Test
+    public void replace() {
+        Path path = Paths.get("src/main/resources/config.properties");
+        try(InputStream inputStream = Files.newInputStream(path)) {
+            Properties properties = new Properties();
+            properties.load(inputStream);
+
+            // before replace config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=localhost}
+            log.info("before replace config.properties={}", properties);
+
+            properties.replace("db.url", "127.0.0.1");
+            //after replace db.url config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=127.0.0.1}
+            log.info("after replace db.url config.properties={}", properties);
+
+            properties.replace("db.url2", "localhost");
+            //after replace db.url2 config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=127.0.0.1}
+            log.info("after replace db.url2 config.properties={}", properties);
+        }catch (Exception e) {
+            log.error("Exception while reading properties file", e);
+        }
+    }
+
+    @Test
+    public void put() {
+        Path path = Paths.get("src/main/resources/config.properties");
+        try(InputStream inputStream = Files.newInputStream(path)) {
+            Properties properties = new Properties();
+            properties.load(inputStream);
+
+            // before put config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=localhost}
+            log.info("before put config.properties={}", properties);
+
+            properties.put("db.url", "127.0.0.1");
+            //after put db.url config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=127.0.0.1}
+            log.info("after put db.url config.properties={}", properties);
+
+            properties.put("db.url2", "localhost");
+            //after put db.url2 config.properties={db.user=user1, db.port=8126, db.url2=localhost, db.pwd=pass1, db.url=127.0.0.1}
+            log.info("after put db.url2 config.properties={}", properties);
+        }catch (Exception e) {
+            log.error("Exception while reading properties file", e);
+        }
+    }
+
+    @Test
+    public void putIfAbsent() {
+        Path path = Paths.get("src/main/resources/config.properties");
+        try(InputStream inputStream = Files.newInputStream(path)) {
+            Properties properties = new Properties();
+            properties.load(inputStream);
+
+            // before putIfAbsent config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=localhost}
+            log.info("before putIfAbsent config.properties={}", properties);
+
+            properties.putIfAbsent("db.url", "127.0.0.1");
+            // after putIfAbsent db.url config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=localhost}
+            log.info("after putIfAbsent db.url config.properties={}", properties);
+
+            properties.putIfAbsent("db.url2", "localhost");
+            // after putIfAbsent db.url2 config.properties={db.user=user1, db.port=8126, db.url2=localhost, db.pwd=pass1, db.url=localhost}
+            log.info("after putIfAbsent db.url2 config.properties={}", properties);
+        }catch (Exception e) {
+            log.error("Exception while reading properties file", e);
+        }
+    }
+
 }

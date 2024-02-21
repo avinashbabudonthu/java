@@ -467,6 +467,9 @@
 * [Properties file - read](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 * [Properties file - readFromClasspath](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 * [Properties file - print](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - replace](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - put](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* [Properties file - putIfAbsent](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 
 # File IO
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
