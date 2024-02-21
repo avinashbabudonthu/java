@@ -156,4 +156,18 @@ public class PropertiesFileExamples {
         }
     }
 
+    @Test
+    public void string() {
+        try(InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+            Properties properties = new Properties();
+            properties.load(inputStream);
+
+            // config.properties={db.user=user1, db.port=8126, db.pwd=pass1, db.url=localhost}
+            // log.info("config.properties={}", properties);
+
+            //log.info("properties to string={}", ToStringBuilder.reflectionToString(properties));
+        }catch (Exception e) {
+            log.error("Exception while reading properties file", e);
+        }
+    }
 }
