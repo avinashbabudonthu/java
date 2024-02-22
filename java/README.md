@@ -152,6 +152,7 @@
 * [Weblogic Queue](#weblogic-queue)
 * [Weld](#weld)
 * [Windows](#windows)
+* [XMLUnit](#XmlUnit)
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 	* [Trainings](trainings.md)
@@ -1974,3 +1975,7 @@ o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : "Ana" } 
 * [Delete files](windows/windows.md)
 * [Copy files](windows/windows.md)
 * [Rename files](windows/windows.md)
+------
+# [XmlUnit](xmlunit)
+* [Read Me](xmlunit/README.md)
+* [Practive Examples](xmlunit/xml-unit-practice)
