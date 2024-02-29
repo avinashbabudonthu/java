@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document xmlns="http://www.dtcc.com/DTCC/rds-1">
+    <testing1>testing1</testing1>
+    <submission>
+        <header>
+            <testing2>testing2</testing2>
+        </header>
+    </submission>
+</document>

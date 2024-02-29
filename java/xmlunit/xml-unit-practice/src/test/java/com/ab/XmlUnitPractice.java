@@ -18,6 +18,8 @@ class XmlUnitPractice {
 
     public static final String CONTROL_XML_1 = "<struct><int>3</int><boolean>false</boolean></struct>";
     public static final String CONTROL_XML_2 = "<a><b attr=\"abc\"></b></a>";
+
+    private static final String CONTROL_XML_3 = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><document xmlns=\"http://www.dtcc.com/DTCC/rds-1\"><testing1>testing1</testing1><submission><header><testing2>testing2</testing2></header></submission></document>";
     public static final String TEST_XML_1 = "<struct><int>3</int><boolean>false</boolean></struct>";
 
     public static final String TEST_XML_2 = "<struct><boolean>false</boolean><int>3</int></struct>";
@@ -26,6 +28,8 @@ class XmlUnitPractice {
     public static final String TEST_XML_4 = "<a><b attr=\"abc\"></b></a>";
 
     public static final String TEST_XML_5 = "<a><b attr=\"abc\"></b><c></c></a>";
+
+    private static final String TEST_XML_6 = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><document xmlns=\"http://www.dtcc.com/DTCC/rds-1\"><testing3>testing3</testing3><submission><header><testing4>testing4</testing4></header></submission></document>";
 
     @Test
     void isIdenticalTo() {
@@ -49,7 +53,7 @@ class XmlUnitPractice {
 
     @Test
     void customDifferenceEvaluator() {
-        Diff myDiff = DiffBuilder.compare(CONTROL_XML_2).withTest(TEST_XML_5)
+        Diff myDiff = DiffBuilder.compare(CONTROL_XML_3).withTest(TEST_XML_6)
                 .withDifferenceEvaluator(new IgnoreAttributeDifferenceEvaluator("attr"))
                 .checkForSimilar().build();
 
