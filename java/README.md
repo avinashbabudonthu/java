@@ -132,6 +132,7 @@
 * [Spring Boot 3](#spring-boot-3)
 * [Spring Core](#Spring-Core)
 * [Spring Data JPA](#Spring-Data-JPA)
+* [Spring Data Mongo](#Spring-Data-Mongo)
 * [Spring Security](#Spring-Security)
 * [Spring Transaction](#Spring-Transaction)
 * [Spring Webflux](#Spring-Webflux)
