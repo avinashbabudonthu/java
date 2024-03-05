@@ -25,8 +25,8 @@ public class HelloWorldController {
      */
     @GetMapping(value = "/full-name", produces = TEXT_PLAIN_VALUE)
     public String fullName() {
-        String query = "query fullName {\n" +
-                "    fullName\n" +
+        String query = "query fullName {" +
+                "    fullName" +
                 "}";
         GraphQLRequest request = GraphQLRequest.builder().query(query).build();
         GraphQLResponse graphQLResponse = graphQLWebClient.post(request).block();
