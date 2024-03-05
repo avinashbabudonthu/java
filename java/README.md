@@ -291,7 +291,6 @@
 * [S3 - Simple Storage Service](aws/s3)
 * [SQS - Simple Queue Service](aws/sqs)
 * [VPC - Virtual Private Cloud](aws/vpc)
-* CloudFront
 * ELB - Elastic Load Balancing
 * CloudTrail - Audit Trail
 * Robomaker
