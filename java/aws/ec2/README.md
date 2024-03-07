@@ -190,7 +190,7 @@
 
 # Load Balancer
 * Routing appliances that maintains a consistant DNS entry and balances requests to multiple instances
-* Load balancer is essentially a router instance that provides a stable end point to reliably send your users and set DNS entries to. Load balancer will keep track of which Ips are available and send users to them efficiently
+* Load balancer is essentially a router instance that provides a stable end point to reliably send your users and set DNS entries to. Load balancer will keep track of which IPs are available and send users to them efficiently
 
 # Creating an AMI from Ec2 Instance
 * AWS console

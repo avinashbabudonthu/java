@@ -62,7 +62,7 @@
 * Open Postico
 	* click on New Favorite button
 	* Nickname: local nick name for DB
-	* Host: expland database row in AWS RDS web console, copy End point
+	* Host: expand database row in AWS RDS web console, copy End point
 	* Port: port our database is running
 	* enter username and password
 	* enter database name what we gave while creating DB

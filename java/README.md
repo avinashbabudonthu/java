@@ -267,7 +267,7 @@
 * [Setup](avro/setup.md)
 ------
 # [AWS](aws)
-* [AWS Cli Command](aws/aws-cli-commands.md)
+* [AWS Cli Commands](aws/aws-cli-commands.md)
 * [Certifications](aws/certifications.md) 
 * [Materials](aws/materials.md)
 * [AWS Notes](aws/notes.md)
@@ -326,6 +326,13 @@
 * Cloud Formation
 * Amplify
 * Budgets
+* EMR - Elastic Map Reduce
+* AWS Glue - ETL Service - Serverless Data Integration
+* CodeCommit - Similar to GIT
+* CodeBuild
+* CodeDeploy
+* CodePipeline
+* CodeStar
 ------
 # [Azure](azure)
 * [Materials](azure/azure.md#Materials)

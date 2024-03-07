@@ -88,6 +88,8 @@
 	* Enter required details
 ------
 # Naming conventions
+* IAM - Identity and Access Management
+* KMS - Key Management Service 
 * AMI - Amazon Machine Image
 * NAT - Network Address Translation
 * ACL - Access Control List

@@ -1,15 +1,9 @@
 # Materials
-* Set-1
-	* youtube - https://www.youtube.com/watch?v=2mVR_Qgx_RU
-	* https://www.tutorialspoint.com/dynamodb/index.htm
-* Set-2
-	* udemy - AWS DynamoDB - The Complete Guide (Build 18+ Hands On Demos)
-	* youtube - https://www.youtube.com/watch?v=ovEq4L6tGfc
-	* youtube - https://www.youtube.com/watch?v=ijyeE-pXFk0
-------
-# Examples
-* Refer [Dynamo DB local setup](#Dynamo-DB-local-setup) for running below Examples
-* [Create table with local dynamo db setup](dynamo-db-practice/src/test/java/com/ab/DynamoDBPracticeTest.java)
+* youtube - https://www.youtube.com/watch?v=2mVR_Qgx_RU
+* https://www.tutorialspoint.com/dynamodb/index.htm
+* udemy - AWS DynamoDB - The Complete Guide (Build 18+ Hands On Demos)
+* youtube - https://www.youtube.com/watch?v=ovEq4L6tGfc
+* youtube - https://www.youtube.com/watch?v=ijyeE-pXFk0
 ------
 # Dynamo DB Notes
 * NoSQL database from AWS. Supports both document and key-value store models
@@ -62,6 +56,10 @@ Views										| Global Secondary Indexes
 * Read consistency
 	* Eventually consistent reads - all data written DDB replicates to 3 regions. This replication takes time (say 3 seconds), if application reads during this time then there is chance of dirty reads. In this case if your application is ok to have dirty read sometime then go for this
 	* Strongly consistent reads - if application require to latest and accurate data. In this case all writes are committed prior to read taking place.
+
+------
+# Examples
+* [Create table with local dynamo db setup](dynamo-db-practice/src/test/java/com/ab/DynamoDBPracticeTest.java)
 ------
 # Dynamo DB local setup
 * Download Dynamo DB latest jar from below links
@@ -73,4 +71,3 @@ Views										| Global Secondary Indexes
 ```
 java -Djava.library.path=DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
-------

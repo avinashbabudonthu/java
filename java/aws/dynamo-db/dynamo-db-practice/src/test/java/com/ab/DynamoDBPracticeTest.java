@@ -17,12 +17,12 @@ public class DynamoDBPracticeTest {
         AmazonDynamoDBClient amazonDynamoDBClient = new AmazonDynamoDBAsyncClient().withEndpoint("http://localhost:8000");
 
         DynamoDB dynamoDB = new DynamoDB(amazonDynamoDBClient);
-        String tableName = "student_0001";
+        String tableName = "student_0002";
         try {
             System.out.println("Creating table");
             Table table = dynamoDB.createTable(tableName,
                     List.of(
-                            new KeySchemaElement("ID", KeyType.HASH),
+                            new KeySchemaElement("ID", KeyType.HASH),// the partition key // the sort key
                             new KeySchemaElement("firstName", KeyType.RANGE)
                     ),
                     List.of(

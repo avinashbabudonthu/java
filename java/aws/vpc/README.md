@@ -6,7 +6,7 @@
 # Connection
 * AWS Hardware VPN
 * AWS Direct Connect
-* AWS VPN Cloubhub
+* AWS VPN Cloudhub
 * Software VPN
 
 # what is cidr
@@ -74,7 +74,7 @@
 	* can use NAT gatway to access internet in public gateway
 * VPC security tools
 	* Routing Tables
-	* Network ACL (Access Control Level)
+	* Network ACL (Access Control List)
 * One of the widely used tools in VPC
 	* Security Groups
 	* Network Access Control list

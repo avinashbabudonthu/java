@@ -12,12 +12,6 @@
 * Udemy - Docker in AWS - Deploy Java Spring Boot to AWS Fargate & ECS
 * Udemy - Kubernetes Hands-On - Deploy Microservices to the AWS Cloud
 * Youtube - AWS Budget Setup Tutorial - https://www.youtube.com/watch?v=fvz0cphjHjg&list=PLAAFXN2OG73WoYuYevW5sYrc5UxbeRVZq&index=11&ab_channel=StephaneMaarek
-* Youtube - AWS-CloudWatch-Logs-1080p.mp4
-* Youtube - Amazon-CloudWatch-Tutorial-AWS-Certification-Cloud-Monitoring-Tools-AWS-Tutorial.mp4
-* Youtube - Streaming Logs to CloudWatch from EC2
-	* https://www.youtube.com/watch?v=mJXcxe6Kxwg
-* Youtube - AWS - CloudWatch Metrics, Alarms, Pricing, Events, Detailed Monitoring
-	* https://www.youtube.com/watch?v=8-KNqr60AyU
 * Youtube - AWS ECS vs EKS vs Fargate
 	* https://www.youtube.com/watch?v=HoXEyXIf6_U
 * Youtube - AWS Fargate and ECS - Deploy Spring Microservices

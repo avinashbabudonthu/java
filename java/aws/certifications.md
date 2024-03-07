@@ -45,7 +45,6 @@
 ------
 # AWS Certified Solutions Architect - Associate
 ## Materials
-* Udemy - AWS Certified Solutions Architect Associate - SAA C03
 * Udemy - Ultimate AWS Certified Solutions Architect Associate SAA-C03
 * Udemy - Practice Exams | AWS Certified Solutions Architect Associate
 
