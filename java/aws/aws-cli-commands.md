@@ -15,3 +15,7 @@ set AWS_SECRET_ACCESS_KEY=[secretAccessKey]
 ```
 set AWS_DEFAULT_REGION=[region]
 ```
+* List users
+```
+aws iam list-users
+```
