@@ -19,9 +19,9 @@ public class HelloWorld {
     void hello() throws Exception {
         GraphTraversalSource g = AnonymousTraversalSource.traversal().withRemote(DriverRemoteConnection.using("localhost", 8182));
 //        log.info("g={}", g);
-        GraphTraversal<Vertex, Map<Object, Object>> list = g.V().elementMap();
+//        GraphTraversal<Vertex, Map<Object, Object>> list = g.V().elementMap();
 //        log.info("list={}", list);
-        List<Map<Object, Object>> data = list.toStream().collect(Collectors.toList());
+        List<Map<Object, Object>> data = g.V().elementMap().toStream().collect(Collectors.toList());
         log.info("data={}", data);
 //        g.close();
     }
