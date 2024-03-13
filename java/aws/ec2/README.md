@@ -1,7 +1,13 @@
 # EC2 Elastic Compute Cloud
-
 ![picture](imgs/instance-life-cycle.jpg)
-
+------
+# Links
+* EC2 instance types - https://aws.amazon.com/ec2/instance-types/
+* Compare EC2 instances - https://ec2instances.info
+------
+# Important port numbers to know to work with EC2 instances
+![picture](imgs/ports.jpg)
+------
 # Instance Family and use cases
 * General purpose (t2, m4, m3)
 	* Low traffic websites and web applications
@@ -19,7 +25,7 @@
 	* 3D application streaming
 	* Machine learning
 	* Graphic based applications
-
+------
 # Instance metadata
 * Data about instances
 * Public IP of instance
@@ -30,7 +36,7 @@
 		* $ curl http://169.254.169.254/latest/meta-data/
 		* $ GET http://169.254.169.254/latest/meta-data/
 * all meta data is returned as text (content type text/plain)
-
+------
 # Instance user data
 * You can specify user data when launching the instance
 * user data can be
@@ -40,22 +46,22 @@
 * user data is limited to 16KB
 * user data should be Base64 encoded before submitted to API. Amazon EC2 command line tools can perform Base64 encoding
 * Getting user data - http://169.254.169.254/latest/user-data
-
+------
 # What is EC2
 * Service provided by AWS for computing needs
 * Computing services operating in remote data servers around the world
-
+------
 # What we can do with EC2 instance?
 * Instance is a computer
 * To run an application
 * Login and use it like a virtual machine
-
+------
 # What is Elastic means in EC2?
 * Instance running computing operations can increase and decrease at will
-
+------
 # What is instance?
 * Virtual server
-
+------
 # Create EC2 instance
 * Login to Amazon web console
 * click on EC2
@@ -71,7 +77,7 @@
 * click `Launch` button
 * select security key pair option
 * click `Launch Instances` button
-
+------
 # Create EC2 instance
 * Login to Amazon web console
 * click on EC2
@@ -104,7 +110,7 @@
 * this will download a .pem file
 * save and keep it safe
 * click Launch Instances button
-
+------
 # Getting inside virtual machine with EC2 and VPC
 * AWS Console
 * click EC2
@@ -116,7 +122,7 @@
 * We can see Private IP
 * we can see Availability Zone where this instance has been created
 * we can see Key Pair, this is important because we will use same key-pair to connect via SSH
-
+------
 # Create and Assign Public IP address to VPC
 * To assign this instance an IP address first we need to create an Elastic IP
 * AWS Console
@@ -136,11 +142,11 @@
 	* navigates to instance details
 	* here we can see Public IP address assigned to this instance
 	* Copy this IP address so that we can use it in next configurations
-
+------
 # Elastic IP
 * Public IP addresses that are created, destroyed and assigned independently to EC2 instances
 * If underlying instance is terminated then associated IP address can still exist and can be assigned to different instance
-
+------
 # Connect to EC2 instance via SSH
 * downlod Putty
 * Download puttyGen
