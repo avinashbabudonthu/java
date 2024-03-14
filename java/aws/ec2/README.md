@@ -46,6 +46,17 @@
 * user data is limited to 16KB
 * user data should be Base64 encoded before submitted to API. Amazon EC2 command line tools can perform Base64 encoding
 * Getting user data - http://169.254.169.254/latest/user-data
+* Sample user data script to start web server
+```
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+```
 ------
 # What is EC2
 * Service provided by AWS for computing needs
@@ -147,8 +158,17 @@
 * Public IP addresses that are created, destroyed and assigned independently to EC2 instances
 * If underlying instance is terminated then associated IP address can still exist and can be assigned to different instance
 ------
+# Convert pem file to ppk file
+* Open PuttyGen
+	* Actions
+	* click Load button
+	* selecte .pem file we have downloaded above
+	* click Generate button
+	* click Save Private Key button
+	* This will generate .ppk file, save it carefully
+------
 # Connect to EC2 instance via SSH
-* downlod Putty
+* Downlod Putty
 * Download puttyGen
 * Open PuttyGen
 	* Actions
@@ -170,34 +190,49 @@
 * Reference - [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console)
 * After connecting to EC2 instance using Putty -> run this command
 	* sudo yum update
-
+------
+# Connecting from Windows 10 or later
+* Open cmd or powershell
+* Navigate to path where `pem` file is present
+* Run below command
+```
+ssh -i pemfile ec2-user@ip-address
+```
+------
+# Connect using EC2 Instance connect
+* Login to aws console
+* Go to EC2 dashboard
+* Select EC2 instance which we want to connect
+* Click on `Connect` button
+* Opens new tab in browser and connects to EC2 instance
+------
 # AMI (Amazon Machine Image)
 * Operating System + preinstalled softwares like Java, perl, python etc used on an EC2 instance
-
+------
 # Storage termed as
 * EBS (Elastic Block Storage) in EC2. EBS is specific to storage used by EC2. EBS is not same as S3
 * Independent storage volumes used with EC2 instances
-
+------
 # Security Groups
 * Little firewals installed per instance basis
-
+------
 # EC2 dashboard 
 * Resources: Details of instances/resources we have created
 * Running Instances: EC2 instances we have
 * Volumes: Elastic Block Storage volumes
 * Launch Instance button: To launch new EC2 instance
-
+------
 # Scaling EC2 instances
 * Expand or Shrink pool of instances
-
+------
 # Auto Scaling Group
 * Expand or Shrink pool of instances based on pre-defined rules
 * Auto configuration has launch configuration which has an image in it, and scaling rules to expand or shrink a pool of instances automatically
-
+------
 # Load Balancer
 * Routing appliances that maintains a consistant DNS entry and balances requests to multiple instances
 * Load balancer is essentially a router instance that provides a stable end point to reliably send your users and set DNS entries to. Load balancer will keep track of which IPs are available and send users to them efficiently
-
+------
 # Creating an AMI from Ec2 Instance
 * AWS console
 * click EC2
@@ -212,7 +247,7 @@
 * click Create Image button
 * click Close button
 * We have an AMI created and ready for deployment
-
+------
 # Where to check our AMI
 * AWS console
 * click EC2
@@ -224,7 +259,7 @@
 * We can also see AMIs in :
 	* EC2 dashboard
 	* AMIs in left menu
-
+------
 # Creating Load Balancer
 * AWS console
 * click EC2
@@ -254,7 +289,7 @@
 * click Create button
 * click Close button
 * we will navigate to Load Balancer list
-
+------
 # Enable stickiness on the load balancer
 * If user requests comes to one EC2 instance all sub sequence requests have to go to same instance, otherwise user may end up in other EC2 instance which does not have user's session details which may cause defects. So we need to enable load balancer stickiness. Load Balancer will use cookie to keep track of which user should be sent which EC2 instance
 * Select load balancer we have created
@@ -264,7 +299,7 @@
 	* select `Enable load balancer generated cookie stickiness`
 	* Expiration Period: give expiration seconds how many days that cookie should be alive
 	* click Save button
-	
+------
 # Creating an Auto scaling group - this is 2 step process
 * Create Launch Configuration
 * Create Auto Scaling Group
@@ -307,7 +342,7 @@
 	* click Create Auto Scaling Group button
 	* click Close button
 	* we will navigate back to auto scaling groups list
-
+------
 # Setting security groups to accept requests only from load balancer
 * AWS console
 * click EC2
@@ -319,7 +354,7 @@
 * change Source: Custom in drop down 
 * type s in the next text box 
 * opens auto suggestion box displays our security groups
-
+------
 # Adding Scaling policy to our Auto Scaling Group
 * AWS console
 * click EC2
@@ -353,7 +388,7 @@
 	* click Create a simple scaling policy link
 	* Take Action: drop down: Remove, text box=1, drop down= Instances
 	* click Create button
-
+------
 # Deleting an EC2 Instance
 * AWS console
 * EC2
