@@ -154,6 +154,7 @@
 * [Weld](#weld)
 * [Windows](#windows)
 * [XMLUnit](#XmlUnit)
+* [Yum - Yellowdog Updater Modified](#yum)
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 	* [Trainings](trainings.md)
@@ -1935,3 +1936,6 @@
 # [XmlUnit](xmlunit)
 * [Read Me](xmlunit/README.md)
 * [Practive Examples](xmlunit/xml-unit-practice)
+------
+# [Yum](yum) - Yellowdog Updater Modified
+* [Commands](yum/README.md#commands)
