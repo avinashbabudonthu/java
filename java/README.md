@@ -1937,5 +1937,5 @@
 * [Read Me](xmlunit/README.md)
 * [Practive Examples](xmlunit/xml-unit-practice)
 ------
-# [Yum](yum) - Yellowdog Updater Modified
+# [Yum](yum)
 * [Commands](yum/README.md#commands)
