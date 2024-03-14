@@ -8,6 +8,9 @@
 # Important port numbers to know to work with EC2 instances
 ![picture](imgs/ports.jpg)
 ------
+# EC2 Instances Purchasing Options
+![picture](imgs/ec2-instances-purchasing-options.jpg)
+------
 # Instance Family and use cases
 * General purpose (t2, m4, m3)
 	* Low traffic websites and web applications
