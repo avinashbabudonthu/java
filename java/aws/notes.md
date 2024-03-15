@@ -104,3 +104,8 @@
 * AES - Advanced Encryption Standard
 * IPAM - IP Address Manager
 * ARN - Amazon Resource Names
+* ENI - Elastic Network Interfaces
+------
+# Private vs Public IPs
+![picture](images/private-public-ips-1.jpg)
+![picture](images/private-public-ips-2.jpg)
