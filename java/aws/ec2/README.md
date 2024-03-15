@@ -406,5 +406,5 @@ ssh -i pemfile ec2-user@ip-address
 # placement groups
 ![picture](imgs/placement-groups-1.jpg)
 ![picture](imgs/placement-groups-2.jpg)
-![picture](imgs/placement-groups-3.jpg)
+![picture](imgs/placement-groups-03.jpg)
 ![picture](imgs/placement-groups-4.jpg)
