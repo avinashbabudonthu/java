@@ -154,7 +154,6 @@
 * [Weld](#weld)
 * [Windows](#windows)
 * [XMLUnit](#XmlUnit)
-* [Yum - Yellowdog Updater Modified](#yum)
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 	* [Trainings](trainings.md)
@@ -292,6 +291,7 @@
 * [S3 - Simple Storage Service](aws/s3)
 * [SQS - Simple Queue Service](aws/sqs)
 * [VPC - Virtual Private Cloud](aws/vpc)
+* [ENI - Elastic Network Interfaces](aws/eni)
 * ELB - Elastic Load Balancing
 * CloudTrail - Audit Trail
 * Robomaker
@@ -1292,6 +1292,7 @@
 ------
 # [Linux](linux)
 * [Commands](linux/commands.md)
+* [YUM - Yellowdog Updater Modified](linux/yum.md)
 ------
 # [Liquibase](liquibase)
 * [Materials](liquibase/materials.md)
@@ -1936,6 +1937,3 @@
 # [XmlUnit](xmlunit)
 * [Read Me](xmlunit/README.md)
 * [Practive Examples](xmlunit/xml-unit-practice)
-------
-# [Yum](yum)
-* [Commands](yum/README.md#commands)
