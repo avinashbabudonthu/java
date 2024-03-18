@@ -4,7 +4,7 @@
 * Snapshots stored durably in Amazon S3
 * Suited for applications that require database file system or raw block level storage
 * Provides block level storage volumes used with EC2 instances
-* EBS attached to EC2, persist independent of life EC2 instance
+* EBS attached to EC2, persist independent of life of EC2 instance
 * Lifecycle\
 ![picture](imgs/lifecycle.jpg)
 * It's a network drive. Means it uses network to communicate the instances, which means there might be bit of latency
