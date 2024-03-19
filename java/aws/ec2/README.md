@@ -209,8 +209,13 @@ ssh -i pemfile ec2-user@ip-address
 * Click on `Connect` button
 * Opens new tab in browser and connects to EC2 instance
 ------
-# AMI (Amazon Machine Image)
+# AMI
+* AMI means `Amazon Machine Image`
 * Operating System + preinstalled softwares like Java, perl, python etc used on an EC2 instance
+* AMIs are customization of EC2 instance
+	* Add your own software, configuration, operating system, monitoring
+	* Faster boot/configuration time because all softwares are pre-packaged
+* AMIs are built for specific region (Can be copied across region)
 ------
 # Storage termed as
 * EBS (Elastic Block Storage) in EC2. EBS is specific to storage used by EC2. EBS is not same as S3
@@ -408,3 +413,12 @@ ssh -i pemfile ec2-user@ip-address
 ![picture](imgs/placement-groups-2.jpg)
 ![picture](imgs/placement-groups-03.jpg)
 ![picture](imgs/placement-groups-4.jpg)
+------
+# EC2 Instance Store
+* EBS volumes are network drives with good but `limited` performance
+* if we need high performance hardware disk then use EC2 Instance store
+* Better IO performance because no network latency
+* EC2 Instance store lost thier storage if they are stopped
+* Good for buffer/cache/temporary Data
+* Risk of data loss if hardware fails
+* Backup and replication are your responsibility

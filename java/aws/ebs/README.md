@@ -1,3 +1,12 @@
+# Pricing
+* Pricing based on region
+* AWS GovCloud (US) pricing page
+* Review `Pricing Calculator` online
+* Pricing available as
+	* Storage
+	* IOPS
+* check EBS pricing page for current pricing in all regions
+
 # EBS Elastic Block store
 * Persistent block level storage volumes offering consistent and low-latency performance
 * Automatically replicated within its availability zone
@@ -18,11 +27,19 @@
 * EBS Delete on Termination\
 ![picture](imgs/delete-on-termination.jpg)
 
-# Pricing
-* Pricing based on region
-* AWS GovCloud (US) pricing page
-* Review `Pricing Calculator` online
-* Pricing available as
-	* Storage
-	* IOPS
-* check EBS pricing page for current pricing in all regions
+# EBS Snapshot Features
+* EBS Snapshot Archive
+	* Move snapshot to `archive tier` that is `75%` cheaper
+	* Takes within 24 to 72 hours to restore the archive
+* Recycle Bin for EBS Snapshots
+	* Setup rules to retain the deleted snapshots so you can recover them after accidental deletion
+	* Specify retention period from 1 day to 1 year
+* Fast Snapshot Restore (FSR)
+	* Force full initialization of Snapshot to have no latency on first use
+	* Careful on using this. This option is `costly`
+* Archive and Recycle Bin in picture\
+![picture](imgs/snapshot-features-1.jpg)
+
+# EBS Volume Types
+* ![picture](imgs/volume-types-1.jpg)
+* ![picture](imgs/volume-types-2.jpg)

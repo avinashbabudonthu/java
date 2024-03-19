@@ -106,6 +106,7 @@
 * ARN - Amazon Resource Names
 * ENI - Elastic Network Interfaces
 * IOPS - IO Operations per Second
+* PIOPS - Provisioned IOPS
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
