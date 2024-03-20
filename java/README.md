@@ -91,6 +91,7 @@
 * [Mockito with Junit 4](#Mockito-with-Junit-4)
 * [Model Mapper](#model-mapper)
 * [Mongo DB](#mongo-DB)
+* [Monkey patching](misc.md#Monkey-patching)
 * [Mybatis](#mybatis)
 * [MySQL Database](#mysql-database)
 * [Neo4J](#neo4j)
@@ -1295,6 +1296,7 @@
 # [Linux](linux)
 * [Commands](linux/commands.md)
 * [YUM - Yellowdog Updater Modified](linux/yum.md)
+* [Sudo - Super User DO](linux/sudo.md)
 ------
 # [Liquibase](liquibase)
 * [Materials](liquibase/materials.md)
