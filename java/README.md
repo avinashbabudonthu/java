@@ -279,6 +279,7 @@
 * [Dynamo DB - No SQL Database](aws/dynamo-db)
 * [EB - Elastic Beanstalk](aws/eb)
 * [EBS - Elastic Block Store](aws/ebs)
+* [EFS - Elastic File System](aws/efs)
 * [EC2 - Elastic Compute Cloud](aws/ec2)
 * [ECS - Elastic Container Service](aws/ecs)
 * [Glacier](aws/glacier)

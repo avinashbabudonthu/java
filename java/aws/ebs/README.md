@@ -41,5 +41,8 @@
 ![picture](imgs/snapshot-features-1.jpg)
 
 # EBS Volume Types
-* ![picture](imgs/volume-types-1.jpg)
-* ![picture](imgs/volume-types-2.jpg)
+![picture](imgs/volume-types-1.jpg)
+![picture](imgs/volume-types-2.jpg)
+
+# Multi attach
+![picture](imgs/multi-attach.jpg)

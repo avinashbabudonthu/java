@@ -107,6 +107,7 @@
 * ENI - Elastic Network Interfaces
 * IOPS - IO Operations per Second
 * PIOPS - Provisioned IOPS
+* FSR - Fast Snapshot Restore
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
