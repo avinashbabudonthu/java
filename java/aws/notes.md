@@ -98,7 +98,7 @@
 * EIP - Elastic IP addresses
 * ASG - Auto Scaling Group
 * KMS - Key Management Service
-* ACM - Amazon Certificate Manager
+* ACM - Amazon Certificate Manager (or) AWS Certificate Manager
 * SG - Security Groups
 * EFS - Elastic File Service
 * AES - Advanced Encryption Standard
@@ -108,6 +108,10 @@
 * IOPS - IO Operations per Second
 * PIOPS - Provisioned IOPS
 * FSR - Fast Snapshot Restore
+* ELB - Elastic Load Balancing
+* CLB - Classic Load Balance
+* ALB - Application Load Balancer
+* GWLB - Gateway Load Balancer
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)

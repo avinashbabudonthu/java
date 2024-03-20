@@ -293,7 +293,8 @@
 * [SQS - Simple Queue Service](aws/sqs)
 * [VPC - Virtual Private Cloud](aws/vpc)
 * [ENI - Elastic Network Interfaces](aws/eni)
-* ELB - Elastic Load Balancing
+* [ELB - Elastic Load Balancing](aws/elb)
+* ACM - AWS Certificate Manager
 * CloudTrail - Audit Trail
 * Robomaker
 * Load Balancing
