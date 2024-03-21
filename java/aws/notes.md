@@ -112,6 +112,7 @@
 * CLB - Classic Load Balance
 * ALB - Application Load Balancer
 * GWLB - Gateway Load Balancer
+* UDP - User Datagram Protocol
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)

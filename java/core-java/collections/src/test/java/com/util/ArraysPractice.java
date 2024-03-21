@@ -313,4 +313,19 @@ public class ArraysPractice {
 		String arrayToString = Arrays.deepToString(objectArray);
 		log.info("arrayToString={}", arrayToString);
 	}
+
+	@Test
+	public void array2D() {
+		// declarations
+		int[][] numbers = new int[2][2];
+		// initialization
+		numbers[0][0] = 10;
+
+		// declaration with initialization
+		int[][] numbers2 = {
+			{1, 2},
+			{3, 4}
+		};
+	}
+
 }
