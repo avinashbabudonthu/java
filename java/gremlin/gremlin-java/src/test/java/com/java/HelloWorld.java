@@ -15,22 +15,36 @@ import java.util.stream.Collectors;
 @Slf4j
 public class HelloWorld {
 
-    @Test
-    void hello() throws Exception {
-        GraphTraversalSource g = AnonymousTraversalSource.traversal().withRemote(DriverRemoteConnection.using("localhost", 8182));
-//        log.info("g={}", g);
-//        GraphTraversal<Vertex, Map<Object, Object>> list = g.V().elementMap();
-//        log.info("list={}", list);
-        List<Map<Object, Object>> data = g.V().elementMap().toStream().collect(Collectors.toList());
-        log.info("data={}", data);
-//        g.close();
-    }
+//    @Test
+//    void hello() throws Exception {
+//        GraphTraversalSource g = AnonymousTraversalSource.traversal().withRemote(DriverRemoteConnection.using("localhost", 8182));
+////        log.info("g={}", g);
+////        GraphTraversal<Vertex, Map<Object, Object>> list = g.V().elementMap();
+////        log.info("list={}", list);
+//        List<Map<Object, Object>> data = g.V().elementMap().toStream().collect(Collectors.toList());
+//        log.info("data={}", data);
+////        g.close();
+//    }
+//
+//    @Test
+//    void hello2() {
+//        GraphTraversalSource g = AnonymousTraversalSource.traversal().withRemote(DriverRemoteConnection.using("localhost", 8182));
+//        Vertex v1 = g.addV("person").property("name","marko").next();
+//        Vertex v2 = g.addV("person").property("name","stephen").next();
+//        g.V(v1).addE("knows").to(v2).property("weight",0.75).iterate();
+//    }
 
     @Test
-    void hello2() {
-        GraphTraversalSource g = AnonymousTraversalSource.traversal().withRemote(DriverRemoteConnection.using("localhost", 8182));
-        Vertex v1 = g.addV("person").property("name","marko").next();
-        Vertex v2 = g.addV("person").property("name","stephen").next();
-        g.V(v1).addE("knows").to(v2).property("weight",0.75).iterate();
+    void hello3() {
+        MyConnection con = new MyConnection();
+        String query = "g.V().hasLabel('player')" +
+                ".has('id', '" + 0 + "')" +
+                ".as('p1')" +
+                "V().hasLabel('player')" +
+                ".has('id', '" + 1 + "')" +
+                ".as('p2')" +
+                ".addE('friends')" +
+                ".from('p1').to('p2')";
+        con.queryGraph(query);
     }
 }

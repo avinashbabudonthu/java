@@ -61,10 +61,30 @@
         </dependency>
 
         <!-- when using Gremlin Server or Remote Gremlin Provider a driver is required -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.tinkerpop</groupId>
             <artifactId>gremlin-driver</artifactId>
             <version>3.7.1</version>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.tinkerpop/gremlin-core -->
+        <dependency>
+            <groupId>com.tinkerpop</groupId>
+            <artifactId>gremlin-core</artifactId>
+            <version>3.0.0.M7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.tinkerpop/gremlin-driver -->
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>gremlin-driver</artifactId>
+            <version>3.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>tinkergraph-gremlin</artifactId>
+            <version>3.3.3</version>
         </dependency>
 
     </dependencies>
@@ -76,7 +96,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>${java.version}</release>
+                    <!--                    <release>${java.version}</release>-->
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
