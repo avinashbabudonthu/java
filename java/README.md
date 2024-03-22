@@ -274,6 +274,7 @@
 * [Certifications](aws/certifications.md) 
 * [Materials](aws/materials.md)
 * [AWS Notes](aws/notes.md)
+* [AWS Difference between SQS and SNS](aws/sqs-vs-sns.md)
 
 ## AWS Services
 * [Cloud Formation](aws/cloud-formation)
@@ -294,6 +295,7 @@
 * [Route53](aws/route53)
 * [S3 - Simple Storage Service](aws/s3)
 * [SQS - Simple Queue Service](aws/sqs)
+* [SNS - Simple Notification Service](aws/sns)
 * [VPC - Virtual Private Cloud](aws/vpc)
 * [ENI - Elastic Network Interfaces](aws/eni)
 * [ELB - Elastic Load Balancing](aws/elb)
@@ -327,7 +329,6 @@
 * LEX
 * Deep Racer
 * Cognito
-* SNS - Simple Notification Service
 * SES - Simple Email Service
 * Cloud Formation
 * Amplify
