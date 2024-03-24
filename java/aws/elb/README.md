@@ -103,5 +103,5 @@
 ## Target Groups
 * EC2 instances
 * IP Addresses - must be private IPs\
-![picture](gwlb-target-groups.jpg)
+![picture](imgs/gwlb-target-groups.jpg)
 ------
