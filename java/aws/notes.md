@@ -113,6 +113,8 @@
 * ALB - Application Load Balancer
 * GWLB - Gateway Load Balancer
 * UDP - User Datagram Protocol
+* IDPS - Intrusion Detection and Prevention Systems
+* DPIS - Deep Packet Inspection System
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)

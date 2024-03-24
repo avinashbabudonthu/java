@@ -73,3 +73,35 @@
 	* Proto in header `X-Forwarded-Proto`\
 ![picture](imgs/good-to-know.jpg)
 ------
+# NLB Network Load Balancer
+* Network load balancer is layer 4
+	* Forward TCP & UDP traffic to your instance
+	* Handle millions of requests per second
+	* Less latecy ~100 ms (vs ~400 ms for ALB)
+* NLP has `one static IP per AZ`. Supports assigning Elastic IP (helpful for whitellisting specific IP)
+* NLB are used for extreme performance, TCP or UDP traffic
+* Not included in AWS free tier\
+![picture](imgs/001-network-load-balancer.jpg)
+
+## Targer Groups
+* EC2 instances
+* IP addresses. Must be private IPs
+* Application load balancer\
+![picture](imgs/nlb-target-groups.jpg)
+* Health check support 3 different protocols - TCP, HTTP, HTTPS Protocols
+------
+# Gateway Load Balancer
+* Operates at Layer 3 (Network Layer) - IP Packets
+* Combines following functions
+	* Transparent Network Gateway - single entry. Exit for all traffic
+	* Load Balancer - distributes traffic to virtual appliances
+* Deploy, scale, & manage fleet of 3rd party network virtual appliances in AWS
+	* Example: Firewalls, Intrusion Detection and Prevention Systems (IDPS), Deep Packet Inspection System (DPIS), Payload manipulation\
+![picture](imgs/001-gateway-load-balancer.jpg)
+* Uses `GENEVE` protocol on port `6081`
+
+## Target Groups
+* EC2 instances
+* IP Addresses - must be private IPs\
+![picture](gwlb-target-groups.jpg)
+------
