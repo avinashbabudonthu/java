@@ -236,6 +236,63 @@ ssh -i pemfile ec2-user@ip-address
 # Auto Scaling Group
 * Expand or Shrink pool of instances based on pre-defined rules
 * Auto configuration has launch configuration which has an image in it, and scaling rules to expand or shrink a pool of instances automatically
+* In real lift, load on your application can change time to time (sometimes high and sometimes low)
+* In the cloud, you can create and get rid of servers very quickly
+* Goal of Auto scaling groups (ASG)
+	* Scale out (add EC2 instances) to match increased load
+	* Scale in (remove EC2 instances) to match decreased load
+	* Enusure we have minimum and maximum number of EC2 instances Running
+	* Automatically register new instances to load balancer
+	* Recreate EC2 instance in case previous one is terminated
+* ASG is free (you pay only for underlying EC2 instances)\
+![picture](imgs/001-asg-high-level-flow.jpg)
+* Auto scaling group with load balancer
+![picture](imgs/001-asg-with-load-balancer.jpg)
+
+## Auto scaling group attributes
+* A launch template (older launch configurations are deprecated)
+	* AMI + Instance type
+	* EC2 user Data
+	* EBS volumes
+	* Security Group
+	* SSH
+	* IAM roles for EC2 instances
+	* Network + Subnet informaion
+	* Load balancer information
+![picture](imgs/asg-attributes.jpg)
+* ASG has min size, max size, initial capacity
+* Scaling Policies
+
+## Scaling Policies
+* Auto scaling - CloudWatch alarms & scaling
+* It is possible to scale ASG based on CloudWatch alarms
+* An alarm monitors metric (such as average CPU, custom metric)
+* Metrics such as average CPU are computed for the overall ASG Instances
+* Based on the alarm
+	* We can create scale-out policies (increase number of instances)
+	* We can create scale-in policies (decrease number of instances)\
+![picture](imgs/002-asg-cloud-watch-alarm.jpg)
+* Dynamic scaling
+	* Target tracking scaling
+		* simple to setup
+		* I want the average ASG CPU to stay at around 40%
+	* Simple / Step Scaling
+		* When cloudWatch alarm is triggered (example CPU > 70%) then add 2 units
+		* When CloudWatch alarm is triggered (example CPU < 30%) then remove 1 unit
+* Scheduled Scaling
+	* Anticipate scaling based on known usage patterns
+	* Example: Increate the minimum capacity to 10 at 5 PM on Friday
+* Predictive Scaling
+![picture](imgs/asg-predictive-scaling.jpg)
+
+## Good metric to scale on
+* CPU Utilization: Average CPU utilization across your Instances
+* Request Count per target: To make sure the number of requests per EC2 instance is stable
+* Average Network In / Out (if your application is network bounded like lot uploads and downloads)
+* Any custom metrics (that you push using CloudWatch)
+
+## Auto scaling groups - Scaling cooldowns
+![picture](imgs/asg-scaling-cooldown.jpg)
 ------
 # Load Balancer
 * Routing appliances that maintains a consistant DNS entry and balances requests to multiple instances

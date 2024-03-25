@@ -1,3 +1,4 @@
 # Table of Contents
 * [All Java stack - Table of Contents](java/README.md#index)
-* [Profile](profile.md)
+* [Profile](java/profile.md)
+* [Certifications](java/certifications-list.md)

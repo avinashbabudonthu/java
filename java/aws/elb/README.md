@@ -78,7 +78,7 @@
 	* Forward TCP & UDP traffic to your instance
 	* Handle millions of requests per second
 	* Less latecy ~100 ms (vs ~400 ms for ALB)
-* NLP has `one static IP per AZ`. Supports assigning Elastic IP (helpful for whitellisting specific IP)
+* NLB has `one static IP per AZ`. Supports assigning Elastic IP (helpful for whitellisting specific IP)
 * NLB are used for extreme performance, TCP or UDP traffic
 * Not included in AWS free tier\
 ![picture](imgs/001-network-load-balancer.jpg)
@@ -146,10 +146,10 @@
 ------
 # SSL & TLS
 ## Basics
-* SSL refers to `Secure Sockets Layer`. User to encrypt connections
+* SSL refers to `Secure Sockets Layer`. Used to encrypt connections
 * TLS refers to `Transport Layer Security`. Newer version of SSL
 * Nowadays, TLS certificates are mainly used, but people still refer as `SSL`
-* SSL certificates allows traffic between your client and load balancer to be encrypted during trasit (in-flight encryption)
+* SSL certificates allows traffic between your client and load balancer to be encrypted during transit (in-flight encryption)
 * Public SSL certificates are issued by `Certificated Authorities (CA)`. Some CAs are Comodo, Symantec, GoDaddy, GlobalSign, DigiCert, Letsencrypt etc
 * SSL certificates have an expiration date (you set) and must be renewed
 * Request comes from client to load balancer via `HTTPS` (because it is SSL certificate, encrypted, secure). Internally load balancer does `SSL termination` and in backend it talks to EC2 instance using `HTTP` (not encrypted). Traffic goes over private VPC which is secure
