@@ -97,7 +97,6 @@
 * WAF - Web Application Firewall
 * EIP - Elastic IP addresses
 * ASG - Auto Scaling Group
-* KMS - Key Management Service
 * ACM - Amazon Certificate Manager (or) AWS Certificate Manager
 * SG - Security Groups
 * EFS - Elastic File Service
@@ -115,6 +114,8 @@
 * UDP - User Datagram Protocol
 * IDPS - Intrusion Detection and Prevention Systems
 * DPIS - Deep Packet Inspection System
+* SNI - Server Name Indication
+* ALPN - Application Layer Protocol Negotiation
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
