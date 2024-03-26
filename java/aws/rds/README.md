@@ -94,7 +94,7 @@
 	* Low storage lasts atleast 5 min
 	* 6 hours have passed since last modification
 * Useful for application with unpredictable work loads
-* Supports all RDS database engines
+* Supports all RDS database engines\
 ![picture](imgs/001-rds-storage.jpg)
 ------
 # RDS Read Replicas vs Multi AZ

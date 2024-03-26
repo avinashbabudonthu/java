@@ -10,4 +10,6 @@
 * Certified kubernetes application developer
 * TOGAF (The Open Group Architecture Framework) Certification
 * Azure Fundamentals - AZ-900
+* Certified Jenkins Engineer (CJE)
+* Terraform Associate (003)
 ------

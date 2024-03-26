@@ -193,8 +193,9 @@
 * [Kafka Route Send List with key using split](apache-camel/camel-spring-boot-3/README.md#Kafka-Route-Send-List-with-key)
 ------
 # [Apache POI](apache-poi)
-* [Read Excel](apache-poi/apache-poi/src/test/java/com/read/excel/ReadExcel.java)
-	* Method - readExcel
+* [Materials](apache-poi/README.md#Materials)
+* Read Excel - `readExcel` method in [ExcelPractice.java](apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java)
+* Create Excel - `writeExcel` method in [ExcelPractice.java](apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java)
 ------
 # [APIGEE](apigee)
 * [Materials](apigee/apigee.md#Materials-in-study-order)
@@ -290,7 +291,7 @@
 * [IAM - Identity and Access Management](aws/iam)
 * [Lambda](aws/lambda)
 * [Neptune - Graph Database](aws/neptune)
-* [RDS - Relational Dtabase Service](aws/rds)
+* [RDS - Relational Database Service](aws/rds)
 * [Redshift](aws/redshift)
 * [Route53](aws/route53)
 * [S3 - Simple Storage Service](aws/s3)
