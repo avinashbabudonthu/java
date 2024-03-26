@@ -96,3 +96,11 @@
 * Useful for application with unpredictable work loads
 * Supports all RDS database engines
 ![picture](imgs/001-rds-storage.jpg)
+------
+# RDS Read Replicas vs Multi AZ
+* Upto 15 Read replicas
+* Within AZ, Cross AZ, Cross region
+* Replication is ASYNC, so reads are eventually consistent
+* Replicas can be promoted to their own DB. Means we can make read replica as main db, then it will be out from read replicas list and have it's own database life cycle
+* Applications must update the connection string to leverage read replicas
+![picture](imgs/001-read-replicas.jpg)
