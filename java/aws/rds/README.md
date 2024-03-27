@@ -102,5 +102,38 @@
 * Within AZ, Cross AZ, Cross region
 * Replication is ASYNC, so reads are eventually consistent
 * Replicas can be promoted to their own DB. Means we can make read replica as main db, then it will be out from read replicas list and have it's own database life cycle
-* Applications must update the connection string to leverage read replicas
+* Applications must update the connection string to leverage read replicas\
 ![picture](imgs/001-read-replicas.jpg)
+------
+# RDS Read Replicas Use Cases
+* You have production database taking normal load
+* You want to run some reporting application to run some analytics
+* You create `Read Replica` to run new workload
+* The production application is unaffected
+* Read replicas are used for `SELECT` only kind of statements (not INSERT, UPDATE, DELETE)\
+![picture](imgs/001-read-replica-use-case.jpg)
+------
+# Read replica network cost
+* In AWS there is network cose when data goes from one AZ to another
+* For RDS Read Replicas with in same region (means different AZ with in same region) then it is free
+* Pay only if read replica is in another region\
+![picture](001-read-replica-network-cost.jpg)
+------
+# RDS Multi AZ DR - Disaster Recovery
+* Sync replicas - instant replication to standby instance
+* One DNS name - automatic app failover to standby
+* Increase availability
+* Failover in case of loss of AZ, loss of network, instance or storage failure
+* No manual intervention in apps
+* Not used for scaling
+* Read replicas can be setup as Multi AZ for DR\
+![picture](imgs/001-multi-az-dr.jpg)
+------
+# RDS - from single Az to multi AZ
+* Zero downtime operation (no need to stop DB)
+* Just click on `modify` for the Database
+* Following steps happens internally
+	* Snapshot is taken
+	* New DB is restored from Snapshot in new AZ
+	* Synchronization is established between two databases\
+![picture](imgs/001-rds-from-one-az-to-multi-az.jpg)
