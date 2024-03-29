@@ -137,3 +137,6 @@
 	* New DB is restored from Snapshot in new AZ
 	* Synchronization is established between two databases\
 ![picture](imgs/001-rds-from-one-az-to-multi-az.jpg)
+------
+# RDS Custom
+![picture](imgs/001-rds-custom.jpg)
