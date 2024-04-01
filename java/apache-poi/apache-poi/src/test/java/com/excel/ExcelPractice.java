@@ -68,13 +68,12 @@ class ExcelPractice {
         while (rowIterator.hasNext()) {
             Row row = rowIterator.next();
             T t = klass.getConstructor().newInstance();
-            // T t = klass.newInstance();
             for(int i=0;i<objectProperties.size();i++) {
                 Cell cell = row.getCell(i);
                 String property = objectProperties.get(i);
                 String setter = "set" + StringUtils.capitalize(property);
                 Method method = klass.getMethod(setter, String.class);
-                method.invoke(t, String.valueOf(readData(cell)));
+                method.invoke(t, String.valueOf(readCellData(cell)));
             }
             data.add(t);
         }
@@ -82,7 +81,7 @@ class ExcelPractice {
         sheetData.put(sheetName, data);
     }
 
-    private Object readData(Cell cell) {
+    private Object readCellData(Cell cell) {
         Object value = null;
         // Checking the cell type and format accordingly
         switch (cell.getCellType()) {
