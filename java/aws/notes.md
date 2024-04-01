@@ -117,6 +117,8 @@
 * SNI - Server Name Indication
 * ALPN - Application Layer Protocol Negotiation
 * DR - Disaster Recovery
+* HA - High Availability
+* ACU - Aurora Capacity Unit
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
