@@ -117,7 +117,7 @@
 * In AWS there is network cose when data goes from one AZ to another
 * For RDS Read Replicas with in same region (means different AZ with in same region) then it is free
 * Pay only if read replica is in another region\
-![picture](001-read-replica-network-cost.jpg)
+![picture](imgs/001-read-replica-network-cost.jpg)
 ------
 # RDS Multi AZ DR - Disaster Recovery
 * Sync replicas - instant replication to standby instance
@@ -207,3 +207,28 @@
 # RDS Aurora restore options
 ![picture](imgs/rds-aurora-restore-options.jpg)
 
+------
+# RDS and Aurora security
+* At rest encryption
+	* Database master and replicas encryption using AWS KMS. Enable encryption must be defined at database launch time
+	* If master is not encrypted, then read replicas cannot be encrypted
+	* To encrypt un-enrypted database, go through DB snapshot & restore as encrypted
+* In-flight encryption: TLS-ready by default, use AWS TLS root certificates client-side
+* IAM Authentication: Use IAM roles to connect to your database (instead of username and password)
+* Security Groups: Enables network access to your RDS / Aurora DB
+* No SSH available except for RDS Custom
+* Audit logs can be enabled and sent to CloudWatch logs for longer retention of logs
+------
+# RDS Proxy
+* Fully managed database proxy for RDS
+* Allows apps to pool and share DB connections established with the Database
+* Improving database efficiency by reducing stress on database (like CPU, RAM) and minimize open connections (and timeouts)
+* Serverless, auto scaling, high availability(multi AZ)
+* Reduce RDS & Aurora failover time by 66%
+* Supports RDS (MySQL, Postgres, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)
+* No code changes required for most apps
+* Enforce IAM Authentication for DB. Securely store credentials in AWS Secrets Manager
+* RDS Proxy is never Publicly accessible (must be accessed from VPC)
+![picture](imgs/001-rds-proxy.jpg)
+![picture](imgs/002-rds-proxy.jpg)
+![picture](imgs/003-rds-proxy.jpg)
