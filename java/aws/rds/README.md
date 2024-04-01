@@ -232,3 +232,38 @@
 ![picture](imgs/001-rds-proxy.jpg)
 ![picture](imgs/002-rds-proxy.jpg)
 ![picture](imgs/003-rds-proxy.jpg)
+------
+# ElastiCache
+* Same way RDS get managed Relational Databases, ElastiCache get managed Redis or MemCached
+* Caches are in-memory databases with high performance and low latency
+* Helps reduce load on databases for read intensive workloads
+* Helps make your application stateless
+* AWS takes care of OS maintenance/patching, optimization, setup, configuration, monitoring, failure recovery and backups
+* `Using ElastiCache involves heavy application code changes`
+
+# ElastiCache solution architecture and DB cache
+![picture](imgs/001-elasticache-solution-architecture.jpg)
+
+# ElastiCache solution architecture and user session store
+* Make our application stateless by writing user data into amazon elasticache\
+![picture](imgs/002-elasticache-solution-architecture.jpg)
+
+# ElastiCache Redis Vs MemCached
+![picture](imgs/001-elasticache-redis-vs-memcached.jpg)
+
+# Cache security
+* ElastiCache supports IAM authentication for Redis
+* IAM policies on ElastiCache are only used for AWS API-level Security
+* Redis AUTH
+	* You can create `password/token` when you create Redis cluster
+	* This is extra level of security for cache (on top of security groups)
+	* Support SSL in flight encryption
+* MemCached
+	* Supports SASL based Authentication\
+![picture](imgs/001-elasticache-security.jpg)
+
+# Patterns of ElastiCache
+* Lazy loading: all the read data is cached. Data can become state in Cache
+* Write Through: Adds or update data in cache when written to DB (no stale data)
+* Session Store: Store temporary session data in cache (using TTL feature)\
+![picture](imgs/001-elasticache-lazy-load.jpg)

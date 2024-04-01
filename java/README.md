@@ -196,6 +196,7 @@
 * [Materials](apache-poi/README.md#Materials)
 * Read Excel - `readExcel` method in [ExcelPractice.java](apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java)
 * Create Excel - `writeExcel` method in [ExcelPractice.java](apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java)
+* Read Excel in generic way - `readExcelInGeneric` method in [ExcelPractice.java](apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java)
 ------
 # [APIGEE](apigee)
 * [Materials](apigee/apigee.md#Materials-in-study-order)

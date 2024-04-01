@@ -1,7 +1,10 @@
 package com.excel;
 
 
+import com.excel.model.Employee;
+import com.excel.model.Student;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,19 +14,93 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.lang.reflect.Method;
+import java.util.*;
 
 @Slf4j
 class ExcelPractice {
 
     @Test
-    void readExcel() {
+    void readExcelInGeneric() {
+        String employeeExcel = "files/employees.xlsx";
+        List<String> employeeExcelSheets = List.of("employeeDetails", "employeeDetails2");
+        List<String> employeeDetailsSheetProperties = List.of("id", "name", "designation");
+        for(String sheetName : employeeExcelSheets) {
+            Map<String, List<Employee>> employeeDetailsData = readExcelInGeneric(employeeExcel, sheetName, employeeDetailsSheetProperties, Employee.class);
+            log.info("{} - data = {}", sheetName, employeeDetailsData);
+        }
 
+
+        String studentExcel = "files/students.xlsx";
+        List<String> studentExcelSheets = List.of("studentDetails","studentDetails2");
+        List<String> studentDetailsProperties = List.of("id", "name", "course");
+        for(String sheetName : studentExcelSheets) {
+            Map<String, List<Student>> studentDetailsData =  readExcelInGeneric(studentExcel, sheetName, studentDetailsProperties, Student.class);
+            log.info("{} - data = {}", sheetName, studentDetailsData);
+        }
+    }
+
+    private <T> Map<String, List<T>> readExcelInGeneric(String excelFileName, String sheetName, List<String> objectProperties, Class<T> klass) {
+        log.info("Reading excel={}", excelFileName);
+        Map<String, List<T>> sheetData = new HashMap<>();
+        try (FileInputStream file = new FileInputStream(new File(excelFileName))) {
+            // Create Workbook instance holding reference to .xlsx file
+            XSSFWorkbook workbook = new XSSFWorkbook(file);
+            addDataToMap(workbook, sheetName, objectProperties, sheetData, klass);
+        } catch (Exception e) {
+            log.error("Exception while reading excel = {}", excelFileName, e);
+        }
+
+        return sheetData;
+    }
+
+    private <T> void addDataToMap(XSSFWorkbook xssfWorkbook, String sheetName, List<String> objectProperties, Map<String, List<T>> sheetData, Class<T> klass) throws Exception {
+        log.info("Reading sheet={}", sheetName);
+        List<T> data = new ArrayList<>();
+        sheetData.putIfAbsent(sheetName, new ArrayList<>());
+
+        XSSFSheet sheet = xssfWorkbook.getSheet(sheetName);
+        // Iterate through each rows one by one
+        Iterator<Row> rowIterator = sheet.iterator();
+        rowIterator.next(); // in case sheet has headers
+
+        // Till there is an element condition holds true
+        while (rowIterator.hasNext()) {
+            Row row = rowIterator.next();
+            T t = klass.getConstructor().newInstance();
+            // T t = klass.newInstance();
+            for(int i=0;i<objectProperties.size();i++) {
+                Cell cell = row.getCell(i);
+                String property = objectProperties.get(i);
+                String setter = "set" + StringUtils.capitalize(property);
+                Method method = klass.getMethod(setter, String.class);
+                method.invoke(t, String.valueOf(readData(cell)));
+            }
+            data.add(t);
+        }
+
+        sheetData.put(sheetName, data);
+    }
+
+    private Object readData(Cell cell) {
+        Object value = null;
+        // Checking the cell type and format accordingly
+        switch (cell.getCellType()) {
+            case NUMERIC:
+                value = cell.getNumericCellValue();
+                break;
+            case STRING:
+                value = cell.getStringCellValue();
+                break;
+        }
+        return value;
+    }
+
+
+    @Test
+    void readExcel() {
         // Reading file from local directory
-        try (FileInputStream file = new FileInputStream(new File("file-1.xlsx"))) {
+        try (FileInputStream file = new FileInputStream(new File("files/file-1.xlsx"))) {
             // Create Workbook instance holding reference to .xlsx file
             XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -87,7 +164,7 @@ class ExcelPractice {
     void writeExcel() {
         // Blank worksheet
         try (XSSFWorkbook workbook = new XSSFWorkbook();
-             FileOutputStream out = new FileOutputStream("file-1.xlsx")) {
+             FileOutputStream out = new FileOutputStream("files/file-1.xlsx")) {
             // Creating blank Excel sheet
             XSSFSheet sheet = workbook.createSheet("students");
 

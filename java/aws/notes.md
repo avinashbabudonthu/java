@@ -119,7 +119,24 @@
 * DR - Disaster Recovery
 * HA - High Availability
 * ACU - Aurora Capacity Unit
+* TTL - Time To Live
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
 ![picture](images/private-public-ips-2.jpg)
+------
+# List of Ports to be familiar with
+* Here's a list of standard ports
+* Important ports:
+	* SSH: 22
+	* FTP: 21
+	* SFTP: 22 (same as SSH)
+	* HTTP: 80
+	* HTTPS: 443
+* RDS Databases ports:
+	* PostgreSQL: 5432
+	* MySQL: 3306
+	* Oracle RDS: 1521
+	* MSSQL Server: 1433
+	* MariaDB: 3306 (same as MySQL)
+	* Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
