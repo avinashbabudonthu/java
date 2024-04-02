@@ -1322,11 +1322,12 @@
 * [Notes](logging/notes.md)
 ------
 # [Lombok](lombok)
-* [Notes](lombok/notes.md)
-* [Materials](lombok/notes.md#Materials)
+* [Notes](lombok/README.md)
+* [Materials](lombok/README.md#Materials)
 * [Example - Data annotation](lombok/lombok/src/main/java/com/java/Student.java)
 * [Example - NonNull annotation](lombok/lombok/src/main/java/com/java/Student2.java)
 * [Example - StudentTest](lombok/lombok/src/test/java/com/java/StudentTest.java)
+* [Private Constructor](lombok/README.md#Private-Constructor)
 ------
 # [Maven](maven)
 * [Materials](maven/materials.md)
