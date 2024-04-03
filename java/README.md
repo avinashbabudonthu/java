@@ -136,6 +136,7 @@
 * [Spring Core](#Spring-Core)
 * [Spring Data JPA](#Spring-Data-JPA)
 * [Spring Data Mongo](#Spring-Data-Mongo)
+* [Spring JDBC](#Spring-JDBC)
 * [Spring Security](#Spring-Security)
 * [Spring Transaction](#Spring-Transaction)
 * [Spring Webflux](#Spring-Webflux)
@@ -1705,7 +1706,7 @@
 * [HeaderEnricher](spring/integration/header-enricher)
 ------
 ## [Spring JDBC](spring/jdbc)
-* [Notes](spring/jdbc/notes.md)
+* [Materials](spring/jdbc/README.md#Materials)
 * [Examples](spring/jdbc/spring-jdbc)
 ------
 ## [Spring JMS](spring/jms)
