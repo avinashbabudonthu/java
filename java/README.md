@@ -16,7 +16,6 @@
 * [cntlm](#cntlm)
 * [Commons compress](#commons-compress)
 * [Commons Lang3](#commons-lang3)
-* [Coding Web sites](#coding-web-sites)
 * [Concourse](#concourse)
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
@@ -399,15 +398,6 @@
 * [StringUtils - subString](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
 * [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 * [ToStringBuilder - reflectionToString](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
-------
-# Coding Web sites
-* [Hacker Rank](https://hackerrank.com/)
-* [LeetCode](https://leetcode.com/)
-* Kaggle
-* CodeChef
-* Topcoder
-* HackerEarth
-* Code Jam - Google's Coding Competitions
 ------
 # [Concourse](concourse)
 * [Materials](concourse/materials.md)
