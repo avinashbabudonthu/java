@@ -120,6 +120,10 @@
 * HA - High Availability
 * ACU - Aurora Capacity Unit
 * TTL - Time To Live
+* TLD - Top Level Domain
+* SLD - Second Level Domain
+* FQDN - Fully Qualified Domain Name
+* URL - Uniform Resource Locator
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
