@@ -146,6 +146,7 @@
 * [Teradata Database](#teradata-database)
 * [Terraform](#terraform)
 * [Testing](#testing)
+* [TestNG](#testng)
 * [Thymeleaf](#thymeleaf)
 * [TypeScript](#typescript)
 * [UML](#uml)
@@ -523,6 +524,7 @@
 * [FileIOPractice tempFolder](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice writeMethod](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice writeToFile](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [FileIOPractice readFileContent](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [java.io.RandomAccessFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [java.io.RandomAccessFile readFromFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
 * [java.io.RandomAccessFile writeToFile](core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
@@ -1888,6 +1890,9 @@
 * [Testing Methodologies](testing/notes.md#Testing-Methodologies)
 * [Smoke Testing vs Sanity Testing](testing/notes.md#Smoke-Testing-vs-Sanity-Testing)
 ------
+# [TestNG](test-ng)
+* 
+------
 # [Thymeleaf](thymeleaf)
 * [Materials](materials.md)
 ------
@@ -1933,13 +1938,13 @@
 * [Materials](weld/materials.md)
 ------
 # [Windows](windows)
-* [Commands](windows/windows.md)
-* [Hosts file path in windows 10](windows/windows.md#Hosts-file-path-in-windows-10)
-* [Open current folder explorer from cmd](windows/windows.md#Open-current-folder-explorer-from-cmd)
-* [Open chrome and open url](windows/windows.md#Open-chrome-and-open-url)
-* [Delete files](windows/windows.md)
-* [Copy files](windows/windows.md)
-* [Rename files](windows/windows.md)
+* [Commands](windows/README.md)
+* [Hosts file path in windows 10](windows/README.md#Hosts-file-path-in-windows-10)
+* [Open current folder explorer from cmd](windows/README.md#Open-current-folder-explorer-from-cmd)
+* [Open chrome and open url](windows/README.md#Open-chrome-and-open-url)
+* [Delete files](windows/README.md)
+* [Copy files](windows/README.md)
+* [Rename files](windows/README.md)
 ------
 # [XmlUnit](xmlunit)
 * [Read Me](xmlunit/README.md)

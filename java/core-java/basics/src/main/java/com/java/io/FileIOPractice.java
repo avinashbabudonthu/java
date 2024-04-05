@@ -10,14 +10,20 @@ import java.net.URL;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
-import java.util.Formatter;
-import java.util.List;
-import java.util.Scanner;
-import java.util.StringJoiner;
+import java.util.*;
 import java.util.stream.Stream;
 
 @Slf4j
 public class FileIOPractice {
+
+	/**
+	 * Output: abc\def
+	 */
+	@Test
+	public void fileSeparator(){
+		String fileSeparator = File.separator;
+		log.info("abc{}def", fileSeparator);
+	}
 
 	/**
 	 * Prepare java.io.File object using string path
@@ -636,5 +642,21 @@ public class FileIOPractice {
 		FileUtils.deleteDirectory(file);
 		log.info("deleted directory: {}", fileAbsolutePath);
 	}
-	
+
+	@Test
+	public void readFileContent() {
+		String content = null;
+		String fileName = "src/main/resources/file1.txt";
+		try {
+			URL url = FileUtils.class.getClassLoader().getResource(fileName);
+			Objects.requireNonNull(url);
+			File file = new File(url.getPath());
+			content = new String(Files.readAllBytes(file.toPath()));
+		} catch(Exception e) {
+			log.error("Exception while reading file {} content", fileName);
+		}
+
+		log.info("content={}", content);
+	}
+
 }

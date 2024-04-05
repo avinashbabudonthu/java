@@ -1,4 +1,4 @@
-package com.ab.poc;
+package com.poc;
 
 import org.xml.sax.InputSource;
 

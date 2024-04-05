@@ -1,4 +1,4 @@
-package com.ab.java.lang;
+package com.java.lang;
 
 public class ShutdownHook1 {
 

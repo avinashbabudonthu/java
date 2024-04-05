@@ -151,3 +151,7 @@ sudo apt-get install python-pip
 ```
 sudo pip install --upgrade awscli
 ```
+* Install dig. dig is same as [nslookup](../windows/README.md#nslookup) in windows
+```
+sudo yum -y insall bind-utils
+```

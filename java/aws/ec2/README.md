@@ -358,3 +358,17 @@ ssh -i pemfile ec2-user@ip-address
 * Good for buffer/cache/temporary Data
 * Risk of data loss if hardware fails
 * Backup and replication are your responsibility
+------
+# Stress test on EC2 instance
+* install stress in amazon linux 2 ami instance
+```
+sudo amazon-linux-extras install epel -y
+```
+```
+sudo yum install stress -y
+```
+* Use --timeout to stop it automatically e.g. stress --cpu 4 --timeout 60s
+* reference:
+	* https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54
+	* Google search - install stress amazon linux 2
+------

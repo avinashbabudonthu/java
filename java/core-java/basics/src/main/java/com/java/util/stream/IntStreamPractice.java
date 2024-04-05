@@ -1,4 +1,4 @@
-package com.ab.java.util.stream;
+package com.java.util.stream;
 
 /**
  * References:

@@ -8,12 +8,19 @@ public class ReferenceCheck {
 
     @Test
     public void referenceCheck() {
-        Course course = Course.builder().name("java").grade(4.0D).build();
-        Student student = Student.builder()
-                .id(1)
-                .name("Ram")
-                .course(course)
-                .build();
+        Course course = new Course();
+        course.setName("java");
+        course.setGrade(4.10D);
+//        Student student = Student.builder()
+//                .id(1)
+//                .name("Ram")
+//                .course(course)
+//                .build();
+        Student student = new Student();
+        student.setId(1);
+        student.setName("Ram");
+        student.setCourse(course);
+
         // before - student=Student(id=1, name=Ram, course=Course(name=java, grade=4.0))
         log.info("before - student={}", student);
         setCourseToNull(student.getCourse());
