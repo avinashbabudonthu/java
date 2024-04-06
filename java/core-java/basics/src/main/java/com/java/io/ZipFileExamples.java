@@ -1,6 +1,7 @@
 package com.java.io;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -253,6 +254,30 @@ public class ZipFileExamples {
         } catch (Exception e) {
             log.error("Exception while unzipping", e);
         }
+    }
+
+    @Test
+    public void downloadFile() throws IOException {
+        // String urlString = "https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads";
+        String urlString = "https://apps.irs.gov/pub/epostcard/data-download-epostcard.zip";
+        URL url = new URL(urlString);
+        log.info("url.toString: {}", url.toString());
+
+        // temp directory - C:\Users\donthuav\AppData\Local\Temp
+        String tempDirPath = System.getProperty("java.io.tmpdir");
+        log.info("temp-directory: {}", tempDirPath);
+
+        // download directory - C:\Users\donthuav\AppData\Local\Temp\irs
+        String downloadDirectory = tempDirPath + "irs";
+        File file = new File(downloadDirectory);
+        boolean isIrsDirectoryCreated = file.mkdir();
+        log.info("isIrsDirectoryCreated: {}", isIrsDirectoryCreated);
+
+        String zipFileDownloadFilePath = tempDirPath + "irs" + File.separator + "file.zip";
+        log.info("zipFileDownloadFilePath={}", zipFileDownloadFilePath);
+
+        // using apache-commons-io library
+        FileUtils.copyURLToFile(url, new File(zipFileDownloadFilePath));
     }
 
 }

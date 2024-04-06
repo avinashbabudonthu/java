@@ -9,7 +9,6 @@ enum CardColorEnum {
 	RED, BLACK;
 }
 
-@Getter
 public enum CardSuitEnum {
 
 	SPADE("Spade", "S", CardColorEnum.RED), HEART("Heart", "H", CardColorEnum.BLACK),
@@ -34,5 +33,9 @@ public enum CardSuitEnum {
 		this.cardName = cardName;
 		this.cardSymbol = cardSymbol;
 		this.cardColor = cardColor;
+	}
+
+	public String getCardName() {
+		return cardName;
 	}
 }

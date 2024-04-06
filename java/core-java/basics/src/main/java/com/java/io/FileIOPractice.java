@@ -643,6 +643,26 @@ public class FileIOPractice {
 		log.info("deleted directory: {}", fileAbsolutePath);
 	}
 
+	@SneakyThrows
+	@Test
+	public void deleteTempDirectory(){
+		// temp directory - C:\Users\donthuav\AppData\Local\Temp
+		String tempDirPath = System.getProperty("java.io.tmpdir");
+		log.info("temp-directory: {}", tempDirPath);
+		// download directory - C:\Users\donthuav\AppData\Local\Temp\irs
+		String downloadDirectory = tempDirPath + "test";
+		File file = new File(downloadDirectory);
+
+		boolean testIrsDirectoryCreated = file.mkdir();
+		log.info("testIrsDirectoryCreated: {}", testIrsDirectoryCreated);
+
+		String fileAbsolutePath = file.getAbsolutePath();
+		log.info("deleting directory: {}", fileAbsolutePath);
+		FileUtils.deleteDirectory(file);
+		log.info("deleted directory: {}", fileAbsolutePath);
+
+	}
+
 	@Test
 	public void readFileContent() {
 		String content = null;
