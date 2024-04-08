@@ -52,9 +52,11 @@
 	* Control how traffic is routed for domain
 ------
 # Hosted Zones
-* Container of records that define how to route traffic to domain and subdomain
+* Container of DNS records that define how to route traffic to domain and subdomain
+* A hosted zone is the base layer of Route 53, and usually corresponds to a domain name or sub domain
 * Public hosted zones - contains records that specify how to route traffic on internet
 * Private hosted zones - contain records that specify how to route traffic within one or more VPCs (private domain names)
 * Costs $0.50 per month per hosted Zone
 * Public vs private hosted Zones\
 ![picture](imgs/001-public-vs-private-hosted-zones.jpg)
+------

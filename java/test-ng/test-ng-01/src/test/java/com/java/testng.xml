@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hello World Test Suite">
+    <test verbose="2" preserve-order="true" name="Test NG 01 Project">
+        <classes>
+            <class name="com.java.HelloWorld">
+                <methods>
+                    <include name="helloWorld"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
+
+                    <!-- This test case disabled in class -->
+                    <include name="test3" />
+
+                    <!--<include name="test4" />-->
+                    <exclude name="test4" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
