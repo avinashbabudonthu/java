@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Group declared inside suite -->
+<suite name="TestNG Multiple Suits">
+    <suite-files>
+        <suite-file path="testng-group1.xml" />
+        <suite-file path="testng-group2.xml" />
+    </suite-files>
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Group declared inside suite -->
+<suite name="TestNG Group1">
+    <groups>
+        <run>
+            <include name="group1"/>
+        </run>
+    </groups>
+    <test name="Test Class1">
+        <classes>
+            <class name="com.java.groups.TestClass1"/>
+        </classes>
+    </test>
+
+    <test name="Test Class2">
+        <classes>
+            <class name="com.java.groups.TestClass2"/>
+        </classes>
+    </test>
+
+    <test name="Test Class3">
+        <classes>
+            <class name="com.java.groups.TestClass3"/>
+        </classes>
+    </test>
+
+</suite>
