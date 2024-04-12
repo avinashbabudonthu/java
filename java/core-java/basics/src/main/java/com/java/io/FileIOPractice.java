@@ -110,8 +110,21 @@ public class FileIOPractice {
 		}
 	}
 
+	/**
+	 * Convert {@link java.io.File} object {@link java.nio.file.Path}
+	 */
 	@Test
-	public void convertPathToFile() {
+	public void fileToPath() {
+		URL url = FileIOPractice.class.getClassLoader().getResource("file1.txt");
+		Objects.requireNonNull(url);
+		String filePath = url.getPath();
+		File file = new File(filePath);
+		Path path = file.toPath();
+		log.info("path={}", path);
+	}
+
+	@Test
+	public void pathToFile() {
 		final Path path = new File(getClass().getClassLoader().getResource("file1.txt").getPath()).toPath();
 		log.info("path={}", path);
 

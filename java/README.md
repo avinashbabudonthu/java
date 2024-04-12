@@ -22,6 +22,7 @@
 * [Core Java Reflection](#Core-Java-Reflection)
 * [Core Java Properties files Examples](#Properties-files-Examples)
 * [Core Java Regex Regula Expression](#Core-Java-Regex)
+* [File IO](#File-IO)
 * [Couch Base](#couch-base)
 * [Cucumber](#cucumber)
 * [Database](#database)
@@ -489,7 +490,8 @@
 # File IO
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice convertFileToInputstream](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
-* [FileIOPractice convertPathToFile](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* Path object to File object - [FileIOPractice pathToFile](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* File object to Path object - [FileIOPractice fileToPath](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice copyFileUsingApacheCommons](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice copyFileUsingFiles](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [FileIOPractice copyFileUsingFileStreams](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
@@ -1468,7 +1470,9 @@
 * [Commands](npm/commands.md)
 ------
 # [Open CSV](open-csv)
-* [Read CSV File](open-csv/open-csv/src/test/java/com/read/ReadCSV.java)
+* [Materials](open-csv/README.md#Materials)
+* [Read CSV File](open-csv/open-csv/src/test/java/com/open/csv/ReadCSV.java)
+* [Write CSV File](open-csv/open-csv/src/test/java/com/open/csv/WriteCSV.java)
 ------
 # [Oracle Database](oracle)
 * [Materials](oracle/materials.md)
