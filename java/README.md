@@ -1895,7 +1895,9 @@
 * [Smoke Testing vs Sanity Testing](testing/notes.md#Smoke-Testing-vs-Sanity-Testing)
 ------
 # [TestNG](test-ng)
-* 
+* [Materials](test-ng/README.md#Materials)
+* [Examples](test-ng/README.md#Examples)
+* [Notes](test-ng/README.md)
 ------
 # [Thymeleaf](thymeleaf)
 * [Materials](materials.md)
