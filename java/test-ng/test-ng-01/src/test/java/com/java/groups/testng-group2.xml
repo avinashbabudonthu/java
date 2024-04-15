@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!-- Group declared inside test -->
 <suite name="TestNG Group2">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>
     <test name="Group2">
         <groups>
             <run>
