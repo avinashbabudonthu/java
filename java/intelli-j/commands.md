@@ -109,3 +109,8 @@ File -> Settings -> Editor -> Inspections -> JVM Languages -> Serializable class
 # Remove import wildcards
 * Remove intelliJ adding `*` in imports
 ![picture](img/intellij-wildcard-imports.png)
+------
+# Accept non trusted certificates
+* File > Settings > Tools > Server certificates > check `Accept non-trusted certificates automatically`
+![picture](img/accept-non-trusted-certificates.jpg)
+------
