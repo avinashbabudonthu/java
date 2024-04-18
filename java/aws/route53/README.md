@@ -36,7 +36,7 @@
 	* Record Type - Ex: A, AAAA
 	* Value - Ex: 12.34.56.78
 	* Routing Policy - how route 53 respond to queries
-	* TTL - amount of time record cached at DNS resolvers
+	* TTL - Time To Live - amount of time record cached at DNS resolvers
 * Route 53 supports following DNS types
 	* must know - A, AAAA, CNAME, NS
 	* advanced - CAA, DS, MX, NAPTR, PTR, SOA, TXT, SPF, SRV
