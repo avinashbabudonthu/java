@@ -14,7 +14,7 @@
 * `Edge Locations`: Used for caching. Our content like media, videos, pictures are cached in the nearest AWS data center locations and delivered to users. It improves performance by lowering the network latency
 * AWS have `130+ services` like EC2, S3 etc\
 ![picture](images/region-availability-zones.jpg)
-* Each `Region` will have 2 or more availability zones
+* Each `Region` will have 3 or more availability zones. Minimum 3 and maximum 6
 * when we are deploying our application we need to keep in different availability zones so that if one of the availability zone goes down then our application still running on another availability zone. So our application will have high availability
 * Services and at what level they work\
 ![picture](images/account-users-services-scope.jpg)

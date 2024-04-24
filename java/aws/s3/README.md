@@ -14,7 +14,7 @@
 * Object key - unique identifier for an object in bucket - http://doc.s3.amazonaws.com/2022-01-17/myfile.html
 	* `doc` - bucket name
 	* `2022-01-17/myfile.html` - Object key
-
+------
 # Security
 * can control access to bucket and objects in the bucket with
 	* ACL - Access Control List
@@ -22,7 +22,7 @@
 	* IAM policies
 * Can upload or download data to S3 via SSL encrypted endpoints
 * Can encrypt data using AWS SDKs
-
+------
 # S3 storage classes
 * Amazon S3 Standard - Default
 	* Frequently used data
@@ -36,7 +36,7 @@
 	* Must restore objects before access them
 	* when request an object from Glacier, you need to create job that take anywhere between 3-5 hours for the job to complete and object to be available for download
 	* Less than $0.01 GB / month (depending on region)
-	
+------
 # Pricing
 * pay for only what you use
 * no minimum fee
@@ -46,7 +46,7 @@
 	* Storage pricing
 	* Request pricing
 	* Data transfer pricing: data transferred out of Amazon S3
-
+------
 # Versioning
 * protect for accidental overwrites and deletes with no perfomance penalty
 * Generates new version with every upload
@@ -55,4 +55,13 @@
 	* Un-versioned (default)
 	* Versioning enabled
 	* Versioning suspended
-
+------
+# Commands
+* Upload file from aws cli
+```
+aws s3 cp c:/my-folder/myfile.txt s3://mybucket/myfile.txt
+```
+* check bucket contents
+```
+aws s3 ls s3://mybucket
+```

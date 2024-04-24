@@ -19,3 +19,7 @@ set AWS_DEFAULT_REGION=[region]
 ```
 aws iam list-users
 ```
+* Configure aws cli. Run below command which asks for AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION, Default output format
+```
+aws configure
+```
