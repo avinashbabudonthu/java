@@ -38,7 +38,7 @@
 * click `Create user` button
 * We will get success message
 * We will have URL to login to AWS account using this IAM user. Copy and keep it safe
-* Copy `Access Key ID`, `Secret access key` and keep them safe
+* Copy `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and keep them safe
 * Logout from root user account
 * Login with IAM URL and credentials
 ------
