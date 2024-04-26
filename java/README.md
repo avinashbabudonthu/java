@@ -112,6 +112,7 @@
 * [ProtoBuff Protocol Buffer](#ProtoBuff-Protocol-Buffer)
 * [Rabbit MQ](#rabbit-mq)
 * [Ractive Programming](#Ractive-Programming)
+* [RXJava](#RXJava)
 * [ReactJS](#react-js)
 * [Redis](#redis)
 * [REST API](#rest-api)
@@ -346,10 +347,10 @@
 * CodeStar
 ------
 # [Azure](azure)
-* [Materials](azure/azure.md#Materials)
-* [Notes](azure/azure.md#Notes)
-* [Services](azure/azure.md#Services)
-* [Cloud Shell](azure/azure.md#Cloud-Shell)
+* [Materials](azure/README.md#Materials)
+* [Notes](azure/README.md#Notes)
+* [Services](azure/README.md#Services)
+* [Cloud Shell](azure/README.md#Cloud-Shell)
 ------
 # [Cassandra](cassandra)
 * [Materials](cassandra/materials.md)
@@ -817,9 +818,6 @@
 # [JDK 19 Java 19](core-java/jdk-19)
 * [Materials](core-java/jdk-19/jdk-19.md#Materials-in-study-order)
 * [Notes](core-java/jdk-19/jdk-19.md#Notes)
-
-# Reactive Programming
-* [Notes](core-java/notes/reactive-programming.md)
 ------
 # [Couch Base](couch-base)
 * [Materials](couch-base/materials.md)
@@ -1542,8 +1540,11 @@
 * [Rabbit MQ](rabbit-mq/rabbit-mq)
 ------
 # [Ractive Programming](ractive-programming)
-## Examples
+* [Notes](ractive-programming/README.md#Notes)
 * [Mono Practice](ractive-programming/reactive-programming/src/test/java/com/zeros/in/MonoPracticeTest.java)
+------
+# [RXJava](ractive-programming/rxjava)
+* [Notes](ractive-programming/rxjava/README.md#Notes)
 ------
 # [ReactJS](react-js)
 * [Materials](react-js/materials.md)
