@@ -11,23 +11,28 @@
 # EC2 Instances Purchasing Options
 ![picture](imgs/ec2-instances-purchasing-options.jpg)
 ------
-# Instance Family and use cases
+# Instance Types
 * General purpose (t2, m4, m3)
 	* Low traffic websites and web applications
 	* Small and mid-size databases
-* Compute optimized (c4, c3)
+* Compute optimized - C series
 	* High performance front ends like gaming
 	* Video encoding
-* Memory optimized (r3)
+* Memory optimized - R series
 	* High performance databases
 	* Distributed memory caches
-* Storage optimized (i2, d2)
-	* Data warehousing
+* Storage optimized
+	* High frequency online transaction processing (OLTP) systems
+	* Relational and NoSQL databases
+	* Cache for in-memory databases (Ex: Redis)
+	* Data warehousing applications
 	* Log or data-processing applications
+	* Distributed file systemts
 * GPU instances (g2)
 	* 3D application streaming
 	* Machine learning
 	* Graphic based applications
+* Check this link for EC2 instance types - https://ec2instances.info/
 ------
 # Instance metadata
 * Data about instances
