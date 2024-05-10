@@ -3,12 +3,26 @@
 # Important Links:
 * Console - http://aws.amazon.com
 * Certification - https://aws.amazon.com/certification
+* AWS infrastructure - https://infrastructure.aws
+* AWS Global Infrastructure - https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+------
+# AWS History
+* Started on 2002
+* 2004 - Launched SQS
+* 2006 - SQS, S3, EC2
+* 2007 - Launched in Europe
+------
+# How to choose aws region:
+* Compliance - data stays within same geo area
+* Proximity - reduced latency
+* Available services
+* Pricing
 ------
 # AWS Global Data Centers
 * Data Center -> Availability Zone -> Region
 * `Data Centers`: facility that provides shared access to applications and data using a complex network, compute, and storage infrastructure
 * `Availability Zones`: 2 or more data centers are called `Availability Zones`
-* `AWS Region`: 2 or more availability zones are called `Region`. Whenever we are using AWS services typically we deploy our application in AWS geographical area. That geographical area is called `AWS Regions`
+* `AWS Region`: 3 or more availability zones are called `Region`. Whenever we are using AWS services typically we deploy our application in AWS geographical area. That geographical area is called `AWS Regions`
 * Across world there are different AWS regions available
 * When we deploy services, we can choose which regions we need to deploy
 * `Edge Locations`: Used for caching. Our content like media, videos, pictures are cached in the nearest AWS data center locations and delivered to users. It improves performance by lowering the network latency
@@ -147,3 +161,10 @@
 	* MariaDB: 3306 (same as MySQL)
 	* Oracle RDS: 1521
 	* MSSQL Server: 1433
+------
+# AWS global services
+* IAM
+* Route 53
+* CloudFront (CDN)
+* WAF
+------

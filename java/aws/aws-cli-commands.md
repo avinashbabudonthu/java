@@ -23,3 +23,11 @@ aws iam list-users
 ```
 aws configure
 ```
+* Upload file from aws cli
+```
+aws s3 cp c:/my-folder/myfile.txt s3://mybucket/myfile.txt
+```
+* check bucket contents
+```
+aws s3 ls s3://mybucket
+```
