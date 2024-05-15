@@ -15,12 +15,17 @@
 * General purpose (t2, m4, m3)
 	* Low traffic websites and web applications
 	* Small and mid-size databases
-* Compute optimized - C series
-	* High performance front ends like gaming
-	* Video encoding
-* Memory optimized - R series
+* Compute optimized - C series - Great for compute-intensive tasks that require high performance processors
+	* Batch processing work loads
+	* Media transcoding
+	* High performance web servers
+	* High performance computing (HPC)
+	* Scientific modeling & machine learning
+	* Dedicated gaming servers
+* Memory optimized: Fast performance for workloads that process large data sets in memory
 	* High performance databases
 	* Distributed memory caches
+	* R, X, Z1 series
 * Storage optimized
 	* High frequency online transaction processing (OLTP) systems
 	* Relational and NoSQL databases
@@ -28,6 +33,7 @@
 	* Data warehousing applications
 	* Log or data-processing applications
 	* Distributed file systemts
+	* I, D, H1 series
 * GPU instances (g2)
 	* 3D application streaming
 	* Machine learning
@@ -240,6 +246,10 @@ ssh -i pemfile ec2-user@ip-address
 ------
 # Security Groups
 * Little firewals installed per instance basis
+![picture](imgs/0001-sg.jpg)\
+![picture](imgs/0002-sg.jpg)\
+![picture](imgs/0003-sg.jpg)\
+![picture](imgs/0004-sg.jpg)
 ------
 # EC2 dashboard 
 * Resources: Details of instances/resources we have created
