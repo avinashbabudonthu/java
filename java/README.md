@@ -278,7 +278,7 @@
 * [AWS Cli Commands](aws/aws-cli-commands.md)
 * [Certifications](aws/certifications.md) 
 * [Materials](aws/materials.md)
-* [AWS Notes](aws/notes.md)
+* [AWS Notes](aws/README.md)
 * [AWS Difference between SQS and SNS](aws/sqs-vs-sns.md)
 
 ## AWS Services

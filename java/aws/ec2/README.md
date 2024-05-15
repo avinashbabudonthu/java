@@ -217,12 +217,22 @@ echo "<h1>Hello World from $(hostname -f) in AZ $EC2_AVAIL_ZONE</h1>" > /var/www
 * After connecting to EC2 instance using Putty -> run this command
 	* sudo yum update
 ------
+# Connect using SSH from Linux or Mac
+* Update pem file permissions if you get error like `Permissions 0644 for my-file.pem are too open` 
+```
+chmod 0400 my-file.pem
+```
+* connect to ec2 instance
+```
+ssh -i my-file.pem ec2-user@public-ip
+```
+------
 # Connecting from Windows 10 or later
 * Open cmd or powershell
 * Navigate to path where `pem` file is present
 * Run below command
 ```
-ssh -i pemfile ec2-user@ip-address
+ssh -i my-file.pem ec2-user@ip-address
 ```
 ------
 # Connect using EC2 Instance connect
@@ -249,7 +259,8 @@ ssh -i pemfile ec2-user@ip-address
 ![picture](imgs/0001-sg.jpg)\
 ![picture](imgs/0002-sg.jpg)\
 ![picture](imgs/0003-sg.jpg)\
-![picture](imgs/0004-sg.jpg)
+![picture](imgs/0004-sg.jpg)\
+![picture](imgs/0005-sg.jpg)
 ------
 # EC2 dashboard 
 * Resources: Details of instances/resources we have created
