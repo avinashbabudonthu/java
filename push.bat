@@ -1,5 +1,7 @@
 @echo off
 echo -----------------------------------------------
+set HTTP_PROXY=
+set HTTPS_PROXY=
 echo Checking status:
 git status
 echo -----------------------------------------------
