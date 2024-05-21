@@ -28,6 +28,10 @@ copy C:\my-folder\*.txt C:\my-folder-2
 ```
 ren C:\my-folder\file1.txt C:\my-folder\file1-renamed.txt
 ```
+* In the batch file - get batch file directory
+```
+%~dp0
+```
 ------
 # Force stop service
 * Click the `Start` menu
@@ -58,3 +62,4 @@ pkgmgr /iu:TelnetClient
 ```
 * Type `telnet`
 * Enter `q` to quick telnet window
+------
