@@ -405,5 +405,5 @@ sudo yum install stress -y
 	* Google search - install stress amazon linux 2
 ------
 # Elastic Network Interface
-![picture](imgs/eni.jpg)\
+![picture](imgs/eni.jpg)
 * Read - https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/
