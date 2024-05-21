@@ -1,6 +1,12 @@
 # EC2 Elastic Compute Cloud
 ![picture](imgs/instance-life-cycle.jpg)
 ------
+# Commands
+* To know how long instance is up and running. Run below command in EC2 instance console
+```
+uptime
+```
+------
 # Links
 * EC2 instance types - https://aws.amazon.com/ec2/instance-types/
 * Compare EC2 instances - https://ec2instances.info
@@ -398,3 +404,6 @@ sudo yum install stress -y
 	* https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54
 	* Google search - install stress amazon linux 2
 ------
+# Elastic Network Interface
+![picture](imgs/eni.jpg)\
+* Read - https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/
