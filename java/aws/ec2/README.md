@@ -387,7 +387,7 @@ ssh -i my-file.pem ec2-user@ip-address
 * if we need high performance hardware disk then use EC2 Instance store
 * Better IO performance because no network latency
 * EC2 Instance store lost thier storage if they are stopped
-* Good for buffer/cache/temporary Data
+* Good for buffer/cache/scratch data/temporary content
 * Risk of data loss if hardware fails
 * Backup and replication are your responsibility
 ------

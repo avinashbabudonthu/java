@@ -6,7 +6,7 @@
 	* Storage
 	* IOPS
 * check EBS pricing page for current pricing in all regions
-
+------
 # EBS Elastic Block store
 * Persistent block level storage volumes offering consistent and low-latency performance
 * Automatically replicated within its availability zone
@@ -26,7 +26,7 @@
 ![picture](imgs/example-1.jpg)
 * EBS Delete on Termination\
 ![picture](imgs/delete-on-termination.jpg)
-
+------
 # EBS Snapshot Features
 * EBS Snapshot Archive
 	* Move snapshot to `archive tier` that is `75%` cheaper
@@ -39,10 +39,17 @@
 	* Careful on using this. This option is `costly`
 * Archive and Recycle Bin in picture\
 ![picture](imgs/snapshot-features-1.jpg)
-
+------
 # EBS Volume Types
 ![picture](imgs/volume-types-1.jpg)
+![picture](imgs/volume-types-3.jpg)
+![picture](imgs/volume-types-5.jpg)
+![picture](imgs/volume-types-4.jpg)
 ![picture](imgs/volume-types-2.jpg)
-
+------
 # Multi attach
 ![picture](imgs/multi-attach.jpg)
+------
+# Encryption
+![picture](imgs/01-encryption.jpg)
+![picture](imgs/02-encryption.jpg)

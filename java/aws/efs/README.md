@@ -10,6 +10,8 @@
 * Encryption using KMS (Key Management Service)
 * POSIX file system (~Linux) that has standard file API
 * File system scales automatically, pay-per-use, no capacity planning
-
+------
 # Storage classes
+![picture](imgs/02-storage-classes.jpg)
 ![picture](imgs/storage-classes.jpg)
+------
