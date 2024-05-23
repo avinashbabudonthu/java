@@ -145,7 +145,7 @@
 	* No charges for inter AZ data
 ------
 # SSL & TLS
-## Basics
+# Basics
 * SSL refers to `Secure Sockets Layer`. Used to encrypt connections
 * TLS refers to `Transport Layer Security`. Newer version of SSL
 * Nowadays, TLS certificates are mainly used, but people still refer as `SSL`
@@ -163,14 +163,14 @@
 	* Clients can use SNI (Server Name Indication) to specify hostname they reach
 	* Ability to specify security policy to support old version of SSL/TLS (legacy clients)
 
-## SNI - Server Name Indication
+# SNI - Server Name Indication
 * SNI solves the problem of loading multuple SSL certifacates onto one web server (to server multiple websites)
 * It is newer protocol and requires client to `indicate the hostname` of targer server in the initial SSL handshake. Server will then find the correct certifacate or return default one
 * Only works for ALB, NLB (newer generation), CloudFront
 * Does not work for CLB (older gen)\
 ![picture](imgs/001-sni.jpg)
 
-## Elastic Load Balancers and SSL certificates
+# Elastic Load Balancers and SSL certificates
 ![picture](imgs/001-elb-ssl.jpg)
 ------
 # Connection Draining
