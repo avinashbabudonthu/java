@@ -228,7 +228,7 @@
 * Supports RDS (MySQL, Postgres, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)
 * No code changes required for most apps
 * Enforce IAM Authentication for DB. Securely store credentials in AWS Secrets Manager
-* RDS Proxy is never Publicly accessible (must be accessed from VPC)
+* RDS Proxy is never Publicly accessible (must be accessed from VPC)\
 ![picture](imgs/001-rds-proxy.jpg)
 ![picture](imgs/002-rds-proxy.jpg)
 ![picture](imgs/003-rds-proxy.jpg)
@@ -263,7 +263,10 @@
 ![picture](imgs/001-elasticache-security.jpg)
 
 # Patterns of ElastiCache
-* Lazy loading: all the read data is cached. Data can become state in Cache
+* Lazy loading: all the read data is cached. Data can become stale in Cache
 * Write Through: Adds or update data in cache when written to DB (no stale data)
 * Session Store: Store temporary session data in cache (using TTL feature)\
 ![picture](imgs/001-elasticache-lazy-load.jpg)
+
+# ElastiCache use case
+![picture](imgs/elastic-cache-use-case.jpg)
