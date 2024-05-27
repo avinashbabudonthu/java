@@ -8,3 +8,11 @@
 	* Part 4: https://www.youtube.com/watch?v=uPcMXZnolPY
 * AWS Neptune - specially video 7 - https://www.youtube.com/playlist?list=PL0hSJrxggIQrNzRhmIJVwCJnnYFFymZpX
 ------
+# Commands
+* Describe neptune cluster. We can find `your-neptune-db-identifier` in aws console
+```
+aws neptune describe-db-clusters --db-cluster-identifier your-neptune-db-identifier --filters Name=engine,Values=neptune
+
+aws neptune describe-db-clusters --db-cluster-identifier my-neptune-db-001 --filters Name=engine,Values=neptune
+```
+------
