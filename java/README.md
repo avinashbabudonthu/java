@@ -42,7 +42,7 @@
 * [Feign](#feign)
 * [Garbage Collection](#garbage-collection)
 * [Git](#git)
-* [GCP Google Cloud Platform](#google-cloud-platform)
+* [GCP Google Cloud Platform](#GCP-Google-Cloud-Platform)
 * [Gradle](#gradle)
 * [Graph Database](#graph-database)
 * [GraphQL](#graphql)
