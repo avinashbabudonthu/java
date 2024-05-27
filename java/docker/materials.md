@@ -1,4 +1,5 @@
 # Pluralsight
+* https://drive.google.com/file/d/1N0ya5NTHwNmkr7bHbIsSVgCiRj10UFyv/view?usp=sharing
 * Docker and Kubernetes: The Big Picture
 * Getting Started with Docker on Windows [Course]
 * Getting started with Docker
