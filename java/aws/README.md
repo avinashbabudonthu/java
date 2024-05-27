@@ -171,3 +171,5 @@
 * CloudFront (CDN)
 * WAF
 ------
+# Cloud Compare
+* [Cloud Compare](images/compare-cloud.pdf)

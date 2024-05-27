@@ -4,6 +4,9 @@
 * Youtube - https://www.youtube.com/watch?v=TQl9sN3qs3M&ab_channel=Intellipaat
 * Udemy - Microsoft Azure: From Zero to Hero - The Complete Guide
 ------
+# Cloud Compare
+* [Cloud Compare](../aws/images/compare-cloud.pdf)
+------
 # Notes
 * what is cloud? In simple terms - Storage, Computing, Networking, other services managed by third parties. We simply use
 * using azure cli

@@ -102,6 +102,7 @@
 * [NPM](#npm)
 * [Open CSV](#open-csv)
 * [Oracle Database](#Oracle-Database)
+* [Oracle Cloud](#Oracle Cloud)
 * [ORM](#orm)
 * [Open shift](#open-shift)
 * [Performance](#performance)
@@ -1484,6 +1485,8 @@
 * [Practice Tables](oracle/practice-tables.sql)
 * [Queries](oracle/queries.md)
 * [Tables](oracle/tables.md)
+------
+# [Oracle Cloud](oracle-cloud)
 ------
 # [ORM](orm)
 * [Practice Entites](orm/practice-entities)

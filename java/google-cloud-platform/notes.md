@@ -1,3 +1,6 @@
+# Cloud Compare
+* [Cloud Compare](../aws/images/compare-cloud.pdf)
+------
 # Overview of Google Cloud Platform - GCP 
 * GCP has
 	* 20 Regions
