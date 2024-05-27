@@ -78,4 +78,10 @@
 
 # Routing Policy Simple
 ![picture](imgs/01-routing-policy-simple.jpg)
+
+# Routing Policy Weighted
+![picture](imgs/02-routing-policy-weighted.jpg)
+
+# Routing Policy Latency
+![picture](imgs/03-routing-policy-latency.jpg)
 ------
