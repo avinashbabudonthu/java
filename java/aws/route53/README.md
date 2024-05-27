@@ -84,4 +84,10 @@
 
 # Routing Policy Latency
 ![picture](imgs/03-routing-policy-latency.jpg)
+
+# Route 53 health checks
+![picture](imgs/01-health-checks.jpg)
+![picture](imgs/02-health-checks.jpg)
+![picture](imgs/03-health-checks.jpg)
+![picture](imgs/04-health-checks.jpg)
 ------
