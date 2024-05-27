@@ -91,3 +91,15 @@
 ![picture](imgs/03-health-checks.jpg)
 ![picture](imgs/04-health-checks.jpg)
 ------
+# Route Policies - Failover - Active-Passive
+![picture](imgs/01-failover.jpg)
+------
+# Routing Policies Geolocation
+![picture](imgs/01-geolocation.jpg)
+------
+# Routing Policies IP Based
+![picture](imgs/01-ip-based.jpg)
+------
+# Routing Policies Multi Value
+![picture](imgs/01-multi-value.jpg)
+------
