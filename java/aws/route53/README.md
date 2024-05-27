@@ -60,6 +60,22 @@
 * Public vs private hosted Zones\
 ![picture](imgs/001-public-vs-private-hosted-zones.jpg)
 ------
+# Route 53 TTL
+* TTL - Time To Live\
+![picture](imgs/001-ttl.jpg)
+------
+# CNAME vs Alias
+![picture](imgs/cname-vs-alias.jpg)
+------
+# Route 53 Alias
+![picture](imgs/01-alias.jpg)
+------
+# Alias Targets
+![picture](imgs/01-alias-targets.jpg)
+------
 # Routing Poliies
 ![picture](imgs/01-routing-policies.jpg)
+
+# Routing Policy Simple
+![picture](imgs/01-routing-policy-simple.jpg)
 ------
