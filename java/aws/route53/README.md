@@ -60,3 +60,6 @@
 * Public vs private hosted Zones\
 ![picture](imgs/001-public-vs-private-hosted-zones.jpg)
 ------
+# Routing Poliies
+![picture](imgs/01-routing-policies.jpg)
+------

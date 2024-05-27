@@ -50,8 +50,13 @@ taskkill /pid 1258 /f
 ```
 ------
 # nslookup
-* Stands for `Name Server Lookup`
-* Useful command for getting information from the DNS server
+* Stands for `Name Server Lookup
+* `dig` used in Mac or Linux
+* Command to install nslook and dig
+```
+sudo yum insall -y bind-utils
+```
+* Useful command for getting information from the DNS server\
 ![picture](imgs/001-nslookup.jpg)
 ------
 # Install Telnet Client
