@@ -173,3 +173,21 @@
 ------
 # Cloud Compare
 * [Cloud Compare](images/compare-cloud.pdf)
+------
+# Pillars of aws architecture
+* There are 5 Pillars
+	* Costs
+	* performance
+	* Reliability
+	* Security
+	* Operational Excellence
+------
+# Instantiating applications quickly
+* EC2 Instances
+	* Golden AMI: Install your applications, OS dependencies etc beforehand and launch EC2 instance from Golden AMI
+	* Bootstrap using User Data: For dynamic configuration, use User data scripts
+	* Hybrid: Mix of Golden AMI and User Data (Ex: Elastic Beanstalk)
+* RDS Databases
+	* Restore from Snapshot: Database will have schema and data ready
+* EBS Volume
+	* Restore from Snapshot: Disk already formatted and have data
