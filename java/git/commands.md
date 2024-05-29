@@ -63,9 +63,13 @@ git branch <branch>
 ```
 git checkout -b [branch]
 ```
-* Current branch
+* Current branch. This shows current branch along with other branches present in local
 ```
 git branch
+```
+* Show only current branch
+```
+git branch --show-current
 ```
 * Check all branches
 ```
