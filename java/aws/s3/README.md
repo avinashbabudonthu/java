@@ -166,3 +166,13 @@
   }
 ]
 ```
+------
+# S3 Access Logs
+![picture](imgs/01-access-logs.jpg)
+![picture](imgs/02-access-logs.jpg)
+------
+# Access points
+![picture](imgs/01-access-points.jpg)
+------
+# S3 Object Lambda
+![picture](imgs/01-object-lambda.jpg)
