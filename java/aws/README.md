@@ -143,6 +143,8 @@
 * SFTP - Secure File Transfer Protocol
 * CRR - Cross Region Replication
 * SRR - Same Region Replication
+* CORS - Cross Origin Resource Sharing
+* MFA - Multi Factor Authentication
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)

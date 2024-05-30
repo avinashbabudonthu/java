@@ -132,3 +132,37 @@
 ------
 # Batch operations
 ![picture](imgs/01-batch-operations.jpg)
+------
+# Object encryption
+![picture](imgs/01-enryption.jpg)
+![picture](imgs/02-enryption.jpg)
+![picture](imgs/03-enryption.jpg)
+![picture](imgs/04-enryption.jpg)
+![picture](imgs/05-enryption.jpg)
+![picture](imgs/06-enryption.jpg)
+![picture](imgs/07-enryption.jpg)
+![picture](imgs/08-enryption.jpg)
+![picture](imgs/09-enryption.jpg)
+------
+# S3 CORS
+![picture](imgs/01-cors.jpg)
+![picture](imgs/02-cors.jpg)
+![picture](imgs/03-cors.jpg)
+* S3 CORS settings script
+```
+[
+  {
+    "AllowedHeaders": [
+      "Authorization"
+    ],
+    "AllowedMethods": [
+      "GET"
+    ],
+    "AllowedOrigins": [
+      "url of first bucket with http://...without slash at the end"
+    ],
+    "ExposeHeaders": [],
+    "MaxAgeSeconds": 3000
+  }
+]
+```
