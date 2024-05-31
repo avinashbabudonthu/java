@@ -146,6 +146,7 @@
 * CORS - Cross Origin Resource Sharing
 * MFA - Multi Factor Authentication
 * WORM - Write Once Read Many
+* CDN - Content Delivery Network
 ------
 # Private vs Public IPs
 ![picture](images/private-public-ips-1.jpg)
