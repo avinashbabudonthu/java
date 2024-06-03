@@ -164,6 +164,7 @@
 * Other Files
 	* [Markdown file cheet sheet](mark-down-cheat-sheet.md)
 	* [Trainings](trainings.md)
+	* Semantic Versioning 2.0.0 - https://semver.org/
 ------
 # [Angular](angular)
 * [Commands](angular/commands.md)
