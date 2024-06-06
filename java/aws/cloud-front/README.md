@@ -10,3 +10,24 @@
 ------
 # Cloudfront at High level
 ![picture](imgs/01-high-level-overview.jpg)
+------
+# Cloudfront vs s3 cross region replication
+![picture](imgs/01-cloudfront-vs-s3-crr.jpg)
+------
+# ALB or EC2 as an origin
+![picture](imgs/01-cloudfront-alb-ec2-as-origin.jpg)
+------
+# Price classes
+![picture](imgs/01-price-classes.jpg)
+------
+# Cache Invalidations
+![picture](imgs/01-cache-invalidations.jpg)
+------
+# Global accelerator
+![picture](imgs/01-global-accelerator.jpg)
+![picture](imgs/02-global-accelerator.jpg)
+* Global accelerator works on `Anycast IP` concept\
+![picture](imgs/03-global-accelerator.jpg)
+![picture](imgs/04-global-accelerator.jpg)
+![picture](imgs/05-global-accelerator.jpg)
+------
