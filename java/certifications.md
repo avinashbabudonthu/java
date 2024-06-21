@@ -12,4 +12,6 @@
 * Azure Fundamentals - AZ-900
 * Certified Jenkins Engineer (CJE)
 * Terraform Associate (003)
+* Kubernetes for Developers
+* Kubernetes for Administrators
 ------
