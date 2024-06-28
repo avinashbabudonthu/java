@@ -24,14 +24,17 @@ sendevent -F JOB_ON_HOLD -J TESTJOB -T "06/27/2024 09:00"
 ```
 sendevent -F JOB_ON_HOLD -J TESTJOB -T "06/27/2024 14:00"
 ```
-* cancel future send event
+* Cancel future send event
 ```
 sendevent -E JOB_ON_HOLD -J <job name> -U -T "MM/DD/YYYY HH:MM"
 ```
 ------
 # Types of machines
-* Server machine: machine on which `Event Server` and `Scheduler` reside
-* Client machine: machine on which `Remote Agent` is installed. This is the machine where the job actually runs
+* Server machine
+	* Machine on which `Event Server` and `Scheduler` reside
+	
+* Client machine
+	* Machine on which `Remote Agent` is installed. This is the machine where the job actually runs
 ------
 # Types of jobs
 * Command Jobs
@@ -82,8 +85,10 @@ alarm_if_fail: 0
 # JIL Essential attributes
 * insert_job(job name) - used to identify the job. Must be unique. It can be from 1 to 30 characters. 
 * job_type - Specifies type of job. command (c), file watcher (f), box (b)
-* owner - whose user ID the command will be run under on the client machine. Ex: `owner: root`
-* machine: Client machine on which command should run. Ex: `machine: server1`
+* owner - whose user ID the command will be run under on the client machine
+	* Example: `owner: root`
+* machine: Client machine on which command should run
+	* Example: `machine: server1`
 
 # JIL General attributes
 * description - provides comment field, used for documentation purposes only
