@@ -1,5 +1,7 @@
 # [<< Back](../README.md)
 ------
+# [[<< Back](../README.md)] | [All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md)
+------
 # Autosys
 ------
 # Commands
@@ -119,3 +121,5 @@ alarm_if_fail: 0
 * priority
 ------
 # [<< Back](../README.md)
+------
+# [[<< Back](../README.md)] | [All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md)
