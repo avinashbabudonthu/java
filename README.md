@@ -1,7 +1,7 @@
 # Table of Contents
 ------
 # V2 Stack
-* [Table of Contents](java-v2)
+* [Table of Contents](java-v2/README.md)
 ------
 # V1 Stack
 * [All Java stack - Table of Contents](java/README.md#index)
