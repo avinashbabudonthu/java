@@ -7,11 +7,6 @@
 * Maven 3.8.x
 * Spring Boot 3.3.1
 ------
-# Files
-* Main class [Application](src/main/java/com/java/Application.java)
-* Application yaml file [application.yml](src/main/resources/application.yml)
-* POM file [pom.xml](pom.xml)
-------
 # How to run application
 * Application starts on port `9000`
 
@@ -26,6 +21,11 @@
 mvn clean compile spring-boot:run
 ```
 * This command clean compile and run application
+------
+# Files
+* Main class [Application](src/main/java/com/java/Application.java)
+* Application yaml file [application.yml](src/main/resources/application.yml)
+* POM file [pom.xml](pom.xml)
 ------
 # Explanation
 * Go to https://start.spring.io/
