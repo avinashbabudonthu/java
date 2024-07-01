@@ -1,0 +1,4 @@
+spring.application.name: random-port
+
+server.port: 0
+#server.port: '${random.int(8080, 9000)}'
