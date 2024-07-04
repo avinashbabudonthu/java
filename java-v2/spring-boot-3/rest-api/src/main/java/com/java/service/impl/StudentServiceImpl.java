@@ -1,11 +1,14 @@
 package com.java.service.impl;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import com.java.model.Student;
 import com.java.service.StudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -43,6 +46,51 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public Student buildStudent(String name, String book) {
         return Student.builder().id(FAKER.idNumber().valid()).name(name).book(book).build();
+    }
+
+    @Override
+    public Student studentV1(String studentJsonAsText) throws JsonProcessingException {
+        Student student = new ObjectMapper().readValue(studentJsonAsText, Student.class);
+        student.setId(FAKER.idNumber().valid());
+        return student;
+    }
+
+    @Override
+    public Student studentV2(Student student) {
+        student.setId(FAKER.idNumber().valid());
+        return student;
+    }
+
+    @Override
+    public Student studentV3(Student student, String name, String book) {
+        student.setId(FAKER.idNumber().valid());
+        student.setName(name);
+        student.setBook(book);
+        return student;
+    }
+
+    @Override
+    public Student studentV4(Student student, String name, String book) {
+        student.setId(FAKER.idNumber().valid());
+        student.setName(name);
+        student.setBook(book);
+        return student;
+    }
+
+    @Override
+    public Student studentV5(Student student, String name, String book) {
+        student.setId(FAKER.idNumber().valid());
+        student.setName(name);
+        student.setBook(book);
+        return student;
+    }
+
+    @Override
+    public Student studentV6(Student student, String id, String name, String book) {
+        student.setId(id);
+        student.setName(name);
+        student.setBook(book);
+        return student;
     }
 
 }
