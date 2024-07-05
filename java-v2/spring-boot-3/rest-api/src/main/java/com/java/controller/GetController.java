@@ -40,6 +40,12 @@ public interface GetController {
      * Return student
      * @return {@link Student}
      */
+    @Operation(summary = "Return Student object as response")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Return Student object as response",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v1/students", produces = APPLICATION_JSON_VALUE)
     Student studentsV1();
 
@@ -47,6 +53,12 @@ public interface GetController {
      * Return student
      * @return {@link ResponseEntity}&lt;{@link Student}&gt;
      */
+    @Operation(summary = "Return Student object as response in ResponseEntity")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Return Student object as response in ResponseEntity",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v2/students", produces = APPLICATION_JSON_VALUE)
     ResponseEntity<Student> studentsV2();
 
@@ -54,6 +66,12 @@ public interface GetController {
      * Get all students
      * @return {@link List}&lt;{@link Student}&gt;
      */
+    @Operation(summary = "Return list of Student objects as response")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Return list of Student objects as response",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v3/students", produces = APPLICATION_JSON_VALUE)
     List<Student> studentsV3();
 
@@ -63,6 +81,12 @@ public interface GetController {
      * @param book Book name header
      * @return {@link Student}
      */
+    @Operation(summary = "Get name and book as request headers and return Student object as response")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Get name and book as request headers and return Student object as response",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v4/students", produces = APPLICATION_JSON_VALUE)
     Student studentsV4(@RequestHeader("name") String name, @RequestHeader("book") String book);
 
@@ -72,6 +96,12 @@ public interface GetController {
      * @param book Book name request parameter
      * @return {@link Student}
      */
+    @Operation(summary = "Get name and book as request parameters and return Student object as response")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Get name and book as request parameters and return Student object as response",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v5/students", produces = APPLICATION_JSON_VALUE)
     Student studentsV5(@RequestParam("name") String name, @RequestParam("book") String book);
 
@@ -81,6 +111,12 @@ public interface GetController {
      * @param book Book name path variable
      * @return {@link Student}
      */
+    @Operation(summary = "Get name and book as path variables and return Student object as response")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Get name and book as path variables and return Student object as response",
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+            )
+    })
     @GetMapping(value = "/v6/students/{name}/{book}", produces = APPLICATION_JSON_VALUE)
     Student studentsV6(@PathVariable("name") String name, @PathVariable("book") String book);
 

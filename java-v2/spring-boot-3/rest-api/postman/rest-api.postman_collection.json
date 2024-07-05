@@ -407,6 +407,460 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "put",
+			"item": [
+				{
+					"name": "/v1/students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name-1\",\r\n    \"book\": \"book-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v1/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v2/students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name-1\",\r\n    \"book\": \"book-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v2/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v2",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v3/students",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "name",
+								"value": "name-1",
+								"type": "text"
+							},
+							{
+								"key": "book",
+								"value": "book-1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v3/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v3",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v4/students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v4/students?name=name-1&book=book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v4",
+								"students"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "name-1"
+								},
+								{
+									"key": "book",
+									"value": "book-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v5/students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v5/students/name-1/book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v5",
+								"students",
+								"name-1",
+								"book-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v6/students",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "name",
+								"value": "name-1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/put/api/v6/students/100?book=book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"put",
+								"api",
+								"v6",
+								"students",
+								"100"
+							],
+							"query": [
+								{
+									"key": "book",
+									"value": "book-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"item": [
+				{
+					"name": "/v1/students",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name-1\",\r\n    \"book\": \"book-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v1/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v1",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v2/students",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name-1\",\r\n    \"book\": \"book-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v2/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v2",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v3/students",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "name",
+								"value": "name-1",
+								"type": "text"
+							},
+							{
+								"key": "book",
+								"value": "book-1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v3/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v3",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v4/students",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v4/students?name=name-1&book=book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v4",
+								"students"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "name-1"
+								},
+								{
+									"key": "book",
+									"value": "book-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v5/students",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v5/students/name-1/book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v5",
+								"students",
+								"name-1",
+								"book-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v6/students",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "name",
+								"value": "name-1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/delete/api/v6/students/100?book=book-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"delete",
+								"api",
+								"v6",
+								"students",
+								"100"
+							],
+							"query": [
+								{
+									"key": "book",
+									"value": "book-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

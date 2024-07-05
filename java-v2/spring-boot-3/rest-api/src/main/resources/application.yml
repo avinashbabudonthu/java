@@ -1,3 +1,9 @@
 spring.application.name: rest-api
 
 server.port: 9000
+
+springdoc:
+#  api-docs.path: /rest-api-docs
+  swagger-ui:
+#    path: /rest-api-swagger.html
+    operationsSorter: alpha

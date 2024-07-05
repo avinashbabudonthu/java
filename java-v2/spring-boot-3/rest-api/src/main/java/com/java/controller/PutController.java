@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
 
-@Tag(name = "POST APIs")
-@RequestMapping(value = "/post/api")
-public interface PostController {
+@Tag(name = "PUT APIs")
+@RequestMapping(value = "/put/api")
+public interface PutController {
 
     /**
      * Get Student json as text and convert to {@link Student} object
@@ -32,7 +32,7 @@ public interface PostController {
                     content = {@Content(mediaType = TEXT_PLAIN_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v1/students", consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v1/students", consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV1(@RequestBody String studentJsonAsText);
 
     /**
@@ -46,7 +46,7 @@ public interface PostController {
                     content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v2/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v2/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV2(@RequestBody Student student);
 
     /**
@@ -62,7 +62,7 @@ public interface PostController {
                     content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v3/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v3/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV3(@RequestBody Student student, @RequestHeader("name") String name, @RequestHeader("book") String book);
 
     /**
@@ -78,7 +78,7 @@ public interface PostController {
                     content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v4/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v4/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV4(@RequestBody Student student, @RequestParam("name") String name, @RequestParam("book") String book);
 
     /**
@@ -94,7 +94,7 @@ public interface PostController {
                     content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v5/students/{name}/{book}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v5/students/{name}/{book}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV5(@RequestBody Student student, @PathVariable("name") String name, @PathVariable("book") String book);
 
     /**
@@ -111,7 +111,7 @@ public interface PostController {
                     content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
             )
     })
-    @PostMapping(value = "/v6/students/{id}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/v6/students/{id}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV6(@RequestBody Student student, @PathVariable("id") String id, @RequestHeader("name") String name, @RequestParam("book") String book);
 
 }
