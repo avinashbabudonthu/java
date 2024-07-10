@@ -16,7 +16,8 @@
 	* The ONBUILD directive
 	* The ENV Directive
 ------
-# The ENV directive in a Dockerfile can be used to set environment variables. Environment variables are used to set environment variables. Environment variables are key-value pairs that provide information to applications and processes running inside the container. They can influence the behavior of programs and scripts by making dynamic values available during runtime.
+# ENV directive
+* The ENV directive in a Dockerfile can be used to set environment variables. Environment variables are used to set environment variables. Environment variables are key-value pairs that provide information to applications and processes running inside the container. They can influence the behavior of programs and scripts by making dynamic values available during runtime.
 * Environment variables are defined as key-value pairs as per the following format:
 ```
 ENV <key> <value>
