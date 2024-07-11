@@ -2,11 +2,14 @@ package com.java.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.java.model.Student;
+import org.springdoc.core.converters.models.Pageable;
 
 import java.util.List;
 
 public interface StudentService {
     List<Student> getStudents();
+
+    List<Student> getStudents(Pageable pageable);
 
     Student getStudent();
 

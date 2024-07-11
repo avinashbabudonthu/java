@@ -5,11 +5,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import com.java.model.Student;
 import com.java.service.StudentService;
+import lombok.extern.slf4j.Slf4j;
+import org.springdoc.core.converters.models.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
+@Slf4j
 @Service
 public class StudentServiceImpl implements StudentService {
 
@@ -35,6 +37,12 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public List<Student> getStudents() {
+        return buildStudents();
+    }
+
+    @Override
+    public List<Student> getStudents(Pageable pageable) {
+        log.info("page={}, size={}, sort={}", pageable.getPage(), pageable.getSize(), pageable.getSort());
         return buildStudents();
     }
 

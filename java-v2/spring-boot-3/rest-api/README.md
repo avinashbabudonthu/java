@@ -58,6 +58,15 @@ mvn clean compile spring-boot:run
   * Interface has DELETE API declarations
   * Has different ways of writing DELETE APIs
 * [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java) class has API implementation
+
+## API with pagination
+* Refer `studentsV7` method in [GetController](src/main/java/com/java/controller/GetController.java)
+* We can directly use `Pageable`
+* `ParameterObject` is used for swagger documentation
+* Swagger without `ParameterObject`\
+![picture](img/004.jpg)
+* Swagger with `ParameterObject`\
+![picture](img/005.jpg)
 ------
 # Swagger Spring Doc Open API Documentation
 * Pre-requisite for this is to understand how to write APIs. Refer [here](#REST-APIs)

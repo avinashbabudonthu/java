@@ -6,6 +6,7 @@ import com.java.controller.GetController;
 import com.java.model.Student;
 import com.java.service.StudentService;
 import lombok.AllArgsConstructor;
+import org.springdoc.core.converters.models.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -52,6 +53,11 @@ public class GetControllerImpl implements GetController {
     @Override
     public Student studentsV6(String name, String book) {
         return studentService.buildStudent(name, book);
+    }
+
+    @Override
+    public List<Student> studentsV7(Pageable pageable) {
+        return studentService.getStudents(pageable);
     }
 
 }
