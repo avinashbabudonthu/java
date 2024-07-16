@@ -1,3 +1,5 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java
 * Whether you are an experienced Java developer or a newbie, I am sure you must have heard these terminologies many times and taken their definitions for granted. 
 * Recently I had to write one command to execute a jar and I was required to pass all these variables to the executable and I had no idea how they were different from each other.
@@ -30,3 +32,5 @@ public class HelloWorld {
 ```
 * Output
 ![picture](imgs/env-variables-vs-system-vs-progream-arguments-output.jpeg)
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

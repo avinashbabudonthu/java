@@ -416,7 +416,6 @@
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
 * [Notes](core-java/notes/basics.md)
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](core-java/variables-arguments.md)
 * [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
 * [Runtime class - ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
 * [Runtime class - ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
