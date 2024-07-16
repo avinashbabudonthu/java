@@ -4,7 +4,7 @@
 * Whether you are an experienced Java developer or a newbie, I am sure you must have heard these terminologies many times and taken their definitions for granted. 
 * Recently I had to write one command to execute a jar and I was required to pass all these variables to the executable and I had no idea how they were different from each other.
 * Environment variable vs System Property vs Program Arguments in Java\
-![picture](imgs/env-variables-vs-system-vs-progream-arguments.jpeg)
+![picture](img/env-variables-vs-system-vs-progream-arguments.jpeg)
 * Windows
 ```
 D:> set envvar1=val1
@@ -31,6 +31,6 @@ public class HelloWorld {
 }
 ```
 * Output
-![picture](imgs/env-variables-vs-system-vs-progream-arguments-output.jpeg)
+![picture](img/env-variables-vs-system-vs-progream-arguments-output.jpeg)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
