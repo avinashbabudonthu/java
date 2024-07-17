@@ -1,4 +1,4 @@
-### [<<Back](../README.md)
+### [<<Back](https://github.com/avinashbabudonthu/java)
 ------
 # Table of Contents
 ------
@@ -14,4 +14,4 @@
 * Hacker Rank - https://hackerrank.com/
 * Leet Code - https://leetcode.com/
 ------
-### [<<Back](../README.md)
+### [<<Back](https://github.com/avinashbabudonthu/java)
