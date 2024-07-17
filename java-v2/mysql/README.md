@@ -1,7 +1,7 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
 # Examples
-* [Run MySQL using docker](using-docker.md)
+* [Run MySQL using docker](files/using-docker.md)
 * Java application connection URL
 ```
 jdbc:mysql://DATABASE_HOST:DATABASE_PORT/DATABASE_NAME
