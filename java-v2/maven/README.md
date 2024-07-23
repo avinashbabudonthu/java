@@ -1,18 +1,9 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Table of Contents
-* [Autosys](autosys)
-* [Docker](docker)
-* [IntelliJ](intellij)
-* [Maven](maven)
-* [Multi Threading](multi-threading)
-* [MySQL](mysql)
-* [Open SSL](openssl)
-* [Splunk](splunk)
-* [Spring Boot 3](spring-boot-3)
-* [Spring Security](spring-security)
-------
-# Others
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](files/variables-arguments.md)
+# Examples
+* [Dependency Management](files/dependency-management.md)
+* [dependencyManagement vs dependencies tags](files/dependency-management.md#dependencyManagement-vs-dependencies)
+* [Setting the Java Version in Maven](files/maven-java-version.md)
+* [Maven dependency scopes](files/dependency-scopes.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
