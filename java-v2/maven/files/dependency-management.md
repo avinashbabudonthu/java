@@ -3,7 +3,6 @@
 # Enable Dependency Management in Parent Project
 * Dependency management is a mechanism for centralizing the dependency information for a multi-module parent project and its children.
 * When you have a set of projects or modules that inherit a common parent, you can put all the required information about the dependencies in the common pom.xml file. This will simplify the references to the artifacts in the child POMs.
-* parent [parent/pom.xml](parent/pom.xml)
 ```
 <dependencyManagement>
 	<dependencies>
@@ -46,11 +45,6 @@
 # dependencyManagement vs dependencies
 * `dependencies` tag - dependencies downloaded automatically - means sub modules no need to write `<dependency>` tag 
 * `dependencyManagement` tag - sub module have to declare `<dependency>` to inherit dependencies from parent
-* Refer [parent/pom.xml](parent/pom.xml)
-* If we comment `<dependencies>` and uncomment `<dependencyManagement>` then compilation error will come in sub module test classes
-	* [controller/AppTest](parent/controller/src/test/java/com/java/maven/AppTest.java)
-	* [repository/AppTest](parent/repository/src/test/java/com/java/maven/AppTest.java)
-	* [service/AppTest](parent/service/src/test/java/com/java/maven/AppTest.java)
 * In child we can remove `<groupId>`, `<version>` tags. In this case they will be inherited from `parent`
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
