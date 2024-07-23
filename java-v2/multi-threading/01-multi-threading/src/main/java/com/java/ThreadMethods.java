@@ -9,7 +9,8 @@ public class ThreadMethods {
     private void test() {
 //        setName();
 //        setPriority();
-        setUncaughtExceptionHandler();
+//        setUncaughtExceptionHandler();
+        interrupt();
     }
 
     /**
@@ -36,9 +37,9 @@ public class ThreadMethods {
         Thread t1 = new Thread(() -> System.out.println("Inside thread: " + Thread.currentThread().getName() + " with priority: " + Thread.currentThread().getPriority()));
         t1.setName("My thread");
         t1.setPriority(Thread.MAX_PRIORITY);
-        System.out.println("Inside thread: " + Thread.currentThread().getName() +", before starting new thread");
+        System.out.println("Inside thread: " + Thread.currentThread().getName() + ", before starting new thread");
         t1.start();
-        System.out.println("Inside thread: " + Thread.currentThread().getName() +", after starting new thread");
+        System.out.println("Inside thread: " + Thread.currentThread().getName() + ", after starting new thread");
     }
 
     /**
@@ -55,9 +56,28 @@ public class ThreadMethods {
         t1.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
-                System.out.println("Inside thread: " + Thread.currentThread().getName() + ", Exception thrown from thread: " + t.getName() +", exception message: " + e.getMessage());
+                System.out.println("Inside thread: " + Thread.currentThread().getName() + ", Exception thrown from thread: " + t.getName() + ", exception message: " + e.getMessage());
             }
         });
         t1.start();
     }
+
+    private static class BlockingThread extends Thread {
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(1000 * 60 * 60);
+            } catch (Exception e) {
+                System.out.println("Exiting blocking thread: " + Thread.currentThread().getName() + ", isInterrupted: " + isInterrupted());
+            }
+        }
+    }
+
+    private void interrupt() {
+        Thread t1 = new BlockingThread();
+        t1.setName("Blocking thread");
+        t1.start();
+        t1.interrupt();
+    }
+
 }
