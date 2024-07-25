@@ -10,8 +10,12 @@
 * [Profile](java/profile.md)
 * [Certifications](java/certifications.md)
 ------
+# Hacker Rank
+* URL - https://hackerrank.com/
+* [Solutions](hacker-rank)
+------
 # Coding Sites
-* Hacker Rank - https://hackerrank.com/
+
 * Leet Code - https://leetcode.com/
 ------
 ### [<<Back](https://github.com/avinashbabudonthu/java)
