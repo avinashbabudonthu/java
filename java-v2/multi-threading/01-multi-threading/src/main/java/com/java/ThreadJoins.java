@@ -34,6 +34,7 @@ public class ThreadJoins {
     private void test1() throws InterruptedException {
         Thread t1 = new PrintNumbersThread();
         t1.setName("Worker thread 1");
+
         Thread t2 = new PrintNumbersThread();
         t2.setName("Worker thread 2");
 
@@ -55,6 +56,7 @@ public class ThreadJoins {
     private void test2() throws InterruptedException {
         Thread t1 = new PrintNumbersThread();
         t1.setName("Worker thread 1");
+
         Thread t2 = new PrintNumbersThread();
         t2.setName("Worker thread 2");
 
@@ -76,10 +78,10 @@ public class ThreadJoins {
     private void test3() throws InterruptedException {
         Thread t1 = new PrintNumbersThread();
         t1.setName("Worker thread 1");
+        t1.setDaemon(true);
+
         Thread t2 = new PrintNumbersThread();
         t2.setName("Worker thread 2");
-
-        t1.setDaemon(true);
         t2.setDaemon(true);
 
         System.out.println("Starting threads");

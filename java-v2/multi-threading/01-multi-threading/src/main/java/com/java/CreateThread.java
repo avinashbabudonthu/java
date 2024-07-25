@@ -6,15 +6,15 @@ import java.util.List;
 public class CreateThread {
 
     public static void main(String[] args) throws Exception {
-        new CreateThread().test();
+        new CreateThread().execute();
     }
 
-    private void test() throws Exception {
+    private void execute() throws Exception {
 //        method1();
 //        method2();
 //        method3();
-//        startMultipleThreads();
-        printLogBeforeStartingThread();
+        startMultipleThreads();
+//        printLogBeforeStartingThread();
     }
 
     /**
@@ -58,6 +58,7 @@ public class CreateThread {
     }
 
     /**
+     * Create new class extends Thread. Refer NewThread above
      * Output:
      * Inside thread: My thread
      */
@@ -67,6 +68,13 @@ public class CreateThread {
         t1.start();
     }
 
+    /**
+     * Start multiple threads
+     * Output: Order may vary in each execution
+     * Inside: Thread-1
+     * Inside: Thread-0
+     * Inside: Thread-2
+     */
     private void startMultipleThreads() {
         Thread t1 = new Thread(() -> System.out.println("Inside: " + Thread.currentThread().getName()));
         Thread t2 = new Thread(() -> System.out.println("Inside: " + Thread.currentThread().getName()));

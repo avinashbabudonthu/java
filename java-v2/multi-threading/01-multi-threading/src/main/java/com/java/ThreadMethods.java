@@ -3,10 +3,10 @@ package com.java;
 public class ThreadMethods {
 
     public static void main(String[] args) {
-        new ThreadMethods().test();
+        new ThreadMethods().execute();
     }
 
-    private void test() {
+    private void execute() {
 //        setName();
 //        setPriority();
 //        setUncaughtExceptionHandler();
@@ -68,11 +68,18 @@ public class ThreadMethods {
             try {
                 Thread.sleep(1000 * 60 * 60);
             } catch (Exception e) {
+                // below 2 lines are same. Since we extend Thread, isInterrupted() is inherited. So we can directly call
+                // System.out.println("Exiting blocking thread: " + Thread.currentThread().getName() + ", isInterrupted: " + Thread.currentThread().isInterrupted());
+
                 System.out.println("Exiting blocking thread: " + Thread.currentThread().getName() + ", isInterrupted: " + isInterrupted());
             }
         }
     }
 
+    /**
+     * Output
+     * Exiting blocking thread: Blocking thread, isInterrupted: false
+     */
     private void interrupt() {
         Thread t1 = new BlockingThread();
         t1.setName("Blocking thread");
