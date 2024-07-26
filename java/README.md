@@ -1218,9 +1218,6 @@
 * [Timeout](junit-4/junit-4/src/test/java/junit/practice/time/out/TimeoutJunitPractice.java)
 ------
 # [Junit 5](junit-5)
-* [Materials](junit-5/junit-5.md#Materials-in-study-order)
-* [Junit 5 Dependencies](junit-5/junit-5.md#Dependencies)
-* [Junit4 Compatibility](junit-5/junit-5.md#For-Junit4-Compatibility)
 * [AfterAll AfterEach annotations](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
 * [org.junit.jupiter.api.Assertions in Junit 5](junit-5/junit-5/src/test/java/com/junit5/AssertionsJunit5.java)
 * [Assumptions](junit-5/junit-5/src/test/java/com/junit5/Assumptions.java) - Assumptions are used to run tests only if certain conditions are met

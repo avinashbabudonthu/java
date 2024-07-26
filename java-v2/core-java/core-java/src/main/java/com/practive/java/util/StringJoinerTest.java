@@ -1,17 +1,17 @@
-package com.java.strings;
+package com.practive.java.util;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
-@Slf4j
-public class StringJoinerPractice {
+public class StringJoinerTest {
+
+    private static final Logger log = LoggerFactory.getLogger(StringJoinerTest.class);
 
     @Test
     public void commaSeparatedString() {
@@ -49,10 +49,20 @@ public class StringJoinerPractice {
         System.out.println("str:" + str); // str:jack,john,jim,jane
     }
 
-    @Data
-    @AllArgsConstructor
     private class Employee {
         private String firstName;
+
+        public Employee(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
     }
 
     @Test

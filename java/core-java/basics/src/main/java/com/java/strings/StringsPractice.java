@@ -31,11 +31,7 @@ import java.util.stream.Stream;
 @Slf4j
 public class StringsPractice {
 
-    @Test
-    public void createString() {
-        String s1 = new String("jack");
-        log.info("s1={}", s1);
-    }
+
 
     @Test
     public void getbyteArrayFromString() {

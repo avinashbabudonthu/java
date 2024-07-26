@@ -1,10 +1,18 @@
-package com.java.strings;
+package com.practive.java.lang;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Slf4j
-public class StringFormatPractice {
+public class StringTest {
+
+    private static final Logger log = LoggerFactory.getLogger(StringTest.class);
+
+    @Test
+    void createString() {
+        String s1 = new String("jack");
+        log.info("s1={}", s1);
+    }
 
     @Test
     public void stringFormatConventionsAndFlags() {
@@ -22,10 +30,12 @@ public class StringFormatPractice {
 
         log.info("-- right justify -- ");
         String str5 = String.format("num1:%4d, num2:%4d ", 6, 287);
-        String str6 = String.format("num1:%4d, num2:%4d ", 657, 7);
-        String str7 = String.format("num1:%04d, num2:%04d ", 877, 6);
         log.info("str5={}", str5); // str5=num1:   6, num2: 287
+
+        String str6 = String.format("num1:%4d, num2:%4d ", 657, 7);
         log.info("str6={}", str6); // str6=num1: 657, num2:   7
+
+        String str7 = String.format("num1:%04d, num2:%04d ", 877, 6);
         log.info("str7={}", str7); // str7=num1:0877, num2:0006
 
         log.info("-- left justify -- ");

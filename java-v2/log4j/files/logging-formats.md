@@ -1,4 +1,7 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Formats
+* Some logging formats. Refer - https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout
 Format            					| Description
 ------------------------------------| ------------------------------------
 %d{yyyy-MM-dd HH:mm:ss}           	| Date and time format, refer to SimpleDateFormat JavaDoc           
@@ -9,24 +12,5 @@ Format            					| Description
 %m%n								| The message to log and line break
 %M									| To get method name in log. logging with location is 4 - 20 times slower than without location
 %t                  | Current thread name
-
-* https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout
 ------
-# Priorities
-* If priority is defined in log4j.properties, only the same or above priority message will be logged
-```
-package org.apache.log4j;
-
-public class Priority {
-
-  public final static int OFF_INT = Integer.MAX_VALUE;
-  public final static int FATAL_INT = 50000;
-  public final static int ERROR_INT = 40000;
-  public final static int WARN_INT  = 30000;
-  public final static int INFO_INT  = 20000;
-  public final static int DEBUG_INT = 10000;
-  public final static int ALL_INT = Integer.MIN_VALUE;
-  ----
-}
-```
-------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
