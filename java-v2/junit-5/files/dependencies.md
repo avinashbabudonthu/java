@@ -1,3 +1,5 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Junit 5 dependencies
 * Add following dependencies for Junit 5 test cases
 * Check maven central for latest versions
@@ -34,3 +36,5 @@
 	<scope>test</scope>
 </dependency>
 ```
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

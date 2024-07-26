@@ -2,6 +2,7 @@
 ------
 # Formats
 * Some logging formats. Refer - https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout
+
 Format            					| Description
 ------------------------------------| ------------------------------------
 %d{yyyy-MM-dd HH:mm:ss}           	| Date and time format, refer to SimpleDateFormat JavaDoc           
