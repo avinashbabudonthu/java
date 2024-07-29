@@ -1,6 +1,7 @@
 # Docker Commands
 * Check docker version
 ```
+docker version
 docker -v
 docker --version
 ```
