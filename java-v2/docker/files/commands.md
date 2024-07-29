@@ -1,4 +1,17 @@
-# Docker Commands
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
+* Run nginx container
+```
+docker run nginx
+```
+* Run nginx container in detach mode
+```
+docker run -d nginx
+```
+* attach to container which is running in detach mode
+```
+docker attach [container-name/container-id]
+```
 * Check docker version
 ```
 docker version
@@ -245,3 +258,5 @@ docker image prune --all --force
 
 docker rmi -f $(docker images -aq)
 ```
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
