@@ -5,6 +5,7 @@
 * [Random Port](random-port)
 * [REST API](rest-api)
 * [REST API Swagger Spring Doc Open API Documentation](rest-api/#Swagger-Spring-Doc-Open-API-Documentation)
+* [Build docker image and push to docker hub](rest-api/#Build-docker-image-and-push-to-docker-hub)
 * To create schema on start of application. Add this file in `src/main/resources`
 ```
 schema.sql
