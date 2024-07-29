@@ -128,4 +128,26 @@ springdoc.swagger-ui.operationsSorter=alpha
 * APIResponse - Define details of response for different scenarios
 * Tag - used define API class description
 ------
+# Build docker image and push to docker hub
+* Write [Dockerfile](Dockerfile)
+* We are using `openjdk java 17` base image
+* Build image using below command
+```
+docker build . -t rest-api
+``` 
+* Run and check the container
+```
+docker run -it -p 9000:9000 rest-api
+```
+* Open url - http://localhost:9000/swagger-ui/index.html
+* Swagger should start without any issues
+* Tag an image before pushing to docker hub
+```
+docker image tag rest-api donthuavinashbabu/rest-api
+```
+* Push image to docker hub
+```
+docker image push donthuavinashbabu/rest-api
+```
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

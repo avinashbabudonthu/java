@@ -97,7 +97,7 @@ docker image pull tomcat:latest
 
 docker image pull tomcat:9.0
 ```
-* Run the container as daemon. Means run the container in the background
+* Run the container in detach mode. Means run the container in the background
 ```
 -d
 ```
@@ -179,9 +179,9 @@ docker volume ls
 ```
 docker cp [file-path/file-name] [container-id:/path-in-side-container]
 ```
-* Run docker commands in linux machine without running sudo every time
+* Run docker commands in linux machine without running sudo every time. Re login to session after running this command
 ```
-sudo usermod -aG docker $USER. Re login to session after running this command
+sudo usermod -aG docker $USER
 ```
 * Check logs of container
 ```
