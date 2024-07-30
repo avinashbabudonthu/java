@@ -1,11 +1,11 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Docker
-* [Build Docker Image](files/build-docker-image.md)
-* [Directives](files/directives.md)
-* [Commands](files/commands.md)
+# Docker compose files
+* [Start Zookeeper and 1 Kafka broker and Kafka UI](files/docker-compose-1-broker.yml)
+* [Start Zookeeper and 2 Kafka brokers and Kafka UI](files/docker-compose-2-brokers.yml)
 ------
-# Dockerfiles
-* [Spring Boot 3 Java 17 Dockerfile](files/Dockerfile-spring-boot-3-java-17.md)
+# Reference and Materials
+* https://docs.docker.com/compose/
+* https://docs.docker.com/reference/cli/docker/compose/
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

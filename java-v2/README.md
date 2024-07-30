@@ -4,6 +4,7 @@
 * [Autosys](autosys)
 * [Core Java](core-java)
 * [Docker](docker)
+* [Docker Compose](docker-compose)
 * [IntelliJ](intellij)
 * [Junit 5](junit-5)
 * [Log4J](log4j)
