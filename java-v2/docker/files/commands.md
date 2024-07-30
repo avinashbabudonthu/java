@@ -258,5 +258,35 @@ docker image prune --all --force
 
 docker rmi -f $(docker images -aq)
 ```
+* Pull redis image with 4.0 tag
+```
+docker run redis:4.0
+
+4.0 - tag
+
+default tag is latest
+```
+* -i - interactive mode
+* -t - interact with terminal
+* -p - port mapping
+```
+host-port:container-port
+```
+* volume mapping. Map directory outside container that is docker host to directory inside the container
+```
+docker run -v //C:/folder-1:/var/container/folder-1
+```
+* inspect: Gives container details like mount, stage, configs, networks etc
+```
+docker inspect [container-id/container-name]
+```
+* container logs
+```
+docker logs [container-id/container-name]
+```
+* Pull & Run jenkins container latest tag
+```
+docker run jenkins/jenkins
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
