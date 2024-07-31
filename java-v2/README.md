@@ -7,6 +7,8 @@
 * [Docker Compose](docker-compose)
 * [IntelliJ](intellij)
 * [Junit 5](junit-5)
+* [Kubernetes](kubernetes)
+* [Linux](linux)
 * [Log4J](log4j)
 * [Maven](maven)
 * [Multi Threading](multi-threading)

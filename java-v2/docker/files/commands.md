@@ -288,5 +288,46 @@ docker logs [container-id/container-name]
 ```
 docker run jenkins/jenkins
 ```
+* Container does not take up more than 50% CPU of host machine
+```
+docker run --cpus=.5 ubuntu
+```
+* Limit the amount of memory the container can use. In this case it limits to 100 MB
+```
+docker run --memory=100m ubuntu
+```
+* Create docker volume
+```
+docker volume create volume_1
+```
+* Use docker volume created above to run container
+```
+docker run -v volume_1:/var/lib/mysql mysql
+```
+* Above volume creates in docker internal path like `/var/lib/docker`. But if we want to use external drive/folder as volume we can use like below. This volume binding is called `bind mount`. Above one is called `volume mount`
+```
+docker run -v C:/myfolder:/var/lib/mysql mysql
+```
+* Another way of monting the volume. Using `--mount` command
+```
+docker run --mount type=bind,source=location-in-host,target=location-in-container mysql
+```
+* Docker by default has 3 networks. `bridge`, `none`, `host`. Default is `host`. Connect container to network using below command
+```
+docker run ubuntu --network=none
+docker run ubuntu --network=host
+```
+* Create docker network
+```
+docker network create --driver bridge --subnet 182.18.0.0/16 --gateway 182.18.0.1 my-network-1
+```
+* List networks
+```
+docker network ls
+```
+* To check network details like subnet, gateway etc
+```
+docker network inspect [network-name]
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
