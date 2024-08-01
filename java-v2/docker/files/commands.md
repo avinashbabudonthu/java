@@ -12,9 +12,12 @@ docker run -d nginx
 ```
 docker attach [container-name/container-id]
 ```
-* Check docker version
+* Check docker version with client and server details
 ```
 docker version
+```
+* Check version and build number
+```
 docker -v
 docker --version
 ```
@@ -34,7 +37,7 @@ docker-machine env
 ```
 docker-machine ip
 ```
-* get information above the container like ip address etc
+* get information about the container like ip address etc
 ```
 docker inspect containerId
 ```
@@ -60,19 +63,19 @@ docker container ls --all
 		* If we give this option, when we press Ctrl+C container will stop without running docker stop again
 	* `-p 9080:8080` - Does port mapping. 9080 == port number on the host system where container is running. 8080 == port number of application running in the container. We are mapping 8080 port of container to 9080 port on our system, so we can hit url with 9080
 ```
-docker run -it -p 9080:8080 image-name
-docker container run -it -p 9080:8080 image-name
+docker run -p 9080:8080 -it image-name
+docker container run -p 9080:8080 -it image-name
 ```
-* Build docker image using Dockerfile. Run from directory where Dockerfile is present
+* Build docker image using Dockerfile. Run from directory where Dockerfile is present. `-t` to give name to image
 ```
-docker build . -t [image-name]
+docker build -t [image-name] . 
 ```
 * Give name to docker container while starting the container
 	* `--name` : to give a name to container
 	* `-p` : to map host system port to application port in container
 	* `-d` : run the container in the background as deamon
 ```
-docker run -d --name applicationName -p 8080:8000 imageName
+docker run -d -p 8080:8000 --name applicationName imageName
 ```
 * Stop docker container
 ```
@@ -159,7 +162,7 @@ docker login
 ```
 docker push [image-name]
 ```
-* Bind mount C:/docker/dockerfile from local system to /app folder in container
+* Bind mount `C:/docker/dockerfile` from local system to /app folder in container
 ```
 docker run -it -v C:/docker/dockerfile:/app -d image-name
 ```
@@ -208,13 +211,13 @@ docker create
 ```
 * Build docker image
 ```
-docker build . -t docker-image-with-docker-file
+docker build -t docker-image-with-docker-file .
 ```
 * Tag an image before pushing to docker hub
 ```
-docker image tag [image-id] [docker-id]/[image-name]
+docker image tag [image-id] [dockerhub-username]/[image-name]
 ```
-* Push image to docker hub. Image name should start with dockerhub-id
+* Push image to docker hub. Image name should start with dockerhub-username
 ```
 docker image push [image-name]
 docker image push avinashbabudonthu/docker-image-with-docker-file
@@ -308,7 +311,7 @@ docker run -v volume_1:/var/lib/mysql mysql
 ```
 docker run -v C:/myfolder:/var/lib/mysql mysql
 ```
-* Another way of monting the volume. Using `--mount` command
+* Another way of mounting the volume. Using `--mount` command
 ```
 docker run --mount type=bind,source=location-in-host,target=location-in-container mysql
 ```

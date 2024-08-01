@@ -277,7 +277,7 @@ USER <user>
 ```
 USER <user>:<group>
 ```
-* You need to make sure that the <user> and <group> values are valid user and group names. Otherwise, the Docker daemon will throw an error while trying to run the container.
+* You need to make sure that the `<user>` and `<group>` values are valid user and group names. Otherwise, the Docker daemon will throw an error while trying to run the container.
 * Using USER Directive in the Dockerfile
 * In this example we are going to use the USER directive in the Dockerfile to set the default user. We will be installing the Apache web server and changing the user to www-data. Finally, we will execute the whoami command to verify the current user by printing the username.
 * Create a new directory named user-example

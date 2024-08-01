@@ -18,5 +18,6 @@ docker image tag [my-app] [docker-username]/[my-app]
 ```
 docker image push [docker-username]/[my-app]
 ```
+* Refer - Spring Boot 3 with Dockerfile example [here](../../spring-boot-3/rest-api#Build-docker-image-and-push-to-docker-hub)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

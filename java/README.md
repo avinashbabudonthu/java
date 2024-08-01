@@ -771,9 +771,6 @@
 # [Core Java Regex](core-java/regex)
 * [Regular Expressions Examples](core-java/regex/README.md#Regular-Expressions-Examples)
 ------
-# Multi threading
-* [Materials](core-java/multi-threading/materials.md)
-* [Notes](core-java/notes/multi-threading.md)
 ## Examples
 * [Thread Practice](core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java)
 ------
