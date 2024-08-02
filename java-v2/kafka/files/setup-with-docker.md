@@ -1,3 +1,5 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Kafka setup with Docker
 * Docker compose files
 	* [Start Zookeeper and 1 Kafka broker and Kafka UI](../../docker-compose/files/docker-compose-1-broker.yml)
@@ -21,3 +23,5 @@ docker-compose down
 ------
 # Reference
 * https://www.baeldung.com/ops/kafka-docker-setup
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

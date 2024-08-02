@@ -1,3 +1,5 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Kafka Confluent Platform Setup in windows machine Using Docker
 * Clone repo - https://github.com/confluentinc/cp-all-in-one.git
 ```
@@ -30,3 +32,5 @@ docker ps
 ## Reference
 * https://nielsberglund.com/2019/06/18/confluent-platform--kafka-for-a-.net-developer-on-windows/
 * https://nielsberglund.com/2018/07/10/install-confluent-platform-kafka-on-windows/
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
