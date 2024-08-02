@@ -1237,8 +1237,6 @@
 ------
 # [Kafka](kafka)
 * [Materials](kafka/materials.md)
-* [Notes](kafka/kafka.md)
-* [Kafka confluent platform setup](kafka/kafka-confluent-platform-setup.md)
 * [Kafka connect notes](kafka/kafka-connect-notes.md)
 * [Commands](kafka/commands.md)
 * [Deserialization Error Handling Spring Boot](kafka/deserialization-error-handling-spring-boot)
@@ -1249,7 +1247,6 @@
 * [Kafka Streams](kafka/kafka-streams)
 * [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
 * [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
-* [Setup Kafka with Docker](kafka/setup-with-docker/setup-with-docker.md)
 * [kafka streams word count example](kafka/kafka-streams/word-count)
 * [Kafka and Kafka UI with Docker](kafka/kafka.md#Kafka-and-Kafka-UI-with-Docker)
 ------
