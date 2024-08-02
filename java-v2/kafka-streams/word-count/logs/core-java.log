@@ -1,3 +1,1 @@
-2024-08-02 17:10:03 INFO  App:8 - hello world
-2024-08-02 17:10:03 INFO  App:9 - hello world 2
-2024-08-02 17:10:03 DEBUG App:10 - hello world 3
+2024-08-02 21:17:44 INFO  Main:28 - {default.value.serde=class org.apache.kafka.common.serialization.Serdes$StringSerde, bootstrap.servers=localhost:9092, auto.offset.reset=earliest, application.id=word-count, default.key.serde=class org.apache.kafka.common.serialization.Serdes$StringSerde}

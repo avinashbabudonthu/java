@@ -47,6 +47,13 @@
             <version>1.18.34</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
