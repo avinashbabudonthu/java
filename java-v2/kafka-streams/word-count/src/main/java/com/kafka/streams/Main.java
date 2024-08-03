@@ -27,5 +27,5 @@ public class Main {
         Properties properties = kafkaProperties();
         log.info("{}", properties);
     }
-    
+
 }
