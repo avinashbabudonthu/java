@@ -10,6 +10,7 @@ import org.apache.kafka.streams.kstream.KGroupedStream;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KTable;
 import org.apache.kafka.streams.kstream.KeyValueMapper;
+import org.apache.kafka.streams.kstream.Named;
 import org.apache.kafka.streams.kstream.Produced;
 import org.apache.kafka.streams.kstream.ValueMapper;
 
@@ -27,7 +28,8 @@ public class Main {
         // application.id
         properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "word-count");
         // bootstrap.servers
-        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
+//        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29093");
         // default.key.serde
         properties.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         // default.value.serde
@@ -76,7 +78,7 @@ public class Main {
         KGroupedStream<String, String> groupByKeyStream = selectKeyStream.groupByKey();
 
         // convert KTable to KStream
-        KTable<String, Long> wordCounts = groupByKeyStream.count();
+        KTable<String, Long> wordCounts = groupByKeyStream.count(Named.as("Counts"));
 
         // write kafka streams to output topic
         wordCounts.toStream().to("word-count-output", Produced.with(Serdes.String(), Serdes.Long()));
