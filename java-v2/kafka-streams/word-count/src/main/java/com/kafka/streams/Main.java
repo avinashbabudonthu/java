@@ -29,7 +29,7 @@ public class Main {
         properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "word-count");
         // bootstrap.servers
 //        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29093");
+        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
         // default.key.serde
         properties.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         // default.value.serde

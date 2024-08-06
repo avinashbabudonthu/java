@@ -26,5 +26,25 @@
 	* Are prefixed by `application.id` parameter
 	* Should never be deleted, altered and published to
 ------
+# KStreams
+* All `inserts`
+* Similar to log
+* Infinite
+* Unbounded data streams
+------
+# KTable
+* Upserts on non null values
+* Deletes on null values
+* Similar to table
+* Parallel with log compacted topics
+------
+# When to KStrams vs KTable
+* KStreams reading from topic that is not compacted
+* KTable reading from topic that is log compacted (aggregated)
+
+* KStream if new data is partial information or transactional
+* KTable if you need structures like `database table` where every update is atomic (example: Bank transaction)
+
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
