@@ -1,9 +1,14 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
-* [To automatically clear unused imports](files/clear-unused-imports.md)
-* [Disable class preview mode](files/disable-preview-mode.md)
-* [Disable Wild Card Imports](files/disable-wild-card-imports.md)
-* [Accept Non Trusted Certificates](files/accept-non-trusted-certificates.md)
+# Junit 4 dependencies
+* Add below dependency in pom.xml. Refer central repository for latest version
+```
+<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>4.12</version>
+	<scope>test</scope>
+</dependency>
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

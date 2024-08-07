@@ -1,9 +1,7 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
-* [To automatically clear unused imports](files/clear-unused-imports.md)
-* [Disable class preview mode](files/disable-preview-mode.md)
-* [Disable Wild Card Imports](files/disable-wild-card-imports.md)
-* [Accept Non Trusted Certificates](files/accept-non-trusted-certificates.md)
+# Remove import wildcards
+* Remove intelliJ adding `*` in imports
+![picture](../img/000003.png)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

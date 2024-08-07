@@ -1,9 +1,14 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
-* [To automatically clear unused imports](files/clear-unused-imports.md)
-* [Disable class preview mode](files/disable-preview-mode.md)
-* [Disable Wild Card Imports](files/disable-wild-card-imports.md)
-* [Accept Non Trusted Certificates](files/accept-non-trusted-certificates.md)
+# Mockito dependency
+* Add below dependency in pom.xml. Check central repository for latest version
+```
+<dependency>
+	<groupId>org.mockito</groupId>
+	<artifactId>mockito-core</artifactId>
+	<version>2.1.0-RC.2</version>
+	<scope>test</scope>
+</dependency>
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

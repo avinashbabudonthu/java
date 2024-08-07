@@ -106,11 +106,3 @@ File -> Settings -> Editor -> Inspections -> JVM Languages -> Serializable class
 * Now, if your class implements Serializable, you will see highlight and alt+Enter on class name will ask you to generate private static final long serialVersionUID.
 * Faster way to find this setting - you might use hotkey `Ctrl+Shift+A (find action)`, type `Serializable class without 'serialVersionUID'` - the first is the one
 ------
-# Remove import wildcards
-* Remove intelliJ adding `*` in imports
-![picture](img/intellij-wildcard-imports.png)
-------
-# Accept non trusted certificates
-* File > Settings > Tools > Server certificates > check `Accept non-trusted certificates automatically`
-![picture](img/accept-non-trusted-certificates.jpg)
-------
