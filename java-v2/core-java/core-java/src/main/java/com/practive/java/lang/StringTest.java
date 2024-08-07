@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
+
 public class StringTest {
 
     private static final Logger log = LoggerFactory.getLogger(StringTest.class);
@@ -99,6 +101,16 @@ public class StringTest {
         String str2 = "Ana got %s%% percentage";
         String result = String.format(str2, "90");
         System.out.println(result);
+    }
+
+    /**
+     * Output: [hello, world, welcome, to, java]
+     */
+    @Test
+    void splitBySpace() {
+        String inputString = "hello world welcome to java";
+        String[] splitBySpace = inputString.split("\\s+");
+        log.info("{}", Arrays.deepToString(splitBySpace));
     }
 
 }
