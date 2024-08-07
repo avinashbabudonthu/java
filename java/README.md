@@ -1238,7 +1238,6 @@
 # [Kafka](kafka)
 * [Materials](kafka/materials.md)
 * [Kafka connect notes](kafka/kafka-connect-notes.md)
-* [Commands](kafka/commands.md)
 * [Deserialization Error Handling Spring Boot](kafka/deserialization-error-handling-spring-boot)
 * [Kafka with Core Java](kafka/kafka-core-java)
 * [Kafka Core Java Avro](kafka/kafka-core-java-avro)

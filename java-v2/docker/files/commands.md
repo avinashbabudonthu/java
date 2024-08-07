@@ -108,10 +108,15 @@ docker image pull tomcat:9.0
 ```
 -e
 ```
-* Logging into and accessing the container
+* Logging into container and start bash
 ```
 docker exec -it [container-id] bash
+
 docker container exec -it [container-id] bash
+```
+* Logging into container and accessing logs
+```
+docker exec -it [id] tail -f /var/log/broker.log
 ```
 * Exit the container accessed using command `docker exec`
 ```
@@ -189,6 +194,7 @@ sudo usermod -aG docker $USER
 * Check logs of container
 ```
 docker logs [container id/name]
+
 docker container logs [container id/name]
 ```
 * Monitor the logs

@@ -167,5 +167,29 @@ KStream<String, Long> newStream = stream.through("user-clicks-topic");
 KTable<String, Long> newStream = table.through("user-clicks-topic");
 ```
 ------
+# Transform KTable to KStream
+* Helpful to transform KTable to KStream in order to keep changelog of all the changes to KTable
+* Can be done with below code
+```
+KTable<byte[], String> table = ...;
+
+// Overloaded toStream() methods are available. Check API documentation
+KStream<byte[], String> stream = table.toStream();
+```
+------
+# Transform KStream to KTable
+* 2 ways
+* Using `groupByKey()` and aggregation step
+```
+KTable<String, Long> table = stream.groupByKey().count();
+```
+* Writing to kafka and read as KTable
+```
+stream.to("intermediary-topic")
+stream.to("intermediary-topic", org.apache.kafka.streams.kstream.Produced.with(Serdes.String(), Serdes.Long()));
+
+KTable<String, String> table = builder.table("intermediary-topic");
+```
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------

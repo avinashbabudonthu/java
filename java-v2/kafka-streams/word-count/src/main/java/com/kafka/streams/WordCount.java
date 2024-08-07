@@ -18,9 +18,9 @@ import java.util.List;
 import java.util.Properties;
 
 @Slf4j
-public class Main {
+public class WordCount {
     public static void main(String[] args) {
-        new Main().execute();
+        new WordCount().execute();
     }
 
     private Properties kafkaProperties() {

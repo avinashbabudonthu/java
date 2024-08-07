@@ -20,6 +20,8 @@ Creating kafka_kafka_1     ... done
 ```
 docker-compose down
 ```
+* Wait for 2 minutes for Kakfka UI to initiate
+* Open Kafka UI - http://localhost:8080
 ------
 # Reference
 * https://www.baeldung.com/ops/kafka-docker-setup

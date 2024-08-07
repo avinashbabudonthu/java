@@ -1,9 +1,8 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
-* [Notes](files/notes.md)
-* [Setup kafka with docker](files/setup-with-docker.md)
-* [Kafka confluent Platform Setup](files/kafka-confluent-platform-setup.md)
-* [Commands](files/commands.md)
+# Exmaples
+* [Get API Response to Test scripts](files/response-to-test-script.md)
+* [Print Response to Console](files/print-response-in-console.md)
+* [Define variables like protocol host port in pre request scripts](files/protocol-host-port.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
