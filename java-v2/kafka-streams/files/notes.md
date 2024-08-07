@@ -7,7 +7,7 @@
 	* Data Enrichment
 	* Fraud Detection
 	* Monitoring and Alerting
-* Stand java application library
+* Standard java application library
 * No need to create separate kafka clusters
 * Highly scalable, elastic and fault tolerant
 * Exactly once capabilities - means process the record exactly once
@@ -45,6 +45,22 @@
 * KStream if new data is partial information or transactional
 * KTable if you need structures like `database table` where every update is atomic (example: Total Bank balance)
 ------
+# Filter and FilterNot
+* Takes one record and produces zero or one record
+
+## Filter
+* Does not change keys or values
+* Does not trigger re-partition
+* For KStreams and KTables
+* example
+```
+KStream<String, Long> positives = stream.filter((key,value) -> value > 0);
+```
+* Above example keeps record (foo, 10). Deletes (bar, -5)
+
+## FilterNot
+* Inverse of Filter
+------
 # Map and MapValues
 * Takes one record and produces one record
 
@@ -63,28 +79,12 @@ KStream<byte[], String> upperCase = stream.mapValues(value -> value.toUpperCase(
 * Triggers re-partition
 * For KStreams only
 ------
-# Filter and FilterNot
-* Takes one record and produces zero or one record
-
-## Filter
-* Does not change keys or values
-* Does not trigger re-partition
-* For KStreams and KTables
-* example
-```
-KStream<String, Long> positives = stream.filter((key,value) -> value > 0);
-```
-* Above example keeps record (foo, 10). Deletes (bar, -5)
-
-## FilterNot
-* Inverse of Filter
-------
 # FlatMap and FlatMapValues
 * Takes one record and produces zero, one or more records
 
 ## FlatMapValues
 * Does not changes keys
-* Does not trigger re-partial
+* Does not trigger re-partition
 * For KStreams only
 * Example
 ```
