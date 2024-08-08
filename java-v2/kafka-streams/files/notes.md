@@ -191,5 +191,102 @@ stream.to("intermediary-topic", org.apache.kafka.streams.kstream.Produced.with(S
 KTable<String, String> table = builder.table("intermediary-topic");
 ```
 ------
+# Advanced transformations and operations
+## KStream advanced operations
+* peek
+* Transform / TransformValues
+
+## KTable stateful operations
+* groupBy
+
+## KGroupedStream / KGroupedTable operations
+* count
+* reduce
+* aggregate
+------
+# KTable GroupBy
+* Allows to perform more aggregations with in KTable
+* Triggers re-partition because key changes
+```
+KTable<String, Integer> groupByTable = table.groupBy(
+	(key,value) -> KeyValue.pair(value, value.length()),
+	Serdes.String(), /* key (note: key is modified) */
+	Serdes.Integer() /* value (note: type is modified from String to Integer) */
+);
+```
+------
+# KGroupedStream / KGroupedTable Count operation
+* KGroupedStream / KGroupedTable are obtained after `groupBy / groupByKey` call on KStream / KTable
+* `Count` counts the number of records by group key
+* If used on KGroupedStream
+	* Null keys or null values are ignored in count
+* If used on KGroupedTable
+	* Null keys are ignored
+	* Null values are treated as `delete`
+------
+# KGroupedStream Aggregate
+* Need `initializer (of any type)`, `adder`, `Serde for value`, `State Store Name (name of aggregation)`
+* Example: Count total string length by key
+```
+KTable<byte[], Long> aggregateResult = groupedStream.aggregate(
+	() -> 0L, /* initializer */
+	(aggKey, newValue, currentAggregateValue) -> currentAggregateValue + newValue.length(), /* adder */
+	Serdes.Long(), /* serde for aggregate value */
+	"aggregated-stream-store-name" /* state store name */
+);
+```
+------
+# KGroupedTable Aggregate
+* Need `initializer (of any type)`, `adder`, `substractor`, `Serde for value`, `State Store Name (name of aggregation)`
+* Example: Count total string length by key
+```
+KTable<byte[], Long> aggregateResult = groupedStream.aggregate(
+	() -> 0L, /* initializer */
+	(aggKey, newValue, currentAggregateValue) -> currentAggregateValue + newValue.length(), /* adder */
+	(aggKey, newValue, currentAggregateValue) -> currentAggregateValue - newValue.length(), /* substractor */
+	Serdes.Long(), /* serde for aggregate value */
+	"aggregated-table-store-name" /* state store name */
+);
+```
+------
+# KGroupedStream KGroupedTable Reduce
+* Similar to Aggregate but the result type has to be same as input type
+* (Int, Int) -> Int (example: a * b)
+* (String, String) -> String (example: concat(a,b))
+* Code sample
+```
+KTable<String, String> aggregatedStream = groupedStream.reduce(
+	(agggregateValue, newValue) -> agggregateValue + newValue, /* adder */
+	"reduce-stream-store-name" /* state store name */
+);
+
+KTable<Long, Long> aggregatedStream = groupedTable.reduce(
+	(agggregateValue, newValue) -> agggregateValue + newValue, /* adder */
+	(agggregateValue, newValue) -> agggregateValue - newValue, /* substractor */
+	"reduce-stream-store-name" /* state store name */
+);
+```
+------
+# KStream peek
+* Allows to apply side effect opeations on KStream and return same KStream as result
+* Side effects could be
+	* printing stream to the console
+	* Statistics collection like number of records processed etc
+* Warning: It could be execute multiple times (in case of failure). Means no guarantee of processed only once
+```
+KStream<byte[], String> stream = ...;
+
+KStream<byte[], String> printStream = stream.peek(
+	(key, value) -> System.out.println("key = " + key + "value = " + value)
+);
+```
+------
+# KStream Transform TransformValues
+* Applies `Transform` to each record
+* `Transform` leverages low level `Processor API`
+* TransformValues does not trigger re-partition
+------
+
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------

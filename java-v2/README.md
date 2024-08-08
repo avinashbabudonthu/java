@@ -9,6 +9,7 @@
 * [Junit 4](junit-4)
 * [Junit 5](junit-5)
 * [Kafka](kafka)
+* [Kafka Connect](kafka-connect)
 * [Kafka Streams](kafka-streams)
 * [Kubernetes](kubernetes)
 * [Linux](linux)
