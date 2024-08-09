@@ -2,6 +2,7 @@
 ------
 # Kafka producer code
 * Refer [Properties for Kafka Producer to connect to kafka](../../kafka-streams/files/kafka-producer-properties.md)
+* <a href="../../kafka-streams/files/kafka-producer-properties.md" target="_blank">Properties for Kafka Producer to connect to kafka</a>
 * Send message to kafka without key
 ```
 import org.apache.kafka.clients.producer.KafkaProducer;
