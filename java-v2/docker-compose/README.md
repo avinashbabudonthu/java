@@ -7,7 +7,7 @@
 * [Start Zookeeper and 2 Kafka brokers and Kafka UI](files/docker-compose-2-brokers.yml)
 	* Run `docker-compose up -d` to start containers
 	* Run `docker-compose down` to stop and remove containers
-* [Start Zookeeper and 2 Kafka brokers and Kafka UI with custom network](file/docker-compose-kafka-1-broker-with-network.yml)
+* [Start Zookeeper and 2 Kafka brokers and Kafka UI with custom network](files/docker-compose-kafka-1-broker-with-network.yml)
 	* Run `docker-compose up -d` to start containers
 	* Run `docker-compose down` to stop and remove containers
 ------

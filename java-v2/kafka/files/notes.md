@@ -439,4 +439,9 @@ public class AppConfig{
 # Log Compaction
 
 ------
+# What is Exactly Once?
+* Exactly once is ability to guarantee that data processing on each message will happen only once and that pushing message back to kafka will also happen only once (kafka will de-dup)
+* Guarantee when both input and output system is kafka, not for kafka to external system
+* Can get exactly once if kafka brokers version is `>=0.11` and kafka streams client version is `>=0.11`
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
