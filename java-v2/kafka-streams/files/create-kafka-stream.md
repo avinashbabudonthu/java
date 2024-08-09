@@ -39,7 +39,7 @@ private void execute() {
 }
 ```
 * Set custom serdes
-* For `JsonSerializer`, `JsonDeserializer` add `kafka-connect` dependency. Refer [Kafka connect dependencies](../kafka-connect/files/dependencies.md)
+* For `JsonSerializer`, `JsonDeserializer` add `kafka-connect` dependency. Refer [Kafka connect dependencies](../../kafka-connect/files/dependencies.md)
 ```
 import org.apache.kafka.common.serialization.Serializer;
 import com.fasterxml.jackson.databind.JsonNode;
