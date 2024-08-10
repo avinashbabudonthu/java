@@ -28,9 +28,11 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic [topic-name]
 ```
 * Kafka consumer to receive message
 ```
-kafka-console-consumer.bat --topic [topic-name] --zookeeper localhost:2181
+kafka-console-consumer.bat --zookeeper localhost:2181 --topic [topic-name]
 
 kafka-console-consumer.bat --zookeeper localhost:2181 --topic [topic-name] --from-beginning --property print.key=true --property key.separator=,
+
+kafka-console-consumer.bat --zookeeper localhost:2181 --topic [topic-name] --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
 ```
 * Read messages from beginning
 ```

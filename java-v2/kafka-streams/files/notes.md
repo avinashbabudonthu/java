@@ -286,7 +286,44 @@ KStream<byte[], String> printStream = stream.peek(
 * `Transform` leverages low level `Processor API`
 * TransformValues does not trigger re-partition
 ------
+# Joins
+* What is join? - Joining means taking KStream / KTable and creating new KStream / KTable from it
+* Windowed joins - limiting the data that we join by date time. With this we can limit the amount of data we join
+* Join types - [Operand - Type - (INNER) JOIN - LEFT JOIN - OUTER JOIN]
+	* KStream to KStream - Windowed - Supported - Supported - Supported
+	* KTable to KTable - Non-Windowed - Supported - Supported - Supported
+	* KStream to KTable - Non-Windowed - Supported - Supported - Not Supported
+	* KStream to GlobalKTable - Non-Windowed - Supported - Supported - Not Supported
+	* KTable to GlobalKTable - N/A - Not Supported - Not Supported - Not Supported
+* Read this blog to read detailed joins - https://www.confluent.io/blog/crossing-streams-joins-apache-kafka/
+------
+# Join Constraints and GlobalKTable
+* 3 types of Joins
+	* KStream to KStream
+	* KTable to KTable
+	* KStream to KTable
+* Can happen only when data is co-partitioned. Otherwise join won't be doable and kafka stream will fail with Runtime error
+* Co-partitioned: Same number of partitions are there in both Stream / table which participate in join
+* To co-partition data if number of partitions are different, write back to topic throough kafka before join. This has network cost
+------
+# GlobalKTable
+* If KTable data is reasonably small and can fit on each of your kafka streams application then we call it `GlobalKTable`
+* With `GlobalKTable` you can join any stream to your table even if the data doesn't have same number of partitions. Because table data lives on every stream application instance
+* Downside is size on disk. That's ok reasonably sized dataset
+------
+# Types of Joins
+* Inner Join
+* Left Join
+* Outer Join
 
+## Inner Join
+* Matched data in both streams
+
+## Lfet Join
+* All the data on left whether or not it has match on right
+
+## Outer Join
+* Only available for KStream / KStream Joins
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
