@@ -1,6 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
+# Maven
 * [Dependency Management](files/dependency-management.md)
 * [dependencyManagement vs dependencies tags](files/dependency-management.md#dependencyManagement-vs-dependencies)
 * [Setting the Java Version in Maven](files/maven-java-version.md)

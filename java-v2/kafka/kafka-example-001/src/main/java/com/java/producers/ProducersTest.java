@@ -1,5 +1,7 @@
 package com.java.producers;
 
+import com.github.javafaker.Faker;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -9,9 +11,13 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
+@Slf4j
 public class ProducersTest {
+
+    public static final Faker FAKER = Faker.instance();
 
     public static void main(String[] args) {
         new ProducersTest().run();
@@ -20,6 +26,8 @@ public class ProducersTest {
     private Properties kafkaProducerProperties() {
         Properties properties = new Properties();
 
+        // if you start kafka using docker-compose.yml in this repo than
+        // kafka is running in localhost:29092 else update correct broker details
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -34,23 +42,50 @@ public class ProducersTest {
 
     private void run() {
         Properties kafkaProperties = kafkaProducerProperties();
-        final String topicName = "word-count-input";
+        final String topicName = "input-topic-1";
         sendMessageWithoutKey(kafkaProperties, topicName);
     }
 
     private void sendMessageWithoutKey(Properties kafkaProperties, final String topicName) {
-        final Random random = new Random();
+        for(int i = 0; i <=100;i++) {
+            log.info("loop {} started", i);
+            String message = FAKER.harryPotter().character();
+            log.info("Sending message={}", message);
 
-        try (Producer<String, String> producer = new KafkaProducer<String, String>(kafkaProperties)) {
-            ProducerRecord<String, String> record1 = new ProducerRecord<>(topicName, "record1=" + random.nextLong());
+            // send String message every 10 seconds
+            try (Producer<String, String> producer = new KafkaProducer<String, String>(kafkaProperties)) {
+                // create ProducerRecord to send message
+                ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topicName, message);
+                // send message
+                Future<RecordMetadata> future = producer.send(producerRecord);
 
-            Future<RecordMetadata> record1ResultFuture = producer.send(record1);
-            RecordMetadata record1RecordMetadata = record1ResultFuture.get();
+                log.info("Sent message={}", message);
 
-            log.info("offset={}, ", record1RecordMetadata.offset());
-            log.info("partition={}, serializedKeySize={}, serializedValueSize={}", record1RecordMetadata.partition(),
-                    record1RecordMetadata.serializedKeySize(), record1RecordMetadata.serializedValueSize());
-            log.info("timestamp={}, topic={}", record1RecordMetadata.timestamp(), record1RecordMetadata.topic());
+                log.info("Getting response");
+                // wait for result. Not recommended in PROD
+                RecordMetadata recordMetadata = future.get();
+
+                // print log
+                String topic = recordMetadata.topic();
+                long offset = recordMetadata.offset();
+                int partition = recordMetadata.partition();
+                int serializedKeySize = recordMetadata.serializedKeySize();
+                int serializedValueSize = recordMetadata.serializedValueSize();
+                long timestamp = recordMetadata.timestamp();
+
+                log.info("topic={}, offset={}, partition={}, serializedKeySize={}, serializedValueSize={}, timestamp={}",
+                        topic, offset, partition, serializedKeySize, serializedValueSize, timestamp);
+                log.info("loop {} completed", i);
+            } catch (ExecutionException | InterruptedException e) {
+                log.info("Exception in sending message", e);
+            } finally {
+                try {
+                    log.info("Sleeping 10 seconds");
+                    Thread.sleep(1000 * 10);
+                } catch (InterruptedException e){
+                    log.info("Exception in thread sleep", e);
+                }
+            }
         }
     }
 

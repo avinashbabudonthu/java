@@ -1,6 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Docker compose files
+# Docker Compose
 * [Start Zookeeper and 1 Kafka broker and Kafka UI](files/docker-compose-1-broker.yml)
 	* Run `docker-compose up -d` to start containers
 	* Open Kafka UI - http://localhost:8080/

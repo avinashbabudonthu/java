@@ -1,6 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
+# Kafka Streams
 * [Notes](files/notes.md)
 * [Dependencies](files/dependencies.md)
 * [Properties to connect to Kafka for Kafka Streams Java application](files/connect-to-kafka-from-java.md)

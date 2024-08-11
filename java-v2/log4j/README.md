@@ -1,6 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Example
+# Log4J
 * [Log4J SLF4J Dependencies](files/log4j-slf4j-dependencies.md)
 * [log4j.xml file with console and file appender](files/log4j.xml)
 * [log4j.xml file with console and file appender and change log level by package](files/log4j-change-log-level-by-package.xml)

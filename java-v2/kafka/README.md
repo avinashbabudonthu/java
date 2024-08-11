@@ -1,6 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Examples
+# Kafka
 * [Notes](files/notes.md)
 * [Commands](files/commands.md)
 * [Dependencies](files/dependencies.md)
