@@ -1,21 +1,12 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-* line
+* Add below dependency. Refer central repository for latest version - https://mvnrepository.com/artifact/com.github.javafaker/javafaker
 ```
-docker ps -a
-```
-* line
-```
-docker-compose up -d
-```
-* line
-```
-docker ps -a
-```
-* Login to kafka UI - http://localhost:8080
-* line
-```
-docker-compose down
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
 ```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
