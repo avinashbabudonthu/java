@@ -13,7 +13,7 @@ mvn archetype:generate -DgroupId=com.java -DartifactId=[project-name] -Dversion=
 * Add Junit 4 dependency - [Junit 4](../../junit-4/files/dependencies.md)
 * Add Junit 5 dependency - [Junit 5](../../junit-5/files/dependencies.md)
 * Add Mockito dependency - [Mockito](../../mockito/files/dependencies.md)
-* Add Lombok - [Lombok](../../lombok/dependencies.md)
+* Add Lombok - [Lombok](../../lombok/files/dependencies.md)
 * Add [Dockerfile](../../docker/files/Dockerfile-core-java-with-java-17)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
