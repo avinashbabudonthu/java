@@ -5,6 +5,7 @@
 ```
 mvn archetype:generate -DgroupId=com.java -DartifactId=[project-name] -Dversion=1.0.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
+* [Add README file](../../../README-template.md)
 * [Add gitignore file](../../../.gitignore) 
 * Update java and compiler version in maven - [Setting the Java version in Maven](maven-java-version.md)
 * Create executable fat jar - [Create executable fat jar - maven-assembly-plugin](fat-jar.md)

@@ -22,7 +22,80 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	
+	<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>2.0.13</version>
+</dependency>
+
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+	<version>2.0.13</version>
+</dependency>
+
+<dependency>
+	<groupId>org.junit.jupiter</groupId>
+	<artifactId>junit-jupiter-engine</artifactId>
+	<version>5.8.1</version>
+	<scope>test</scope>
+</dependency>
+
+<dependency>
+	<groupId>org.junit.platform</groupId>
+	<artifactId>junit-platform-launcher</artifactId>
+	<version>1.4.2</version>
+</dependency>
+
+<dependency>
+	<groupId>org.mockito</groupId>
+	<artifactId>mockito-core</artifactId>
+	<version>2.1.0-RC.2</version>
+	<scope>test</scope>
+</dependency>
+
   </dependencies>
   
-  <
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.12.1</version>
+			<configuration>
+				<release>17</release>
+			</configuration>
+		</plugin>
+		
+		
+	
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<version>2.5.2</version>
+			<configuration>
+				<descriptorRefs>
+					<descriptorRef>jar-with-dependencies</descriptorRef>
+				</descriptorRefs>
+				<archive>
+					<manifest>
+						<classpathPrefix>lib/</classpathPrefix>
+						<mainClass>com.app.Main</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+			<executions>
+				<execution>
+					<id>all-assemble</id>
+					<phase>package</phase>
+					<goals>
+						<goal>single</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	
+	</plugins>
+  </build>
 </project>
