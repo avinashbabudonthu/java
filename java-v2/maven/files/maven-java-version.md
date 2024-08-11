@@ -16,15 +16,19 @@
 * The default value for both of them is the 1.6 version.
 * Alternatively, we can configure the compiler plugin directly:
 ```
-<plugins>
-    <plugin>    
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-        </configuration>
-    </plugin>
-</plugins>
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
 ```
 * The `maven-compiler-plugin` also has additional configuration properties that allow us to have more control over the compilation process beyond -source and -target versions.
 ------
@@ -39,16 +43,20 @@
     <maven.compiler.release>17</maven.compiler.release>
 </properties>
 ```
-* For the maven-compiler-plugin starting from the 3.6 version, this is what we can write:
+* For the maven-compiler-plugin starting from the 3.6 version, this is what we can write. Refer central repository for latest version - https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin
 ```
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.12.1</version>
-    <configuration>
-        <release>7</release>
-    </configuration>
-</plugin>
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.12.1</version>
+			<configuration>
+				<release>7</release>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
 ```
 * Notice that we can add the Java version in a new <release> attribute. In this example, we compile our application for Java 7.
 * What’s more, we don’t need a JDK 7 installed in our machine. Java 17 already contains all the information for linking the new language features with JDK 7
