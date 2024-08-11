@@ -79,6 +79,12 @@
             <version>2.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>connect-json</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -104,7 +110,7 @@
                     <archive>
                         <manifest>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.app.Main</mainClass>
+                            <mainClass>com.java.ProducersContainerTest</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

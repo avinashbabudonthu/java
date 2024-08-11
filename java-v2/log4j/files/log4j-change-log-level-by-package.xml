@@ -28,7 +28,7 @@
 	
 	<logger name="org.apache.log4j">
         <level value="INFO" />
-		<!-- add requirted appender like console/file etc -->
+		<!-- add required appender like console/file etc -->
         <appender-ref ref="console" />
     </logger>
 
