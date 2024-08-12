@@ -46,8 +46,6 @@ public class WordCount {
         return properties;
     }
 
-
-
     private Properties kafkaProperties() {
         Properties properties = new Properties();
         // application.id
