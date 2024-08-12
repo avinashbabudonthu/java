@@ -53,7 +53,7 @@ public class WordCount {
 
         // bootstrap.servers
         // properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
+        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
         // default.key.serde
         properties.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         // default.value.serde
@@ -75,12 +75,12 @@ public class WordCount {
         properties.put(StreamsConfig.STATESTORE_CACHE_MAX_BYTES_CONFIG, "0");
 
         // json serde
-        final Serializer<JsonNode> jsonNodeSerializer = new JsonSerializer();
-        final Deserializer<JsonNode> jsonNodeDeserializer = new JsonDeserializer();
-        final Serde<JsonNode> jsonNodeSerde = Serdes.serdeFrom(jsonNodeSerializer, jsonNodeDeserializer);
-
-        StreamsBuilder streamsBuilder = new StreamsBuilder();
-        KStream<String, JsonNode> stream = streamsBuilder.stream("bank-transactions");
+//        final Serializer<JsonNode> jsonNodeSerializer = new JsonSerializer();
+//        final Deserializer<JsonNode> jsonNodeDeserializer = new JsonDeserializer();
+//        final Serde<JsonNode> jsonNodeSerde = Serdes.serdeFrom(jsonNodeSerializer, jsonNodeDeserializer);
+//
+//        StreamsBuilder streamsBuilder = new StreamsBuilder();
+//        KStream<String, JsonNode> stream = streamsBuilder.stream("bank-transactions");
         // KStream<String, JsonNode> stream = streamsBuilder.stream("bank-transactions", Consumed.with(Serdes.String(), jsonNodeSerde));
 
         return properties;
@@ -131,7 +131,7 @@ public class WordCount {
 
         // Start kafka streams application
         KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
-        kafkaStreams.cleanUp(); // not recommended for PROD
+//        kafkaStreams.cleanUp(); // not recommended for PROD
         kafkaStreams.start();
 
         // print the topology
