@@ -19,6 +19,6 @@
 * send to another topic (output topic)
 
 ## Solution
-* Refer - [Example0001](src/main/java/com/java/Example0001.java)
+* Refer - [Example0002](src/main/java/com/java/Example0002.java)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
