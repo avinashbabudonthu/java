@@ -26,6 +26,7 @@ private void execute() {
 	// ...
 
 	// Start kafka streams application
+    // never call this in try-with-source. If called then application will stop immediately without waiting
 	KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
 	kafkaStreams.cleanUp(); // not recommended for PROD
 	kafkaStreams.start();
@@ -74,5 +75,6 @@ System.out.println(kafkaStreams);
 // graceful shutdown of kafka streams application
 // Runtime.getRuntime().addShutdownHook(new Thread(kafkaStreams::close));
 ```
+* [Source Code](../kafka-streams-001)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

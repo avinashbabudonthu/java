@@ -289,7 +289,8 @@ KStream<byte[], String> printStream = stream.peek(
 # Joins
 * What is join? - Joining means taking KStream / KTable and creating new KStream / KTable from it
 * Windowed joins - limiting the data that we join by date time. With this we can limit the amount of data we join
-* Join types - [Operand - Type - (INNER) JOIN - LEFT JOIN - OUTER JOIN]
+* Join types
+	* [Operand] - [Type] - [INNER JOIN / JOIN] - [LEFT JOIN] - [OUTER JOIN]
 	* KStream to KStream - Windowed - Supported - Supported - Supported
 	* KTable to KTable - Non-Windowed - Supported - Supported - Supported
 	* KStream to KTable - Non-Windowed - Supported - Supported - Not Supported
@@ -309,10 +310,10 @@ KStream<byte[], String> printStream = stream.peek(
 # GlobalKTable
 * If KTable data is reasonably small and can fit on each of your kafka streams application then we call it `GlobalKTable`
 * With `GlobalKTable` you can join any stream to your table even if the data doesn't have same number of partitions. Because table data lives on every stream application instance
-* Downside is size on disk. That's ok reasonably sized dataset
+* Downside is size on disk. That's ok for reasonably sized dataset
 ------
 # Types of Joins
-* Inner Join
+* Inner Join or Join
 * Left Join
 * Outer Join
 

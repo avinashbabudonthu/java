@@ -18,9 +18,18 @@ import java.util.concurrent.Future;
 public class ProducersTest {
 
     public static final Faker FAKER = Faker.instance();
+    public static final String INPUT_TOPIC_001 = "input-topic-001";
+    public static final String BOOTSTRAP_SERVERS = "localhost:29092";
+    public static final String ACKNOWLEDGE_ALL = "all";
+    public static final String RETRY_COUNT = "3";
 
     public static void main(String[] args) {
         new ProducersTest().run();
+    }
+
+    private void run() {
+        // sendMessageWithoutKey(kafkaProducerProperties(), INPUT_TOPIC_001);
+        sendMessageWithKey(kafkaProducerProperties(), INPUT_TOPIC_001);
     }
 
     private Properties kafkaProducerProperties() {
@@ -28,22 +37,21 @@ public class ProducersTest {
 
         // if you start kafka using docker-compose.yml in this repo than
         // kafka is running in localhost:29092 else update correct broker details
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.put(ProducerConfig.ACKS_CONFIG, "all");
-        properties.put(ProducerConfig.RETRIES_CONFIG, "3");
+        properties.put(ProducerConfig.ACKS_CONFIG, ACKNOWLEDGE_ALL);
+        properties.put(ProducerConfig.RETRIES_CONFIG, RETRY_COUNT);
+
+        // The producer groups together any records that arrive in between request transmissions into a single batched request.
+        // Normally this occurs only under load when records arrive faster than they can be sent out.
+        // However in some circumstances the client may want to reduce the number of requests even under moderate load
         properties.put(ProducerConfig.LINGER_MS_CONFIG, "1");
+
         // ensure we don't push duplicates
         properties.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "true");
 
         return properties;
-    }
-
-    private void run() {
-        final String topicName = "input-topic-1";
-        // sendMessageWithoutKey(kafkaProducerProperties(), topicName);
-        sendMessageWithKey(kafkaProducerProperties(), topicName);
     }
 
     private void sendMessageWithoutKey(Properties kafkaProperties, final String topicName) {
