@@ -9,7 +9,7 @@
 	<maven.compiler.target>17</maven.compiler.target>
 </properties>
 ```
-* Parent dependency
+* Parent dependency. Refer central repository for latest version - https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
 ```
 <parent>
 	<groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@
 	<relativePath/>
 </parent>
 ```
-* Other dependencies
+* Other dependencies. No need to add version. Compatible version to `spring-boot-starter-parent` will be downloaded
 ```
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -31,6 +31,14 @@
 	<scope>test</scope>
 </dependency>
 ```
+* Actuator dependency
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+* [Lombok dependency](../../lombok/files/dependencies.md)
 * For open-api and swagger
 ```
 <dependency>

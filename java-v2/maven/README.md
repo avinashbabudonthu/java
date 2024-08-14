@@ -7,5 +7,6 @@
 * [Maven dependency scopes](files/dependency-scopes.md)
 * [Create executable fat jar - maven-assembly-plugin](files/fat-jar.md)
 * [Create Core Java Project](files/create-core-java-projects.md)
+* [Create Spring Boot 3 Project](files/create-spring-boot-3-project.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
