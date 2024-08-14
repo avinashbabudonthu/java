@@ -6,6 +6,7 @@
 * [Core Java](core-java)
 * [Docker](docker)
 * [Docker Compose](docker-compose)
+* [Git](git)
 * [IntelliJ](intellij)
 * [Junit 4](junit-4)
 * [Junit 5](junit-5)
