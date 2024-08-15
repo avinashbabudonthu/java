@@ -13,6 +13,10 @@ docker-compose up -d
 ```
 docker ps -a
 ```
+* Check networks. Should see network `my_network_1`
+```
+docker network ls
+```
 * Wait 2 minutes. Login to kafka UI - http://localhost:8080
 * Create topic `input-topic-001`
 ```
