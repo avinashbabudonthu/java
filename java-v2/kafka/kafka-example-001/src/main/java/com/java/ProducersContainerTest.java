@@ -18,6 +18,8 @@ import java.util.concurrent.Future;
 public class ProducersContainerTest {
 
     public static final Faker FAKER = Faker.instance();
+    private static final String INPUT_TOPIC_1 = "input-topic-001";
+
 
     public static void main(String[] args) {
         new ProducersContainerTest().run();
@@ -30,7 +32,6 @@ public class ProducersContainerTest {
         // if you start kafka using docker-compose.yml in this repo than
         // kafka is running in localhost:29092 else update correct broker details
         // if this application running as docker container
-//        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka:9092");
 
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -45,9 +46,8 @@ public class ProducersContainerTest {
     }
 
     private void run() {
-        final String topicName = "input-topic-1";
         // sendMessageWithoutKey(kafkaProducerProperties(), topicName);
-        sendMessageWithKey(kafkaProducerProperties(), topicName);
+        sendMessageWithKey(kafkaProducerProperties(), INPUT_TOPIC_1);
     }
 
     private void sendMessageWithoutKey(Properties kafkaProperties, final String topicName) {

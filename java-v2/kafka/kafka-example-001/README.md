@@ -32,6 +32,12 @@ docker ps -a
 * Run main class [ProducerTest](src/main/java/com/java/ProducersTest.java)
 ------
 # Running as container
+* Run apache kafka in local using [docker-compose.yml](docker-compose.yml)
+```
+docker compose up -d
+```
+* Wait 2 minutes and open Kafka UI - http://localhost:8080
+* Create topic - `input-topic-001`
 * Build fat jar
 ```
 mvn clean compile package
@@ -57,6 +63,10 @@ docker ps -a
 * Remove container
 ```
 docker rm [containerId]
+```
+* Kill kafka container
+```
+docker compose down
 ```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
