@@ -7,6 +7,7 @@
 ------
 # java.lang package
 * [java.lang.String](core-java/src/main/java/com/practive/java/lang/StringTest.java)
+* [java.lang.System](core-java/src/main/java/com/practive/java/lang/SystemTest.java)
 
 # java.util package
 * [java.util.StringJoiner](core-java/src/main/java/com/practive/java/util/StringJoinerTest.java)

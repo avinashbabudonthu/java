@@ -20,15 +20,21 @@
         <!-- <param name="file" value="/logs/core-java.log" />-->
 
         <!-- creates logs in project folder -->
-        <param name="file" value="logs/core-java.log" />
+        <param name="file" value="logs/app.log" />
 
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] [%-5p] [%c{1}:%L] - %m%n" />
         </layout>
     </appender>
+	
+	<logger name="org.apache.log4j">
+        <level value="INFO" />
+		<!-- add required appender like console/file etc -->
+        <appender-ref ref="console" />
+    </logger>
 
     <root>
-        <level value="INFO" />
+        <level value="DEBUG" />
         <appender-ref ref="console" />
         <appender-ref ref="file" />
     </root>

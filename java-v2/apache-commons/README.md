@@ -3,10 +3,10 @@
 # Apache Commons
 * [Dependencies](files/dependencies.md)
 ------
-# Examples
-* StringUtils
+# commons-lang3 Examples
+* [StringUtils](commons-lang3/src/main/java/org/apache/commons/lang3/StringUtilsTest.java)
+* [SystemUtils](commons-lang3/src/main/java/org/apache/commons/lang3/SystemUtilsTest.java)
 * StringEscapeUtils
-* SystemUtils
 * ExceptionUtils
 * ArrayUtils
 * BooleanUtils
