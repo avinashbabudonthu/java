@@ -100,7 +100,7 @@ docker pull donthuavinashbabu/kafka-example-001
 ```
 * Run and check
 ```
-docker run -it --network my_network_1 kafka-example-001
+docker run -it --network my_network_1 donthuavinashbabu/kafka-example-001
 ```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
