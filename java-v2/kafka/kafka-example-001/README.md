@@ -63,4 +63,14 @@ docker ps -a
 docker rm [containerId]
 ```
 ------
+# Explanation
+* If we create topic with 3 partitions then we can see message with same key always goes to same partition
+![picture](img/000001.jpg)
+* Refer below method in class [ProducerTest](src/main/java/com/java/ProducersTest.java) and [ProducersContainerTest](src/main/java/com/java/ProducersContainerTest.java)
+  * sendMessageWithKey
+------
+# Pushing this image to dockerhub public repository
+
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+

@@ -5,6 +5,7 @@
 * [Directives](files/directives.md)
 * [Build Docker Image](files/build-docker-image.md)
 * [Commands](files/commands.md)
+* [Push docker image from local to Docker hub](files/push-docker-image-dockerhub.md)
 ------
 # Dockerfiles
 * [Spring Boot 3 Java 17 Dockerfile](files/Dockerfile-spring-boot-3-java-17.md)
