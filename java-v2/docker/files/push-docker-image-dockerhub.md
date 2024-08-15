@@ -7,6 +7,10 @@
 ```
 docker build . -t [image-name]
 ``` 
+* Check created image. Should see an image with [image-name]
+```
+docker images
+```
 * Run the container in interactive mode and check
 ```
 with port mapping
@@ -14,6 +18,9 @@ docker run -it -p 9000:9000 rest-api
 
 without port mapping
 docker run -it [image-name]
+
+with network
+docker run -it --network [network-name] [image-name]
 ```
 * Application should be up and running
 * Tag an image before pushing to docker hub
