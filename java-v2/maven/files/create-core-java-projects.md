@@ -8,6 +8,8 @@ mvn archetype:generate -DgroupId=com.java -DartifactId=[project-name] -Dversion=
 * [Add README file](../../../README-template.md)
 * [Add gitignore file](../../../.gitignore)
 * Add plugin to update java and compiler version - [Setting the Java version in Maven](maven-java-version.md)
+* [Add jar file name](define-jar-file-name.md)
+* [To use maven build timestamp in jar file name](build-timestamp.md)
 * Add plugin to create executable fat jar - [Create executable fat jar - maven-assembly-plugin](fat-jar.md)
 * Add log4j - [Log4j](../../log4j)
 * Add Junit 4 dependency - [Junit 4](../../junit-4/files/dependencies.md)
