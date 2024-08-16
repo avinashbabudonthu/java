@@ -22,7 +22,7 @@ public class GetControllerImpl implements GetController {
 
     @Override
     public String helloWorld() {
-        return FAKER.book().title();
+        return FAKER.harryPotter().character();
     }
 
     @Override

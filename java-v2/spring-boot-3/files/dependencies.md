@@ -38,6 +38,13 @@
 	<artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
+* Devtools dependency
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-devtools</artifactId>
+</dependency>
+```
 * [Lombok dependency](../../lombok/files/dependencies.md)
 * For open-api and swagger
 ```
@@ -45,6 +52,13 @@
 	<groupId>org.springdoc</groupId>
 	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 	<version>2.0.3</version>
+</dependency>
+```
+* Add below dependency for `WebClient`
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-webflux</artifactId>
 </dependency>
 ```
 * `springboot-maven-plugin`

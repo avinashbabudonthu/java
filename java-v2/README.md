@@ -25,6 +25,7 @@
 * [Open SSL](openssl)
 * [Postman](postman)
 * [Java Reflection](reflection)
+* [Rest Client WebClient](rest-client-webclient)
 * [Splunk](splunk)
 * [Spring Boot 3](spring-boot-3)
 * [Spring Security](spring-security)
