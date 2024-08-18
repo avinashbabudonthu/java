@@ -59,7 +59,7 @@ docker pull donthuavinashbabu/kafka-stream-spring-boot-3-001
 ```
 * Start kafka streams container
 ```
-docker run -it -p 9001:9000 --network my_network_1 donthuavinashbabu/kafka-streams-spring-boot-3-001
+docker run -it -p 9001:9000 --network my_network_1 donthuavinashbabu/kafka-stream-spring-boot-3-001
 ```
 * Pull kafka producer docker image
 ```
