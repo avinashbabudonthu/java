@@ -1,11 +1,6 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Mockito
-* [Dependencies](files/dependencies.md)
-* [How to throw checked exceptions](files/checked-exceptions.md)
-* [Mock spring autowired field value](files/mock-spring-autowired-field.md)
-* [Mockito with Junit 5](files/mockito-junit-5.md)
-* [Exception Assertion](files/exception-assertion.md)
-* [Unnecessary Stubbing Junit 4 Junit 5](files/unneccessary-stubbing.md)
+# Log4J2
+
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

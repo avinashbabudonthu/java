@@ -1374,7 +1374,6 @@
 * [Hello World Examples](mockito/mockito/src/test/java/com/mockito/hello/world/HelloWorldTest.java)
 * [Class with lombok logs](mockito/mockito/src/test/java/com/mockito/lombok/inject/EmployeeControllerTest.java)
 * [Wrong Type of Return value](mockito/mockito/src/test/java/com/mockito/wrong/type/of/returnvalue/WrongTypeOfReturnValueTest.java)
-* [How to resolve Unneccessary Stubbing exception](mockito.md#How-to-resolve-Unneccessary-Stubbing-exception)
 ------
 # [Mongo DB](mongo)
 * [Materials](mongo/materials.md)

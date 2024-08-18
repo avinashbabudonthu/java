@@ -209,27 +209,3 @@ Mockito.verify(mockOrderDao).insert(orderEntityCaptor.capture() );
 OrderEntity orderEntity = orderEntityCaptor.getValue();
 Assert.assertEqual(1, orderEntity.getCustomerId() );
 ```
-------
-# How to resolve Unneccessary Stubbing exception
-* Junit 4 in RunWith
-```
-@RunWith(MockitoJUnitRunner.Silent.class) 
-```
-* Junit 4 using rule approach
-```
-@Rule
-public MockitoRule rule = MockitoJUnit.rule().strictness(Strictness.LENIENT);
-
-@Rule
-public MockitoRule rule = MockitoJUnit.rule().silent();
-```
-* Junit 4 while stubbing
-```
-Mockito.lenient().when(mockedService.getUserById(any())).thenReturn(new User());
-```
-* Junit 5
-```
-@ExtendWith(MockitoExtension.class)
-@MockitoSettings(strictness = Strictness.LENIENT)
-class JUnit5MockitoTest {}
-```

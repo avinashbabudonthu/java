@@ -17,6 +17,7 @@
 * [Kubernetes](kubernetes)
 * [Linux](linux)
 * [Log4J](log4j)
+* [Log4J2](log4j2)
 * [Lombok](lombok)
 * [Maven](maven)
 * [Mockito](mockito)
