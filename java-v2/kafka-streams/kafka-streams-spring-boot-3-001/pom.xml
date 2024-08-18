@@ -12,13 +12,14 @@
 
 	<groupId>com.java</groupId>
 	<artifactId>kafka-streams-spring-boot-3-001</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>kafka-streams-spring-boot-3-001</name>
 	<description>Kafka Streams Spring Boot 3 Example 001</description>
 
 	<properties>
 		<java.version>17</java.version>
+		<maven.build.timestamp.format>yyyy-MM-dd-HH-mm</maven.build.timestamp.format>
 	</properties>
 
 	<dependencies>
@@ -60,6 +61,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
