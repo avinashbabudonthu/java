@@ -8,5 +8,6 @@
 * [Kafka Producer](../kafka/files/kafka-producer.md)
 * [KStream KGroupedStream KTable KGroupedTable Summary](files/kstreams-ktable-summary.md)
 * [Create Kafka Stream - Java Code](files/create-kafka-stream.md)
+* [Kafka Streams Spring Boot 3](kafka-streams-spring-boot-3-001)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

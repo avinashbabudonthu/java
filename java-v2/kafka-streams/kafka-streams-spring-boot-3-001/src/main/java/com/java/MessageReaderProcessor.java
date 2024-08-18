@@ -35,8 +35,13 @@ public class MessageReaderProcessor {
 
         wordCounts.toStream().to(OUTPUT_TOPIC_001);*/
 
+        // build Kafka stream
         KStream<String, String> inputStream = streamsBuilder.stream(INPUT_TOPIC_001, Consumed.with(STRING_SERDE, STRING_SERDE));
+
+        // print message key nd value
         inputStream.peek((key, value) -> log.info("key={}, value={}", key, value));
+
+        // send to output topi
         inputStream.to(OUTPUT_TOPIC_001);
     }
 

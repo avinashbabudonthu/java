@@ -22,7 +22,11 @@ public class MessageCaseConversionProcessor {
 
     @Autowired
     public void process(StreamsBuilder streamsBuilder) {
+        // build kafka stream
         KStream<String, String> inputStream = streamsBuilder.stream(INPUT_TOPIC_001, Consumed.with(STRING_SERDE, STRING_SERDE));
+
+        // print each message key and value
+        // convert to lower case
         KStream<String, String> resultStream = inputStream
                 .peek((key, value) -> log.info("key={}, value={}", key, value))
                 .mapValues(value -> {
@@ -32,6 +36,8 @@ public class MessageCaseConversionProcessor {
                     }
                     return result;
                 });
+
+        // send to output topic
         resultStream.to(OUTPUT_TOPIC_002, Produced.with(STRING_SERDE, STRING_SERDE));
     }
 }
