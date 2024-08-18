@@ -55,7 +55,7 @@ docker ps -a
   * Sync replicas - 3
 * Pull this application docker image
 ```
-docker pull donthuavinashbabu/kafka-streams-spring-boot-3-001
+docker pull donthuavinashbabu/kafka-stream-spring-boot-3-001
 ```
 * Start kafka streams container
 ```
