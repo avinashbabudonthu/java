@@ -31,6 +31,8 @@
 * [Spring Security](spring-security)
 ------
 # Others
+* [Add README file](../README-template.md)
+* [Add gitignore file](../.gitignore)
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](files/variables-arguments.md)
 * [Java Faker Dependency](files/java-faker-dependency.md)
 * [Softwares List](files/softwares-list.md)
