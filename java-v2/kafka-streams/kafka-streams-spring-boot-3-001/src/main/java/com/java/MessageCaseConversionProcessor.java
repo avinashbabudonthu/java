@@ -17,13 +17,11 @@ public class MessageCaseConversionProcessor {
 
     private static final Serde<String> STRING_SERDE = Serdes.String();
     private static final Serde<Long> LONG_SERDE = Serdes.Long();
-    public static final String INPUT_TOPIC_001 = "input-topic-001";
-    public static final String OUTPUT_TOPIC_002 = "output-topic-002";
 
     @Autowired
     public void process(StreamsBuilder streamsBuilder) {
         // build kafka stream
-        KStream<String, String> inputStream = streamsBuilder.stream(INPUT_TOPIC_001, Consumed.with(STRING_SERDE, STRING_SERDE));
+        KStream<String, String> inputStream = streamsBuilder.stream(Topics.INPUT_TOPIC_001, Consumed.with(STRING_SERDE, STRING_SERDE));
 
         // print each message key and value
         // convert to lower case
@@ -38,6 +36,6 @@ public class MessageCaseConversionProcessor {
                 });
 
         // send to output topic
-        resultStream.to(OUTPUT_TOPIC_002, Produced.with(STRING_SERDE, STRING_SERDE));
+        resultStream.to(Topics.OUTPUT_TOPIC_002, Produced.with(STRING_SERDE, STRING_SERDE));
     }
 }

@@ -2,6 +2,7 @@
 ------
 # Table of Contents
 * [Apache Commons Libraries](apache-commons)
+* [Architecture](architecture)
 * [Autosys](autosys)
 * [Core Java](core-java)
 * [Docker](docker)
@@ -35,6 +36,7 @@
 * [Add README file](../README-template.md)
 * [Add gitignore file](../.gitignore)
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](files/variables-arguments.md)
+* [Difference between model object and entity object](files/model-vs-entity.md)
 * [Java Faker Dependency](files/java-faker-dependency.md)
 * [Softwares List](files/softwares-list.md)
 ------

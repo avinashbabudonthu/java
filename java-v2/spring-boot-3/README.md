@@ -3,6 +3,7 @@
 # Spring Boot 3
 * [Create Spring Boot 3 Project](../maven/files/create-spring-boot-3-project.md)
 * [Dependencies](files/dependencies.md)
+* Common Application Properties - https://docs.spring.io/spring-boot/appendix/application-properties/index.html
 * [Hello World](hello-world)
 * [Random Port](random-port)
 * [REST API](rest-api)
@@ -20,5 +21,6 @@ Add this property in application.properties file otherwise table data will be de
 spring.jpa.hibernate.ddl-auto=none
 ```
 * [Kafka Streams Spring Boot 3](../kafka-streams/kafka-streams-spring-boot-3-001)
+* [Get Port number of application](files/application-port-number.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

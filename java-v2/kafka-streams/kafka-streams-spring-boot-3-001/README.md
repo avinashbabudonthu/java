@@ -24,6 +24,8 @@ docker ps -a
   * Refer class - [MessageReaderProcessor](src/main/java/com/java/MessageReaderProcessor.java)
 * Same message will be converted to lower case and pushed to `output-topic-002`
   * Refer class - [MessageCaseConversionProcessor](src/main/java/com/java/MessageCaseConversionProcessor.java)
+* Take message from input topic `input-topic-001`, convert to lower case, do word count, send results to output topic `output-topic-003`
+  * Refer class - [WordCountProcessor](src/main/java/com/java/WordCountProcessor.java)
 * If you want to continuously send messages to input topic then run application - [kafka-example-001](../../kafka/kafka-example-001)
 ------
 # Explanation
@@ -31,8 +33,10 @@ docker ps -a
   * Properties injected in this class are in [application.properties](src/main/resources/application.properties)
 * Take message from input topic `input-topic-001` and send same message to output topic `output-topic-001`
   * Refer class [MessageReaderProcessor](src/main/java/com/java/MessageReaderProcessor.java)
-* Take message from input topic `input-topic-001` and send same message to output topic `output-topic-002`
+* Take message from input topic `input-topic-001`, convert to lower case, send to output topic `output-topic-002`
   * Refer class - [MessageCaseConversionProcessor](src/main/java/com/java/MessageCaseConversionProcessor.java)
+* Take message from input topic `input-topic-001`, convert to lower case, do word count, send results to output topic `output-topic-003`
+  * Refer class - [WordCountProcessor](src/main/java/com/java/WordCountProcessor.java)
 ------
 # Run application as docker image
 * Pre-requisite - Docker should be installed
@@ -70,6 +74,19 @@ docker pull donthuavinashbabu/kafka-example-001
 docker run -it --network my_network_1 donthuavinashbabu/kafka-example-001
 ```
 * Producer sends messages to - `input-topic-001`
-* Generates output to topics - `output-topic-001`, `output-topic-002`
+* Generates output to topics
+  * Same message to `output-topic-001`
+  * Lower case message to `output-topic-002`
+  * Word counts to `output-topic-003`
+* Stop and remove kafka containers
+```
+docker compose down
+or
+docker-compose down
+```
+* Check running containers
+```
+docker ps -a
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

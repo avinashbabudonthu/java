@@ -1,11 +1,25 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Spring Security
-* [Dependencies](files/dependencies.md)
-* [Notes](files/notes.md)
-* [Important classes](files/important-classes.md)
-* [Spring Security Generated Credentials](spring-security-generated-credentials)
-* [Credentials In Properties File](credentials-in-properties)
-* [In Memory Credentials](in-memory)
+# Why security?
+* Security is for protecting data and business logic inside web application
+------
+# Different types of security
+* Authentication
+* Authorization
+* TLS/SSL
+* HTTPS
+* Firewalls
+------
+# Why security
+* Loosing data
+* Lossing money
+* Loosing brand
+* Loosing trust
+------
+# Most common attacks
+* CSRF - Cross Site Request Forgery
+* Session Fixation
+* XSS - Cross site scripting
+* CORS
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

@@ -184,17 +184,6 @@ inOrderVerifier.verify(financeServiceMock).getSalary(salaryFixture);
 	* Spy wraps an existing instance of an object inside the proxy and its default nature is to call the real method
 	* The method invocations are only mocked when you explicitely stub the call. In this case proxy knows to bypass the real method call
 ------
-# Mock Autowired Value Field In Spring With Mockito
-* Use below code in `@Before` method
-```
-ReflectionTestUtils.setField(bean, "fieldName", "value");	
-```
-------
-# jdbcTemplate object mocking and stubbing
-* `queryForObject` method - this will give ambiguity compilation error
-* solved using below method
-	* Mockito.eq
-------
 # Argument Captures
 * If method under test creating an object but does not returning then how to test the object whether it is constructed correctly? This can be done using argument captures
 * ArgumentCaptor allows you to capture the actual object passed into the mock
