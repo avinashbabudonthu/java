@@ -18,12 +18,6 @@ public class SystemUtilsTest {
     }
 
     @Test
-    @DisplayName("")
-    void test() {
-        log.info("{}");
-    }
-
-    @Test
     @DisplayName("Get PATH environment variable value")
     void pathEnvironmentVariable() {
         log.info("{}", SystemUtils.getEnvironmentVariable("PATH", "UNKNOWN"));
