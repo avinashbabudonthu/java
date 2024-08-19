@@ -30,7 +30,7 @@ mvn clean compile spring-boot:run
 * Add below 2 files in [application.properties](src/main/resources/application.properties)
 ```
 spring.security.user.name=${SECURITY_USERNAME:user1}
-spring.security.user.password=${SECURITY_PASSWORD:pass1}
+spring.security.user.password=${SECURITY_PASSWORD:pwd1}
 ```
 * Start the application
 * Hit this API in browser - http://localhost:9000/status

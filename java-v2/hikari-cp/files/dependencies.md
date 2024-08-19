@@ -1,6 +1,7 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Java 8 Maven dependency
+# HikariCP dependency
+* Java 8 dependency
 ```
 <dependency>
    <groupId>com.zaxxer</groupId>
@@ -8,7 +9,7 @@
    <version>4.0.3</version>
 </dependency>
 ```
-* Java 11+ maven dependency
+* Java 11+ dependency
 ```
 <dependency>
    <groupId>com.zaxxer</groupId>
