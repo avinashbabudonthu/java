@@ -12,5 +12,6 @@ mvn archetype:generate -DgroupId=com.java -DartifactId=[project-name] -Dversion=
 * Add log4j - [Log4j](../../log4j)
 * Add [Dockerfile](../../docker/files/Dockerfile-core-java-with-java-17)
 * Add [apache commons dependencies](../../apache-commons/files/dependencies.md)
+* Add [Spring Security dependencies](../../spring-security/files/dependencies.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
