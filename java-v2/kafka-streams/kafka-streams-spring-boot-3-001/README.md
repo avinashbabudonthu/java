@@ -15,7 +15,7 @@ docker ps -a
 ```
 * Should see containers `zookeeper1`, `kafka1`, `kafkaUi1`
 * Wait 2 min. Open Kafka UI - http://localhost:8080
-* Create topics - `input-topic-001`, `output-topic-001`, `output-topic-002`
+* Create topics - `input-topic-001`, `output-topic-001`, `output-topic-002`, `output-topic-003`
   * Partitions - 3
   * Sync replicas - 3
 * Run application main class - [Main](src/main/java/com/java/Main.java)
@@ -40,7 +40,7 @@ docker ps -a
 ------
 # Run application as docker image
 * Pre-requisite - Docker should be installed
-* Download docker compose yaml file to start kafka - [docker-compose.yml](docker-compose.yml)
+* Download docker compose yaml file to start kafka - [docker-compose.yml](docker-compose-kafka.yml)
 * Open `cmd` in `docker-compose.yml` file location
 * Start kafka
 ```
@@ -54,7 +54,7 @@ docker ps -a
 ```
 * Should see containers `zookeeper1`, `kafka1`, `kafkaUi1`
 * Wait 2 min. Open Kafka UI - http://localhost:8080
-* Create topics - `input-topic-001`, `output-topic-001`, `output-topic-002`
+* Create topics - `input-topic-001`, `output-topic-001`, `output-topic-002`, `output-topic-003`
   * Partitions - 3
   * Sync replicas - 3
 * Pull this application docker image
@@ -87,6 +87,32 @@ docker-compose down
 * Check running containers
 ```
 docker ps -a
+```
+------
+# Run application as docker image using docker compose
+* Pre-requisite - Docker should be installed
+* Download docker compose yaml file to start kafka - [docker-compose.yml](docker-compose-kafka.yml)
+* Open `cmd` in `docker-compose.yml` file location
+* Start kafka
+```
+docker compose -f C:\github\java\java-v2\kafka-streams\kafka-streams-spring-boot-3-001\docker-compose-kafka.yml up -d
+or
+docker-compose -f C:\github\java\java-v2\kafka-streams\kafka-streams-spring-boot-3-001\docker-compose-kafka.yml up -d
+```
+* Check running containers
+```
+docker ps -a
+```
+* Should see containers `zookeeper1`, `kafka1`, `kafkaUi1`
+* Wait 2 min. Open Kafka UI - http://localhost:8080
+* Create topics - `input-topic-001`, `output-topic-001`, `output-topic-002`, `output-topic-003`
+  * Partitions - 3
+  * Sync replicas - 3
+* Start producer and this application containers
+```
+docker compose -f C:\github\java\java-v2\kafka-streams\kafka-streams-spring-boot-3-001\docker-compose-app-containers.yml up -d
+or
+docker-compose -f C:\github\java\java-v2\kafka-streams\kafka-streams-spring-boot-3-001\docker-compose-app-containers.yml up -d
 ```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

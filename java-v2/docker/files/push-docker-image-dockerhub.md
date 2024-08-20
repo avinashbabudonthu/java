@@ -26,10 +26,14 @@ docker run -it --network [network-name] [image-name]
 * Tag an image before pushing to docker hub
 ```
 docker image tag [image-name] [dockerhub-username]/[image-name]
+or
+docker image tag [image-name] [dockerhub-username]/[image-name]:[tag-number]
 ```
 * Push image to docker hub
 ```
 docker image push [dockerhub-username]/[image-name]
+or
+docker image tag [image-name] [dockerhub-username]/[image-name]:[tag-number]
 ```
 * Check dockerhub for pushed image
 * Remove image from local
