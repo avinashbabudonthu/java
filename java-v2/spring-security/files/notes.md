@@ -17,10 +17,10 @@
 * Loosing trust
 ------
 # Most common attacks
+* CORS - Cross Orgin Resource Sharing
 * CSRF - Cross Site Request Forgery
 * Session Fixation
 * XSS - Cross site scripting
-* CORS
 ------
 # Servlets and Filters
 * Request flow\

@@ -65,4 +65,32 @@ public class StringUtilsTest {
         log.info("{}", StringUtils.substring(str3, 0, 10)); // null
     }
 
+    @Test
+    void repeat() {
+        String result1 = StringUtils.repeat("test", 3);
+        log.info("result1={}", result1); // result1=testtesttest
+
+        String result2 = StringUtils.repeat("test", ",", 3);
+        log.info("result2={}", result2); // result2=test,test,test
+    }
+
+    /**
+     * StringUtils.replaceEach(null, *, *)        = null
+     *    StringUtils.replaceEach("", *, *)          = ""
+     *    StringUtils.replaceEach("aba", null, null) = "aba"
+     *    StringUtils.replaceEach("aba", new String[0], null) = "aba"
+     *    StringUtils.replaceEach("aba", null, new String[0]) = "aba"
+     *    StringUtils.replaceEach("aba", new String[]{"a"}, null)  = "aba"
+     *    StringUtils.replaceEach("aba", new String[]{"a"}, new String[]{""})  = "b"
+     *    StringUtils.replaceEach("aba", new String[]{null}, new String[]{"a"})  = "aba"
+     *    StringUtils.replaceEach("abcde", new String[]{"ab", "d"}, new String[]{"w", "t"})  = "wcte"
+     *    (example of how it does not repeat)
+     *    StringUtils.replaceEach("abcde", new String[]{"ab", "d"}, new String[]{"d", "t"})  = "dcte"
+     */
+    @Test
+    void replaceEach() {
+        String result1 = StringUtils.replaceEach("hello world welcome to java", new String[]{"hello", "welcome"}, new String[]{"hi", "come"});
+        log.info("result1={}", result1); // result1=hi world come to java
+    }
+
 }
