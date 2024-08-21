@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 @OpenAPIDefinition(info = @Info(title = "Rest API Documentation"))
 @SpringBootApplication
-public class Application {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 
 }

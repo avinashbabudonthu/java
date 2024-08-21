@@ -29,7 +29,7 @@ public interface PutController {
     @Operation(summary = "Get student json as text and return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get student json as text and return Student object",
-                    content = {@Content(mediaType = TEXT_PLAIN_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = TEXT_PLAIN_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v1/students", consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -43,7 +43,7 @@ public interface PutController {
     @Operation(summary = "Get student object as json object and return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get student object as json object and return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v2/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -59,7 +59,7 @@ public interface PutController {
     @Operation(summary = "Get Student object as request body, name and book as request headers. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as request headers. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v3/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -75,7 +75,7 @@ public interface PutController {
     @Operation(summary = "Get Student object as request body, name and book as request parameters. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as request parameters. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v4/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -91,7 +91,7 @@ public interface PutController {
     @Operation(summary = "Get Student object as request body, name and book as path variables. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as path variables. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v5/students/{name}/{book}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -108,7 +108,7 @@ public interface PutController {
     @Operation(summary = "Get Student object as request body. id as path variable. name as request header. book as request parameter. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @PutMapping(value = "/v6/students/{id}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)

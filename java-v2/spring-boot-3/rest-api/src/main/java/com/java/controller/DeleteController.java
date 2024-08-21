@@ -2,6 +2,7 @@ package com.java.controller;
 
 import com.java.model.Student;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -30,7 +31,7 @@ public interface DeleteController {
     @Operation(summary = "Get student json as text and return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get student json as text and return Student object",
-                    content = {@Content(mediaType = TEXT_PLAIN_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = TEXT_PLAIN_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v1/students", consumes = TEXT_PLAIN_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -45,7 +46,7 @@ public interface DeleteController {
     @Operation(summary = "Get student object as json object and return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get student object as json object and return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v2/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
@@ -62,11 +63,15 @@ public interface DeleteController {
     @Operation(summary = "Get Student object as request body, name and book as request headers. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as request headers. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v3/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    Student studentV3(@RequestBody Student student, @RequestHeader("name") String name, @RequestHeader("book") String book);
+    Student studentV3(@RequestBody Student student,
+                      @Parameter(name = "name", description = "Student Name", example = "Jack", required = true)
+                      @RequestHeader("name") String name,
+                      @Parameter(name = "book", description = "Student Book", example = "Java", required = true)
+                      @RequestHeader("book") String book);
 
     /**
      * {@link Student} as request body. name and book as request parameters
@@ -79,11 +84,15 @@ public interface DeleteController {
     @Operation(summary = "Get Student object as request body, name and book as request parameters. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as request parameters. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v4/students", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    Student studentV4(@RequestBody Student student, @RequestParam("name") String name, @RequestParam("book") String book);
+    Student studentV4(@RequestBody Student student,
+                      @Parameter(name = "name", description = "Student Name", example = "Jack", required = true)
+                      @RequestParam("name") String name,
+                      @Parameter(name = "book", description = "Student Book", example = "Java", required = true)
+                      @RequestParam("book") String book);
 
     /**
      * {@link Student} as request body. name and book as path variables
@@ -96,11 +105,15 @@ public interface DeleteController {
     @Operation(summary = "Get Student object as request body, name and book as path variables. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Get Student object, name and book as path variables. Return Student object",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v5/students/{name}/{book}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    Student studentV5(@RequestBody Student student, @PathVariable("name") String name, @PathVariable("book") String book);
+    Student studentV5(@RequestBody Student student,
+                      @Parameter(name = "name", description = "Student Name", example = "Jack", required = true)
+                      @PathVariable("name") String name,
+                      @Parameter(name = "book", description = "Student Book", example = "Java", required = true)
+                      @PathVariable("book") String book);
 
     /**
      * {@link Student} as request body. id as path variable. name as request header. book as request parameter
@@ -114,10 +127,16 @@ public interface DeleteController {
     @Operation(summary = "Get Student object as request body. id as path variable. name as request header. book as request parameter. Return Student object")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "",
-                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = String.class))}
+                    content = {@Content(mediaType = APPLICATION_JSON_VALUE, schema = @Schema(implementation = Student.class))}
             )
     })
     @DeleteMapping(value = "/v6/students/{id}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    Student studentV6(@RequestBody Student student, @PathVariable("id") String id, @RequestHeader("name") String name, @RequestParam("book") String book);
+    Student studentV6(@RequestBody Student student,
+                      @Parameter(name = "id", description = "Student Id", example = "100", required = true)
+                      @PathVariable("id") String id,
+                      @Parameter(name = "name", description = "Student Name", example = "Jack", required = true)
+                      @RequestHeader("name") String name,
+                      @Parameter(name = "book", description = "Student Book", example = "Java", required = true)
+                      @RequestParam("book") String book);
 
 }

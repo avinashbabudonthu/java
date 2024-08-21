@@ -123,10 +123,27 @@ springdoc.swagger-ui.operationsSorter=alpha
 ![picture](img/003.jpg)
  
 ## Annotations explanation
-* Operation - Used to define API
-* APIResponses - container for different responses returned by API
-* APIResponse - Define details of response for different scenarios
-* Tag - used define API class description
+* io.swagger.v3.oas.annotations.OpenAPIDefinition
+  * Used to define main title of swagger documentation UI
+  * Refer [Main.java](src/main/java/com/java/Main.java)
+* io.swagger.v3.oas.annotations.Operation
+  * Used to define API
+  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+* io.swagger.v3.oas.annotations.responses.ApiResponses
+  * container for different responses returned by API
+  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+* io.swagger.v3.oas.annotations.responses.ApiResponse
+  * Define details of response for different scenarios
+  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+* io.swagger.v3.oas.annotations.tags.Tag
+  * Used define API class description
+  * Declare at controller class level
+  * Refer controller classes in [com.java.controller](src/main/java/com/java/controller)
+* io.swagger.v3.oas.annotations.media.Schema
+  * Used for properties of model. Refer [Student.java](src/main/java/com/java/model/Student.java)
+* io.swagger.v3.oas.annotations.Parameter
+  * Used for parameters of API resource request
+  * Refer [DeleteController.java](src/main/java/com/java/controller/DeleteController.java)
 ------
 # Build docker image and push to docker hub
 * Write [Dockerfile](Dockerfile)
