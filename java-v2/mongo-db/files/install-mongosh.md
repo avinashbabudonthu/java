@@ -1,11 +1,10 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Mongo DB
-* [Basics Notes](files/001-notes.md)
-* [Notes Version 2](files/002-notes.md)
-* [Installation](files/installation.md)
-* [Install with docker container](files/install-docker-container.md)
-* [Install Mongosh](files/install-mongosh.md)
-* MongoDB with Java - https://www.mongodb.com/docs/languages/java/
+# Install Mongo Shell
+* Download mongo shell zip from - https://www.mongodb.com/try/download/shell
+* Unzip
+* Go to unzipped-folder/bin
+* Run `mongosh.exe`
+* Note: Mongodb should be running before running `mongosh.exe` 
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

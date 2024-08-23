@@ -8,6 +8,7 @@
 # Libraries
 * [Apache Commons Libraries](apache-commons)
 * [Lombok](lombok)
+* [Java Faker Dependency](files/java-faker-dependency.md)
 ------
 # Core Java
 * [Core Java](core-java)
@@ -81,7 +82,6 @@
 * [gitignore file](../.gitignore)
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](files/variables-arguments.md)
 * [Difference between model object and entity object](files/model-vs-entity.md)
-* [Java Faker Dependency](files/java-faker-dependency.md)
 * [Softwares List](files/softwares-list.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

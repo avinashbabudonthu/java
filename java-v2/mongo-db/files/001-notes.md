@@ -36,7 +36,7 @@
 ![picture](../img/cap-combinations.jpg)
 * CAP combinations with NoSql DBs\
 ![picture](../img/cap-combinations-2.jpg)
-
+------
 # Limitations of RDBMS
 * Scalability
 	* Vertical scaling by increasing CPU capacity. What if we reach the state that we cannot increase anymore?
@@ -46,7 +46,7 @@
 * Broken keys
 	* If connection of PK-FK fails then connectivity of data is lost
 * Define schema before loading data to database
-
+------
 # Why NoSql
 * Non-relations
 * Distributed database
@@ -56,7 +56,7 @@
 * Simpler data model
 * High Availability
 * Speed
-
+------
 # Features of NoSql Database
 * Supports high volume of transactions - tens of thousands to millions
 * Provides extremely responsive experience
@@ -65,7 +65,7 @@
 * Handles semi and unstructured data
 * Database storage\
 ![picture](../img/no-sql-database-storage.jpg)
-
+------
 # Advantage of NoSql Database
 * VVVV - Volume, Velocity, Variability, Veracity
 * Volume
@@ -86,7 +86,7 @@
 * Veracity
 	* Data in doubt
 		* Uncertainity due to latency, ambiguity etc
-
+------
 # Nosql Notes
 * Form of database management system that is non-relational
 * First coined in 1998 by Carlo Strozzi
@@ -117,16 +117,16 @@
 * Horizontal Scaling
 * Supports distributed by default
 * No joins in most of the NoSql databases
-
+------
 # Document based database
 * Deep nesting and complex structures
 * Document within document
-
+------
 # Key value database
 * Key and values
 * No structured. No relation
 * Used to store basic information after processing the data (like for caching)
-
+------
 # MongoDB Notes
 * Open source document based database
 * Works on concept of `collection` and `document`
@@ -167,7 +167,7 @@
 		* Code
 * `_id` is of type `ObjectId`
 * `_id` is unique to each document. Like primary key in RDBMS
-
+------
 # Tools Terminologies
 * Mongo database `MongoD`
 	* Physical container for collections
@@ -185,7 +185,7 @@
 ![picture](../img/terminology-rdbms-vs-mongo.jpg)
 * Mongo Tools\
 ![picture](../img/mongo-tools.jpg)
-
+------
 # JSON And BSON
 * JSON\
 ![picture](../img/json.jpg)
@@ -200,17 +200,17 @@
 		* Encoding/decoding data to/from BSON can be performed quickly
 * JSON Vs BSON
 ![picture](../img/json-vs-bson.jpg)
-
+------
 # Which features mongo ignore for scalability
 * indexes
 * joins
 * transactions across documents
 * storage
-
+------
 # Database
 * Made up of multiple collections
 * Created `on-the-fly` when referenced first time
-
+------
 # Collection
 * Similar to table
 * Schema less
@@ -220,7 +220,7 @@
 * Capped collections
 	* Fixed size
 	* Old records get dropped after reaching the limit
-
+------
 # Document
 * Similar to row in table
 * Every document has special key `_id`. This is unique to collection. Works like a primary key
@@ -229,7 +229,7 @@
 * Stored in collection
 * Supports relationships by Embedded (or) References
 * Document storage as `BSON - Binary form of JSON`
-
+------
 # Advantages
 * Schema less document based database
 * Supports dynamic queries on documents
@@ -238,22 +238,8 @@
 * Enable faster access of data by using internal memory
 * Mapping of application objects to database object is not needed
 * Easy to tune for performance
+------
 
-# Install MongoDB
-* Download mongo db from - https://www.mongodb.com/try/download/community
-	* Select appropriate `version`, `platform`, `package`
-	* Prefer downloading `zip`
-	* Click `Download` button
-* Unzip if zip is downloaded
-* Install if msi is downloaded
-* Start mongo db database
-```
-location-to-mongo-db-bin>mongod.exe
-```
-* Start mongo console to execute queries
-```
-location-to-mongo-db-bin>mongo.exe
-```
 
 # Setup
 * Go to extracted folder of mongodb
