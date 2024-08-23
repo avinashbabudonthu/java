@@ -7,13 +7,15 @@
 	* Click `Download` button
 * Unzip if zip is downloaded
 * Install if msi is downloaded
-* Start mongo db database
+* Start mongo db database. Navigate to `location-to-mongo-db-bin`
 ```
-location-to-mongo-db-bin>mongod.exe
+mongod.exe
 ```
-* Start mongo console to execute queries
+* Start mongo console to execute queries. Navigate to `location-to-mongo-db-bin`
 ```
-location-to-mongo-db-bin>mongo.exe
+mongo.exe
+or
+mongod.exe --dbpath C:\mongodb\data\db
 ```
 * Connect with [Mongosh](install-mongosh.md)
 ------
