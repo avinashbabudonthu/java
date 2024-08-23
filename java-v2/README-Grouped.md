@@ -18,9 +18,14 @@
 * Gradle
 * [Maven](maven)
 ------
-# Databases
-* [Mongo DB](mongo-db)
+# SQL Databases
 * [MySQL](mysql)
+* Oracle
+* PostgreSQL
+* SQL Server
+------
+# No SQL Databases
+* [Mongo DB](mongo-db)
 ------
 # Spring
 * [Spring Boot 3](spring-boot-3)
