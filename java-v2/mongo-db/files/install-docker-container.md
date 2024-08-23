@@ -9,6 +9,10 @@ docker pull mongodb/mongodb-community-server:latest
 specific version:
 docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:5.0-ubuntu2004
 ```
+* Check docker images. Should see image `mongodb/mongodb-community-server`
+```
+docker images
+```
 * Run the container
 ```
 docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:latest
