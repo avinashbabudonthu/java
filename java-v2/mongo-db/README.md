@@ -9,10 +9,10 @@
 * MongoDB with Java - https://www.mongodb.com/docs/languages/java/
 ------
 # Commands
-* [DB Commands](files/db-commands.md)
-* [Create Commands](files/create-commands.md)
-* [Read Commands](files/read-commands.md)
-* [Update Commands](files/update-commands.md)
-* [Delete Commands](files/delete-commands.md)
+* [DB Queries](files/db-queries.md)
+* [Create Queries](files/create-queries.md)
+* [Read Queries](files/read-queries.md)
+* [Update Queries](files/update-queries.md)
+* [Delete Queries](files/delete-queries.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
