@@ -1,5 +1,7 @@
-### Create 
-* Create `dept` table
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
+# Practice Tables and data
+* dept table
 ```
 create table dept
 (
@@ -9,7 +11,7 @@ create table dept
 ,constraint deptno_pk primary key(deptno)
 );
 ```
-* Create `emp` table
+* emp table
 ```
 create table emp
 (
@@ -27,7 +29,7 @@ constraint deptno_fk foreign key (deptno) references dept(deptno) on delete casc
 constraint mgr_fk foreign key (mgr) references emp(empno)
 );
 ```
-* Create `salgrade` table
+* salgrade table
 ```
 create table salgrade
 (
@@ -36,25 +38,14 @@ create table salgrade
 ,grade int(32)
 );
 ```
-
-### Drop tables
-```
-drop table dept;
-
-drop table emp;
-
-drop table salgrade;
-```
-
-## Inserts
+* Inserts
 ```
 insert into dept(deptno, dname, loc) values(10,'accounting','new york');
 insert into dept(deptno, dname, loc) values(20,'research','dallas');
 insert into dept(deptno, dname, loc) values(30,'sales','chicago');
 insert into dept(deptno, dname, loc) values(40,'operations','boston');
 commit;
-```
-```
+
 insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7839,'king','president',null,'1981-11-17',5000,null,10);
 insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7698,'blake','manager',7839,'1981-05-01',2850,null,30);
 insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7782,'clark','manager',7839,'1981-06-09',2450,null,10);
@@ -70,8 +61,7 @@ insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7788,'sco
 insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7876,'adams','clerk',7788,'1983-01-12',1100,null,20);
 insert into emp (empno,ename,job,mgr,hiredate,sal,comm,deptno) values (7934,'miller','clerk',7782,'1982-01-23',1300,null,10);
 commit;
-```
-```
+
 insert into salgrade (hisal, losal, grade) values (1, 700, 1200);
 insert into salgrade (hisal, losal, grade) values (2, 1201, 1400);
 insert into salgrade (hisal, losal, grade) values (3, 1401, 2000);
@@ -79,16 +69,7 @@ insert into salgrade (hisal, losal, grade) values (4, 2001, 3000);
 insert into salgrade (hisal, losal, grade) values (5, 3001, 9999);
 commit;
 ```
-
-### Delete
-```
-delete from salgrade;
-delete from emp;
-delete from dept;
-commit;
-```
-
-### Selects
+* Selects
 ```
 select * from emp;
 select * from dept;
@@ -98,3 +79,18 @@ select count(*) from dept;
 select count(*) from salgrade;
 select * from emp e join dept d on e.deptno = d.deptno;
 ```
+* Delete data
+```
+delete from salgrade;
+delete from emp;
+delete from dept;
+commit;
+```
+* Drop tables
+```
+drop table dept;
+drop table emp;
+drop table salgrade;
+```
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

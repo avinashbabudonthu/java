@@ -20,4 +20,9 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect
 spring.jpa.properties.hibernate.format_sql=${HIBERNATE_FORMAT_SQL:true}
 ```
 ------
+# Queries
+* [Practice Tables and data](files/practice-tables-data.md)
+* [DB Queries](files/db-queries.md)
+* [Read Queries](files/read-queries.sql)
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

@@ -14,7 +14,7 @@ help
 show dbs
 show databases
 ```
-* Use specific db
+* Create db. Use specific db. There is no `create` command for database. `use` will command will create and switch to dbs. If we run `show dbs` then new db is not visible. New db will be visible after 1st document insertion to any collection that db
 ```
 use <database-name>
 use office

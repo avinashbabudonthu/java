@@ -1,25 +1,24 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Read Commands
-* All documents
+# DB Queries
+* Create database
 ```
-db.emp.find()
-```
-* Documents with name = jack
-```
-db.emp.find( {name: "jack"} )
-db.emp.find( {"name": "jack"} )
-```
-* Document by id
-```
-db.emp.find({"_id": ObjectId("6028904d453eab070f119249")})
-db.emp.find(ObjectId("6028904d453eab070f119249"))
-```
-* Count
-```
-db.employee.count()  -> DeprecationWarning: Collection.count() is deprecated. Use countDocuments or estimatedDocumentCount
+create database [if not exists] database-name;
+create schema [if not exists] database-name;
 
-db.employee.countDocuments()
+create database if not exists practice;
+```
+* Show databases
+```
+show databases;
+```
+* Use database
+```
+use database_name
+```
+* Drop database
+```
+drop database database-name;
 ```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
