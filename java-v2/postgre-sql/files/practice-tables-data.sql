@@ -69,6 +69,11 @@ INSERT INTO SALGRADE (HISAL, LOSAL, GRADE) VALUES (4, 2001, 3000);
 INSERT INTO SALGRADE (HISAL, LOSAL, GRADE) VALUES (5, 3001, 9999);
 COMMIT;
 
+-- select queries
+select * from emp;
+select * from dept;
+select * from salgrade;
+
 -- delete
 delete from salgrade;
 delete from emp;
@@ -84,8 +89,3 @@ drop table salgrade;
 drop sequence dept_seq;
 drop sequence emp_seq;
 drop sequence salgrade_seq;
-
--- select queries
-select * from emp;
-select * from dept;
-select * from salgrade;

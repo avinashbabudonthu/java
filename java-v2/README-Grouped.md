@@ -22,7 +22,7 @@
 # SQL Databases
 * [MySQL](mysql)
 * Oracle
-* PostgreSQL
+* [PostgreSQL](postgre-sql)
 * SQL Server
 ------
 # No SQL Databases
