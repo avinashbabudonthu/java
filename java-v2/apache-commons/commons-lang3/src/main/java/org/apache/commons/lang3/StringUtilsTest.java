@@ -89,8 +89,17 @@ public class StringUtilsTest {
      */
     @Test
     void replaceEach() {
-        String result1 = StringUtils.replaceEach("hello world welcome to java", new String[]{"hello", "welcome"}, new String[]{"hi", "come"});
-        log.info("result1={}", result1); // result1=hi world come to java
+        String result1 = StringUtils.replaceEach("hello world hello welcome to java", new String[]{"hello", "welcome"}, new String[]{"hi", "come"});
+        log.info("result1={}", result1); // result1=hi world hi come to java
+    }
+
+    @Test
+    void startsWith() {
+        // {StringUtils.startsWith("1.0", "1")} = true
+        log.info("{StringUtils.startsWith(\"1.0\", \"1\")} = {}", StringUtils.startsWith("1.0", "1"));
+
+        // {StringUtils.startsWith("2.0", "1")} = false
+        log.info("{StringUtils.startsWith(\"2.0\", \"1\")} = {}", StringUtils.startsWith("2.0", "1"));
     }
 
 }
