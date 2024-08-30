@@ -7,6 +7,7 @@
 * [Install with docker container](files/install-docker-container.md)
 * [Install Mongosh](files/install-mongosh.md)
 * MongoDB with Java - https://www.mongodb.com/docs/languages/java/
+* [Practice Collections and Data](files/practice-collections-data.md)
 ------
 # Commands
 * [DB Queries](files/db-queries.md)

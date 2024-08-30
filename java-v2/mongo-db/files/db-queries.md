@@ -27,17 +27,9 @@ show collections
 ```
 show users
 ```
-* Create collection
+* Drop database
 ```
-use office
-db.createCollection("employees")
-show collections
-
-or
-use office
-db.createCollection("emp", { capped: true, autoIndexID: true, size: 6142800, max: 100000 })
-show collections
+db.dropDatabase()
 ```
-
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

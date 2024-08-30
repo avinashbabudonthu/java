@@ -5,6 +5,10 @@
 ```
 db.emp.find()
 ```
+* Find one document
+```
+db.students.findOne({})
+```
 * Documents with name = jack
 ```
 db.emp.find( {name: "jack"} )

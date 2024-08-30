@@ -8,11 +8,11 @@ db.employees.drop()
 ```
 * Delete all documents in collection
 ```
-db.emp.remove({})
+db.emp.deleteMany({})
 ```
 * Remove document with name = jack
 ```
-db.emp.remove({name: "jack"})
+db.emp.delete({name: "jack"})
 ```
 * Remove field in existing document
 ```
