@@ -11,8 +11,6 @@
     <version>3.16.0</version>
 </dependency>
 ```
-## Classes like blow are part of this library
-* StringUtils
 ------
 # commons-collections4
 * Refer central repository for latest version - https://mvnrepository.com/artifact/org.apache.commons/commons-collections4

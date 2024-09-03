@@ -8,7 +8,7 @@
     <version>1.0.2</version>
 </dependency>
 ```
-* Above version will vulnerability with transitive dependency. Use below code
+* Above version will give vulnerability with transitive dependency. Use below code
 * Refer central repository for `snakeyaml` latest version - https://mvnrepository.com/artifact/org.yaml/snakeyaml
 ```
 <dependency>
