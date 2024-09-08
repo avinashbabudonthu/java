@@ -1,0 +1,4 @@
+FROM openjdk:17
+COPY target/[application-name]*.jar app.jar
+#EXPOSE [application-running-port]
+ENTRYPOINT ["java", "-jar", "app.jar"]
