@@ -3,10 +3,7 @@ package com.java;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
-
-import java.util.List;
 
 @Slf4j
 public class FluxPracticeTest {

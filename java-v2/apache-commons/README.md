@@ -6,6 +6,7 @@
 # commons-lang3 Examples
 * [StringUtils](commons-lang3/src/main/java/org/apache/commons/lang3/StringUtilsTest.java)
 * [SystemUtils](commons-lang3/src/main/java/org/apache/commons/lang3/SystemUtilsTest.java)
+* [ReflectionToStringBuilder](commons-lang3/src/main/java/org/apache/commons/lang3/ReflectionToStringBuilderTest.java)
 * StringEscapeUtils
 * ExceptionUtils
 * ArrayUtils

@@ -113,4 +113,14 @@ public class StringTest {
         log.info("{}", Arrays.deepToString(splitBySpace));
     }
 
+    /**
+     * [StringTest.splitToCharacters] - [a, b, c, d, e]
+     */
+    @Test
+    void splitToCharacters() {
+        String input1 = "abcde";
+        String[] output1 = input1.split("");
+        log.info("{}", Arrays.deepToString(output1));
+    }
+
 }
