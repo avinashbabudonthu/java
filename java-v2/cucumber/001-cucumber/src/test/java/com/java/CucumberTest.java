@@ -20,14 +20,14 @@ public class CucumberTest {
         System.out.println("Before calculator 001");
     }
 
-    @Before("@calculator002")
-    public void setup2() {
-        System.out.println("Before calculator 002");
-    }
-
     @After("@calculator001")
     public void teardown1() {
         System.out.println("After calculator 001");
+    }
+
+    @Before("@calculator002")
+    public void setup2() {
+        System.out.println("Before calculator 002");
     }
 
     @After("@calculator002")

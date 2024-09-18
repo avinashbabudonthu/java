@@ -1,8 +1,8 @@
 @calculator001
-Feature: Calculator
+Feature: 001 Calculator
   Addition of numbers passed as argument. return -1 if no arguments passed
 
-  Scenario: sum of numbers
-    Given two numbers
-    When two numbers are passed as arguments
-    Then get sum of numbers
+  Scenario: 001 sum of numbers
+    Given 001 two numbers
+    When 001 two numbers are passed as arguments
+    Then 001 get sum of numbers

@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 
-public class Calculator002StepDefinition {
+public class CalculatorStepDefinition002 {
 
     private Long num1;
     private Long num2;
@@ -29,7 +29,7 @@ public class Calculator002StepDefinition {
         }
     }
 
-    @Then("result is {long}")
+    @Then("002 result is {long}")
     public void then(Long result) {
         Assertions.assertEquals(result, this.result);
     }

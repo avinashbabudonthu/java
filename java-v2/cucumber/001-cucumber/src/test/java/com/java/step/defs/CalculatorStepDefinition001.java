@@ -6,22 +6,22 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 //@Slf4j
-public class Calculator001StepDefinition {
+public class CalculatorStepDefinition001 {
 
     private Calculator calculator;
     private Long result;
 
-    @Given("two numbers")
+    @Given("001 two numbers")
     public void given() {
         calculator = new Calculator();
     }
 
-    @When("two numbers are passed as arguments")
+    @When("001 two numbers are passed as arguments")
     public void when() {
         result = calculator.sum(10L, 20L);
     }
 
-    @Then("get sum of numbers")
+    @Then("001 get sum of numbers")
     public void then() {
         System.out.println("result = " + result);
     }

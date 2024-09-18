@@ -5,7 +5,7 @@ Feature: 002 Calculator
   Scenario: 002 sum with variables
     Given 002 two numbers <num1> and <num2>
     When 002 two numbers are passed as arguments
-    Then result is <result>
+    Then 002 result is <result>
 
   Examples:
     | num1 | num2 | result |
