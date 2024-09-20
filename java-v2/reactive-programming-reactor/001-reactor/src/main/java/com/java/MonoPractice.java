@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 public class MonoPractice {
 
     /**
-     * [MonoPractice.lambda$just$0] - name=a
+     * name=a
      */
     @Test
     public void just() {
@@ -20,8 +20,8 @@ public class MonoPractice {
     }
 
     /**
-     * [MonoPractice.lambda$concatWith$1] - a
-     * [MonoPractice.lambda$concatWith$1] - b
+     * a
+     * b
      */
     @Test
     void concatWith() {
@@ -33,28 +33,29 @@ public class MonoPractice {
 
     @Test
     void subscribe() {
-        // [MonoPractice.lambda$subscribe$2] - a
+        //a
         Mono<String> mono1 = Mono.just("a");
         Consumer<String> consumer = value -> log.info("{}", value);
         mono1.subscribe(consumer);
 
         /*
-        [MonoPractice.lambda$subscribe$2] - b
-        [MonoPractice.lambda$subscribe$4] - completed
+        b
+        completed
          */
         Mono<String> mono2 = Mono.just("b");
+        Consumer<String> consumer2 = value -> log.info("{}", value);
         Consumer<Throwable> throwableConsumer = error -> log.info("{}", error.getMessage());
         Runnable completeConsumer = () -> log.info("completed");
-        mono2.subscribe(consumer, throwableConsumer, completeConsumer);
+        mono2.subscribe(consumer2, throwableConsumer, completeConsumer);
 
         /*
-         * [MonoPractice.lambda$subscribe$7] - error=/ by zero
+         * error=/ by zero
          */
         Mono<Integer> mono3 = Mono.just("a").map(String::length).map(l -> l/0);
         Consumer<Integer> consumer3 = i -> log.info("{}", i);
-        Consumer<Throwable> errorConsumer3 = error -> log.info("error={}", error.getMessage());
+        Consumer<Throwable> throwableConsumer3 = error -> log.info("error={}", error.getMessage());
         Runnable completeConsumer3 = () -> log.info("Completed");
-        mono3.subscribe(consumer3, errorConsumer3, completeConsumer3);
+        mono3.subscribe(consumer3, throwableConsumer3, completeConsumer3);
     }
 
 }

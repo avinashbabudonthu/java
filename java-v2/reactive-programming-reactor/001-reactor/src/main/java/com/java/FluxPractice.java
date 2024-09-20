@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.function.Function;
 
@@ -12,11 +13,11 @@ public class FluxPractice {
 
     /**
      * Create flux using - just
-     * [FluxPractice.lambda$just$0] - a
-     * [FluxPractice.lambda$just$0] - b
-     * [FluxPractice.lambda$just$0] - c
-     * [FluxPractice.lambda$just$0] - d
-     * [FluxPractice.lambda$just$0] - e
+     * a
+     * b
+     * c
+     * d
+     * e
      */
     @Test
     public void just() {
@@ -26,11 +27,11 @@ public class FluxPractice {
 
     /**
      * Create flux from list using - fromIterable
-     * [FluxPractice.lambda$fromIterable$0] - name=a
-     * [FluxPractice.lambda$fromIterable$0] - name=b
-     * [FluxPractice.lambda$fromIterable$0] - name=c
-     * [FluxPractice.lambda$fromIterable$0] - name=d
-     * [FluxPractice.lambda$fromIterable$0] - name=e
+     * name=a
+     * name=b
+     * name=c
+     * name=d
+     * name=e
      */
     @Test
     public void fromIterable() {
@@ -40,11 +41,12 @@ public class FluxPractice {
     }
 
     /**
-     * [FluxPractice.lambda$fromArray$2] - a
-     * [FluxPractice.lambda$fromArray$2] - b
-     * [FluxPractice.lambda$fromArray$2] - c
-     * [FluxPractice.lambda$fromArray$2] - d
-     * [FluxPractice.lambda$fromArray$2] - e
+     * Create flux using - fromArray
+     *  a
+     *  b
+     *  c
+     *  d
+     *  e
      */
     @Test
     void fromArray() {
@@ -66,11 +68,11 @@ public class FluxPractice {
      * Used to transform flux data.
      * In this example converting to upper case.
      *
-     * [FluxPractice.lambda$map$1] - value=A
-     * [FluxPractice.lambda$map$1] - value=B
-     * [FluxPractice.lambda$map$1] - value=C
-     * [FluxPractice.lambda$map$1] - value=D
-     * [FluxPractice.lambda$map$1] - value=E
+     * value=A
+     * value=B
+     * value=C
+     * value=D
+     * value=E
      */
     @Test
     public void map() {
@@ -85,29 +87,29 @@ public class FluxPractice {
 
         // filter string with length < 3
         /* Output:
-        [FluxPractice.lambda$filter$4] - bbb
-        [FluxPractice.lambda$filter$4] - bbbb
-        [FluxPractice.lambda$filter$4] - bbbbb*/
+        bbb
+        bbbb
+        bbbbb*/
         Flux<String> outputFlux = inputFlux.filter(value -> value.length() >= 3);
         outputFlux.subscribe(value -> log.info("{}", value));
     }
 
     /**
-     * [FluxPractice.lambda$flatMap$6] - a
-     * [FluxPractice.lambda$flatMap$6] - b
-     * [FluxPractice.lambda$flatMap$6] - c
-     * [FluxPractice.lambda$flatMap$6] - d
-     * [FluxPractice.lambda$flatMap$6] - e
-     * [FluxPractice.lambda$flatMap$6] - f
-     * [FluxPractice.lambda$flatMap$6] - g
-     * [FluxPractice.lambda$flatMap$6] - h
-     * [FluxPractice.lambda$flatMap$6] - i
-     * [FluxPractice.lambda$flatMap$6] - j
-     * [FluxPractice.lambda$flatMap$6] - k
-     * [FluxPractice.lambda$flatMap$6] - l
-     * [FluxPractice.lambda$flatMap$6] - m
-     * [FluxPractice.lambda$flatMap$6] - n
-     * [FluxPractice.lambda$flatMap$6] - o
+     * a
+     * b
+     * c
+     * d
+     * e
+     * f
+     * g
+     * h
+     * i
+     * j
+     * k
+     * l
+     * m
+     * n
+     * o
      */
     @Test
     void flatMap() {
@@ -122,8 +124,9 @@ public class FluxPractice {
     }
 
     /**
-     * [FluxPractice.lambda$transform$9] - BBBB
-     * [FluxPractice.lambda$transform$9] - BBBBB
+     * BBBB
+     *
+     * BBBBB
      */
     @Test
     void transform() {
@@ -135,12 +138,12 @@ public class FluxPractice {
     }
 
     /**
-     * [FluxPractice.lambda$concat$10] - a
-     * [FluxPractice.lambda$concat$10] - b
-     * [FluxPractice.lambda$concat$10] - c
-     * [FluxPractice.lambda$concat$10] - d
-     * [FluxPractice.lambda$concat$10] - e
-     * [FluxPractice.lambda$concat$10] - f
+     * a
+     * b
+     * c
+     * d
+     * e
+     * f
      */
     @Test
     void concat() {
@@ -148,6 +151,26 @@ public class FluxPractice {
         Flux<String> flux2 = Flux.just("d", "e", "f");
         Flux<String> output1 = Flux.concat(flux1, flux2);
         output1.subscribe(value -> log.info("{}", value));
+    }
+
+    @Test
+    void merge(){
+        Flux<String> flux1 = Flux.just("a", "b", "c");
+//                .delayElements(Duration.ofMillis(100));
+        Flux<String> flux2 = Flux.just("d", "e", "f");
+//                .delayElements(Duration.ofMillis(125));
+        Flux<String> output1 = Flux.merge(flux1, flux2);
+        output1.subscribe(value -> log.info("{}", value));
+    }
+
+    @Test
+    void zip() {
+
+    }
+
+    @Test
+    void zipWith() {
+
     }
 
 }

@@ -58,8 +58,10 @@ SelectPackages - Parent path where feature files are present
 ------
 # Tags
 * [001-calculator.feature](src/test/resources/features/001-calculator.feature) has the tag `@calculator001`
-* `setup1`, `teardown1` methods execute before and after each test case of [001-calculator.feature](src/test/resources/features/001-calculator.feature)
+  * `setup1`, `teardown1` methods in [CucumberTest.java](src/test/java/com/java/CucumberTest.java) execute before and after each test case of [001-calculator.feature](src/test/resources/features/001-calculator.feature)
+  * Because same `@calculator001` tag is given on `setup1`, `teardown1` methods in [CucumberTest.java](src/test/java/com/java/CucumberTest.java)
 * [002-calculator.feature](src/test/resources/features/002-calculator.feature) has the tag `@calculator002`
-* `setup2`, `teardown2` methods execute before and after each test case of [002-calculator.feature](src/test/resources/features/002-calculator.feature)
+  * `setup2`, `teardown2` methods in [CucumberTest.java](src/test/java/com/java/CucumberTest.java) execute before and after each test case of [002-calculator.feature](src/test/resources/features/002-calculator.feature)
+  * Because same `@calculator002` tag is given on `setup2`, `teardown2` methods in [CucumberTest.java](src/test/java/com/java/CucumberTest.java)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
