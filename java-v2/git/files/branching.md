@@ -1,12 +1,10 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Git
-* [GitIgnore File](files/.gitignore)
-* [Branching](files/branching.md)
-* [Git Commands](files/commands.md)
-* [Rebase](files/rebase.md)
-* [Stash](files/stash.md)
-* [Cherry Pick](files/cherry-pick.md)
-* [Push local repo to new remote repo](files/push-local-repo-to-new-remote-repo.md)
+# Branching
+* Default branch name: main (or) master
+* Default remote name: origin
+* Current branch reference: HEAD
+* Parent of HEAD: HEAD^ or HEAD~1
+* Grandparent of HEAD: HEAD^^ or HEAD~2
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
