@@ -12,7 +12,7 @@
 ## Method 1
 * Set Java 17 and Maven to path
 * Import application to IntelliJ
-* Run main class [Application](src/main/java/com/java/Application.java)
+* Run main class [Main](src/main/java/com/java/Main.java)
 
 ## Method 2
 * Run below maven command
@@ -24,7 +24,7 @@ mvn clean compile spring-boot:run
 # Files
 * [pom.xml](pom.xml)
 * [application.yml](src/main/resources/application.yml)
-* Main class [Application](src/main/java/com/java/Application.java)
+* Main class [Main](src/main/java/com/java/Main.java)
 * Student Model class [Student](src/main/java/com/java/model/Student.java)
 * StudentService interface [StudentService](src/main/java/com/java/service/StudentService.java)
 * StudentServiceImpl class [StudentServiceImpl](src/main/java/com/java/service/impl/StudentServiceImpl.java)
@@ -113,7 +113,7 @@ springdoc.swagger-ui.operationsSorter=alpha
 * Reference - https://www.baeldung.com/spring-rest-openapi-documentation
 
 ## To change OpenAPI definition heading
-* Add below annotation. Refer [Application](src/main/java/com/java/Application.java)
+* Add below annotation. Refer [Main](src/main/java/com/java/Main.java)
 ```
 @OpenAPIDefinition(info = @Info(title = "Rest API Documentation"))
 ```

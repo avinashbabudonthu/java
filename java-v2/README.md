@@ -23,6 +23,7 @@
 * [Log4J2](log4j2)
 * [Lombok](lombok)
 * [Maven](maven)
+* [Microservices](microservices)
 * [Mockito](mockito)
 * [Mongo DB](mongo-db)
 * [Multi Threading](multi-threading)
