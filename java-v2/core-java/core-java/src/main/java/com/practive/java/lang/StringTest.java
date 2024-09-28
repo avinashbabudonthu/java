@@ -10,10 +10,17 @@ public class StringTest {
 
     private static final Logger log = LoggerFactory.getLogger(StringTest.class);
 
+    /**
+     * s1=jack
+     * s2=a
+     */
     @Test
     void createString() {
         String s1 = new String("jack");
         log.info("s1={}", s1);
+
+        String s2 = "a";
+        log.info("s2={}", s2);
     }
 
     @Test

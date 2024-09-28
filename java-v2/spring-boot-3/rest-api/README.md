@@ -36,6 +36,8 @@ mvn clean compile spring-boot:run
 * PutControllerImpl class [PutControllerImpl](src/main/java/com/java/controller/impl/PutControllerImpl.java)
 * DeleteController interface [DeleteController](src/main/java/com/java/controller/DeleteController.java)
 * DeleteControllerImpl class [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java)
+* HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
+* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
 ------
 # REST APIs
 * Download and import [Postman collection](postman/rest-api.postman_collection.json) for below APIs
@@ -58,8 +60,20 @@ mvn clean compile spring-boot:run
   * Interface has DELETE API declarations
   * Has different ways of writing DELETE APIs
 * [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java) class has API implementation
+------
+# Hateoas APIs
+* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+  * Refer `saveStudent` method. This returns link to access newly created student in response header `location`
+```
+import java.net.URI;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.http.ResponseEntity;
 
-## API with pagination
+URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedStudent.getId()).toUri();
+ResponseEntity.created(location).build();
+```
+------
+# API with pagination
 * Refer `studentsV7` method in [GetController](src/main/java/com/java/controller/GetController.java)
 * We can directly use `Pageable`
 * `ParameterObject` is used for swagger documentation
