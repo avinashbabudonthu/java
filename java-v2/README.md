@@ -40,7 +40,10 @@
 * [Windows](windows)
 ------
 # Rest Clients
-* [Rest Client WebClient](rest-client-webclient)
+* [Java library - WebClient](rest-client-webclient)
+* Java library - org.springframework.web.client.RestTemplate
+* Java library - Feign
+* Java library - java.net.http.HttpClient
 * Rest client tool - Postman
 * Rest client tool - Talend API Tester - This is chrome extension
 ------
