@@ -181,4 +181,24 @@ docker image tag rest-api donthuavinashbabu/rest-api
 docker image push donthuavinashbabu/rest-api
 ```
 ------
+# Validation
+* Add below validation dependency. Refer [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+* Add `org.springframework.validation.annotation.Validated` annotation to API request body. Refer `studentV2` method in [PostController](src/main/java/com/java/controller/PostController.java)
+* Add validation annotations in Student Model class [Student](src/main/java/com/java/model/Student.java)
+  * import jakarta.validation.constraints.Min 
+  * import jakarta.validation.constraints.NotBlank 
+  * import jakarta.validation.constraints.NotNull
+* Like this we have more annotation. Refer jar file\
+![picture](img/006.jpg)
+* API response without passing `name` and `book`\
+![picture](img/007.jpg)
+* API response without passing `book`\
+![picture](img/008.jpg)
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
