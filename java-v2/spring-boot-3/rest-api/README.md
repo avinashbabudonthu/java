@@ -39,6 +39,8 @@ mvn clean compile spring-boot:run
 * HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
 * HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
 * GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
+* I18NController interface [I18NController](src/main/java/com/java/controller/I18NController.java)
+* I18NControllerImpl class [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
 ------
 # REST APIs
 * Download and import [Postman collection](postman/rest-api.postman_collection.json) for below APIs
@@ -201,5 +203,25 @@ docker image push donthuavinashbabu/rest-api
 ![picture](img/007.jpg)
 * API response without passing `book`\
 ![picture](img/008.jpg)
+------
+# Support json and xml responses
+* Add below dependency in [pom.xml](pom.xml)
+```
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-xml</artifactId>
+</dependency>
+```
+* Add `org.springframework.http.MediaType.APPLICATION_XML_VALUE` to `produces` in API declaration. Refer `studentsV3` method in [GetController](src/main/java/com/java/controller/GetController.java)
+* Hit API - http://localhost:9000/get/api/v3/students with header - `Accept:application/xml`\
+![picture](img/009.jpg)
+------
+# Internationalization - I18N
+* Add language specific properties files
+  * [messages.properties](src/main/resources/messages.properties)
+  * [messages_fr.properties](src/main/resources/messages_fr.properties)
+* Inject `org.springframework.context.MessageSource` into our class
+* Get locale specific messages using `org.springframework.context.MessageSource`. Refer `helloWorld` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+* Get locale specific messages using `org.springframework.context.MessageSource` with parameters. Refer `helloWorldWithName` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

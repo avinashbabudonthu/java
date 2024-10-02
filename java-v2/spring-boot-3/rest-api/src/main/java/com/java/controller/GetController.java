@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springdoc.core.converters.models.Pageable;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,10 +21,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
 
 @Tag(name = "Get APIs")
-@RequestMapping(value = "/api")
+@RequestMapping(value = "/get/api")
 public interface GetController {
 
     /**
@@ -80,7 +82,7 @@ public interface GetController {
                     }
             )
     })
-    @GetMapping(value = "/v3/students", produces = APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/v3/students", produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     List<Student> studentsV3();
 
     /**
