@@ -38,6 +38,7 @@ mvn clean compile spring-boot:run
 * DeleteControllerImpl class [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java)
 * HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
 * HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+* GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
 ------
 # REST APIs
 * Download and import [Postman collection](postman/rest-api.postman_collection.json) for below APIs
