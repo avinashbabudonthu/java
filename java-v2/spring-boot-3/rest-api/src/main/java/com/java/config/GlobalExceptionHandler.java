@@ -29,6 +29,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
          // method reference
         // String message = "Total error count: " + ex.getErrorCount() + ", " + ex.getFieldErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining(","));
+
         ErrorModel errorModel = ErrorModel.builder()
                 .code(HttpStatus.BAD_REQUEST.value())
                 .message(message)
