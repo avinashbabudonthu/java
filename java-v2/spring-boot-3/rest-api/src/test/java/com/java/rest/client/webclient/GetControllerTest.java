@@ -1,4 +1,4 @@
-package com.java.controller.webclient;
+package com.java.rest.client.webclient;
 
 import com.java.model.Student;
 import lombok.extern.slf4j.Slf4j;

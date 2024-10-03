@@ -1,3 +1,5 @@
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
+------
 # Connect to github repository using SSH key
 * Open Gitbash
 * Create new ssh key
@@ -18,13 +20,13 @@ cat ~/.ssh/id_rsa.pub
 ```
 * Copy the content
 * Open Github account and go to settings page\
-![picture](images/github-settings.png)
+![picture](../img/github-settings.png)
 * On the side bar, click `SSH and GPG keys`\
-![picture](images/github-settings-ssh-gpc-key.png)
+![picture](../img/github-settings-ssh-gpc-key.png)
 * Click `New SSH key` button\
-![picture](images/new-ssh-key-button.jpg)
+![picture](../img/new-ssh-key-button.jpg)
 * Enter `Title`, above copied public key\
-![picture](images/new-ssh-details.jpg)
+![picture](../img/new-ssh-details.jpg)
 * Click `Add SSH key` button
 * If prompted, confirm your GitHub password
 * After you’ve set up your SSH key and added it to your GitHub account, you can test your connection
@@ -39,7 +41,7 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 * Congratulations, now you can use your connect to your github account using the ssh key !!!
 * Now you can clone your github repository using ssh command.
 * In github, copy the ssh clone link for a repository\
-![picture](images/ssh-url.jpg)
+![picture](../img/ssh-url.jpg)
 * Open terminal and go to the folder where you want to clone the repository. Then clone the repository using the clone command as below
 ```
 git clone git@github.com:avinashbabudonthu/devops.git
@@ -50,3 +52,5 @@ git clone git@github.com:avinashbabudonthu/devops.git
 ```
 git remote set-url origin git@github.com:git/git.git
 ```
+------
+### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

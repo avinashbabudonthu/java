@@ -1,58 +1,94 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
-# Table of Contents
-* [Apache Commons Libraries](apache-commons)
+# Architecture
 * [Architecture](architecture)
-* [Autosys](autosys)
+------
+# Core Java
 * [Core Java](core-java)
-* [Cucumber](cucumber)
-* [Docker](docker)
-* [Docker Compose](docker-compose)
-* [Git](git)
-* [Guava](guava)
-* [HikariCP](hikari-cp)
-* [IntelliJ](intellij)
+* [Java Reflection](reflection)
+* [Multi Threading](multi-threading)
+------
+# Reactive Programming
+* [Reactive Programming Using Reactor](reactive-programming-reactor)
+------
+# Unit Testing
 * [Junit 4](junit-4)
 * [Junit 5](junit-5)
-* [Kafka](kafka)
-* [Kafka Connect](kafka-connect)
-* [Kafka Streams](kafka-streams)
-* [Kubernetes](kubernetes)
-* [Linux](linux)
+* [Mockito](mockito)
+* [Cucumber](cucumber)
+------
+# Build Tools
+* [Maven](maven)
+------
+# SQL Databases
+* [MySQL](mysql)
+* [PostgreSQL](postgre-sql)
+------
+# No SQL Databases
+* [Mongo DB](mongo-db)
+------
+# Logging
 * [Log4J](log4j)
 * [Log4J2](log4j2)
-* [Lombok](lombok)
-* [Maven](maven)
-* [Microservices](microservices)
-* [Mockito](mockito)
-* [Mongo DB](mongo-db)
-* [Multi Threading](multi-threading)
-* [MySQL](mysql)
-* [Open SSL](openssl)
-* [PostgreSQL](postgre-sql)
-* [Postman](postman)
-* [Reactive Programming Using Reactor](reactive-programming-reactor)
-* [Java Reflection](reflection)
-
-* [Splunk](splunk)
+------
+# Spring
 * [Spring Boot 3](spring-boot-3)
 * [Spring Security](spring-security)
-* [Windows](windows)
+------
+# Rest API
+* [Rest API](rest-api)
+* [REST API Using Spring Boot 3](spring-boot-3/rest-api)
 ------
 # Rest Clients
 * [Java library - WebClient](rest-client-webclient)
-* Java library - org.springframework.web.client.RestTemplate
+* [Java library - org.springframework.web.client.RestTemplate](rest-client-resttemplate)
 * Java library - Feign
 * Java library - java.net.http.HttpClient
-* Rest client tool - Postman
+* Rest client tool - [Postman](postman)
 * Rest client tool - Talend API Tester - This is chrome extension
+* Rest client tool - cURL
+------
+# Libraries
+* [Apache Commons Libraries](apache-commons)
+* [Lombok](lombok)
+* [HikariCP](hikari-cp)
+* [Guava](guava)
+* [Java Faker Dependency](files/java-faker-dependency.md)
+------
+# Operating Systems OS
+* [Linux](linux)
+* [Windows](windows)
+------
+# Microservices
+* [Microservices](microservices)
+------
+# Containers
+* [Docker](docker)
+* [Docker Compose](docker-compose)
+* [Kubernetes](kubernetes)
+------
+# Security
+* [Open SSL](openssl)
+* [Spring Security](spring-security)
+------
+# JMS
+* [Kafka](kafka)
+* [Kafka Connect](kafka-connect)
+* [Kafka Streams](kafka-streams)
+------
+# Tools
+* [Git](git)
+* [IntelliJ](intellij)
+* [Splunk](splunk)
+------
+# Schedulers
+* [Autosys](autosys)
 ------
 # Others
 * [README file](../README-template.md)
 * [gitignore file](../.gitignore)
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments) | Java](files/variables-arguments.md)
+* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments)](files/variables-arguments.md)
 * [Difference between model object and entity object](files/model-vs-entity.md)
-* [Java Faker Dependency](files/java-faker-dependency.md)
 * [Softwares List](files/softwares-list.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

@@ -2,9 +2,6 @@
 ------
 # Table of Contents
 ------
-# V3
-* [Table of Contents Grouped](java-v2/README-Grouped.md)
-------
 # V2
 * [Table of Contents](java-v2/README.md)
 ------

@@ -216,13 +216,6 @@ git remote add origin [url]
 git push origin master
 ```
 
-# fatal: unable to access url: The requested URL returned error: 403
-* Go to window credential manager
-	* `control panel > user accounts > credential manager > windows credentials > Generic credentials`
-	* or
-	* Search for `Generic credentials` in `start`
-* Delete the existing git credentials
-
 # pull from remote repository
 * change any file in git repository (or) some other developer made and pushed changes to remote repository
 * pull changes to local

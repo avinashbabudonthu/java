@@ -41,6 +41,8 @@ mvn clean compile spring-boot:run
 * GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
 * I18NController interface [I18NController](src/main/java/com/java/controller/I18NController.java)
 * I18NControllerImpl class [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+* VersioningController interface [VersioningController](src/main/java/com/java/controller/VersioningController.java)
+* VersioningControllerImpl class [VersioningControllerImpl](src/main/java/com/java/controller/impl/VersioningControllerImpl.java)
 ------
 # REST APIs
 * Download and import [Postman collection](postman/rest-api.postman_collection.json) for below APIs
@@ -63,6 +65,18 @@ mvn clean compile spring-boot:run
   * Interface has DELETE API declarations
   * Has different ways of writing DELETE APIs
 * [DeleteControllerImpl](src/main/java/com/java/controller/impl/DeleteControllerImpl.java) class has API implementation
+* HateoasController interface [HateoasController](src/main/java/com/java/controller/HateoasController.java)
+  * Return hateoas link in api response
+* [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java) class has API implementation
+* GlobalExceptionHandler class [GlobalExceptionHandler](src/main/java/com/java/config/GlobalExceptionHandler.java)
+  * Global exception handler class
+  * Handles jakarta validations also. Refer method `handleMethodArgumentNotValid`
+* I18NController interface [I18NController](src/main/java/com/java/controller/I18NController.java)
+  * Internationalization in rest api
+* [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java) class has API implementation
+* VersioningController interface [VersioningController](src/main/java/com/java/controller/VersioningController.java)
+  * Different ways to implement rest api versioning
+* [VersioningControllerImpl](src/main/java/com/java/controller/impl/VersioningControllerImpl.java) class has API implementation
 ------
 # Hateoas APIs
 * HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
@@ -223,5 +237,12 @@ docker image push donthuavinashbabu/rest-api
 * Inject `org.springframework.context.MessageSource` into our class
 * Get locale specific messages using `org.springframework.context.MessageSource`. Refer `helloWorld` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
 * Get locale specific messages using `org.springframework.context.MessageSource` with parameters. Refer `helloWorldWithName` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+------
+# Rest Clients
+## RestTemplate Examples
+* [Get APIs](src/test/java/com/java/rest/client/resttemplate/GetControllerTest.java)
+
+## WebClient Examples
+* [Get APIs](src/test/java/com/java/rest/client/webclient/GetControllerTest.java)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)

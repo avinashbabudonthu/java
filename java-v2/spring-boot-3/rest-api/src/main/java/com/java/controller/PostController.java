@@ -1,5 +1,6 @@
 package com.java.controller;
 
+import com.java.controller.impl.PostControllerImpl;
 import com.java.model.Student;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -114,5 +115,9 @@ public interface PostController {
     })
     @PostMapping(value = "/v6/students/{id}", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     Student studentV6(@RequestBody Student student, @PathVariable("id") String id, @RequestHeader("name") String name, @RequestParam("book") String book);
+
+    record Employee(Long id, String name, String dept){}
+    @PostMapping(value = "/v1/employee", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    Employee employee(@RequestBody Employee employee);
 
 }

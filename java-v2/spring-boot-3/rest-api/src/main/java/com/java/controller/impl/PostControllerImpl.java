@@ -5,8 +5,10 @@ import com.java.model.Student;
 import com.java.service.StudentService;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @AllArgsConstructor
 @RestController
 public class PostControllerImpl implements PostController {
@@ -44,4 +46,9 @@ public class PostControllerImpl implements PostController {
         return studentService.studentV6(student, id, name, book);
     }
 
+    @Override
+    public Employee employee(Employee employee) {
+        log.info("Request employee={}", employee);
+        return new Employee(employee.id(), employee.name(), employee.dept());
+    }
 }
