@@ -10,8 +10,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springdoc.core.converters.models.Pageable;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -152,7 +152,12 @@ public interface GetController {
                     }
             )
     })
-    @GetMapping(value = "v7/students", produces = APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/v7/students", produces = APPLICATION_JSON_VALUE)
     List<Student> studentsV7(@ParameterObject Pageable pageable);
 
+    /**
+     * API with dynamic filtering
+     */
+    @GetMapping(value = "/v1/users", produces = APPLICATION_JSON_VALUE)
+    MappingJacksonValue users1();
 }

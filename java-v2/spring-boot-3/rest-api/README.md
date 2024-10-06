@@ -21,6 +21,28 @@ mvn clean compile spring-boot:run
 ```
 * This command clean compile and run application
 ------
+# Build docker image and push to docker hub
+* Write [Dockerfile](Dockerfile)
+* We are using `openjdk java 17` base image
+* Build image using below command
+```
+docker build . -t rest-api
+``` 
+* Run and check the container
+```
+docker run -it -p 9000:9000 rest-api
+```
+* Open url - http://localhost:9000/swagger-ui/index.html
+* Swagger should start without any issues
+* Tag an image before pushing to docker hub
+```
+docker image tag rest-api donthuavinashbabu/rest-api
+```
+* Push image to docker hub
+```
+docker image push donthuavinashbabu/rest-api
+```
+------
 # Files
 * [pom.xml](pom.xml)
 * [application.yml](src/main/resources/application.yml)
@@ -79,8 +101,18 @@ mvn clean compile spring-boot:run
 * [VersioningControllerImpl](src/main/java/com/java/controller/impl/VersioningControllerImpl.java) class has API implementation
 ------
 # Hateoas APIs
+* Hateoas - Hypermedia as the engine of application state
+* Add below dependency
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-hateoas</artifactId>
+</dependency>
+```
+
+## Adding link to access newly created student in header
 * HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
-  * Refer `saveStudent` method. This returns link to access newly created student in response header `location`
+* Refer `saveStudent` method. This returns link to access newly created student in response header `location`
 ```
 import java.net.URI;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -88,6 +120,26 @@ import org.springframework.http.ResponseEntity;
 
 URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedStudent.getId()).toUri();
 ResponseEntity.created(location).build();
+```
+
+## Add `_link` property
+* HateoasControllerImpl class [HateoasControllerImpl](src/main/java/com/java/controller/impl/HateoasControllerImpl.java)
+* Refer `saveStudents2` method
+* Returns response as below
+```
+{
+    "id": "3d6a18a7-0131-4a56-b978-d7d24ff78925",
+    "name": "a",
+    "book": "b1",
+    "_links": {
+        "all-students": {
+            "href": "http://localhost:9000/hateoas/api/v1/students"
+        },
+        "this-student-by-id": {
+            "href": "http://localhost:9000/hateoas/api/v1/students/3d6a18a7-0131-4a56-b978-d7d24ff78925"
+        }
+    }
+}
 ```
 ------
 # API with pagination
@@ -176,28 +228,6 @@ springdoc.swagger-ui.operationsSorter=alpha
   * Used for parameters of API resource request
   * Refer [DeleteController.java](src/main/java/com/java/controller/DeleteController.java)
 ------
-# Build docker image and push to docker hub
-* Write [Dockerfile](Dockerfile)
-* We are using `openjdk java 17` base image
-* Build image using below command
-```
-docker build . -t rest-api
-``` 
-* Run and check the container
-```
-docker run -it -p 9000:9000 rest-api
-```
-* Open url - http://localhost:9000/swagger-ui/index.html
-* Swagger should start without any issues
-* Tag an image before pushing to docker hub
-```
-docker image tag rest-api donthuavinashbabu/rest-api
-```
-* Push image to docker hub
-```
-docker image push donthuavinashbabu/rest-api
-```
-------
 # Validation
 * Add below validation dependency. Refer [pom.xml](pom.xml)
 ```
@@ -237,6 +267,29 @@ docker image push donthuavinashbabu/rest-api
 * Inject `org.springframework.context.MessageSource` into our class
 * Get locale specific messages using `org.springframework.context.MessageSource`. Refer `helloWorld` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
 * Get locale specific messages using `org.springframework.context.MessageSource` with parameters. Refer `helloWorldWithName` method [I18NControllerImpl](src/main/java/com/java/controller/impl/I18NControllerImpl.java)
+------
+# Filtering
+## Static Filtering
+* Static filtering will be done using annotations in model class
+  * `com.fasterxml.jackson.annotation.JsonIgnoreProperties` at class level
+  * `com.fasterxml.jackson.annotation.JsonIgnore` at property level
+* Refer [Student](src/main/java/com/java/model/Student.java)
+* Both are not needed. We can use any one them. Preferred is `com.fasterxml.jackson.annotation.JsonIgnore` because if property name updated then we need to update property name in `com.fasterxml.jackson.annotation.JsonIgnoreProperties` also
+
+## Dynamic Filtering
+* Using `org.springframework.http.converter.json.MappingJacksonValue`
+* Define `com.fasterxml.jackson.annotation.JsonFilter` annotation at class level. Refer [User](src/main/java/com/java/model/User.java) class
+* Write below logic to filter properties. We can have custom logic specific to API. Refer `users1` method in [GetControllerImpl](src/main/java/com/java/controller/impl/GetControllerImpl.java) class
+```
+final String jsonFilterName = "StudentPropertyFilter";
+
+List<User> users = userService.findAllUsers();
+MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(users);
+SimpleBeanPropertyFilter simpleBeanPropertyFilter = SimpleBeanPropertyFilter.filterOutAllExcept("username", "firstName", "lastName");
+FilterProvider filterProvider = new SimpleFilterProvider().addFilter(jsonFilterName, simpleBeanPropertyFilter);
+mappingJacksonValue.setFilters(filterProvider);
+```
+* Note `StudentPropertyFilter` should be match in `API` and `model` class
 ------
 # Rest Clients
 ## RestTemplate Examples

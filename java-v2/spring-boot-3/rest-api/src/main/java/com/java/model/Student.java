@@ -1,5 +1,7 @@
 package com.java.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -13,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+//@JsonIgnoreProperties({"password"})
 public class Student {
 
     @Schema(name = "id", description = "Student ID any alphanumeric", example = "ABC123", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
@@ -28,5 +31,9 @@ public class Student {
     @NotNull
     @NotBlank
     private String book;
+
+    @Schema(name = "password", description = "Student locker password", defaultValue = "UNKNOWN", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @JsonIgnore
+    private String password = "UNKNOWN";
 
 }
