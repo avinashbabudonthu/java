@@ -348,7 +348,8 @@ spring.jpa.defer-datasource-initialization=true
 * Start the application and access h2 console - http://localhost:9000/h2-console
 * Login using url, username and password given in [application properties/yaml](src/main/resources/application.properties)
 ------
-
+# Spring Boot 3 Data JPA With H2 Database
+* Add dependencies and properties for H2 database connect. Refer [Connect to H2 Database](#connect-to-h2-database)
 ------
 # Rest Clients
 ## RestTemplate Examples
