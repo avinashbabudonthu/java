@@ -291,6 +291,65 @@ mappingJacksonValue.setFilters(filterProvider);
 ```
 * Note `StudentPropertyFilter` should be match in `API` and `model` class
 ------
+# Actuator
+* Add following dependency
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+* Add this property in [application properties/yaml](src/main/resources/application.yml) to enable all actuator end points
+```
+management.endpoints.web.exposure.include: '*'
+```
+* Open the api - http://localhost:9000/actuator
+* We will get more actuator end points. Explore them
+------
+# HAL
+* HAL - JSON Hypertext Application Language
+* Used to explore APIs
+* Add below dependency to enable spring boot HAL
+```
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-rest-hal-explorer</artifactId>
+</dependency>
+```
+* Access this url - http://localhost:9000
+![picture](img/010.jpg)
+![picture](img/011.jpg)
+------
+# Connect to H2 Database
+* Add below dependencies
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>runtime</scope>
+</dependency>
+```
+* Add below properties in [application properties/yaml](src/main/resources/application.properties)
+```
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:db1
+spring.datasource.username=user1
+spring.datasource.password=07102024
+spring.jpa.defer-datasource-initialization=true
+```
+* Create entities. For example below
+  * [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
+* To insert data to tables create [data.sql](src/main/resources/data.sql) in `src/main/resources` and write insert queries
+* Start the application and access h2 console - http://localhost:9000/h2-console
+* Login using url, username and password given in [application properties/yaml](src/main/resources/application.properties)
+------
+
+------
 # Rest Clients
 ## RestTemplate Examples
 * [Get APIs](src/test/java/com/java/rest/client/resttemplate/GetControllerTest.java)

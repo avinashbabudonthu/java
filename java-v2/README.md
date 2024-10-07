@@ -21,6 +21,7 @@
 * [Maven](maven)
 ------
 # SQL Databases
+* [H2](h2)
 * [MySQL](mysql)
 * [PostgreSQL](postgre-sql)
 ------

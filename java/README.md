@@ -21,7 +21,6 @@
 * [Concourse](#concourse)
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
-* [Core Java Reflection](#Core-Java-Reflection)
 * [Core Java Properties files Examples](#Properties-files-Examples)
 * [Core Java Regex Regula Expression](#Core-Java-Regex)
 * [File IO](#File-IO)
@@ -764,9 +763,6 @@
 * [Enum Lookup](core-java/basics/src/test/java/com/enums/lookup/EnumLookUp.java)
 * [CardSuitEnum](core-java/basics/src/main/java/com/enums/lookup/CardSuitEnum.java)
 * lookupMap
-------
-# [Core Java Reflection](core-java/reflection)
-* [Is Java Reflection Good or Bad Practice](core-java/reflection/reflection.md#Is-Java-Reflection-Good-or-Bad-Practice)
 ------
 # [Core Java Regex](core-java/regex)
 * [Regular Expressions Examples](core-java/regex/README.md#Regular-Expressions-Examples)

@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "24e50ab3-ad1a-4202-9f5c-a2a44e089c35",
+		"_postman_id": "4d011033-ba20-4aaa-b9b5-dcc15a0bed54",
 		"name": "rest-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "28691884"
+		"_exporter_id": "9382235"
 	},
 	"item": [
 		{
@@ -1366,6 +1366,30 @@
 								"api",
 								"v2",
 								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "actuator",
+			"item": [
+				{
+					"name": "/actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/actuator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"actuator"
 							]
 						}
 					},
