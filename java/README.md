@@ -843,13 +843,7 @@
 # [Design Patterns](design-patterns)
 * [Materials](design-patterns/materials.md)
 * [SOLID Principles](design-patterns/solid-principles)
-	* [Notes](design-patterns/solid-principles/notes.md)
-	* [Single Responsibility Principle (SRP)](design-patterns/solid-principles/src/test/java/com/cerebro/srp)
-	* [Open Closed Principle](design-patterns/solid-principles/src/test/java/com/cerebro/ocp)
 	* [Liskov Substitution Principle](design-patterns/solid-principles/src/test/java/com/cerebro/lsp)
-	* [Interface Segregation Principle](design-patterns/solid-principles/src/test/java/com/cerebro/isp)
-	* [Dependency Inversion](design-patterns/solid-principles/src/test/java/com/cerebro/di)
-	* [Service Locator Pattern](design-patterns/solid-principles/src/test/java/com/cerebro/service/locator)
 * [Creational](design-patterns/creational)
 	* [Singleton Pattern](design-patterns/creational/src/test/java/com/creational/singleton)
 	* [Factory Pattern](design-patterns/creational/src/test/java/com/creational/factory/pattern)
@@ -1199,8 +1193,6 @@
 * [Timeout](junit-4/junit-4/src/test/java/junit/practice/time/out/TimeoutJunitPractice.java)
 ------
 # [Junit 5](junit-5)
-* [AfterAll AfterEach annotations](junit-5/junit-5/src/test/java/com/junit5/AfterAnnotations.java)
-* [org.junit.jupiter.api.Assertions in Junit 5](junit-5/junit-5/src/test/java/com/junit5/AssertionsJunit5.java)
 * [Assumptions](junit-5/junit-5/src/test/java/com/junit5/Assumptions.java) - Assumptions are used to run tests only if certain conditions are met
 * [BeforeAll BeforeEach annotations](junit-5/junit-5/src/test/java/com/junit5/BeforeAnnotations.java)
 * [Disabled annotation](junit-5/junit-5/src/test/java/com/junit5/DisabledAnnotation.java)

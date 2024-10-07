@@ -2,6 +2,7 @@
 ------
 # Architecture
 * [Architecture](architecture)
+* [Design Patterns](design-patterns)
 ------
 # Core Java
 * [Core Java](core-java)

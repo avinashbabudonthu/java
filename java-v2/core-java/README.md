@@ -23,4 +23,7 @@
 * [java.util.StringJoiner](core-java/src/main/java/com/practive/java/util/StringJoinerTest.java)
 * [java.util.Objects](core-java/src/main/java/com/practive/java/util/ObjectsTest.java)
 ------
+# java.util.stream
+* [java.util.stream.IntStream](core-java/src/main/java/com/practive/java/util/stream/IntStreamTest.java)
+------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
