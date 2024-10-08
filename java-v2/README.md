@@ -72,6 +72,7 @@
 # Security
 * [Open SSL](openssl)
 * [Spring Security](spring-security)
+* [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 ------
 # JMS
 * [Kafka](kafka)
@@ -92,5 +93,6 @@
 * [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments)](files/variables-arguments.md)
 * [Difference between model object and entity object](files/model-vs-entity.md)
 * [Softwares List](files/softwares-list.md)
+* [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
