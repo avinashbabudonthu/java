@@ -35,7 +35,8 @@ public class HateoasControllerImpl implements HateoasController {
     @Override
     public ResponseEntity<Student> saveStudent(@RequestBody Student student) {
         Student savedStudent = hateoasService.saveStudent(student);
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedStudent.getId()).toUri();
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}").buildAndExpand(savedStudent.getId()).toUri();
         return ResponseEntity.created(location).build();
     }
 

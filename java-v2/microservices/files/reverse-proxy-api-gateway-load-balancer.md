@@ -1,7 +1,7 @@
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
 ------
 # Reverse proxy vs API Gateway vs Load Balancer
-* High level diagram
+* High level diagram\
 ![picture](../img/000001.jpg)
 ------
 # Reverse Proxy

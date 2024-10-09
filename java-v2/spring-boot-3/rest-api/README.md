@@ -45,7 +45,7 @@ docker image push donthuavinashbabu/rest-api
 ------
 # Files
 * [pom.xml](pom.xml)
-* [application.yml](src/main/resources/application.yml)
+* [application.properties](src/main/resources/application.properties)
 * Main class [Main](src/main/java/com/java/Main.java)
 * Student Model class [Student](src/main/java/com/java/model/Student.java)
 * StudentService interface [StudentService](src/main/java/com/java/service/StudentService.java)
@@ -178,12 +178,12 @@ ResponseEntity.created(location).build();
 * Open URL - http://localhost:9000/swagger-ui/index.html
 ![picture](img/001.jpg)
 * We can find OpenAPI descriptions at `/v3/api-docs` - http://localhost:9000/v3/api-docs
-* We can customize path using below property. Refer property in [application.yml](src/main/resources/application.yml). Now we can access docs using http://localhost:9000/rest-api-docs
+* We can customize path using below property. Refer property in [application.properties](src/main/resources/application.properties). Now we can access docs using http://localhost:9000/rest-api-docs
 ```
 springdoc.api-docs.path=/rest-api-docs
 ```
 * Above OpenAPI definitions are in JSON format by default. For yaml format, use this link http://localhost:9000/rest-api-docs.yaml
-* We can change default swagger ui path using below property. Refer [application.yml](src/main/resources/application.yml)
+* We can change default swagger ui path using below property. Refer [application.properties](src/main/resources/application.properties)
 ```
 springdoc.swagger-ui.path=/rest-api-swagger.html
 ```
@@ -299,7 +299,7 @@ mappingJacksonValue.setFilters(filterProvider);
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
-* Add this property in [application properties/yaml](src/main/resources/application.yml) to enable all actuator end points
+* Add this property in [application properties/yaml](src/main/resources/application.properties) to enable all actuator end points
 ```
 management.endpoints.web.exposure.include: '*'
 ```
@@ -336,11 +336,15 @@ management.endpoints.web.exposure.include: '*'
 ```
 * Add below properties in [application properties/yaml](src/main/resources/application.properties)
 ```
+# database properties
+spring.jpa.defer-datasource-initialization=true
+spring.jpa.show-sql=true
+
+# H2 database
 spring.h2.console.enabled=true
 spring.datasource.url=jdbc:h2:mem:db1
 spring.datasource.username=user1
 spring.datasource.password=07102024
-spring.jpa.defer-datasource-initialization=true
 ```
 * Create entities. For example below
   * [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
@@ -348,8 +352,11 @@ spring.jpa.defer-datasource-initialization=true
 * Start the application and access h2 console - http://localhost:9000/h2-console
 * Login using url, username and password given in [application properties/yaml](src/main/resources/application.properties)
 ------
-# Spring Boot 3 Data JPA With H2 Database
+# Spring Boot 3 Data JPA with H2 Database
 * Add dependencies and properties for H2 database connect. Refer [Connect to H2 Database](#connect-to-h2-database)
+------
+# Spring Boot 3 Data JPA with MySQL Database
+
 ------
 # Rest Clients
 ## RestTemplate Examples
