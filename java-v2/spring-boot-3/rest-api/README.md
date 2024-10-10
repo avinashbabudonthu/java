@@ -354,6 +354,19 @@ spring.datasource.password=07102024
 ------
 # Spring Boot 3 Data JPA with H2 Database
 * Add dependencies and properties for H2 database connect. Refer [Connect to H2 Database](#connect-to-h2-database)
+* Employee Repository interface [EmployeeRepository](src/main/java/com/java/datajpa/h2/EmployeeRepository.java)
+  * Spring data jpa repository used to query h2 database
+* [H2Service](src/main/java/com/java/datajpa/h2/H2Service.java) interface
+* [H2ServiceImpl](src/main/java/com/java/datajpa/h2/H2ServiceImpl.java) implementation of above interface
+* [H2Controller](src/main/java/com/java/datajpa/h2/H2Controller.java) interface
+  * API to perform operations on h2 database
+* [H2ControllerImpl](src/main/java/com/java/datajpa/h2/H2ControllerImpl.java) implementation of above interface
+* Refer `h2` folder in [postman collection](postman/rest-api.postman_collection.json)
+* We are saving [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
+  * We are using custom primary key generator
+  * Write class to generate id value [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java)
+  * Write new interface [MyPrimaryKeyGenerator](src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java)
+  * Use [MyPrimaryKeyGenerator](src/main/java/com/java/entity/MyPrimaryKeyGenerator.java) that use [PrimaryKeyGenerator](src/main/java/com/java/entity/PrimaryKeyGenerator.java) on [EmployeeEntity](src/main/java/com/java/entity/EmployeeEntity.java)
 ------
 # Spring Boot 3 Data JPA with MySQL Database
 
