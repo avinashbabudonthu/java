@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "bc086622-7622-4242-884d-02b9a06fdf7c",
+		"name": "spring-cloud-config-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9382235"
+	},
+	"item": [
+		{
+			"name": "/student-service/default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/student-service/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"student-service",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/student-service/dev",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/student-service/dev",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"student-service",
+						"dev"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/student-service/qa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/student-service/qa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"student-service",
+						"qa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
