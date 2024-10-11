@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "84313cc9-e8a5-4d13-84d1-c89e1ac44ed9",
+		"name": "student-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9382235"
+	},
+	"item": [
+		{
+			"name": "/v1/apis/students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/v1/apis/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"apis",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
