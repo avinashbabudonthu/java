@@ -11,7 +11,7 @@
     * Shielding sensitive infrastructure from external probing
 ------
 # API Gateway
-* Sits between client and backend services, active as single entry point
+* Sits between client and backend services, act as single entry point
 * It routes requests to appropriate services
 * Useful for
     * Organizing communication between frontends and backends
