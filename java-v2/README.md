@@ -37,7 +37,8 @@
 * [Spring Boot 3](spring-boot-3)
 * [Spring Security](spring-security)
 * [Spring Boot 3 Spring Data JPA H2 Database](spring-boot-3/random-port/README.md#Spring-Boot-3-Data-JPA-with-H2-Database)
-* [spring cloud config server](spring-cloud-config)
+* [Spring cloud config server](spring-cloud-config)
+* [Spring Webflux](spring-webflux)
 ------
 # ORM
 * [Hibernate](hibernate)
