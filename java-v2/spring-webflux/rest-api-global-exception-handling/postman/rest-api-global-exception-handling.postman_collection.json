@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "6e7ab662-cb41-4a55-9a3d-9fddb662c3b0",
+		"name": "rest-api-global-exception-handling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9382235"
+	},
+	"item": [
+		{
+			"name": "/api1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api1?id=1",
+					"path": [
+						"api1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api1-exception",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api1?id=0",
+					"path": [
+						"api1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api2?id=1",
+					"path": [
+						"api2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api2-exception",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api2?id=-1",
+					"path": [
+						"api2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api3?id=10",
+					"path": [
+						"api3"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api3-exception",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/api3",
+					"path": [
+						"api3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.request.url.protocol=\"http\";",
+					"pm.request.url.host=\"localhost\";",
+					"pm.request.url.port=8080"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

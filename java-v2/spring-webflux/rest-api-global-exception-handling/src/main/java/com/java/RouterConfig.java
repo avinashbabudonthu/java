@@ -1,6 +1,6 @@
 package com.java;
 
-import org.springframework.context.annotation.Bean;
+/*import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -9,12 +9,12 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import reactor.core.publisher.Mono;
+import reactor.core.publisher.Mono;*/
 
-@Configuration
+//@Configuration
 public class RouterConfig {
 
-    @Bean
+    /*@Bean
     public RouterFunction<ServerResponse> routeFunction() {
         return RouterFunctions
                 .route(RequestPredicates.GET("/api1"), this::resourceNotFound)
@@ -30,10 +30,12 @@ public class RouterConfig {
     }
 
     public Mono<ServerResponse> resourceNotFound(ServerRequest serverRequest) {
+        System.out.println("Inside resourceNotFound method");
         return Mono.error(new ResourceNotFoundException("Resource not found"));
     }
 
     public Mono<ServerResponse> badRequest(ServerRequest serverRequest) {
+        System.out.println("Inside badRequest method");
         return Mono.error(new BadRequestException("Bad request"));
     }
 
@@ -53,6 +55,6 @@ public class RouterConfig {
         return ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .contentType(MediaType.TEXT_PLAIN)
                 .bodyValue(throwable.getMessage());
-    }
+    }*/
 
 }
