@@ -10,5 +10,6 @@
 * [Unnecessary Stubbing Junit 4 Junit 5](files/unneccessary-stubbing.md)
 * [JdbcTemplate queryForObject Method Stubbing](files/jdbctemplate-queryforobject-stubbing.md)
 * [Pass null values](files/passing-null-values.md)
+* [Mock static classes](files/mock-static.md)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
