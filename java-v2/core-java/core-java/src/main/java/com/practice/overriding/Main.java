@@ -1,4 +1,4 @@
-package com.practive.overriding;
+package com.practice.overriding;
 
 public class Main {
 

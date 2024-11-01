@@ -1,4 +1,4 @@
-package com.practive.enums;
+package com.practice.enums;
 
 import com.google.common.collect.Maps;
 

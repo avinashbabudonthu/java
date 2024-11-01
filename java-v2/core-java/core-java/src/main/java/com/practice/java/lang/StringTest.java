@@ -1,4 +1,4 @@
-package com.practive.java.lang;
+package com.practice.java.lang;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

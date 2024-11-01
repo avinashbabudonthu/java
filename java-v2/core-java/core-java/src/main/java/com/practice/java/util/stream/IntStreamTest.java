@@ -1,4 +1,4 @@
-package com.practive.java.util.stream;
+package com.practice.java.util.stream;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;

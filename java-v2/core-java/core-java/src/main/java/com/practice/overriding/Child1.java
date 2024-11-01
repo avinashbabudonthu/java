@@ -1,4 +1,4 @@
-package com.practive.overriding;
+package com.practice.overriding;
 
 import lombok.extern.slf4j.Slf4j;
 

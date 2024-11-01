@@ -6,25 +6,28 @@
 * [https://jenkov.com/tutorials/java/index.html](https://jenkov.com/tutorials/java/index.html)
 ------
 # Overriding
-* [Overriding method](core-java/src/main/java/com/practive/overriding)
+* [Overriding method](core-java/src/main/java/com/practice/overriding)
 ------
 # Basics
-* [record class - from Java 17](core-java/src/main/java/com/practive/RecordClassTest.java)
+* [record class - from Java 17](core-java/src/main/java/com/practice/RecordClassTest.java)
 * [Record class reference](files/000001-Record-Classes.pdf) 
 ------
 # Enums
-* [java.lang.ExceptionInInitializerError java.lang.NullPointerException: Cannot invoke .clone() because Enum.$VALUES is null](core-java/src/main/java/com/practive/enums/README.md#Enum-issue)
+* [java.lang.ExceptionInInitializerError java.lang.NullPointerException: Cannot invoke .clone() because Enum.$VALUES is null](core-java/src/main/java/com/practice/enums/README.md#Enum-issue)
 ------
 # java.lang package
-* [java.lang.String](core-java/src/main/java/com/practive/java/lang/StringTest.java)
-* [java.lang.System](core-java/src/main/java/com/practive/java/lang/SystemTest.java)
+* [java.lang.String](core-java/src/main/java/com/practice/java/lang/StringTest.java)
+* [java.lang.System](core-java/src/main/java/com/practice/java/lang/SystemTest.java)
 ------
 # java.util package
-* [ArrayList](core-java/src/main/java/com/practive/java/util/ArrayListTest.java)
-* [StringJoiner](core-java/src/main/java/com/practive/java/util/StringJoinerTest.java)
-* [Objects](core-java/src/main/java/com/practive/java/util/ObjectsTest.java)
+* [ArrayList](core-java/src/main/java/com/practice/java/util/ArrayListTest.java)
+* [StringJoiner](core-java/src/main/java/com/practice/java/util/StringJoinerTest.java)
+* [Objects](core-java/src/main/java/com/practice/java/util/ObjectsTest.java)
 ------
 # java.util.stream
-* [java.util.stream.IntStream](core-java/src/main/java/com/practive/java/util/stream/IntStreamTest.java)
+* [java.util.stream.IntStream](core-java/src/main/java/com/practice/java/util/stream/IntStreamTest.java)
+------
+# Examples
+* [Displaying Name of the Day of the Week in Java](core-java/src/main/java/com/practice/dates/DisplayDayNameOfWeek.java)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
