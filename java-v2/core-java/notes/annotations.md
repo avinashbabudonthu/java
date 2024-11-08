@@ -133,3 +133,10 @@ void monitorTemperature() throws @Critical TemperatureException { ... }
 ```
 ------
 * An Introduction to Annotations and Annotation Processing in Java - https://reflectoring.io/java-annotation-processing/
+------
+* Custom annotation
+	* [Custom annotation](core-java/annotations/src/main/java/com/custom/annotations)
+	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
+* Repeating annotations
+	* [Repeating annotations](core-java/annotations/src/main/java/com/repeating/annotation)
+	* [BookTest](core-java/annotations/src/test/java/com/repeating/annotation/BookTest.java)

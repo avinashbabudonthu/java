@@ -503,16 +503,6 @@
 * [Zip File writeToFileInZip1](core-java/basics/src/main/java/com/java/io/ZipFileExamples.java)
 * [Zip File zip4j Reference](https://github.com/srikanth-lingala/zip4j)
 
-# [Annotations](core-java/annotations)
-* [Notes](core-java/notes/annotations.md)
-* [Java Docs](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
-* Custom annotation
-	* [Custom annotation](core-java/annotations/src/main/java/com/custom/annotations)
-	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
-* Repeating annotations
-	* [Repeating annotations](core-java/annotations/src/main/java/com/repeating/annotation)
-	* [BookTest](core-java/annotations/src/test/java/com/repeating/annotation/BookTest.java)
-
 # [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
 * [Java Doc Notes](https://docs.oracle.com/javase/tutorial/collections/index.html)
@@ -687,11 +677,6 @@
 ## Examples
 * [Thread Practice](core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java)
 ------
-# Generics
-* [Notes](core-java/notes/generics.md)
-* [Java Docs Notes](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
-* [Java Docs Extra Notes](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)
-
 # Java 8 Examples
 * [Notes](core-java/notes/java-8-notes.md)
 * [Interfaces](core-java/java-8/java8/src/main/java/com/interfaces)
