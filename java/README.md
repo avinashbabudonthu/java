@@ -416,29 +416,6 @@
 ------
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
-* [Notes](core-java/notes/basics.md)
-* [Integer class Practice](core-java/basics/src/test/java/com/java/IntegerPractice.java)
-* [Runtime class - ShutdownHook Notes](core-java/notes/runtime.md#addshutdownhook)
-* [Runtime class - ShutdownHook Example 1](core-java/basics/src/main/java/com/java/lang/ShutdownHook1.java)
-* [Runtime class - ShutdownHook Example 2](core-java/basics/src/main/java/com/java/lang/ShutdownHook2.java)
-* [Runtime.Version class - Runtime major minor build versions etc](core-java/basics/src/main/java/com/java/lang/RuntimeVersionPractice.java)
-* [Reference Check](core-java/basics/src/main/java/com/basics/ReferenceCheck.java)
-* Optional class
-	* [Notes](core-java/notes/optional.md)
-	* [Optional Examples](core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
-		* empty
-		* isPresent
-		* map
-		* ofNullable
-		* ofNullablefV2
-		* ofV1
-		* ofV2
-		* orElse
-		* orElseGet
-* [Locale](core-java/internationalization/src/test/java/com/internationalization/LocalePractice.java)
-	* localObjectByCountry
-	* createLocalObject
-	* localObjectLanguageWise
 * [ResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/ResourceBundlePractice.java)
 	* listResourceBundle
 		* [MyListResourceBundle](core-java/internationalization/src/test/java/com/resource/bundle/MyListResourceBundle.java)
@@ -462,16 +439,8 @@
 	* formatNumberSpecificToLocale
 	* customDecimalFormats
 	* groupingDigits
-* [NumberFormat](core-java/internationalization/src/test/java/com/internationalization/NumberLocalePractice.java)
-	* createNumberFormatObject
-	* formatNumber
-	* formatCurrency
-	* formatPercentage
-	* minMaxNoOfDigits
-	* roundingNumbers
-	* parseNumber
-	* [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* [UUID Generator](core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
+	
+
 * [Create Basic Auth Header](core-java/basics/src/test/java/com/java/util/Utils.java) - createBasicAuthHeader
 * [Generate 10 Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generate10DigitRandomNumber
 * [Generate N Digit Random Number](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumber
@@ -479,16 +448,6 @@
 * [Generate N Digit Random Number in Range](core-java/basics/src/test/java/com/java/util/Utils.java) - generateNDigitRandomNumberInRange
 * [Generate random password](utils/generate-random-password.md)
 * [Reverse the number](utils/utils.md#reverse-the-number)
-
-# Properties files Examples
-* [Properties file](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - create](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - read](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - readFromClasspath](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - print](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - replace](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - put](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
-* [Properties file - putIfAbsent](core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
 
 # File IO
 * [FileIOPractice](core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
@@ -553,48 +512,6 @@
 * Repeating annotations
 	* [Repeating annotations](core-java/annotations/src/main/java/com/repeating/annotation)
 	* [BookTest](core-java/annotations/src/test/java/com/repeating/annotation/BookTest.java)
-
-# Strings
-* [Notes](core-java/notes/strings.md)
-* [String Examples](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-* createString
-* getbyteArrayFromString
-* getAsciValueOfCharsInString
-* convertByteArrayToString
-* divideString
-* stringToCharArray
-* convertCase
-* capitalizeFirstChar
-* stringShift
-* printAllSubStringsOfSpecifiedLength
-* sortStringsInSentnceByLength
-* replaceAll
-* removeSpacesInString
-* lastNCharactersOfString
-* split
-* splitByPipe
-* subString
-* stringToEBCDIC
-* stringToBytes
-* removeHTMLFromString
-* stringToInputStream
-* generateExcelCellNames
-* inputStreamToString
-* rotateString
-* clobToString
-* removeStringFromEnd
-* [String format](core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* stringFormatConventionsAndFlags
-* stringFormat
-* usePercentageSymbolInStringFormat
-* [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
-* commaSeparatedString
-* stringJoin
-* listOfEmployeeToCommaSeparatedFirstName
-* merge
-* length
-* prefixSuffixEachStringInListOfString
-* [String - readOccurrenceOfCharFromLast](core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
 
 # [Collections](core-java/collections)
 * [Notes](core-java/notes/collections.md)
