@@ -70,7 +70,7 @@ select current_date;
 select current_timestamp;
 
 -- format date - current date in YYYY_MM_DD format
-SELECT TO_CHAR(CURRENT_TIMESTAMP, 'YYYY_MM_DD');
+SELECT TO_CHAR(CURRENT_TIMESTAMP, 'YYYY_MM_DD') as VALUE;
 
 -- count number of partitions on table - tab
 SELECT count(*) AS partitions FROM pg_catalog.pg_inherits WHERE inhparent = 'tab'::regclass;
@@ -103,3 +103,55 @@ select * from employee where joining_date_time_stamp < current_date - interval '
 select * from employee where joining_date_time_stamp < current_date - interval '90 days';
 select * from employee where joining_date_time_stamp < current_date - interval 'n' days;
 select * from employee where joining_date_time_stamp < current_date - interval '90' days;
+
+-- select queries
+select * from dept;
+select * from emp;
+select * from salgrade;
+select * from film;
+SELECT title FROM film;
+SELECT film_id, title FROM film;
+SELECT film_id, title FROM film ORDER BY film_id ASC;
+SELECT * FROM actor;
+SELECT first_name FROM actor ORDER BY first_name DESC;
+SELECT * FROM customer;
+SELECT first_name, last_name, email FROM customer;
+
+-- Describe
+SELECT * FROM information_schema.columns;
+SELECT table_name, column_name FROM information_schema.columns WHERE table_name = 'customer';
+
+-- count queries
+select count(*) from film;
+select count(*) from actor;
+
+-- last n days - below example is last 90 days
+-- both formats of below queries executes fine
+select * from employee where joining_date_time_stamp < current_date - interval 'n days';
+select * from employee where joining_date_time_stamp < current_date - interval '90 days';
+select * from employee where joining_date_time_stamp < current_date - interval 'n' days;
+select * from employee where joining_date_time_stamp < current_date - interval '90' days;
+
+-- count number of partitions on table - tab
+SELECT count(*) AS partitions FROM pg_catalog.pg_inherits WHERE inhparent = 'emp'::regclass;
+
+SELECT * FROM pg_catalog.pg_inherits WHERE inhparent = 'emp'::regclass;
+
+SELECT
+    nmsp_parent.nspname AS parent_schema,
+    parent.relname      AS parent,
+    nmsp_child.nspname  AS child_schema,
+    child.relname       AS child
+FROM pg_inherits
+    JOIN pg_class parent            ON pg_inherits.inhparent = parent.oid
+    JOIN pg_class child             ON pg_inherits.inhrelid   = child.oid
+    JOIN pg_namespace nmsp_parent   ON nmsp_parent.oid  = parent.relnamespace
+    JOIN pg_namespace nmsp_child    ON nmsp_child.oid   = child.relnamespace
+WHERE parent.relname='parent_table_name';
+
+-- partition details
+select * from pg_class where relispartition is true;
+select * from pg_class where relispartition is FALSE;
+
+-- partitions of table - tab
+SELECT * FROM PG_CLASS WHERE RELNAME LIKE 'emp%';
