@@ -413,8 +413,8 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 # String
 * Refer [Strings Notes](strings.md)
 * [String Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-* [String Format Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* [String Joiner Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [StringTest Examples](../../../java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java)
+* [String Joiner Examples](../../../java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java)
 ------
 # Arrays
 * Group of same data type values
