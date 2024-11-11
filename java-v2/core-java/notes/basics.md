@@ -371,7 +371,7 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* If n classes are implementing an interface then if we need common functionality to be available to all classes then we need either write that in one abstract class and all other classes have to extend that class or we need to implement that method in all classes. 
 	* This issue solved in JDK 8 by providing default methods in interfaces
 * Examples
-	* [Interfaces](../../../core-java/basics/src/main/java/com/java/interfaces)
+	* [Interfaces](../../../java/core-java/basics/src/main/java/com/java/interfaces)
 ------
 # Primitive data types
 * int
@@ -412,15 +412,15 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 ------
 # String
 * Refer [Strings Notes](strings.md)
-* [String Examples](../../../core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-* [String Format Examples](../../../core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* [String Joiner Examples](../../../core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [String Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [String Format Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [String Joiner Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 ------
 # Arrays
 * Group of same data type values
 * Fixed size
 * Index start with `0` - zero
-* Refer array examples - [java.util.Arrays](../../../core-java/collections/src/test/java/com/util/ArraysPractice.java)
+* Refer array examples - [java.util.Arrays](../../../java/core-java/collections/src/test/java/com/util/ArraysPractice.java)
 	* parallelSort
 	* parallelSetAll
 	* setAll
@@ -502,7 +502,7 @@ for(int i: list){
 	* Interface `java.io.Closeable extends java.lang.AutoCloseable`
 
 ## Examples
-* [TryWithResource.java](../../../core-java/basics/src/main/java/com/java/exceptions/TryWithResource.java)
+* [TryWithResource.java](../../../java/core-java/basics/src/main/java/com/java/exceptions/TryWithResource.java)
 ------
 # References
 * Different classes in `java.lang.ref` package
@@ -563,7 +563,7 @@ PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(
 * Reference of instance will be appended to ReferenceQueue and you can use it to perform any clean-up by polling ReferenceQueue
 
 ### Examples
-* [ReferencesPractice.java](../../../core-java/basics/src/main/java/com/java/references/ReferencesPractice.java)
+* [ReferencesPractice.java](../../../java/core-java/basics/src/main/java/com/java/references/ReferencesPractice.java)
 ------
 # File IO
 * stream: continuous flow
@@ -676,16 +676,16 @@ abc\def
 ![picture](images/stream-classes-hierarchy.jpg)
 
 ## File IO Examples
-* [File IO Practice](../../../core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
-* [Random Access File Practice](../../../core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
-* [Read Input From Key board](../../../core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+* [File IO Practice](../../../java/core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [Random Access File Practice](../../../java/core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
+* [Read Input From Key board](../../../java/core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
 ------
 # Big Decimal
 * The BigDecimal class provides operation for arithmetic, comparison, hashing, rounding, manipulation and format conversion
 * This method can handle very small and very big floating point numbers with great precision
 * In java, BigDecimal consists of a random precision integer scale and a 32-bit integer scale. If positive or zero, the scale is the number of digits to the right of the decimal point
 * If less than zero, the unscaled value of the number is multiplied by ten to the power of the negation of the scale(10^(-scale))
-* [Big Decimal Practice](../../../core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
+* [Big Decimal Practice](../../../java/core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
 ------
 # What is the cyclomatic complexity of an application?
 * Quantitative measure of the number of linearly independent paths through program source code
