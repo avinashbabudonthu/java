@@ -1,14 +1,16 @@
 # Core Java Notes
-## Basics
+------
+# Basics
 * JDK: JRE + Development Kit (tools like compilers(javac) and debuggers (JDB))
 * JRE - `Java Runtime Environment`: JVM + Library classes
-* Byte code: `.class` file
-* Javac: Java Compiler. Generates byte code by converting .java file to .class file
 * JVM
 	* Virtual machine for Java. Generates machine level language (native language) by converting .class(byte code) to machine level language
 	* Software module that provides same execution environment for all java applications and takes care of translation to the underlying layers with regrads to execution instructions and resource management
-
-## Types of Naming Conventions 
+* Souce code - `.java`file
+* Byte code: `.class` file
+* Javac: Java Compiler. Generates byte code by converting `.java` file to `.class` file
+------
+# Types of Naming Conventions 
 * Camel case: If word has more than one word then first letter in first word is small, first letter of sub-sequent words are capital
 ```
 groupId
@@ -25,38 +27,38 @@ GroupId
 ```
 GROUPID
 ```
-
-## Naming conventions used in Java
+------
+# Naming conventions used in Java
 * Upper case
 	* Class names
 	* Interface names
 	* Enum names
 * Camel case
-	* Variable names
-	* Object reference names
 	* Method names
 	* Arguments
 	* Parameters
+	* Variable names
+	* Object reference names
 * All caps
-	* Enum values
 	* Constants
+	* Enum values
 * All small seperated with dot
 	* package names
-	
-## OOPS concepts
+------
+# OOPS concepts
 * Encapsulation
 * Inheritance
 * Polymorphism
-
-### Encapsulation
+------
+# Encapsulation
 * Binding the data with its related functionalities
 * Example of encapsulation is `class` where we bind variables and methods
-
-### Inheritance
+------
+# Inheritance
 * Making the properties of one object available to another object
-
-### Polymorphism
-* process of defining multiple functionalities with the same name with in the same class or sub class
+------
+# Polymorphism
+* Process of defining multiple functionalities with the same name with in the same class (Overloading) or sub class (Overriding)
 * Types
 	* Static polymorphism
 	* Dynamic polymorphism
@@ -64,24 +66,25 @@ GROUPID
 	* Overloading
 * Dynamic Polymorphism
 	* Overriding
-		
-## Access specifiers
+------
+# Access specifiers
 * public: accessible every where
 * private: accessible with in the class
 * protected: public with in the same package. Accessible to sub class via inheritance outside the package
 * default: accessible with in the same package
-
-## Key words
+------
+# Key words
 * Abstraction
 	* Hiding the data
-	* We achieve abstraction through encapsulation. Without binding the data we don’t have class. Without class and declaring variables as private we can’t hide the data. Hence without encapsulation we can not have abstraction
+	* We achieve abstraction through encapsulation. Without binding the data we dont have class. Without class and declaring variables as private we cant hide the data. Hence without encapsulation we can not have abstraction
 * super
 	* To point the properties of immediate super object of current object
 * Early binding: Process of binding the functionality to method at compile time
 * Late binding (or) Dynamic binding: Process of binding the functionality to method at run time
-	
-## Access modifiers
-### Class modifiers
+------
+# Access modifiers
+
+## Class modifiers
 * abstract
 	* Declared on class, method
 	* Declared on class - Object cannot be created
@@ -94,7 +97,7 @@ GROUPID
 	* Declared on variable - cannot be reassigned
 * strictfp
 	* it is related to the checking of floating point values irrespective of OS
-* static: 
+* static
 	* Declared on inner classes, method, variable
 	* Declared on method, variable - no object creation required to access
 	* non static members can access static members
@@ -104,25 +107,27 @@ GROUPID
 	* it is not serialized
 * volatile
 	* the values are liable for change. More in multi threading
-	
-## Package
+------
+# Package
 * Group of related classes
 * Some java library packages
 	* java.lang - default package
 	* java.util
-* `java.lang` default package
+	* java.util.concurrent
+* `java.lang` is default package
 	* It contains classes used by jvm to execute the byte code
 	* All classes import `java.lang` package by default
+------
+# Class
 
-## Class
-### Definitions
+## Definitions
 * Fully implemented Structure
 * User defined data type
 * Blue print for creating an object
 * Prototype for creating an object
-* Definition
-	* Fully implemented user defined data-structure which acts as a blue print for creating an object
-### Declare class
+* Definition - Fully implemented user defined data-structure which acts as a blue print for creating an object
+------
+# Declare class
 * Allowed access specifiers for class
 	* public
 	* nothing means default
@@ -140,19 +145,20 @@ class Employee{
 	private Date joiningDate;
 }
 ```
-### Final class
+------
+# Final class
 * Class with `final` access modifier
 ```
 public final class Student{
 
 }
 ```
-
-## Object
+------
+# Object
 * `Instance`: Any dynamic memory allocation
 * `Object`: instance of a class
 * Create object using `new` keyword
-* `new`
+* What happens on using `new` keyword to create an object
 	* Loads the class to JVM
 	* Executes static initializers
 	* Initialize static fields declared in class (remember static final fields will be initialized at compile time)
@@ -160,7 +166,7 @@ public final class Student{
 	* Loads non static members of the class
 	* Initializes non static members of the class
 	* Executes constructor
-* Create object
+	* Create object
 ```
 Student studentReference = new Student();
 ```
@@ -168,12 +174,13 @@ Student studentReference = new Student();
 	* `new Student()` : object
 	* `studentReference`: reference variable
 	* `Student`: reference type
-
-## Constructor
+------
+# Constructor
 * Functionality which gets executed automatically by jvm at the time of creating an object
 * No return type
 * Same name as class
-### Zero argument constructor
+
+## Zero argument constructor
 * Default constructor
 * Zero argument constructor provided by java compiler at the time of compilation if class does not define any constructor
 * Class with zero argument `public` constructor
@@ -197,21 +204,24 @@ public class Student{
 }
 ```
 ### Argumented constructor
-* Class with more than one arguments in constructor
+* Class with one or more arguments in constructor
 ```
 public class Student{
 
 	private String name;
 	private String course;
 	
+	// default zero argument constructor
 	public Student(){
 		// logic
 	}
 	
+	// 1 argument constructor
 	public Student(String studentName){
 		this.name = studentName;
 	}
 	
+	// 2 arguments constructor
 	public Student(String studentName, String studentCourse){
 		this.name = studentName;
 		this.course = studentCourse;
@@ -219,9 +229,10 @@ public class Student{
 
 }
 ```
+------
+# Variables
 
-## Variables
-### Instance variables
+## Instance variables
 * Variables declared inside class
 * non static members of class
 * Not declared as static
@@ -234,7 +245,7 @@ public class Student{
 	
 }
 ```
-### Static variables
+## Static variables
 * static members of class
 * Variables declared inside class with `static` access modifier
 * Also called class variables
@@ -243,7 +254,7 @@ public class Student{
 	private static int MIN_AGE = 5;
 }
 ```
-
+------
 ## Methods
 * Method will have
 	* Access specifier
@@ -260,11 +271,12 @@ public class Student{
  
 }
 ```
-
-## Nested class
+------
+# Nested class
 * Static nested classes
 * non-static nested classes (or) inner classes
-### Non static nested class or Inner classes
+
+## Non static nested class or Inner classes
 * Local Inner classes (Local classes)
 	* classes declared with in a method
 	* classes declared with in a block
@@ -273,7 +285,7 @@ public class Student{
 	* we can declare static final variables in anonymous inner classes.
 	* we cannot declare static variables/methods in anonymous inner classes.
 
-### Abstract class
+## Abstract class
 * Partially implemented and partially unimplemented structure
 * Class with `abstract` access modifier
 * Cannot create object of class
@@ -287,16 +299,13 @@ public abstract class Person{
 }
 ```
 ```
-public abstract class Person{
-	
+public abstract class Person{	
 	public abstract String getDesignation();
-	
 	public abstract double getGrade();
 	
 }
 ```
-* class extends abstract class must implement all abstract methods else it also must be declared abstract
-	* Don't declare `abstract` access modifier to method while writing implementation
+* class extends abstract class must implement all abstract methods else it also must be declared abstract. Don't declare `abstract` access modifier to method while writing implementation
 ```
 public class Student extends Person{
 	
@@ -309,9 +318,10 @@ public class Student extends Person{
 	}
 }
 ```
+------
+# Interface
 
-## Interface
-### Definition
+## Definition
 * Fully unimplemented structure
 * Until Java 8 interface can have
 	* Abstract methods (methods without implementation)
@@ -361,9 +371,9 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* If n classes are implementing an interface then if we need common functionality to be available to all classes then we need either write that in one abstract class and all other classes have to extend that class or we need to implement that method in all classes. 
 	* This issue solved in JDK 8 by providing default methods in interfaces
 * Examples
-	* [Interfaces](../basics/src/main/java/com/java/interfaces)
-
-## Primitive data types
+	* [Interfaces](../../../core-java/basics/src/main/java/com/java/interfaces)
+------
+# Primitive data types
 * int
 * float
 * double
@@ -389,8 +399,8 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* Float
 	* Double
 	* Character
-
-## Type Casting
+------
+# Type Casting
 * process of converting the value of one data type to its equivalent value of another data type
 * Types of type casting
 	* Implicit type casting
@@ -399,18 +409,18 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* if jvm do the type casting automatically
 * Explicit type casting
 	* if jvm do the type casting with our specification
-
-## String
+------
+# String
 * Refer [Strings Notes](strings.md)
-* [String Examples](../basics/src/main/java/com/java/strings/StringsPractice.java)
-* [String Format Examples](../basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* [String Joiner Examples](../basics/src/main/java/com/java/strings/StringJoinerPractice.java)
-
-## Arrays
+* [String Examples](../../../core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
+* [String Format Examples](../../../core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
+* [String Joiner Examples](../../../core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+------
+# Arrays
 * Group of same data type values
 * Fixed size
 * Index start with `0` - zero
-* Refer array examples - [java.util.Arrays](../collections/src/test/java/com/util/ArraysPractice.java)
+* Refer array examples - [java.util.Arrays](../../../core-java/collections/src/test/java/com/util/ArraysPractice.java)
 	* parallelSort
 	* parallelSetAll
 	* setAll
@@ -420,8 +430,8 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 	* deepHashCode
 	* fill
 	* deepToString
-
-## Loops
+------
+# Loops
 * while loop
 ```
 int i=0;
@@ -450,8 +460,8 @@ for(int i: list){
 	// logic
 }
 ```
-
-## Exception Handling
+------
+# Exception Handling
 * Exception: Exception is an event, which occurs during the execution of a program, that disrupts normal flow of program's instructions
 * Advantages of exception
 	* Seperates error handling code from regular code
@@ -468,13 +478,13 @@ for(int i: list){
 		* classes which extends java.lang.Error class
 		* Example: java.lang.NoClassDefFoundError, java.io.IOError
 * Exception Hirarchy in Java library\
-![picture](../notes/images/Exception-Hierarchy-1.png)
+![picture](images/Exception-Hierarchy-1.png)
 * Error class hierarchy\
-![picture](../notes/images/error-class-hierarchy.gif)
+![picture](images/error-class-hierarchy.gif)
 * Exception class hierarchy\
-![picture](../notes/images/exception-class-hierarchy.gif)
+![picture](images/exception-class-hierarchy.gif)
 * RuntimeException class hierarchy\
-![picture](../notes/images/runtime-exception-hierarchy.jpg)
+![picture](images/runtime-exception-hierarchy.jpg)
 * try block
 	* identifies the code in which exception can occur
 * catch block
@@ -491,10 +501,10 @@ for(int i: list){
 	* Any object which implements `java.lang.AutoCloseable` or `java.io.Closeable` can be used as resource
 	* Interface `java.io.Closeable extends java.lang.AutoCloseable`
 
-### Examples
-* [TryWithResource.java](../basics/src/main/java/com/java/exceptions/TryWithResource.java)
-
-## References
+## Examples
+* [TryWithResource.java](../../../core-java/basics/src/main/java/com/java/exceptions/TryWithResource.java)
+------
+# References
 * Different classes in `java.lang.ref` package
 	* `Reference<T>`
 	* `WeakReference<T>` extends `Reference<T>`
@@ -507,24 +517,24 @@ for(int i: list){
 	* Soft reference
 	* Phantom reference
 
-### Strong reference
+## Strong reference
 * Create strong reference
 ```
 String s = "abc";
 ```
 
-### Weak reference
+## Weak reference
 * object is eligible for garbage collection when strong reference is set to null
 * Creating `java.lang.ref.WeakReference`
 ```
 Counter counter = new Counter(); // strong reference
 WeakReference<Counter> weakCounter = new WeakReference<Counter>(counter);//weak reference
-counter = null; // now Counter object is eligible for garbage collection
+counter = null; // now weakCounter object is eligible for garbage collection
 ```
 * Example
 	* One convenient example of WeakReference is WeakHashMap, which is another implementation of Map interface like HashMap or TreeMap but with one unique feature. WeakHashMap wraps keys as WeakReference which means once strong reference to actual object removed, WeakReference present internally on WeakHashMap doesn't prevent them from being Garbage collected
 
-### Soft reference
+## Soft reference
 * object is eligible for garbage collection but only be collected when JVM absolutely needs memory
 * Creating `java.lang.ref.SoftReference`
 ```
@@ -535,15 +545,15 @@ prime = null; // now Counter object is eligible for garbage collection but only 
 * WeakReference vs SoftReference
 	* Garbage collector can collect an object if only weak references are pointing towards it and they are eagerly collected, on the other hand Objects with SoftReference are collected when JVM absolutely needs memory
 
-### PhantomReference
-* Phantom reference is third kind of reference type available in java.lang.ref package. Phantom reference is represented by java.lang.ref.PhantomReference class. Object which only has Phantom reference pointing them can be collected whenever Garbage Collector likes it
+## PhantomReference
+* Phantom reference is third kind of reference type available in `java.lang.ref` package. Phantom reference is represented by java.lang.ref.PhantomReference class. Object which only has Phantom reference pointing them can be collected whenever Garbage Collector likes it
 * Create PhantomReference
 ```
 DigitalCounter digit = new DigitalCounter(); // digit reference variable has strong reference
 PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(digit, referenceQueue);
 ```
 
-### java.lang.ref.ReferenceQueue
+## java.lang.ref.ReferenceQueue
 * one more class called ReferenceQueue which is worth knowing. You can supply a ReferenceQueue instance while creating any WeakReference, SoftReference or PhantomReference as shown in following code
 ```
 ReferenceQueue refQueue = new ReferenceQueue(); //reference will be stored in this queue for cleanup
@@ -553,9 +563,9 @@ PhantomReference<DigitalCounter> phantom = new PhantomReference<DigitalCounter>(
 * Reference of instance will be appended to ReferenceQueue and you can use it to perform any clean-up by polling ReferenceQueue
 
 ### Examples
-* [ReferencesPractice.java](../basics/src/main/java/com/java/references/ReferencesPractice.java)
-
-## File IO
+* [ReferencesPractice.java](../../../core-java/basics/src/main/java/com/java/references/ReferencesPractice.java)
+------
+# File IO
 * stream: continuous flow
 * IO Stream: continuous flow of data
 * IO Operation
@@ -659,23 +669,23 @@ Output:
 abc\def
 ```
 * Basic Stream \
-![picture](../notes/images/basic-streams.jpg)
+![picture](images/basic-streams.jpg)
 * Reader classes hierarchy \
-![picture](../notes/images/reader-classes-hierarchy.jpg)
+![picture](images/reader-classes-hierarchy.jpg)
 * Stream classes hierarchy \
-![picture](../notes/images/stream-classes-hierarchy.jpg)
+![picture](images/stream-classes-hierarchy.jpg)
 
-### File IO Examples
-* [File IO Practice](../basics/src/main/java/com/java/io/FileIOPractice.java)
-* [Random Access File Practice](../basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
-* [Read Input From Key board](../basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
-
-## Big Decimal
+## File IO Examples
+* [File IO Practice](../../../core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
+* [Random Access File Practice](../../../core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
+* [Read Input From Key board](../../../core-java/basics/src/main/java/com/java/io/ReadInputFromKeyboard.java)
+------
+# Big Decimal
 * The BigDecimal class provides operation for arithmetic, comparison, hashing, rounding, manipulation and format conversion
 * This method can handle very small and very big floating point numbers with great precision
 * In java, BigDecimal consists of a random precision integer scale and a 32-bit integer scale. If positive or zero, the scale is the number of digits to the right of the decimal point
 * If less than zero, the unscaled value of the number is multiplied by ten to the power of the negation of the scale(10^(-scale))
-* [Big Decimal Practice](../basics/src/main/java/com/java/math/BigDecimalPractice.java)
-
+* [Big Decimal Practice](../../../core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
+------
 # What is the cyclomatic complexity of an application?
 * Quantitative measure of the number of linearly independent paths through program source code

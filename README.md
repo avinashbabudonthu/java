@@ -16,6 +16,7 @@
 ------
 # Study Road Map
 * [Core Java basics notes](java-v2/core-java/notes/basics.md)
+* [Jenkov Java Tutorial](https://jenkov.com/tutorials/java/index.html)
 * [Annotations](java-v2/core-java/notes/annotations.md)
 * [Annotations Java Docs](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
 * [Collections](java-v2/core-java/notes/collections.md)
@@ -41,7 +42,6 @@
 * [String Examples](java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
 * [String Joiner](core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 * [String format](java/core-java/basics/src/main/java/com/java/strings/StringFormatPractice.java)
-* [Jenkov Java Tutorial](https://jenkov.com/tutorials/java/index.html)
 * [Design Patterns](https://www.tutorialspoint.com/design_pattern/index.htm)
 * [Immutables in Java - Are Setters Allowed?](https://reflectoring.io/java-immutables/)
 * [Integer class Practice](java/core-java/basics/src/test/java/com/java/IntegerPractice.java)
@@ -52,5 +52,7 @@
 * [NumberFormat](java/core-java/internationalization/src/test/java/com/internationalization/NumberLocalePractice.java)
 * [UUID Generator](java/core-java/basics/src/test/java/com/java/util/RequestUUIDGenerator.java)
 * [Properties files Examples](java/core-java/basics/src/main/java/com/java/io/PropertiesFileExamples.java)
+* SQL - Box/books/SQL Zero to Hero Handwritten.pdf
+* SQL - Box/books/Master SQL.pdf
 ------
 ### [<<Back](https://github.com/avinashbabudonthu/java)
