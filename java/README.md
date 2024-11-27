@@ -832,7 +832,6 @@
 ------
 # [Git](git)
 * [Git Materials](git/materials.md)
-* Conventional Commits - https://www.conventionalcommits.org/en/v1.0.0/
 * [Notes](git/notes.md)
 * [Revert Specifit Commit](git/notes.md#revert-specific-commit)
 * [Setup git workspace in windows](git/notes.md#setup-git-workspace-in-windows)
