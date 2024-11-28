@@ -1,0 +1,114 @@
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/java-8-notes.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/optional.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/runtime.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/serialization.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/strings.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
+Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
+Core Java - http://google.github.io/styleguide/javaguide.html
+Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
+Core Java - Java 8 - Box/Java-8-Features
+Core Java - Java 8 - Box/Java 8 Lambdas
+Core Java - Java 8 - Java 8 Pocket Guide
+Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/playing-with-java-8-lambdas-and-concurrency.html
+Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/java-8-date-time-api-tutorial-localdatetime.html
+Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/abstract-class-versus-interface-in-the-jdk-8-era.html
+Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/15-must-read-java-8-tutorials.html
+Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/java-8-friday-the-dark-side-of-java-8.html
+Core Java - Annotations - https://reflectoring.io/java-annotation-processing/
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - ResourceBundle
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Base64
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - HashCodes
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - BigDecimal
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - DecimalFormat
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Create Basic Auth Header
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate 10 digit random number
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate N digit random number
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate random number in range
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate N digit random number in range
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate random password
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Reverse the number
+Core Java - IO - https://jenkov.com/tutorials/java-io/index.html
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - FileIO
+Core Java - Collections - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#collections
+Core Java - Serialization - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#serialization-examples
+Core Java - Dates - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#date-practice
+Core Java - Enums - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#enum
+Core Java - Enums - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/enums/README.md#Enum-issue
+Core Java - Regex - https://jenkov.com/tutorials/java-regex/index.html
+Core Java - Regex - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java-regex
+Core Java - Multithreading - https://github.com/avinashbabudonthu/java/tree/master/java-v2/multi-threading
+Core Java - Multithreading - https://jenkov.com/tutorials/java-concurrency/index.html
+Core Java - Concurrency Utils - https://jenkov.com/tutorials/java-concurrency/index.html
+Core Java - Multithreading - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java
+Core Java - Java 8 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-8-examples
+Core Java - Java 17 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-17
+Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
+Core Java - System class - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/SystemTest.java
+Core Java - ArrayList - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/ArrayListTest.java
+Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
+Core Java - Objects - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/ObjectsTest.java
+Core Java - IntStream - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/stream/IntStreamTest.java
+Core Java - Display day name - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/dates/DisplayDayNameOfWeekTest.java
+Core Java - Reflection - https://github.com/avinashbabudonthu/java/tree/master/java-v2/reflection
+Core Java - Reactive Programming - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#reactive-programming
+Deisgn Patterns - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#design-patterns
+Connection Pooling - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#connection-pooling
+Microservices - https://github.com/avinashbabudonthu/java/tree/master/java-v2/microservices
+Apache Camel - Apache Camel Introduction - https://www.baeldung.com/apache-camel-intro
+Apache Camel - Camel Spring Boot - https://www.masterspringboot.com/camel/camel-with-spring-boot-example-masterspringboot/
+Apache Camel - Spring Camel - https://reflectoring.io/spring-camel/
+Apache Camel - Camel Spring Boot Kafka - https://www.masterspringboot.com/camel/camel-kafka-with-spring-boot-example/
+Apache Camel - http://www.mastertheintegration.com/camel/camel-introduction.html
+Apache Camel - http://camel.apache.org/getting-started.html
+Apache Camel - http://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-activemq-example/
+Apache Camel - Unit Testing - https://tomd.xyz/camel-testing/
+Apache Camel - maven command to create camel spring boot project - mvn archetype:generate -DgroupId="com.java" -DartifactId="camel-spring-boot-application"  -DarchetypeGroupId="org.apache.camel.archetypes" -DarchetypeArtifactId="camel-archetype-spring-boot" -DinteractiveMode=false
+Apache Camel - Spring Boot 3 Hello World - https://github.com/avinashbabudonthu/java/tree/master/java/apache-camel/camel-spring-boot-3
+Apache Camel - Timer Route - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Timer-route
+Apache Camel - Timer Route calling REST API - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Timer-route-calling-Rest-API
+Apache Camel - Stop Router - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Stop-Router
+Apache Camel - Kafka Router - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Kafka-Router
+Apache Camel - Kafka Route Send List with Key - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Kafka-Route-Send-List-with-key
+Apache POI - https://howtodoinjava.com/java/library/readingwriting-excel-files-in-java-poi-tutorial/
+Apache POI - Excel Examples - https://github.com/avinashbabudonthu/java/blob/master/java/apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java
+CNTLM - https://github.com/avinashbabudonthu/java/blob/master/java/cntlm/README.md#Materials
+Cloud - https://github.com/avinashbabudonthu/java/blob/master/java/cloud/notes.md
+AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
+Azure - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#azure
+Cucumber - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#cucumber
+Databases - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#database
+Unit Testing - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#unit-testing
+SQL Databases - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#sql-databases
+Logging - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#logging
+REST API - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#rest-api
+REST Clients - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#rest-clients
+Feign - Setting Request Headers Using Feign - https://www.baeldung.com/java-feign-request-headers
+Core Java - GC - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#garbage-collection
+Spring - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#spring
+Devops - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#devops
+Docker - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#docker
+Docker - https://github.com/avinashbabudonthu/java/tree/master/java-v2/docker
+Docker Compose - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#docker-compose
+Docker Compose - https://github.com/avinashbabudonthu/java/tree/master/java-v2/docker-compose
+Docker Swarm - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#docker-swarm
+Kubernetes - https://github.com/avinashbabudonthu/java/tree/master/java-v2/kubernetes
+Cassandra
+APIGEE - Basics - https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk
+APIGEE - Notes - https://github.com/avinashbabudonthu/java/blob/master/java/apigee/apigee.md#notes
+Ansible
+Dozer - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#dozer
+Apache Beam - https://github.com/avinashbabudonthu/java/blob/master/java/apache-beam/notes.md
+Apache Bean Hello World example - https://github.com/avinashbabudonthu/java/tree/master/java/apache-beam/hello-world
+Architect - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#architect
+Chocolatey - Install - @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+Clickhouse - https://github.com/avinashbabudonthu/java/blob/master/java/click-house/click-house.md
+Commons compress - Compress - https://github.com/avinashbabudonthu/java/blob/master/java/commons-compress/commons-compress/src/test/java/com/tar/Compress.java
+Commons compress - Uncompress - https://github.com/avinashbabudonthu/java/blob/master/java/commons-compress/commons-compress/src/test/java/com/tar/UnCompress.java
+Apache Commons Lang3 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#commons-lang3
+Couch Base - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#couch-base
+DS-Algo - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#data-structures-algorithms
+Drools - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#drools

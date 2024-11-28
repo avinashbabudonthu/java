@@ -3,7 +3,6 @@
 # Table of Contents - Alphabetical order
 * [Angular](#angular)
 * [Angular JS](#angular-js)
-* [Ansible](#ansible)
 * [Apache Beam](#apache-beam)
 * [Apache Camel](#apache-camel)
 * [Apache POI](#apache-poi)
@@ -11,14 +10,12 @@
 * [Architect](#architect)
 * [AWS](#aws)
 * [Azure](#azure)
-* [Cassandra](#cassandra)
 * [Chocolatey](#chocolatey)
 * [ClickHouse](#ClickHouse)
 * [Cloud](#cloud)
 * [cntlm](#cntlm)
 * [Commons compress](#commons-compress)
 * [Commons Lang3](#commons-lang3)
-* [Concourse](#concourse)
 * [Connection Pooling](#connection-pooling)
 * [Core Java](#core-java)
 * [Core Java Properties files Examples](#Properties-files-Examples)
@@ -175,9 +172,6 @@
 ------
 # [Angular JS](angular-js)
 * [Materials](angular-js/materials.md)
-------
-# [Ansible](ansible)
-* [Materials](ansible/materials.md)
 ------
 # [Apache Beam](apache-beam)
 * [Materials](apache-beam/materials.md)
@@ -355,13 +349,6 @@
 * [Services](azure/README.md#Services)
 * [Cloud Shell](azure/README.md#Cloud-Shell)
 ------
-# [Cassandra](cassandra)
-* [Materials](cassandra/materials.md)
-------
-# [Chocolatey](chocolatey)
-* [Materials](chocolatey/materials.md)
-* [Notes](chocolatey/notes.md)
-------
 # [ClickHouse](click-house)
 * [Notes](click-house/click-house.md)
 * [Materials in study order](click-house/click-house.md#Materials-in-study-order)
@@ -404,9 +391,6 @@
 * [StringUtils - subString](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
 * [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 * [ToStringBuilder - reflectionToString](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
-------
-# [Concourse](concourse)
-* [Materials](concourse/materials.md)
 ------
 # [Connection Pooling](connection-pooling)
 * [Notes](connection-pooling/notes.md)
