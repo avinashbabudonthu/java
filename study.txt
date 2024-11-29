@@ -56,6 +56,10 @@ Core Java - Display day name - https://github.com/avinashbabudonthu/java/blob/ma
 Core Java - Reflection - https://github.com/avinashbabudonthu/java/tree/master/java-v2/reflection
 Core Java - Reactive Programming - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#reactive-programming
 Deisgn Patterns - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#design-patterns
+JWT - box/books/000001-jwt-handbook-v0_14_2.pdf
+Core Java - Reactive Programming - box/books/000002-reactive-programming-reactor.pdf
+SQL - box/books/000003-SQL Zero to Hero Handwritten.pdf
+SQL - box/books/000004-Master SQL.pdf
 Connection Pooling - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#connection-pooling
 Microservices - https://github.com/avinashbabudonthu/java/tree/master/java-v2/microservices
 Apache Camel - Apache Camel Introduction - https://www.baeldung.com/apache-camel-intro
