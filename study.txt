@@ -56,11 +56,17 @@ Core Java - Display day name - https://github.com/avinashbabudonthu/java/blob/ma
 Core Java - Reflection - https://github.com/avinashbabudonthu/java/tree/master/java-v2/reflection
 Core Java - Reactive Programming - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#reactive-programming
 Deisgn Patterns - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#design-patterns
+Maven - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#maven
+Git - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#git
+JWT - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jwt
 JWT - box/books/000001-jwt-handbook-v0_14_2.pdf
 Core Java - Reactive Programming - box/books/000002-reactive-programming-reactor.pdf
+Jackson JSON - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jackson-json
+Lombok - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#lombok
 SQL - box/books/000003-SQL Zero to Hero Handwritten.pdf
 SQL - box/books/000004-Master SQL.pdf
 Connection Pooling - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#connection-pooling
+Microservices - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#microservices
 Microservices - https://github.com/avinashbabudonthu/java/tree/master/java-v2/microservices
 Apache Camel - Apache Camel Introduction - https://www.baeldung.com/apache-camel-intro
 Apache Camel - Camel Spring Boot - https://www.masterspringboot.com/camel/camel-with-spring-boot-example-masterspringboot/
@@ -79,6 +85,11 @@ Apache Camel - Kafka Router - https://github.com/avinashbabudonthu/java/blob/mas
 Apache Camel - Kafka Route Send List with Key - https://github.com/avinashbabudonthu/java/blob/master/java/apache-camel/camel-spring-boot-3/README.md#Kafka-Route-Send-List-with-key
 Apache POI - https://howtodoinjava.com/java/library/readingwriting-excel-files-in-java-poi-tutorial/
 Apache POI - Excel Examples - https://github.com/avinashbabudonthu/java/blob/master/java/apache-poi/apache-poi/src/test/java/com/excel/ExcelPractice.java
+JDK - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jdk
+JDK Keytool - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#keytool
+JVM - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jvm
+Kafka - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#kafka
+
 CNTLM - https://github.com/avinashbabudonthu/java/blob/master/java/cntlm/README.md#Materials
 Cloud - https://github.com/avinashbabudonthu/java/blob/master/java/cloud/notes.md
 AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
@@ -86,10 +97,18 @@ Azure - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#azu
 Cucumber - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#cucumber
 Databases - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#database
 Unit Testing - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#unit-testing
+JUnit 4 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#junit-4
+JUnit 5 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#junit-5
+
 SQL Databases - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#sql-databases
+Logging - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#logging
 Logging - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#logging
+Log4J - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#log4j
+JHipster - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jhipster
 REST API - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#rest-api
 REST Clients - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#rest-clients
+GraphQL - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#graphql
+Karate - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#karate
 Feign - Setting Request Headers Using Feign - https://www.baeldung.com/java-feign-request-headers
 Core Java - GC - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#garbage-collection
 Spring - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#spring
@@ -99,7 +118,18 @@ Docker - https://github.com/avinashbabudonthu/java/tree/master/java-v2/docker
 Docker Compose - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#docker-compose
 Docker Compose - https://github.com/avinashbabudonthu/java/tree/master/java-v2/docker-compose
 Docker Swarm - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#docker-swarm
+Kubernetes - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#kubernetes
 Kubernetes - https://github.com/avinashbabudonthu/java/tree/master/java-v2/kubernetes
+Groovy - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#groovy
+Gradle - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#gradle
+JPA - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jpa
+Hibernate - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#hibernate
+JFrog - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jfrog
+Jenkins - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jenkins
+Kerberos - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#kerberos
+Kibana - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#kibana
+
+JMeter - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jmeter
 Cassandra
 APIGEE - Basics - https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk
 APIGEE - Notes - https://github.com/avinashbabudonthu/java/blob/master/java/apigee/apigee.md#notes
@@ -116,3 +146,26 @@ Apache Commons Lang3 - https://github.com/avinashbabudonthu/java/blob/master/jav
 Couch Base - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#couch-base
 DS-Algo - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#data-structures-algorithms
 Drools - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#drools
+Google Cloud Platform - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#GCP-Google-Cloud-Platform
+Graph Database - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#graph-database
+Gremlin - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#gremlin
+GSON - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#gson
+Guava - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#guava
+H2 Database - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#h2-database
+Heroku - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#heroku
+Heroku - Udemy - Salesforce Heroku MasterclassLearn
+HikariCP - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#hikaricp
+HikariCP - https://github.com/avinashbabudonthu/java/tree/master/java-v2/hikari-cp
+HTML Sanitizer - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#html-sanitizer
+Infinispan - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#Infinispan
+Integration Testing - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#Integration-Testing
+IntelliJ - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#intellij
+Jolt - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jolt
+Liquibase - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#liquibase
+Kotlin - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#kotlin
+
+Interview questions - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#interview-questions
+
+
+
+Javascript - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#Javascript
