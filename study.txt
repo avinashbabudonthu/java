@@ -1,3 +1,15 @@
+COMPLETED
+------------
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+INPROGRESS
+------------
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+TODO
+-------
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
@@ -10,6 +22,8 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://google.github.io/styleguide/javaguide.html
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
+Udemy - OpenAPI: Beginner to Guru
+Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
 Core Java - Java 8 - Box/Java 8 Lambdas
 Core Java - Java 8 - Java 8 Pocket Guide
@@ -31,6 +45,7 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate N digit random number in range
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate random password
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Reverse the number
+Udemy - Mastering Java Reactive Programming [ From Scratch - 2024 ]
 Core Java - IO - https://jenkov.com/tutorials/java-io/index.html
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - FileIO
 Core Java - Collections - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#collections
@@ -45,6 +60,7 @@ Core Java - Multithreading - https://jenkov.com/tutorials/java-concurrency/index
 Core Java - Concurrency Utils - https://jenkov.com/tutorials/java-concurrency/index.html
 Core Java - Multithreading - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/multi-threading/multi-threading-1/src/test/java/com/java/ThreadPractice.java
 Core Java - Multithreading - https://github.com/avinashbabudonthu/java/tree/master/java-v2/multi-threading
+Udemy - gRPC Masterclass with Java & Spring Boot [2024 - Hands-On]
 Core Java - Java 8 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-8-examples
 Core Java - Java 17 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-17
 Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
@@ -60,12 +76,13 @@ Core Java - Reactive Programming - https://github.com/avinashbabudonthu/java/blo
 Core Java - Reactive Programming - https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md#reactive-programming
 Core Java - Reactive Programming -https://github.com/avinashbabudonthu/java/tree/master/java-v2/reactive-programming-reactor
 Core Java - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java
-
+Udemy - Java Application Performance Tuning and Memory Management
+Udemy - Design Patterns in Java
 Deisgn Patterns - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#design-patterns
 Deisgn Patterns - https://github.com/avinashbabudonthu/java/tree/master/java-v2/design-patterns
 Maven - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#maven
 Maven - https://github.com/avinashbabudonthu/java/tree/master/java-v2/maven
-
+Udemy - The Complete SQL Bootcamp: Go from Zero to Hero
 Git - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#git
 Git - https://github.com/avinashbabudonthu/java/tree/master/java-v2/git
 JWT - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jwt
@@ -74,6 +91,7 @@ Core Java - Reactive Programming - box/books/000002-reactive-programming-reactor
 Jackson JSON - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jackson-json
 Lombok - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#lombok
 Lombok - https://github.com/avinashbabudonthu/java/tree/master/java-v2/lombok
+Udemy - SQL and PostgreSQL: The Complete Developer's Guide
 SQL - https://github.com/avinashbabudonthu/java/tree/master/java-v2/sql
 SQL - box/books/000003-SQL Zero to Hero Handwritten.pdf
 SQL - box/books/000004-Master SQL.pdf
