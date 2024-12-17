@@ -18,6 +18,9 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/runtime.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/serialization.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/strings.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java
+Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
+Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://google.github.io/styleguide/javaguide.html
@@ -45,6 +48,7 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate N digit random number in range
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Generate random password
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - Reverse the number
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/collections/src/test/java/com/util/ArraysPractice.java
 Udemy - Mastering Java Reactive Programming [ From Scratch - 2024 ]
 Core Java - IO - https://jenkov.com/tutorials/java-io/index.html
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#core-java - FileIO
@@ -63,10 +67,9 @@ Core Java - Multithreading - https://github.com/avinashbabudonthu/java/tree/mast
 Udemy - gRPC Masterclass with Java & Spring Boot [2024 - Hands-On]
 Core Java - Java 8 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-8-examples
 Core Java - Java 17 - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#java-17
-Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
+
 Core Java - System class - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/SystemTest.java
 Core Java - ArrayList - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/ArrayListTest.java
-Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
 Core Java - Objects - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/ObjectsTest.java
 Core Java - IntStream - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/stream/IntStreamTest.java
 Core Java - Display day name - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/dates/DisplayDayNameOfWeekTest.java
