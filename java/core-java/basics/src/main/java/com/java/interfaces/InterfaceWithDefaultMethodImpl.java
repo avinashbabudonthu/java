@@ -17,6 +17,14 @@ public class InterfaceWithDefaultMethodImpl implements InterfaceWithDefaultMetho
 		object.method3();
 	}
 
+	/**
+	 * Output:
+	 * InterfaceWithDefaultMethodImpl method1
+	 * default method1()
+	 * method 2
+	 * method3
+	 *
+	 */
 	public static void main(String[] args) {
 		InterfaceWithDefaultMethod interface1 = new InterfaceWithDefaultMethodImpl();
 		interface1.method1();
