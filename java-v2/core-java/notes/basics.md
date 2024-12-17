@@ -167,6 +167,43 @@ public final class Student{
 	* Initializes non static members of the class
 	* Executes constructor
 	* Create object
+* Class
+```
+package com.java.model;
+
+public class NewKeyWordTestModel {
+
+    private static final Integer id1 = 1;
+
+    static {
+        System.out.println("static block");
+    }
+
+    private static Integer id2 = 2;
+    private Integer id3;
+
+    {
+        System.out.println("initialization block");
+        id3 = 3;
+    }
+
+    public NewKeyWordTestModel() {
+        System.out.println("constructor");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("main method");
+        NewKeyWordTestModel obj1 = new NewKeyWordTestModel();
+    }
+}
+```
+* Output
+```
+static block
+main method
+initialization block
+constructor
+```
 ```
 Student studentReference = new Student();
 ```
