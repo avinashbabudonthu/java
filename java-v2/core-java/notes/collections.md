@@ -1,34 +1,44 @@
 # Collections notes
-
-## Collections hierarchy and methods
-* Collections hierarchy\
+------
+# Collection hierarchy and methods
+* Collection - List, Set, Queue
+* Map (Do not extend Collection but part of collection framework)\
 ![picture](images/collection-hierarchy.jpg)
 * Detailed collection hierarchy\
 ![picture](images/detailed-collection-hierarchy.jpg)
-* List hierarchy\
+------
+# List hierarchy
+* List - Vector, ArrayList, LinkedList, CopyOnWriteArrayList\
 ![picture](images/list.jpg)
 * List methods\
 ![picture](images/list-methods.jpg)
-* Set hierarchy\
+------
+# Set hierarchy
+* Set - HashSet, LinkedHashSet, TreeSet, EnumSet, CopyOnWriteArraySet, ConcurrentSkipListSet\
 ![picture](images/set.jpg)
-* Map hierarchy\
+------
+# Map hierarchy
+* Map - HashTable, HashMap, LinkedHashMap, TreeMap, WeakHashMap, IdentityHashMap, EnumMap, ConcurrentHashMap, ConcurrentSkipListMap\
 ![picture](images/map.jpg)
-* Queue hierarchy\
+------
+# Queue hierarchy
+* Queue - LinkedList, PriorityQueue, ArrayDeQueue, ArrayBlockingQueue\
 ![picture](images/queue.jpg)
 * Queue methods
 ![picture](images/queue_methods.jpg)
-* Collections interfaces and their implementatons\
-![picture](images/collections_general_implementations.jpg)
 * Dequeue methods\
 ![picture](images/dequeu-methods.jpg)
-
-## Notes
+------
+# Collections interfaces and their implementatons
+![picture](images/collections_general_implementations.jpg)
+------
+# Notes
 * Collection
 	* Container
 	* simply an object which groups multiple elements into single unit
 * Collection sub interfaces
 	* Set, List, Queue
-* Map is not sub interface is Collection interface. But part of collections
+* Map is not sub interface of Collection interface. But part of collections
 * Map sub interfaces
 	* SortedMap, NavigableMap, ConcurrentMap, ConcurrentNavigableMap
 * Some common methods in Collection interface
@@ -82,7 +92,7 @@
 	* removeAll()
 	* containsAll()
 	* retainAll()
-* differnce between old and new aggregate functions
+* difference between old and new aggregate functions
 	* old aggregate functions are mutative(changes underlying collection).
 	* New aggregate functions are not mutative
 * Iterator
@@ -132,7 +142,7 @@
 	* TreeMap
 * java.util.concurrent.CopyOnWriteArrayList
 	* A thread-safe variant of ArrayList in which all mutative operations (add, set, and so on) are implemented by making a fresh copy of the underlying array.
-	* This is ordinarily too costly, but may be more efficient than alternatives when traversal operations vastly outnumber mutations, and is useful when you cannot or don't want to synchronize traversals, yet need to preclude interference among concurrent threads. The "snapshot" style iterator method uses a reference to the state of the array at the point that the iterator was created. This array never changes during the lifetime of the iterator, so interference is impossible and the iterator is guaranteed not to throw ConcurrentModificationException. The iterator will not reflect additions, removals, or changes to the list since the iterator was created. Element-changing operations on iterators themselves (remove, set, and add) are not supported. These methods throw UnsupportedOperationException.
+	* This is ordinarily too costly, but may be more efficient than alternatives when traversal operations vastly outnumber mutations, and is useful when you cannot or don't want to synchronize traversals, yet need to preclude interference among concurrent threads. The `snapshot` style iterator method uses a reference to the state of the array at the point that the iterator was created. This array never changes during the lifetime of the iterator, so interference is impossible and the iterator is guaranteed not to throw ConcurrentModificationException. The iterator will not reflect additions, removals, or changes to the list since the iterator was created. Element-changing operations on iterators themselves (remove, set, and add) are not supported. These methods throw UnsupportedOperationException.
 	* All elements are permitted, including null.
 	* Memory consistency effects
 		* As with other concurrent collections, actions in a thread prior to placing an object into a CopyOnWriteArrayList takes care of happen-before actions subsequent to the access or removal of that element from the CopyOnWriteArrayList in another thread
@@ -201,14 +211,17 @@ double average = roster.stream().filter(p -> p.getGender() == Person.Sex.MALE).m
 * pre-defined Reduction operations in Java API
 	* min
 	* max
-	* sum
 	* count
+	* sum
 	* average
 * general reduction operations
 	* java.util.stream.Stream.reduce(identity, accumulator);
 	* java.util.stream.Stream.collect(supplier, accumulator, combiner);
-* Stream.reduce method\
+------
+# Stream.reduce method\
 ![picture](images/stream-reduce-method.jpg)
+------
+# Aggregators vs Iterators
 * Differences Between Aggregate Operations and Iterators
 	* Aggregate operations use internal iteration
 	* Aggregate operations process elements from a stream
@@ -218,17 +231,17 @@ double average = roster.stream().filter(p -> p.getGender() == Person.Sex.MALE).m
 	* With internal delegation, your application determines what collection it iterates, but the JDK determines how to iterate the collection. 
 	* With external iteration, your application determines both what collection it iterates and how to iterate it. 
 	* However, external iteration can only iterate over the elements of a collection sequentially. Internal iteration does not have this limitation. 
-	* It can more easily take advantage of parallel computing, which involves dividing a problem into subproblems, solving those problems simultaneously, and then combining the results of the solutions to the subproblems.
+	* It can more easily take advantage of parallel computing, which involves dividing a problem into subproblems, solving those problems simultaneously, and then combining the results of the subproblems.
 * Aggregate operations process elements from a stream
 	* Aggregate operations process elements from a stream, not directly from a collection. Consequently, they are also called stream operations.
 * Aggregate operations support behavior as parameters
 	* You can specify lambda expressions as parameters for most aggregate operations. This enables you to customize the behavior of a particular aggregate operation
 * Reduction/terminal operations in JDK
-	* min, max, sum, count, average
+	* min, max, count, sum, average
 * Reduction/terminal operations return
 	* Return one value by combining the contents of a stream. These operations are called reduction operations.
 	* The JDK also contains reduction operations that return a collection instead of a single value. Many reduction operations perform a specific task, such as finding the average of values or grouping elements into categories
-	* However, the JDK provides you with the general-purpose reduction operations reduce and collect
+	* However, the JDK provides you with the general-purpose reduction operations `reduce` and `collect`
 * Parallelism in Collection framework
 	* Parallel computing involves dividing a problem into subproblems, solving those problems simultaneously (in parallel, with each subproblem running in a separate thread), and then combining the results. 
 	* Java SE provides the fork/join framework, which enables you to more easily implement parallel computing in your applications. 
@@ -238,12 +251,7 @@ double average = roster.stream().filter(p -> p.getGender() == Person.Sex.MALE).m
 ```
 ConcurrentMap<Person.Sex, List<Person>> genderGrouping = persons.parallelStream().collect(Collectors.groupingByConcurrent(Person::getGender));
 ```
-* Above is called a concurrent reduction. The Java runtime performs a concurrent reduction if all of the the following are true for a particular pipeline that contains the collect operation
-	* The stream is parallel.
-	* The parameter of the collect operation, the collector, has the characteristic Collector.Characteristics.CONCURRENT. To determine the characteristics of a collector, invoke the Collector.characteristics method.
-	* Either the stream is unordered, or the collector has the characteristic Collector.Characteristics.UNORDERED. To ensure that the stream is unordered, invoke the BaseStream.unordered operation.
-	* This example returns an instance of ConcurrentMap instead of Map and invokes the groupingByConcurrent operation instead of groupingBy. (See the section Concurrent Collections for more information about ConcurrentMap.) Unlike the operation groupingByConcurrent, the operation groupingBy performs poorly with parallel streams. (This is because it operates by merging two maps by key, which is computationally expensive.) Similarly, the operation Collectors.toConcurrentMap performs better with parallel streams than the operation Collectors.toMap.
-* java.lang.UnsupportedOperationException
+* java.lang.UnsupportedOperationException because `Collections.EMPTY_LIST` creates `immutable` list
 ```
 Collection<String> collection =  Collections.EMPTY_LIST;
 collection.add("1");

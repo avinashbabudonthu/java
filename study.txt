@@ -1,17 +1,18 @@
 COMPLETED
 ------------
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
+
+
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/java-8-notes.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/optional.md

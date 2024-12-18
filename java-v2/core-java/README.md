@@ -27,6 +27,9 @@
 # java.util.stream
 * [java.util.stream.IntStream](core-java/src/main/java/com/practice/java/util/stream/IntStreamTest.java)
 ------
+# java.math
+* [java.math.BigDecimal](../../java/core-java/basics/src/main/java/com/java/math/BigDecimalPractice.java)
+------
 # Examples
 * [Displaying Name of the Day of the Week in Java](core-java/src/main/java/com/practice/dates/DisplayDayNameOfWeek.java)
 ------

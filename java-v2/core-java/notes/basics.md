@@ -712,6 +712,15 @@ abc\def
 * Stream classes hierarchy \
 ![picture](images/stream-classes-hierarchy.jpg)
 
+### Read contents of file using streams
+```
+final Path path = new File( filename ).toPath();
+try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
+	lines.onClose( () -> System.out.println("Done!") ).forEach( System.out::println );
+}
+
+```
+
 ## File IO Examples
 * [File IO Practice](../../../java/core-java/basics/src/main/java/com/java/io/FileIOPractice.java)
 * [Random Access File Practice](../../../java/core-java/basics/src/main/java/com/java/io/RandomAccessFilePractice.java)
