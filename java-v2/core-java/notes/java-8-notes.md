@@ -1,15 +1,25 @@
 # New features list in Java 8
-* Default and static methods in interface
-	* [Examples](../java-8/java8/src/main/java/com/interfaces)
-* Functional Interface
-	* [Examples](../java-8/java8/src/main/java/com/functional/interfaces)
-* Lambda expressions (Closures)
-	* [Examples](../java-8/java8/src/main/java/com/lambda/expressions)
-* Method references
-	* [Examples](../java-8/java8/src/main/java/com/method/references)
-* Constructor references
-	* [Examples](../java-8/java8/src/main/java/com/constructor/references)
+* Default and static methods in interface - [Examples](../../../core-java/java-8/java8/src/main/java/com/interfaces)
+* Functional Interface - [Examples](../../../core-java/java-8/java8/src/main/java/com/functional/interfaces)
+* Lambda expressions (Closures) - [Examples](../../../core-java/java-8/java8/src/main/java/com/lambda/expressions)
+* Method references - [Examples](../../../core-java/java-8/java8/src/main/java/com/method/references)
+* Constructor references - [Examples](../../../core-java/java-8/java8/src/main/java/com/constructor/references)
+* Repeating annotations
+* Better Type Inference
+* Extended Annotation Support
+* Collection Streams
+* JavaFX
+* Date time API
+* JAXP
+* Optional
+* Base64 Nashron Javascript Engine - jjs
+* Class dependency analyzer - jdeps
+* Parallel arrays
+* java.util.function package
+* Retain parameter names
+* Permgen removed. Metaspace added
 
+------
 # Repeating annotations
 * Since Java 5 introduced the annotations support, this feature became very popular and is very widely used. However, one of the
 limitations of annotation usage was the fact that the same annotation cannot be declared more than once at the same location.
@@ -121,7 +131,7 @@ public static void main(String[] args) {
 * The ElementType.TYPE_USE and ElementType.TYPE_PARAMETER are two new element types to describe the applicable
 annotation context. The Annotation Processing API also underwent some minor changes to recognize those new type
 annotations in the Java programming language.
-
+------
 # Collection streams
 # JavaFX
 # JAXP
@@ -139,9 +149,10 @@ annotations in the Java programming language.
 # Base64 Nashron javascript engine (jjs)
 # class dependency analyzer(jdeps)
 # Parallel arrays
+------
 # java.util.function package
-	* [Examples](../java-8/java8/src/main/java/com/java/util/function/practice)
-
+* [Examples](../../../core-java/java-8/java8/src/main/java/com/java/util/function/practice)
+------
 # New features in java compiler
 * Parameter names
 	* pom
@@ -166,12 +177,12 @@ annotations in the Java programming language.
 * If we add more than one abstract method to interface which is annotated with @FunctionalInterface, compilation error will come
 * Even though these 2 interfaces are functional interfaces, these are not annotated with @FunctionalInterface annotation
 	* java.lang.AutoCloseable
-	* java.util.Closeable
-* How to call default method in functional interface? this is possible in implementation class only
+	* java.io.Closeable
+* How to call default method in functional interface? Possible from implementation class only
 ```
 InterfaceName.super.methodName()
 ```
-
+------
 # Parameter names
 * Literally for ages Java developers are inventing different ways to preserve method parameter names in Java byte-code and make them available at runtime (for example, Paranamer library). And finally, Java 8 bakes this demanding feature into the language (using Reflection API and Parameter.getName() method) and the byte-code (using new javac compiler argument -parameters)
 * compile this class 

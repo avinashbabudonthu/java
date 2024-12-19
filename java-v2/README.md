@@ -102,5 +102,6 @@
 * [Difference between model object and entity object](files/model-vs-entity.md)
 * [Softwares List](files/softwares-list.md)
 * [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
+* [Sonar Rules](https://rules.sonarsource.com/java/)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
