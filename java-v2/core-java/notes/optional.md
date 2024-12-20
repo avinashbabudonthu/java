@@ -19,7 +19,7 @@
 * stream
 ------
 # Notes
-* [Examples](../../../core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
+* [Examples](../../../java/core-java/java-8/java8/src/main/java/com/java/util/OptionalPractice.java)
 * The famous NullPointerException is by far the most popular cause of Java application failures. Long time ago the great Google
 Guava project introduced the Optional as a solution to NullPointerException, discouraging codebase pollution with null checks
 and encouraging developers to write cleaner code. Inspired by Google Guava, the Optional is now a part of Java 8 library.
