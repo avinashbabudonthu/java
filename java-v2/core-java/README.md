@@ -18,6 +18,7 @@
 # java.lang package
 * [java.lang.String](core-java/src/main/java/com/practice/java/lang/StringTest.java)
 * [java.lang.System](core-java/src/main/java/com/practice/java/lang/SystemTest.java)
+* [java.lang.Runtime](notes/runtime.md)
 ------
 # java.util package
 * [ArrayList](core-java/src/main/java/com/practice/java/util/ArrayListTest.java)
