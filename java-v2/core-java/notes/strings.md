@@ -17,7 +17,7 @@
 	
 ## Examples
 * [String Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
-* [String Joiner Examples](../core-java/basics/src/main/java/com/java/strings/StringJoinerPractice.java)
+* [String Joiner Examples](../basics/src/main/java/com/java/strings/StringJoinerPractice.java)
 
 ## String formatter
 Format Specifier    | Description   | Output
