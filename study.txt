@@ -12,13 +12,12 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/strings.md
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/strings.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java
 Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
 Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
