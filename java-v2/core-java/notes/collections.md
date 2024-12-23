@@ -264,3 +264,16 @@ try( Stream< String > lines = Files.lines( path, StandardCharsets.UTF_8 ) ) {
 }
 
 ```
+------
+# Examples
+* [ArrayList](../core-java/src/main/java/com/practice/java/util/ArrayListTest.java)
+* [LinkedList](../core-java/src/main/java/com/practice/java/util/LinkedListTest.java)
+* [HashSet](../core-java/src/main/java/com/practice/java/util/HashSetTest.java)
+* [LinkedHashSetTest](../core-java/src/main/java/com/practice/java/util/LinkedHashSetTest.java)
+* [TreeSet](../core-java/src/main/java/com/practice/java/util/TreeSetTest.java)
+* [ArrayDeque](../core-java/src/main/java/com/practice/java/util/ArrayDeQueueTest.java)
+* [HashMapTest](../core-java/src/main/java/com/practice/java/util/HashMapTest.java)
+* [LinkedHashMap](../core-java/src/main/java/com/practice/java/util/LinkedHashMapTest.java)
+* [Arrays](../core-java/src/main/java/com/practice/java/util/ArraysTest.java)
+* [Collections](../core-java/src/main/java/com/practice/java/util/CollectionsTest.java)
+* [CopyOnWriteArrayList](../core-java/src/main/java/com/practice/java/util/concurrent/CopyOnWriteArrayListTest.java)

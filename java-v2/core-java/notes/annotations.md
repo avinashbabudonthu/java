@@ -63,8 +63,8 @@ public class TestClass{
 		* Repeatable
 		* Retention
 		* Target
-		
-## java.lang.annotation.Documented
+------		
+# java.lang.annotation.Documented
 * When applied on specific element, that element should be documented by java doc tool
 * The `@java.lang.annotation.Documented` annotation is used to signal to the JavaDoc tool that your custom annotation should be visible in the JavaDoc for classes using your custom annotation
 ```
@@ -74,8 +74,8 @@ public @interface MyAnnotation { ... }
 public class MyClass { ... }
 ```
 * When generating JavaDoc for the MyClass -> @MyAnnotation is now included in the JavaDoc
-
-## java.lang.annotation.Inherited
+------
+# java.lang.annotation.Inherited
 * Annotation type can be inherited from super class. When user queries for annotation type and that class don’t have annotation then super class will be queried for annotation type
 * The `@java.lang.annotation.Inherited` annotation signals that a custom Java annotation used in a class should be inherited by subclasses inheriting from that class
 ```
@@ -87,20 +87,17 @@ public class MySuperClass { ... }
 public class MySubClass extends MySuperClass { ... }
 ```
 * In this example the class MySubClass inherits the annotation @MyAnnotation because MySubClass extends MySuperClass, and MySuperClass has a @MyAnnotation annotation
-
-## java.lang.annotation.Repeatable
+------
+# java.lang.annotation.Repeatable
 * Same annotation can be applied multiple times on same element. Introduced in JDK 8
-* Refer 
-	* [annotation](../annotations/src/main/java/com/repeating/annotation)
-	* [BookTest](../annotations/src/test/java/com/repeating/annotation/BookTest.java)
-	
-## java.lang.annotation.Retention
+------	
+# java.lang.annotation.Retention
 * RetentionPolicy values
-	* java.lang.annotation.RetentionPolicy.SOURCE – The marked annotation is retained only in the source level and is ignored by the compiler
-	* java.lang.annotation.RetentionPolicy.CLASS – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM)
-	* java.lang.annotation.RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment
-	
-## java.lang.annotation.Target
+* java.lang.annotation.RetentionPolicy.SOURCE: The marked annotation is retained only in the source level and is ignored by the compiler
+* java.lang.annotation.RetentionPolicy.CLASS: The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM)
+* java.lang.annotation.RetentionPolicy.RUNTIME: The marked annotation is retained by the JVM so it can be used by the runtime environment
+------	
+# java.lang.annotation.Target
 * `@java.lang.annotation.Target` annotation marks another annotation to restrict what kind of Java elements the annotation can be applied to. A target annotation specifies one of the following element types as its value:
 * ElementType.ANNOTATION_TYPE can be applied to an annotation type.
 * ElementType.CONSTRUCTOR can be applied to a constructor.
@@ -110,7 +107,6 @@ public class MySubClass extends MySuperClass { ... }
 * ElementType.PACKAGE can be applied to a package declaration.
 * ElementType.PARAMETER can be applied to the parameters of a method.
 * ElementType.TYPE can be applied to any element of a class.
-
 ------
 # Type Annotations and Pluggable Type Systems
 * Before the Java SE 8 release, annotations could only be applied to declarations. As of the Java SE 8 release, annotations can also be applied to any type use. This means that annotations can be used anywhere you use a type. A few examples of where types are used are class instance creation expressions (new), casts, implements clauses, and throws clauses. This form of annotation is called a type annotation
@@ -134,9 +130,6 @@ void monitorTemperature() throws @Critical TemperatureException { ... }
 ------
 * An Introduction to Annotations and Annotation Processing in Java - https://reflectoring.io/java-annotation-processing/
 ------
-* Custom annotation
-	* [Custom annotation](core-java/annotations/src/main/java/com/custom/annotations)
-	* [TableTest](core-java/annotations/src/test/java/com/custom/annotations/TableTest.java)
-* Repeating annotations
-	* [Repeating annotations](core-java/annotations/src/main/java/com/repeating/annotation)
-	* [BookTest](core-java/annotations/src/test/java/com/repeating/annotation/BookTest.java)
+# Examples
+* [Table Test](../core-java/src//main/java/com/practice/annotations/TableTest.java)
+* [Repeating Annotations Example - Book Test](../core-java/src/main/java/com/practice/annotations/repeating/BookTest.java)

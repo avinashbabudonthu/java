@@ -8,8 +8,10 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/runtime.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/serialization.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/strings.md
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java
+Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
 Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
+Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -21,9 +23,6 @@ INPROGRESS
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
-Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
 Udemy - OpenAPI: Beginner to Guru
 Udemy - Java Multithreading, Concurrency & Performance Optimization
