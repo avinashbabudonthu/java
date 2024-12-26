@@ -17,14 +17,13 @@ Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tre
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-
+Udemy - OpenAPI: Beginner to Guru
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
-Udemy - OpenAPI: Beginner to Guru
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
 Core Java - Java 8 - Box/Java 8 Lambdas
