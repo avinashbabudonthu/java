@@ -449,7 +449,6 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 ------
 # String
 * Refer [Strings Notes](strings.md)
-* [String Examples](../../../java/core-java/basics/src/main/java/com/java/strings/StringsPractice.java)
 * [StringTest Examples](../../../java-v2/core-java/core-java/src/main/java/com/practice/java/lang/StringTest.java)
 * [String Joiner Examples](../../../java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java)
 ------
@@ -457,7 +456,7 @@ public class InterfaceWithMethodImpl implements InterfaceWithMethod {
 * Group of same data type values
 * Fixed size
 * Index start with `0` - zero
-* Refer array examples - [java.util.Arrays](../../../java/core-java/collections/src/test/java/com/util/ArraysPractice.java)
+* Refer array examples - [java.util.Arrays](../../../java-v2/core-java/core-java/src/main/java/com/practice/java/util/ArraysTest.java)
 	* parallelSort
 	* parallelSetAll
 	* setAll

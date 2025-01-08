@@ -1,6 +1,16 @@
 COMPLETED
 ------------
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+INPROGRESS
+------------
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+TODO
+-------
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/java-8-notes.md
@@ -12,17 +22,7 @@ Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java
 Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
-
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
-INPROGRESS
-------------
 Udemy - OpenAPI: Beginner to Guru
-
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
-TODO
--------
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
