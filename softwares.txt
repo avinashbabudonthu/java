@@ -1,0 +1,14 @@
+JDK17
+Git
+Tortoise Git
+IntelliJ
+Docker
+Postman
+Zoom
+Slack
+Confluence
+JIRA
+Oracle Database
+MySQL Database
+SQL Server Database
+Mongo DB

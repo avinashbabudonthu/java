@@ -6,6 +6,9 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
+Udemy - OpenAPI: Beginner to Guru
+start-date: 10/Jan/2025
+target-end-date: 12/Jan/2025
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -22,7 +25,7 @@ Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java
 Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
-Udemy - OpenAPI: Beginner to Guru
+
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
