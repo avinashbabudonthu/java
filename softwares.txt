@@ -1,4 +1,7 @@
-JDK17
+chrome
+Notepad++
+VSCode
+JDK
 Git
 Tortoise Git
 IntelliJ
@@ -12,3 +15,4 @@ Oracle Database
 MySQL Database
 SQL Server Database
 Mongo DB
+draw io

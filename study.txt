@@ -25,12 +25,12 @@ Core Java - Strings - https://github.com/avinashbabudonthu/java/blob/master/java
 Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/core-java/src/main/java/com/practice/java/util/StringJoinerTest.java
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
-
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
 Core Java - Java 8 - Box/Java 8 Lambdas
 Core Java - Java 8 - Java 8 Pocket Guide
+JSON Schema Writing and Validating JSON as per schema
 Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/playing-with-java-8-lambdas-and-concurrency.html
 Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/java-8-date-time-api-tutorial-localdatetime.html
 Core Java - Java 8 - http://www.javacodegeeks.com/2014/04/abstract-class-versus-interface-in-the-jdk-8-era.html
