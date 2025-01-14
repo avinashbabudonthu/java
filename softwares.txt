@@ -6,23 +6,28 @@ VSCode
 JDK
 Git
 Tortoise Git
+maven
+McAfee
+Postman
+IntelliJ
+Docker
+PuttyGen
+Putty
+Zoom
+MySQL Database
+
+-----------------------------
+Inprogress:
+------------
+
 
 -----------------------------
 todo:
 ------
-McAfee
-maven
-PuttyGen
-Putty
-IntelliJ
-Docker
-Postman
-Zoom
+SQL Server Database
+Mongo DB
 Slack
 Confluence
 JIRA
-Oracle Database
-MySQL Database
-SQL Server Database
-Mongo DB
 draw io
+Oracle Database
