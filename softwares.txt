@@ -1,9 +1,19 @@
+completed:
+-----------
 chrome
 Notepad++
 VSCode
 JDK
 Git
 Tortoise Git
+
+-----------------------------
+todo:
+------
+McAfee
+maven
+PuttyGen
+Putty
 IntelliJ
 Docker
 Postman
