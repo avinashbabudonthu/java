@@ -15,11 +15,12 @@ PuttyGen
 Putty
 Zoom
 MySQL Database
+adobe reader - for pdf reading
 
 -----------------------------
 Inprogress:
 ------------
-adobe reader - for pdf reading
+
 
 -----------------------------
 todo:
