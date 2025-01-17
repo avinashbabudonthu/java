@@ -19,7 +19,7 @@ MySQL Database
 -----------------------------
 Inprogress:
 ------------
-
+adobe reader - for pdf reading
 
 -----------------------------
 todo:
