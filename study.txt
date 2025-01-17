@@ -1,19 +1,17 @@
 COMPLETED
 ------------
-Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-Udemy - OpenAPI: Beginner to Guru
-start-date: 10/Jan/2025
-target-end-date: 12/Jan/2025
+
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
+Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/java-8-notes.md
@@ -26,6 +24,7 @@ Core Java - StringJoiner - https://github.com/avinashbabudonthu/java/blob/master
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
+Udemy - OpenAPI: Beginner to Guru
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
 Core Java - Java 8 - Box/Java 8 Lambdas
