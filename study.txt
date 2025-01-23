@@ -11,6 +11,13 @@ INPROGRESS
 --------------------------------------------------------------------------------------------------
 TODO
 -------
+AWS Certified Solutions Architect Associate - preparation
+AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
+udemy: Ultimate AWS Certified Solutions Architect Associate 2025
+udemy: Practice Exams | AWS Certified Solutions Architect Associate
+udemy: AWS Certified Solutions Architect Associate - SAA C03
+
+
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
@@ -231,7 +238,7 @@ Visual Studio code - https://github.com/avinashbabudonthu/java/blob/master/java/
 Visual VM - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#visual-vm
 Weld - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#weld
 Cloud - https://github.com/avinashbabudonthu/java/blob/master/java/cloud/notes.md
-AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
+
 Azure - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#azure
 Open Shift - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#open-shift
 Terraform - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#terraform
