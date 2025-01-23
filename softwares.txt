@@ -16,6 +16,7 @@ Putty
 Zoom
 MySQL Database
 adobe reader - for pdf reading
+Mongo DB
 
 -----------------------------
 Inprogress:
@@ -26,7 +27,6 @@ Inprogress:
 todo:
 ------
 SQL Server Database
-Mongo DB
 Slack
 Confluence
 JIRA
