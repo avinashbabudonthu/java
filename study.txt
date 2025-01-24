@@ -11,13 +11,6 @@ INPROGRESS
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-AWS Certified Solutions Architect Associate - preparation
-AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
-udemy: Ultimate AWS Certified Solutions Architect Associate 2025
-udemy: Practice Exams | AWS Certified Solutions Architect Associate
-udemy: AWS Certified Solutions Architect Associate - SAA C03
-
-
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/basics.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/collections.md
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/generics.md
@@ -96,6 +89,15 @@ Git - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#git
 Git - https://github.com/avinashbabudonthu/java/tree/master/java-v2/git
 JWT - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jwt
 JWT - box/books/000001-jwt-handbook-v0_14_2.pdf
+-----------
+AWS
+----
+AWS Certified Solutions Architect Associate - preparation
+AWS - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#aws
+udemy: Ultimate AWS Certified Solutions Architect Associate 2025
+udemy: Practice Exams | AWS Certified Solutions Architect Associate
+udemy: AWS Certified Solutions Architect Associate - SAA C03
+-----------
 Core Java - Reactive Programming - box/books/000002-reactive-programming-reactor.pdf
 Jackson JSON - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#jackson-json
 Lombok - https://github.com/avinashbabudonthu/java/blob/master/java/README.md#lombok
