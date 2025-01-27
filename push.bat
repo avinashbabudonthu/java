@@ -1,7 +1,11 @@
 @echo off
 echo -----------------------------------------------
-set HTTP_PROXY=
-set HTTPS_PROXY=
+cd /d %cd%
+echo echo Present working directory : %cd%
+echo -----------------------------------------------
+echo Pulling latest commits before push
+git pull
+echo -----------------------------------------------
 echo Checking status:
 git status
 echo -----------------------------------------------
