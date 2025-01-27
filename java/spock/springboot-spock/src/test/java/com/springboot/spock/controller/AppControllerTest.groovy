@@ -1,7 +1,6 @@
 package com.springboot.spock.controller
 
 import com.springboot.spock.service.AppService
-import com.sun.deploy.uitoolkit.impl.awt.AWTDragHelper
 import spock.lang.Specification
 
 class AppControllerTest extends Specification {

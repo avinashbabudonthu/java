@@ -17,7 +17,8 @@ Zoom
 MySQL Database
 adobe reader - for pdf reading
 Mongo DB
-
+Oracle Database - https://www.youtube.com/watch?v=48-vrEMH_yI&ab_channel=SQLServer101
+PostgreSQL
 -----------------------------
 Inprogress:
 ------------
@@ -31,4 +32,3 @@ Slack
 Confluence
 JIRA
 draw io
-Oracle Database

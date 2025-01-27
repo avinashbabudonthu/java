@@ -1,6 +1,7 @@
 package com.springboot.spock.controller
 
 import com.springboot.spock.repository.AppRepository
+import org.mockito.Mock
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
