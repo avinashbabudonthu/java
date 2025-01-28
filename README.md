@@ -13,6 +13,12 @@
 # Coding Sites
 * Hacker Rank - https://hackerrank.com/
 * Leet Code - https://leetcode.com/
+* Code chef
+* Google code jam
+* Hacker earth
+* Kaggle
+* Leet code
+* Top coder
 ------
 # Study Road Map
 * [Core Java basics notes](java-v2/core-java/notes/basics.md)

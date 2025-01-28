@@ -132,23 +132,16 @@ public static void main(String[] args) {
 annotation context. The Annotation Processing API also underwent some minor changes to recognize those new type
 annotations in the Java programming language.
 ------
-# Collection streams
-# JavaFX
-# JAXP
 # Date time API
-	* Clock
-	* LocalDate
-	* LocalTime
-	* LocalDateTime
-	* ZonedDateTime
-	* Duration
+* Clock
+* LocalDate
+* LocalTime
+* LocalDateTime
+* ZonedDateTime
+* Duration
 ------
 # Optional
 * [Notes](optional.md)
-------
-# Base64 Nashron javascript engine (jjs)
-# class dependency analyzer(jdeps)
-# Parallel arrays
 ------
 # java.util.function package
 * [Examples](../../../core-java/java-8/java8/src/main/java/com/java/util/function/practice)

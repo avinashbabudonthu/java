@@ -160,13 +160,13 @@ public final class Student{
 * Create object using `new` keyword
 * What happens on using `new` keyword to create an object
 	* Loads the class to JVM
-	* Executes static initializers
+	* Executes static initializers (means static blocks)
 	* Initialize static fields declared in class (remember static final fields will be initialized at compile time)
 	* Allocates memory for non static members of the class
 	* Loads non static members of the class
 	* Initializes non static members of the class
 	* Executes constructor
-	* Create object
+	* Create object. (Non static blocks executes while creating an object)
 * Class
 ```
 package com.java.model;

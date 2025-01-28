@@ -218,7 +218,7 @@ double average = roster.stream().filter(p -> p.getGender() == Person.Sex.MALE).m
 	* java.util.stream.Stream.reduce(identity, accumulator);
 	* java.util.stream.Stream.collect(supplier, accumulator, combiner);
 ------
-# Stream.reduce method\
+# Stream.reduce method
 ![picture](images/stream-reduce-method.jpg)
 ------
 # Aggregators vs Iterators
