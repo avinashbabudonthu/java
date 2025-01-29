@@ -19,7 +19,8 @@
 * [java.lang.String](core-java/src/main/java/com/practice/java/lang/StringTest.java)
 * [String Joiner Examples](core-java/src/main/java/com/practice/java/util/StringJoinerTest.java)
 * [java.lang.System](core-java/src/main/java/com/practice/java/lang/SystemTest.java)
-* [java.lang.Runtime](notes/runtime.md)
+* [java.lang.Runtime Notes](notes/runtime.md)
+* [java.lang.Runtime Example](../core-java/core-java/src/main/java/com/practice/java/lang/RuntimeTest.java)
 ------
 # java.util package
 * [ArrayList](core-java/src/main/java/com/practice/java/util/ArrayListTest.java)

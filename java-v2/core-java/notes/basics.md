@@ -1,7 +1,7 @@
 # Core Java Notes
 ------
 # Basics
-* JDK: JRE + Development Kit (tools like compilers(javac) and debuggers (JDB))
+* JDK: JRE + Development Kit (means tools like compilers(javac) and debuggers (JDB), utilities like serialver)
 * JRE - `Java Runtime Environment`: JVM + Library classes
 * JVM
 	* Virtual machine for Java. Generates machine level language (native language) by converting .class(byte code) to machine level language

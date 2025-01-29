@@ -38,7 +38,7 @@
 ------
 # If we serialize object with some parameters, changed class after serialization. How de-serialization will handle this?
 * How changes to class definition (before and after serialization) effect serialization?
-	* Serialze object with some fields
+	* Serialize object with some fields
 	* Change (add, edit, delete some fields) the class
 	* Use changed class to de-serialize
 	* We will get **InvalidClassException**
@@ -97,3 +97,6 @@
 * Used for fields derived from another fields. To avoid unnecessay storage
 * Restore value manually
 	* By customizing de-serialization
+------
+# Examples
+* [Serialize and De-serialize](../core-java/src/main/java/com/serialization/SerializationTest.java)
