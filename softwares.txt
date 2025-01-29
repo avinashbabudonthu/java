@@ -14,9 +14,9 @@ Docker
 PuttyGen
 Putty
 Zoom
-MySQL Database
+MySQL Database using Docker
 adobe reader - for pdf reading
-Mongo DB
+Mongo DB using Docker
 Oracle Database - https://www.youtube.com/watch?v=48-vrEMH_yI&ab_channel=SQLServer101
 PostgreSQL
 couchbase server
