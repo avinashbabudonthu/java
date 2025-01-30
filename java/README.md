@@ -74,7 +74,6 @@
 * [Junit 5](#junit-5)
 * [JVM](#jvm)
 * [JWT](#jwt)
-* [Kafka](#kafka)
 * [Karate](#karate)
 * [Kerberos](#kerberos)
 * [Kibana](#kibana)
@@ -1095,20 +1094,6 @@
 # [JWT](jwt)
 * JWT - JSON Web Tokens
 * [Materials](jwt/materials.md)
-------
-# [Kafka](kafka)
-* [Materials](kafka/materials.md)
-* [Kafka connect notes](kafka/kafka-connect-notes.md)
-* [Deserialization Error Handling Spring Boot](kafka/deserialization-error-handling-spring-boot)
-* [Kafka with Core Java](kafka/kafka-core-java)
-* [Kafka Core Java Avro](kafka/kafka-core-java-avro)
-* [Kafka Server Properties Files](kafka/kafka-server-properies-files)
-* [Kafka Spring Boot Avro](kafka/kafka-spring-boot-avro)
-* [Kafka Streams](kafka/kafka-streams)
-* [Spring Boot 2 Kafka Consumer](kafka/spring-boot2-kafka-consumer)
-* [Spring Boot 2 Kafka Producer](kafka/spring-boot2-kafka-producer)
-* [kafka streams word count example](kafka/kafka-streams/word-count)
-* [Kafka and Kafka UI with Docker](kafka/kafka.md#Kafka-and-Kafka-UI-with-Docker)
 ------
 # [Karate](karate)
 * [Materials](karate/karate.md#Materials)

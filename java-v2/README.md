@@ -83,11 +83,6 @@
 * [Spring Security](spring-security)
 * [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 ------
-# JMS
-* [Kafka](kafka)
-* [Kafka Connect](kafka-connect)
-* [Kafka Streams](kafka-streams)
-------
 # Tools
 * [Git](git)
 * [IntelliJ](intellij)
