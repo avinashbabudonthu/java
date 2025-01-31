@@ -33,7 +33,6 @@
 * [Mongo DB](mongo-db)
 ------
 # Logging
-* [Log4J](log4j)
 * [Log4J2](log4j2)
 ------
 # Spring
