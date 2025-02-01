@@ -5,7 +5,6 @@
 * [Design Patterns](design-patterns)
 ------
 # Core Java
-* [Core Java](core-java)
 * [Java Reflection](reflection)
 * [Multi Threading](multi-threading)
 
