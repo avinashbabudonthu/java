@@ -18,16 +18,13 @@ Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-
+Kafka: udemy: Apache Kafka Series - Learn Apache Kafka for Beginners v3
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-Kafka
--------
-udemy: Apache Kafka Series - Learn Apache Kafka for Beginners v3
-udemy: Apache Kafka Series - Kafka Streams for Data Processing
+Kafka: udemy: Apache Kafka Series - Kafka Streams for Data Processing
 ---------------------------------------------------------------
 AWS
 ----
