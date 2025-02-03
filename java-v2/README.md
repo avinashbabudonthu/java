@@ -24,7 +24,6 @@
 # SQL Databases
 * [SQL Basics](sql)
 * [H2](h2)
-* [MySQL](mysql)
 * [PostgreSQL](postgre-sql)
 * [Oracle](oracle)
 ------

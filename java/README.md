@@ -98,7 +98,6 @@
 * [No SQL](#no-sql)
 * [NPM](#npm)
 * [Open CSV](#open-csv)
-* [Oracle Database](#Oracle-Database)
 * [Oracle Cloud](#Oracle-Cloud)
 * [ORM](#orm)
 * [Open shift](#open-shift)
@@ -1304,18 +1303,6 @@
 * [Materials](open-csv/README.md#Materials)
 * [Read CSV File](open-csv/open-csv/src/test/java/com/open/csv/ReadCSV.java)
 * [Write CSV File](open-csv/open-csv/src/test/java/com/open/csv/WriteCSV.java)
-------
-# [Oracle Database](oracle)
-* [Materials](oracle/materials.md)
-## Examples
-* [Constraints](oracle/constraints.md)
-* [Create DB and User](oracle/create-db-and-user.sql)
-* [Data](oracle/data.md)
-* [Errors](oracle/errors.md)
-* [Keys](oracle/keys.md)
-* [Practice Tables](oracle/practice-tables.sql)
-* [Queries](oracle/queries.md)
-* [Tables](oracle/tables.md)
 ------
 # [Oracle Cloud](oracle-cloud)
 ------
