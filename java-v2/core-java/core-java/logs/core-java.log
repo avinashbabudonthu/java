@@ -1,6 +1,0 @@
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:22] - studentModel1 object=StudentModel(id=1, name=a)
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:24] - Creating file
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:28] - File created=true, file-path=C:\github\java\java-v2\core-java\core-java\files\file-d4b58d12-fee6-4f2e-b18f-136e83053239.txt
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:30] - Serializing student model
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:33] - De-serializing student model
-[2025-01-29 13:28:39] [INFO ] [SerializationTest:35] - de-serialized studentModel1 object=StudentModel(id=1, name=a)
