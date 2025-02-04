@@ -11,5 +11,10 @@ set current_directory=%~dp0
 Use current_direcoty like below:
 cd /d %current_directory%
 ```
+
+* Check windows version from cmd
+```
+winver
+```
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
