@@ -58,7 +58,6 @@
 * [Integration Testing](#Integration-Testing)
 * [IntelliJ](#intellij)
 * [Interview Questions](#interview-questions)
-* [Jackson JSON](#jackson-json)
 * [Javascript](#Javascript)
 * [JBoss](#jboss)
 * [JDK](#jdk)
@@ -974,21 +973,6 @@
 ------
 # [Interview Questions](interview-questions)
 * [Set-1](interview-questions/set-1.md)
-------
-# [Jackson JSON](jackson-json)
-* [Materials](jackson-json/materials.md)
-* [Notes](jackson-json/notes.md)
-## Examples
-* [Dependencies](jackson-json/notes.md#dependencies)
-* [Ignore Unknow Properties](jackson-json/notes.md#ignore-unknow-properties)
-* [Ignore properties in json](jackson-json/notes.md#ignore-properties-in-json)
-* [JSON file to object](jackson-json/notes.md#json-file-to-object)
-* [Json String to Object](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonStringToObject.java)
-	* Json String to Map of String and Object - jsonStringToMapOfStringAndObject
-	* Json String to Object list - jsonStringToObjectList
-	* Enum to JSON vice versa - enumJsonToEnumObject
-	* JSON String to JSON Node - jsonStringToJsonNode
-* [JsonIdentityInfo Example](jackson-json/jackson-json/src/test/java/com/jackson/json/JsonIdentityInfoExample.java)
 ------
 # [Javascript](javascript)
 * [Random number](javascript/javascript.md#Random-number)
