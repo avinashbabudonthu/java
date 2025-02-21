@@ -60,8 +60,6 @@
 * [Apache Commons Libraries](apache-commons)
 * [Lombok](lombok)
 * [HikariCP](hikari-cp)
-* [Guava](guava)
-* [Java Faker Dependency](files/java-faker-dependency.md)
 ------
 # Operating Systems OS
 * [Linux](linux)
@@ -81,7 +79,6 @@
 * [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 ------
 # Tools
-* [Git](git)
 * [IntelliJ](intellij)
 * [Splunk](splunk)
 ------
@@ -91,10 +88,7 @@
 # Others
 * [README file](../README-template.md)
 * [gitignore file](../.gitignore)
-* [Environment Variables vs System properties (or VM Arguments) vs Program arguments (or Command line arguments)](files/variables-arguments.md)
-* [Difference between model object and entity object](files/model-vs-entity.md)
 * [Softwares List](files/softwares-list.md)
-* [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 * [Sonar Rules](https://rules.sonarsource.com/java/)
 ------
 ### [<<Back](../README.md) | [Java V2 All Examples](https://github.com/avinashbabudonthu/java/blob/master/java-v2/README.md) | [Java All Examples](https://github.com/avinashbabudonthu/java/blob/master/README.md)
