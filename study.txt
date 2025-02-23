@@ -13,12 +13,13 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
+Kafka: udemy: Apache Kafka Series - Learn Apache Kafka for Beginners v3
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-Kafka: udemy: Apache Kafka Series - Learn Apache Kafka for Beginners v3
+Revision kafka - github/book/kafka
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -33,6 +34,8 @@ udemy: Ultimate AWS Certified Solutions Architect Associate 2025
 udemy: Practice Exams | AWS Certified Solutions Architect Associate
 udemy: AWS Certified Solutions Architect Associate - SAA C03
 ---------------------------------------------------------------
+Kafka:
+
 Udemy - OpenAPI: Beginner to Guru
 Udemy - Java Multithreading, Concurrency & Performance Optimization
 Core Java - Java 8 - Box/Java-8-Features
