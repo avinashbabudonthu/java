@@ -13,20 +13,22 @@ Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-j
 Core Java - https://github.com/avinashbabudonthu/java/blob/master/java-v2/core-java/notes/annotations.md
 Core Java - Java 17 record class - https://github.com/avinashbabudonthu/java/tree/master/java-v2/core-java#basics
 Core Java - http://javapapers.com/core-java/java-synthetic-class-method-field/
+
+Kafka:
+--------
 Kafka: udemy: Apache Kafka Series - Learn Apache Kafka for Beginners v3
+Revision kafka - github/book/kafka
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 INPROGRESS
 ------------
-Revision kafka - github/book/kafka
+Kafka: udemy: Apache Kafka Series - Kafka Streams for Data Processing
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 TODO
 -------
-Kafka: udemy: Apache Kafka Series - Kafka Streams for Data Processing
----------------------------------------------------------------
 AWS
 ----
 Certification - AWS Certified Solutions Architect Associate
