@@ -50,7 +50,6 @@
 * [H2 Database](#h2-database)
 * [Heroku](#heroku)
 * [Hibernate](#hibernate)
-* [HikariCP](#hikaricp)
 * [HTML Sanitizer](#html-sanitizer)
 * [IBM MQ](#ibm-mq)
 * [Infinispan](#Infinispan)
@@ -387,12 +386,6 @@
 * [StringUtils - subString](commons-lang3/commons-lang3/src/test/java/com/lang3/StringUtilsPractice.java)
 * [ToStringBuilder](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
 * [ToStringBuilder - reflectionToString](commons-lang3/commons-lang3/src/test/java/com/lang3/ToStringBuilderPractice.java)
-------
-# [Connection Pooling](connection-pooling)
-* [Notes](connection-pooling/notes.md)
-* [Materials](connection-pooling/materials.md)
-## Examples
-* [HikariCP](#hikaricp)
 ------
 # [Core Java](core-java)
 * [Materials](core-java/materials.md)
