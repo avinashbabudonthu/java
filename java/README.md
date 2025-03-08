@@ -99,7 +99,6 @@
 * [ORM](#orm)
 * [Open shift](#open-shift)
 * [Performance](#performance)
-* [Postgre SQL Database](#postgre-sql-database)
 * [Postman](#postman)
 * [Power Mock](#power-mock)
 * [Prometheus](#prometheus)
@@ -1272,19 +1271,6 @@
 ------
 # [Performance](performance)
 * [Materials](performance/materials.md)
-------
-# [Postgre SQL Database](postgre-sql)
-* [Create Database](postgre-sql/create-database.sql)
-* [Create Queries](postgre-sql/create-queries.sql)
-* [Drop Queries](postgre-sql/drop-queries.sql)
-* [Insert Queries](postgre-sql/insert-queries.sql)
-* [Materials](postgre-sql/materials.md)
-* [Notes](postgre-sql/notes.md)
-	* [Map Timestamp with Time Zone column](postgre-sql/notes.md#map-timestamp-with-time-zone-column)
-	* [Mapping XML type](postgre-sql/notes.md#mapping-xml-type)
-	
-* [Partitions](postgre-sql/partitions.sql)
-* [Partitions On Demand](postgre-sql/partitions-on-demand.sql)
 ------
 # [Postman](postman)
 * [Materials](postman/materials.md)
