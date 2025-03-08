@@ -1,3 +1,0 @@
-spring.application.name: random-port
-
-server.port: 0
