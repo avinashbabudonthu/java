@@ -1,4 +1,5 @@
 @echo off
+set HTTPS_PROXY=
 echo -----------------------------------------------
 cd /d %cd%
 echo echo Present working directory : %cd%
