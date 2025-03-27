@@ -52,7 +52,6 @@
 * [Java library - org.springframework.web.client.RestTemplate](rest-client-resttemplate)
 * Java library - Feign
 * Java library - java.net.http.HttpClient
-* Rest client tool - [Postman](postman)
 * Rest client tool - Talend API Tester - This is chrome extension
 * Rest client tool - cURL
 ------
