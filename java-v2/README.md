@@ -77,10 +77,6 @@
 * [Spring Security](spring-security)
 * [Encoding vs Encryption vs Tokenization](files/encoding-encryption-tokenization.md)
 ------
-# Tools
-* [IntelliJ](intellij)
-* [Splunk](splunk)
-------
 # Schedulers
 * [Autosys](autosys)
 ------
