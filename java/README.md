@@ -107,7 +107,6 @@
 * [Ractive Programming](#Ractive-Programming)
 * [RXJava](#RXJava)
 * [ReactJS](#react-js)
-* [Redis](#redis)
 * [REST API](#rest-api)
 * [Rest API With Spring Boot 2](#Rest-API-With-Spring-Boot-2)
 * [Rest API With Spring Boot 3](#Rest-API-With-Spring-Boot-3)
