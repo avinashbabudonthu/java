@@ -127,7 +127,6 @@
 * [Spring Boot 3](#spring-boot-3)
 * [Spring Core](#Spring-Core)
 * [Spring Data JPA](#Spring-Data-JPA)
-* [Spring Data Mongo](#Spring-Data-Mongo)
 * [Spring JDBC](#Spring-JDBC)
 * [Spring Security](#Spring-Security)
 * [Spring Transaction](#Spring-Transaction)
@@ -1174,17 +1173,6 @@
 * [Hello World Examples](mockito/mockito/src/test/java/com/mockito/hello/world/HelloWorldTest.java)
 * [Class with lombok logs](mockito/mockito/src/test/java/com/mockito/lombok/inject/EmployeeControllerTest.java)
 * [Wrong Type of Return value](mockito/mockito/src/test/java/com/mockito/wrong/type/of/returnvalue/WrongTypeOfReturnValueTest.java)
-------
-# [Mongo DB](mongo)
-* [Materials](mongo/materials.md)
-* [Notes](mongo/notes.md)
-* [Queries](mongo/queries.js)
-## Examples
-* [Mongo DB Core Java](mongo/mongo-db-core-java)
-* [Mongo DB Spring Boot2 Data XML](mongo/mongo-db-spring-boot2-data-xml)
-* Pagination
-	* Refer limit, skip in [Queries](mongo/queries.js)
-	* Reference - https://www.educba.com/mongodb-pagination/
 ------
 # [Mybatis](mybatis)
 * [Materials](mybatis/materials.md)
