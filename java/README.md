@@ -85,7 +85,6 @@
 * [Microservices](#microservices)
 * [Mockito with Junit 4](#Mockito-with-Junit-4)
 * [Model Mapper](#model-mapper)
-* [Mongo DB](#mongo-DB)
 * [Monkey patching](misc.md#Monkey-patching)
 * [Mybatis](#mybatis)
 * [MySQL Database](#mysql-database)

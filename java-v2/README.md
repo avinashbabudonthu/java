@@ -27,9 +27,6 @@
 * [PostgreSQL](postgre-sql)
 * [Oracle](oracle)
 ------
-# No SQL Databases
-* [Mongo DB](mongo-db)
-------
 # Logging
 * [Log4J2](log4j2)
 ------
