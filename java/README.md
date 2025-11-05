@@ -1435,12 +1435,6 @@
 	* Entity Manager
 	* JpaRepository
 ------
-## [Spring Data Mongo](spring/data-mongo)
-* [Materials](spring/data-mongo/README.md#Materials)
-* [Project setup](spring/data-mongo/README.md#Project-setup)
-* [Print mongo queries in logging](spring/data-mongo/README.md#Print-mongo-queries-in-logging)
-* [Relatioship between collections](spring/data-mongo/README.md#Relatioship-between-collections)
-------
 ## [Spring Data Rest](spring/data-rest)
 * [Materials](spring/data-rest/materials.md)
 ------
